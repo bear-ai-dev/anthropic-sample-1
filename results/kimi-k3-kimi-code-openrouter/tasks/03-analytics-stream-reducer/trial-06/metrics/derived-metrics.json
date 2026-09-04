@@ -1,8 +1,0 @@
-{
-  "omitted_native_logs": "Raw event/session logs used only for metric derivation are intentionally omitted.",
-  "output_tokens": 59906,
-  "session_index_published_sha256": "1a1f6105139acac3c36a04d66b1bfb5126376ab317abb59aa3397ad74b7d7f10",
-  "source": "Kimi Code native session evidence",
-  "state_published_sha256": "e38e8d7a81ea6342788f46dfd86a64fc31d2ec315b7fbe2f366ae5e242e3deb7",
-  "wall_clock_seconds": 1501.992
-}

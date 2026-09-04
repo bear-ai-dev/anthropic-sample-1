@@ -1,22 +1,5 @@
 {
   "controls": {
-    "01-linearizable-scan": {
-      "execution_task_sha256": "1e4f58a1b0753d88224f4fc125bfbed564ab74333f00f55a05c8affda4480624",
-      "nop": {
-        "checked_at": "2026-09-04T19:17:26.277512+00:00",
-        "expected_reward": 0.0,
-        "expected_reward_matches": true,
-        "reward": 0.0,
-        "scope": "frozen execution package after credential-only task redaction"
-      },
-      "oracle": {
-        "checked_at": "2026-09-04T19:17:56.416935+00:00",
-        "expected_reward": 1.0,
-        "expected_reward_matches": true,
-        "reward": 1.0,
-        "scope": "frozen execution package after credential-only task redaction"
-      }
-    },
     "02-recurring-events": {
       "execution_task_sha256": "5809c53f6c930201b05749fcc8d5a22286b06673bc09f477fd5c69540e95cc1d",
       "nop": {
@@ -32,23 +15,6 @@
         "expected_reward_matches": true,
         "reward": 1.0,
         "scope": "frozen execution package after credential-only task redaction"
-      }
-    },
-    "03-analytics-stream-reducer": {
-      "execution_task_sha256": "9be6711c735ca0c6ef86e8d22fbcf7e6e0b32972392a229aee8a31f7c83e44f6",
-      "nop": {
-        "checked_at": "2026-09-03T23:38:40.912220+00:00",
-        "expected_reward": 0.0,
-        "expected_reward_matches": true,
-        "reward": 0.0,
-        "scope": "original frozen execution package"
-      },
-      "oracle": {
-        "checked_at": "2026-09-03T23:38:48.287225+00:00",
-        "expected_reward": 1.0,
-        "expected_reward_matches": true,
-        "reward": 1.0,
-        "scope": "original frozen execution package"
       }
     },
     "04-draft-recovery": {

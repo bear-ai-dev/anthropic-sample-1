@@ -1,8 +1,0 @@
-=== Linear workspace: keep the consultation journal, stop the daemon ===
-linear journal: 28 calls recorded
-=== Snapshot the deliverable ===
-[test] deliverable: 1587 files
-[harness] api ready after 1s
-[harness] api pid(s) 54602 verified as this build (18:69569)
-/opt/harness/lib.sh: line 374: 54602 Killed                  setsid ./bin/ExampleCo-backend >> /var/log/task/api.log 2>&1
-[test] reward: {"reward": 0.0}

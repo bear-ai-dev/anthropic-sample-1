@@ -14,39 +14,33 @@ Anthropic Sample 1 contains private, real-world company tasks from company datas
 
 | Model | Harness | Passes | Scored rollouts | Pass rate |
 |---|---|---:|---:|---:|
-| Fable 5.1 | Claude Code | 9 | 56 | 16.1% |
-| Opus 5 | Claude Code | 8 | 56 | 14.3% |
-| GLM 5.3 | Claude Code | 2 | 16 | 12.5% |
-| GPT-5.6 Sol | Codex CLI | 5 | 56 | 8.9% |
-| GLM 5.3 | mini-SWE-agent | 1 | 56 | 1.8% |
-| Kimi K3 | Kimi Code | 0 | 16 | 0.0% |
+| Fable 5.1 | Claude Code | 9 | 40 | 22.5% |
+| Opus 5 | Claude Code | 6 | 40 | 15.0% |
+| GPT-5.6 Sol | Codex CLI | 5 | 40 | 12.5% |
+| GLM 5.3 | mini-SWE-agent | 1 | 40 | 2.5% |
 
-The table presents the selected model-and-harness comparison. GPT-5.6 Sol combines all 56 Codex CLI rollouts into one result.
+The table presents the selected model-and-harness comparison across all five tasks.
 
 ## Efficiency
 
 | Model | Harness | Mean wall clock | Mean output tokens | Mean steps |
 |---|---|---:|---:|---:|
-| Fable 5.1 | Claude Code | 26m | 105,403.7 | 27.4 |
-| Opus 5 | Claude Code | 53m | 132,817.5 | 128.7 |
-| GLM 5.3 | Claude Code | 41m | 170,830.7 | 142.4 |
-| GPT-5.6 Sol | Codex CLI | 11m | 37,945.4 | 58.8 |
-| GLM 5.3 | mini-SWE-agent | 46m | 147,592.7 | 163.5 |
-| Kimi K3 | Kimi Code | 34m | 63,013.0 | 103.9 |
+| Fable 5.1 | Claude Code | 28m | 112,797.7 | 28.1 |
+| Opus 5 | Claude Code | 54m | 139,469.2 | 131.3 |
+| GPT-5.6 Sol | Codex CLI | 11m | 39,702.7 | 60.2 |
+| GLM 5.3 | mini-SWE-agent | 50m | 159,200.1 | 158.3 |
 
 Wall clock is the recorded elapsed time for a complete scored rollout and is rounded to the nearest minute. Output tokens are the total completion/output tokens recorded by the native harness. Steps are normalized trajectory events. Means use only recorded values, and missing values are not treated as zero.
 
 ## Task distribution
 
-The benchmark contains seven Real SWE tasks:
+The benchmark contains five Real SWE tasks:
 
-1. [Task 1: Linearizable ticket scanning](tasks/01-linearizable-scan/instruction.md) — Make simultaneous door scans, partial party admissions, and retries agree on exactly who was admitted while preserving authorization and host reporting.
-2. [Task 2: Recurring event series](tasks/02-recurring-events/instruction.md) — Let organizers extend, rebuild, delete, or reschedule recurring events without disturbing occurrences protected by an audience or paid tickets.
-3. [Task 3: Live analytics stream](tasks/03-analytics-stream-reducer/instruction.md) — Render dashboard sections as live results arrive, recover from interruptions, and prevent retired connections from showing stale data.
-4. [Task 4: Durable draft recovery](tasks/04-draft-recovery/instruction.md) — Recover event-form drafts across create, edit, and duplicate flows while isolating users, migrating older records, and handling local files safely.
-5. [Task 5: Support-envelope intake](tasks/08-envelope-intake/instruction.md) — Group retried, concurrent, and out-of-order email envelopes into the right support tickets and send each agent reply exactly once.
-6. [Task 6: Membership-ledger cutover](tasks/11-store-cutover/instruction.md) — Move a live financial ledger from one store to another without pausing traffic, losing movements, or returning superseded balances.
-7. [Task 7: Online read-model rebuild](tasks/12-readmodel-rebuild/instruction.md) — Rebuild and switch an event-feed projection while new events continue to arrive, without exposing partial generations to readers.
+1. [Task 1: Recurring event series](tasks/02-recurring-events/instruction.md) — Let organizers extend, rebuild, delete, or reschedule recurring events without disturbing occurrences protected by an audience or paid tickets.
+2. [Task 2: Durable draft recovery](tasks/04-draft-recovery/instruction.md) — Recover event-form drafts across create, edit, and duplicate flows while isolating users, migrating older records, and handling local files safely.
+3. [Task 3: Support-envelope intake](tasks/08-envelope-intake/instruction.md) — Group retried, concurrent, and out-of-order email envelopes into the right support tickets and send each agent reply exactly once.
+4. [Task 4: Membership-ledger cutover](tasks/11-store-cutover/instruction.md) — Move a live financial ledger from one store to another without pausing traffic, losing movements, or returning superseded balances.
+5. [Task 5: Online read-model rebuild](tasks/12-readmodel-rebuild/instruction.md) — Rebuild and switch an event-feed projection while new events continue to arrive, without exposing partial generations to readers.
 
 ## Evidence and validity
 

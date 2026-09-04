@@ -1,15 +1,15 @@
-# Task 02 — recurring event series
+The agent has access to the full source code for a private event platform and a local copy of the team's issue tracker. It must keep every occurrence of a recurring event in step when an organizer extends, rebuilds, deletes, or reschedules the series. Occurrences with an audience or paid tickets must stay protected, while one-time and future edits preserve published events and manually moved dates.
 
-## Linear workspace
+| Model | Harness | Passes | Scored rollouts | Pass rate |
+|---|---|---:|---:|---:|
+| Fable 5.1 | Claude Code | 0 | 8 | 0.0% |
+| Opus 5 | Claude Code | 0 | 8 | 0.0% |
+| GPT-5.6 Sol | Codex CLI | 0 | 8 | 0.0% |
+| GLM 5.3 | mini-SWE-agent | 0 | 8 | 0.0% |
 
-The box serves a copy of the team's Linear workspace on `127.0.0.1:4570`.
-`IOS-2912`, `PRD-145` and `WEB-915` carry the product history and the broken
-backend seam, alongside nine unrelated or adjacent issues across three teams.
-
-It is context only. The tickets identify where the work starts and what hosts
-reported; the recurrence rules remain in `instruction.md` and the workspace,
-and no graded check reads the Linear journal.
-
-The service is available as the MCP server `linear` and the `linear` command.
-The entrypoint journals calls to a root-only path, and `tests/test.sh` copies
-that journal to `/logs/verifier/linear-calls.jsonl` as evidence only.
+| Model | Harness | Mean wall clock | Mean output tokens | Mean steps |
+|---|---|---:|---:|---:|
+| Fable 5.1 | Claude Code | 26m | 120,076.9 | 36.1 |
+| Opus 5 | Claude Code | 1h 1m | 131,630.0 | 174.1 |
+| GPT-5.6 Sol | Codex CLI | 14m | 39,970.0 | 71.5 |
+| GLM 5.3 | mini-SWE-agent | 39m | 139,210.0 | 200.5 |
