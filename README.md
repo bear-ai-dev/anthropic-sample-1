@@ -68,7 +68,7 @@ Private chain-of-thought fields and encrypted provider reasoning blobs are inten
 ```text
 tasks/<task>/
 results/<model-harness-route>/tasks/<task>/trial-<01-08>/
-trajectories/<task>/<model-harness-route>/trajectory-trial-<01-08>.json
+trajectories/<task>/<model-harness>/trajectory-trial-<01-08>.json
 indexes/trials.json
 indexes/artifacts.json
 control-results.json

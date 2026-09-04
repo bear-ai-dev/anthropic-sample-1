@@ -12580,1419 +12580,19 @@
     "sha256": "b0bd1ffe19548dee177c52efcc92c7fe28a81b9f505f4dfe774517f929296d8f"
   },
   {
-    "bytes": 2103178,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "12e084a4f73881e8863e53f29434ae23bee35c09aed492ea17464f3f2650f24f"
-  },
-  {
-    "bytes": 1332998,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "e8f29721157f9dad3e001bc45e79890526166dde8a68b21c6ddc993fab4bf2c8"
-  },
-  {
-    "bytes": 2085166,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "49f5a0711295f5e273a8fd388f84d43d6233edb5335aa9959b5982a940f86e9d"
-  },
-  {
-    "bytes": 1910017,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "5b92dbe66f13e4dade8c3a7bb8e7e7dc8f1020a1b6b4dacca366452cc515498e"
-  },
-  {
-    "bytes": 1721165,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "653095cfcf8cbb8c8d1acc3b054dbafcf0a79965f5d17d853331f55e5b439ae2"
-  },
-  {
-    "bytes": 2085598,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "52c455981d3030ac4e59648b710c408fff5b2f879d4de137f90f3dc2832ab503"
-  },
-  {
-    "bytes": 1857330,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "7c863551ec6ebfda8e90c103d43dba275a2ce0e4fd72b0e23d0ea050efb22749"
-  },
-  {
-    "bytes": 1960092,
-    "path": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "eb4595e47e9d5c7644fff02af9374ea948157c0482e441cbbc059ccd44130e1f"
-  },
-  {
-    "bytes": 502799,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-01.json",
-    "sha256": "3c68225e335a21d99088ed467261215597dc92720dc4d3534f3ccf2fdbd8c416"
-  },
-  {
-    "bytes": 625042,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-02.json",
-    "sha256": "97c0c475f122ab68043208899495e702e1b3adb71d38ab02911829283962f69a"
-  },
-  {
-    "bytes": 566290,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-03.json",
-    "sha256": "c78d8b7c684b99757eed24f1f4d4e902cfb7ae9e3ad4bf2260cbf099205a7729"
-  },
-  {
-    "bytes": 594671,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-04.json",
-    "sha256": "043b01fb6ce03d2f96a21ceee89cad159bb26af303b96d874e2510dcc4e8e339"
-  },
-  {
-    "bytes": 553028,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-05.json",
-    "sha256": "46604465e7a0753b1f03a3f7ecbd1fac305cb8d38cd6113733fd4733c681f551"
-  },
-  {
-    "bytes": 596438,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-06.json",
-    "sha256": "2a6e3a141cdfeeefcf5e3f1ed589efd380da9ee39a15a79be54fe6d0067be08f"
-  },
-  {
-    "bytes": 622682,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-07.json",
-    "sha256": "57f99a39c6cbebaf36b14e4d3a73e629a7612d27fa8ec852879b2fd5a00f1716"
-  },
-  {
-    "bytes": 670845,
-    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-08.json",
-    "sha256": "c131b1e1938beffba6eadec99e06dfe5052f5ddc41c8d8edde1dc91a97d66350"
-  },
-  {
-    "bytes": 702704,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "98e140e1a71484fef5ab3c45637e25acabda76fdd7693b64b9736d2f85a75fe9"
-  },
-  {
-    "bytes": 931297,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "eea494003a6ed0668c9d858e6b22610a85dd6d236a30c0adae8c9e85d59b240d"
-  },
-  {
-    "bytes": 833800,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "9617f2cb22477cb36835ce21ad7d77b05389964a0b2e76f25dba43afa247138f"
-  },
-  {
-    "bytes": 791286,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "808916d5045f147618d2c33c5d406316df25717d3a197f9e26398649b2715ab7"
-  },
-  {
-    "bytes": 888072,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "f0d40711cb99b3257482026d44441f39dc555aaad7700fb4d19bb2439cd3006c"
-  },
-  {
-    "bytes": 794076,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "5877554c3819a50db2b18af484d6ec02f0a588e7db39b93a53c34280f14740ac"
-  },
-  {
-    "bytes": 959779,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "5d46deade9e66975e7ab866591f5ad24a3e888948753b6b09306c6754e2708f1"
-  },
-  {
-    "bytes": 985847,
-    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "008c622f3bf432cec105156de4b21c7d2af40b1ad2f5d67f32c0a945c9e7c7ad"
-  },
-  {
-    "bytes": 682069,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-01.json",
-    "sha256": "8978e72e4bf8b8761633392d567cffaadd0791522894a01cba91b744db5c003a"
-  },
-  {
-    "bytes": 763232,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-02.json",
-    "sha256": "8cab8c4a21b70a445d922564a5b48dca3f0ea7fa71dde6235a1ddc63483621f6"
-  },
-  {
-    "bytes": 816822,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-03.json",
-    "sha256": "efd1e8f422c2bf260416688c968aaf6b16c11bcbce6cd606738060c4b28371bb"
-  },
-  {
-    "bytes": 755571,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-04.json",
-    "sha256": "e10351cb3580bb46968c9392be3715d5ec2c5db0a1a63bad8cab8c211d66b82a"
-  },
-  {
-    "bytes": 823660,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-05.json",
-    "sha256": "7de6a6d5c59ea6bcad15d4dc5cbd861a05e1d7deb3bdb405c0c0e2a84dc0ddf5"
-  },
-  {
-    "bytes": 764473,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-06.json",
-    "sha256": "579e20af70ce9cb8982dc19760bc460fdb8bd4f2b3e26a94df1bf292770d5d71"
-  },
-  {
-    "bytes": 882516,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-07.json",
-    "sha256": "4fc0773ebb2c823baa2a693c669aa6e5a4aa1efbe753a3914ebe0344485971be"
-  },
-  {
-    "bytes": 746846,
-    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex-bedrock/trajectory-trial-08.json",
-    "sha256": "a53154688c4de844b03efbb264230321e187b1d339f926e2ff990139976d4869"
-  },
-  {
-    "bytes": 941495,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-01.json",
-    "sha256": "7c1f04637d7b9bbb7291a8e8e4bd3dd03570838f37d4454c0c12178c7ea60c7e"
-  },
-  {
-    "bytes": 1907672,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-02.json",
-    "sha256": "322ba62ff5d4619074aa0ff9359c189c8315a2c2731eed9d6a742414b160b24d"
-  },
-  {
-    "bytes": 2233999,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-03.json",
-    "sha256": "a2aea8c245fb7362fb5cc277d528f894cbd9e83964c93c982c45512ffe66ffc0"
-  },
-  {
-    "bytes": 850966,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-04.json",
-    "sha256": "5307dab716dcafb54dabeb35f19d8a9738cf956ac4adf756c9a3ab7b3427f792"
-  },
-  {
-    "bytes": 2289574,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-05.json",
-    "sha256": "9e0ffff5630bfeafac5b79d22a1a8fa7144db7c2e6f3ad67dab6afbb35601ceb"
-  },
-  {
-    "bytes": 1024209,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-06.json",
-    "sha256": "efa8ceba805b563b4bb142744080724347ede3475610541ed7c5eed7152fe36b"
-  },
-  {
-    "bytes": 693308,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-07.json",
-    "sha256": "4f899d5359afebed6eaf6fed6a3732da32c981b378158fc13149079cbfd0dfe9"
-  },
-  {
-    "bytes": 781050,
-    "path": "trajectories/02-recurring-events/grok-4.6-grok-build-openrouter/trajectory-trial-08.json",
-    "sha256": "657037070bdd47f9f6dbf022634f5783cace92bce4cfb14165abd09b0a1b00fc"
-  },
-  {
-    "bytes": 617307,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "0ac6c845917f830db5df330cd4170289f76eaea0a6b02a518fdc20c91b256c61"
-  },
-  {
-    "bytes": 466834,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "7d0284e76a0433c72cc0c3af4a81f8faee062a85c61acbabd116b77ab0a132f9"
-  },
-  {
-    "bytes": 439628,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "787ac7cd7854edde388a461812297386902330f28d7e5775405284c35f8af6bd"
-  },
-  {
-    "bytes": 632200,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "9bf588f3b3f686e69a907f064136fa8ad6c95a4f46ba44819f1efa6a93a4a945"
-  },
-  {
-    "bytes": 442594,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "81394a582e80320757d6e161109da1a3adcedf5baf83bccefbec5663b987d671"
-  },
-  {
-    "bytes": 541500,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "39ef205048176588b1a1df5b08d82cc01bf41950b9b230b428dafcce290798c1"
-  },
-  {
-    "bytes": 457477,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "8c74f61768642f5382cc4672906fb0abdc415c4836bef0f64ff3bda2f1d3ed74"
-  },
-  {
-    "bytes": 610792,
-    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "4076158ac6bcc97608adc8b2da396b614000bd3de6dc3fb7de674259f3ef4431"
-  },
-  {
-    "bytes": 3137705,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "e395f16abadd434aed2907b496a4040e43e86b5b49f37e4c63df59f73efed4e5"
-  },
-  {
-    "bytes": 2929578,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "542e8d1f8d3202c4a826c9f200297874748a0caf667e479ad775ee0f28a35d2b"
-  },
-  {
-    "bytes": 2628888,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "8c0fd5ff2141d648720919a89b88642be941803849ff44791c438a859e35831a"
-  },
-  {
-    "bytes": 2735671,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "2665cc33e8a636a8fb47a7a0d47efaf5a6ed6738def6a71986304c889cf3906c"
-  },
-  {
-    "bytes": 1744179,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "5f37eda89616c3b5b8b3240ea70293bbbd09135bbbcc829d114eb91db85758d2"
-  },
-  {
-    "bytes": 2657493,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "c7e4259ee2e4b7cc65531fdeefe320815b8321c7ddf9bf354a13da0a58880cf4"
-  },
-  {
-    "bytes": 2817849,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "186c53611897ee5441a517160237df764ae0a1eace23a62b7dd9fee01172faa6"
-  },
-  {
-    "bytes": 2665869,
-    "path": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "4497fea8aa3d8bc3318094785dfeb825007b2b9706339bbc046f3ccf45a50732"
-  },
-  {
-    "bytes": 1712205,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "b25956815f664f0a479d373ba45b4506dcc7e699f8bedb1d774b8aba25f5a5c4"
-  },
-  {
-    "bytes": 2063371,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "3da80d9ad6de8146a78ced060c20dd0101866e027a5a9005582f03c2f5e49cae"
-  },
-  {
-    "bytes": 1628698,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "aaacaa6b196b8a230086644712c2839c7133183faf71552d659aa06c82ef4e5d"
-  },
-  {
-    "bytes": 1935316,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "6226189ecdf9d8c966f05ede22eeea0246f5785a160b0d06c9aea6ec37356b76"
-  },
-  {
-    "bytes": 1698162,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "5308d1d16b98ee019703868e7a3109d64f7eafc110465394c64cd5f3e5629aed"
-  },
-  {
-    "bytes": 1851634,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "6e535f83bfa2c4f09da74e0c1964d90e814da5dab23bd4916bab22219880c2c3"
-  },
-  {
-    "bytes": 1182807,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "7068a445b9f3bdfa96fa79b86f97ffcff290af92268dbc6e81f2f8d5cb2186a1"
-  },
-  {
-    "bytes": 1817509,
-    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "5d2a8c9811dfa0295edf73b29087df486adf5c0c6e9de278a981f65e271e84a6"
-  },
-  {
-    "bytes": 409773,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-01.json",
-    "sha256": "125db23ce47001272c9fb32a4641a1558d9cbedcabab829a39a4d9998f4766cf"
-  },
-  {
-    "bytes": 377627,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-02.json",
-    "sha256": "4455e3156e0d112aed7a121a2f7f012cc049be93d412f21c17f994cefc5a83f0"
-  },
-  {
-    "bytes": 424084,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-03.json",
-    "sha256": "aab0c6811a73f17ccb28ae74427bdc0b83173d6bb0f06b6f90f58e6600efabdb"
-  },
-  {
-    "bytes": 385233,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-04.json",
-    "sha256": "94a13b44f799fae5b084f469f5cc3f00bb22298b70351ff27e231d1a6e867434"
-  },
-  {
-    "bytes": 341512,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-05.json",
-    "sha256": "5c316e8ab314e220d17188ffad54464b26f753a8ab52008db0fb1d6bb74a1fc5"
-  },
-  {
-    "bytes": 345210,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-06.json",
-    "sha256": "aa3568259dbbba6d704986f8e2a929cac99d37533ded6550f6cb0587db1047c7"
-  },
-  {
-    "bytes": 394405,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-07.json",
-    "sha256": "2f2c534bf6c0d98f3dd95d19128145f460dfec6a18003abf4a0184316dd53528"
-  },
-  {
-    "bytes": 377936,
-    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-08.json",
-    "sha256": "365edc4f6aa5bd726cb90a27e34d51694174b17fccc3a7a92bbd1d36aef53c9a"
-  },
-  {
-    "bytes": 660873,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "52b770f5ab5d6e2ef4eb339011245a6624e019d8dacd17cc13d0ddbe73835073"
-  },
-  {
-    "bytes": 492531,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "e8bd6497c4794390209d6310e6394ec991f10a8d13e7da9668ca3ae5364c8a80"
-  },
-  {
-    "bytes": 436370,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "2ada7056e9ce2ddfcd1ec40327517743646007e631ede5ac0491f67349c33777"
-  },
-  {
-    "bytes": 505698,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "0a0b72d2c904ccba08ce4b7ac2ffbad8e805f8f63a90fe1a99044caab5993d4a"
-  },
-  {
-    "bytes": 542912,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "20fed3a809258b7cefbbb75df7b52982628724e596b71ad43fa582f15adf8456"
-  },
-  {
-    "bytes": 387150,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "ed051c553dbb5db1dfd9d167e6480bb0fd2d97aab94c28ad5ff3b2b83551ffc1"
-  },
-  {
-    "bytes": 474754,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "03c31c89ced2d2bed913ac643169d71f0899964319a712a77d42d249de812e54"
-  },
-  {
-    "bytes": 453859,
-    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "dc91defeeeb938195aa6813285301b628762df6e1973c93aeaa13491a949e040"
-  },
-  {
-    "bytes": 468063,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-01.json",
-    "sha256": "1182081aca8bafeae5128b03ea33365f1f8155918767daf9c7eb45c0471b4933"
-  },
-  {
-    "bytes": 446109,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-02.json",
-    "sha256": "c77c48b93297e4c3f16360f96fe5c85d11c5db24999503d09180e0906e11ec14"
-  },
-  {
-    "bytes": 457325,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-03.json",
-    "sha256": "d87fb1f92c5432bdc974f8c54c781b512e9ea19f61aa93f940826ff8240eb60a"
-  },
-  {
-    "bytes": 395363,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-04.json",
-    "sha256": "05f65061967e54f678d9a047e4c35f0468b82aa73e32d005f01228108b483716"
-  },
-  {
-    "bytes": 471017,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-05.json",
-    "sha256": "ce3810e495a6f8da375377bc838100d15d4f4a9e0213dc67fdd83b6abd9c8d7a"
-  },
-  {
-    "bytes": 522426,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-06.json",
-    "sha256": "4c69b63e79e9797b7063929abe9518b60fab49af3ca15463f5e26389d80a254f"
-  },
-  {
-    "bytes": 460601,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-07.json",
-    "sha256": "f3c36a4044384deeb277a54725982008791a5d917b721fec814ff43e3bceae34"
-  },
-  {
-    "bytes": 509285,
-    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex-bedrock/trajectory-trial-08.json",
-    "sha256": "5f0fbee158ff882eb793ee29fd756aa728f622789d99eeddd702a51d7c9773fb"
-  },
-  {
-    "bytes": 716382,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-01.json",
-    "sha256": "07806cd9310027aaae16aa4ef8370ea554c4253b57ec5c697131c6d303c70070"
-  },
-  {
-    "bytes": 679056,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-02.json",
-    "sha256": "679d604a747051b582a09806e4e9b23cab7ab7741de2751d0da6d66472f18b4f"
-  },
-  {
-    "bytes": 550886,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-03.json",
-    "sha256": "973ab3291d93620ce30400c4460c265a07466bd26db301500c7bb7f32e72517d"
-  },
-  {
-    "bytes": 589331,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-04.json",
-    "sha256": "4114028617dd16f3600e0bda85e2603b4073836f251de2569f68f31432108d99"
-  },
-  {
-    "bytes": 669345,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-05.json",
-    "sha256": "281ae3cf13fe97ac3ff385d7e21f522bb6f1de0d334abcfe7a75b27837049bda"
-  },
-  {
-    "bytes": 748580,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-06.json",
-    "sha256": "b1cc924a7b8d519c5cd92f069ec50d3c8168e1f55a920aad5bd9cabf9c10f46c"
-  },
-  {
-    "bytes": 547305,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-07.json",
-    "sha256": "0a5f30af352c02b016992b38596d225c0bdc3468850a6465cb0edaa0c2e5cbe4"
-  },
-  {
-    "bytes": 638666,
-    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build-openrouter/trajectory-trial-08.json",
-    "sha256": "422a2c8f08b705b444cc82a217071c57cfb29f63af950edd3eebe2771317f840"
-  },
-  {
-    "bytes": 455421,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "776088b3d4894b78b8f0c27cef2bd2840cfb38698057ab74f7aac7afb116240d"
-  },
-  {
-    "bytes": 352075,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "a33dd7a739d10d72ea4d0425a6cdc9ac57262ecb37a1cac3cd02e889a957fccc"
-  },
-  {
-    "bytes": 404827,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "fd60b9e47faaab022c634609c830e058a5099924d2c4f3d2a146e6bbf7b9cc50"
-  },
-  {
-    "bytes": 447484,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "078b9bb908c13e3ddc51bc450b5ba40389feb2101b3a98248c33aaf5f5433ee3"
-  },
-  {
-    "bytes": 395513,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "d6218426e988215e6720cc45e869856f1ffbd2b2e45e471d99ed2ab146693348"
-  },
-  {
-    "bytes": 507647,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "9abd4f328b1f5fb191a337d4606d8491d43a2141deea1f6f65c48fd1c79fa4d0"
-  },
-  {
-    "bytes": 418766,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "aba692e288eb52ae717b089769538a09c35f713d0619a555e341f899441425e9"
-  },
-  {
-    "bytes": 395903,
-    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "b113a738215bc09cc285de68c648455746367fcec6345289af886fd09ff7ecea"
-  },
-  {
-    "bytes": 1735576,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "d7a44c8cd5d21bfba0af333992f0f3997ddef484e5757ab886cc71f21600a9d1"
-  },
-  {
-    "bytes": 1491355,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "6b0d02b84229dd2a90f0e2d9878c36e34017cfa8fa11dc0e4c4f17b8c297f85f"
-  },
-  {
-    "bytes": 1304429,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "2e33c748c9e440a09a9c65a14f4a82d823217985ea26c13762a610a7d4e46c04"
-  },
-  {
-    "bytes": 1540179,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "9dbd253069303074c4bbac12550ebc33890b67a0003c2fa7819977fdcfbabced"
-  },
-  {
-    "bytes": 1780071,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "a931dfb262ce41362a690b0516a00882d3c244d65fa9cd977c9a67f25874fea1"
-  },
-  {
-    "bytes": 1617819,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "6a6c5ee778bb421f8ce91c46282af3201c3a0a47cfd4283a74e219d32c3d22b5"
-  },
-  {
-    "bytes": 1664162,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "2fbb11399538ba450fa373fd0bcbd16f2c2c249530a52d54fdc1f71b33b92b92"
-  },
-  {
-    "bytes": 1569301,
-    "path": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "7a2bb71dd5e31334dc79975cf283d58a55f410e8bdc63eaa766aa8703112ff52"
-  },
-  {
-    "bytes": 996452,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "fa1e69f351706200a659b0c7e97d77be8ff51a1e23b5015410d011d23517bcea"
-  },
-  {
-    "bytes": 1030466,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "0e2098024e750c21e5782d9fe44a6256155e2fc1aa464cd4279ebebf00c6b4e7"
-  },
-  {
-    "bytes": 953078,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "bf6e843edaee879dc36939cbcd1277bc4bc3ee61a8a738bf08c5937c4499ee34"
-  },
-  {
-    "bytes": 864553,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "943df6cf8c548a78dd58442a4c0973c327a8e9eca37691ef19f1a27b2843f105"
-  },
-  {
-    "bytes": 1057183,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "1383c85f4803dc86f6dffbe0f33a628722d5697982ea6cbeeec0b203578fd369"
-  },
-  {
-    "bytes": 1005892,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "c5f1e17db91f9b6191274a92c106251628a0d1ce1cc08d7a7d3396dc76863260"
-  },
-  {
-    "bytes": 1040540,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "201cd70f915fa7566779767a77c8eafa9754b210467d68031da69c5f7ebc5d8a"
-  },
-  {
-    "bytes": 1125230,
-    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "dae7595e6e97f81f576bca2276fdd31dd539037d06748488cd375dd9046a7d0c"
-  },
-  {
-    "bytes": 381466,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-01.json",
-    "sha256": "1c8b722e8c37047e3f02da9f73e8202a5efb95c15201f97254fc6a848c491c91"
-  },
-  {
-    "bytes": 391821,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-02.json",
-    "sha256": "56355d29fa432dc0fa8792d88047a12acf24a6039f889697518d7cae4a29c31b"
-  },
-  {
-    "bytes": 365468,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-03.json",
-    "sha256": "f0ece049fb688d67c6ac3d5dd640108d034010cf3bb84082251ecc7cfc17ef87"
-  },
-  {
-    "bytes": 407095,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-04.json",
-    "sha256": "1e5eaab868d155cb1be3a647986b2c6a8e6ceb2d9de146d814d2f61eeac2ffc2"
-  },
-  {
-    "bytes": 369031,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-05.json",
-    "sha256": "112c87389868dce029543ea8bb79cc0a285ef8dac26c2add054b3a57a41f369b"
-  },
-  {
-    "bytes": 406116,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-06.json",
-    "sha256": "0b1ada8cab7942cf201b8b9b6dfca5309456a14e3743cacce2d69a00486d725c"
-  },
-  {
-    "bytes": 377312,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-07.json",
-    "sha256": "e6c9111d51265c307a78311281e7922a5443e45cf139d82d83541c2d7b1bd697"
-  },
-  {
-    "bytes": 380272,
-    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-08.json",
-    "sha256": "792692672c66c26af6d5200fd66c5a31a7459502c866f502c14149154c3c68aa"
-  },
-  {
-    "bytes": 533908,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "52d78965013ef2f5a5d23c8f10883f679381e6a0d8c7bd90a315dbf7e3a475d8"
-  },
-  {
-    "bytes": 638777,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "b6087bae29ae10c441ad3de5ad46e1e9c98e3f9d311793140c89177939bd6277"
-  },
-  {
-    "bytes": 623455,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "c9b09e4dd1f24987c4805d172c01d0b0f885a749a18e8c1a0872909e4af561e1"
-  },
-  {
-    "bytes": 578377,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "eba3851daef6ac673126a9317b233a3649df1715c4e7b148896cf95438cb3e83"
-  },
-  {
-    "bytes": 561447,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "d39f833825190550def3a28d87b6f66e929773d485c7f599e04798b157507e4d"
-  },
-  {
-    "bytes": 624798,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "6fb7448421bb442d17a60ac71c5b07e898fb9ef31cdf96d12d08a8438a2a5701"
-  },
-  {
-    "bytes": 716955,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "c20a16290a0fa5ec3a9012654ddbf009a18ab54c829e0f0d6607ac229cf7d11f"
-  },
-  {
-    "bytes": 574476,
-    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "b22644bc7d21a62ed38ded75f937a6d3c0573a2b4d3a09ddd78b1ff65a7d7671"
-  },
-  {
-    "bytes": 550088,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-01.json",
-    "sha256": "82f3cbe158955cf27912f250a3935fac5780d91b05d76d1c1d15a30d2dfeb13f"
-  },
-  {
-    "bytes": 515828,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-02.json",
-    "sha256": "67a255051cb8e226cac39d4a68352cc8c2581b9d37df2d79236decb9b662dd5f"
-  },
-  {
-    "bytes": 431878,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-03.json",
-    "sha256": "28b2eb082583c7a75cab0968a61381ae512f280fcfab19ad5467f06c81958ba7"
-  },
-  {
-    "bytes": 410736,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-04.json",
-    "sha256": "de404587fc334e5557456306fb573558ae0b7bc2bd5e7428db40ac7c4ed7c8d3"
-  },
-  {
-    "bytes": 570797,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-05.json",
-    "sha256": "e405bcb398d9b1239c45875d10705c6a96dc397c126290df7650ea97912d4932"
-  },
-  {
-    "bytes": 440019,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-06.json",
-    "sha256": "48b71ed2e0305eb190a83a892e58151edf1a1464289c2da37a4def43213e0729"
-  },
-  {
-    "bytes": 466206,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-07.json",
-    "sha256": "c7f4f273d46278cb14631abb54f3ffd9561a0cb07026ba3262201bca74e21f2b"
-  },
-  {
-    "bytes": 470244,
-    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex-bedrock/trajectory-trial-08.json",
-    "sha256": "78ca78a9d7cb15a403eef1491e5ef2b6ccbddcc69167d85640cd318a37289463"
-  },
-  {
-    "bytes": 593381,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-01.json",
-    "sha256": "0e1108da87aad46c03bdafef12c233aef7b1d973d253789d133f299953b92170"
-  },
-  {
-    "bytes": 774520,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-02.json",
-    "sha256": "6b1dc88d2625a3117168fb2779a54923975164f7c0cfad4513dd11593433635a"
-  },
-  {
-    "bytes": 813921,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-03.json",
-    "sha256": "a3ec10e6f39c9bebf59cef9946ec58fd9ff1f5a744061b52147f5006e935bc51"
-  },
-  {
-    "bytes": 775542,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-04.json",
-    "sha256": "1bf877b1f14470ea615b8346ee11cf0952c2e889a933941e39d9263238b4423c"
-  },
-  {
-    "bytes": 764302,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-05.json",
-    "sha256": "412b5f2eab39d83d083276f7dd3d09928020aede0d1dcf8a3e5213f2bcb0fd6a"
-  },
-  {
-    "bytes": 911703,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-06.json",
-    "sha256": "d6b48cde9febf41102a95a877e5f3037e407a81c01573858b9299b499ab6ede9"
-  },
-  {
-    "bytes": 802200,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-07.json",
-    "sha256": "9be5efdc8602e76cea8b0b2ae6c086a9bde0e9b7a9fa1ac3d3e6813825ede51d"
-  },
-  {
-    "bytes": 932540,
-    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build-openrouter/trajectory-trial-08.json",
-    "sha256": "4c72c68cfa42d9e0cf3d3edef376f4273568bb94d79c98afa6b48c397fadf014"
-  },
-  {
-    "bytes": 457970,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "9d2c2406b69311900f35fbbacaa1a141423ad349407e5a3e7313bc6393e77bad"
-  },
-  {
-    "bytes": 433731,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "88796c2f2d72251a211fd78fe0ec71152f05c8e2fb024ebafa63c45c1f56adb3"
-  },
-  {
-    "bytes": 458556,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "e83c59c40bb9ec88bd3c7f9c2e4f5adbee4fef741120e04c8d70161886e539f5"
-  },
-  {
-    "bytes": 467312,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "a4692c49705c006c1e53da5a06441e0c6558c82d7916f5efd41f74d1e95bc024"
-  },
-  {
-    "bytes": 450537,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "0d9885b0097cc166dd84cf992e0e68c98f0e83ef92b435be0ad716675b13fcf3"
-  },
-  {
-    "bytes": 459190,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "9354d9936214959c6e2d47f135881677cc9cd82bc794a0f7468f15b9a73402cf"
-  },
-  {
-    "bytes": 479179,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "aef7832ffffb5a0b3340d810c1ce7d27efae972be2f0b043ae4e5cec0daa4d50"
-  },
-  {
-    "bytes": 499096,
-    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "d04b4bd7afd124d2f4acb7e00d96c5aab38cbb950820985eee1945ea14e6fbd1"
-  },
-  {
-    "bytes": 1739606,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "63c37198688dee362297c91f5b3f3ed854d1f8d2b30b92f3e5290f943e129188"
-  },
-  {
-    "bytes": 1759831,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "20918469570b99f5f31576042b628355f69ee54f16fede6c06ded598e3093483"
-  },
-  {
-    "bytes": 1835102,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "dd0356c41f81e0ab3bdc4f539835b10081430f580b4d597b1c2ad734138a7b30"
-  },
-  {
-    "bytes": 2209209,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "bbfb37a66e4593185abeb24a5e4fde7ad4be84ad081e30365364eefcb613a2f0"
-  },
-  {
-    "bytes": 794273,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "98c4ad722c387002dede8f1a8670d252e65d3b57b8503e9b50798fe47aff33d2"
-  },
-  {
-    "bytes": 1770563,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "ac795ae5657252a3430501bdb1379d8fc95e1e7e96236dbde241503b8adbdfd7"
-  },
-  {
-    "bytes": 1694363,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "bf642dbe50f5d5b84b6a9d8a4c33a121bd4b2f03b6389495501030d4dc231d2a"
-  },
-  {
-    "bytes": 2067342,
-    "path": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "033ee00ffbb1d001e274c6261a2d6592547afec3bf91d237d166c261fc8fc986"
-  },
-  {
-    "bytes": 1349969,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "d8937bae9ab9eb8f35bdb44ea5e669baa7a8109e6c929dad636919a67c7d8202"
-  },
-  {
-    "bytes": 1813994,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "49c75d7986d929cf144da84a8296a49f104ee195a1a008d833f3221f881a8196"
-  },
-  {
-    "bytes": 1875698,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "226109c287edb64c34e55f82ee901a8ff7b17b04c40f6ed27399e43a62422050"
-  },
-  {
-    "bytes": 1287934,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "8513d21ef712a2011ba79609727b7b5275b16e1b67c823597efe18fb28e71447"
-  },
-  {
-    "bytes": 1840002,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "c14fde94ccace0789419e754a55166f11538ca82bfcd8364bc7380a080634eb4"
-  },
-  {
-    "bytes": 1846463,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "8b4b3ee88ce4569708f3ef79193ff4b49053c18a386027d2e0cab2174f03777c"
-  },
-  {
-    "bytes": 1193847,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "f0d4c40c320ea3cfda70a87a0cc2c6b303ab83981c5358b9801b96a7f1ee9e87"
-  },
-  {
-    "bytes": 2000349,
-    "path": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "4bc7a6b9210577396a06c61f36c25b4387414bc04141655ca80ee2068f839826"
-  },
-  {
-    "bytes": 633605,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-01.json",
-    "sha256": "94d0d3cd18577f02402e06e26241d340953b5b0cadf8214d0862960df53e73c3"
-  },
-  {
-    "bytes": 559125,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-02.json",
-    "sha256": "93fc0a3ef0ceb63b5846079623f0c2faa813413586dabf5d5e8aed9624e318c7"
-  },
-  {
-    "bytes": 660723,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-03.json",
-    "sha256": "c9b64a764bd4ac01c329e0f71c3cb0b6898a185fea99fd4bad33e48bcb420a44"
-  },
-  {
-    "bytes": 546609,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-04.json",
-    "sha256": "c9d4914033dd12c7e403dbb9fe46d804284311a11673c2a10acc5b6b22830444"
-  },
-  {
-    "bytes": 637029,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-05.json",
-    "sha256": "98a3b3205fd5c94c4a1a6073c2b672a32da2675bd0624f3e5ef8d49d970747d6"
-  },
-  {
-    "bytes": 609628,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-06.json",
-    "sha256": "0cddf6e9e38504e50ce315ccd976724724c69be8c4a0f10e9349eb0637095444"
-  },
-  {
-    "bytes": 619721,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-07.json",
-    "sha256": "f2a338e1a3fc7850e4d8d29b507aea64d310e32282b9392a0b1ec349c95630df"
-  },
-  {
-    "bytes": 619496,
-    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-08.json",
-    "sha256": "0bea43c0a03f580c0a0adfaef2e0c9b76810c57f06840e874e29e4ca267d5572"
-  },
-  {
-    "bytes": 906189,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "e57928b6baa8e4f67404beddaacf1d1f837ef972eba99ba03764dfa684add2d6"
-  },
-  {
-    "bytes": 1020826,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "fb7b64660dc8edcd4f71d5536d8dea88d06b1869ced9800fae7e399cb00cc681"
-  },
-  {
-    "bytes": 916225,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "11bf2b7532e61b1ae8a6994c7ec19be2661613daab60b24cddf0965397a75a04"
-  },
-  {
-    "bytes": 1202888,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "28bb866dd68c5f28826d37f19931b98afdbbe2cfc16813bb3e6a86e4cbadb979"
-  },
-  {
-    "bytes": 890703,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "da68c506cb0ec18c78333131f64c17630da90475b3c9703212254eb222137539"
-  },
-  {
-    "bytes": 760183,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "abee0784c81cfb1576db99ff3b17a66dde7c5966f70fa43c4649bc5107df1d09"
-  },
-  {
-    "bytes": 665726,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "0dcf743de48ed75c9873fb559e9c6b66302112fa4bb4d61e8aae3a5b26fdbc13"
-  },
-  {
-    "bytes": 670337,
-    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "f2500b8a349d5653d37c704221006d54239ad4b8ec348b721cc0df4a15a7b43e"
-  },
-  {
-    "bytes": 540388,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-01.json",
-    "sha256": "6911bc86c8c6d0045c3381daa1e451885e6ce80f2d8a602c4a025b3ea85c2720"
-  },
-  {
-    "bytes": 578367,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-02.json",
-    "sha256": "3dec0c8a003b1bacfdaf543690823672143f6b4e8e52d706592742b97a38a808"
-  },
-  {
-    "bytes": 634650,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-03.json",
-    "sha256": "73200cff7a8d27555bbac05dc3023190638e24ff7f15be88a85a3112e3f9ccdd"
-  },
-  {
-    "bytes": 573002,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-04.json",
-    "sha256": "437669f40cce04389cb740a732fe860863f8c69c06c74922bf43b303c7daf3cb"
-  },
-  {
-    "bytes": 559232,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-05.json",
-    "sha256": "f700f8472bd4216c1307da25c6a741d9a1df9771b65897e3b842499a83b642fe"
-  },
-  {
-    "bytes": 534653,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-06.json",
-    "sha256": "9b2c73cff7c3b5da379d56725588d410a89715aba971acd5f094f73240d3996a"
-  },
-  {
-    "bytes": 495582,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-07.json",
-    "sha256": "2b18f52d811bff200008eaa109fcae83c86b8e350752fc2473eeb6461c9d8762"
-  },
-  {
-    "bytes": 556720,
-    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex-bedrock/trajectory-trial-08.json",
-    "sha256": "3351f0c85cf5e034dd9b6503287b4f688527d69219ebf6df088e88299fe86d7d"
-  },
-  {
-    "bytes": 578658,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-01.json",
-    "sha256": "cd7128b5b53c0facd8b78b15fd504dd4b4beb88c57273ef60c34249a37bf0197"
-  },
-  {
-    "bytes": 838794,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-02.json",
-    "sha256": "57527a2b4a147f0e1f002b330f7c0c2c2b9f355f157ec48c137de1bbe63c9e1b"
-  },
-  {
-    "bytes": 819197,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-03.json",
-    "sha256": "5cd95e6fd3dff7574ace18cfea0ec4d215577797cc0f04dac328e0c25d7b384b"
-  },
-  {
-    "bytes": 1018781,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-04.json",
-    "sha256": "715e71c8be47a8845e2641f65539446c033e3cb065e562b1ab89a57adbee5f49"
-  },
-  {
-    "bytes": 538785,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-05.json",
-    "sha256": "5dcbd54b4ccdd45d6db5bf8033af4152fa9a6c90333e2898813041131fde9de6"
-  },
-  {
-    "bytes": 627641,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-06.json",
-    "sha256": "00c09b3d0248264acdad8cf96e94e0358e5ad57d24aeb2cfdd0a2cbe4b88e2b8"
-  },
-  {
-    "bytes": 469346,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-07.json",
-    "sha256": "e436c085a2aa2d65b8dfb11f027bad88044ec77eedd1888854493e8bc1b256da"
-  },
-  {
-    "bytes": 1030869,
-    "path": "trajectories/11-store-cutover/grok-4.6-grok-build-openrouter/trajectory-trial-08.json",
-    "sha256": "e71a6c10e36273700195367a03b1db6b1a46b5097cd2b0bb7f9d44f8131212d7"
-  },
-  {
-    "bytes": 397809,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "66c6ad712034a6421380de4878b769289779bc2362b69e0da700a3d733a18b70"
-  },
-  {
-    "bytes": 446252,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "25d63cc45ad2d5065930ac0a84ea0aa5a28c4a5af238bce86fb857b3844943db"
-  },
-  {
-    "bytes": 446418,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "0b5921193ca00b10404e6c6b5007b016479bab83ba170d8c0bffafc92510a7e9"
-  },
-  {
-    "bytes": 422954,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "44abc6889aaf2ff4e46ae15ad600011f5d4f03994f4c0ede452efeee1aa60f38"
-  },
-  {
-    "bytes": 429002,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "9e3d9f83c73c9666f3a8b7d965d52a3185e5ff6d51e65d82e79a30fb333d21ee"
-  },
-  {
-    "bytes": 425893,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "56385b929f0bac038745ae82201e0801331f8afd8df91cc0ac2003ef629f6c20"
-  },
-  {
-    "bytes": 448269,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "54bec913742e6e4d725c8fee225e291aebced748fe7fcd871a0e267a81ace76a"
-  },
-  {
-    "bytes": 430218,
-    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "a3c2a97f3e61ed95f0e223a4e60ade0c7afeccfdfebb1955317e6ee3fa07ba0a"
-  },
-  {
-    "bytes": 3185137,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "045c0390791674ce4950906ec8035cff86f4eac1d31bbde93711aca956082d0e"
-  },
-  {
-    "bytes": 3798072,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "3b8609b5f13fb8072b1161ee7d2fa90f0a219fada6b5fadce0a187fdfbc3b68d"
-  },
-  {
-    "bytes": 4640005,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "ef5106e06772085295230f9b6e2022f93b21bb505b878749a19c191af23e5568"
-  },
-  {
-    "bytes": 654167,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "ed573f7f4d81b99e3173ec9857a2ce55042b124eadc37b9178aaf944f696a140"
-  },
-  {
-    "bytes": 1293820,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "55ae7ceac7318a6cc7eccaadd9701dc5c81531bc8317aa9a295a5b604d3778a7"
-  },
-  {
-    "bytes": 2130008,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "baf2eb05145a97b1a776364b0c1f1dfa539719f812d64ec5619dec972a430730"
-  },
-  {
-    "bytes": 2087508,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "9b16e85e1418f9bf454fa82390b44df519cb97b6f4445d06888927f05edff1dc"
-  },
-  {
-    "bytes": 4705309,
-    "path": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "cf539781f62d92fbc8ca631057424bc9b0bbe36731c82767314306f1ff2c8942"
-  },
-  {
-    "bytes": 1287403,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "d3e3f2feebc0be3236da589fc2f98c39e0ff25b7c427e11ce2bb1514c2871397"
-  },
-  {
-    "bytes": 1915095,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "22b0c6a9a7b68330650bd730b3b1cfdee4b29b4e65901dffa800d44b2a5d1ded"
-  },
-  {
-    "bytes": 1565356,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "0a51ba24fd32f619129ceeac47272be6fb44c05c6ae9c290670e3b81afcc5f90"
-  },
-  {
-    "bytes": 1853973,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "d58a467b5e8eb4baa1d8ccdda3d5b48ae8f5d40f062f227228fed768c928bd87"
-  },
-  {
-    "bytes": 1315751,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "d16feb5b9d89afcb9ced2e58ef2f2846f957fb8f4dbbe6e859d877ad6a22c29a"
-  },
-  {
-    "bytes": 1102246,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "57eee27fe968285354387ce86426c524b4d3a582590c9ced346e83e869368383"
-  },
-  {
-    "bytes": 1358983,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "463154154073c7eac5a6dc36834224e904697a9da6cee275b557e8dc8d672641"
-  },
-  {
-    "bytes": 1653768,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "05b2557a054ed3ee6c16bea16c417c7eebe7cfb324732f631e80f01b437f4c57"
-  },
-  {
-    "bytes": 448479,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-01.json",
-    "sha256": "43d06c0d664413a892f3d5db4fe886512766a4a295fca74b8d9c8069531c8473"
-  },
-  {
-    "bytes": 524833,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-02.json",
-    "sha256": "9595565580edfacc2ef9e74126008357b5e094de96d9f8b55365f1ffa0ef0315"
-  },
-  {
-    "bytes": 458853,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-03.json",
-    "sha256": "130c235ac355e8089932833301a30891af277962d47a0804358c6e577f914a9e"
-  },
-  {
-    "bytes": 584123,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-04.json",
-    "sha256": "48cea8c6bce4cb1f59ad4ed1753ea31b868388d34d3face377f2fb2f522dcd6c"
-  },
-  {
-    "bytes": 475301,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-05.json",
-    "sha256": "f0e0f8349d1f3715d4e2d6e8018c60da7b6d512f5f5466a44ac34af40e0fca38"
-  },
-  {
-    "bytes": 658903,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-06.json",
-    "sha256": "99649c2fa9fe67047a6408aef09631f5185de34acc6e5b6d797dd42c756e234e"
-  },
-  {
-    "bytes": 445734,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-07.json",
-    "sha256": "228b79989addd904fc1292f412bf7d65632862aff614bb8258e5632960f191e0"
-  },
-  {
-    "bytes": 522801,
-    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-08.json",
-    "sha256": "1600ae7c7ac9bad45e20a25040620f31b17f289a97af5cf9d6063c9c6df99066"
-  },
-  {
-    "bytes": 644455,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "d2ffe1ac61e378d2c573be60d721cfa2a066f6fbf02e5619e7e088e7a90e16d7"
-  },
-  {
-    "bytes": 695635,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "4c7cbd963e1e3323fc62d39ba293ffde7c3734be69dc94ab164a7de10ba87775"
-  },
-  {
-    "bytes": 722087,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "35b546e4a212166f0e9ada071342a1292b3834c78692dacf09c80b1aff703088"
-  },
-  {
-    "bytes": 690068,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "6ff7d237218b6a99519d7fde758e3830270fe7702f54ec1c508a061340e805ab"
-  },
-  {
-    "bytes": 928240,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "27353ba3b707c42256cb0a36d89248117b3534c2868d695b3877a161a70db7e9"
-  },
-  {
-    "bytes": 885340,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "ca272371e5d0e38f6a3083467ed409fc37d31f20f06bbb8c87faa2ad65e7b785"
-  },
-  {
-    "bytes": 814052,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "dbc4bed525b2a2eeb0da854f77cd0a20be60d3b59c3afdde44283318422fcc63"
-  },
-  {
-    "bytes": 846855,
-    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "8d0874b0a52839934bd5c4de688444f67d309a4acf91fbad782c23ce19eb748f"
-  },
-  {
-    "bytes": 460498,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-01.json",
-    "sha256": "0959cf73d56eef1ca359a8450758a0731449ab83f45b949f7f9a799ac96a41c3"
-  },
-  {
-    "bytes": 484920,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-02.json",
-    "sha256": "08fb799478b11af5e0d27b7126c5e1e9c81d4859b07a1ff1c252cdab86572bbf"
-  },
-  {
-    "bytes": 346413,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-03.json",
-    "sha256": "97814863140ce415cdaff95b9f77fa28600c0fafe93827b5a7a5f20d92b1ae9f"
-  },
-  {
-    "bytes": 483604,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-04.json",
-    "sha256": "2fde947fc7847e19a8fae6e31baa54135105bfa8dcabb8d6ce955ec870c7b06d"
-  },
-  {
-    "bytes": 477899,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-05.json",
-    "sha256": "92d925416b931c3396031382e10b06b457bdc0b0792ceeb370c9f8a621c2429d"
-  },
-  {
-    "bytes": 519342,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-06.json",
-    "sha256": "6e3136d5ab26da6536a03c95a1576ea47288666697dd5a66c48d5670c7919ea9"
-  },
-  {
-    "bytes": 508252,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-07.json",
-    "sha256": "e464e5327152ecb8fe8f3319d7f92feca9a09dfd3466e85d0c854b26164c3571"
-  },
-  {
-    "bytes": 473645,
-    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex-bedrock/trajectory-trial-08.json",
-    "sha256": "ee4b1dfdd2dddfc63578b35d3bcecc05cb9ad9e94fded04b0e4a7caa96b456f8"
-  },
-  {
-    "bytes": 557475,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-01.json",
-    "sha256": "97293cb4a0694fb88fac9d379876e758193182e4faf979cf3431eee1018c4730"
-  },
-  {
-    "bytes": 599743,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-02.json",
-    "sha256": "78e7bb2e606f121692f305ba00d15d3204ae3e84a5e599cc8fc3492d5a8836e6"
-  },
-  {
-    "bytes": 514857,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-03.json",
-    "sha256": "482d41956c29083274c4f2324dadcf709b1a2d0adff1b583f69baf4de3a5d3e1"
-  },
-  {
-    "bytes": 802752,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-04.json",
-    "sha256": "17d6bafcbfd578ecb22ea84d5ac2cfa8a6be366ce88d27b49c33aa8f293556e0"
-  },
-  {
-    "bytes": 584685,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-05.json",
-    "sha256": "42585b43889f776582e088bd904e44fccaa6eb5609743ef39f0aeedebc34d584"
-  },
-  {
-    "bytes": 427464,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-06.json",
-    "sha256": "86b0784d1ca0569b88579fa7bc7e8736e36a3514782ba5995d1bc8bddaddfe69"
-  },
-  {
-    "bytes": 927405,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-07.json",
-    "sha256": "302667b1fdde081ccc3d1903980a042f6bba9a94ec0ba593c4b51a59243280d3"
-  },
-  {
-    "bytes": 1034271,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-08.json",
-    "sha256": "f4cbd3659850385d26c52aa4e3b817490e14656c22238ebf50483c69ecae6053"
-  },
-  {
-    "bytes": 420831,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-01.json",
-    "sha256": "bac36ef3f27b7a585e47211ce03690143b421db6ed70dd758e15b1262462ddfc"
-  },
-  {
-    "bytes": 411026,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-02.json",
-    "sha256": "011c867d63eff7ef5d0ca599df5a6c0d9e39791bc44438b38153a00ee31be1b9"
-  },
-  {
-    "bytes": 398725,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-03.json",
-    "sha256": "4c8b2eb5932a2963b1f96f68f0be99db218723fa5c5a58704ed2792cd21dbd3c"
-  },
-  {
-    "bytes": 371425,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-04.json",
-    "sha256": "d9af61a45f24877b272053d13d0de1743e61cd4ba2f44a8fe0c22cc4f22ff737"
-  },
-  {
-    "bytes": 439617,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-05.json",
-    "sha256": "9b6a0c6e48e573b45fef083480021b134d2fad1813f3e207e6b5fe9cd891fddb"
-  },
-  {
-    "bytes": 416709,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-06.json",
-    "sha256": "6682c88477455956f5e54950d8edc93b9075ffaa8a81380f5d08c0ac648c7da3"
-  },
-  {
-    "bytes": 404659,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-07.json",
-    "sha256": "71366bf22693c24a88b37a7881200887a46777c188fd40aed4b77b358ba17e39"
-  },
-  {
-    "bytes": 387759,
-    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent-openrouter/trajectory-trial-08.json",
-    "sha256": "86aebebb17d36c466e506718d6d57f48988045e165e0aaa7b799505333343873"
-  },
-  {
-    "bytes": 3751657,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-01.json",
-    "sha256": "48187b76cc49a484eac69e9a4b94d66a1f86964fc562725faeb25fba3706cbec"
-  },
-  {
-    "bytes": 2004737,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-02.json",
-    "sha256": "f0ed394117e048a9a5c483819a1231b81b4bc963ed9e8686f3f3b725367037cb"
-  },
-  {
-    "bytes": 2337749,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-03.json",
-    "sha256": "ae3da095ce0ab6e369f5ca4afba609ebe7c38fd88e05334f8c486e7860d4afc4"
-  },
-  {
-    "bytes": 4650931,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-04.json",
-    "sha256": "95ca71bb8d10c09e8eabe2f2a40141b0f735693a7d9edb787cf1e942a3c9b84a"
-  },
-  {
-    "bytes": 387724,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-05.json",
-    "sha256": "13c8c6f383989cf7c03874c29dd5625589bb8e87306797409ba51786506ea7df"
-  },
-  {
-    "bytes": 4138957,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-06.json",
-    "sha256": "0a14e95a1cfc8de8ab0d52cd6bb8662ddc8667f9800681d2381add1254d5f255"
-  },
-  {
-    "bytes": 445833,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-07.json",
-    "sha256": "ba962707659521bd8cec7294dac3822992b6ed77302c74ed8c586b905751ad25"
-  },
-  {
-    "bytes": 2701051,
-    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-08.json",
-    "sha256": "51ff6dcd4015a954ac95a3e3c25e6c76760138171e6c44e3abd0d716b31ec233"
-  },
-  {
     "path": "HANDOFF.md",
     "bytes": 2220,
     "sha256": "1c654d5da36b1b3fa103c120870d22fa3fece04b63ade68b7ecedd7867caa59c"
   },
   {
     "path": "analysis/README.md",
-    "bytes": 31525,
-    "sha256": "62be24de0efc8f64accc0a767f75096c3990770ae004f6075b42ee0571d9902c"
+    "bytes": 31205,
+    "sha256": "77a643de9528ca97b2e55f30c2e2386ac66ee72a2d3ddf50b5298637b775c77a"
   },
   {
     "path": "analysis/admission-review.json",
-    "bytes": 7799,
-    "sha256": "51693d22fa1eb60bf9ce1af3ef8aeaa3f592b57e02e1050cd4b0a9e65863d8f8"
+    "bytes": 7740,
+    "sha256": "6ede2f462672c73916d5c3445b156df251c21440b50cdcd407c05bc2f16c638c"
   },
   {
     "path": "analysis/cutover-replay/README.md",
@@ -14136,8 +12736,8 @@
   },
   {
     "path": "analysis/fable-failure-modes.json",
-    "bytes": 128436,
-    "sha256": "5b576518d7a43a48fc781d368e3fc60d12f14089929772f13a1dd02840f1f9c4"
+    "bytes": 128116,
+    "sha256": "cb17af281fe009208d0fc51dd74b991ee0ffa1b8de59aae0405c120ea8ec6d48"
   },
   {
     "path": "analysis/recovered-evidence.json",
@@ -15058,5 +13658,1405 @@
     "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward.json",
     "bytes": 18,
     "sha256": "a3a4b511aa52a19190b005a0ad549a13084db7a0c344c7d864f4798dd79301af"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-01.json",
+    "bytes": 2103178,
+    "sha256": "12e084a4f73881e8863e53f29434ae23bee35c09aed492ea17464f3f2650f24f"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-02.json",
+    "bytes": 1332998,
+    "sha256": "e8f29721157f9dad3e001bc45e79890526166dde8a68b21c6ddc993fab4bf2c8"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-03.json",
+    "bytes": 2085166,
+    "sha256": "49f5a0711295f5e273a8fd388f84d43d6233edb5335aa9959b5982a940f86e9d"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-04.json",
+    "bytes": 1910017,
+    "sha256": "5b92dbe66f13e4dade8c3a7bb8e7e7dc8f1020a1b6b4dacca366452cc515498e"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-05.json",
+    "bytes": 1721165,
+    "sha256": "653095cfcf8cbb8c8d1acc3b054dbafcf0a79965f5d17d853331f55e5b439ae2"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-06.json",
+    "bytes": 2085598,
+    "sha256": "52c455981d3030ac4e59648b710c408fff5b2f879d4de137f90f3dc2832ab503"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-07.json",
+    "bytes": 1857330,
+    "sha256": "7c863551ec6ebfda8e90c103d43dba275a2ce0e4fd72b0e23d0ea050efb22749"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-claude-code/trajectory-trial-08.json",
+    "bytes": 1960092,
+    "sha256": "eb4595e47e9d5c7644fff02af9374ea948157c0482e441cbbc059ccd44130e1f"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 502799,
+    "sha256": "3c68225e335a21d99088ed467261215597dc92720dc4d3534f3ccf2fdbd8c416"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 625042,
+    "sha256": "97c0c475f122ab68043208899495e702e1b3adb71d38ab02911829283962f69a"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 566290,
+    "sha256": "c78d8b7c684b99757eed24f1f4d4e902cfb7ae9e3ad4bf2260cbf099205a7729"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 594671,
+    "sha256": "043b01fb6ce03d2f96a21ceee89cad159bb26af303b96d874e2510dcc4e8e339"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 553028,
+    "sha256": "46604465e7a0753b1f03a3f7ecbd1fac305cb8d38cd6113733fd4733c681f551"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 596438,
+    "sha256": "2a6e3a141cdfeeefcf5e3f1ed589efd380da9ee39a15a79be54fe6d0067be08f"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 622682,
+    "sha256": "57f99a39c6cbebaf36b14e4d3a73e629a7612d27fa8ec852879b2fd5a00f1716"
+  },
+  {
+    "path": "trajectories/02-recurring-events/fable-5.1-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 670845,
+    "sha256": "c131b1e1938beffba6eadec99e06dfe5052f5ddc41c8d8edde1dc91a97d66350"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 702704,
+    "sha256": "98e140e1a71484fef5ab3c45637e25acabda76fdd7693b64b9736d2f85a75fe9"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 931297,
+    "sha256": "eea494003a6ed0668c9d858e6b22610a85dd6d236a30c0adae8c9e85d59b240d"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 833800,
+    "sha256": "9617f2cb22477cb36835ce21ad7d77b05389964a0b2e76f25dba43afa247138f"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 791286,
+    "sha256": "808916d5045f147618d2c33c5d406316df25717d3a197f9e26398649b2715ab7"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 888072,
+    "sha256": "f0d40711cb99b3257482026d44441f39dc555aaad7700fb4d19bb2439cd3006c"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 794076,
+    "sha256": "5877554c3819a50db2b18af484d6ec02f0a588e7db39b93a53c34280f14740ac"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 959779,
+    "sha256": "5d46deade9e66975e7ab866591f5ad24a3e888948753b6b09306c6754e2708f1"
+  },
+  {
+    "path": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 985847,
+    "sha256": "008c622f3bf432cec105156de4b21c7d2af40b1ad2f5d67f32c0a945c9e7c7ad"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-01.json",
+    "bytes": 682069,
+    "sha256": "8978e72e4bf8b8761633392d567cffaadd0791522894a01cba91b744db5c003a"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-02.json",
+    "bytes": 763232,
+    "sha256": "8cab8c4a21b70a445d922564a5b48dca3f0ea7fa71dde6235a1ddc63483621f6"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-03.json",
+    "bytes": 816822,
+    "sha256": "efd1e8f422c2bf260416688c968aaf6b16c11bcbce6cd606738060c4b28371bb"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-04.json",
+    "bytes": 755571,
+    "sha256": "e10351cb3580bb46968c9392be3715d5ec2c5db0a1a63bad8cab8c211d66b82a"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-05.json",
+    "bytes": 823660,
+    "sha256": "7de6a6d5c59ea6bcad15d4dc5cbd861a05e1d7deb3bdb405c0c0e2a84dc0ddf5"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-06.json",
+    "bytes": 764473,
+    "sha256": "579e20af70ce9cb8982dc19760bc460fdb8bd4f2b3e26a94df1bf292770d5d71"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-07.json",
+    "bytes": 882516,
+    "sha256": "4fc0773ebb2c823baa2a693c669aa6e5a4aa1efbe753a3914ebe0344485971be"
+  },
+  {
+    "path": "trajectories/02-recurring-events/gpt-5.6-sol-codex/trajectory-trial-08.json",
+    "bytes": 746846,
+    "sha256": "a53154688c4de844b03efbb264230321e187b1d339f926e2ff990139976d4869"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-01.json",
+    "bytes": 941495,
+    "sha256": "7c1f04637d7b9bbb7291a8e8e4bd3dd03570838f37d4454c0c12178c7ea60c7e"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-02.json",
+    "bytes": 1907672,
+    "sha256": "322ba62ff5d4619074aa0ff9359c189c8315a2c2731eed9d6a742414b160b24d"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-03.json",
+    "bytes": 2233999,
+    "sha256": "a2aea8c245fb7362fb5cc277d528f894cbd9e83964c93c982c45512ffe66ffc0"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-04.json",
+    "bytes": 850966,
+    "sha256": "5307dab716dcafb54dabeb35f19d8a9738cf956ac4adf756c9a3ab7b3427f792"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-05.json",
+    "bytes": 2289574,
+    "sha256": "9e0ffff5630bfeafac5b79d22a1a8fa7144db7c2e6f3ad67dab6afbb35601ceb"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-06.json",
+    "bytes": 1024209,
+    "sha256": "efa8ceba805b563b4bb142744080724347ede3475610541ed7c5eed7152fe36b"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-07.json",
+    "bytes": 693308,
+    "sha256": "4f899d5359afebed6eaf6fed6a3732da32c981b378158fc13149079cbfd0dfe9"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-grok-build/trajectory-trial-08.json",
+    "bytes": 781050,
+    "sha256": "657037070bdd47f9f6dbf022634f5783cace92bce4cfb14165abd09b0a1b00fc"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 617307,
+    "sha256": "0ac6c845917f830db5df330cd4170289f76eaea0a6b02a518fdc20c91b256c61"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 466834,
+    "sha256": "7d0284e76a0433c72cc0c3af4a81f8faee062a85c61acbabd116b77ab0a132f9"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 439628,
+    "sha256": "787ac7cd7854edde388a461812297386902330f28d7e5775405284c35f8af6bd"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 632200,
+    "sha256": "9bf588f3b3f686e69a907f064136fa8ad6c95a4f46ba44819f1efa6a93a4a945"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 442594,
+    "sha256": "81394a582e80320757d6e161109da1a3adcedf5baf83bccefbec5663b987d671"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 541500,
+    "sha256": "39ef205048176588b1a1df5b08d82cc01bf41950b9b230b428dafcce290798c1"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 457477,
+    "sha256": "8c74f61768642f5382cc4672906fb0abdc415c4836bef0f64ff3bda2f1d3ed74"
+  },
+  {
+    "path": "trajectories/02-recurring-events/grok-4.6-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 610792,
+    "sha256": "4076158ac6bcc97608adc8b2da396b614000bd3de6dc3fb7de674259f3ef4431"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-01.json",
+    "bytes": 3137705,
+    "sha256": "e395f16abadd434aed2907b496a4040e43e86b5b49f37e4c63df59f73efed4e5"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-02.json",
+    "bytes": 2929578,
+    "sha256": "542e8d1f8d3202c4a826c9f200297874748a0caf667e479ad775ee0f28a35d2b"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-03.json",
+    "bytes": 2628888,
+    "sha256": "8c0fd5ff2141d648720919a89b88642be941803849ff44791c438a859e35831a"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-04.json",
+    "bytes": 2735671,
+    "sha256": "2665cc33e8a636a8fb47a7a0d47efaf5a6ed6738def6a71986304c889cf3906c"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-05.json",
+    "bytes": 1744179,
+    "sha256": "5f37eda89616c3b5b8b3240ea70293bbbd09135bbbcc829d114eb91db85758d2"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-06.json",
+    "bytes": 2657493,
+    "sha256": "c7e4259ee2e4b7cc65531fdeefe320815b8321c7ddf9bf354a13da0a58880cf4"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-07.json",
+    "bytes": 2817849,
+    "sha256": "186c53611897ee5441a517160237df764ae0a1eace23a62b7dd9fee01172faa6"
+  },
+  {
+    "path": "trajectories/02-recurring-events/opus-5-claude-code/trajectory-trial-08.json",
+    "bytes": 2665869,
+    "sha256": "4497fea8aa3d8bc3318094785dfeb825007b2b9706339bbc046f3ccf45a50732"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-01.json",
+    "bytes": 1712205,
+    "sha256": "b25956815f664f0a479d373ba45b4506dcc7e699f8bedb1d774b8aba25f5a5c4"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-02.json",
+    "bytes": 2063371,
+    "sha256": "3da80d9ad6de8146a78ced060c20dd0101866e027a5a9005582f03c2f5e49cae"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-03.json",
+    "bytes": 1628698,
+    "sha256": "aaacaa6b196b8a230086644712c2839c7133183faf71552d659aa06c82ef4e5d"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-04.json",
+    "bytes": 1935316,
+    "sha256": "6226189ecdf9d8c966f05ede22eeea0246f5785a160b0d06c9aea6ec37356b76"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-05.json",
+    "bytes": 1698162,
+    "sha256": "5308d1d16b98ee019703868e7a3109d64f7eafc110465394c64cd5f3e5629aed"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-06.json",
+    "bytes": 1851634,
+    "sha256": "6e535f83bfa2c4f09da74e0c1964d90e814da5dab23bd4916bab22219880c2c3"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-07.json",
+    "bytes": 1182807,
+    "sha256": "7068a445b9f3bdfa96fa79b86f97ffcff290af92268dbc6e81f2f8d5cb2186a1"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-08.json",
+    "bytes": 1817509,
+    "sha256": "5d2a8c9811dfa0295edf73b29087df486adf5c0c6e9de278a981f65e271e84a6"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 409773,
+    "sha256": "125db23ce47001272c9fb32a4641a1558d9cbedcabab829a39a4d9998f4766cf"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 377627,
+    "sha256": "4455e3156e0d112aed7a121a2f7f012cc049be93d412f21c17f994cefc5a83f0"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 424084,
+    "sha256": "aab0c6811a73f17ccb28ae74427bdc0b83173d6bb0f06b6f90f58e6600efabdb"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 385233,
+    "sha256": "94a13b44f799fae5b084f469f5cc3f00bb22298b70351ff27e231d1a6e867434"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 341512,
+    "sha256": "5c316e8ab314e220d17188ffad54464b26f753a8ab52008db0fb1d6bb74a1fc5"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 345210,
+    "sha256": "aa3568259dbbba6d704986f8e2a929cac99d37533ded6550f6cb0587db1047c7"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 394405,
+    "sha256": "2f2c534bf6c0d98f3dd95d19128145f460dfec6a18003abf4a0184316dd53528"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/fable-5.1-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 377936,
+    "sha256": "365edc4f6aa5bd726cb90a27e34d51694174b17fccc3a7a92bbd1d36aef53c9a"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 660873,
+    "sha256": "52b770f5ab5d6e2ef4eb339011245a6624e019d8dacd17cc13d0ddbe73835073"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 492531,
+    "sha256": "e8bd6497c4794390209d6310e6394ec991f10a8d13e7da9668ca3ae5364c8a80"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 436370,
+    "sha256": "2ada7056e9ce2ddfcd1ec40327517743646007e631ede5ac0491f67349c33777"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 505698,
+    "sha256": "0a0b72d2c904ccba08ce4b7ac2ffbad8e805f8f63a90fe1a99044caab5993d4a"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 542912,
+    "sha256": "20fed3a809258b7cefbbb75df7b52982628724e596b71ad43fa582f15adf8456"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 387150,
+    "sha256": "ed051c553dbb5db1dfd9d167e6480bb0fd2d97aab94c28ad5ff3b2b83551ffc1"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 474754,
+    "sha256": "03c31c89ced2d2bed913ac643169d71f0899964319a712a77d42d249de812e54"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 453859,
+    "sha256": "dc91defeeeb938195aa6813285301b628762df6e1973c93aeaa13491a949e040"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-01.json",
+    "bytes": 468063,
+    "sha256": "1182081aca8bafeae5128b03ea33365f1f8155918767daf9c7eb45c0471b4933"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-02.json",
+    "bytes": 446109,
+    "sha256": "c77c48b93297e4c3f16360f96fe5c85d11c5db24999503d09180e0906e11ec14"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-03.json",
+    "bytes": 457325,
+    "sha256": "d87fb1f92c5432bdc974f8c54c781b512e9ea19f61aa93f940826ff8240eb60a"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-04.json",
+    "bytes": 395363,
+    "sha256": "05f65061967e54f678d9a047e4c35f0468b82aa73e32d005f01228108b483716"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-05.json",
+    "bytes": 471017,
+    "sha256": "ce3810e495a6f8da375377bc838100d15d4f4a9e0213dc67fdd83b6abd9c8d7a"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-06.json",
+    "bytes": 522426,
+    "sha256": "4c69b63e79e9797b7063929abe9518b60fab49af3ca15463f5e26389d80a254f"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-07.json",
+    "bytes": 460601,
+    "sha256": "f3c36a4044384deeb277a54725982008791a5d917b721fec814ff43e3bceae34"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/gpt-5.6-sol-codex/trajectory-trial-08.json",
+    "bytes": 509285,
+    "sha256": "5f0fbee158ff882eb793ee29fd756aa728f622789d99eeddd702a51d7c9773fb"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-01.json",
+    "bytes": 716382,
+    "sha256": "07806cd9310027aaae16aa4ef8370ea554c4253b57ec5c697131c6d303c70070"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-02.json",
+    "bytes": 679056,
+    "sha256": "679d604a747051b582a09806e4e9b23cab7ab7741de2751d0da6d66472f18b4f"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-03.json",
+    "bytes": 550886,
+    "sha256": "973ab3291d93620ce30400c4460c265a07466bd26db301500c7bb7f32e72517d"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-04.json",
+    "bytes": 589331,
+    "sha256": "4114028617dd16f3600e0bda85e2603b4073836f251de2569f68f31432108d99"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-05.json",
+    "bytes": 669345,
+    "sha256": "281ae3cf13fe97ac3ff385d7e21f522bb6f1de0d334abcfe7a75b27837049bda"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-06.json",
+    "bytes": 748580,
+    "sha256": "b1cc924a7b8d519c5cd92f069ec50d3c8168e1f55a920aad5bd9cabf9c10f46c"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-07.json",
+    "bytes": 547305,
+    "sha256": "0a5f30af352c02b016992b38596d225c0bdc3468850a6465cb0edaa0c2e5cbe4"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-grok-build/trajectory-trial-08.json",
+    "bytes": 638666,
+    "sha256": "422a2c8f08b705b444cc82a217071c57cfb29f63af950edd3eebe2771317f840"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 455421,
+    "sha256": "776088b3d4894b78b8f0c27cef2bd2840cfb38698057ab74f7aac7afb116240d"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 352075,
+    "sha256": "a33dd7a739d10d72ea4d0425a6cdc9ac57262ecb37a1cac3cd02e889a957fccc"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 404827,
+    "sha256": "fd60b9e47faaab022c634609c830e058a5099924d2c4f3d2a146e6bbf7b9cc50"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 447484,
+    "sha256": "078b9bb908c13e3ddc51bc450b5ba40389feb2101b3a98248c33aaf5f5433ee3"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 395513,
+    "sha256": "d6218426e988215e6720cc45e869856f1ffbd2b2e45e471d99ed2ab146693348"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 507647,
+    "sha256": "9abd4f328b1f5fb191a337d4606d8491d43a2141deea1f6f65c48fd1c79fa4d0"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 418766,
+    "sha256": "aba692e288eb52ae717b089769538a09c35f713d0619a555e341f899441425e9"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/grok-4.6-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 395903,
+    "sha256": "b113a738215bc09cc285de68c648455746367fcec6345289af886fd09ff7ecea"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-01.json",
+    "bytes": 1735576,
+    "sha256": "d7a44c8cd5d21bfba0af333992f0f3997ddef484e5757ab886cc71f21600a9d1"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-02.json",
+    "bytes": 1491355,
+    "sha256": "6b0d02b84229dd2a90f0e2d9878c36e34017cfa8fa11dc0e4c4f17b8c297f85f"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-03.json",
+    "bytes": 1304429,
+    "sha256": "2e33c748c9e440a09a9c65a14f4a82d823217985ea26c13762a610a7d4e46c04"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-04.json",
+    "bytes": 1540179,
+    "sha256": "9dbd253069303074c4bbac12550ebc33890b67a0003c2fa7819977fdcfbabced"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-05.json",
+    "bytes": 1780071,
+    "sha256": "a931dfb262ce41362a690b0516a00882d3c244d65fa9cd977c9a67f25874fea1"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-06.json",
+    "bytes": 1617819,
+    "sha256": "6a6c5ee778bb421f8ce91c46282af3201c3a0a47cfd4283a74e219d32c3d22b5"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-07.json",
+    "bytes": 1664162,
+    "sha256": "2fbb11399538ba450fa373fd0bcbd16f2c2c249530a52d54fdc1f71b33b92b92"
+  },
+  {
+    "path": "trajectories/04-draft-recovery/opus-5-claude-code/trajectory-trial-08.json",
+    "bytes": 1569301,
+    "sha256": "7a2bb71dd5e31334dc79975cf283d58a55f410e8bdc63eaa766aa8703112ff52"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-01.json",
+    "bytes": 996452,
+    "sha256": "fa1e69f351706200a659b0c7e97d77be8ff51a1e23b5015410d011d23517bcea"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-02.json",
+    "bytes": 1030466,
+    "sha256": "0e2098024e750c21e5782d9fe44a6256155e2fc1aa464cd4279ebebf00c6b4e7"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-03.json",
+    "bytes": 953078,
+    "sha256": "bf6e843edaee879dc36939cbcd1277bc4bc3ee61a8a738bf08c5937c4499ee34"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-04.json",
+    "bytes": 864553,
+    "sha256": "943df6cf8c548a78dd58442a4c0973c327a8e9eca37691ef19f1a27b2843f105"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-05.json",
+    "bytes": 1057183,
+    "sha256": "1383c85f4803dc86f6dffbe0f33a628722d5697982ea6cbeeec0b203578fd369"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-06.json",
+    "bytes": 1005892,
+    "sha256": "c5f1e17db91f9b6191274a92c106251628a0d1ce1cc08d7a7d3396dc76863260"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-07.json",
+    "bytes": 1040540,
+    "sha256": "201cd70f915fa7566779767a77c8eafa9754b210467d68031da69c5f7ebc5d8a"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-08.json",
+    "bytes": 1125230,
+    "sha256": "dae7595e6e97f81f576bca2276fdd31dd539037d06748488cd375dd9046a7d0c"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 381466,
+    "sha256": "1c8b722e8c37047e3f02da9f73e8202a5efb95c15201f97254fc6a848c491c91"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 391821,
+    "sha256": "56355d29fa432dc0fa8792d88047a12acf24a6039f889697518d7cae4a29c31b"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 365468,
+    "sha256": "f0ece049fb688d67c6ac3d5dd640108d034010cf3bb84082251ecc7cfc17ef87"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 407095,
+    "sha256": "1e5eaab868d155cb1be3a647986b2c6a8e6ceb2d9de146d814d2f61eeac2ffc2"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 369031,
+    "sha256": "112c87389868dce029543ea8bb79cc0a285ef8dac26c2add054b3a57a41f369b"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 406116,
+    "sha256": "0b1ada8cab7942cf201b8b9b6dfca5309456a14e3743cacce2d69a00486d725c"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 377312,
+    "sha256": "e6c9111d51265c307a78311281e7922a5443e45cf139d82d83541c2d7b1bd697"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/fable-5.1-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 380272,
+    "sha256": "792692672c66c26af6d5200fd66c5a31a7459502c866f502c14149154c3c68aa"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 533908,
+    "sha256": "52d78965013ef2f5a5d23c8f10883f679381e6a0d8c7bd90a315dbf7e3a475d8"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 638777,
+    "sha256": "b6087bae29ae10c441ad3de5ad46e1e9c98e3f9d311793140c89177939bd6277"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 623455,
+    "sha256": "c9b09e4dd1f24987c4805d172c01d0b0f885a749a18e8c1a0872909e4af561e1"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 578377,
+    "sha256": "eba3851daef6ac673126a9317b233a3649df1715c4e7b148896cf95438cb3e83"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 561447,
+    "sha256": "d39f833825190550def3a28d87b6f66e929773d485c7f599e04798b157507e4d"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 624798,
+    "sha256": "6fb7448421bb442d17a60ac71c5b07e898fb9ef31cdf96d12d08a8438a2a5701"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 716955,
+    "sha256": "c20a16290a0fa5ec3a9012654ddbf009a18ab54c829e0f0d6607ac229cf7d11f"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 574476,
+    "sha256": "b22644bc7d21a62ed38ded75f937a6d3c0573a2b4d3a09ddd78b1ff65a7d7671"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-01.json",
+    "bytes": 550088,
+    "sha256": "82f3cbe158955cf27912f250a3935fac5780d91b05d76d1c1d15a30d2dfeb13f"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-02.json",
+    "bytes": 515828,
+    "sha256": "67a255051cb8e226cac39d4a68352cc8c2581b9d37df2d79236decb9b662dd5f"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-03.json",
+    "bytes": 431878,
+    "sha256": "28b2eb082583c7a75cab0968a61381ae512f280fcfab19ad5467f06c81958ba7"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-04.json",
+    "bytes": 410736,
+    "sha256": "de404587fc334e5557456306fb573558ae0b7bc2bd5e7428db40ac7c4ed7c8d3"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-05.json",
+    "bytes": 570797,
+    "sha256": "e405bcb398d9b1239c45875d10705c6a96dc397c126290df7650ea97912d4932"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-06.json",
+    "bytes": 440019,
+    "sha256": "48b71ed2e0305eb190a83a892e58151edf1a1464289c2da37a4def43213e0729"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-07.json",
+    "bytes": 466206,
+    "sha256": "c7f4f273d46278cb14631abb54f3ffd9561a0cb07026ba3262201bca74e21f2b"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/gpt-5.6-sol-codex/trajectory-trial-08.json",
+    "bytes": 470244,
+    "sha256": "78ca78a9d7cb15a403eef1491e5ef2b6ccbddcc69167d85640cd318a37289463"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-01.json",
+    "bytes": 593381,
+    "sha256": "0e1108da87aad46c03bdafef12c233aef7b1d973d253789d133f299953b92170"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-02.json",
+    "bytes": 774520,
+    "sha256": "6b1dc88d2625a3117168fb2779a54923975164f7c0cfad4513dd11593433635a"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-03.json",
+    "bytes": 813921,
+    "sha256": "a3ec10e6f39c9bebf59cef9946ec58fd9ff1f5a744061b52147f5006e935bc51"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-04.json",
+    "bytes": 775542,
+    "sha256": "1bf877b1f14470ea615b8346ee11cf0952c2e889a933941e39d9263238b4423c"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-05.json",
+    "bytes": 764302,
+    "sha256": "412b5f2eab39d83d083276f7dd3d09928020aede0d1dcf8a3e5213f2bcb0fd6a"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-06.json",
+    "bytes": 911703,
+    "sha256": "d6b48cde9febf41102a95a877e5f3037e407a81c01573858b9299b499ab6ede9"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-07.json",
+    "bytes": 802200,
+    "sha256": "9be5efdc8602e76cea8b0b2ae6c086a9bde0e9b7a9fa1ac3d3e6813825ede51d"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-grok-build/trajectory-trial-08.json",
+    "bytes": 932540,
+    "sha256": "4c72c68cfa42d9e0cf3d3edef376f4273568bb94d79c98afa6b48c397fadf014"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 457970,
+    "sha256": "9d2c2406b69311900f35fbbacaa1a141423ad349407e5a3e7313bc6393e77bad"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 433731,
+    "sha256": "88796c2f2d72251a211fd78fe0ec71152f05c8e2fb024ebafa63c45c1f56adb3"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 458556,
+    "sha256": "e83c59c40bb9ec88bd3c7f9c2e4f5adbee4fef741120e04c8d70161886e539f5"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 467312,
+    "sha256": "a4692c49705c006c1e53da5a06441e0c6558c82d7916f5efd41f74d1e95bc024"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 450537,
+    "sha256": "0d9885b0097cc166dd84cf992e0e68c98f0e83ef92b435be0ad716675b13fcf3"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 459190,
+    "sha256": "9354d9936214959c6e2d47f135881677cc9cd82bc794a0f7468f15b9a73402cf"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 479179,
+    "sha256": "aef7832ffffb5a0b3340d810c1ce7d27efae972be2f0b043ae4e5cec0daa4d50"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/grok-4.6-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 499096,
+    "sha256": "d04b4bd7afd124d2f4acb7e00d96c5aab38cbb950820985eee1945ea14e6fbd1"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-01.json",
+    "bytes": 1739606,
+    "sha256": "63c37198688dee362297c91f5b3f3ed854d1f8d2b30b92f3e5290f943e129188"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-02.json",
+    "bytes": 1759831,
+    "sha256": "20918469570b99f5f31576042b628355f69ee54f16fede6c06ded598e3093483"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-03.json",
+    "bytes": 1835102,
+    "sha256": "dd0356c41f81e0ab3bdc4f539835b10081430f580b4d597b1c2ad734138a7b30"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-04.json",
+    "bytes": 2209209,
+    "sha256": "bbfb37a66e4593185abeb24a5e4fde7ad4be84ad081e30365364eefcb613a2f0"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-05.json",
+    "bytes": 794273,
+    "sha256": "98c4ad722c387002dede8f1a8670d252e65d3b57b8503e9b50798fe47aff33d2"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-06.json",
+    "bytes": 1770563,
+    "sha256": "ac795ae5657252a3430501bdb1379d8fc95e1e7e96236dbde241503b8adbdfd7"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-07.json",
+    "bytes": 1694363,
+    "sha256": "bf642dbe50f5d5b84b6a9d8a4c33a121bd4b2f03b6389495501030d4dc231d2a"
+  },
+  {
+    "path": "trajectories/08-envelope-intake/opus-5-claude-code/trajectory-trial-08.json",
+    "bytes": 2067342,
+    "sha256": "033ee00ffbb1d001e274c6261a2d6592547afec3bf91d237d166c261fc8fc986"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-01.json",
+    "bytes": 1349969,
+    "sha256": "d8937bae9ab9eb8f35bdb44ea5e669baa7a8109e6c929dad636919a67c7d8202"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-02.json",
+    "bytes": 1813994,
+    "sha256": "49c75d7986d929cf144da84a8296a49f104ee195a1a008d833f3221f881a8196"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-03.json",
+    "bytes": 1875698,
+    "sha256": "226109c287edb64c34e55f82ee901a8ff7b17b04c40f6ed27399e43a62422050"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-04.json",
+    "bytes": 1287934,
+    "sha256": "8513d21ef712a2011ba79609727b7b5275b16e1b67c823597efe18fb28e71447"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-05.json",
+    "bytes": 1840002,
+    "sha256": "c14fde94ccace0789419e754a55166f11538ca82bfcd8364bc7380a080634eb4"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-06.json",
+    "bytes": 1846463,
+    "sha256": "8b4b3ee88ce4569708f3ef79193ff4b49053c18a386027d2e0cab2174f03777c"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-07.json",
+    "bytes": 1193847,
+    "sha256": "f0d4c40c320ea3cfda70a87a0cc2c6b303ab83981c5358b9801b96a7f1ee9e87"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-08.json",
+    "bytes": 2000349,
+    "sha256": "4bc7a6b9210577396a06c61f36c25b4387414bc04141655ca80ee2068f839826"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 633605,
+    "sha256": "94d0d3cd18577f02402e06e26241d340953b5b0cadf8214d0862960df53e73c3"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 559125,
+    "sha256": "93fc0a3ef0ceb63b5846079623f0c2faa813413586dabf5d5e8aed9624e318c7"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 660723,
+    "sha256": "c9b64a764bd4ac01c329e0f71c3cb0b6898a185fea99fd4bad33e48bcb420a44"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 546609,
+    "sha256": "c9d4914033dd12c7e403dbb9fe46d804284311a11673c2a10acc5b6b22830444"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 637029,
+    "sha256": "98a3b3205fd5c94c4a1a6073c2b672a32da2675bd0624f3e5ef8d49d970747d6"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 609628,
+    "sha256": "0cddf6e9e38504e50ce315ccd976724724c69be8c4a0f10e9349eb0637095444"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 619721,
+    "sha256": "f2a338e1a3fc7850e4d8d29b507aea64d310e32282b9392a0b1ec349c95630df"
+  },
+  {
+    "path": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 619496,
+    "sha256": "0bea43c0a03f580c0a0adfaef2e0c9b76810c57f06840e874e29e4ca267d5572"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 906189,
+    "sha256": "e57928b6baa8e4f67404beddaacf1d1f837ef972eba99ba03764dfa684add2d6"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 1020826,
+    "sha256": "fb7b64660dc8edcd4f71d5536d8dea88d06b1869ced9800fae7e399cb00cc681"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 916225,
+    "sha256": "11bf2b7532e61b1ae8a6994c7ec19be2661613daab60b24cddf0965397a75a04"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 1202888,
+    "sha256": "28bb866dd68c5f28826d37f19931b98afdbbe2cfc16813bb3e6a86e4cbadb979"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 890703,
+    "sha256": "da68c506cb0ec18c78333131f64c17630da90475b3c9703212254eb222137539"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 760183,
+    "sha256": "abee0784c81cfb1576db99ff3b17a66dde7c5966f70fa43c4649bc5107df1d09"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 665726,
+    "sha256": "0dcf743de48ed75c9873fb559e9c6b66302112fa4bb4d61e8aae3a5b26fdbc13"
+  },
+  {
+    "path": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 670337,
+    "sha256": "f2500b8a349d5653d37c704221006d54239ad4b8ec348b721cc0df4a15a7b43e"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-01.json",
+    "bytes": 540388,
+    "sha256": "6911bc86c8c6d0045c3381daa1e451885e6ce80f2d8a602c4a025b3ea85c2720"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-02.json",
+    "bytes": 578367,
+    "sha256": "3dec0c8a003b1bacfdaf543690823672143f6b4e8e52d706592742b97a38a808"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-03.json",
+    "bytes": 634650,
+    "sha256": "73200cff7a8d27555bbac05dc3023190638e24ff7f15be88a85a3112e3f9ccdd"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-04.json",
+    "bytes": 573002,
+    "sha256": "437669f40cce04389cb740a732fe860863f8c69c06c74922bf43b303c7daf3cb"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-05.json",
+    "bytes": 559232,
+    "sha256": "f700f8472bd4216c1307da25c6a741d9a1df9771b65897e3b842499a83b642fe"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-06.json",
+    "bytes": 534653,
+    "sha256": "9b2c73cff7c3b5da379d56725588d410a89715aba971acd5f094f73240d3996a"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-07.json",
+    "bytes": 495582,
+    "sha256": "2b18f52d811bff200008eaa109fcae83c86b8e350752fc2473eeb6461c9d8762"
+  },
+  {
+    "path": "trajectories/11-store-cutover/gpt-5.6-sol-codex/trajectory-trial-08.json",
+    "bytes": 556720,
+    "sha256": "3351f0c85cf5e034dd9b6503287b4f688527d69219ebf6df088e88299fe86d7d"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-01.json",
+    "bytes": 578658,
+    "sha256": "cd7128b5b53c0facd8b78b15fd504dd4b4beb88c57273ef60c34249a37bf0197"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-02.json",
+    "bytes": 838794,
+    "sha256": "57527a2b4a147f0e1f002b330f7c0c2c2b9f355f157ec48c137de1bbe63c9e1b"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-03.json",
+    "bytes": 819197,
+    "sha256": "5cd95e6fd3dff7574ace18cfea0ec4d215577797cc0f04dac328e0c25d7b384b"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-04.json",
+    "bytes": 1018781,
+    "sha256": "715e71c8be47a8845e2641f65539446c033e3cb065e562b1ab89a57adbee5f49"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-05.json",
+    "bytes": 538785,
+    "sha256": "5dcbd54b4ccdd45d6db5bf8033af4152fa9a6c90333e2898813041131fde9de6"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-06.json",
+    "bytes": 627641,
+    "sha256": "00c09b3d0248264acdad8cf96e94e0358e5ad57d24aeb2cfdd0a2cbe4b88e2b8"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-07.json",
+    "bytes": 469346,
+    "sha256": "e436c085a2aa2d65b8dfb11f027bad88044ec77eedd1888854493e8bc1b256da"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-grok-build/trajectory-trial-08.json",
+    "bytes": 1030869,
+    "sha256": "e71a6c10e36273700195367a03b1db6b1a46b5097cd2b0bb7f9d44f8131212d7"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 397809,
+    "sha256": "66c6ad712034a6421380de4878b769289779bc2362b69e0da700a3d733a18b70"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 446252,
+    "sha256": "25d63cc45ad2d5065930ac0a84ea0aa5a28c4a5af238bce86fb857b3844943db"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 446418,
+    "sha256": "0b5921193ca00b10404e6c6b5007b016479bab83ba170d8c0bffafc92510a7e9"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 422954,
+    "sha256": "44abc6889aaf2ff4e46ae15ad600011f5d4f03994f4c0ede452efeee1aa60f38"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 429002,
+    "sha256": "9e3d9f83c73c9666f3a8b7d965d52a3185e5ff6d51e65d82e79a30fb333d21ee"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 425893,
+    "sha256": "56385b929f0bac038745ae82201e0801331f8afd8df91cc0ac2003ef629f6c20"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 448269,
+    "sha256": "54bec913742e6e4d725c8fee225e291aebced748fe7fcd871a0e267a81ace76a"
+  },
+  {
+    "path": "trajectories/11-store-cutover/grok-4.6-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 430218,
+    "sha256": "a3c2a97f3e61ed95f0e223a4e60ade0c7afeccfdfebb1955317e6ee3fa07ba0a"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-01.json",
+    "bytes": 3185137,
+    "sha256": "045c0390791674ce4950906ec8035cff86f4eac1d31bbde93711aca956082d0e"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-02.json",
+    "bytes": 3798072,
+    "sha256": "3b8609b5f13fb8072b1161ee7d2fa90f0a219fada6b5fadce0a187fdfbc3b68d"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-03.json",
+    "bytes": 4640005,
+    "sha256": "ef5106e06772085295230f9b6e2022f93b21bb505b878749a19c191af23e5568"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-04.json",
+    "bytes": 654167,
+    "sha256": "ed573f7f4d81b99e3173ec9857a2ce55042b124eadc37b9178aaf944f696a140"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-05.json",
+    "bytes": 1293820,
+    "sha256": "55ae7ceac7318a6cc7eccaadd9701dc5c81531bc8317aa9a295a5b604d3778a7"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-06.json",
+    "bytes": 2130008,
+    "sha256": "baf2eb05145a97b1a776364b0c1f1dfa539719f812d64ec5619dec972a430730"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-07.json",
+    "bytes": 2087508,
+    "sha256": "9b16e85e1418f9bf454fa82390b44df519cb97b6f4445d06888927f05edff1dc"
+  },
+  {
+    "path": "trajectories/11-store-cutover/opus-5-claude-code/trajectory-trial-08.json",
+    "bytes": 4705309,
+    "sha256": "cf539781f62d92fbc8ca631057424bc9b0bbe36731c82767314306f1ff2c8942"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-01.json",
+    "bytes": 1287403,
+    "sha256": "d3e3f2feebc0be3236da589fc2f98c39e0ff25b7c427e11ce2bb1514c2871397"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-02.json",
+    "bytes": 1915095,
+    "sha256": "22b0c6a9a7b68330650bd730b3b1cfdee4b29b4e65901dffa800d44b2a5d1ded"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-03.json",
+    "bytes": 1565356,
+    "sha256": "0a51ba24fd32f619129ceeac47272be6fb44c05c6ae9c290670e3b81afcc5f90"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-04.json",
+    "bytes": 1853973,
+    "sha256": "d58a467b5e8eb4baa1d8ccdda3d5b48ae8f5d40f062f227228fed768c928bd87"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-05.json",
+    "bytes": 1315751,
+    "sha256": "d16feb5b9d89afcb9ced2e58ef2f2846f957fb8f4dbbe6e859d877ad6a22c29a"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-06.json",
+    "bytes": 1102246,
+    "sha256": "57eee27fe968285354387ce86426c524b4d3a582590c9ced346e83e869368383"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-07.json",
+    "bytes": 1358983,
+    "sha256": "463154154073c7eac5a6dc36834224e904697a9da6cee275b557e8dc8d672641"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-08.json",
+    "bytes": 1653768,
+    "sha256": "05b2557a054ed3ee6c16bea16c417c7eebe7cfb324732f631e80f01b437f4c57"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 448479,
+    "sha256": "43d06c0d664413a892f3d5db4fe886512766a4a295fca74b8d9c8069531c8473"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 524833,
+    "sha256": "9595565580edfacc2ef9e74126008357b5e094de96d9f8b55365f1ffa0ef0315"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 458853,
+    "sha256": "130c235ac355e8089932833301a30891af277962d47a0804358c6e577f914a9e"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 584123,
+    "sha256": "48cea8c6bce4cb1f59ad4ed1753ea31b868388d34d3face377f2fb2f522dcd6c"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 475301,
+    "sha256": "f0e0f8349d1f3715d4e2d6e8018c60da7b6d512f5f5466a44ac34af40e0fca38"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 658903,
+    "sha256": "99649c2fa9fe67047a6408aef09631f5185de34acc6e5b6d797dd42c756e234e"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 445734,
+    "sha256": "228b79989addd904fc1292f412bf7d65632862aff614bb8258e5632960f191e0"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/fable-5.1-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 522801,
+    "sha256": "1600ae7c7ac9bad45e20a25040620f31b17f289a97af5cf9d6063c9c6df99066"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 644455,
+    "sha256": "d2ffe1ac61e378d2c573be60d721cfa2a066f6fbf02e5619e7e088e7a90e16d7"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 695635,
+    "sha256": "4c7cbd963e1e3323fc62d39ba293ffde7c3734be69dc94ab164a7de10ba87775"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 722087,
+    "sha256": "35b546e4a212166f0e9ada071342a1292b3834c78692dacf09c80b1aff703088"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 690068,
+    "sha256": "6ff7d237218b6a99519d7fde758e3830270fe7702f54ec1c508a061340e805ab"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 928240,
+    "sha256": "27353ba3b707c42256cb0a36d89248117b3534c2868d695b3877a161a70db7e9"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 885340,
+    "sha256": "ca272371e5d0e38f6a3083467ed409fc37d31f20f06bbb8c87faa2ad65e7b785"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 814052,
+    "sha256": "dbc4bed525b2a2eeb0da854f77cd0a20be60d3b59c3afdde44283318422fcc63"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 846855,
+    "sha256": "8d0874b0a52839934bd5c4de688444f67d309a4acf91fbad782c23ce19eb748f"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-01.json",
+    "bytes": 460498,
+    "sha256": "0959cf73d56eef1ca359a8450758a0731449ab83f45b949f7f9a799ac96a41c3"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-02.json",
+    "bytes": 484920,
+    "sha256": "08fb799478b11af5e0d27b7126c5e1e9c81d4859b07a1ff1c252cdab86572bbf"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-03.json",
+    "bytes": 346413,
+    "sha256": "97814863140ce415cdaff95b9f77fa28600c0fafe93827b5a7a5f20d92b1ae9f"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-04.json",
+    "bytes": 483604,
+    "sha256": "2fde947fc7847e19a8fae6e31baa54135105bfa8dcabb8d6ce955ec870c7b06d"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-05.json",
+    "bytes": 477899,
+    "sha256": "92d925416b931c3396031382e10b06b457bdc0b0792ceeb370c9f8a621c2429d"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-06.json",
+    "bytes": 519342,
+    "sha256": "6e3136d5ab26da6536a03c95a1576ea47288666697dd5a66c48d5670c7919ea9"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-07.json",
+    "bytes": 508252,
+    "sha256": "e464e5327152ecb8fe8f3319d7f92feca9a09dfd3466e85d0c854b26164c3571"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/gpt-5.6-sol-codex/trajectory-trial-08.json",
+    "bytes": 473645,
+    "sha256": "ee4b1dfdd2dddfc63578b35d3bcecc05cb9ad9e94fded04b0e4a7caa96b456f8"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-01.json",
+    "bytes": 557475,
+    "sha256": "97293cb4a0694fb88fac9d379876e758193182e4faf979cf3431eee1018c4730"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-02.json",
+    "bytes": 599743,
+    "sha256": "78e7bb2e606f121692f305ba00d15d3204ae3e84a5e599cc8fc3492d5a8836e6"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-03.json",
+    "bytes": 514857,
+    "sha256": "482d41956c29083274c4f2324dadcf709b1a2d0adff1b583f69baf4de3a5d3e1"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-04.json",
+    "bytes": 802752,
+    "sha256": "17d6bafcbfd578ecb22ea84d5ac2cfa8a6be366ce88d27b49c33aa8f293556e0"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-05.json",
+    "bytes": 584685,
+    "sha256": "42585b43889f776582e088bd904e44fccaa6eb5609743ef39f0aeedebc34d584"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-06.json",
+    "bytes": 427464,
+    "sha256": "86b0784d1ca0569b88579fa7bc7e8736e36a3514782ba5995d1bc8bddaddfe69"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-07.json",
+    "bytes": 927405,
+    "sha256": "302667b1fdde081ccc3d1903980a042f6bba9a94ec0ba593c4b51a59243280d3"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-08.json",
+    "bytes": 1034271,
+    "sha256": "f4cbd3659850385d26c52aa4e3b817490e14656c22238ebf50483c69ecae6053"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-01.json",
+    "bytes": 420831,
+    "sha256": "bac36ef3f27b7a585e47211ce03690143b421db6ed70dd758e15b1262462ddfc"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-02.json",
+    "bytes": 411026,
+    "sha256": "011c867d63eff7ef5d0ca599df5a6c0d9e39791bc44438b38153a00ee31be1b9"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-03.json",
+    "bytes": 398725,
+    "sha256": "4c8b2eb5932a2963b1f96f68f0be99db218723fa5c5a58704ed2792cd21dbd3c"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-04.json",
+    "bytes": 371425,
+    "sha256": "d9af61a45f24877b272053d13d0de1743e61cd4ba2f44a8fe0c22cc4f22ff737"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-05.json",
+    "bytes": 439617,
+    "sha256": "9b6a0c6e48e573b45fef083480021b134d2fad1813f3e207e6b5fe9cd891fddb"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-06.json",
+    "bytes": 416709,
+    "sha256": "6682c88477455956f5e54950d8edc93b9075ffaa8a81380f5d08c0ac648c7da3"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-07.json",
+    "bytes": 404659,
+    "sha256": "71366bf22693c24a88b37a7881200887a46777c188fd40aed4b77b358ba17e39"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/grok-4.6-mini-swe-agent/trajectory-trial-08.json",
+    "bytes": 387759,
+    "sha256": "86aebebb17d36c466e506718d6d57f48988045e165e0aaa7b799505333343873"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-01.json",
+    "bytes": 3751657,
+    "sha256": "48187b76cc49a484eac69e9a4b94d66a1f86964fc562725faeb25fba3706cbec"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-02.json",
+    "bytes": 2004737,
+    "sha256": "f0ed394117e048a9a5c483819a1231b81b4bc963ed9e8686f3f3b725367037cb"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-03.json",
+    "bytes": 2337749,
+    "sha256": "ae3da095ce0ab6e369f5ca4afba609ebe7c38fd88e05334f8c486e7860d4afc4"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-04.json",
+    "bytes": 4650931,
+    "sha256": "95ca71bb8d10c09e8eabe2f2a40141b0f735693a7d9edb787cf1e942a3c9b84a"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-05.json",
+    "bytes": 387724,
+    "sha256": "13c8c6f383989cf7c03874c29dd5625589bb8e87306797409ba51786506ea7df"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-06.json",
+    "bytes": 4138957,
+    "sha256": "0a14e95a1cfc8de8ab0d52cd6bb8662ddc8667f9800681d2381add1254d5f255"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-07.json",
+    "bytes": 445833,
+    "sha256": "ba962707659521bd8cec7294dac3822992b6ed77302c74ed8c586b905751ad25"
+  },
+  {
+    "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-08.json",
+    "bytes": 2701051,
+    "sha256": "51ff6dcd4015a954ac95a3e3c25e6c76760138171e6c44e3abd0d716b31ec233"
   }
 ]
