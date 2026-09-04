@@ -1,6 +1,6 @@
 # Anthropic Sample 1
 
-Anthropic Sample 1 is a Real SWE benchmark sample of engineering tasks on private, real world company codebases. All traces are recorded under [`trajectories/`](trajectories/).
+Anthropic Sample 1 contains private, real-world company tasks from company datasets that we've licenced. All traces are recorded under [`trajectories/`](trajectories/).
 
 ## Table of contents
 
