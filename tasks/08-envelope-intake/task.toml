@@ -1,0 +1,108 @@
+schema_version = "1.4"
+
+[task]
+name = "sample/envelope-intake-router"
+version = "1.0.0"
+# Deliberately says what the capability is and not what its rules are. An
+# earlier version enumerated them, which put a second copy of the answer key in
+# the package alongside the prompt.
+description = "Route a support desk's mail deliveries onto tickets, get the desk's own replies onto the transport, and serve both back per desk."
+keywords = [
+    "idempotency",
+    "concurrency",
+    "temporal-correctness",
+    "threading",
+    "multi-tenant",
+    "state-machine",
+    "outbox",
+    "at-least-once-delivery",
+    "migration",
+    "typescript",
+    "sqlite",
+]
+
+[[task.authors]]
+name = "sample-envs"
+
+[metadata]
+difficulty = "hard"
+category = "workflow-integration"
+task_kind = "greenfield"
+provenance = "greenfield-independent-model"
+tags = [
+    "transport-vs-message-identity",
+    "delivery-direction",
+    "reopen-window-anchor",
+    "late-arrival-hold-and-release",
+    "concurrent-first-delivery",
+    "alias-resolution",
+    "tenant-scoped-read",
+    "arrival-order",
+    "sub-second-timestamp-precision",
+    "advisory-field-decoy",
+    "durable-before-dispatch",
+    "unknown-handoff-outcome",
+    "terminal-refusal",
+    "gateway-reflection",
+    "backfill-existing-history",
+]
+
+[agent]
+user = "agent"
+timeout_sec = 14400
+
+[verifier]
+user = "root"
+# The graded run is five hundred HTTP deliveries against a local SQLite store and
+# the reference answers them in about a minute. The headroom is for a submission
+# that is slow rather than wrong: a per-delivery connection, a synchronous fsync,
+# a retry loop that backs off. A tight timeout would score those as failures: a
+# correct implementation opening a connection per transaction and retrying on
+# SQLITE_BUSY takes 227 seconds against the reference's 96.
+timeout_sec = 1500
+
+[environment]
+workdir = "/app"
+build_timeout_sec = 1800
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+# Required, not preferred. Harbor installs the agent *into* this sandbox and the
+# installer's first act is `apt-get update && apt-get install -y curl
+# build-essential git`; with DNS blackholed that exits 100 and the trial dies
+# before the agent's first turn. The oracle preflight passes either way, because
+# it installs no agent, so a sealed task looks healthy right up until it is
+# rolled out.
+#
+# Offline behaviour is therefore enforced inside the task -- GOPROXY=off,
+# vendored dependencies, stand-in endpoints, no real AWS -- rather than by the
+# network layer.
+network_mode = "public"
+[environment.env]
+TZ = "Etc/UTC"
+# The service's own configuration; sandbox/notes.md and the README document the
+# same two names. The verifier overrides both, so what is graded is never the
+# store the box was handed.
+INTAKE_DB = "/data/intake.db"
+PORT = "8080"
+# Where the context mailbox answers. task-init.sh starts it on this address and
+# the client already defaults to it, so this states the value rather than
+# choosing it -- said here because a harness hands the agent an environment of
+# its own making rather than the image's.
+MOCKGMAIL_URL = "http://127.0.0.1:4570"
+
+[environment.healthcheck]
+command = "test -f /tmp/task-infra/.ready"
+interval_sec = 5
+timeout_sec = 5
+start_period_sec = 20
+retries = 12
+
+# The same mailbox again, for a harness that speaks MCP. `gmail` with no
+# arguments is the stdio server; it holds no state and forwards to the one
+# daemon, so a shell agent using the command and an MCP client using this
+# server see the same mailbox and land in the same journal.
+[[environment.mcp_servers]]
+name = "gmail"
+transport = "stdio"
+command = "/usr/local/bin/gmail"

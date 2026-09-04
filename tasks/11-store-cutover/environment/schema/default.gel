@@ -1,0 +1,31 @@
+module default {
+  type Member {
+    required member_id: str { constraint exclusive };
+    required tier: str;
+    required balance_cents: int64;
+    required version: int64;
+    required deleted: bool { default := false };
+    required updated_at: str;
+  }
+
+  type LedgerEntry {
+    required entry_id: str;
+    required member_id: str;
+    required seq: int64;
+    required global_seq: int64;
+    required delta_cents: int64;
+    required reason: str;
+    required written_at: str;
+    index on (.global_seq);
+    index on (.member_id);
+  }
+
+  type MigrationMeta {
+    required slot: str { constraint exclusive };
+    required phase: str;
+    required authority: str;
+    required fence: int64;
+    required cursor: int64;
+    required divergence: int64;
+  }
+}

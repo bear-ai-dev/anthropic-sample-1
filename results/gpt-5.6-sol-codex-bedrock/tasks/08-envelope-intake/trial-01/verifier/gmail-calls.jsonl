@@ -1,0 +1,13 @@
+{"args":{},"at":1788482070.7937634,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":480,"seq":0,"service":"gmail","tool":"list_email_labels","via":"mcp"}
+{"args":{"maxResults":100,"query":"label:Support"},"at":1788482075.0562296,"duration_ms":0,"error_kind":null,"outcome":"ok","page":{"matched":25,"maxResults":100,"returned":25},"result_chars":3996,"seq":1,"service":"gmail","tool":"search_emails","via":"mcp"}
+{"args":{"maxResults":100,"query":"label:Billing"},"at":1788482075.067248,"duration_ms":0,"error_kind":null,"outcome":"ok","page":{"matched":12,"maxResults":100,"returned":12},"result_chars":1820,"seq":2,"service":"gmail","tool":"search_emails","via":"mcp"}
+{"args":{"messageId":"2be4b22448a733e5"},"at":1788482084.5983326,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":637,"seq":3,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"64864c640d8ffe15"},"at":1788482084.6048193,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":568,"seq":4,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"0eb928ddcb6b8edf"},"at":1788482084.6113286,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":568,"seq":5,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"efd8cddaae78ed18"},"at":1788482084.6180224,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":496,"seq":6,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"0a2e98659d9be16d"},"at":1788482084.6242154,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":255,"seq":7,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"c69e780be2f2158e"},"at":1788482090.06987,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":541,"seq":8,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"445a29c205c3a009"},"at":1788482090.0772564,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":662,"seq":9,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"a4e4b2260a982be7"},"at":1788482090.0831728,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":329,"seq":10,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"b11f2cfa72efd87c"},"at":1788482090.0901775,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":316,"seq":11,"service":"gmail","tool":"read_email","via":"mcp"}
+{"args":{"messageId":"845c442752d22e70"},"at":1788482090.0976937,"duration_ms":0,"error_kind":null,"outcome":"ok","page":null,"result_chars":622,"seq":12,"service":"gmail","tool":"read_email","via":"mcp"}

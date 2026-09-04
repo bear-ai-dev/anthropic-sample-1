@@ -1,0 +1,1421 @@
+[
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 87661,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 42,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "9c86f3a9fe2af124f981fe063f4d5244e9c60cb622eab8638b59ddfb5eaf8167",
+    "trajectory_source_sha256": "84afe023e8937ea24983c04a89ff8d72fbeb4532fa2d490139741427601e2fbd",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 1543.29
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 104000,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1240
+    },
+    "reward": 0.0,
+    "step_count": 48,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "5cc28826b294779c3ded129b422bf0a851f230a8bedc1d3e0c9cfae2f9b99905",
+    "trajectory_source_sha256": "642a856f16078b5d16161ab3eb56ddd7ac109675ad02337eccb418d11ff12187",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 1557.168
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 79541,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1300
+    },
+    "reward": 0.0,
+    "step_count": 31,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "8418aee385ffc80eafb39e811978526414c49806a25c0df697dddfd7776f826a",
+    "trajectory_source_sha256": "6d1890fd1b46292fd1eb9eb13feca076d23a0acf934c7774c0734f847a2725e0",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 1113.648
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 80784,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 420,
+      "SENSITIVE_ASSIGNMENT": 4
+    },
+    "reward": 0.0,
+    "step_count": 28,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "340b57c162c68ad875b993cb65c72e7ef852f649e0e26622b6b671d0e327695c",
+    "trajectory_source_sha256": "1b385f8809cfa865abdad0993a49ed5c47e31e5a451caaee74297007f8f619ac",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 1540.446
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 75199,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1340
+    },
+    "reward": 0.0,
+    "step_count": 30,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "5901656d67ce6e4739650ba2fbee7f2b5035ec6f20a74575adda9703d9cfd2fe",
+    "trajectory_source_sha256": "1d22483df3a0db47f047af13cd201b7c28b37a833d0c2ae8eb7615a981415331",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 1051.641
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 94921,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1220
+    },
+    "reward": 0.0,
+    "step_count": 28,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "aa12bd449194d547f79e6c6c63461d17287bb69ae775222407c75a7c73f11b72",
+    "trajectory_source_sha256": "3579093cd9b0ea47693ab9460c42f6395ae1509894dc594646cb52f94c07cb5b",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 1421.644
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 86741,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1220
+    },
+    "reward": 0.0,
+    "step_count": 28,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "ace5010c72fc55aa92809d34df6f3a7244bd9f394bd0a8ac3b0119db8f77cdde",
+    "trajectory_source_sha256": "9b66500bc738499f30fdcc91f11d965f706ffaf9a1154aa2348c5d83aae992a4",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 1570.255
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__fable-5.1-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 79574,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1400,
+      "SENSITIVE_ASSIGNMENT": 12
+    },
+    "reward": 0.0,
+    "step_count": 32,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "e1f829901776f94f429271adf0901d68f7b7e447f28b3996ccf74ea0da3bdf4e",
+    "trajectory_source_sha256": "53748c5d4de61a093248058797f131327d1ec384a546726b613563c8eec1a9e5",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/01-linearizable-scan/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 1277.552
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 115196,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 320,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 27,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "12e084a4f73881e8863e53f29434ae23bee35c09aed492ea17464f3f2650f24f",
+    "trajectory_source_sha256": "556bf8d1cd3fbeb01010c6b42c63573d84bc31a4dc6b68ad57295c63a5027e25",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 1546.045
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 101131,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 160,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 25,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "e8f29721157f9dad3e001bc45e79890526166dde8a68b21c6ddc993fab4bf2c8",
+    "trajectory_source_sha256": "53cf8e5d5ee3544fe2f6866b39325505b23ddc97912fc77245d6502a4511c353",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 1286.412
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 156690,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 360,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 27,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "49f5a0711295f5e273a8fd388f84d43d6233edb5335aa9959b5982a940f86e9d",
+    "trajectory_source_sha256": "c1c60a831e8e03026b0b4a1ed1dc9efec53f9487fefe15a0a189418fc7ba4115",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 1884.636
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 111074,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1340,
+      "SENSITIVE_ASSIGNMENT": 12,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 23,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "5b92dbe66f13e4dade8c3a7bb8e7e7dc8f1020a1b6b4dacca366452cc515498e",
+    "trajectory_source_sha256": "95218f180e35aea8c388c4eb153b2e1370b757fc71a704a4c139fe622fa93a2f",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 1375.173
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 121627,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 40,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 52,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "653095cfcf8cbb8c8d1acc3b054dbafcf0a79965f5d17d853331f55e5b439ae2",
+    "trajectory_source_sha256": "15e3f3a7ebd7e7094efe1abba71bf3cd919912e404f5a6b5ab4123d85d11ab15",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 1734.524
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 130756,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1560,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 30,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "52c455981d3030ac4e59648b710c408fff5b2f879d4de137f90f3dc2832ab503",
+    "trajectory_source_sha256": "9af760931923a835b6116e7900d2eedd6384ae3a3cd1d08bb01665e7a4d1dfce",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 1593.466
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 100397,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 200,
+      "SOURCE_CREDENTIAL": 8
+    },
+    "reward": 0.0,
+    "step_count": 30,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "7c863551ec6ebfda8e90c103d43dba275a2ce0e4fd72b0e23d0ea050efb22749",
+    "trajectory_source_sha256": "ed46ee7e9eea0fa983483c1a1d1d824486a2bc26b67ed5e3cb7726ba9fc00617",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 1324.686
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 123744,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1380,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 75,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "eb4595e47e9d5c7644fff02af9374ea948157c0482e441cbbc059ccd44130e1f",
+    "trajectory_source_sha256": "7e7c077cdbe937d181e05a298ad7543ad7ea62129f62b973c19a61fb4ea89df0",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 1795.527
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 75870,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 14,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "e802d29330df720c2a688c5ed527646ef6eba844cae0e9d8f256e4a6c1d891d0",
+    "trajectory_source_sha256": "fd1dac61776c0c2425f58211fb520a0ee57af81d516d3ef50656d1818a16a23e",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 932.472
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 102512,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 20,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "0ad93326a3bc9d2db11aec22eb9eb2680f22ede6d29def5ba292ef19bf29e85b",
+    "trajectory_source_sha256": "6966bf7cf060b980db7b26d0c21aedee7a46e188893a0bc5b1bc2fe955b2d25d",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 1380.245
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 102282,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 19,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "22a21668f5e6e2572200adb9d7a604401ad64336a229c3025a13ae3fc43c5321",
+    "trajectory_source_sha256": "bb3f2917058f3adcc01c6bea3b1d4f4227aafd8d6f53ec58f6bbd9bb054265d4",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 1283.817
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 78265,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 17,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "e72c721270affa199495c10761df21cee97a9cd50fc62018229611978ef11763",
+    "trajectory_source_sha256": "c5fa24cd43387d57c9e600d04393b8c61452fd2178b2f6524af36e323bf95d2d",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 1009.293
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 107374,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 18,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "578333df469b1e4dcd00387f1aa4b583f4e1f482242faa46e0acb769f32ae50b",
+    "trajectory_source_sha256": "7127b3ee03258041e397e88ab4654f3c7b012ed7d72b5acc237d580943120760",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 1366.553
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 80987,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 19,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "24a014715b2acd0b34aae5e6555130d043762a333521d414c3f3a0ae0311c108",
+    "trajectory_source_sha256": "1f3553ddc7b44b7a9d4dfbd29e3d430cee2a811a132dd842f7eaf3859092b4fe",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 1056.414
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 89064,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 19,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "15c77926b4ada6fb97264335dd1834e7459d375c9517b478bedf192139bfa0cb",
+    "trajectory_source_sha256": "877f2d915cc53aa158198cce72567372e39fc474e316fbad46f5595c0b7da08c",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 1180.663
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__fable-5.1-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 65921,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 16,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "e3669115c81059c515eed1203bd9aa1385ed4d852dd1c4b058f039f6479d3193",
+    "trajectory_source_sha256": "f48449bc6257fa8a747919bb6ffae685fa9be8546f9f7b49368580eefb829472",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 852.717
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 66272,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 20,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "b25956815f664f0a479d373ba45b4506dcc7e699f8bedb1d774b8aba25f5a5c4",
+    "trajectory_source_sha256": "df232a5e13dffd8dd6328aab50dba71ff89dca42ee4f878bf291d5e175072064",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 995.756
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 64771,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 16,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "3da80d9ad6de8146a78ced060c20dd0101866e027a5a9005582f03c2f5e49cae",
+    "trajectory_source_sha256": "4002b27dd27fb2e3b6443fc03be5b15fd6b047e237eb3c661abb501f48b52c0d",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 857.148
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 65346,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 17,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "aaacaa6b196b8a230086644712c2839c7133183faf71552d659aa06c82ef4e5d",
+    "trajectory_source_sha256": "71b8e8aa01fad2e290a3bb28364fd12e77e5eef8aa9623074558d64c27aaf03c",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 883.804
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 80920,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 14,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "6226189ecdf9d8c966f05ede22eeea0246f5785a160b0d06c9aea6ec37356b76",
+    "trajectory_source_sha256": "7d3f93498bc0a5d1d8941555fb8381e450225a8a8028e97ad194a07fa9495ce0",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 1064.461
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 77617,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 18,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "5308d1d16b98ee019703868e7a3109d64f7eafc110465394c64cd5f3e5629aed",
+    "trajectory_source_sha256": "f5da76425793696497eda03ec495b383f75a3ad4073d408269f7de5c947c7887",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 1052.667
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 76862,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 40
+    },
+    "reward": 1.0,
+    "step_count": 18,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "6e535f83bfa2c4f09da74e0c1964d90e814da5dab23bd4916bab22219880c2c3",
+    "trajectory_source_sha256": "b0a5fb5f72c029b9d535688121eb7213e89fe9cb51fe33e46b4ca5a0cec4274d",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 1042.585
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 75706,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 14,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "7068a445b9f3bdfa96fa79b86f97ffcff290af92268dbc6e81f2f8d5cb2186a1",
+    "trajectory_source_sha256": "a680e04bc9660629dba0abed1e877a9e7fde9e5cbe4b3e86c1db6e58cc483223",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 985.447
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 68240,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 18,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "5d2a8c9811dfa0295edf73b29087df486adf5c0c6e9de278a981f65e271e84a6",
+    "trajectory_source_sha256": "974b413847fab9696a699735a7459fc84705313373349374c0e4e25ef0b8d2b7",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 960.444
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 69836,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 16,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "fa1e69f351706200a659b0c7e97d77be8ff51a1e23b5015410d011d23517bcea",
+    "trajectory_source_sha256": "68e40df1c84ac550b4234b1045f9c1b1893c2c9501a7b9efa80ec15fd07217e7",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 870.482
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 86291,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 22,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "0e2098024e750c21e5782d9fe44a6256155e2fc1aa464cd4279ebebf00c6b4e7",
+    "trajectory_source_sha256": "20dfe0be3b1856c4f0970b7da824751e2ef92f9900d4102823af3fd2fbde495e",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 1087.897
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 75811,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 14,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "bf6e843edaee879dc36939cbcd1277bc4bc3ee61a8a738bf08c5937c4499ee34",
+    "trajectory_source_sha256": "b030215334b062c535f97d99e1a8de832021e0ad09a94809a8ed0111accc8c0f",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 941.872
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 70115,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 19,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "943df6cf8c548a78dd58442a4c0973c327a8e9eca37691ef19f1a27b2843f105",
+    "trajectory_source_sha256": "1d6a5380b6d60d50b86efa6b066719adb962c436c4f74d84c1dd9de133ba5c98",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 887.267
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 70170,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 40
+    },
+    "reward": 0.0,
+    "step_count": 16,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "1383c85f4803dc86f6dffbe0f33a628722d5697982ea6cbeeec0b203578fd369",
+    "trajectory_source_sha256": "80073871cfeedfb0f54d42f814b0eeb7e441c1d6b2b12f61e088f92fac4bf8d7",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 898.462
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 79580,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 19,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "c5f1e17db91f9b6191274a92c106251628a0d1ce1cc08d7a7d3396dc76863260",
+    "trajectory_source_sha256": "240054c7deabc4aea4ac1872c39c27e144e94b2ac084d002acd62efb3bedcf33",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 970.054
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 72909,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 19,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "201cd70f915fa7566779767a77c8eafa9754b210467d68031da69c5f7ebc5d8a",
+    "trajectory_source_sha256": "42877e39dc6ec84390003214c760516dd2c507a412a822481e02cc4fcc8f0bae",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 890.825
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 92689,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 17,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "dae7595e6e97f81f576bca2276fdd31dd539037d06748488cd375dd9046a7d0c",
+    "trajectory_source_sha256": "7a659210496f3f071f500d6586cdfa61e81f554a3b880662b6e0f9da290740c3",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 1094.302
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 125671,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 60
+    },
+    "reward": 1.0,
+    "step_count": 29,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "d8937bae9ab9eb8f35bdb44ea5e669baa7a8109e6c929dad636919a67c7d8202",
+    "trajectory_source_sha256": "79bb888e3eec333a9e158c54d0b2af535635a3416866f9fc8f209264a7c05992",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 1719.966
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 153578,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 100
+    },
+    "reward": 0.0,
+    "step_count": 38,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "49c75d7986d929cf144da84a8296a49f104ee195a1a008d833f3221f881a8196",
+    "trajectory_source_sha256": "d83d711e4a3f71d98593501357e0d1cde8b92fd50c156c5c1a4017b7ef579b17",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 2563.23
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 174357,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 56,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "226109c287edb64c34e55f82ee901a8ff7b17b04c40f6ed27399e43a62422050",
+    "trajectory_source_sha256": "276d8b549abbcea19a4c6efe4fe37bc3e9a969a1c11a178a7adc64acf7f4e9ae",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 2916.589
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 126670,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 29,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "8513d21ef712a2011ba79609727b7b5275b16e1b67c823597efe18fb28e71447",
+    "trajectory_source_sha256": "3298915a6df5e84b067c0d06316911ab2e12cc4931d2a672d4bd5fdcde52e82d",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 1689.423
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 127737,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 260
+    },
+    "reward": 0.0,
+    "step_count": 28,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "c14fde94ccace0789419e754a55166f11538ca82bfcd8364bc7380a080634eb4",
+    "trajectory_source_sha256": "21ae8355a42fb1a1da8f2f0bd99e9c2f2b3427efc89d1f9619543ddbbe669efc",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 1789.609
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 160811,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 30
+    },
+    "reward": 0.0,
+    "step_count": 35,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "8b4b3ee88ce4569708f3ef79193ff4b49053c18a386027d2e0cab2174f03777c",
+    "trajectory_source_sha256": "9a502f3a66a0421506ceb08462624a6cc5e7441dbb5dcb7f9f647d3ff9a892b3",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 2295.585
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 123131,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 180
+    },
+    "reward": 0.0,
+    "step_count": 21,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "f0d4c40c320ea3cfda70a87a0cc2c6b303ab83981c5358b9801b96a7f1ee9e87",
+    "trajectory_source_sha256": "3c9f6a0b126aac9d0a2f7796f495be652dfc464dc1de6824fc8f7f1dc35c7853",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 2135.174
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 128216,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 210
+    },
+    "reward": 0.0,
+    "step_count": 29,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "4bc7a6b9210577396a06c61f36c25b4387414bc04141655ca80ee2068f839826",
+    "trajectory_source_sha256": "ddccd75816c8fac5e0048c3ef612ec6af40f08f388ad2892fb3666610184b1a3",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 2175.442
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 115503,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 31,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "d3e3f2feebc0be3236da589fc2f98c39e0ff25b7c427e11ce2bb1514c2871397",
+    "trajectory_source_sha256": "c75949def9b4d0039b9fee6c08b0ef2ad0f466bd33e8f652c7adb9e1d4caf1f5",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 1877.081
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 170145,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 43,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "22b0c6a9a7b68330650bd730b3b1cfdee4b29b4e65901dffa800d44b2a5d1ded",
+    "trajectory_source_sha256": "1894fc75c0ffbcf81d20107bd946aa86d13111d06ee4ea9798632f2078ee7441",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 2959.08
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 152243,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 51,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "0a51ba24fd32f619129ceeac47272be6fb44c05c6ae9c290670e3b81afcc5f90",
+    "trajectory_source_sha256": "64bc32b33d7da1c123e7c173665ba186c12863cdcf248742048d5ad4274497d3",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 3393.93
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 185820,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 1.0,
+    "step_count": 31,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "d58a467b5e8eb4baa1d8ccdda3d5b48ae8f5d40f062f227228fed768c928bd87",
+    "trajectory_source_sha256": "766a66d554e8d94769f61d7f817d0ba2d5e4178c7bc23f810221fbf70c9ba3a2",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 2533.224
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 158229,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 1.0,
+    "step_count": 31,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "d16feb5b9d89afcb9ced2e58ef2f2846f957fb8f4dbbe6e859d877ad6a22c29a",
+    "trajectory_source_sha256": "ca623ac007e1c5142e40d7cfcf7645a15b21cd76a7da8fd54c2f52d63b5eaf9e",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 2113.913
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 115505,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 24,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "57eee27fe968285354387ce86426c524b4d3a582590c9ced346e83e869368383",
+    "trajectory_source_sha256": "f5d77f9af012aa0c31ab757af9f590cbd9fdccc9628df41e0a1d185ee8c9c286",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 1691.457
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 162882,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 1.0,
+    "step_count": 40,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "463154154073c7eac5a6dc36834224e904697a9da6cee275b557e8dc8d672641",
+    "trajectory_source_sha256": "30ed7d4b83d0c5194ce84cf308d3e354c84c70ccb9959eeb8e7a1f14246bbc4c",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 3927.855
+  },
+  {
+    "arm": "fable-5.1-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "global.anthropic.claude-fable-5-1",
+    "model_label": "Fable 5.1",
+    "output_tokens": 177661,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 40
+    },
+    "reward": 0.0,
+    "step_count": 43,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "05b2557a054ed3ee6c16bea16c417c7eebe7cfb324732f631e80f01b437f4c57",
+    "trajectory_source_sha256": "170dc19d5f3d91621878d3f321a49efd89cded4f6161a4561633821bcef75d6a",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 2496.083
+  }
+]

@@ -1,0 +1,65 @@
+schema_version = "1.0"
+
+[task]
+# MUST be "org/name". A bare name is refused outright:
+#   ValidationError: Package name must be in 'org/name' format
+name = "sample/draft-recovery"
+# Product prose, and nothing about how. The graded rules are recoverable from
+# the workspace and the recording it ships, not from this file -- a shrunken
+# prompt buys nothing while the metadata beside it still lists the answers.
+description = """
+A host who loses the tab half way through creating an event should find the
+work waiting when the page comes back, and should never be handed someone
+else's work or a version of their own this release has moved past.
+"""
+category = "web"
+slot = 4
+tags = ["react", "typescript", "persistence", "concurrency", "migration"]
+
+[agent]
+# The graded spec, the fixtures and the independent model are not in the image
+# at all: they travel with the tests tree Harbor uploads when grading starts,
+# after this account has stopped. The workspace ships a runner and a smoke test
+# over the same seam, so a solver can tell a broken build from a wrong design
+# without being able to run the situations that decide the reward.
+user = "agent"
+timeout_sec = 14400
+
+[verifier]
+user = "root"
+# One jsdom fork drives every scenario over the real module graph, remounting
+# the whole create flow for each page load. A warm run is a few minutes; the
+# ceiling covers a cold transform cache and a candidate that leaves timers
+# pending on every scenario.
+timeout_sec = 1800
+
+[environment]
+workdir = "/workspace"
+dockerfile = "environment/Dockerfile"
+# The CLI zips `environment/` and builds it with context ".", so every path in
+# the Dockerfile is relative to that directory and not to the task root.
+build_context = "environment"
+# Required, not preferred. Harbor installs the agent *into* this sandbox and the
+# installer's first act is `apt-get update && apt-get install -y curl
+# build-essential git`; with DNS blackholed that exits 100 and the trial dies
+# before the agent's first turn. The oracle preflight passes either way, because
+# it installs no agent, so a sealed task looks healthy right up until it is
+# rolled out.
+#
+# Offline behaviour is therefore enforced inside the task -- GOPROXY=off,
+# vendored dependencies, stand-in endpoints, no real AWS -- rather than by the
+# network layer.
+network_mode = "public"
+# Read by the CLI from [environment] directly; an [environment.resources]
+# table is silently ignored, `memory_gb` is never read, and the sandbox
+# falls back to 1 vCPU / 2048 MB.
+cpus = 2
+memory_mb = 4096
+
+[environment.env]
+MOCKLINEAR_URL = "http://127.0.0.1:4570"
+
+[[environment.mcp_servers]]
+name = "linear"
+transport = "stdio"
+command = "/usr/local/bin/linear"

@@ -1,0 +1,54 @@
+{
+  "agent_info": {
+    "model_info": {
+      "name": "bedrock/us.anthropic.claude-opus-5",
+      "provider": "bedrock"
+    },
+    "name": "claude-code",
+    "version": "2.1.236"
+  },
+  "agent_result": {
+    "cost_usd": 9.437066499999995,
+    "metadata": null,
+    "n_cache_tokens": 9738401,
+    "n_input_tokens": 10255190,
+    "n_output_tokens": 207406,
+    "rollout_details": null
+  },
+  "config": {
+    "agent": {
+      "model_name": "bedrock/us.anthropic.claude-opus-5",
+      "name": "claude-code"
+    },
+    "job_id": "[REDACTED_SOURCE_RUN_ID]",
+    "task": {
+      "path": "[REDACTED_LOCAL_PATH]"
+    },
+    "trial_name": "sample-store-cutover__TJn3NgE"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-02T14:15:14.871539+00:00",
+  "id": "6df1d6dc-df24-499e-9fa8-e2d59b7b18a3",
+  "recovery": {
+    "driver": "local",
+    "source_task_arn": "[REDACTED_AWS_ARN]",
+    "verifier_exit_code": 0
+  },
+  "started_at": "2026-09-02T13:39:45.159719+00:00",
+  "task_checksum": "recovered-from-original-sandbox",
+  "task_id": {
+    "path": "[REDACTED_LOCAL_PATH]"
+  },
+  "task_name": "sample/store-cutover",
+  "trial_name": "sample-store-cutover__TJn3NgE",
+  "trial_uri": "file:///private[REDACTED_LOCAL_PATH]",
+  "verifier": {
+    "finished_at": "2026-09-02T14:15:14.871570+00:00",
+    "started_at": "2026-09-02T13:39:45.159719+00:00"
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  }
+}

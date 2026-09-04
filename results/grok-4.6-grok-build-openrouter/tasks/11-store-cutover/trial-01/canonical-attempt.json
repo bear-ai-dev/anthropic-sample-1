@@ -1,0 +1,15 @@
+{
+  "agent": "grok-build-acp",
+  "agent_version": "1.0.18",
+  "attempt": 1,
+  "canonical_attempt_id": "11-store-cutover__trial-01",
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-04T05:03:03.688004+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "openrouter-grok-4.6",
+  "route": "x-ai/grok-4.6",
+  "status": "launched",
+  "task": "11-store-cutover",
+  "wave": "01-20260904T050302Z"
+}

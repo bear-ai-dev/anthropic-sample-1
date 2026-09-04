@@ -1,0 +1,34 @@
+{
+  "counters": {
+    "capability_absent": 0,
+    "rules_expected": 61,
+    "rules_passed": 58,
+    "rules_total": 61,
+    "seam_checks": 3,
+    "seam_failures": 0
+  },
+  "ruleFailures": [
+    {
+      "messages": [
+        "AssertionError: S8 step 3 [earnings] a fresh payload for a section already received must win: expected { kind: 'data', \u2026(1) } to deeply equal { kind: 'data', \u2026(1) }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G8::S8",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S28 step 3 [retention] the terminal frame arrives after a stop and settles nothing: expected { kind: 'empty', \u2026(1) } to deeply equal { kind: 'loading' }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G10::S28",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S61 step 2 [engagement] the whole event's read ended with one figure and the rest given up on: expected { kind: 'empty', \u2026(1) } to deeply equal { kind: 'loading' }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G30::S61",
+      "status": "failed"
+    }
+  ],
+  "summary": "3 of 61 graded rules failed"
+}

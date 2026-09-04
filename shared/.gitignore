@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+.mocklinear-report.md
+.venv-mockgmail/
+.venv-mockgithub/

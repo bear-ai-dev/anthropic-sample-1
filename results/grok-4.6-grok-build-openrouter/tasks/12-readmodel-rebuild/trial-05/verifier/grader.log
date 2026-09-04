@@ -1,0 +1,5 @@
+preparing stores
+  · seeded 1200 positions, 448 org rows, 742 tag rows
+starting the service
+
+HARNESS FAILURE: the service never answered /healthz

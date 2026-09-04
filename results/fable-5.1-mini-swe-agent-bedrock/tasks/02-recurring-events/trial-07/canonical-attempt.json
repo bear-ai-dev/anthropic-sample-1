@@ -1,0 +1,15 @@
+{
+  "agent": "mini-swe-agent",
+  "agent_version": "2.4.5",
+  "attempt": 7,
+  "canonical_attempt_id": "02-recurring-events__trial-07",
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-04T03:53:05.447000+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "bedrock/global.anthropic.claude-fable-5-1",
+  "route": "bedrock/global.anthropic.claude-fable-5-1",
+  "status": "launched",
+  "task": "02-recurring-events",
+  "wave": "02-20260904T035303Z"
+}

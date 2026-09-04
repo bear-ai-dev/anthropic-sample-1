@@ -1,0 +1,27 @@
+
+> event-feed@1.4.0 start
+> tsx src/server.ts
+
+{"at":"2026-09-04T02:25:52.087Z","stage":"ROUTING","source":"RebuildMeta","phase":"LIVE_V1","restored":{"proj:feed:active":"v1","proj:counts:active":"v1","proj:tags:active":"v1"}}
+event-feed listening on 8080
+{"at":"2026-09-04T02:25:52.306Z","stage":"SNAPSHOT","boundary":1200,"cursor":0,"note":"v2 emptied; live fanout to v2 begins"}
+{"at":"2026-09-04T02:25:52.864Z","stage":"SNAPSHOT","boundary":1200,"cursor":300,"positions":300,"folded":300}
+{"at":"2026-09-04T02:25:55.116Z","stage":"SNAPSHOT","boundary":1200,"cursor":600,"positions":300,"folded":300}
+{"at":"2026-09-04T02:25:55.744Z","stage":"SNAPSHOT","boundary":1200,"cursor":900,"positions":300,"folded":300}
+{"at":"2026-09-04T02:25:56.261Z","stage":"SNAPSHOT","boundary":1200,"cursor":1200,"positions":300,"folded":300}
+{"at":"2026-09-04T02:25:56.271Z","stage":"TAIL","boundary":1200,"cursor":1200}
+{"at":"2026-09-04T02:25:56.476Z","stage":"PARITY","boundary":1200,"cursor":1250,"head":1250,"folded":1,"remaining":0}
+{"at":"2026-09-04T02:25:56.621Z","stage":"SWITCH","boundary":1200,"head":1250,"note":"gate passed; the next step moves routing"}
+{"at":"2026-09-04T02:25:57.020Z","status":409,"stage":"SWITCH","boundary":1200,"head":1254,"refused":"the gate did not pass","mismatches":["position 1254 is in the log and not in generation v2","org org-2 2025-11-09: expected count 4 actors 4, held count 3 actors 3","tag tag-9 2025-11-09: expected count 2 newest evt-001254-a, held count 1 newest evt-000119-a","tag tag-1 2025-11-09: expected count 2 newest evt-001254-a, held count 1 newest evt-000158-a"]}
+{"at":"2026-09-04T02:25:57.209Z","stage":"PARITY","boundary":1200,"cursor":1254,"head":1254,"folded":1,"remaining":0}
+{"at":"2026-09-04T02:25:57.364Z","stage":"SWITCH","boundary":1200,"head":1254,"note":"gate passed; the next step moves routing"}
+
+> event-feed@1.4.0 start
+> tsx src/server.ts
+
+{"at":"2026-09-04T02:26:00.861Z","stage":"ROUTING","source":"RebuildMeta","phase":"DRAIN","restored":{"proj:feed:active":"v2","proj:counts:active":"v2","proj:tags:active":"v2"}}
+event-feed listening on 8080
+{"at":"2026-09-04T02:26:01.272Z","stage":"CLEANUP","window":[1200,1254],"cursor":1260,"folded":[1259,1260],"unfolded":[],"lag":0}
+{"at":"2026-09-04T02:26:01.571Z","status":409,"stage":"CLEANUP","boundary":1200,"switch_seq":1254,"drain_lag":2,"refused":"the drain window is not closed: 2 positions in the log are not in generation v2"}
+{"at":"2026-09-04T02:26:01.783Z","stage":"CLEANUP","window":[1200,1254],"cursor":1260,"folded":[1256,1258],"unfolded":[],"lag":0}
+{"at":"2026-09-04T02:26:02.125Z","status":200,"stage":"COMPLETE","drain_lag":0,"rows_removed":{"FeedByUserV1":1254,"CountByOrgV1":456,"RecentByTagV1":743}}

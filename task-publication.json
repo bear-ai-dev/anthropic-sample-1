@@ -1,0 +1,40 @@
+{
+  "policy": "Licensed application workspaces are omitted. Published hashes cover the privacy-safe task contracts, verifiers, reference materials, and harness files. Control results bind to execution_task_sha256; published packages are audit artifacts.",
+  "tasks": {
+    "01-linearizable-scan": {
+      "execution_task_sha256": "1e4f58a1b0753d88224f4fc125bfbed564ab74333f00f55a05c8affda4480624",
+      "licensed_application_workspace": "omitted",
+      "published_task_package_sha256": "2c4773f2d4cc0e896c0b342ef16256161411712a4cb2e30f1d1da598309bb9a1"
+    },
+    "02-recurring-events": {
+      "execution_task_sha256": "5809c53f6c930201b05749fcc8d5a22286b06673bc09f477fd5c69540e95cc1d",
+      "licensed_application_workspace": "omitted",
+      "published_task_package_sha256": "a8792bed847ccf86b6343c8723fb7512ade05b339088e70789a762cfe5c4d7e1"
+    },
+    "03-analytics-stream-reducer": {
+      "execution_task_sha256": "9be6711c735ca0c6ef86e8d22fbcf7e6e0b32972392a229aee8a31f7c83e44f6",
+      "licensed_application_workspace": "omitted",
+      "published_task_package_sha256": "bf216a5aca4044751ddb209d4dd8185d8417be9d616c285b877a444c57f78bfe"
+    },
+    "04-draft-recovery": {
+      "execution_task_sha256": "83fc0a30f075f3b15879263d2e899fc81ea1f961142a1cb8a5c8eb47d0ef4c23",
+      "licensed_application_workspace": "omitted",
+      "published_task_package_sha256": "aabe267f77e15a4655963b16b5f10a6d3adaeccfa6ebe33392008687f3e48ae2"
+    },
+    "08-envelope-intake": {
+      "execution_task_sha256": "9ebf2b4721d98dcc6fd4129b5a5376887877a0235fdb23ee601bf1ea35b8f9f6",
+      "licensed_application_workspace": "omitted",
+      "published_task_package_sha256": "c842dec42b3cc526410a071cb03ae148226bb0e8d0ec2970b019d80b55a51cdd"
+    },
+    "11-store-cutover": {
+      "execution_task_sha256": "69afb4babfc2c75fc6075cef5a2915100f4ece653a76b12df30774ba65a874ed",
+      "licensed_application_workspace": "omitted",
+      "published_task_package_sha256": "e52afb1a147482df1bbd62e2fee432e9f6f551494886e0773ae03a57e46d2d23"
+    },
+    "12-readmodel-rebuild": {
+      "execution_task_sha256": "656b5c085544b3b57bdbcb5294059d8fdc29cfa5b52f238245c3874635f36dd4",
+      "licensed_application_workspace": "omitted",
+      "published_task_package_sha256": "d1c80eaef8f5bf07972a7f8be59e02d51d4607403bb58b167df144f64e64f8da"
+    }
+  }
+}

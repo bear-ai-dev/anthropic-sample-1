@@ -1,0 +1,75 @@
+{
+  "finished_at": "2026-09-03T06:41:13.692064",
+  "id": "08108765-6c34-4947-af6d-8457b52b4304",
+  "n_total_trials": 1,
+  "started_at": "2026-09-03T05:49:02.405545",
+  "stats": {
+    "cost_usd": 0.0,
+    "evals": {
+      "mini-swe-agent__x-ai/grok-4.6__adhoc": {
+        "exception_stats": {},
+        "metrics": [
+          {
+            "capability_absent": 0.0,
+            "reward": 0.0,
+            "rules_expected": 61.0,
+            "rules_passed": 54.0,
+            "rules_total": 61.0,
+            "seam_checks": 3.0,
+            "seam_failures": 0.0
+          }
+        ],
+        "n_errors": 0,
+        "n_trials": 1,
+        "pass_at_k": {},
+        "reward_stats": {
+          "capability_absent": {
+            "0": [
+              "03-analytics-stream-reducer__hCwrqcE"
+            ]
+          },
+          "reward": {
+            "0": [
+              "03-analytics-stream-reducer__hCwrqcE"
+            ]
+          },
+          "rules_expected": {
+            "61": [
+              "03-analytics-stream-reducer__hCwrqcE"
+            ]
+          },
+          "rules_passed": {
+            "54": [
+              "03-analytics-stream-reducer__hCwrqcE"
+            ]
+          },
+          "rules_total": {
+            "61": [
+              "03-analytics-stream-reducer__hCwrqcE"
+            ]
+          },
+          "seam_checks": {
+            "3": [
+              "03-analytics-stream-reducer__hCwrqcE"
+            ]
+          },
+          "seam_failures": {
+            "0": [
+              "03-analytics-stream-reducer__hCwrqcE"
+            ]
+          }
+        }
+      }
+    },
+    "n_cache_tokens": 2357632,
+    "n_cancelled_trials": 0,
+    "n_completed_trials": 1,
+    "n_errored_trials": 0,
+    "n_input_tokens": 2935568,
+    "n_output_tokens": 173753,
+    "n_pending_trials": 0,
+    "n_retries": 0,
+    "n_running_trials": 0
+  },
+  "updated_at": "2026-09-03T06:41:13.692064"
+}

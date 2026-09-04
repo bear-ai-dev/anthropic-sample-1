@@ -1,0 +1,19 @@
+
+> event-feed@1.4.0 start
+> tsx src/server.ts
+
+startup failed: InvalidReferenceError: invalid property reference on an expression of primitive type 'std::str'
+   |
+ 1 | select RebuildMeta.value filter .key = <str>$key limit 1
+   |                                 ^^^^
+
+    at RawConnection._parseErrorMessage (/app/event-feed/node_modules/gel/dist/baseConn.js:247:21)
+    at RawConnection._parse (/app/event-feed/node_modules/gel/dist/baseConn.js:512:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RawConnection.fetch (/app/event-feed/node_modules/gel/dist/baseConn.js:676:17)
+    at async TransactionImpl._runOp (/app/event-feed/node_modules/gel/dist/transaction.js:105:20)
+    at async TransactionImpl._runFetchOp (/app/event-feed/node_modules/gel/dist/transaction.js:112:38)
+    at async readMeta (/app/event-feed/src/rebuild/meta.ts:35:17)
+    at async ClientConnectionHolder.transaction (/app/event-feed/node_modules/gel/dist/baseClient.js:118:26)
+    at async Client.transaction (/app/event-feed/node_modules/gel/dist/baseClient.js:431:20)
+    at async restoreAliases (/app/event-feed/src/rebuild/alias-switch.ts:40:16)

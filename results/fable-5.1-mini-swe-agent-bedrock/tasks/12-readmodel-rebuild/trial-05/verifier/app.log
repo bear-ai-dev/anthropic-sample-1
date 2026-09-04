@@ -1,0 +1,73 @@
+
+> event-feed@1.4.0 start
+> tsx src/server.ts
+
+event-feed listening on 8080
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:37.651Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:37.905Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:38.182Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:38.438Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:38.643Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:38.848Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:39.053Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:39.260Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:39.431Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:39.635Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:39.844Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:40.053Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:40.264Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:40.472Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:40.681Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1255,"mismatches":1}
+{"at":"2026-09-04T00:26:40.897Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":4}
+{"at":"2026-09-04T00:26:41.503Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:41.764Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:42.001Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:42.231Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:42.463Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:42.694Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:42.924Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:43.152Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:43.832Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:44.095Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:44.345Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:44.601Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:44.858Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:45.117Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:45.368Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1264,"mismatches":1}
+{"at":"2026-09-04T00:26:45.620Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1284,"mismatches":1}
+{"at":"2026-09-04T00:26:46.488Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}
+{"stage":"PARITY","ok":false,"head":1284,"mismatches":1}
+{"at":"2026-09-04T00:26:46.717Z","status":409,"stage":"PARITY","refused":"the gate did not pass"}

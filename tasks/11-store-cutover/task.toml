@@ -1,0 +1,82 @@
+schema_version = "1.0"
+
+[task]
+name = "sample/store-cutover"
+description = """
+Build the orchestrator that moves a live membership ledger off a legacy SQLite
+store and onto a provisioned destination store without a maintenance window:
+shadow copy, dual reads, checkpointed catch-up, reconciliation, a fenced
+cutover, late replay and retirement. The store withholds the outcome of some
+writes, takes a writer down the moment one becomes durable, and a worker whose
+lease has been taken over is still running and still trying to publish.
+"""
+category = "backend"
+slot = 11
+tags = ["go", "gel", "redis", "sqlite", "migration", "idempotency", "fencing"]
+
+[agent]
+# The workspace is owned by `agent` and the solver runs as `agent`. The graded
+# ledger and the independent model are baked into the image root-only, so unlike
+# the tasks that ship nothing secret in the image, this one cannot hand the
+# solver root without handing them the answer key.
+user = "agent"
+timeout_sec = 14400
+
+[verifier]
+user = "root"
+# A warm candidate is 10-70 s: the destination database is already listening,
+# the Go build cache is warm, and the scenario itself is fast. The ceiling
+# covers a cold data directory, a candidate that invalidated the build cache
+# (a full rebuild is about three minutes), the forced restart, the parked
+# worker's release, and a retry of a build the kernel killed under memory
+# pressure.
+timeout_sec = 1800
+
+[environment]
+workdir = "/app"
+dockerfile = "environment/Dockerfile"
+build_context = "environment"
+# Harbor validates this as network_mode with one of 'no-network', 'public'
+# or 'allowlist'. `network = "none"` is silently ignored and network_mode =
+# "none" fails the whole run. The sandbox security group allows all egress,
+# so this line is the only thing standing between the solver and the
+# internet.
+# Sealing the sandbox is incompatible with how the agent runs. Harbor installs
+# mini-swe-agent *into* the sandbox, so the agent's own model calls originate
+# there, and no-network blackholes DNS inside that container -- the oracle passes
+# (it needs no model) while every real rollout dies with NonZeroAgentExitCodeError.
+# Offline behaviour is therefore enforced inside the task, not by the network
+# layer: GOPROXY=off, vendored dependencies, and stand-in endpoints.
+network_mode = "public"
+# The entrypoint brings up the destination database, applies its schema and
+# waits for it to answer a query before the box reports ready. Measured at
+# about three minutes on an ARM64 host, and the first schema checkpoint is the
+# slow part; nothing here sleeps a fixed amount, it all polls. The ceiling is
+# generous because a slower or busier host stretches this and a solver who
+# starts work against a half-open database sees failures that are not theirs.
+setup_timeout_sec = 900
+
+# The destination database runs Postgres alongside the service, and linking the
+# Go binary is the peak. Below about 4 GB the linker becomes an OOM candidate.
+
+# Read by the CLI from [environment] directly; an
+# [environment.resources] table is silently ignored and the sandbox
+# falls back to 1 vCPU / 2048 MB, which cannot link the Go binary.
+cpus = 4
+memory_mb = 6144
+
+# Where the context GitHub workspace answers. The entrypoint starts it on this
+# address and the client already defaults to it, so this states the value rather
+# than choosing it -- said here because a harness hands the agent an environment
+# of its own making rather than the image's.
+[environment.env]
+MOCKGITHUB_URL = "http://127.0.0.1:4570"
+
+# The same workspace again, for a harness that speaks MCP. `github` with no
+# arguments is the stdio server; it holds no state and forwards to the one
+# daemon, so a shell agent using the command and an MCP client using this
+# server see the same repository and land in the same journal.
+[[environment.mcp_servers]]
+name = "github"
+transport = "stdio"
+command = "/usr/local/bin/github"

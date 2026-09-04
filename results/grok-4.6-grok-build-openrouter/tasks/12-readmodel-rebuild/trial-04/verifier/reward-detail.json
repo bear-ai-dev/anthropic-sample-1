@@ -1,0 +1,873 @@
+{
+  "harness_failure": null,
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows",
+    "baseline feed answers from generation v1",
+    "appended 55 live deliveries (late)",
+    "no stage past the snapshot was ever reported; R1 falls back to the cutover reading",
+    "the candidate never tried to move routing",
+    "the log stood at 1260 when the cutover committed",
+    "appended 20 deliveries after the cutover"
+  ],
+  "reward": 0,
+  "rule_results": {
+    "R1": 0,
+    "R10": 1,
+    "R11": 1,
+    "R12": 1,
+    "R13": 1,
+    "R14": 1,
+    "R15": 1,
+    "R2": 0,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 0,
+    "R7": 1,
+    "R8": 1,
+    "R9": 0
+  },
+  "rules": {
+    "R1": {
+      "description": "the snapshot materialises the whole boundary before the rebuild moves on",
+      "pass": false,
+      "reason": "no observable snapshot stage and no cutover"
+    },
+    "R10": {
+      "description": "the append path keeps taking deliveries for the whole of a rebuild",
+      "pass": true,
+      "refused": 0
+    },
+    "R11": {
+      "description": "a read in flight when the cutover lands is still answered out of a whole generation",
+      "pass": true,
+      "reason": "no read was in flight across the cutover"
+    },
+    "R12": {
+      "buckets_compared": 74,
+      "buckets_where_the_two_numbers_differ": 0,
+      "days_bucketed_by": "New York",
+      "description": "the org projection counts people as well as deliveries, and knows they are different",
+      "more_actors_than_deliveries": [],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R13": {
+      "buckets_compared": 141,
+      "days_bucketed_by": "New York",
+      "description": "the tag projection points at the newest delivery in its bucket, by event time",
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R14": {
+      "description": "the read path hands back everything the serving generation holds",
+      "pass": true,
+      "reason": "routing never moved; there is no new generation being served"
+    },
+    "R15": {
+      "description": "losing the cache does not lose which generation is serving, or the rebuild",
+      "pass": true,
+      "reason": "the cutover did not complete; there is no serving generation to lose the note of"
+    },
+    "R2": {
+      "description": "routing does not move while the new generation is behind the log",
+      "missing": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "missing_count": 1201,
+      "pass": false,
+      "present_count": 49,
+      "required_count": 1250,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R3": {
+      "description": "a position is folded exactly once, first delivery authoritative",
+      "duplicated_positions": [],
+      "org_counter_expected": 74,
+      "org_counter_total": 74,
+      "pass": true,
+      "positions_held": 74,
+      "tag_counter_expected": 150,
+      "tag_counter_total": 150,
+      "wrong_identity": [],
+      "wrong_identity_count": 0
+    },
+    "R4": {
+      "description": "counters bucket days by New York local date",
+      "misplaced": [],
+      "misplaced_count": 0,
+      "pass": true,
+      "positions_held": 74
+    },
+    "R5": {
+      "crashed_mid_cutover": false,
+      "description": "the three routing keys are never observed disagreeing",
+      "final_routing": [
+        "v1",
+        "v1",
+        "v1"
+      ],
+      "observed_units": 1880,
+      "pass": true,
+      "routing_moved": false,
+      "torn_states": []
+    },
+    "R6": {
+      "description": "the old generation is not retired while the new one is missing a position",
+      "last_phase_reached": "",
+      "pass": false,
+      "reason": "generation v1 was never retired",
+      "the_rebuild_last_refused_because": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "v1_rows_remaining": 2453
+    },
+    "R7": {
+      "description": "nothing on the read path depends on the old generation once it is gone",
+      "pass": true,
+      "reason": "generation v1 was never retired; there is nothing to be independent of"
+    },
+    "R8": {
+      "description": "the read path serves the new generation, ordered and limited as specified",
+      "pass": true,
+      "reason": "routing never moved; the read path is R2 and R6's business"
+    },
+    "R9": {
+      "description": "the new generation stays level with the log once it is the one serving",
+      "missing": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "missing_count": 1204,
+      "pass": false,
+      "present_count": 74,
+      "required_count": 1278,
+      "spurious": [],
+      "spurious_count": 0
+    }
+  },
+  "steps": [
+    {
+      "ms": 157,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 81,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 81,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 81,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 82,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 82,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 81,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 86,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 84,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 91,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 83,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 84,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 82,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 77,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 81,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 80,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 76,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 78,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 79,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 62,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 61,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 63,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 61,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 61,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 61,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 62,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 62,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 62,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 61,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 61,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 60,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 61,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    },
+    {
+      "ms": 62,
+      "phase": "",
+      "refused": "QueryArgumentError: This query does not contain any query parameters, but query arguments were provided to the 'query*()' method",
+      "status": 500
+    }
+  ],
+  "timeline": [
+    {
+      "at": "2026-09-04T06:16:46.744Z",
+      "name": "first-step",
+      "value": {
+        "phase": "SNAPSHOT",
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-04T06:16:55.105Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1243
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T06:16:57.642Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1254
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T06:16:57.904Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1259,
+          1260
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T06:17:06.524Z",
+      "name": "post-switch-appended",
+      "value": {
+        "head": 1280,
+        "posted": 20
+      }
+    }
+  ]
+}

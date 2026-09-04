@@ -1,0 +1,9 @@
+
+> event-feed@1.4.0 start
+> tsx src/server.ts
+
+event-feed listening on 8080
+rebuild: LIVE_V1 -> SNAPSHOT cursor=0
+rebuild: SNAPSHOT -> SNAPSHOT cursor=500
+rebuild: SNAPSHOT -> SNAPSHOT cursor=1000
+rebuild: SNAPSHOT -> TAIL cursor=1200

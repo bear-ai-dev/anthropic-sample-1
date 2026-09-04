@@ -1,0 +1,15 @@
+{
+  "agent": "claude-code",
+  "agent_version": "2.1.250",
+  "attempt": 2,
+  "canonical_attempt_id": "01-linearizable-scan__trial-02",
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-04T01:30:56.842489+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "z-ai/glm-5.3",
+  "route": "z-ai/glm-5.3",
+  "status": "launched",
+  "task": "01-linearizable-scan",
+  "wave": "01-20260904T013055Z"
+}

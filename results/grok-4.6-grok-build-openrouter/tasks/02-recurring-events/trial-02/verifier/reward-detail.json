@@ -1,0 +1,242 @@
+{
+  "failed_rules": [
+    "R2-selected-days",
+    "R7-end-date",
+    "R8-protect-published",
+    "R9-edited-survives",
+    "R10-extend",
+    "R11-concurrent-regenerate",
+    "R12-publish-then-regenerate",
+    "R13-delete-with-sales",
+    "R14-scope-steps-over-paid",
+    "R15-scope-over-month-end",
+    "R16-scope-across-transition",
+    "R17-scope-then-regenerate",
+    "R18-extend-fills-gap",
+    "R19-extend-after-regenerate",
+    "R20-race-scope-vs-regenerate",
+    "R21-zone-by-configuration",
+    "R22-regenerate-cross",
+    "R23-scope-regenerate-extend",
+    "R24-race-on-hard-dates",
+    "R25-survivor-identity",
+    "R26-money-across-operations",
+    "R27-interleavings"
+  ],
+  "fixture_gate": [],
+  "passed_rules": [
+    "R1-generate-shapes",
+    "R3-month-clamp",
+    "R4-spring-forward",
+    "R5-fall-back",
+    "R6-occurrence-count"
+  ],
+  "reward": 0.0,
+  "rules": {
+    "R1-generate-shapes": {
+      "complaints": [],
+      "seconds": 0.8
+    },
+    "R10-extend": {
+      "complaints": [
+        "R10-extend: occurrence instants differ\n    expected ['2026-03-31 19:00 -0400(=1774998000)', '2026-04-30 19:00 -0400(=1777590000)', '2026-05-31 19:00 -0400(=1780268400)']\n    stored   ['2026-03-31 00:00 -0400(=1774929600)', '2026-04-30 00:00 -0400(=1777521600)', '2026-05-31 00:00 -0400(=1780200000)']"
+      ],
+      "seconds": 0.2
+    },
+    "R11-concurrent-regenerate": {
+      "complaints": [
+        "R11-concurrent round 1: occurrence instants differ\n    expected ['2026-03-16 21:00 +0100(=1773691200)', '2026-03-17 21:00 +0100(=1773777600)', '2026-03-18 21:00 +0100(=1773864000)', '2026-03-19 21:00 +0100(=1773950400)', '2026-03-20 21:00 +0100(=1774036800)']\n    stored   ['2026-03-02 21:00 +0100(=1772481600)', '2026-03-03 21:00 +0100(=1772568000)', '2026-03-04 21:00 +0100(=1772654400)', '2026-03-05 21:00 +0100(=1772740800)', '2026-03-06 21:00 +0100(=1772827200)']",
+        "R11-concurrent: round 1: no regenerate succeeded: {0: 500, 3: 500, 1: 500, 2: 500}"
+      ],
+      "seconds": 0.4
+    },
+    "R12-publish-then-regenerate": {
+      "complaints": [
+        "R12-publish: regenerate returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498102-3ad8b3f0-c792-4146-9347-fc9aa9803a78\", \"debugId\": \"211498102-3ad8b3f0-c792-4146-9347-fc9aa9803a78\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"startDate\": \"2026-05-11T09:00:00Z\"}, "
+      ],
+      "seconds": 0.2
+    },
+    "R13-delete-with-sales": {
+      "complaints": [
+        "R13-delete: deleting occurrence ho-guard-1, whose published event has 2 live receipt items, returned HTTP 500 rather than 409",
+        "R13-delete: deleting occurrence ho-guard-2, whose published event sold nothing (its receipt items are pending, refunded or abandoned), returned HTTP 500 rather than 200"
+      ],
+      "seconds": 0.2
+    },
+    "R14-scope-steps-over-paid": {
+      "complaints": [
+        "R14-scope: scoped PATCH returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498101-3f5358bf-d51e-4cfc-854e-e75208606cd0\", \"debugId\": \"211498101-3f5358bf-d51e-4cfc-854e-e75208606cd0\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Sc"
+      ],
+      "seconds": 0.1
+    },
+    "R15-scope-over-month-end": {
+      "complaints": [
+        "R15-clamp-scope: occurrence instants differ\n    expected ['2026-01-29 19:00 +0000(=1769713200)', '2026-02-28 19:00 +0000(=1772305200)', '2026-03-29 19:00 +0100(=1774807200)', '2026-04-29 19:00 +0100(=1777485600)', '2026-05-29 19:00 +0100(=1780077600)']\n    stored   ['2026-01-29 19:00 +0000(=1769713200)', '2026-02-28 19:00 +0000(=1772305200)', '2026-03-29 20:00 +0100(=1774810800)', '2026-04-29 19:00 +0100(=1777485600)', '2026-05-29 19:00 +0100(=1780077600)']",
+        "R15-clamp-scope: scoped PATCH returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498101-86a31059-f46e-41ad-ab75-f47f0f64c35b\", \"debugId\": \"211498101-86a31059-f46e-41ad-ab75-f47f0f64c35b\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Sc"
+      ],
+      "seconds": 0.2
+    },
+    "R16-scope-across-transition": {
+      "complaints": [
+        "R16-scope-dst: occurrence instants differ\n    expected ['2026-03-06 12:00 -0800(=1772827200)', '2026-03-07 12:00 -0800(=1772913600)', '2026-03-08 12:00 -0700(=1772996400)', '2026-03-09 12:00 -0700(=1773082800)', '2026-03-10 12:00 -0700(=1773169200)']\n    stored   ['2026-03-06 12:00 -0800(=1772827200)', '2026-03-07 12:00 -0800(=1772913600)', '2026-03-08 13:00 -0700(=1773000000)', '2026-03-09 12:00 -0700(=1773082800)', '2026-03-10 12:00 -0700(=1773169200)']",
+        "R16-scope-dst: scoped PATCH returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498101-482ad8e4-a248-4814-88d1-afa0b6da04aa\", \"debugId\": \"211498101-482ad8e4-a248-4814-88d1-afa0b6da04aa\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Sc"
+      ],
+      "seconds": 0.1
+    },
+    "R17-scope-then-regenerate": {
+      "complaints": [
+        "R17-scope-regen: scoped PATCH returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498101-68f1fba2-7cdd-4657-b64e-2adff5e035c4\", \"debugId\": \"211498101-68f1fba2-7cdd-4657-b64e-2adff5e035c4\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Sc",
+        "R17-scope-regen: regenerate returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498101-6c92efcf-bf5f-4e72-99a1-8890c81c314a\", \"debugId\": \"211498101-6c92efcf-bf5f-4e72-99a1-8890c81c314a\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"startDate\": \"2026-07-06T18:00:00Z\"}, "
+      ],
+      "seconds": 0.2
+    },
+    "R18-extend-fills-gap": {
+      "complaints": [
+        "R18-extend-gap-added: occurrence instants differ\n    expected ['2026-05-08 20:00 -0400(=1778284800)', '2026-05-29 20:00 -0400(=1780099200)']\n    stored   ['2026-05-08 00:00 -0400(=1778212800)', '2026-05-29 00:00 -0400(=1780027200)']"
+      ],
+      "seconds": 0.1
+    },
+    "R19-extend-after-regenerate": {
+      "complaints": [
+        "R19-extend-regen: regenerate returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498100-5842cdc6-50d1-4d1d-ba28-dadffccf642e\", \"debugId\": \"211498100-5842cdc6-50d1-4d1d-ba28-dadffccf642e\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"startDate\": \"2026-05-13T20:00:00Z\"}, "
+      ],
+      "seconds": 0.1
+    },
+    "R2-selected-days": {
+      "complaints": [
+        "R2-two-days: occurrence instants differ\n    expected ['2026-03-04 19:00 -0800(=1772679600)', '2026-03-08 19:00 -0700(=1773021600)', '2026-03-11 19:00 -0700(=1773280800)', '2026-03-15 19:00 -0700(=1773626400)', '2026-03-18 19:00 -0700(=1773885600)', '2026-03-22 19:00 -0700(=1774231200)']\n    stored   ['2026-03-04 19:00 -0800(=1772679600)', '2026-03-08 20:00 -0700(=1773025200)', '2026-03-11 19:00 -0700(=1773280800)', '2026-03-15 19:00 -0700(=1773626400)', '2026-03-18 19:00 -0700(=1773885600)', '2026-03-22 19:00 -0700(=1774231200)']"
+      ],
+      "seconds": 0.0
+    },
+    "R20-race-scope-vs-regenerate": {
+      "complaints": [
+        "R20-race round 1 (UTC): neither request succeeded: {'edit': 500, 'regenerate': 500}"
+      ],
+      "seconds": 0.3
+    },
+    "R21-zone-by-configuration": {
+      "complaints": [
+        "R21-America-Los_Angeles-week-4: occurrence instants differ\n    expected ['2026-03-08 23:59 -0700(=1773039540)', '2026-03-11 23:59 -0700(=1773298740)', '2026-03-15 23:59 -0700(=1773644340)', '2026-03-18 23:59 -0700(=1773903540)', '2026-03-22 23:59 -0700(=1774249140)', '2026-03-25 23:59 -0700(=1774508340)', '2026-03-29 23:59 -0700(=1774853940)', '2026-04-01 23:59 -0700(=1775113140)']\n    stored   ['2026-03-09 00:59 -0700(=1773043140)', '2026-03-11 23:59 -0700(=1773298740)', '2026-03-15 23:59 -0700(=1773644340)', '2026-03-18 23:59 -0700(=1773903540)', '2026-03-22 23:59 -0700(=1774249140)', '2026-03-25 23:59 -0700(=1774508340)', '2026-03-29 23:59 -0700(=1774853940)', '2026-04-01 23:59 -0700(=1775113140)']",
+        "R21-America-St_Johns-day-3: occurrence instants differ\n    expected ['2026-10-22 02:30 -0230(=1792645200)', '2026-10-23 02:30 -0230(=1792731600)', '2026-10-24 02:30 -0230(=1792818000)', '2026-10-25 02:30 -0230(=1792904400)', '2026-10-26 02:30 -0230(=1792990800)', '2026-10-27 02:30 -0230(=1793077200)', '2026-10-28 02:30 -0230(=1793163600)', '2026-10-29 02:30 -0230(=1793250000)', '2026-10-30 02:30 -0230(=1793336400)', '2026-10-31 02:30 -0230(=1793422800)', '2026-11-01 02:30 -0330(=1793512800)', '2026-11-02 02:30 -0330(=1793599200)', '2026-11-03 02:30 -0330(=1793685600)', '2026-11-04 02:30 -0330(=1793772000)']\n    stored   ['2026-10-22 02:30 -0230(=1792645200)', '2026-10-23 02:30 -0230(=1792731600)', '2026-10-24 02:30 -0230(=1792818000)', '2026-10-25 02:30 -0230(=1792904400)', '2026-10-26 02:30 -0230(=1792990800)', '2026-10-27 02:30 -0230(=1793077200)', '2026-10-28 02:30 -0230(=1793163600)', '2026-10-29 02:30 -0230(=1793250000)', '2026-10-30 02:30 -0230(=1793336400)', '2026-10-31 02:30 -0230(=1793422800)', '2026-11-01 01:00 -0330(=1793507400)', '2026-11-02 02:30 -0330(=1793599200)', '2026-11-03 02:30 -0330(=1793685600)', '2026-11-04 02:30 -0330(=1793772000)']",
+        "R21-Europe-Berlin-week-4: occurrence instants differ\n    expected ['2026-03-08 19:00 +0100(=1772992800)', '2026-03-11 19:00 +0100(=1773252000)', '2026-03-15 19:00 +0100(=1773597600)', '2026-03-18 19:00 +0100(=1773856800)', '2026-03-22 19:00 +0100(=1774202400)', '2026-03-25 19:00 +0100(=1774461600)', '2026-03-29 19:00 +0200(=1774803600)', '2026-04-01 19:00 +0200(=1775062800)']\n    stored   ['2026-03-08 19:00 +0100(=1772992800)', '2026-03-11 19:00 +0100(=1773252000)', '2026-03-15 19:00 +0100(=1773597600)', '2026-03-18 19:00 +0100(=1773856800)', '2026-03-22 19:00 +0100(=1774202400)', '2026-03-25 19:00 +0100(=1774461600)', '2026-03-29 20:00 +0200(=1774807200)', '2026-04-01 19:00 +0200(=1775062800)']",
+        "R21-Australia-Lord_Howe-week-4: occurrence instants differ\n    expected ['2026-04-01 23:59 +1100(=1775048340)', '2026-04-05 23:59 +1030(=1775395740)', '2026-04-08 23:59 +1030(=1775654940)', '2026-04-12 23:59 +1030(=1776000540)', '2026-04-15 23:59 +1030(=1776259740)', '2026-04-19 23:59 +1030(=1776605340)', '2026-04-22 23:59 +1030(=1776864540)', '2026-04-26 23:59 +1030(=1777210140)']\n    stored   ['2026-04-01 23:59 +1100(=1775048340)', '2026-04-05 23:29 +1030(=1775393940)', '2026-04-08 23:59 +1030(=1775654940)', '2026-04-12 23:59 +1030(=1776000540)', '2026-04-15 23:59 +1030(=1776259740)', '2026-04-19 23:59 +1030(=1776605340)', '2026-04-22 23:59 +1030(=1776864540)', '2026-04-26 23:59 +1030(=1777210140)']",
+        "R21-Pacific-Chatham-day-0: occurrence instants differ\n    expected ['2026-03-06 19:00 +1345(=1772774100)', '2026-03-07 19:00 +1345(=1772860500)', '2026-03-08 19:00 +1345(=1772946900)', '2026-03-09 19:00 +1345(=1773033300)', '2026-03-10 19:00 +1345(=1773119700)', '2026-03-11 19:00 +1345(=1773206100)', '2026-03-12 19:00 +1345(=1773292500)', '2026-03-13 19:00 +1345(=1773378900)', '2026-03-14 19:00 +1345(=1773465300)']\n    stored   ['2026-03-05 19:00 +1345(=1772687700)', '2026-03-06 19:00 +1345(=1772774100)', '2026-03-07 19:00 +1345(=1772860500)', '2026-03-08 19:00 +1345(=1772946900)', '2026-03-09 19:00 +1345(=1773033300)', '2026-03-10 19:00 +1345(=1773119700)', '2026-03-11 19:00 +1345(=1773206100)', '2026-03-12 19:00 +1345(=1773292500)', '2026-03-13 19:00 +1345(=1773378900)']",
+        "R21-Pacific-Chatham-day-1: occurrence instants differ\n    expected ['2026-10-23 23:59 +1345(=1792750440)', '2026-10-25 23:59 +1345(=1792923240)', '2026-10-27 23:59 +1345(=1793096040)', '2026-10-29 23:59 +1345(=1793268840)', '2026-10-31 23:59 +1345(=1793441640)', '2026-11-02 23:59 +1345(=1793614440)', '2026-11-04 23:59 +1345(=1793787240)']\n    stored   ['2026-10-22 23:59 +1345(=1792664040)', '2026-10-24 23:59 +1345(=1792836840)', '2026-10-26 23:59 +1345(=1793009640)', '2026-10-28 23:59 +1345(=1793182440)', '2026-10-30 23:59 +1345(=1793355240)', '2026-11-01 23:59 +1345(=1793528040)', '2026-11-03 23:59 +1345(=1793700840)']",
+        "R21-Pacific-Chatham-day-2: occurrence instants differ\n    expected ['2026-02-01 00:00 +1345(=1769854500)', '2026-02-06 00:00 +1345(=1770286500)', '2026-02-11 00:00 +1345(=1770718500)', '2026-02-16 00:00 +1345(=1771150500)', '2026-02-21 00:00 +1345(=1771582500)']\n    stored   ['2026-01-31 00:00 +1345(=1769768100)', '2026-02-05 00:00 +1345(=1770200100)', '2026-02-10 00:00 +1345(=1770632100)', '2026-02-15 00:00 +1345(=1771064100)', '2026-02-20 00:00 +1345(=1771496100)']",
+        "R21-Pacific-Chatham-day-3: occurrence instants differ\n    expected ['2026-04-02 01:00 +1345(=1775042100)', '2026-04-03 01:00 +1345(=1775128500)', '2026-04-04 01:00 +1345(=1775214900)', '2026-04-05 01:00 +1345(=1775301300)', '2026-04-06 01:00 +1245(=1775391300)', '2026-04-07 01:00 +1245(=1775477700)', '2026-04-08 01:00 +1245(=1775564100)', '2026-04-09 01:00 +1245(=1775650500)', '2026-04-10 01:00 +1245(=1775736900)', '2026-04-11 01:00 +1245(=1775823300)', '2026-04-12 01:00 +1245(=1775909700)', '2026-04-13 01:00 +1245(=1775996100)', '2026-04-14 01:00 +1245(=1776082500)', '2026-04-15 01:00 +1245(=1776168900)']\n    stored   ['2026-04-01 01:00 +1345(=1774955700)', '2026-04-02 01:00 +1345(=1775042100)', '2026-04-03 01:00 +1345(=1775128500)', '2026-04-04 01:00 +1345(=1775214900)', '2026-04-05 01:00 +1345(=1775301300)', '2026-04-06 01:00 +1245(=1775391300)', '2026-04-07 01:00 +1245(=1775477700)', '2026-04-08 01:00 +1245(=1775564100)', '2026-04-09 01:00 +1245(=1775650500)', '2026-04-10 01:00 +1245(=1775736900)', '2026-04-11 01:00 +1245(=1775823300)', '2026-04-12 01:00 +1245(=1775909700)', '2026-04-13 01:00 +1245(=1775996100)', '2026-04-14 01:00 +1245(=1776082500)']",
+        "R21-Pacific-Chatham-week-5: occurrence instants differ\n    expected ['2026-03-07 02:15 +1345(=1772800200)', '2026-03-09 02:15 +1345(=1772973000)', '2026-03-10 02:15 +1345(=1773059400)', '2026-03-12 02:15 +1345(=1773232200)', '2026-03-14 02:15 +1345(=1773405000)', '2026-03-16 02:15 +1345(=1773577800)', '2026-03-17 02:15 +1345(=1773664200)', '2026-03-19 02:15 +1345(=1773837000)', '2026-03-21 02:15 +1345(=1774009800)', '2026-03-23 02:15 +1345(=1774182600)', '2026-03-24 02:15 +1345(=1774269000)']\n    stored   ['2026-03-05 02:15 +1345(=1772627400)', '2026-03-07 02:15 +1345(=1772800200)', '2026-03-09 02:15 +1345(=1772973000)', '2026-03-10 02:15 +1345(=1773059400)', '2026-03-12 02:15 +1345(=1773232200)', '2026-03-14 02:15 +1345(=1773405000)', '2026-03-16 02:15 +1345(=1773577800)', '2026-03-17 02:15 +1345(=1773664200)', '2026-03-19 02:15 +1345(=1773837000)', '2026-03-21 02:15 +1345(=1774009800)', '2026-03-23 02:15 +1345(=1774182600)']",
+        "R21-Pacific-Chatham-month-8: occurrence instants differ\n    expected ['2026-04-02 19:00 +1345(=1775106900)', '2026-05-02 19:00 +1245(=1777702500)', '2026-06-02 19:00 +1245(=1780380900)', '2026-07-02 19:00 +1245(=1782972900)', '2026-08-02 19:00 +1245(=1785651300)', '2026-09-02 19:00 +1245(=1788329700)', '2026-10-02 19:00 +1345(=1790918100)']\n    stored   ['2026-04-01 19:00 +1345(=1775020500)', '2026-05-01 19:00 +1245(=1777616100)', '2026-06-01 19:00 +1245(=1780294500)', '2026-07-01 19:00 +1245(=1782886500)', '2026-08-01 19:00 +1245(=1785564900)', '2026-09-01 19:00 +1245(=1788243300)', '2026-10-01 19:00 +1345(=1790831700)']",
+        "R21-Pacific-Chatham-month-9: occurrence instants differ\n    expected ['2026-09-25 23:59 +1245(=1790334840)', '2026-11-25 23:59 +1345(=1795601640)', '2027-01-25 23:59 +1345(=1800872040)', '2027-03-25 23:59 +1345(=1805969640)', '2027-05-25 23:59 +1245(=1811243640)']\n    stored   ['2026-09-24 23:59 +1245(=1790248440)', '2026-11-24 23:59 +1345(=1795515240)', '2027-01-24 23:59 +1345(=1800785640)', '2027-03-24 23:59 +1345(=1805883240)', '2027-05-24 23:59 +1245(=1811157240)']",
+        "R21-Pacific-Auckland-day-0: occurrence instants differ\n    expected ['2026-10-23 01:00 +1300(=1792670400)', '2026-10-24 01:00 +1300(=1792756800)', '2026-10-25 01:00 +1300(=1792843200)', '2026-10-26 01:00 +1300(=1792929600)', '2026-10-27 01:00 +1300(=1793016000)', '2026-10-28 01:00 +1300(=1793102400)', '2026-10-29 01:00 +1300(=1793188800)', '2026-10-30 01:00 +1300(=1793275200)', '2026-10-31 01:00 +1300(=1793361600)']\n    stored   ['2026-10-22 01:00 +1300(=1792584000)', '2026-10-23 01:00 +1300(=1792670400)', '2026-10-24 01:00 +1300(=1792756800)', '2026-10-25 01:00 +1300(=1792843200)', '2026-10-26 01:00 +1300(=1792929600)', '2026-10-27 01:00 +1300(=1793016000)', '2026-10-28 01:00 +1300(=1793102400)', '2026-10-29 01:00 +1300(=1793188800)', '2026-10-30 01:00 +1300(=1793275200)']",
+        "R21-Pacific-Auckland-day-1: occurrence instants differ\n    expected ['2026-02-01 01:30 +1300(=1769862600)', '2026-02-03 01:30 +1300(=1770035400)', '2026-02-05 01:30 +1300(=1770208200)', '2026-02-07 01:30 +1300(=1770381000)', '2026-02-09 01:30 +1300(=1770553800)', '2026-02-11 01:30 +1300(=1770726600)', '2026-02-13 01:30 +1300(=1770899400)']\n    stored   ['2026-01-31 01:30 +1300(=1769776200)', '2026-02-02 01:30 +1300(=1769949000)', '2026-02-04 01:30 +1300(=1770121800)', '2026-02-06 01:30 +1300(=1770294600)', '2026-02-08 01:30 +1300(=1770467400)', '2026-02-10 01:30 +1300(=1770640200)', '2026-02-12 01:30 +1300(=1770813000)']",
+        "R21: stopping after the first dozen failures; the remaining cases would report the same thing"
+      ],
+      "seconds": 3.9
+    },
+    "R22-regenerate-cross": {
+      "complaints": [
+        "R22-regen-Europe-Lisbon-month: editing f5d59d50-f096-410f-af33-6fdf9217e261 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498096-ce1559bb-c0fc-4f35-9464-804f4513f363\", \"debugId\": \"211498096-ce1559bb-c0fc-4f35-9464-804f4513f363\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ed",
+        "R22-regen-America-New_York-month: editing 19893e14-01a0-42cf-be60-ff2dfee444a3 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498096-215bb202-a629-47de-9da5-10dc15d3994f\", \"debugId\": \"211498096-215bb202-a629-47de-9da5-10dc15d3994f\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ed",
+        "R22-regen-America-Los_Angeles-week: editing 404c1a2a-931d-4569-9a46-3b13e5d4bb96 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498096-277c8bd4-783c-48ad-a76a-6bcab1f859e6\", \"debugId\": \"211498096-277c8bd4-783c-48ad-a76a-6bcab1f859e6\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ed",
+        "R22-regen-Australia-Lord_Howe-week: editing 531d562d-8a60-4678-bfb8-41adce3aef89 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498096-0e9bcfa1-ffb2-4a7b-b1de-ffcdd2f8bb78\", \"debugId\": \"211498096-0e9bcfa1-ffb2-4a7b-b1de-ffcdd2f8bb78\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ed",
+        "R22-regen-Pacific-Chatham-day setup: occurrence instants differ\n    expected ['2026-04-02 02:15 +1345(=1775046600)', '2026-04-03 02:15 +1345(=1775133000)', '2026-04-04 02:15 +1345(=1775219400)', '2026-04-05 02:15 +1345(=1775305800)', '2026-04-06 02:15 +1245(=1775395800)', '2026-04-07 02:15 +1245(=1775482200)', '2026-04-08 02:15 +1245(=1775568600)', '2026-04-09 02:15 +1245(=1775655000)']\n    stored   ['2026-04-01 02:15 +1345(=1774960200)', '2026-04-02 02:15 +1345(=1775046600)', '2026-04-03 02:15 +1345(=1775133000)', '2026-04-04 02:15 +1345(=1775219400)', '2026-04-05 02:15 +1345(=1775305800)', '2026-04-06 02:15 +1245(=1775395800)', '2026-04-07 02:15 +1245(=1775482200)', '2026-04-08 02:15 +1245(=1775568600)']",
+        "R22-regen-America-Santiago-day setup: occurrence instants differ\n    expected ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-06 01:00 -0300(=1788667200)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']\n    stored   ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']",
+        "R22-regen-America-Santiago-day setup: 2 occurrences share local date 2026-09-05: ['0c40f3fd-a606-4ee1-abd4-4f7d76295e14', '37553244-cf51-4e86-8fa7-272b020633d7']",
+        "R22-regen-Europe-Dublin-day: editing ff001605-5066-410c-b948-789675d4aa4f returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498095-0bb00a1c-89c3-4efc-9a0b-6dc2f76c81e3\", \"debugId\": \"211498095-0bb00a1c-89c3-4efc-9a0b-6dc2f76c81e3\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ed",
+        "R22-regen-UTC-month: editing 5c5d1e70-dbb5-481a-a062-cc0465b37f31 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498095-d8e9ce32-a0c1-480d-973b-141d06d34d55\", \"debugId\": \"211498095-d8e9ce32-a0c1-480d-973b-141d06d34d55\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ed"
+      ],
+      "seconds": 0.9
+    },
+    "R23-scope-regenerate-extend": {
+      "complaints": [
+        "R23-chain-Europe-Lisbon-month setup: occurrence instants differ\n    expected ['2026-01-29 19:00 +0000(=1769713200)', '2026-02-28 19:00 +0000(=1772305200)', '2026-03-29 19:00 +0100(=1774807200)', '2026-04-29 19:00 +0100(=1777485600)', '2026-05-29 19:00 +0100(=1780077600)', '2026-06-29 19:00 +0100(=1782756000)']\n    stored   ['2026-01-29 19:00 +0000(=1769713200)', '2026-02-28 19:00 +0000(=1772305200)', '2026-03-29 20:00 +0100(=1774810800)', '2026-04-29 19:00 +0100(=1777485600)', '2026-05-29 19:00 +0100(=1780077600)', '2026-06-29 19:00 +0100(=1782756000)']",
+        "R23-chain-America-Los_Angeles-day setup: occurrence instants differ\n    expected ['2026-03-05 12:00 -0800(=1772740800)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-07 12:00 -0800(=1772913600)', '2026-03-08 12:00 -0700(=1772996400)', '2026-03-09 12:00 -0700(=1773082800)', '2026-03-10 12:00 -0700(=1773169200)', '2026-03-11 12:00 -0700(=1773255600)']\n    stored   ['2026-03-05 12:00 -0800(=1772740800)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-07 12:00 -0800(=1772913600)', '2026-03-08 13:00 -0700(=1773000000)', '2026-03-09 12:00 -0700(=1773082800)', '2026-03-10 12:00 -0700(=1773169200)', '2026-03-11 12:00 -0700(=1773255600)']",
+        "R23-chain-Australia-Lord_Howe-day setup: occurrence instants differ\n    expected ['2026-04-02 12:00 +1100(=1775091600)', '2026-04-03 12:00 +1100(=1775178000)', '2026-04-04 12:00 +1100(=1775264400)', '2026-04-05 12:00 +1030(=1775352600)', '2026-04-06 12:00 +1030(=1775439000)', '2026-04-07 12:00 +1030(=1775525400)', '2026-04-08 12:00 +1030(=1775611800)']\n    stored   ['2026-04-02 12:00 +1100(=1775091600)', '2026-04-03 12:00 +1100(=1775178000)', '2026-04-04 12:00 +1100(=1775264400)', '2026-04-05 11:30 +1030(=1775350800)', '2026-04-06 12:00 +1030(=1775439000)', '2026-04-07 12:00 +1030(=1775525400)', '2026-04-08 12:00 +1030(=1775611800)']",
+        "R23-chain-Pacific-Chatham-week setup: occurrence instants differ\n    expected ['2026-09-23 12:00 +1245(=1790118900)', '2026-09-27 12:00 +1345(=1790460900)', '2026-09-30 12:00 +1345(=1790720100)', '2026-10-04 12:00 +1345(=1791065700)', '2026-10-07 12:00 +1345(=1791324900)', '2026-10-11 12:00 +1345(=1791670500)', '2026-10-14 12:00 +1345(=1791929700)', '2026-10-18 12:00 +1345(=1792275300)']\n    stored   ['2026-09-20 12:00 +1245(=1789859700)', '2026-09-23 12:00 +1245(=1790118900)', '2026-09-27 13:00 +1345(=1790464500)', '2026-09-30 12:00 +1345(=1790720100)', '2026-10-04 12:00 +1345(=1791065700)', '2026-10-07 12:00 +1345(=1791324900)', '2026-10-11 12:00 +1345(=1791670500)', '2026-10-14 12:00 +1345(=1791929700)']",
+        "R23-chain-America-St_Johns-month-scope: scoped PATCH returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498095-bc9ae24d-0b23-4480-afbd-bf998567ea7d\", \"debugId\": \"211498095-bc9ae24d-0b23-4480-afbd-bf998567ea7d\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Sc",
+        "R23-chain-America-St_Johns-month: regenerate returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498095-280a0c36-f12c-483a-ada6-0e8eb7cd48e1\", \"debugId\": \"211498095-280a0c36-f12c-483a-ada6-0e8eb7cd48e1\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"startDate\": \"2026-01-31T12:00:00Z\"}, ",
+        "R23-chain-Europe-Dublin-week setup: occurrence instants differ\n    expected ['2026-10-18 12:00 +0100(=1792321200)', '2026-10-20 12:00 +0100(=1792494000)', '2026-10-23 12:00 +0100(=1792753200)', '2026-10-25 12:00 +0000(=1792929600)', '2026-10-27 12:00 +0000(=1793102400)', '2026-10-30 12:00 +0000(=1793361600)', '2026-11-01 12:00 +0000(=1793534400)', '2026-11-03 12:00 +0000(=1793707200)', '2026-11-06 12:00 +0000(=1793966400)']\n    stored   ['2026-10-18 12:00 +0100(=1792321200)', '2026-10-20 12:00 +0100(=1792494000)', '2026-10-23 12:00 +0100(=1792753200)', '2026-10-25 11:00 +0000(=1792926000)', '2026-10-27 12:00 +0000(=1793102400)', '2026-10-30 12:00 +0000(=1793361600)', '2026-11-01 12:00 +0000(=1793534400)', '2026-11-03 12:00 +0000(=1793707200)', '2026-11-06 12:00 +0000(=1793966400)']"
+      ],
+      "seconds": 0.5
+    },
+    "R24-race-on-hard-dates": {
+      "complaints": [
+        "R24-race round 1 (Europe/Lisbon month) setup: occurrence instants differ\n    expected ['2026-01-29 19:00 +0000(=1769713200)', '2026-02-28 19:00 +0000(=1772305200)', '2026-03-29 19:00 +0100(=1774807200)', '2026-04-29 19:00 +0100(=1777485600)', '2026-05-29 19:00 +0100(=1780077600)', '2026-06-29 19:00 +0100(=1782756000)', '2026-07-29 19:00 +0100(=1785348000)', '2026-08-29 19:00 +0100(=1788026400)', '2026-09-29 19:00 +0100(=1790704800)', '2026-10-29 19:00 +0000(=1793300400)', '2026-11-29 19:00 +0000(=1795978800)', '2026-12-29 19:00 +0000(=1798570800)', '2027-01-29 19:00 +0000(=1801249200)', '2027-02-28 19:00 +0000(=1803841200)']\n    stored   ['2026-01-29 19:00 +0000(=1769713200)', '2026-02-28 19:00 +0000(=1772305200)', '2026-03-29 20:00 +0100(=1774810800)', '2026-04-29 19:00 +0100(=1777485600)', '2026-05-29 19:00 +0100(=1780077600)', '2026-06-29 19:00 +0100(=1782756000)', '2026-07-29 19:00 +0100(=1785348000)', '2026-08-29 19:00 +0100(=1788026400)', '2026-09-29 19:00 +0100(=1790704800)', '2026-10-29 19:00 +0000(=1793300400)', '2026-11-29 19:00 +0000(=1795978800)', '2026-12-29 19:00 +0000(=1798570800)', '2027-01-29 19:00 +0000(=1801249200)', '2027-02-28 19:00 +0000(=1803841200)']"
+      ],
+      "seconds": 0.0
+    },
+    "R25-survivor-identity": {
+      "complaints": [
+        "R25-identity-Europe-Lisbon-month: setup: editing 355ee22f-db0f-437a-856e-24f0bd1ed03b returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498095-985c744a-4c70-423b-901f-cc5f951ca923\", \"debugId\": \"211498095-985c744a-4c70-423b-901f-cc5f951ca923\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ha",
+        "R25-identity-Europe-Lisbon-month: setup: editing c2e0db9b-1386-4818-a3b9-4a6a60c7d4f2 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498095-d4b973d1-fe36-43d0-ac63-75e15866cf61\", \"debugId\": \"211498095-d4b973d1-fe36-43d0-ac63-75e15866cf61\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ha",
+        "R25-identity-Australia-Lord_Howe-week: setup: editing 2d8c692f-ebac-4ac5-86cc-5d497a242d18 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498094-530bb217-aaac-4b5e-a20d-b7759aa5b60c\", \"debugId\": \"211498094-530bb217-aaac-4b5e-a20d-b7759aa5b60c\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ha",
+        "R25-identity-America-St_Johns-month: regenerate returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498094-cbfbf4d3-2f28-452f-b060-4f35747ee176\", \"debugId\": \"211498094-cbfbf4d3-2f28-452f-b060-4f35747ee176\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"startDate\": \"2026-03-30T12:00:00Z\"}, ",
+        "R25-identity-America-Santiago-day setup: occurrence instants differ\n    expected ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-06 01:00 -0300(=1788667200)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']\n    stored   ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']",
+        "R25-identity-America-Santiago-day setup: 2 occurrences share local date 2026-09-05: ['1d19f39c-e0f0-4b21-9907-13a1a82ae478', '45e1a8e0-49c6-481f-b6fc-e4b25d50968d']",
+        "R25-identity-Pacific-Chatham-week setup: occurrence instants differ\n    expected ['2026-09-23 12:00 +1245(=1790118900)', '2026-09-27 12:00 +1345(=1790460900)', '2026-09-30 12:00 +1345(=1790720100)', '2026-10-04 12:00 +1345(=1791065700)', '2026-10-07 12:00 +1345(=1791324900)', '2026-10-11 12:00 +1345(=1791670500)', '2026-10-14 12:00 +1345(=1791929700)', '2026-10-18 12:00 +1345(=1792275300)']\n    stored   ['2026-09-20 12:00 +1245(=1789859700)', '2026-09-23 12:00 +1245(=1790118900)', '2026-09-27 13:00 +1345(=1790464500)', '2026-09-30 12:00 +1345(=1790720100)', '2026-10-04 12:00 +1345(=1791065700)', '2026-10-07 12:00 +1345(=1791324900)', '2026-10-11 12:00 +1345(=1791670500)', '2026-10-14 12:00 +1345(=1791929700)']",
+        "R25-identity-Europe-Dublin-day: setup: editing 29b998c9-0b9e-417c-b7a8-4d1b39bebb9a returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498094-e8a8d6de-4e56-4009-bd4c-d350b06b8a35\", \"debugId\": \"211498094-e8a8d6de-4e56-4009-bd4c-d350b06b8a35\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ha",
+        "R25-identity-Pacific-Auckland-week setup: occurrence instants differ\n    expected ['2026-04-04 02:30 +1300(=1775223000)', '2026-04-05 02:30 +1300(=1775309400)', '2026-04-06 02:30 +1200(=1775399400)', '2026-04-08 02:30 +1200(=1775572200)', '2026-04-11 02:30 +1200(=1775831400)', '2026-04-12 02:30 +1200(=1775917800)', '2026-04-13 02:30 +1200(=1776004200)', '2026-04-15 02:30 +1200(=1776177000)', '2026-04-18 02:30 +1200(=1776436200)', '2026-04-19 02:30 +1200(=1776522600)', '2026-04-20 02:30 +1200(=1776609000)', '2026-04-22 02:30 +1200(=1776781800)']\n    stored   ['2026-04-01 02:30 +1300(=1774963800)', '2026-04-04 02:30 +1300(=1775223000)', '2026-04-05 02:30 +1300(=1775309400)', '2026-04-06 02:30 +1200(=1775399400)', '2026-04-08 02:30 +1200(=1775572200)', '2026-04-11 02:30 +1200(=1775831400)', '2026-04-12 02:30 +1200(=1775917800)', '2026-04-13 02:30 +1200(=1776004200)', '2026-04-15 02:30 +1200(=1776177000)', '2026-04-18 02:30 +1200(=1776436200)', '2026-04-19 02:30 +1200(=1776522600)', '2026-04-20 02:30 +1200(=1776609000)']",
+        "R25-identity-Asia-Kathmandu-month: setup: editing df224c24-6786-4d39-8d07-c29708a17163 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498094-fc37a298-3b2f-4767-bb57-39411e121669\", \"debugId\": \"211498094-fc37a298-3b2f-4767-bb57-39411e121669\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ha",
+        "R25-identity-Asia-Kathmandu-month: setup: editing 32bb04a7-8e69-4fae-9c9b-880f42f6c640 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498094-589ddfc5-0475-42ee-827f-0e302b16b8f5\", \"debugId\": \"211498094-589ddfc5-0475-42ee-827f-0e302b16b8f5\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ha",
+        "R25-identity-Asia-Kathmandu-month: setup: editing 4e53ac60-b8aa-4661-882a-29af142d99a8 returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498094-8cdb394b-3e65-4970-a140-50bf9c8e7d82\", \"debugId\": \"211498094-8cdb394b-3e65-4970-a140-50bf9c8e7d82\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ha"
+      ],
+      "seconds": 1.1
+    },
+    "R26-money-across-operations": {
+      "complaints": [
+        "R26-delete: deleting the occurrence published onto evt-published-001 returned HTTP 500, expected 409 (it has taken money) {\"result\": false, \"error\": {\"id\": \"211498094-495b8943-f99f-4227-88d4-6f1156f8959f\", \"debugId\": \"211498094-495b8943-f99f-4227-88d4-6f1156f8959f\", \"message\": \"failed to load occurrence protection: gel.I",
+        "R26-delete: deleting the occurrence published onto evt-published-004 returned HTTP 500, expected 409 (it has taken money) {\"result\": false, \"error\": {\"id\": \"211498093-b210e578-811d-42ff-98cb-0983bbbb2f4c\", \"debugId\": \"211498093-b210e578-811d-42ff-98cb-0983bbbb2f4c\", \"message\": \"failed to load occurrence protection: gel.I",
+        "R26-delete: deleting the occurrence published onto evt-published-005 returned HTTP 500, expected 409 (it has taken money) {\"result\": false, \"error\": {\"id\": \"211498093-b904806d-ffbb-4509-a681-b400ea4a4126\", \"debugId\": \"211498093-b904806d-ffbb-4509-a681-b400ea4a4126\", \"message\": \"failed to load occurrence protection: gel.I",
+        "R26-delete: deleting the occurrence published onto evt-published-002 returned HTTP 500, expected 200 (it has taken none) {\"result\": false, \"error\": {\"id\": \"211498093-ec847be2-50e0-467f-9924-3013d623b9e0\", \"debugId\": \"211498093-ec847be2-50e0-467f-9924-3013d623b9e0\", \"message\": \"failed to load occurrence protection: gel.I",
+        "R26-delete: the occurrence published onto evt-published-002 survived a delete, and nothing has been paid for it",
+        "R26-delete: deleting the occurrence published onto evt-published-003 returned HTTP 500, expected 200 (it has taken none) {\"result\": false, \"error\": {\"id\": \"211498093-d5cd8f24-da63-4671-83bf-9ed108d6556d\", \"debugId\": \"211498093-d5cd8f24-da63-4671-83bf-9ed108d6556d\", \"message\": \"failed to load occurrence protection: gel.I",
+        "R26-delete: the occurrence published onto evt-published-003 survived a delete, and nothing has been paid for it",
+        "R26-scope: scoped PATCH returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498093-6f0f7a81-5bc2-44e8-af10-d0cc55e186f0\", \"debugId\": \"211498093-6f0f7a81-5bc2-44e8-af10-d0cc55e186f0\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Sc",
+        "R26-regenerate: regenerate returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498093-d61307a6-74ab-48e7-ba7f-29f2ad2d34c3\", \"debugId\": \"211498093-d61307a6-74ab-48e7-ba7f-29f2ad2d34c3\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"startDate\": \"2026-03-30T12:00:00Z\"}, ",
+        "R26-extend setup: occurrence instants differ\n    expected ['2026-09-23 02:45 +1245(=1790085600)', '2026-09-27 03:45 +1345(=1790431200)', '2026-09-30 02:45 +1345(=1790686800)', '2026-10-04 02:45 +1345(=1791032400)', '2026-10-07 02:45 +1345(=1791291600)', '2026-10-11 02:45 +1345(=1791637200)']\n    stored   ['2026-09-20 02:45 +1245(=1789826400)', '2026-09-23 02:45 +1245(=1790085600)', '2026-09-27 03:45 +1345(=1790431200)', '2026-09-30 02:45 +1345(=1790686800)', '2026-10-04 02:45 +1345(=1791032400)', '2026-10-07 02:45 +1345(=1791291600)']"
+      ],
+      "seconds": 0.9
+    },
+    "R27-interleavings": {
+      "complaints": [
+        "R27-delete-vs-rebuild setup: occurrence instants differ\n    expected ['2026-09-25 02:45 +1245(=1790258400)', '2026-09-26 02:45 +1245(=1790344800)', '2026-09-27 03:45 +1345(=1790431200)', '2026-09-28 02:45 +1345(=1790514000)', '2026-09-29 02:45 +1345(=1790600400)', '2026-09-30 02:45 +1345(=1790686800)', '2026-10-01 02:45 +1345(=1790773200)', '2026-10-02 02:45 +1345(=1790859600)', '2026-10-03 02:45 +1345(=1790946000)', '2026-10-04 02:45 +1345(=1791032400)', '2026-10-05 02:45 +1345(=1791118800)', '2026-10-06 02:45 +1345(=1791205200)', '2026-10-07 02:45 +1345(=1791291600)', '2026-10-08 02:45 +1345(=1791378000)', '2026-10-09 02:45 +1345(=1791464400)', '2026-10-10 02:45 +1345(=1791550800)', '2026-10-11 02:45 +1345(=1791637200)', '2026-10-12 02:45 +1345(=1791723600)', '2026-10-13 02:45 +1345(=1791810000)', '2026-10-14 02:45 +1345(=1791896400)']\n    stored   ['2026-09-24 02:45 +1245(=1790172000)', '2026-09-25 02:45 +1245(=1790258400)', '2026-09-26 02:45 +1245(=1790344800)', '2026-09-27 03:45 +1345(=1790431200)', '2026-09-28 02:45 +1345(=1790514000)', '2026-09-29 02:45 +1345(=1790600400)', '2026-09-30 02:45 +1345(=1790686800)', '2026-10-01 02:45 +1345(=1790773200)', '2026-10-02 02:45 +1345(=1790859600)', '2026-10-03 02:45 +1345(=1790946000)', '2026-10-04 02:45 +1345(=1791032400)', '2026-10-05 02:45 +1345(=1791118800)', '2026-10-06 02:45 +1345(=1791205200)', '2026-10-07 02:45 +1345(=1791291600)', '2026-10-08 02:45 +1345(=1791378000)', '2026-10-09 02:45 +1345(=1791464400)', '2026-10-10 02:45 +1345(=1791550800)', '2026-10-11 02:45 +1345(=1791637200)', '2026-10-12 02:45 +1345(=1791723600)', '2026-10-13 02:45 +1345(=1791810000)']"
+      ],
+      "seconds": 0.6
+    },
+    "R3-month-clamp": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R4-spring-forward": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R5-fall-back": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R6-occurrence-count": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R7-end-date": {
+      "complaints": [
+        "R7-zone: occurrence instants differ\n    expected ['2026-03-08 19:00 -0700(=1773021600)', '2026-03-09 19:00 -0700(=1773108000)', '2026-03-10 19:00 -0700(=1773194400)']\n    stored   ['2026-03-08 20:00 -0700(=1773025200)', '2026-03-09 19:00 -0700(=1773108000)', '2026-03-10 19:00 -0700(=1773194400)', '2026-03-11 19:00 -0700(=1773280800)']",
+        "R7-zone: the end date is a local date in the series' zone; 11 March is past it. Stored ['2026-03-08', '2026-03-09', '2026-03-10', '2026-03-11']"
+      ],
+      "seconds": 0.2
+    },
+    "R8-protect-published": {
+      "complaints": [
+        "R8-protect: regenerate returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498102-29da6e9a-5c67-45ea-bf7d-ecaf97db30d3\", \"debugId\": \"211498102-29da6e9a-5c67-45ea-bf7d-ecaf97db30d3\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"startDate\": \"2026-04-06T09:00:00Z\"}, "
+      ],
+      "seconds": 0.3
+    },
+    "R9-edited-survives": {
+      "complaints": [
+        "R9-edit: PATCH of an occurrence returned HTTP 500 {\"result\": false, \"error\": {\"id\": \"211498102-f9a1b4bd-7c77-4706-bff6-5282d25b1ac4\", \"debugId\": \"211498102-f9a1b4bd-7c77-4706-bff6-5282d25b1ac4\", \"message\": \"failed to load occurrence protection: gel.InvalidReferenceError: __source__ cannot be used in this expression\\nquery:7:22\\n\\n     FILTER .event = __source__\\n                     ^ error\", \"requestData\": {\"date\": null, \"formData\": {\"name\": \"Ed"
+      ],
+      "seconds": 0.1
+    }
+  }
+}

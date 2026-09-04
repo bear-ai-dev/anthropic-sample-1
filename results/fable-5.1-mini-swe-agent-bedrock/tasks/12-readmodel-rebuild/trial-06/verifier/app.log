@@ -1,0 +1,54 @@
+
+> event-feed@1.4.0 start
+> tsx src/server.ts
+
+routing restored from RebuildMeta: {"proj:feed:active":"v1","proj:counts:active":"v1","proj:tags:active":"v1"} (phase LIVE_V1)
+event-feed listening on 8080
+
+> event-feed@1.4.0 start
+> tsx src/server.ts
+
+routing restored from RebuildMeta: {"proj:feed:active":"v2","proj:counts:active":"v2","proj:tags:active":"v2"} (phase SWITCH)
+event-feed listening on 8080
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:feed:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:counts:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2
+routing: redis said v1 for proj:tags:active, gel says v2; answering from v2

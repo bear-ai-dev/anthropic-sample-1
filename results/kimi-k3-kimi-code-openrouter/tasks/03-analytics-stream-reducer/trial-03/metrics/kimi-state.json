@@ -1,0 +1,25 @@
+{
+  "agents": {
+    "agent-0": {
+      "homedir": "/logs/agent/.kimi-code/sessions/wd_workspace_c52ddf65534b/session_9b56d260-2a19-45ed-abba-654ffa2fd695/agents/agent-0",
+      "labels": {
+        "parentAgentId": "main"
+      },
+      "parentAgentId": "main",
+      "type": "sub"
+    },
+    "main": {
+      "homedir": "/logs/agent/.kimi-code/sessions/wd_workspace_c52ddf65534b/session_9b56d260-2a19-45ed-abba-654ffa2fd695/agents/main",
+      "type": "main"
+    }
+  },
+  "archived": false,
+  "createdAt": 1788479301964,
+  "custom": {},
+  "cwd": "/workspace",
+  "id": "session_9b56d260-2a19-45ed-abba-654ffa2fd695",
+  "isCustomTitle": false,
+  "lastTurnReason": "completed",
+  "updatedAt": 1788480457578,
+  "version": 2
+}

@@ -1,0 +1,15 @@
+{
+  "agent": "grok-build-acp",
+  "agent_version": "1.0.18",
+  "attempt": 7,
+  "canonical_attempt_id": "02-recurring-events__trial-07",
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-04T09:08:18.884372+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "openrouter-grok-4.6",
+  "route": "x-ai/grok-4.6",
+  "status": "launched",
+  "task": "02-recurring-events",
+  "wave": "02-20260904T090817Z"
+}

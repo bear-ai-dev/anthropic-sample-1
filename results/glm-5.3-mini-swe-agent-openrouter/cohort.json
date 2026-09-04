@@ -1,0 +1,21 @@
+{
+  "arm": "glm-5.3-mini-swe-agent-openrouter",
+  "harness": "mini-SWE-agent",
+  "harness_versions": [
+    "2.4.5"
+  ],
+  "model": "z-ai/glm-5.3",
+  "model_label": "GLM 5.3",
+  "passes": 1,
+  "provider": "OpenRouter",
+  "scored_rollouts": 56,
+  "tasks": [
+    "01-linearizable-scan",
+    "02-recurring-events",
+    "03-analytics-stream-reducer",
+    "04-draft-recovery",
+    "08-envelope-intake",
+    "11-store-cutover",
+    "12-readmodel-rebuild"
+  ]
+}

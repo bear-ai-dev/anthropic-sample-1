@@ -1,0 +1,792 @@
+{
+  "version": 1,
+  "clock": "2026-03-04T10:00:00Z",
+  "gmail": {
+    "profile": {
+      "emailAddress": "inbox@desk.internal"
+    },
+    "labels": [
+      { "key": "support", "name": "Support", "type": "user" },
+      { "key": "billing", "name": "Billing", "type": "user" },
+      { "key": "newsletters", "name": "Newsletters", "type": "user" }
+    ],
+    "threads": [
+      {
+        "key": "t-pat-marden-seat-block",
+        "messages": [
+          {
+            "key": "pat-marden-1",
+            "message_id": "<h-old-a1@lowfield.example>",
+            "from": "Pat Ryan <pat.ryan@lowfield.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Seat block for the Marden Hall run",
+            "date": "2025-06-02T09:00:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "Morning,\n\nThe Marden Hall run goes on sale on Thursday and I need 40 seats held back for the schools block - rows K to M, house left, same as we did for the autumn season.\n\nCan you confirm the hold is in before Thursday 9am? The box office opens the general allocation at 10 and I would rather not be unpicking it afterwards.\n\nThanks,\nPat Ryan\nBox Office, Lowfield Arts Centre\n01632 960 118",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "pat-marden-2",
+            "message_id": "<h-old-a2@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["pat.ryan@lowfield.example"],
+            "cc": [],
+            "subject": "Re: Seat block for the Marden Hall run",
+            "date": "2025-06-02T14:00:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "Hi Pat,\n\nHold is in - K1 to K14, L1 to L14 and M1 to M12, forty seats, house left, flagged as schools. They will not appear in the general allocation on Thursday.\n\nOne thing worth knowing: M11 and M12 are restricted view, the desk light rig sits right in front of them. Everything else in the block is a clean sightline.\n\nAnything else before Thursday, just say.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<h-old-a1@lowfield.example>",
+            "references": ["<h-old-a1@lowfield.example>"],
+            "attachments": []
+          },
+          {
+            "key": "pat-marden-3",
+            "message_id": "<pr-20250602-3@lowfield.example>",
+            "from": "Pat Ryan <pat.ryan@lowfield.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Seat block for the Marden Hall run",
+            "date": "2025-06-02T16:20:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "> One thing worth knowing: M11 and M12 are restricted view, the desk\n> light rig sits right in front of them.\n\nGood catch. Swap those two for K15 and K16 if they are free - the schools group will not take restricted view, we had complaints about exactly those seats last year.\n\nOtherwise that all looks right.\n\nPat",
+            "body_html": null,
+            "in_reply_to": "<h-old-a2@desk.internal>",
+            "references": ["<h-old-a1@lowfield.example>", "<h-old-a2@desk.internal>"],
+            "attachments": []
+          },
+          {
+            "key": "pat-marden-4",
+            "message_id": "<d-20250603-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["pat.ryan@lowfield.example"],
+            "cc": [],
+            "subject": "Re: Seat block for the Marden Hall run",
+            "date": "2025-06-03T08:05:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "Done - K15 and K16 swapped in, M11 and M12 back in general sale. Ada",
+            "body_html": null,
+            "in_reply_to": "<pr-20250602-3@lowfield.example>",
+            "references": [
+              "<h-old-a1@lowfield.example>",
+              "<h-old-a2@desk.internal>",
+              "<pr-20250602-3@lowfield.example>"
+            ],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-dana-invoice-4471",
+        "messages": [
+          {
+            "key": "dana-4471-1",
+            "message_id": "<h-old-b1@rill.example>",
+            "from": "Dana Ekwueme <dana.ekwueme@rill.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Invoice 4471 - charged twice?",
+            "date": "2025-06-10T08:00:00Z",
+            "labels": ["INBOX", "billing"],
+            "body_text": "Hello,\n\nInvoice 4471 - the March hire of the Rill room plus the two AV technicians - has left our account twice. Once on 28 May and again on 4 June, both for 1,340.00, and both lines carry the same reference, LOWF-4471.\n\nCould you check and send the second one back? Our finance lead is asking and I have no good answer for her.\n\nBest,\nDana Ekwueme\nRill Collective",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "dana-4471-2",
+            "message_id": "<d-20250610-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["dana.ekwueme@rill.example"],
+            "cc": [],
+            "subject": "Re: Invoice 4471 - charged twice?",
+            "date": "2025-06-10T15:40:00Z",
+            "labels": ["SENT", "billing"],
+            "body_text": "Hi Dana,\n\nYou are right, there are two payments against 4471. The March hire was settled online by your office and then settled again on the door terminal at the end of the run - two people doing the same job a fortnight apart.\n\nI have asked for the 4 June payment to be sent back. Three to five working days to land, depending on your bank. I will write again once it has actually left our side rather than when it is merely promised.\n\nSorry for the runaround.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<h-old-b1@rill.example>",
+            "references": ["<h-old-b1@rill.example>"],
+            "attachments": []
+          },
+          {
+            "key": "dana-4471-3",
+            "message_id": "<dana-20250611-1@rill.example>",
+            "from": "Dana Ekwueme <dana.ekwueme@rill.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Invoice 4471 - charged twice?",
+            "date": "2025-06-11T09:12:00Z",
+            "labels": ["INBOX", "billing"],
+            "body_text": "Thanks Ada. Can you copy accounts@rill.example when the confirmation comes through? Ola chases these and I am out from Friday for a fortnight.\n\nDana",
+            "body_html": null,
+            "in_reply_to": "<d-20250610-1@desk.internal>",
+            "references": ["<h-old-b1@rill.example>", "<d-20250610-1@desk.internal>"],
+            "attachments": []
+          },
+          {
+            "key": "dana-4471-4",
+            "message_id": "<d-20250612-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["dana.ekwueme@rill.example"],
+            "cc": ["accounts@rill.example"],
+            "subject": "Re: Invoice 4471 - charged twice?",
+            "date": "2025-06-12T16:52:00Z",
+            "labels": ["SENT", "billing"],
+            "body_text": "Confirmed - 1,340.00 left us this afternoon, provider reference RFD-88213. Ola copied as asked.\n\nHave a good break.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<dana-20250611-1@rill.example>",
+            "references": [
+              "<h-old-b1@rill.example>",
+              "<d-20250610-1@desk.internal>",
+              "<dana-20250611-1@rill.example>"
+            ],
+            "attachments": []
+          },
+          {
+            "key": "dana-4471-5",
+            "message_id": "<dana-20260224-1@rill.example>",
+            "from": "Dana Ekwueme <dana.ekwueme@rill.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Invoice 4471 - charged twice?",
+            "date": "2026-02-24T10:41:00Z",
+            "labels": ["INBOX", "billing", "IMPORTANT"],
+            "body_text": "Hi Ada,\n\nDigging up an old email of yours, sorry. We are doing the year end and Ola cannot find any paperwork for the money that came back on 4471 - she has the bank line and nothing else. Is there a credit note we can put against it, or is the provider reference enough for the auditors?\n\nSeparately we are looking at the Rill room again for 14 and 15 April. I will send the dates over properly once the committee has signed them off.\n\nDana",
+            "body_html": null,
+            "in_reply_to": "<d-20250612-1@desk.internal>",
+            "references": [
+              "<h-old-b1@rill.example>",
+              "<d-20250610-1@desk.internal>",
+              "<dana-20250611-1@rill.example>",
+              "<d-20250612-1@desk.internal>"
+            ],
+            "attachments": []
+          },
+          {
+            "key": "dana-4471-6",
+            "message_id": "<d-20260225-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["dana.ekwueme@rill.example"],
+            "cc": ["accounts@rill.example"],
+            "subject": "Re: Invoice 4471 - charged twice?",
+            "date": "2026-02-25T09:30:00Z",
+            "labels": ["SENT", "billing"],
+            "body_text": "Hi Dana,\n\nCredit note CN-1189 attached. It carries the provider reference RFD-88213 on the face of it, so your auditors can work from either that or the bank line.\n\nApril: send the dates whenever the committee gets round to it, the Rill room is quiet that week so far.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<dana-20260224-1@rill.example>",
+            "references": [
+              "<h-old-b1@rill.example>",
+              "<d-20250610-1@desk.internal>",
+              "<dana-20250611-1@rill.example>",
+              "<d-20250612-1@desk.internal>",
+              "<dana-20260224-1@rill.example>"
+            ],
+            "attachments": [
+              {
+                "key": "att-cn-1189",
+                "filename": "credit-note-CN-1189.pdf",
+                "mime_type": "application/pdf",
+                "size": 61204,
+                "size_only": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "t-pat-loading-bay",
+        "messages": [
+          {
+            "key": "pat-bay-1",
+            "message_id": "<s-1@lowfield.example>",
+            "from": "Pat Ryan <pat.ryan@lowfield.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Access passes for the loading bay, 14 Feb",
+            "date": "2026-02-02T09:00:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "Hi,\n\nGet-in for the 14th is at 06:30 and the crew are coming in three vans. I need loading bay passes for:\n\n- Pat Ryan\n- Cormac Deane\n- Sinead Vaughan\n- Bill Aird\n\nVehicle registrations to follow once the hire company confirms them. Can the passes be at the stage door for 06:00?\n\nPat",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "pat-bay-2",
+            "message_id": "<s-2@lowfield.example>",
+            "from": "Pat Ryan <pat.ryan@lowfield.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Access passes for the loading bay, 14 Feb",
+            "date": "2026-02-02T11:30:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "> Vehicle registrations to follow once the hire company confirms them.\n\nRegs are LF19 KTX and LF19 KUB. The third van is the one you already have on file.\n\nAlso add Marta Kowal to the list, she is doing the lighting call at 07:00.\n\nSorry for the drip feed, its been that sort of morning.\n\nPat",
+            "body_html": null,
+            "in_reply_to": "<s-1@lowfield.example>",
+            "references": ["<s-1@lowfield.example>"],
+            "attachments": []
+          },
+          {
+            "key": "pat-bay-3",
+            "message_id": "<s-3@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["pat.ryan@lowfield.example"],
+            "cc": [],
+            "subject": "Re: Access passes for the loading bay, 14 Feb",
+            "date": "2026-02-02T12:00:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "Hi Pat,\n\nFive passes printed and left with the stage door from 05:45 on the 14th: Pat Ryan, Cormac Deane, Sinead Vaughan, Bill Aird, Marta Kowal. Both new regs are on the barrier list along with the van we hold on file, LF68 ODC.\n\nOne warning - the bay is single file between 06:00 and 07:30 because the refuse collection uses the far end. Send the vans in one at a time or the second one will sit on the ramp.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<s-2@lowfield.example>",
+            "references": ["<s-1@lowfield.example>", "<s-2@lowfield.example>"],
+            "attachments": []
+          },
+          {
+            "key": "pat-bay-4",
+            "message_id": "<pr-20260202-4@lowfield.example>",
+            "from": "Pat Ryan <pat.ryan@lowfield.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Access passes for the loading bay, 14 Feb",
+            "date": "2026-02-02T13:10:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "Perfect, thank you. I will warn the drivers about the bin lorry.\n\nPat",
+            "body_html": null,
+            "in_reply_to": "<s-3@desk.internal>",
+            "references": [
+              "<s-1@lowfield.example>",
+              "<s-2@lowfield.example>",
+              "<s-3@desk.internal>"
+            ],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-tavares-matinee-refund",
+        "messages": [
+          {
+            "key": "tavares-1",
+            "message_id": "<mt-20260210-1@quillbay.example>",
+            "from": "Marisol Tavares <marisol.tavares@quillbay.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Refund for the cancelled matinee (booking QB-30412)",
+            "date": "2026-02-10T08:47:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "Hello,\n\nWe had eleven tickets for the Saturday matinee on 7 February, the one that was cancelled an hour before the doors. Booking reference QB-30412.\n\nThe email we got afterwards said the refund would be automatic within five working days. Nothing has arrived and the money is still showing as taken. The group are mostly pensioners from our walking club and several of them have asked me every day since, so I would rather have something definite to tell them than another five working days.\n\nMarisol Tavares\nQuill Bay Ramblers",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "tavares-2",
+            "message_id": "<d-20260210-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["marisol.tavares@quillbay.example"],
+            "cc": [],
+            "subject": "Re: Refund for the cancelled matinee (booking QB-30412)",
+            "date": "2026-02-10T15:12:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "Hi Marisol,\n\nI am sorry. QB-30412 sat in a batch that failed on our side on the 9th and nobody picked it up again afterwards. I have put it through by hand this afternoon: eleven at 14.50, so 159.50 back to the card ending 4402.\n\nIt will show between Thursday and Monday depending on the card issuer. If it has not landed by Tuesday, tell me and I will send it as a bank transfer instead.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<mt-20260210-1@quillbay.example>",
+            "references": ["<mt-20260210-1@quillbay.example>"],
+            "attachments": []
+          },
+          {
+            "key": "tavares-3",
+            "message_id": "<mt-20260214-1@quillbay-mail.example>",
+            "from": "Marisol Tavares <m.tavares@quillbay-mail.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Refund for the cancelled matinee (booking QB-30412)",
+            "date": "2026-02-14T18:03:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "It has arrived, thank you - showed up Thursday evening.\n\nSorry for the different address, I am away from the office and this phone will not do the other one.\n\nOne more thing while I have you: is the 21 March matinee likely to go ahead? I do not want to book the coach twice.\n\nSent from my phone",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "tavares-4",
+            "message_id": "<d-20260216-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["m.tavares@quillbay-mail.example"],
+            "cc": ["marisol.tavares@quillbay.example"],
+            "subject": "Re: Refund for the cancelled matinee (booking QB-30412)",
+            "date": "2026-02-16T09:05:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "21 March is on sale and selling well, so it is going ahead - book the coach. Ada",
+            "body_html": null,
+            "in_reply_to": "<mt-20260214-1@quillbay-mail.example>",
+            "references": ["<mt-20260214-1@quillbay-mail.example>"],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-renn-order-88214",
+        "messages": [
+          {
+            "key": "renn-1",
+            "message_id": "<tr-20260218-1@aldergate.example>",
+            "from": "Tobias Renn <tobias.renn@aldergate.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Order 88214 delivered to the wrong address",
+            "date": "2026-02-18T07:22:00Z",
+            "labels": ["INBOX", "support", "IMPORTANT"],
+            "body_text": "Hi,\n\nOrder 88214, two roll-up banners and a box of programmes, was signed for at 14 Aldergate Road yesterday afternoon. We are at 40 Aldergate Road. Number 14 is a dental practice and they have very kindly put the box behind reception, but they would like it gone today.\n\nThe delivery note has the right address printed on it, so somebody read it wrong at the door.\n\nShall I get the courier to collect and redeliver, or do I just carry it three hundred metres up the road myself and invoice you a coffee?\n\nTobias Renn\nAldergate Print",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "renn-2",
+            "message_id": "<d-20260218-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["tobias.renn@aldergate.example"],
+            "cc": [],
+            "subject": "Re: Order 88214 delivered to the wrong address",
+            "date": "2026-02-18T10:40:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "Hi Tobias,\n\nCarry it up the road and I will take the coffee off the next invoice. A redelivery would be Thursday at the earliest and the dentist has been patient enough.\n\nI have logged it with the courier so the driver gets the feedback, and put a note on your account that number 14 is not you, which happens more often on that street than you would like.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<tr-20260218-1@aldergate.example>",
+            "references": ["<tr-20260218-1@aldergate.example>"],
+            "attachments": []
+          },
+          {
+            "key": "renn-3",
+            "message_id": "<tr-20260219-1@renn.example>",
+            "from": "Tobias Renn <tobi@renn.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Order 88214 delivered to the wrong address",
+            "date": "2026-02-19T20:14:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "> Carry it up the road and I will take the coffee off the next invoice.\n\nCollected, nothing damaged, dentist fed and watered.\n\nWriting from my own address, the office mail will not sync tonight. Nothing needed from you.\n\nTobias",
+            "body_html": null,
+            "in_reply_to": "<d-20260218-1@desk.internal>",
+            "references": [
+              "<tr-20260218-1@aldergate.example>",
+              "<d-20260218-1@desk.internal>"
+            ],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-okonjo-invoice-5120",
+        "messages": [
+          {
+            "key": "okonjo-1",
+            "message_id": "<ho-20260220-1@stavely-works.example>",
+            "from": "Hana Okonjo <hana.okonjo@stavely-works.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Copy of invoice 5120 for our records",
+            "date": "2026-02-20T13:05:00Z",
+            "labels": ["INBOX", "billing"],
+            "body_text": "Hello,\n\nOur finance system has invoice 5120 down as paid, but we never received the invoice itself, only a receipt. I have attached the statement line showing the payment leaving us on 12 February.\n\nCould you send a PDF made out to Stavely Works Ltd with our VAT number on it, GB 419 7788 21? The purchase order was PO-7741.\n\nThanks,\nHana Okonjo",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": [
+              {
+                "key": "att-stavely-statement",
+                "filename": "statement-line-feb.png",
+                "mime_type": "image/png",
+                "size": 384112,
+                "size_only": true
+              }
+            ]
+          },
+          {
+            "key": "okonjo-2",
+            "message_id": "<d-20260220-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["hana.okonjo@stavely-works.example"],
+            "cc": [],
+            "subject": "Re: Copy of invoice 5120 for our records",
+            "date": "2026-02-20T16:30:00Z",
+            "labels": ["SENT", "billing"],
+            "body_text": "Hi Hana,\n\nAttached, with the VAT number and PO-7741 on the face of it.\n\nThe original went to accounts@stavely.example, which is a spelling of your domain we have had on file since 2023 and which is evidently somebody else's. I have corrected it to stavely-works.example so the next one reaches you.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<ho-20260220-1@stavely-works.example>",
+            "references": ["<ho-20260220-1@stavely-works.example>"],
+            "attachments": [
+              {
+                "key": "att-invoice-5120",
+                "filename": "invoice-5120.pdf",
+                "mime_type": "application/pdf",
+                "size": 88214,
+                "size_only": true
+              }
+            ]
+          },
+          {
+            "key": "okonjo-3",
+            "message_id": "<ho-20260221-1@stavely-works.example>",
+            "from": "Hana Okonjo <hana.okonjo@stavely-works.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Copy of invoice 5120 for our records",
+            "date": "2026-02-21T08:11:00Z",
+            "labels": ["INBOX", "billing"],
+            "body_text": "That explains a great deal. Thank you - recieved and filed.\n\nHana",
+            "body_html": null,
+            "in_reply_to": "<d-20260220-1@desk.internal>",
+            "references": [
+              "<ho-20260220-1@stavely-works.example>",
+              "<d-20260220-1@desk.internal>"
+            ],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-halloran-fenwick-plan",
+        "messages": [
+          {
+            "key": "halloran-1",
+            "message_id": "<ah-20260223-1@fenwick-trust.example>",
+            "from": "Aoife Halloran <aoife.halloran@fenwick-trust.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Seating plan for the Fenwick Room",
+            "date": "2026-02-23T15:26:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "Hi - do you have a plan of the Fenwick Room set out cabaret style rather than theatre? We are expecting sixty and I need to know how many tables that is before I confirm the caterer.\n\nAoife",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "halloran-2",
+            "message_id": "<d-20260223-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["aoife.halloran@fenwick-trust.example"],
+            "cc": [],
+            "subject": "Re: Seating plan for the Fenwick Room",
+            "date": "2026-02-23T16:02:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "Cabaret at sixty is ten tables of six with the dance floor left clear, plan attached. Twelve tables if you give up the dance floor. Ada",
+            "body_html": null,
+            "in_reply_to": "<ah-20260223-1@fenwick-trust.example>",
+            "references": ["<ah-20260223-1@fenwick-trust.example>"],
+            "attachments": [
+              {
+                "key": "att-fenwick-plan",
+                "filename": "fenwick-cabaret-60.pdf",
+                "mime_type": "application/pdf",
+                "size": 143220,
+                "size_only": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "t-drake-lost-coat",
+        "messages": [
+          {
+            "key": "drake-1",
+            "message_id": "<fd-20260224-1@harrowmere.example>",
+            "from": "Fenella Drake <fenella.drake@harrowmere.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Lost property - navy coat, 22 February",
+            "date": "2026-02-24T19:05:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "Hello,\n\nI left a navy wool coat over the back of seat H14 at the Sunday afternoon concert on 22 February. There is a train ticket to Harrowmere in the left pocket, which is how you will know it is mine.\n\nFenella Drake",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "drake-2",
+            "message_id": "<fd-20260226-1@harrowmere.example>",
+            "from": "Fenella Drake <fenella.drake@harrowmere.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Lost property - navy coat, 22 February",
+            "date": "2026-02-26T18:40:00Z",
+            "labels": ["INBOX", "UNREAD", "support"],
+            "body_text": "Sending this again as I am not sure the first one went anywhere - our mail server was down on Monday evening and a few things came back to me.\n\nI left a navy wool coat over the back of seat H14 at the Sunday afternoon concert on 22 February. There is a train ticket to Harrowmere in the left pocket.\n\nFenella Drake",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-venkatesan-group-ct2209",
+        "messages": [
+          {
+            "key": "venkatesan-1",
+            "message_id": "<pv-20260226-1@cheswick-tours.example>",
+            "from": "Priya Venkatesan <priya.v@cheswick-tours.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Group booking CT-2209 - headcount change",
+            "date": "2026-02-26T11:02:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "Hi,\n\nCheswick Tours, booking CT-2209 for the evening of 12 March. We are down from 34 to 27 - a school pulled out on Tuesday. Can you release the seven and adjust the invoice before we pay it on Friday?\n\nThe driver also asks whether there is anywhere to leave a twelve metre coach for four hours, or whether he needs to go back out to the park and ride.\n\nPriya",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "venkatesan-2",
+            "message_id": "<d-20260226-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["priya.v@cheswick-tours.example"],
+            "cc": [],
+            "subject": "Re: Group booking CT-2209 - headcount change",
+            "date": "2026-02-26T14:20:00Z",
+            "labels": ["SENT", "support"],
+            "body_text": "Hi Priya,\n\nTwenty seven it is, the seven are back in general sale, and the invoice is reissued at 27 x 22.00. Same number, CT-2209-INV, so pay whichever copy your system prefers.\n\nCoach: the bay behind the loading yard takes a twelve metre with room to turn, but only until 19:30, when the refuse lorry needs the space. After that it is the park and ride, ten minutes out. If your driver wants the bay, send me the registration and I will put it on the barrier list.\n\nAda\nLowfield Desk",
+            "body_html": null,
+            "in_reply_to": "<pv-20260226-1@cheswick-tours.example>",
+            "references": ["<pv-20260226-1@cheswick-tours.example>"],
+            "attachments": []
+          },
+          {
+            "key": "venkatesan-3",
+            "message_id": "<pv-20260227-1@cheswick-tours.example>",
+            "from": "Priya Venkatesan <priya.v@cheswick-tours.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Group booking CT-2209 - headcount change",
+            "date": "2026-02-27T09:44:00Z",
+            "labels": ["INBOX", "support"],
+            "body_text": "> send me the registration and I will put it on the barrier list.\n\nCT19 WNX. He will be away by 19:00 anyway.\n\nThanks Priya",
+            "body_html": null,
+            "in_reply_to": "<d-20260226-1@desk.internal>",
+            "references": [
+              "<pv-20260226-1@cheswick-tours.example>",
+              "<d-20260226-1@desk.internal>"
+            ],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-bergstrom-po-5133",
+        "messages": [
+          {
+            "key": "bergstrom-1",
+            "message_id": "<nb-20260301-1@bergstrom-catering.example>",
+            "from": "Nils Bergstrom <nils@bergstrom-catering.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "PO number on invoice 5133",
+            "date": "2026-03-01T07:30:00Z",
+            "labels": ["INBOX", "billing"],
+            "body_text": "Hello,\n\nInvoice 5133 quotes PO-7712. Our purchase order for the February catering was PO-7721. Our system will reject it on those two digits alone, and I would rather not be the person explaining that to our accounts team twice in one month.\n\nCan you reissue with PO-7721? Everything else on it is correct.\n\nNils Bergstrom",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "bergstrom-2",
+            "message_id": "<d-20260302-1@desk.internal>",
+            "from": "Lowfield Desk <inbox@desk.internal>",
+            "to": ["nils@bergstrom-catering.example"],
+            "cc": ["accounts@bergstom-catering.example"],
+            "subject": "Re: PO number on invoice 5133",
+            "date": "2026-03-02T09:12:00Z",
+            "labels": ["SENT", "billing"],
+            "body_text": "Transposed digits at our end - reissued as 5133A against PO-7721, attached. Ada",
+            "body_html": null,
+            "in_reply_to": "<nb-20260301-1@bergstrom-catering.example>",
+            "references": ["<nb-20260301-1@bergstrom-catering.example>"],
+            "attachments": [
+              {
+                "key": "att-invoice-5133a",
+                "filename": "invoice-5133A.pdf",
+                "mime_type": "application/pdf",
+                "size": 74980,
+                "size_only": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "t-bounce-bergstrom-cc",
+        "messages": [
+          {
+            "key": "bounce-1",
+            "message_id": "<dsn-20260302-88f1@desk.internal>",
+            "from": "Mail Delivery Subsystem <mailer-daemon@desk.internal>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Delivery Status Notification (Failure)",
+            "date": "2026-03-02T09:13:00Z",
+            "labels": ["INBOX", "UNREAD"],
+            "body_text": "Your message could not be delivered to one or more recipients.\n\n  accounts@bergstom-catering.example\n  550 5.1.1 The email account that you tried to reach does not exist.\n\nThe remaining recipients received your message normally and no action is needed for them.\n\nThis is an automatically generated notice. Replies to this address are not read.",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-alcaraz-scaffold-access",
+        "messages": [
+          {
+            "key": "alcaraz-1",
+            "message_id": "<ra-20260302-1@northmoor.example>",
+            "from": "Ruben Alcaraz <r.alcaraz@northmoor.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Access for scaffolding crew, week of 9 March",
+            "date": "2026-03-02T16:48:00Z",
+            "labels": ["INBOX", "UNREAD", "STARRED", "support"],
+            "body_text": "Good afternoon,\n\nNorthmoor Access are putting the tower up in the courtyard from Monday 9 March. I need six names on the contractor list and either a key for the side gate or somebody on site at 07:00 each morning to let us in - whichever suits you better.\n\nNames: R Alcaraz, D Suvorova, M Ferreira, J Blount, K Ntanda, T Wilkes.\n\nOne other thing: is the courtyard bollard removable? The tower sections arrive on a 7.5 tonne flatbed and it will not make the turn otherwise.\n\nRuben Alcaraz\nSite Manager, Northmoor Access\n07700 900 411",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          },
+          {
+            "key": "alcaraz-2",
+            "message_id": "<ra-20260303-1@northmoor.example>",
+            "from": "Ruben Alcaraz <r.alcaraz@northmoor.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Re: Access for scaffolding crew, week of 9 March",
+            "date": "2026-03-03T08:15:00Z",
+            "labels": ["INBOX", "UNREAD", "support"],
+            "body_text": "Morning - sorry to chase, but we are ordering the flatbed today and the bollard answer decides whether it is a 7.5 tonne or two transits doing four trips.\n\nRuben",
+            "body_html": null,
+            "in_reply_to": "<ra-20260302-1@northmoor.example>",
+            "references": ["<ra-20260302-1@northmoor.example>"],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-marden-ops-weekly",
+        "messages": [
+          {
+            "key": "ops-weekly-1",
+            "message_id": "<ops-weekly-20260302@mardenhall.example>",
+            "from": "Marden Hall Operations <ops-weekly@mardenhall.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Ops Weekly - w/c 2 March",
+            "date": "2026-03-02T06:00:00Z",
+            "labels": ["INBOX", "UNREAD", "newsletters"],
+            "body_text": "OPS WEEKLY - week commencing 2 March\n\nRigging: annual inspection Wednesday 08:00-13:00. No fly cues in the main house until signed off.\n\nCleaning: the contractor changes on 9 March. Same crew, new company name on the invoices, so do not be alarmed when they look wrong.\n\nFire alarm test: Friday 10:00, full evacuation, twelve minutes.\n\nFront of house: two new starters on the bar shadowing this week.\n\nFull notes attached.\n\nYou are receiving this because your address is on the venue operations list. To come off it, reply to ops@mardenhall.example.",
+            "body_html": "<h2>Ops Weekly &ndash; week commencing 2 March</h2><ul><li><strong>Rigging:</strong> annual inspection Wednesday 08:00&ndash;13:00. No fly cues in the main house until signed off.</li><li><strong>Cleaning:</strong> contractor changes on 9 March. Same crew, new company name on the invoices.</li><li><strong>Fire alarm test:</strong> Friday 10:00, full evacuation, twelve minutes.</li><li><strong>Front of house:</strong> two new starters on the bar shadowing this week.</li></ul><p>Full notes attached.</p><p style=\"font-size:11px;color:#777\">You are receiving this because your address is on the venue operations list. To come off it, reply to ops@mardenhall.example.</p>",
+            "in_reply_to": null,
+            "references": [],
+            "attachments": [
+              {
+                "key": "att-ops-weekly-0302",
+                "filename": "ops-weekly-2026-03-02.pdf",
+                "mime_type": "application/pdf",
+                "size": 214880,
+                "size_only": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "t-cardstream-statement",
+        "messages": [
+          {
+            "key": "statement-1",
+            "message_id": "<stmt-2026-02-4471a@cardstream-billing.example>",
+            "from": "Cardstream Statements <no-reply@cardstream-billing.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Your February 2026 statement is ready",
+            "date": "2026-03-01T02:14:00Z",
+            "labels": ["INBOX", "billing"],
+            "body_text": "Your statement for February 2026 is attached.\n\nMerchant: Lowfield Arts Centre (LOWF)\nSettled: 341 transactions, 48,112.60\nRefunded: 19 transactions, 2,884.00\nFees: 703.44\n\nThe same document is available in the merchant portal for eighteen months.\n\nThis mailbox is not monitored. For queries use the portal or call the merchant line.",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": [
+              {
+                "key": "att-statement-2026-02",
+                "filename": "statement-2026-02.pdf",
+                "mime_type": "application/pdf",
+                "size": 96341,
+                "size_only": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "t-cardstream-maintenance",
+        "messages": [
+          {
+            "key": "maintenance-1",
+            "message_id": "<status-20260227-1194@cardstream-billing.example>",
+            "from": "Cardstream Service Status <status@cardstream-billing.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Planned maintenance: card terminals, Sunday 1 March 01:00-04:00",
+            "date": "2026-02-27T17:45:00Z",
+            "labels": ["INBOX", "UNREAD", "newsletters"],
+            "body_text": "Planned maintenance\n\nWhen: Sunday 1 March, 01:00 to 04:00 UTC\nWhat: firmware rollout to all P400 and P200 terminals\n\nDuring that period terminals will restart once, taking about ninety seconds each. Card payments taken during a restart will be declined and can simply be retaken.\n\nOnline payments are not affected.\n\nStatus page: status.cardstream-billing.example",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": []
+          }
+        ]
+      },
+      {
+        "key": "t-archive-nightly",
+        "messages": [
+          {
+            "key": "archive-1",
+            "message_id": "<archive-20260303-0107@archive-tools.example>",
+            "from": "Mailbox Archiver <noreply@archive-tools.example>",
+            "to": ["inbox@desk.internal"],
+            "cc": [],
+            "subject": "Nightly archive completed - inbox@desk.internal",
+            "date": "2026-03-03T01:07:00Z",
+            "labels": ["INBOX", "newsletters"],
+            "body_text": "Nightly archive completed at 01:06 UTC.\n\nMailbox: inbox@desk.internal\nCopied: 1,284 messages (3.9 GB)\nSkipped: 0\nErrors: 0\nDuration: 6m 41s\n\nA per-folder breakdown is attached. Retention on the archive volume is currently at 62% of quota.",
+            "body_html": null,
+            "in_reply_to": null,
+            "references": [],
+            "attachments": [
+              {
+                "key": "att-archive-20260303",
+                "filename": "archive-report-20260303.csv",
+                "mime_type": "text/csv",
+                "size": 12604,
+                "size_only": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

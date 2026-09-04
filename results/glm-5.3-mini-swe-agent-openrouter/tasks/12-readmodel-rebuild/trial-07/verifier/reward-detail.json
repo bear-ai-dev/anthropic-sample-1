@@ -1,0 +1,747 @@
+{
+  "harness_failure": null,
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows",
+    "baseline feed answers from generation v1",
+    "appended 55 live deliveries after the snapshot boundary was fixed",
+    "no stage past the snapshot was ever reported; R1 falls back to the cutover reading",
+    "the candidate never tried to move routing",
+    "the log stood at 1260 when the cutover committed",
+    "appended 20 deliveries after the cutover"
+  ],
+  "reward": 0,
+  "rule_results": {
+    "R1": 0,
+    "R10": 1,
+    "R11": 1,
+    "R12": 1,
+    "R13": 1,
+    "R14": 1,
+    "R15": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 0,
+    "R7": 1,
+    "R8": 1,
+    "R9": 1
+  },
+  "rules": {
+    "R1": {
+      "description": "the snapshot materialises the whole boundary before the rebuild moves on",
+      "pass": false,
+      "reason": "no observable snapshot stage and no cutover"
+    },
+    "R10": {
+      "description": "the append path keeps taking deliveries for the whole of a rebuild",
+      "pass": true,
+      "refused": 0
+    },
+    "R11": {
+      "description": "a read in flight when the cutover lands is still answered out of a whole generation",
+      "pass": true,
+      "reason": "no read was in flight across the cutover"
+    },
+    "R12": {
+      "buckets_compared": 681,
+      "buckets_where_the_two_numbers_differ": 24,
+      "days_bucketed_by": "New York",
+      "description": "the org projection counts people as well as deliveries, and knows they are different",
+      "more_actors_than_deliveries": [],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R13": {
+      "buckets_compared": 1168,
+      "days_bucketed_by": "New York",
+      "description": "the tag projection points at the newest delivery in its bucket, by event time",
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R14": {
+      "description": "the read path hands back everything the serving generation holds",
+      "pass": true,
+      "reason": "routing never moved; there is no new generation being served"
+    },
+    "R15": {
+      "description": "losing the cache does not lose which generation is serving, or the rebuild",
+      "pass": true,
+      "reason": "the cutover did not complete; there is no serving generation to lose the note of"
+    },
+    "R2": {
+      "description": "routing does not move while the new generation is behind the log",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1250,
+      "required_count": 1250,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R3": {
+      "description": "a position is folded exactly once, first delivery authoritative",
+      "duplicated_positions": [],
+      "org_counter_expected": 1278,
+      "org_counter_total": 1278,
+      "pass": true,
+      "positions_held": 1278,
+      "tag_counter_expected": 2563,
+      "tag_counter_total": 2563,
+      "wrong_identity": [],
+      "wrong_identity_count": 0
+    },
+    "R4": {
+      "description": "counters bucket days by New York local date",
+      "misplaced": [],
+      "misplaced_count": 0,
+      "pass": true,
+      "positions_held": 1278
+    },
+    "R5": {
+      "crashed_mid_cutover": false,
+      "description": "the three routing keys are never observed disagreeing",
+      "final_routing": [
+        "v1",
+        "v1",
+        "v1"
+      ],
+      "observed_units": 1108,
+      "pass": true,
+      "routing_moved": false,
+      "torn_states": []
+    },
+    "R6": {
+      "description": "the old generation is not retired while the new one is missing a position",
+      "last_phase_reached": "SNAPSHOT",
+      "pass": false,
+      "reason": "generation v1 was never retired",
+      "the_rebuild_last_refused_because": null,
+      "v1_rows_remaining": 2453
+    },
+    "R7": {
+      "description": "nothing on the read path depends on the old generation once it is gone",
+      "pass": true,
+      "reason": "generation v1 was never retired; there is nothing to be independent of"
+    },
+    "R8": {
+      "description": "the read path serves the new generation, ordered and limited as specified",
+      "pass": true,
+      "reason": "routing never moved; the read path is R2 and R6's business"
+    },
+    "R9": {
+      "description": "the new generation stays level with the log once it is the one serving",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1278,
+      "required_count": 1278,
+      "spurious": [],
+      "spurious_count": 0
+    }
+  },
+  "steps": [
+    {
+      "ms": 172,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 91,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 90,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 90,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 92,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 89,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 116,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 90,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 93,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 89,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 89,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 89,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 90,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 90,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 90,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 98,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 89,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 91,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 89,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 87,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 89,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 97,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 83,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 86,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 82,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 83,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 83,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 82,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 82,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 82,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 84,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 85,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 93,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 83,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 62,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 62,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "SNAPSHOT",
+      "status": 200
+    }
+  ],
+  "timeline": [
+    {
+      "at": "2026-09-03T00:23:42.211Z",
+      "name": "first-step",
+      "value": {
+        "phase": "SNAPSHOT",
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-03T00:23:44.356Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1243
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T00:23:45.182Z",
+      "name": "gap-appended",
+      "value": {
+        "during": 35,
+        "gap": 20,
+        "head": 1250
+      }
+    },
+    {
+      "at": "2026-09-03T00:23:53.069Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1254
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T00:23:53.326Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1259,
+          1260
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T00:24:03.444Z",
+      "name": "post-switch-appended",
+      "value": {
+        "head": 1280,
+        "posted": 20
+      }
+    }
+  ]
+}

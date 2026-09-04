@@ -1,0 +1,585 @@
+{
+  "harness_failure": null,
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows",
+    "baseline feed answers from generation v1",
+    "appended 55 live deliveries after the snapshot boundary was fixed",
+    "no stage past the snapshot was ever reported; R1 falls back to the cutover reading",
+    "appended 4 deliveries while the cutover was parked",
+    "routing after the crash: v1,v1,v1",
+    "the service restarted after the crash",
+    "the log stood at 1260 when the cutover committed",
+    "3 of 3 reader(s) parked holding generation v1",
+    "backfilled 2 position(s) below the cutover point",
+    "appended 20 deliveries after the cutover",
+    "emptied the cache: 9 keys the service had put there are gone"
+  ],
+  "reward": 0,
+  "rule_results": {
+    "R1": 0,
+    "R10": 1,
+    "R11": 0,
+    "R12": 1,
+    "R13": 1,
+    "R14": 1,
+    "R15": 1,
+    "R2": 0,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "R7": 1,
+    "R8": 1,
+    "R9": 1
+  },
+  "rules": {
+    "R1": {
+      "description": "the snapshot materialises the whole boundary before the rebuild moves on",
+      "missing": [
+        1243
+      ],
+      "missing_count": 1,
+      "pass": false,
+      "present_count": 1249,
+      "required_count": 1250,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R10": {
+      "description": "the append path keeps taking deliveries for the whole of a rebuild",
+      "pass": true,
+      "refused": 0
+    },
+    "R11": {
+      "description": "a read in flight when the cutover lands is still answered out of a whole generation",
+      "not_about_the_cutover": [],
+      "pass": false,
+      "readers_parked": 3,
+      "reads_judged": 3,
+      "released_early": false,
+      "unanswered": [],
+      "v1_was_retired_first": true,
+      "wrong": [
+        {
+          "answered": "{\"generation\":\"v1\",\"user_id\":\"usr-016\",\"items\":[]}",
+          "asked": "/feed?user_id=usr-016&limit=50",
+          "generation_reported": "v1",
+          "got": {
+            "first": [],
+            "last": [],
+            "rows": 0
+          },
+          "id": "feed-in-flight",
+          "status": 200,
+          "the_same_question_a_moment_later": {
+            "first": [
+              {
+                "event_id": "evt-000069-a",
+                "occurred_at": "2025-10-22T18:59:16.000Z",
+                "seq": 69
+              },
+              {
+                "event_id": "evt-000116-a",
+                "occurred_at": "2025-12-03T14:20:23.000Z",
+                "seq": 116
+              },
+              {
+                "event_id": "evt-000209-a",
+                "occurred_at": "2025-02-15T16:56:55.000Z",
+                "seq": 209
+              }
+            ],
+            "last": [
+              {
+                "event_id": "evt-001166-a",
+                "occurred_at": "2025-02-22T04:29:16.000Z",
+                "seq": 1166
+              },
+              {
+                "event_id": "evt-001201-a",
+                "occurred_at": "2025-09-22T01:12:29.000Z",
+                "seq": 1201
+              },
+              {
+                "event_id": "evt-001223-a",
+                "occurred_at": "2025-12-09T03:53:01.000Z",
+                "seq": 1223
+              }
+            ],
+            "rows": 39
+          },
+          "would_have_been_right": [
+            {
+              "old_generation_as_it_stood": {
+                "first": [
+                  {
+                    "event_id": "evt-000069-a",
+                    "occurred_at": "2025-10-22T18:59:16.000Z",
+                    "seq": 69
+                  },
+                  {
+                    "event_id": "evt-000116-a",
+                    "occurred_at": "2025-12-03T14:20:23.000Z",
+                    "seq": 116
+                  },
+                  {
+                    "event_id": "evt-000209-a",
+                    "occurred_at": "2025-02-15T16:56:55.000Z",
+                    "seq": 209
+                  }
+                ],
+                "last": [
+                  {
+                    "event_id": "evt-001166-a",
+                    "occurred_at": "2025-02-22T04:29:16.000Z",
+                    "seq": 1166
+                  },
+                  {
+                    "event_id": "evt-001201-a",
+                    "occurred_at": "2025-09-22T01:12:29.000Z",
+                    "seq": 1201
+                  },
+                  {
+                    "event_id": "evt-001223-a",
+                    "occurred_at": "2025-12-09T03:53:01.000Z",
+                    "seq": 1223
+                  }
+                ],
+                "rows": 39
+              }
+            },
+            {
+              "the generation serving when the reader was let go": {
+                "first": [
+                  {
+                    "event_id": "evt-000069-a",
+                    "occurred_at": "2025-10-22T18:59:16.000Z",
+                    "seq": 69
+                  },
+                  {
+                    "event_id": "evt-000116-a",
+                    "occurred_at": "2025-12-03T14:20:23.000Z",
+                    "seq": 116
+                  },
+                  {
+                    "event_id": "evt-000209-a",
+                    "occurred_at": "2025-02-15T16:56:55.000Z",
+                    "seq": 209
+                  }
+                ],
+                "last": [
+                  {
+                    "event_id": "evt-001166-a",
+                    "occurred_at": "2025-02-22T04:29:16.000Z",
+                    "seq": 1166
+                  },
+                  {
+                    "event_id": "evt-001201-a",
+                    "occurred_at": "2025-09-22T01:12:29.000Z",
+                    "seq": 1201
+                  },
+                  {
+                    "event_id": "evt-001223-a",
+                    "occurred_at": "2025-12-09T03:53:01.000Z",
+                    "seq": 1223
+                  }
+                ],
+                "rows": 39
+              }
+            },
+            {
+              "the generation serving once the reader had answered": {
+                "first": [
+                  {
+                    "event_id": "evt-000069-a",
+                    "occurred_at": "2025-10-22T18:59:16.000Z",
+                    "seq": 69
+                  },
+                  {
+                    "event_id": "evt-000116-a",
+                    "occurred_at": "2025-12-03T14:20:23.000Z",
+                    "seq": 116
+                  },
+                  {
+                    "event_id": "evt-000209-a",
+                    "occurred_at": "2025-02-15T16:56:55.000Z",
+                    "seq": 209
+                  }
+                ],
+                "last": [
+                  {
+                    "event_id": "evt-001166-a",
+                    "occurred_at": "2025-02-22T04:29:16.000Z",
+                    "seq": 1166
+                  },
+                  {
+                    "event_id": "evt-001201-a",
+                    "occurred_at": "2025-09-22T01:12:29.000Z",
+                    "seq": 1201
+                  },
+                  {
+                    "event_id": "evt-001223-a",
+                    "occurred_at": "2025-12-09T03:53:01.000Z",
+                    "seq": 1223
+                  }
+                ],
+                "rows": 39
+              }
+            }
+          ]
+        },
+        {
+          "answered": "{\"generation\":\"v1\",\"org_id\":\"org-7\",\"day\":\"2025-11-02\",\"count\":0,\"actors\":null}",
+          "asked": "/counts/org?org_id=org-7&day=2025-11-02",
+          "generation_reported": "v1",
+          "got": 0,
+          "id": "org-in-flight",
+          "status": 200,
+          "the_same_question_a_moment_later": 8,
+          "would_have_been_right": [
+            {
+              "old_generation_as_it_stood": 6
+            },
+            {
+              "the generation serving when the reader was let go": 8
+            },
+            {
+              "the generation serving once the reader had answered": 8
+            }
+          ]
+        },
+        {
+          "answered": "{\"generation\":\"v1\",\"tag\":\"tag-10\",\"day\":\"2025-03-06\",\"count\":0,\"newest_event_id\":null,\"newest_at\":null}",
+          "asked": "/counts/tag?tag=tag-10&day=2025-03-06",
+          "generation_reported": "v1",
+          "got": 0,
+          "id": "tag-in-flight",
+          "status": 200,
+          "the_same_question_a_moment_later": 11,
+          "would_have_been_right": [
+            {
+              "old_generation_as_it_stood": 5
+            },
+            {
+              "the generation serving when the reader was let go": 11
+            },
+            {
+              "the generation serving once the reader had answered": 11
+            }
+          ]
+        }
+      ],
+      "wrong_count": 3
+    },
+    "R12": {
+      "buckets_compared": 682,
+      "buckets_where_the_two_numbers_differ": 24,
+      "days_bucketed_by": "New York",
+      "description": "the org projection counts people as well as deliveries, and knows they are different",
+      "more_actors_than_deliveries": [],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R13": {
+      "buckets_compared": 1166,
+      "days_bucketed_by": "New York",
+      "description": "the tag projection points at the newest delivery in its bucket, by event time",
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R14": {
+      "description": "the read path hands back everything the serving generation holds",
+      "fields_checked": 250,
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R15": {
+      "answers_compared": 42,
+      "answers_that_changed": 0,
+      "changed": [],
+      "deliveries_accepted": 12,
+      "deliveries_after_the_cache_went": 12,
+      "deliveries_already_missing_before": [],
+      "deliveries_that_never_reached_the_serving_generation": [],
+      "deliveries_were_landing_before_the_cache_went": true,
+      "description": "losing the cache does not lose which generation is serving, or the rebuild",
+      "keys_removed": 9,
+      "pass": true,
+      "routing_after": [
+        "v2",
+        "v2",
+        "v2"
+      ]
+    },
+    "R2": {
+      "description": "routing does not move while the new generation is behind the log",
+      "missing": [
+        1243
+      ],
+      "missing_count": 1,
+      "pass": false,
+      "present_count": 1249,
+      "required_count": 1250,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R3": {
+      "description": "a position is folded exactly once, first delivery authoritative",
+      "duplicated_positions": [],
+      "org_counter_expected": 1276,
+      "org_counter_total": 1276,
+      "pass": true,
+      "positions_held": 1276,
+      "tag_counter_expected": 2558,
+      "tag_counter_total": 2558,
+      "wrong_identity": [],
+      "wrong_identity_count": 0
+    },
+    "R4": {
+      "description": "counters bucket days by New York local date",
+      "misplaced": [],
+      "misplaced_count": 0,
+      "pass": true,
+      "positions_held": 1276
+    },
+    "R5": {
+      "crashed_mid_cutover": true,
+      "description": "the three routing keys are never observed disagreeing",
+      "final_routing": [
+        "v2",
+        "v2",
+        "v2"
+      ],
+      "observed_units": 2932,
+      "pass": true,
+      "routing_moved": true,
+      "torn_states": []
+    },
+    "R6": {
+      "description": "the old generation is not retired while the new one is missing a position",
+      "missing": [],
+      "missing_count": 0,
+      "observed_at": "the statement that retires generation v1",
+      "pass": true,
+      "pre_cutover_head": 1260,
+      "present_count": 1256,
+      "required_count": 1256,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R7": {
+      "absent_key_answers": [
+        0,
+        0
+      ],
+      "changed_answers": [],
+      "changed_count": 0,
+      "description": "nothing on the read path depends on the old generation once it is gone",
+      "fallback_leak": false,
+      "pass": true,
+      "poisoned_rows": 32
+    },
+    "R8": {
+      "checked": 15,
+      "description": "the read path serves the new generation, ordered and limited as specified",
+      "generations_reported": [
+        "v2"
+      ],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R9": {
+      "description": "the new generation stays level with the log once it is the one serving",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1276,
+      "required_count": 1276,
+      "spurious": [],
+      "spurious_count": 0
+    }
+  },
+  "steps": [
+    {
+      "ms": 264,
+      "phase": "TAIL",
+      "status": 200
+    },
+    {
+      "ms": 2811,
+      "phase": "PARITY",
+      "status": 200
+    },
+    {
+      "ms": 2101,
+      "phase": "SWITCH",
+      "status": 200
+    },
+    {
+      "ms": 174,
+      "phase": "DRAIN",
+      "status": 200
+    },
+    {
+      "ms": 176,
+      "phase": "CLEANUP",
+      "status": 200
+    },
+    {
+      "ms": 62,
+      "phase": "COMPLETE",
+      "status": 200
+    },
+    {
+      "ms": 60,
+      "phase": "COMPLETE",
+      "status": 200
+    },
+    {
+      "ms": 62,
+      "phase": "COMPLETE",
+      "status": 200
+    }
+  ],
+  "timeline": [
+    {
+      "at": "2026-09-03T06:40:23.135Z",
+      "name": "first-step",
+      "value": {
+        "phase": "SNAPSHOT",
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:24.702Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1243
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:25.319Z",
+      "name": "gap-appended",
+      "value": {
+        "during": 35,
+        "gap": 20,
+        "head": 1250
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:25.441Z",
+      "name": "parked-at-cutover",
+      "value": {
+        "arrivals": 7
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:25.759Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1259,
+          1260
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:25.871Z",
+      "name": "inflight-appended",
+      "value": {
+        "head": 1260,
+        "inflight": 4
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:25.941Z",
+      "name": "kill-armed",
+      "value": {
+        "armAt": 7,
+        "fault": "7",
+        "pid": 4549
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:26.033Z",
+      "name": "crash-check",
+      "value": {
+        "crashed": true,
+        "exited": false,
+        "fault_key": "[REDACTED_SENSITIVE_VALUE]",
+        "write_arrivals": 7
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:26.122Z",
+      "name": "crashed-at-cutover",
+      "value": [
+        "v1",
+        "v1",
+        "v1"
+      ]
+    },
+    {
+      "at": "2026-09-03T06:40:27.966Z",
+      "name": "readers-parked",
+      "value": {
+        "arrivals": 3,
+        "detail": "{\"command\":\"get\",\"keys\":[\"proj:tags:active\"],\"said\":\"v1\"}",
+        "org": "org-7 2025-11-02",
+        "tag": "tag-10 2025-03-06",
+        "user": "usr-016"
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:34.132Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1256,
+          1258
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:34.224Z",
+      "name": "backfilled",
+      "value": {
+        "head": 1260,
+        "n": 2,
+        "v2": 1254
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:36.619Z",
+      "name": "post-switch-appended",
+      "value": {
+        "head": 1280,
+        "posted": 20
+      }
+    },
+    {
+      "at": "2026-09-03T06:40:39.437Z",
+      "name": "cache-emptied",
+      "value": {
+        "kept": 15,
+        "removed": [
+          "proj:counts:active",
+          "proj:feed:active",
+          "proj:tags:active",
+          "rebuild:boundary",
+          "rebuild:cursor",
+          "rebuild:parity_ok",
+          "rebuild:phase",
+          "rebuild:switch_seq",
+          "rebuild:window_closed"
+        ]
+      }
+    }
+  ]
+}

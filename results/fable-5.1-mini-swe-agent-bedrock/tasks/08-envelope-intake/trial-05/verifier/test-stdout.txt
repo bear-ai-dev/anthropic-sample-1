@@ -1,0 +1,12 @@
+=== Snapshot the deliverable ===
+=== Gmail workspace: keep the consultation journal, stop the daemon ===
+gmail journal: 17 calls recorded
+=== Apply the schema to the graded store ===
+=== Provision the desks ===
+=== Migrate again, over the history ===
+second migrate exit: 0
+=== Start the submitted service on port 8421 ===
+=== Drive the graded run ===
+driver diagnostic exit: 0
+=== Score (root, env -i, no submitted code loaded) ===
+FAIL: 27/28 rules; failed R11

@@ -1,0 +1,301 @@
+{
+  "alive_after": true,
+  "checks": 709,
+  "deliveries": 515,
+  "placement_conflicts": [],
+  "restarts": [
+    {
+      "attempts": [
+        {
+          "attempt": 0,
+          "exit": 0,
+          "healthy": true,
+          "stderr": ""
+        }
+      ],
+      "exit": 0,
+      "healthy": true,
+      "index": 273,
+      "stderr": ""
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 0,
+          "exit": 0,
+          "healthy": true,
+          "stderr": ""
+        }
+      ],
+      "exit": 0,
+      "healthy": true,
+      "index": 284,
+      "stderr": ""
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 0,
+          "exit": 0,
+          "healthy": true,
+          "stderr": ""
+        }
+      ],
+      "exit": 0,
+      "healthy": true,
+      "index": 289,
+      "stderr": ""
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 0,
+          "exit": 0,
+          "healthy": true,
+          "stderr": ""
+        }
+      ],
+      "exit": 0,
+      "healthy": true,
+      "index": 409,
+      "stderr": ""
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 0,
+          "exit": 0,
+          "healthy": true,
+          "stderr": ""
+        }
+      ],
+      "exit": 0,
+      "healthy": true,
+      "index": 420,
+      "stderr": ""
+    }
+  ],
+  "rules": {
+    "R1": {
+      "checks": 16,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A redelivery of the same transport delivery is answered with the ticket that delivery is on when it is presented again and records nothing further, on the create path and on the append path alike; a different delivery carrying a message identifier already seen is not a redelivery"
+    },
+    "R10": {
+      "checks": 4,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A read is scoped to the desk that asks: another desk's ticket is not found, and another desk's replies are not in this desk's outbox"
+    },
+    "R11": {
+      "checks": 36,
+      "passed": false,
+      "problem_count": 5,
+      "problems": [
+        "trn-00091-mrg-late and trn-00092-mrg-reply belong on one ticket and are on two",
+        "trn-00092-mrg-reply[0]: answered ticket 'a69d02eb-efe9-4283-8594-69d0d8a9db4b', the delivery is on '942b8081-d85c-412c-a4cf-0ebb80a54a8f'",
+        "read trn-00091-mrg-late: ticket is 'closed', the specification says 'open'",
+        "read trn-00091-mrg-late: lists ['trn-00091-mrg-late'], the specification says ['trn-00091-mrg-late', 'trn-00092-mrg-reply']",
+        "read trn-00110-mrg-coldr: continues '5dc55a4a-3493-4a66-a3bb-02e4691a7bcf', which is not the ticket it followed ('68b3c5b4-8b53-472e-83f6-703cec919cac')"
+      ],
+      "title": "A delivery naming identifiers from more than one conversation makes them one: the ticket that opened first keeps the case, the others' deliveries move onto it and they close recording what they went into, and the window is then measured against the merged history's most recent close"
+    },
+    "R12": {
+      "checks": 3,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A ticket lists its deliveries in the order they arrived, whatever order they were handed over in"
+    },
+    "R13": {
+      "checks": 5,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "subject_token decides nothing, whether it agrees with the threading or contradicts it"
+    },
+    "R14": {
+      "checks": 10,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "The window is anchored on the instant the ticket closed, and on the close it is currently sitting in"
+    },
+    "R15": {
+      "checks": 17,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "Nothing already recorded is forgotten because the process was restarted, including deliveries still waiting for a parent and which conversation an identifier belongs to"
+    },
+    "R16": {
+      "checks": 26,
+      "passed": false,
+      "problem_count": 4,
+      "problems": [
+        "trn-00221-dskcold-a and trn-00223-dskcold-j belong on two tickets and are on one",
+        "trn-00222-dskcold-b and trn-00223-dskcold-j belong on one ticket and are on two",
+        "read trn-00221-dskcold-a: lists ['trn-00221-dskcold-a', 'trn-00223-dskcold-j'], the specification says ['trn-00221-dskcold-a']",
+        "read trn-00222-dskcold-b: lists ['trn-00222-dskcold-b'], the specification says ['trn-00222-dskcold-b', 'trn-00223-dskcold-j']"
+      ],
+      "title": "A delivery the desk sent is recorded on the conversation's current ticket and leaves that ticket's state alone: it does not bring a closed ticket back to open, it does not open a successor to one, and the window the next delivery is measured against is unchanged"
+    },
+    "R17": {
+      "checks": 6,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A ticket belongs to the requester who wrote in on it, never to the desk's own address, and once it has one it keeps it"
+    },
+    "R18": {
+      "checks": 5,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A composed reply is taken once however many times the console hands it over, and the answer says where that reply is at that moment rather than where the console left it"
+    },
+    "R19": {
+      "checks": 3,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "Taking a reply is not sending it: before any tick the transport has nothing and the ticket holds nothing for it"
+    },
+    "R2": {
+      "checks": 5,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "Identifiers are grouped within the desk that named them; two desks using the same identifiers never share a conversation or a ticket"
+    },
+    "R20": {
+      "checks": 17,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A tick offers each queued reply to the transport, and a reply the transport took is on the wire once and recorded on the conversation's ticket once, however many ticks follow"
+    },
+    "R21": {
+      "checks": 11,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A handoff the transport did not answer leaves the reply queued and is offered again, and the message ends up on the wire once and on its ticket once -- whether the lost answer had reached the wire or not, and across a restart in between"
+    },
+    "R22": {
+      "checks": 5,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A handoff the transport refused is terminal: the reply is refused, nothing is on the wire for it, nothing is recorded on the ticket, and no later tick offers it again"
+    },
+    "R23": {
+      "checks": 5,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A message the desk sent that a reflecting gateway hands back is not a second delivery: the ticket holds that message once, and a desk whose gateway does not reflect holds it once as well"
+    },
+    "R24": {
+      "checks": 6,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "History that predates the outbox is already sent: the desk's own messages on existing tickets are in the outbox as sent, deliveries that were sent to the desk are not in it at all, and no tick offers any of them to the transport"
+    },
+    "R25": {
+      "checks": 3,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A customer's answer to something the desk sent joins the conversation it was sent on"
+    },
+    "R26": {
+      "checks": 4,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A conversation the store already held is the conversation it was: a delivery continuing it joins the ticket that conversation is on, that ticket keeps the requester it arrived with, and it lists the deliveries it already had beside the new one in arrival order"
+    },
+    "R27": {
+      "checks": 4,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A ticket the store already held is closed at the instant its own row says: a customer's reply inside the window returns that ticket to open, and one outside it opens a successor recording the ticket it continues"
+    },
+    "R28": {
+      "checks": 1,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A ticket lists its deliveries in the order of the instants they arrived at: the fraction of a second is part of the instant, whatever width the gateway stamped it to, and a delivery stamped with no fraction is the earliest in its second"
+    },
+    "R3": {
+      "checks": 88,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "The first delivery of a conversation opens one ticket, and it is open"
+    },
+    "R4": {
+      "checks": 328,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A later delivery joins the conversation's open ticket rather than opening another"
+    },
+    "R5": {
+      "checks": 23,
+      "passed": false,
+      "problem_count": 2,
+      "problems": [
+        "trn-00127-reopedge0r[0]: answered 'appended', the specification says 'reopened'",
+        "read trn-00126-reopedge0: ticket is 'closed', the specification says 'open'"
+      ],
+      "title": "A reply inside the window of the close returns the same ticket to open"
+    },
+    "R6": {
+      "checks": 19,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A reply outside the window opens a new ticket, on the same conversation, recording the one it continues"
+    },
+    "R7": {
+      "checks": 16,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "Addresses that alias to one requester resolve to one identity"
+    },
+    "R8": {
+      "checks": 21,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "Two first deliveries in one conversation arriving together yield exactly one ticket"
+    },
+    "R9": {
+      "checks": 22,
+      "passed": true,
+      "problem_count": 0,
+      "problems": [],
+      "title": "A reply that arrives before the delivery it replies to waits, and is then placed on that delivery's ticket"
+    }
+  },
+  "rules_failed": [
+    "R5",
+    "R11",
+    "R16"
+  ],
+  "seam": {
+    "close_probe_ok": true,
+    "intake_path": "/v1/intake/envelope",
+    "read_template": "/v1/tenants/{tenant}/tickets/{ticket}"
+  },
+  "verdict": "incorrect"
+}

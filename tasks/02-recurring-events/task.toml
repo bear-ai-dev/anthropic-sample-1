@@ -1,0 +1,96 @@
+schema_version = "1.0"
+
+[task]
+# Must be "org/name". A bare name is refused outright by Harbor's validator,
+# after the build has already been paid for.
+name = "sample/recurring-events"
+description = """
+Restore the recurrence engine of an event-series API: generate a series'
+occurrences from a repeat config in the series' own IANA zone, extend a series
+by a count, regenerate it in place without disturbing occurrences that have been
+published or edited by hand, and refuse to delete one that has taken money.
+Correctness turns on holding local wall-clock time fixed across daylight-saving
+transitions, clamping monthly dates into short months, measuring a continuation
+from the right end of the series, and surviving two regenerates arriving at once.
+"""
+category = "backend"
+slot = 2
+tags = ["go", "gel", "recurrence", "timezones", "dst", "concurrency"]
+
+[agent]
+# Not root. This read `root` for two rounds on the argument that nothing held
+# out is baked into the image -- true, and not the same claim as the one that
+# matters. The model, the grader and the held-out seed are not in the image;
+# they are mounted at /tests into the container the solver is still sitting in
+# when grading begins, and mode 700 root:root denies root nothing. A number
+# measured in that state cannot tell a solve from a read.
+#
+# Everything the solver actually needs works from this account: the workspace,
+# the Go build cache and /var/log/task are agent-owned, /etc/profile.d/10-task.sh
+# restates what a login shell drops, and the one step that does need root -- Gel
+# is launched through gosu because it refuses to run as root itself -- belongs to
+# the container entrypoint and has already happened before the solver arrives.
+user = "agent"
+timeout_sec = 14400
+
+[verifier]
+user = "root"
+# A warm candidate is roughly 60-90 s: Gel is already listening on the baked
+# data directory, the Go build cache is warm, and the scenarios are small. The
+# ceiling covers a cold data directory, a candidate that invalidated the build
+# cache (a full rebuild is about three minutes), the service restarts the grader
+# forces between scenario groups, and a retry of a build the kernel killed under
+# memory pressure.
+timeout_sec = 2700
+
+[environment]
+# Where the codebase actually is, and where the Dockerfile warmed the Go build
+# cache. This read `/app` for two probes: nothing creates `/app`, so the solver
+# opened in an empty directory, found no go.mod, and spent its first steps
+# hunting for the repo. Keep this in step with the Dockerfile's final WORKDIR.
+workdir = "/workspace"
+dockerfile = "environment/Dockerfile"
+build_context = "environment"
+# Harbor validates this as `network_mode`, and the only legal values are
+# 'no-network', 'public' and 'allowlist'. Two near-misses to avoid: `network_mode
+# = "none"` fails validation and kills the run, and `network = "none"` is an
+# unknown key that is silently ignored, leaving the default in place.
+#
+# 'public' rather than 'no-network', matching every other task here and
+# for the reason task 11 records: Harbor installs mini-swe-agent *into* the
+# sandbox, so the solver's own model calls originate there, and no-network
+# blackholes DNS inside that container. The failure is asymmetric and nasty --
+# the oracle passes, because it needs no model, while every real rollout dies
+# with NonZeroAgentExitCodeError. So a sealed sandbox would buy a preflight that
+# looks clean and rollouts that cannot run.
+#
+# Offline behaviour is therefore enforced inside the task rather than by the
+# network layer: GOPROXY=off with the module cache warmed at build time, a Gel
+# data directory baked into the image, and the zone database compiled into the
+# binary with -tags timetzdata so that recurrence never depends on what the host
+# has in /usr/share/zoneinfo. There is nothing in this task a solver could
+# usefully fetch: the answer is the semantics, not a library.
+network_mode = "public"
+# The entrypoint starts Gel on the baked data directory, starts Redis, loads the
+# fixture, and waits for each to answer before reporting ready. Nothing here
+# sleeps a fixed amount; it all polls. The ceiling is generous because a busy
+# host stretches Gel's first checkpoint past a minute and a solver who starts
+# work against a half-open database sees failures that are not theirs.
+setup_timeout_sec = 900
+
+# Read by the CLI from [environment] directly. An [environment.resources] table
+# is silently ignored and `memory_gb` is never read; the fallback preset is
+# 1 vCPU / 2048 MB, and linking this Go binary is the peak memory consumer in
+# the task -- below about 4 GB the linker becomes an OOM-killer candidate and the
+# trial dies carrying no reward, which reads as a broken task rather than as a
+# starved container.
+cpus = 4
+memory_mb = 6144
+
+[environment.env]
+MOCKLINEAR_URL = "http://127.0.0.1:4570"
+
+[[environment.mcp_servers]]
+name = "linear"
+transport = "stdio"
+command = "/usr/local/bin/linear"

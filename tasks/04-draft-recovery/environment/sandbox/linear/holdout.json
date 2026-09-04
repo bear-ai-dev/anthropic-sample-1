@@ -1,0 +1,567 @@
+{
+  "version": 1,
+  "clock": "2026-03-04T10:00:00Z",
+  "faults": {
+    "enabled": true,
+    "rules": []
+  },
+  "linear": {
+    "organization": {
+      "name": "ExampleCo Holdout",
+      "urlKey": "ExampleCo-holdout"
+    },
+    "viewer": "h-marcus",
+    "users": [
+      {
+        "key": "h-marcus",
+        "name": "Holdout Marcus Feld",
+        "displayName": "h-marcus",
+        "email": "marcus@holdout.ExampleCo.example",
+        "active": true
+      },
+      {
+        "key": "h-delia",
+        "name": "Holdout Delia Okonkwo",
+        "displayName": "h-delia",
+        "email": "delia@holdout.ExampleCo.example",
+        "active": true
+      },
+      {
+        "key": "h-sam",
+        "name": "Holdout Samara Ruiz",
+        "displayName": "h-sam",
+        "email": "sam@holdout.ExampleCo.example",
+        "active": true
+      },
+      {
+        "key": "h-priya",
+        "name": "Holdout Priya Nandakumar",
+        "displayName": "h-priya",
+        "email": "priya@holdout.ExampleCo.example",
+        "active": true
+      },
+      {
+        "key": "h-tomas",
+        "name": "Holdout Tomas Beltran",
+        "displayName": "h-tomas",
+        "email": "tomas@holdout.ExampleCo.example",
+        "active": true
+      },
+      {
+        "key": "h-noor",
+        "name": "Holdout Noor Haddad",
+        "displayName": "h-noor",
+        "email": "noor@holdout.ExampleCo.example",
+        "active": true
+      }
+    ],
+    "teams": [
+      {
+        "key": "HWEB",
+        "name": "Web",
+        "description": "Host web and event authoring",
+        "members": [
+          "h-marcus",
+          "h-delia",
+          "h-sam",
+          "h-noor"
+        ],
+        "states": [
+          {
+            "key": "web-backlog",
+            "name": "Backlog",
+            "type": "backlog",
+            "position": 0,
+            "color": "#bec2c8"
+          },
+          {
+            "key": "web-todo",
+            "name": "Todo",
+            "type": "unstarted",
+            "position": 1,
+            "color": "#e2e2e2"
+          },
+          {
+            "key": "web-progress",
+            "name": "In Progress",
+            "type": "started",
+            "position": 2,
+            "color": "#f2c94c"
+          },
+          {
+            "key": "web-review",
+            "name": "In Review",
+            "type": "started",
+            "position": 3,
+            "color": "#0f7488"
+          },
+          {
+            "key": "web-done",
+            "name": "Done",
+            "type": "completed",
+            "position": 4,
+            "color": "#5e6ad2"
+          },
+          {
+            "key": "web-canceled",
+            "name": "Canceled",
+            "type": "canceled",
+            "position": 5,
+            "color": "#95a2b3"
+          }
+        ],
+        "labels": [
+          {
+            "key": "web-create",
+            "name": "Create event",
+            "color": "#4ea7fc"
+          },
+          {
+            "key": "web-storage",
+            "name": "Browser storage",
+            "color": "#0f7488"
+          },
+          {
+            "key": "web-bug",
+            "name": "Bug",
+            "color": "#eb5757"
+          }
+        ],
+        "cycles": [
+          {
+            "number": 39,
+            "name": "Cycle 39",
+            "startsAt": "2026-02-02T00:00:00Z",
+            "endsAt": "2026-02-16T00:00:00Z"
+          },
+          {
+            "number": 40,
+            "name": "Cycle 40",
+            "startsAt": "2026-02-16T00:00:00Z",
+            "endsAt": "2026-03-02T00:00:00Z"
+          }
+        ]
+      },
+      {
+        "key": "HIOS",
+        "name": "iOS",
+        "description": "Guest and host mobile applications",
+        "members": [
+          "h-priya",
+          "h-tomas",
+          "h-sam",
+          "h-marcus"
+        ],
+        "states": [
+          {
+            "key": "ios-backlog",
+            "name": "Backlog",
+            "type": "backlog",
+            "position": 0,
+            "color": "#bec2c8"
+          },
+          {
+            "key": "ios-todo",
+            "name": "Todo",
+            "type": "unstarted",
+            "position": 1,
+            "color": "#e2e2e2"
+          },
+          {
+            "key": "ios-progress",
+            "name": "In Progress",
+            "type": "started",
+            "position": 2,
+            "color": "#f2c94c"
+          },
+          {
+            "key": "ios-done",
+            "name": "Done",
+            "type": "completed",
+            "position": 3,
+            "color": "#5e6ad2"
+          }
+        ],
+        "labels": [
+          {
+            "key": "ios-host",
+            "name": "Host tools",
+            "color": "#4ea7fc"
+          }
+        ],
+        "cycles": [
+          {
+            "number": 28,
+            "name": "Sprint 28",
+            "startsAt": "2026-02-16T00:00:00Z",
+            "endsAt": "2026-03-02T00:00:00Z"
+          }
+        ]
+      }
+    ],
+    "labels": [
+      {
+        "key": "customer",
+        "name": "Customer reported",
+        "color": "#f2994a"
+      },
+      {
+        "key": "regression",
+        "name": "Regression",
+        "color": "#eb5757"
+      },
+      {
+        "key": "privacy",
+        "name": "Privacy",
+        "color": "#b60205"
+      },
+      {
+        "key": "feature",
+        "name": "Feature",
+        "color": "#bb87fc"
+      },
+      {
+        "key": "chore",
+        "name": "Chore",
+        "color": "#95a2b3"
+      }
+    ],
+    "projects": [
+      {
+        "key": "h-create-revamp",
+        "name": "Create Event Revamp",
+        "description": "One authoring flow across create, edit and duplicate, with hosts able to return to unfinished work.",
+        "state": "started",
+        "lead": "h-marcus",
+        "teams": [
+          "HWEB",
+          "HIOS"
+        ],
+        "startDate": "2025-06-16",
+        "targetDate": "2026-03-20",
+        "createdAt": "2025-06-11T11:05:00Z",
+        "updatedAt": "2026-03-04T08:15:00Z",
+        "labels": [
+          "web-create",
+          "feature"
+        ],
+        "milestones": [
+          {
+            "key": "form-v2",
+            "name": "Form v2",
+            "targetDate": "2025-10-31"
+          },
+          {
+            "key": "drafts",
+            "name": "Draft recovery",
+            "targetDate": "2026-03-13"
+          }
+        ]
+      },
+      {
+        "key": "h-host-polish",
+        "name": "Host dashboard polish",
+        "description": "Small improvements outside the authoring flow.",
+        "state": "started",
+        "lead": "h-noor",
+        "teams": [
+          "HWEB"
+        ],
+        "startDate": "2026-01-12",
+        "targetDate": "2026-04-10",
+        "createdAt": "2026-01-05T09:00:00Z",
+        "updatedAt": "2026-03-01T10:00:00Z",
+        "labels": [
+          "chore"
+        ],
+        "milestones": []
+      }
+    ],
+    "documents": [
+      {
+        "key": "h-draft-support",
+        "title": "Unfinished event support notes",
+        "content": "# Unfinished events\n\nAsk whether the host was creating, editing or duplicating, which account they were using, and whether the missing work returned after reopening the same event. Never ask them to send a local file again just to reproduce a browser-storage problem.",
+        "project": "h-create-revamp",
+        "creator": "h-sam",
+        "createdAt": "2025-09-18T12:00:00Z",
+        "updatedAt": "2026-02-26T09:00:00Z"
+      }
+    ],
+    "issues": [
+      {
+        "identifier": "H-IOS-590",
+        "title": "Save unfinished events",
+        "description": "Hosts keep asking to leave event creation and return without losing what they entered. The request has been deferred into each version of the create-event redesign.",
+        "team": "HIOS",
+        "state": "ios-backlog",
+        "assignee": "h-priya",
+        "creator": "h-sam",
+        "priority": 2,
+        "estimate": 5,
+        "labels": [
+          "ios-host",
+          "customer",
+          "feature"
+        ],
+        "project": "h-create-revamp",
+        "createdAt": "2024-10-08T15:20:00Z",
+        "updatedAt": "2025-12-02T10:40:00Z",
+        "comments": [
+          {
+            "key": "c-590-1",
+            "body": "This is the first request I can find, not the first time support heard it.",
+            "user": "h-sam",
+            "createdAt": "2025-12-02T10:40:00Z"
+          }
+        ]
+      },
+      {
+        "identifier": "H-IOS-1298",
+        "title": "Host lost an event after following a link away",
+        "description": "A host spent about twenty minutes on an event, followed the payout setup link, and returned to an empty form. They did not publish and there was no server record to recover.",
+        "team": "HIOS",
+        "state": "ios-todo",
+        "assignee": "h-priya",
+        "creator": "h-sam",
+        "priority": 2,
+        "estimate": 3,
+        "labels": [
+          "ios-host",
+          "customer"
+        ],
+        "project": "h-create-revamp",
+        "milestone": "drafts",
+        "cycle": 28,
+        "createdAt": "2025-05-19T08:30:00Z",
+        "updatedAt": "2026-02-20T14:00:00Z",
+        "comments": [
+          {
+            "key": "c-1298-1",
+            "body": "Same complaint after a tab crash and after a laptop slept overnight. These are one recovery problem, not three navigation bugs.",
+            "user": "h-marcus",
+            "createdAt": "2026-01-12T11:10:00Z"
+          }
+        ]
+      },
+      {
+        "identifier": "H-IOS-1396",
+        "title": "Create-event work disappeared while dropping a map pin",
+        "description": "A host left the form to correct the venue location, came back, and every field was reset. This is another unfinished-work report attached to the revamp.",
+        "team": "HIOS",
+        "state": "ios-progress",
+        "assignee": "h-tomas",
+        "creator": "h-sam",
+        "priority": 1,
+        "estimate": 3,
+        "labels": [
+          "ios-host",
+          "customer"
+        ],
+        "project": "h-create-revamp",
+        "milestone": "drafts",
+        "cycle": 28,
+        "createdAt": "2025-08-04T17:40:00Z",
+        "updatedAt": "2026-03-01T12:10:00Z",
+        "startedAt": "2026-02-19T09:00:00Z",
+        "comments": [
+          {
+            "key": "c-1396-1",
+            "body": "The map crash was fixed separately. Keeping this open because the form still has no durable recovery.",
+            "user": "h-tomas",
+            "createdAt": "2026-02-19T09:15:00Z"
+          }
+        ]
+      },
+      {
+        "identifier": "H-WEB-565",
+        "title": "Replace the old event-draft layer for form v2",
+        "description": "`useEventDraft` still assumes one draft per person and writes records from the form generation before the current create flow. It also predates gallery and document fields. Create, edit and duplicate all reach the same hook, while `src/data/storage/draftStorage.ts` is the asynchronous durable-storage port.",
+        "team": "HWEB",
+        "state": "web-progress",
+        "assignee": "h-delia",
+        "creator": "h-marcus",
+        "priority": 1,
+        "estimate": 8,
+        "labels": [
+          "web-create",
+          "web-storage",
+          "web-bug"
+        ],
+        "project": "h-create-revamp",
+        "milestone": "drafts",
+        "cycle": 40,
+        "createdAt": "2026-02-09T10:00:00Z",
+        "updatedAt": "2026-03-04T08:15:00Z",
+        "startedAt": "2026-02-17T09:20:00Z",
+        "branchName": "holdout/delia/web-565-draft-recovery",
+        "comments": [
+          {
+            "key": "c-565-1",
+            "body": "There is a browser storage export under `sandbox/` from the release transition. It contains both old and current records; treat it as evidence, not a schema to copy blindly.",
+            "user": "h-delia",
+            "createdAt": "2026-02-17T09:35:00Z"
+          },
+          {
+            "key": "c-565-2",
+            "body": "Do not bypass `draftStorage.ts`. Shared, delayed and failed operations are normal for the adapters behind it.",
+            "user": "h-noor",
+            "createdAt": "2026-02-20T13:00:00Z"
+          }
+        ]
+      },
+      {
+        "identifier": "H-WEB-523",
+        "title": "Form v2 basic event fields",
+        "description": "Move title, dates, location and visibility into the shared create-event form.",
+        "team": "HWEB",
+        "state": "web-done",
+        "assignee": "h-delia",
+        "creator": "h-marcus",
+        "priority": 2,
+        "labels": [
+          "web-create",
+          "feature"
+        ],
+        "project": "h-create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-06-18T10:00:00Z",
+        "updatedAt": "2025-08-12T15:00:00Z",
+        "completedAt": "2025-08-12T15:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "H-WEB-524",
+        "title": "Form v2 ticket editor",
+        "description": "Bring ticket types and restrictions into the shared authoring flow.",
+        "team": "HWEB",
+        "state": "web-done",
+        "assignee": "h-delia",
+        "creator": "h-marcus",
+        "priority": 2,
+        "labels": [
+          "web-create",
+          "feature"
+        ],
+        "project": "h-create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-06-25T09:00:00Z",
+        "updatedAt": "2025-08-20T12:00:00Z",
+        "completedAt": "2025-08-20T12:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "H-WEB-530",
+        "title": "Add flyer and gallery fields to form v2",
+        "description": "The new form supports hosted flyer URLs and gallery entries.",
+        "team": "HWEB",
+        "state": "web-done",
+        "assignee": "h-delia",
+        "creator": "h-marcus",
+        "priority": 2,
+        "labels": [
+          "web-create",
+          "feature"
+        ],
+        "project": "h-create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-07-11T10:00:00Z",
+        "updatedAt": "2025-09-03T14:00:00Z",
+        "completedAt": "2025-09-03T14:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "H-WEB-532",
+        "title": "Waiver document upload",
+        "description": "Allow a host to attach a waiver while creating an event.",
+        "team": "HWEB",
+        "state": "web-done",
+        "assignee": "h-noor",
+        "creator": "h-marcus",
+        "priority": 2,
+        "labels": [
+          "web-create",
+          "feature"
+        ],
+        "project": "h-create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-07-24T11:00:00Z",
+        "updatedAt": "2025-09-10T16:00:00Z",
+        "completedAt": "2025-09-10T16:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "H-WEB-598",
+        "title": "Checkout button says payement",
+        "description": "The typo has been visible since the summer redesign.",
+        "team": "HWEB",
+        "state": "web-done",
+        "assignee": "h-noor",
+        "creator": "h-sam",
+        "priority": 4,
+        "labels": [
+          "web-bug"
+        ],
+        "createdAt": "2025-09-11T12:00:00Z",
+        "updatedAt": "2025-11-25T09:00:00Z",
+        "completedAt": "2025-11-25T09:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "H-IOS-1455",
+        "title": "Crash dropping a pin outside the US",
+        "description": "A missing postal code crashes the location editor.",
+        "team": "HIOS",
+        "state": "ios-done",
+        "assignee": "h-tomas",
+        "creator": "h-priya",
+        "priority": 1,
+        "labels": [
+          "ios-host"
+        ],
+        "project": "h-create-revamp",
+        "createdAt": "2025-09-24T13:15:00Z",
+        "updatedAt": "2025-10-08T15:20:00Z",
+        "completedAt": "2025-10-08T15:20:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "H-WEB-607",
+        "title": "Date picker jumps to today on edit",
+        "description": "Opening a scheduled event and changing another field resets its date.",
+        "team": "HWEB",
+        "state": "web-todo",
+        "assignee": "h-delia",
+        "creator": "h-sam",
+        "priority": 1,
+        "labels": [
+          "web-create",
+          "regression"
+        ],
+        "project": "h-create-revamp",
+        "cycle": 40,
+        "createdAt": "2025-09-30T19:30:00Z",
+        "updatedAt": "2026-01-30T08:10:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "H-WEB-633",
+        "title": "Organization invite opens the wrong workspace",
+        "description": "Two new officers landed in a previous organization after accepting an invite.",
+        "team": "HWEB",
+        "state": "web-done",
+        "assignee": "h-noor",
+        "creator": "h-marcus",
+        "priority": 1,
+        "labels": [
+          "regression"
+        ],
+        "project": "h-host-polish",
+        "createdAt": "2026-01-06T09:15:00Z",
+        "updatedAt": "2026-01-16T17:30:00Z",
+        "completedAt": "2026-01-16T17:30:00Z",
+        "comments": []
+      }
+    ]
+  }
+}

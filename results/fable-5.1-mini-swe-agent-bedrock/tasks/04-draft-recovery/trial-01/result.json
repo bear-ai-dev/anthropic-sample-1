@@ -1,0 +1,155 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-04T00:09:48.764069Z",
+    "started_at": "2026-09-03T23:49:29.029594Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "global.anthropic.claude-fable-5-1",
+      "provider": "amazon-bedrock"
+    },
+    "name": "mini-swe-agent",
+    "version": "2.4.5"
+  },
+  "agent_result": {
+    "cost_usd": 7.429071249999999,
+    "metadata": null,
+    "n_cache_tokens": 5064435,
+    "n_input_tokens": 5235300,
+    "n_output_tokens": 80549,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-03T23:49:29.029238Z",
+    "started_at": "2026-09-03T23:49:01.214555Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "env": {
+        "BEDROCK_PROVIDER_AWS_ACCESS_KEY_ID": "[REDACTED_SENSITIVE_VALUE]",
+        "BEDROCK_PROVIDER_AWS_REGION": "us-east-1",
+        "BEDROCK_PROVIDER_AWS_SECRET_ACCESS_KEY": "[REDACTED_SENSITIVE_VALUE]",
+        "BEDROCK_PROVIDER_AWS_SESSION_TOKEN": "[REDACTED_SENSITIVE_VALUE]"
+      },
+      "extra_allowed_hosts": [],
+      "import_path": "harness.modal_native_104_agents:ModalFable51MiniSwe",
+      "include_logs": [
+        "trajectory.json",
+        "mini-swe-agent.trajectory.json",
+        "mini-swe-agent.txt",
+        "request-audit.json",
+        "modal-task-init.log",
+        "sessions/*"
+      ],
+      "kwargs": {
+        "config_file": "/workspace/harness/mini-swe-bedrock-fable51.yaml",
+        "cost_limit": "0",
+        "max_tokens": 32768,
+        "reasoning_effort": "high",
+        "version": "2.4.5"
+      },
+      "load_trajectory": null,
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "bedrock/global.anthropic.claude-fable-5-1",
+      "n_concurrent": 1,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "resume_trajectory": false,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": null,
+      "kwargs": {
+        "app_name": "[REDACTED_INFRA_IDENTIFIER]",
+        "auto_labels": false,
+        "modal_sandbox_v2": true,
+        "sandbox_timeout_secs": 21600,
+        "secrets": [],
+        "volumes": {
+          "/logs": "[REDACTED_INFRA_IDENTIFIER]"
+        }
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": null,
+      "override_gpus": null,
+      "override_memory_mb": 6144,
+      "override_storage_mb": null,
+      "override_tpu": null,
+      "type": "modal"
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "install_only": false,
+    "job_id": "32006f45-8519-4adf-81f0-dfef9ddca2ac",
+    "source_trial": null,
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "/work/frozen-modal-tasks-native-104/04-draft-recovery",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "04-draft-recovery__B8cDUYa",
+    "trials_dir": "/work/trials-native-104/[REDACTED_INFRA_IDENTIFIER]",
+    "user_agent": null,
+    "verifier": {
+      "disable": false,
+      "include_logs": [
+        "reward.txt",
+        "reward.json",
+        "output.json",
+        "report.json",
+        "report.txt",
+        "*.log"
+      ],
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-03T23:49:01.214487Z",
+    "started_at": "2026-09-03T23:48:44.294326Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-04T00:10:54.117541Z",
+  "id": "f312bb50-9692-4f99-ac4c-a934e691cf91",
+  "source": null,
+  "started_at": "2026-09-03T23:48:41.403785Z",
+  "step_results": null,
+  "task_checksum": "757141d135adcf2be4b90a7c2a209857284c4906c6e83ef487c4f2da4d190ac9",
+  "task_id": {
+    "path": "/work/frozen-modal-tasks-native-104/04-draft-recovery"
+  },
+  "task_name": "sample/draft-recovery",
+  "trial_name": "04-draft-recovery__B8cDUYa",
+  "trial_uri": "file:///__modal/volumes/vo-UHPyT4TYEu1VGPOySfkC7v/trials-native-104/[REDACTED_INFRA_IDENTIFIER]",
+  "verifier": {
+    "finished_at": "2026-09-04T00:10:53.574297Z",
+    "started_at": "2026-09-04T00:09:53.252982Z"
+  },
+  "verifier_environment_mode": "shared",
+  "verifier_result": {
+    "rewards": {
+      "harness_failure": 0,
+      "reward": 0.0
+    }
+  }
+}

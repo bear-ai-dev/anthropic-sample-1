@@ -1,0 +1,99 @@
+schema_version = "1.4"
+
+[task]
+# Harbor validates this as org/name and refuses a bare one after the image has
+# already built and pushed, which costs a build and a failed run to discover.
+name = "sample/readmodel-rebuild"
+version = "1.0.0"
+description = """
+Reporting wants day counts in New York local time instead of UTC, so six months
+of derived projections have to be rebuilt and the service moved onto them while
+upstream keeps delivering. No reader may be served a half-built or half-switched
+generation, and the old one has to be gone at the end. The process is killed at
+storage checkpoints while this is going on.
+"""
+category = "very-long-horizon"
+keywords = [
+    "cqrs",
+    "read-model-rebuild",
+    "cutover",
+    "crash-recovery",
+    "typescript",
+    "gel",
+    "redis",
+]
+
+[[task.authors]]
+name = "sample-envs"
+
+[metadata]
+difficulty = "hard"
+slot = 12
+task_kind = "greenfield"
+tags = [
+    "projection-generations",
+    "live-cutover",
+    "crash-mid-cutover",
+]
+
+[agent]
+# The solver cannot be root. The canonical delivery log, the script of live
+# deliveries a graded run replays and the independent model's sources are baked
+# into the image root-only at /opt/verifier, because the verifier needs them in
+# a container that has no network -- and every one of them states the answers
+# the rules are judged against. Mode 0700 only holds if the account reading the
+# workspace is not the account that owns them. The grader itself is not in the
+# image at all; Harbor uploads tests/ to /tests once the agent has stopped.
+user = "agent"
+timeout_sec = 14400
+
+[verifier]
+user = "root"
+# A graded run reseeds both stores, starts the service, drives the rebuild
+# through every stage, kills the process mid-cutover and restarts it, then puts
+# the query battery through twice. That is about three minutes when the database
+# is already listening. The ceiling covers a cold database -- readiness has its
+# own 600 s poll inside test.sh -- plus a candidate that steps far more slowly
+# than the reference, and the two restarts each paying that cost again.
+timeout_sec = 2700
+
+[environment]
+workdir = "/app/event-feed"
+build_timeout_sec = 2400
+# Required, not preferred. Harbor installs the agent *into* this sandbox and the
+# installer's first act is `apt-get update && apt-get install -y curl
+# build-essential git`; with DNS blackholed that exits 100 and the trial dies
+# before the agent's first turn. The oracle preflight passes either way, because
+# it installs no agent, so a sealed task looks healthy right up until it is
+# rolled out.
+#
+# Offline behaviour is therefore enforced inside the task -- GOPROXY=off,
+# vendored dependencies, stand-in endpoints, no real AWS -- rather than by the
+# network layer.
+network_mode = "public"
+
+# Read by the CLI from [environment] directly; an
+# [environment.resources] table is silently ignored and the sandbox
+# falls back to 1 vCPU / 2048 MB, which cannot link the Go binary.
+cpus = 4
+memory_mb = 6144
+storage_mb = 16384
+
+[environment.env]
+MOCKGITHUB_URL = "http://127.0.0.1:4570"
+
+[[environment.mcp_servers]]
+name = "github"
+transport = "stdio"
+command = "/usr/local/bin/github"
+
+[environment.healthcheck]
+# task-init.sh writes this only once the database has answered a query. Gel
+# bootstraps in about fifteen seconds on the reference machine and has been seen
+# to take minutes under load, so the retry budget is far above anything observed
+# rather than tuned to it.
+command = "test -f /tmp/task-infra/.ready"
+interval_sec = 5
+timeout_sec = 5
+start_period_sec = 20
+retries = 120

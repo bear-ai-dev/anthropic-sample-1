@@ -1,0 +1,34 @@
+{
+  "intake_probe": {
+    "attempts": [
+      {
+        "body": "{\"error\":\"Error: SQLITE_ERROR: table tickets has no column named conversation_id\"}",
+        "path": "/v1/intake/envelope",
+        "status": 500
+      },
+      {
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /v1/intake/envelopes</pre>\n</body>\n</html>\n",
+        "path": "/v1/intake/envelopes",
+        "status": 404
+      },
+      {
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /intake/envelope</pre>\n</body>\n</html>\n",
+        "path": "/intake/envelope",
+        "status": 404
+      },
+      {
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /v1/envelopes</pre>\n</body>\n</html>\n",
+        "path": "/v1/envelopes",
+        "status": 404
+      },
+      {
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /v1/intake</pre>\n</body>\n</html>\n",
+        "path": "/v1/intake",
+        "status": 404
+      }
+    ],
+    "resolved": null
+  },
+  "reason": "no route accepted a delivery and answered with an outcome",
+  "verdict": "incorrect"
+}

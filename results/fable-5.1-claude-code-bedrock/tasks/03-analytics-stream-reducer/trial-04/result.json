@@ -1,0 +1,142 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-02T17:06:18.194180Z",
+    "started_at": "2026-09-02T16:49:17.085082Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "us.anthropic.claude-fable-5-1",
+      "provider": "bedrock"
+    },
+    "name": "claude-code",
+    "version": "2.1.258"
+  },
+  "agent_result": {
+    "cost_usd": 7.0760195,
+    "metadata": null,
+    "n_cache_tokens": 2101178,
+    "n_input_tokens": 2312362,
+    "n_output_tokens": 78265,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-02T16:49:17.084908Z",
+    "started_at": "2026-09-02T16:49:02.086625Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "extra_allowed_hosts": [],
+      "import_path": "evaluation_agents.claude_code_harness:BedrockClaudeCodeAgent",
+      "kwargs": {
+        "max_output_tokens": "128000",
+        "model_id": "us.anthropic.claude-fable-5-1",
+        "provider": "bedrock",
+        "reasoning_effort": "high"
+      },
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "bedrock/us.anthropic.claude-fable-5-1",
+      "n_concurrent": 56,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": "evaluation_sandbox.fargate:FargateEnvironment",
+      "kwargs": {
+        "aws_region": "us-east-1",
+        "cluster": "evaluation-runner",
+        "cpu_units": 2048,
+        "execution_role_arn": "[REDACTED_AWS_ARN]",
+        "init_container_image_uri": "[REDACTED_AWS_ACCOUNT_ID].dkr.ecr.us-east-1.amazonaws.com/evaluation/runtime-init@sha256:dd046f65a2a2d6c42603bf4ad9e859f889a01fcd75b2a4d1d2bbad39c5675bce",
+        "security_groups": [
+          "[REDACTED_AWS_NETWORK_ID]"
+        ],
+        "storage_gib": 100,
+        "subnets": [
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]"
+        ],
+        "task_role_arn": "[REDACTED_AWS_ARN]",
+        "use_spot": false
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": 2,
+      "override_gpus": null,
+      "override_memory_mb": 4096,
+      "override_storage_mb": 102400,
+      "override_tpu": null,
+      "type": null
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "install_only": false,
+    "job_id": "47f8c24d-30bc-4900-92f6-f4597e746800",
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "[REDACTED_LOCAL_PATH]",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "sample-analytics-stream-reducer__NywiQA6",
+    "trials_dir": "[REDACTED_LOCAL_PATH]",
+    "verifier": {
+      "disable": false,
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-02T16:49:02.086594Z",
+    "started_at": "2026-09-02T16:47:48.385884Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-02T17:08:33.478959Z",
+  "id": "1cf67bf2-92d3-452c-b4d8-f401ddf20db0",
+  "source": null,
+  "started_at": "2026-09-02T16:47:39.834577Z",
+  "step_results": null,
+  "task_checksum": "6d8444da8e1166561a7196b07b7efe5411ade3df07453b4bac1f73c7a3db9d47",
+  "task_id": {
+    "path": "[REDACTED_LOCAL_PATH]"
+  },
+  "task_name": "sample/analytics-stream-reducer",
+  "trial_name": "sample-analytics-stream-reducer__NywiQA6",
+  "trial_uri": "file://[REDACTED_LOCAL_PATH]",
+  "verifier": {
+    "finished_at": "2026-09-02T17:08:18.803565Z",
+    "started_at": "2026-09-02T17:07:39.561135Z"
+  },
+  "verifier_result": {
+    "rewards": {
+      "capability_absent": 0,
+      "reward": 0,
+      "rules_expected": 61,
+      "rules_passed": 50,
+      "rules_total": 61,
+      "seam_checks": 3,
+      "seam_failures": 0
+    }
+  }
+}

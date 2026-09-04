@@ -1,0 +1,428 @@
+{
+  "harness_failure": null,
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows",
+    "baseline feed answers from generation v1",
+    "appended 55 live deliveries after the snapshot boundary was fixed",
+    "appended 5 deliveries after the parity gate passed",
+    "appended 4 deliveries while the cutover was parked",
+    "routing after the crash: v1,v1,v1",
+    "the service restarted after the crash",
+    "the log stood at 1260 when the cutover committed",
+    "backfilled 2 position(s) below the cutover point",
+    "appended 20 deliveries after the cutover"
+  ],
+  "reward": 0,
+  "rule_results": {
+    "R1": 1,
+    "R10": 1,
+    "R11": 1,
+    "R12": 1,
+    "R13": 1,
+    "R14": 1,
+    "R15": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 0,
+    "R7": 1,
+    "R8": 1,
+    "R9": 0
+  },
+  "rules": {
+    "R1": {
+      "description": "the snapshot materialises the whole boundary before the rebuild moves on",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1249,
+      "required_count": 1200,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R10": {
+      "description": "the append path keeps taking deliveries for the whole of a rebuild",
+      "pass": true,
+      "refused": 0
+    },
+    "R11": {
+      "description": "a read in flight when the cutover lands is still answered out of a whole generation",
+      "pass": true,
+      "reason": "routing already said v2,v2,v2; no read could straddle the cutover"
+    },
+    "R12": {
+      "buckets_compared": 681,
+      "buckets_where_the_two_numbers_differ": 24,
+      "days_bucketed_by": "New York",
+      "description": "the org projection counts people as well as deliveries, and knows they are different",
+      "more_actors_than_deliveries": [],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R13": {
+      "buckets_compared": 1168,
+      "days_bucketed_by": "New York",
+      "description": "the tag projection points at the newest delivery in its bucket, by event time",
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R14": {
+      "description": "the read path hands back everything the serving generation holds",
+      "fields_checked": 249,
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R15": {
+      "description": "losing the cache does not lose which generation is serving, or the rebuild",
+      "pass": true,
+      "reason": "the cutover did not complete; there is no serving generation to lose the note of"
+    },
+    "R2": {
+      "description": "routing does not move while the new generation is behind the log",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1254,
+      "required_count": 1254,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R3": {
+      "description": "a position is folded exactly once, first delivery authoritative",
+      "duplicated_positions": [],
+      "org_counter_expected": 1278,
+      "org_counter_total": 1278,
+      "pass": true,
+      "positions_held": 1278,
+      "tag_counter_expected": 2563,
+      "tag_counter_total": 2563,
+      "wrong_identity": [],
+      "wrong_identity_count": 0
+    },
+    "R4": {
+      "description": "counters bucket days by New York local date",
+      "misplaced": [],
+      "misplaced_count": 0,
+      "pass": true,
+      "positions_held": 1278
+    },
+    "R5": {
+      "crashed_mid_cutover": true,
+      "description": "the three routing keys are never observed disagreeing",
+      "final_routing": [
+        "v2",
+        "v2",
+        "v2"
+      ],
+      "observed_units": 1949,
+      "pass": true,
+      "routing_moved": true,
+      "torn_states": []
+    },
+    "R6": {
+      "description": "the old generation is not retired while the new one is missing a position",
+      "last_phase_reached": "CLEANUP",
+      "pass": false,
+      "reason": "generation v1 was never retired",
+      "the_rebuild_last_refused_because": null,
+      "v1_rows_remaining": 2453
+    },
+    "R7": {
+      "description": "nothing on the read path depends on the old generation once it is gone",
+      "pass": true,
+      "reason": "generation v1 was never retired; there is nothing to be independent of"
+    },
+    "R8": {
+      "checked": 15,
+      "description": "the read path serves the new generation, ordered and limited as specified",
+      "generations_reported": [
+        "v2"
+      ],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R9": {
+      "description": "the new generation stays level with the log once it is the one serving",
+      "missing": [
+        1256,
+        1258
+      ],
+      "missing_count": 2,
+      "pass": false,
+      "present_count": 1278,
+      "required_count": 1280,
+      "spurious": [],
+      "spurious_count": 0
+    }
+  },
+  "steps": [
+    {
+      "ms": 8444,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 38852,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 5565,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 1321,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 1057,
+      "phase": "TAIL",
+      "status": 200
+    },
+    {
+      "ms": 97,
+      "phase": "PARITY",
+      "status": 200
+    },
+    {
+      "ms": 181,
+      "phase": "SWITCH",
+      "status": 200
+    },
+    {
+      "ms": 261,
+      "phase": "CLEANUP",
+      "status": 200
+    },
+    {
+      "ms": 88,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 84,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 84,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 86,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 87,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 86,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 85,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 84,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 60,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 62,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 62,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 62,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 61,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 62,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 62,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 62,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 62,
+      "phase": "CLEANUP",
+      "status": 409
+    },
+    {
+      "ms": 61,
+      "phase": "CLEANUP",
+      "status": 409
+    }
+  ],
+  "timeline": [
+    {
+      "at": "2026-09-03T00:26:10.354Z",
+      "name": "first-step",
+      "value": {
+        "phase": "SNAPSHOT",
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-03T00:26:22.835Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1243
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T00:26:25.048Z",
+      "name": "gap-appended",
+      "value": {
+        "during": 35,
+        "gap": 20,
+        "head": 1250
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:12.155Z",
+      "name": "snapshot-observed",
+      "value": {
+        "phase": "TAIL",
+        "present": 1249
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:12.670Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1254
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:12.842Z",
+      "name": "after-gate-appended",
+      "value": {
+        "head": 1254,
+        "n": 5
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:13.078Z",
+      "name": "parked-at-cutover",
+      "value": {
+        "arrivals": 1
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:13.342Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1259,
+          1260
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:13.449Z",
+      "name": "inflight-appended",
+      "value": {
+        "head": 1260,
+        "inflight": 4
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:13.514Z",
+      "name": "kill-armed",
+      "value": {
+        "armAt": 1,
+        "fault": "1",
+        "pid": 13106
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:13.592Z",
+      "name": "crash-check",
+      "value": {
+        "crashed": true,
+        "exited": false,
+        "fault_key": "[REDACTED_SENSITIVE_VALUE]",
+        "write_arrivals": 1
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:13.686Z",
+      "name": "crashed-at-cutover",
+      "value": [
+        "v1",
+        "v1",
+        "v1"
+      ]
+    },
+    {
+      "at": "2026-09-03T00:27:15.349Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1256,
+          1258
+        ]
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:15.430Z",
+      "name": "backfilled",
+      "value": {
+        "head": 1260,
+        "n": 2,
+        "v2": 1258
+      }
+    },
+    {
+      "at": "2026-09-03T00:27:20.010Z",
+      "name": "post-switch-appended",
+      "value": {
+        "head": 1280,
+        "posted": 20
+      }
+    }
+  ]
+}

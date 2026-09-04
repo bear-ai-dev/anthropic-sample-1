@@ -1,0 +1,13 @@
+# Compiled Go binaries never belong in the image. Upstream committed a 63 MB
+# `main` and a 12 MB `backfill-event-location` into the repository root; both
+# are removed from the workspace, and this stops a rebuild from a dirty
+# checkout putting them back. `bin/` is where the harness and the reference
+# both build to, so a build run before `docker build` must not travel either.
+workspace/main
+workspace/backfill-event-location
+workspace/bin/
+
+# Nothing graded lives in the build context, and nothing graded should be able
+# to arrive here by a later widening of a COPY.
+**/__pycache__/
+**/.local/

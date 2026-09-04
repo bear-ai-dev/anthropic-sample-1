@@ -1,0 +1,63 @@
+{
+  "agents": [
+    {
+      "env": {
+        "BEDROCK_PROVIDER_AWS_ACCESS_KEY_ID": "[REDACTED_SENSITIVE_VALUE]",
+        "BEDROCK_PROVIDER_AWS_REGION": "us-east-1",
+        "BEDROCK_PROVIDER_AWS_SECRET_ACCESS_KEY": "[REDACTED_SENSITIVE_VALUE]",
+        "BEDROCK_PROVIDER_AWS_SESSION_TOKEN": "[REDACTED_SENSITIVE_VALUE]"
+      },
+      "import_path": "harness.modal_native_104_agents:ModalFable51MiniSwe",
+      "include_logs": [
+        "trajectory.json",
+        "mini-swe-agent.trajectory.json",
+        "mini-swe-agent.txt",
+        "request-audit.json",
+        "modal-task-init.log",
+        "sessions/*"
+      ],
+      "kwargs": {
+        "config_file": "/workspace/harness/mini-swe-bedrock-fable51.yaml",
+        "cost_limit": "0",
+        "max_tokens": 32768,
+        "reasoning_effort": "high",
+        "version": "2.4.5"
+      },
+      "model_name": "bedrock/global.anthropic.claude-fable-5-1",
+      "n_concurrent": 1
+    }
+  ],
+  "environment": {
+    "kwargs": {
+      "app_name": "[REDACTED_INFRA_IDENTIFIER]",
+      "auto_labels": false,
+      "modal_sandbox_v2": true,
+      "sandbox_timeout_secs": 21600,
+      "secrets": [],
+      "volumes": {
+        "/logs": "[REDACTED_INFRA_IDENTIFIER]"
+      }
+    },
+    "override_memory_mb": 6144,
+    "type": "modal"
+  },
+  "job_name": "fable51-mini-swe-02-recurring-events__trial-07-wave-02-20260904T035303Z",
+  "jobs_dir": "/work/trials-native-104/[REDACTED_INFRA_IDENTIFIER]",
+  "n_concurrent_trials": 1,
+  "quiet": true,
+  "tasks": [
+    {
+      "path": "/work/frozen-modal-tasks-native-104/02-recurring-events"
+    }
+  ],
+  "verifier": {
+    "include_logs": [
+      "reward.txt",
+      "reward.json",
+      "output.json",
+      "report.json",
+      "report.txt",
+      "*.log"
+    ]
+  }
+}

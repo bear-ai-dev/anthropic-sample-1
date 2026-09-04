@@ -1,0 +1,90 @@
+schema_version = "1.0"
+
+[task]
+name = "sample/linearizable-scan"
+description = """
+Restore ticket admission in an event door-scanning API: a ticket lets one person
+through the door once, whatever the doors, the requests and the retries do, and
+the host's screens report what happened.
+
+This field is Harbor metadata and the solver never sees it, so it must not be
+where a graded rule is written down: a rule stated here and nowhere the solver
+can look is not a hard rule, it is a coin flip.
+"""
+category = "backend"
+slot = 1
+tags = ["go", "edgedb", "gel", "concurrency", "linearizability", "idempotency"]
+
+[agent]
+# The grader, the independent model and the oracle arrive at /tests and
+# /solution root-owned at mode 700, which protects nothing at all from root.
+# This said `root` for one round on the argument that nothing graded is baked
+# into the image; that argument is about the image and the boundary is about the
+# run, and a later solver could have read the intended all-or-nothing semantics
+# straight out of grader.py.
+#
+# The previous justification -- that the solver may want to restart Gel and
+# Redis -- was answered by removing the need instead. The entrypoint brings both
+# up before anyone has a shell, `scripts/svc` manages the only process a solver
+# restarts, and /workspace, the Go build cache and /var/log/task all belong to
+# this account.
+user = "agent"
+timeout_sec = 14400
+
+[verifier]
+user = "root"
+# A warm run is about 25 s: Gel is already listening, the Go build cache is
+# warm, and the scenarios themselves are fast. The ceiling covers a cold data
+# directory, a candidate that invalidated the whole build cache (a full rebuild
+# is ~3 min), the kill-and-restart scenario, and a retry of a build that the
+# kernel killed under memory pressure.
+timeout_sec = 1800
+
+[environment]
+workdir = "/workspace"
+dockerfile = "environment/Dockerfile"
+build_context = "environment"
+
+# Where the context Linear workspace answers. The entrypoint starts it on this
+# address and the client already defaults to it, so this states the value rather
+# than choosing it -- said here because a harness hands the agent an environment
+# of its own making rather than the image's, and an inline table because
+# [environment.env] would have to follow every bare key in [environment].
+env = { MOCKLINEAR_URL = "http://127.0.0.1:4570" }
+# Required, not preferred. Harbor installs the agent *into* this sandbox and the
+# installer's first act is `apt-get update && apt-get install -y curl
+# build-essential git`; with DNS blackholed that exits 100 and the trial dies
+# before the agent's first turn. The oracle preflight passes either way, because
+# it installs no agent, so a sealed task looks healthy right up until it is
+# rolled out.
+#
+# Offline behaviour is therefore enforced inside the task -- GOPROXY=off,
+# vendored dependencies, stand-in endpoints, no real AWS -- rather than by the
+# network layer.
+network_mode = "public"
+
+# The entrypoint starts Gel, waits for it to answer a query, loads the fixture
+# and only then reports ready. Gel is the slow part of that and it is slower on
+# a cold or contended host. Generous on purpose: a verifier that starts while
+# the fixture is still going in races the seed, and the collision surfaces as a
+# uniqueness violation that reads like a broken fixture rather than a missed
+# handover.
+setup_timeout_sec = 900
+
+# Gel runs Postgres alongside the Go service, and linking this binary is the
+# peak: below about 4 GB the linker becomes an OOM-killer candidate.
+
+# Read by the CLI from [environment] directly; an
+# [environment.resources] table is silently ignored and the sandbox
+# falls back to 1 vCPU / 2048 MB, which cannot link the Go binary.
+cpus = 4
+memory_mb = 6144
+
+# The same workspace again, for a harness that speaks MCP. `linear` with no
+# arguments is the stdio server; it holds no state and forwards to the one
+# daemon, so a shell agent using the command and an MCP client using this
+# server see the same workspace and land in the same journal.
+[[environment.mcp_servers]]
+name = "linear"
+transport = "stdio"
+command = "/usr/local/bin/linear"

@@ -1,0 +1,72 @@
+schema_version = "1.0"
+
+[task]
+name = "sample/analytics-stream-reducer"
+description = """
+Restore the live analytics SSE consumer in a React dashboard, and the three
+subsystems that have to agree with it: the reducer (per-section loading and
+failure, idempotent redelivery, revision-ordered replays), the resumed read
+after a dropped connection, which continues from what the panels are showing and
+from nothing else; the record the browser keeps between visits, which is written
+from the screen, restored as figures only, read in both of the two layouts in
+circulation, upgraded from the older one without inventing a revision, and
+discarded on a restart; and the fallback to the ordinary analytics query for a
+section the read finished with and had nothing to show for, which reaches three
+sections of ten, respects the event's eligibility, and supplies figures that
+carry no revision and so cannot move where the next connection starts. Plus a
+give-up path that leaves no panel waiting, and isolation of frames — the terminal
+one included — read on a connection superseded, stopped, or pointed at another
+event.
+"""
+category = "web"
+slot = 3
+tags = ["typescript", "react", "sse", "concurrency", "idempotency", "persistence", "migration"]
+
+[agent]
+user = "agent"
+timeout_sec = 14400
+
+[verifier]
+user = "root"
+# The graded spec is one jsdom fork driving 52 scenarios on virtual time, so the
+# reconnect backoffs cost nothing: measured at 2.4 s wall clock end to end on an
+# idle host and 3-4 s at load, of which 0.6 s is the tests and the rest is
+# transform and collect. Each scenario now also mounts and unmounts a tree, seeds
+# localStorage and may drive a reload, and that is still the same order of cost.
+#
+# The ceiling is therefore not sized against the expected runtime but against a
+# candidate that hangs -- one that leaves a timer pending on every scenario, or
+# awaits a promise that never settles. Two nested limits, because a verifier that
+# is killed from outside can only report what test.sh left on disk: run.mjs gives
+# the spec runner 600 s and calls a killed runner a harness failure rather than a
+# verdict, and this is the outer backstop.
+timeout_sec = 1200
+
+[environment]
+workdir = "/workspace"
+dockerfile = "environment/Dockerfile"
+build_context = "environment"
+# Required, not preferred. Harbor installs the agent *into* this sandbox and the
+# installer's first act is `apt-get update && apt-get install -y curl
+# build-essential git`; with DNS blackholed that exits 100 and the trial dies
+# before the agent's first turn. The oracle preflight passes either way, because
+# it installs no agent, so a sealed task looks healthy right up until it is
+# rolled out.
+#
+# Offline behaviour is therefore enforced inside the task -- GOPROXY=off,
+# vendored dependencies, stand-in endpoints, no real AWS -- rather than by the
+# network layer.
+network_mode = "public"
+# Read by the CLI from [environment] directly; an
+# [environment.resources] table is silently ignored and the sandbox
+# falls back to 1 vCPU / 2048 MB, which cannot link the Go binary.
+cpus = 2
+memory_mb = 4096
+
+[environment.env]
+MOCKLINEAR_URL = "http://127.0.0.1:4570"
+
+[[environment.mcp_servers]]
+name = "linear"
+transport = "stdio"
+command = "/usr/local/bin/linear"

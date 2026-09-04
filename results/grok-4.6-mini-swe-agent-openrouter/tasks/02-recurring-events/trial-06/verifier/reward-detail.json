@@ -1,0 +1,178 @@
+{
+  "failed_rules": [
+    "R4-spring-forward",
+    "R16-scope-across-transition",
+    "R22-regenerate-cross",
+    "R23-scope-regenerate-extend",
+    "R24-race-on-hard-dates",
+    "R25-survivor-identity",
+    "R26-money-across-operations",
+    "R27-interleavings"
+  ],
+  "fixture_gate": [],
+  "passed_rules": [
+    "R1-generate-shapes",
+    "R2-selected-days",
+    "R3-month-clamp",
+    "R5-fall-back",
+    "R6-occurrence-count",
+    "R7-end-date",
+    "R8-protect-published",
+    "R9-edited-survives",
+    "R10-extend",
+    "R11-concurrent-regenerate",
+    "R12-publish-then-regenerate",
+    "R13-delete-with-sales",
+    "R14-scope-steps-over-paid",
+    "R15-scope-over-month-end",
+    "R17-scope-then-regenerate",
+    "R18-extend-fills-gap",
+    "R19-extend-after-regenerate",
+    "R20-race-scope-vs-regenerate",
+    "R21-zone-by-configuration"
+  ],
+  "reward": 0.0,
+  "rules": {
+    "R1-generate-shapes": {
+      "complaints": [],
+      "seconds": 0.8
+    },
+    "R10-extend": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R11-concurrent-regenerate": {
+      "complaints": [],
+      "seconds": 1.6
+    },
+    "R12-publish-then-regenerate": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R13-delete-with-sales": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R14-scope-steps-over-paid": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R15-scope-over-month-end": {
+      "complaints": [],
+      "seconds": 0.3
+    },
+    "R16-scope-across-transition": {
+      "complaints": [
+        "R16-scope-dst: occurrence 537ddc4b-37b0-427d-b28a-b7810f748bba (moved) should sit at 2026-03-08 03:00 -0700(=1772964000) and sits at 2026-03-08 00:00 -0800(=1772956800)"
+      ],
+      "seconds": 0.2
+    },
+    "R17-scope-then-regenerate": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R18-extend-fills-gap": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R19-extend-after-regenerate": {
+      "complaints": [],
+      "seconds": 0.3
+    },
+    "R2-selected-days": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R20-race-scope-vs-regenerate": {
+      "complaints": [],
+      "seconds": 5.1
+    },
+    "R21-zone-by-configuration": {
+      "complaints": [],
+      "seconds": 8.7
+    },
+    "R22-regenerate-cross": {
+      "complaints": [
+        "R22-regen-America-Los_Angeles-week setup: occurrence instants differ\n    expected ['2026-03-01 02:30 -0800(=1772361000)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-25 02:30 -0700(=1774431000)']\n    stored   ['2026-03-01 02:30 -0800(=1772361000)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-08 00:00 -0800(=1772956800)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-25 02:30 -0700(=1774431000)']",
+        "R22-regen-America-Santiago-day setup: occurrence instants differ\n    expected ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-06 01:00 -0300(=1788667200)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']\n    stored   ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']",
+        "R22-regen-America-Santiago-day setup: 2 occurrences share local date 2026-09-05: ['1e3123c7-7e32-40d1-9fd9-ce72a9c19c1b', '463db3d9-ba47-4b38-8f67-d0ac3c6060c3']"
+      ],
+      "seconds": 1.9
+    },
+    "R23-scope-regenerate-extend": {
+      "complaints": [
+        "R23-chain-America-Los_Angeles-day-scope: occurrence 9c488cbd-16fe-495e-9b93-e6bcafa88056 (moved) should sit at 2026-03-08 03:00 -0700(=1772964000) and sits at 2026-03-08 00:00 -0800(=1772956800)"
+      ],
+      "seconds": 2.7
+    },
+    "R24-race-on-hard-dates": {
+      "complaints": [
+        "R24-race round 2 (America/Los_Angeles week): the store holds a state no order produces (HTTP {'regenerate': 200, 'edit': 200})\n    stored ['2026-03-02 02:30 -0800(=1772447400)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-08 00:00 -0800(=1772956800)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-13 02:30 -0700(=1773394200)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-16 02:30 -0700(=1773653400)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-20 02:30 -0700(=1773999000)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-23 02:30 -0700(=1774258200)', '2026-03-25 02:30 -0700(=1774431000)', '2026-03-27 02:30 -0700(=1774603800)', '2026-03-29 02:30 -0700(=1774776600)', '2026-03-30 02:30 -0700(=1774863000)', '2026-04-01 02:30 -0700(=1775035800)', '2026-04-03 02:30 -0700(=1775208600)', '2026-04-05 02:30 -0700(=1775381400)', '2026-04-06 02:30 -0700(=1775467800)']\n    regenerate then edit: ['2026-03-02 02:30 -0800(=1772447400)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-13 02:30 -0700(=1773394200)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-16 02:30 -0700(=1773653400)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-20 02:30 -0700(=1773999000)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-23 02:30 -0700(=1774258200)', '2026-03-25 02:30 -0700(=1774431000)', '2026-03-27 02:30 -0700(=1774603800)', '2026-03-29 02:30 -0700(=1774776600)', '2026-03-30 02:30 -0700(=1774863000)', '2026-04-01 02:30 -0700(=1775035800)', '2026-04-03 02:30 -0700(=1775208600)', '2026-04-05 02:30 -0700(=1775381400)', '2026-04-06 02:30 -0700(=1775467800)']\n    edit then regenerate: ['2026-03-02 02:30 -0800(=1772447400)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-13 02:30 -0700(=1773394200)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-16 02:30 -0700(=1773653400)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-20 02:30 -0700(=1773999000)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-23 02:30 -0700(=1774258200)', '2026-03-25 02:30 -0700(=1774431000)', '2026-03-27 02:30 -0700(=1774603800)', '2026-03-29 02:30 -0700(=1774776600)', '2026-03-30 02:30 -0700(=1774863000)', '2026-04-01 02:30 -0700(=1775035800)', '2026-04-03 02:30 -0700(=1775208600)', '2026-04-05 12:00 -0700(=1775415600)', '2026-04-06 12:00 -0700(=1775502000)']"
+      ],
+      "seconds": 1.2
+    },
+    "R25-survivor-identity": {
+      "complaints": [
+        "R25-identity-Europe-Lisbon-month: occurrence e46ff15d-ed1d-475f-a630-8212935ee521 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence d1b8a688-9b1c-4f44-a3b7-d76da1c4dc34 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence 4b5e42fa-d2a5-4b65-8dee-d8b7926d1822 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence 01934ae5-3379-4596-ac05-0b3364abda1d survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 308e8765-610a-4b0e-bd40-6d54321cfbd0 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence ae1b3c40-d8d3-4a1e-9ca0-9c9548e219c6 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 44f1fa5c-1049-4552-b18d-f4b03bd663c8 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 50a36cdb-0221-4468-8248-162cb8c9b5a0 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody",
+        "R25-identity-America-St_Johns-month: occurrence 591af95d-09e7-47cb-bfde-84269a99cef4 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-America-St_Johns-month: occurrence d6280557-4127-4e59-b71f-f2f65e59438a survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-America-St_Johns-month: the rebuild wrote 4 new occurrences and the plan leaves room for 6; the difference is local dates claimed twice or claimed by nobody"
+      ],
+      "seconds": 0.8
+    },
+    "R26-money-across-operations": {
+      "complaints": [
+        "R26-regenerate: occurrence 707f242d-1a51-4569-9d29-d2f6e03808b5 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R26-regenerate: the rebuild wrote 4 new occurrences and the plan leaves room for 5; the difference is local dates claimed twice or claimed by nobody"
+      ],
+      "seconds": 1.7
+    },
+    "R27-interleavings": {
+      "complaints": [
+        "R27-scope-vs-scope setup: occurrence instants differ\n    expected ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-06 01:00 -0300(=1788667200)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)', '2026-09-11 00:00 -0300(=1789095600)', '2026-09-12 00:00 -0300(=1789182000)', '2026-09-13 00:00 -0300(=1789268400)', '2026-09-14 00:00 -0300(=1789354800)', '2026-09-15 00:00 -0300(=1789441200)', '2026-09-16 00:00 -0300(=1789527600)', '2026-09-17 00:00 -0300(=1789614000)', '2026-09-18 00:00 -0300(=1789700400)', '2026-09-19 00:00 -0300(=1789786800)', '2026-09-20 00:00 -0300(=1789873200)', '2026-09-21 00:00 -0300(=1789959600)', '2026-09-22 00:00 -0300(=1790046000)']\n    stored   ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)', '2026-09-11 00:00 -0300(=1789095600)', '2026-09-12 00:00 -0300(=1789182000)', '2026-09-13 00:00 -0300(=1789268400)', '2026-09-14 00:00 -0300(=1789354800)', '2026-09-15 00:00 -0300(=1789441200)', '2026-09-16 00:00 -0300(=1789527600)', '2026-09-17 00:00 -0300(=1789614000)', '2026-09-18 00:00 -0300(=1789700400)', '2026-09-19 00:00 -0300(=1789786800)', '2026-09-20 00:00 -0300(=1789873200)', '2026-09-21 00:00 -0300(=1789959600)', '2026-09-22 00:00 -0300(=1790046000)']",
+        "R27-scope-vs-scope setup: 2 occurrences share local date 2026-09-05: ['2a5f1f35-dc47-46b1-8445-f2dec9410633', '37fce571-ea4e-40ad-9423-4951de14dad3']"
+      ],
+      "seconds": 2.4
+    },
+    "R3-month-clamp": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R4-spring-forward": {
+      "complaints": [
+        "R4-spring-la: occurrence instants differ\n    expected ['2026-03-06 02:30 -0800(=1772793000)', '2026-03-07 02:30 -0800(=1772879400)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-10 02:30 -0700(=1773135000)']\n    stored   ['2026-03-06 02:30 -0800(=1772793000)', '2026-03-07 02:30 -0800(=1772879400)', '2026-03-08 00:00 -0800(=1772956800)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-10 02:30 -0700(=1773135000)']",
+        "R4-spring-la: 02:30:00 on 2026-03-08 is gap in America/Los_Angeles, so the occurrence takes the first instant that exists\n    expected 2026-03-08 03:00 -0700(=1772964000)\n    stored   2026-03-08 00:00 -0800(=1772956800)"
+      ],
+      "seconds": 0.2
+    },
+    "R5-fall-back": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R6-occurrence-count": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R7-end-date": {
+      "complaints": [],
+      "seconds": 0.3
+    },
+    "R8-protect-published": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R9-edited-survives": {
+      "complaints": [],
+      "seconds": 0.3
+    }
+  }
+}

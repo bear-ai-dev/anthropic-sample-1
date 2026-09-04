@@ -1,0 +1,97 @@
+{
+  "counters": {
+    "capability_absent": 0,
+    "rules_expected": 61,
+    "rules_passed": 49,
+    "rules_total": 61,
+    "seam_checks": 3,
+    "seam_failures": 0
+  },
+  "ruleFailures": [
+    {
+      "messages": [
+        "AssertionError: S24 step 3 an empty frame does not move the resume point: expected revision 21 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614802&buckets=10&since=88: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G16::S24",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S53 step 4 a refusal is not a place to resume from: expected revision 21 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614802&buckets=10&since=88: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G16::S53",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S28 step 3 [retention] the terminal frame arrives after a stop and settles nothing: expected { kind: 'empty', \u2026(1) } to deeply equal { kind: 'loading' }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G10::S28",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S37 step 0 the first connection continues from the kept figures: expected revision 47 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614800&buckets=10: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G19::S37",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S45 step 1 the resume point comes from the entry that has one: expected revision 22 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614800&buckets=10: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G20::S45",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S41 step 4 the new event's connection continues from its own record: expected revision 32 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-2222-4bbb-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614800&buckets=10: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G22::S41",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S42 step 5 and the read picks up from what came back: expected revision 47 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614801&buckets=10: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G23::S42",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S50 step 2 [engagement] an event with no analytics keeps the failure the stream reported: expected { kind: 'loading' } to deeply equal { kind: 'empty', \u2026(1) }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G27::S50",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S51 step 4 a figure the query supplied is not a place the stream can resume from: expected revision 21 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614802&buckets=10&since=88: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G29::S51",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S55 step 6 continuing from what came back: expected revision 31 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1772528401&endTime=1772614801&buckets=96: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G31::S55",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S61 step 2 [checkin] the whole event's read ended with one figure and the rest given up on: expected { kind: 'empty', \u2026(1) } to deeply equal { kind: 'loading' }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G30::S61",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S57 step 2 and this read continues from what it holds: expected revision 47 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1772528400&endTime=1772614800&buckets=96: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G31::S57",
+      "status": "failed"
+    }
+  ],
+  "summary": "12 of 61 graded rules failed"
+}

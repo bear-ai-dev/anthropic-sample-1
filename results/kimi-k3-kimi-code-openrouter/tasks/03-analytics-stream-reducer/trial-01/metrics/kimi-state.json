@@ -1,0 +1,17 @@
+{
+  "agents": {
+    "main": {
+      "homedir": "/logs/agent/.kimi-code/sessions/wd_workspace_c52ddf65534b/session_c6f254f1-f8ca-44d0-b452-18d795399c6b/agents/main",
+      "type": "main"
+    }
+  },
+  "archived": false,
+  "createdAt": 1788479295632,
+  "custom": {},
+  "cwd": "/workspace",
+  "id": "session_c6f254f1-f8ca-44d0-b452-18d795399c6b",
+  "isCustomTitle": false,
+  "lastTurnReason": "completed",
+  "updatedAt": 1788480410031,
+  "version": 2
+}

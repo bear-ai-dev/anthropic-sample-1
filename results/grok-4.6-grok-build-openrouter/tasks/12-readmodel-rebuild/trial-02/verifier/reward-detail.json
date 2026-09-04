@@ -1,0 +1,872 @@
+{
+  "harness_failure": null,
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows",
+    "baseline feed answers from generation v1",
+    "position 1201 was never accepted (last answer: 500)",
+    "position 1202 was never accepted (last answer: 500)",
+    "position 1203 was never accepted (last answer: 500)",
+    "position 1204 was never accepted (last answer: 500)",
+    "position 1205 was never accepted (last answer: 500)",
+    "position 1205 was never accepted (last answer: 500)",
+    "position 1206 was never accepted (last answer: 500)",
+    "position 1207 was never accepted (last answer: 500)",
+    "position 1208 was never accepted (last answer: 500)",
+    "position 1209 was never accepted (last answer: 500)",
+    "position 1210 was never accepted (last answer: 500)",
+    "position 1210 was never accepted (last answer: 500)",
+    "position 1211 was never accepted (last answer: 500)",
+    "position 1212 was never accepted (last answer: 500)",
+    "position 1213 was never accepted (last answer: 500)",
+    "position 1214 was never accepted (last answer: 500)",
+    "position 1215 was never accepted (last answer: 500)",
+    "position 1215 was never accepted (last answer: 500)",
+    "position 1216 was never accepted (last answer: 500)",
+    "position 1217 was never accepted (last answer: 500)",
+    "position 1218 was never accepted (last answer: 500)",
+    "position 1219 was never accepted (last answer: 500)",
+    "position 1220 was never accepted (last answer: 500)",
+    "position 1220 was never accepted (last answer: 500)",
+    "position 1221 was never accepted (last answer: 500)",
+    "position 1222 was never accepted (last answer: 500)",
+    "position 1223 was never accepted (last answer: 500)",
+    "position 1224 was never accepted (last answer: 500)",
+    "position 1225 was never accepted (last answer: 500)",
+    "position 1225 was never accepted (last answer: 500)",
+    "position 1226 was never accepted (last answer: 500)",
+    "position 1227 was never accepted (last answer: 500)",
+    "position 1228 was never accepted (last answer: 500)",
+    "position 1229 was never accepted (last answer: 500)",
+    "position 1230 was never accepted (last answer: 500)",
+    "position 1231 was never accepted (last answer: 500)",
+    "position 1232 was never accepted (last answer: 500)",
+    "position 1233 was never accepted (last answer: 500)",
+    "position 1234 was never accepted (last answer: 500)",
+    "position 1235 was never accepted (last answer: 500)",
+    "position 1236 was never accepted (last answer: 500)",
+    "position 1237 was never accepted (last answer: 500)",
+    "position 1238 was never accepted (last answer: 500)",
+    "position 1239 was never accepted (last answer: 500)",
+    "position 1240 was never accepted (last answer: 500)",
+    "position 1241 was never accepted (last answer: 500)",
+    "position 1242 was never accepted (last answer: 500)",
+    "position 1244 was never accepted (last answer: 500)",
+    "position 1245 was never accepted (last answer: 500)",
+    "position 1246 was never accepted (last answer: 500)",
+    "position 1247 was never accepted (last answer: 500)",
+    "position 1248 was never accepted (last answer: 500)",
+    "position 1249 was never accepted (last answer: 500)",
+    "position 1250 was never accepted (last answer: 500)",
+    "appended 1 live deliveries after the snapshot boundary was fixed",
+    "position 1255 was never accepted (last answer: 500)",
+    "position 1257 was never accepted (last answer: 500)",
+    "appended 2 deliveries while the cutover was parked",
+    "routing after the crash: v1,v1,v1",
+    "the service restarted after the crash",
+    "the log stood at 1260 when the cutover committed",
+    "3 of 3 reader(s) parked holding generation v1",
+    "backfilled 2 position(s) below the cutover point",
+    "position 1261 was never accepted (last answer: 500)",
+    "position 1262 was never accepted (last answer: 500)",
+    "position 1263 was never accepted (last answer: 500)",
+    "position 1264 was never accepted (last answer: 500)",
+    "position 1265 was never accepted (last answer: 500)",
+    "position 1266 was never accepted (last answer: 500)",
+    "position 1267 was never accepted (last answer: 500)",
+    "position 1268 was never accepted (last answer: 500)",
+    "position 1269 was never accepted (last answer: 500)",
+    "position 1270 was never accepted (last answer: 500)",
+    "position 1271 was never accepted (last answer: 500)",
+    "position 1272 was never accepted (last answer: 500)",
+    "position 1273 was never accepted (last answer: 500)",
+    "position 1274 was never accepted (last answer: 500)",
+    "position 1275 was never accepted (last answer: 500)",
+    "position 1276 was never accepted (last answer: 500)",
+    "position 1277 was never accepted (last answer: 500)",
+    "position 1278 was never accepted (last answer: 500)",
+    "position 1279 was never accepted (last answer: 500)",
+    "position 1280 was never accepted (last answer: 500)",
+    "appended 0 deliveries after the cutover",
+    "emptied the cache: 9 keys the service had put there are gone",
+    "the read path never answered /feed?user_id=usr-001&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-005&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-012&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-019&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-023&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-028&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-031&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-037&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-040&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-003&limit=20 (last status 500)",
+    "the read path never answered /feed?user_id=usr-002&limit=5 (last status 500)",
+    "the read path never answered /feed?user_id=usr-008&limit=5 (last status 500)",
+    "the read path never answered /feed?user_id=usr-014&limit=5 (last status 500)",
+    "the read path never answered /feed?user_id=usr-025&limit=5 (last status 500)",
+    "the read path never answered /feed?user_id=usr-033&limit=5 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-03-07 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-03-08 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-03-10 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-07-03 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-11-01 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-11-02 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-01-14 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-06-15 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-09-22 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-1&day=2025-12-03 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-3&day=2025-05-15 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-5&day=2025-08-27 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-2&day=2025-11-02 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-7&day=2025-03-09 (last status 500)",
+    "the read path never answered /counts/org?org_id=org-4&day=2025-02-22 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-03-07 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-03-10 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-07-03 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-11-01 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-11-02 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-01-14 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-04-09 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-0&day=2025-10-30 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-7&day=2025-07-03 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-3&day=2025-06-15 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-9&day=2025-11-02 (last status 500)",
+    "the read path never answered /counts/tag?tag=tag-5&day=2025-03-09 (last status 500)",
+    "position 1281 was never accepted (last answer: 500)",
+    "position 1282 was never accepted (last answer: 500)",
+    "position 1283 was never accepted (last answer: 500)",
+    "position 1284 was never accepted (last answer: 500)",
+    "position 1285 was never accepted (last answer: 500)",
+    "position 1286 was never accepted (last answer: 500)",
+    "position 1287 was never accepted (last answer: 500)",
+    "position 1288 was never accepted (last answer: 500)",
+    "position 1289 was never accepted (last answer: 500)",
+    "position 1290 was never accepted (last answer: 500)",
+    "position 1291 was never accepted (last answer: 500)",
+    "position 1292 was never accepted (last answer: 500)"
+  ],
+  "reward": 0,
+  "rule_results": {
+    "R1": 1,
+    "R10": 0,
+    "R11": 0,
+    "R12": 1,
+    "R13": 1,
+    "R14": 1,
+    "R15": 0,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 0,
+    "R7": 1,
+    "R8": 1,
+    "R9": 1
+  },
+  "rules": {
+    "R1": {
+      "description": "the snapshot materialises the whole boundary before the rebuild moves on",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1200,
+      "required_count": 1200,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R10": {
+      "description": "the append path keeps taking deliveries for the whole of a rebuild",
+      "pass": false,
+      "reason": "deliveries were turned away while the rebuild was in flight",
+      "refused": [
+        {
+          "seq": 1201,
+          "status": 500
+        },
+        {
+          "seq": 1202,
+          "status": 500
+        },
+        {
+          "seq": 1203,
+          "status": 500
+        },
+        {
+          "seq": 1204,
+          "status": 500
+        },
+        {
+          "seq": 1205,
+          "status": 500
+        },
+        {
+          "seq": 1205,
+          "status": 500
+        },
+        {
+          "seq": 1206,
+          "status": 500
+        },
+        {
+          "seq": 1207,
+          "status": 500
+        },
+        {
+          "seq": 1208,
+          "status": 500
+        },
+        {
+          "seq": 1209,
+          "status": 500
+        }
+      ]
+    },
+    "R11": {
+      "description": "a read in flight when the cutover lands is still answered out of a whole generation",
+      "not_about_the_cutover": [],
+      "pass": false,
+      "readers_parked": 3,
+      "reads_judged": 3,
+      "released_early": false,
+      "unanswered": [],
+      "v1_was_retired_first": true,
+      "wrong": [
+        {
+          "answered": "{\"generation\":\"v1\",\"user_id\":\"usr-016\",\"items\":[]}",
+          "asked": "/feed?user_id=usr-016&limit=50",
+          "generation_reported": "v1",
+          "got": {
+            "first": [],
+            "last": [],
+            "rows": 0
+          },
+          "id": "feed-in-flight",
+          "status": 200,
+          "the_same_question_a_moment_later": {
+            "first": [
+              {
+                "event_id": "evt-000069-a",
+                "occurred_at": "2025-10-22T18:59:16.000Z",
+                "seq": 69
+              },
+              {
+                "event_id": "evt-000116-a",
+                "occurred_at": "2025-12-03T14:20:23.000Z",
+                "seq": 116
+              },
+              {
+                "event_id": "evt-000209-a",
+                "occurred_at": "2025-02-15T16:56:55.000Z",
+                "seq": 209
+              }
+            ],
+            "last": [
+              {
+                "event_id": "evt-001108-a",
+                "occurred_at": "2025-05-22T00:22:40.000Z",
+                "seq": 1108
+              },
+              {
+                "event_id": "evt-001135-a",
+                "occurred_at": "2025-10-22T16:27:57.000Z",
+                "seq": 1135
+              },
+              {
+                "event_id": "evt-001166-a",
+                "occurred_at": "2025-02-22T04:29:16.000Z",
+                "seq": 1166
+              }
+            ],
+            "rows": 37
+          },
+          "would_have_been_right": [
+            {
+              "old_generation_as_it_stood": {
+                "first": [
+                  {
+                    "event_id": "evt-000069-a",
+                    "occurred_at": "2025-10-22T18:59:16.000Z",
+                    "seq": 69
+                  },
+                  {
+                    "event_id": "evt-000116-a",
+                    "occurred_at": "2025-12-03T14:20:23.000Z",
+                    "seq": 116
+                  },
+                  {
+                    "event_id": "evt-000209-a",
+                    "occurred_at": "2025-02-15T16:56:55.000Z",
+                    "seq": 209
+                  }
+                ],
+                "last": [
+                  {
+                    "event_id": "evt-001108-a",
+                    "occurred_at": "2025-05-22T00:22:40.000Z",
+                    "seq": 1108
+                  },
+                  {
+                    "event_id": "evt-001135-a",
+                    "occurred_at": "2025-10-22T16:27:57.000Z",
+                    "seq": 1135
+                  },
+                  {
+                    "event_id": "evt-001166-a",
+                    "occurred_at": "2025-02-22T04:29:16.000Z",
+                    "seq": 1166
+                  }
+                ],
+                "rows": 37
+              }
+            },
+            {
+              "the generation serving when the reader was let go": {
+                "first": [
+                  {
+                    "event_id": "evt-000069-a",
+                    "occurred_at": "2025-10-22T18:59:16.000Z",
+                    "seq": 69
+                  },
+                  {
+                    "event_id": "evt-000116-a",
+                    "occurred_at": "2025-12-03T14:20:23.000Z",
+                    "seq": 116
+                  },
+                  {
+                    "event_id": "evt-000209-a",
+                    "occurred_at": "2025-02-15T16:56:55.000Z",
+                    "seq": 209
+                  }
+                ],
+                "last": [
+                  {
+                    "event_id": "evt-001108-a",
+                    "occurred_at": "2025-05-22T00:22:40.000Z",
+                    "seq": 1108
+                  },
+                  {
+                    "event_id": "evt-001135-a",
+                    "occurred_at": "2025-10-22T16:27:57.000Z",
+                    "seq": 1135
+                  },
+                  {
+                    "event_id": "evt-001166-a",
+                    "occurred_at": "2025-02-22T04:29:16.000Z",
+                    "seq": 1166
+                  }
+                ],
+                "rows": 37
+              }
+            },
+            {
+              "the generation serving once the reader had answered": {
+                "first": [
+                  {
+                    "event_id": "evt-000069-a",
+                    "occurred_at": "2025-10-22T18:59:16.000Z",
+                    "seq": 69
+                  },
+                  {
+                    "event_id": "evt-000116-a",
+                    "occurred_at": "2025-12-03T14:20:23.000Z",
+                    "seq": 116
+                  },
+                  {
+                    "event_id": "evt-000209-a",
+                    "occurred_at": "2025-02-15T16:56:55.000Z",
+                    "seq": 209
+                  }
+                ],
+                "last": [
+                  {
+                    "event_id": "evt-001108-a",
+                    "occurred_at": "2025-05-22T00:22:40.000Z",
+                    "seq": 1108
+                  },
+                  {
+                    "event_id": "evt-001135-a",
+                    "occurred_at": "2025-10-22T16:27:57.000Z",
+                    "seq": 1135
+                  },
+                  {
+                    "event_id": "evt-001166-a",
+                    "occurred_at": "2025-02-22T04:29:16.000Z",
+                    "seq": 1166
+                  }
+                ],
+                "rows": 37
+              }
+            }
+          ]
+        },
+        {
+          "answered": "{\"generation\":\"v1\",\"org_id\":\"org-4\",\"day\":\"2025-11-03\",\"count\":0,\"actors\":null}",
+          "asked": "/counts/org?org_id=org-4&day=2025-11-03",
+          "generation_reported": "v1",
+          "got": 0,
+          "id": "org-in-flight",
+          "status": 200,
+          "the_same_question_a_moment_later": 8,
+          "would_have_been_right": [
+            {
+              "old_generation_as_it_stood": 6
+            },
+            {
+              "the generation serving when the reader was let go": 8
+            },
+            {
+              "the generation serving once the reader had answered": 8
+            }
+          ]
+        },
+        {
+          "answered": "{\"generation\":\"v1\",\"tag\":\"tag-10\",\"day\":\"2025-03-06\",\"count\":0,\"newest_event_id\":null,\"newest_at\":null}",
+          "asked": "/counts/tag?tag=tag-10&day=2025-03-06",
+          "generation_reported": "v1",
+          "got": 0,
+          "id": "tag-in-flight",
+          "status": 200,
+          "the_same_question_a_moment_later": 11,
+          "would_have_been_right": [
+            {
+              "old_generation_as_it_stood": 4
+            },
+            {
+              "the generation serving when the reader was let go": 11
+            },
+            {
+              "the generation serving once the reader had answered": 11
+            }
+          ]
+        }
+      ],
+      "wrong_count": 3
+    },
+    "R12": {
+      "buckets_compared": 662,
+      "buckets_where_the_two_numbers_differ": 21,
+      "days_bucketed_by": "New York",
+      "description": "the org projection counts people as well as deliveries, and knows they are different",
+      "more_actors_than_deliveries": [],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R13": {
+      "buckets_compared": 1144,
+      "days_bucketed_by": "New York",
+      "description": "the tag projection points at the newest delivery in its bucket, by event time",
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R14": {
+      "description": "the read path hands back everything the serving generation holds",
+      "fields_checked": 250,
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R15": {
+      "answers_compared": 42,
+      "answers_that_changed": 42,
+      "changed": [
+        {
+          "answer": "feed-usr-001-20",
+          "now": "status 500",
+          "was": "answered"
+        },
+        {
+          "answer": "feed-usr-005-20",
+          "now": "status 500",
+          "was": "answered"
+        },
+        {
+          "answer": "feed-usr-012-20",
+          "now": "status 500",
+          "was": "answered"
+        },
+        {
+          "answer": "feed-usr-019-20",
+          "now": "status 500",
+          "was": "answered"
+        },
+        {
+          "answer": "feed-usr-023-20",
+          "now": "status 500",
+          "was": "answered"
+        },
+        {
+          "answer": "feed-usr-028-20",
+          "now": "status 500",
+          "was": "answered"
+        }
+      ],
+      "deliveries_accepted": 0,
+      "deliveries_after_the_cache_went": 12,
+      "deliveries_already_missing_before": [
+        1261,
+        1262,
+        1263,
+        1264,
+        1265,
+        1266,
+        1267,
+        1268
+      ],
+      "deliveries_that_never_reached_the_serving_generation": [
+        1281,
+        1282,
+        1283,
+        1284,
+        1285,
+        1286,
+        1287,
+        1288
+      ],
+      "deliveries_were_landing_before_the_cache_went": false,
+      "description": "losing the cache does not lose which generation is serving, or the rebuild",
+      "keys_removed": 9,
+      "pass": false,
+      "routing_after": [
+        "v1",
+        "v1",
+        "v1"
+      ]
+    },
+    "R2": {
+      "description": "routing does not move while the new generation is behind the log",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1201,
+      "required_count": 1201,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R3": {
+      "description": "a position is folded exactly once, first delivery authoritative",
+      "duplicated_positions": [],
+      "org_counter_expected": 1205,
+      "org_counter_total": 1205,
+      "pass": true,
+      "positions_held": 1205,
+      "tag_counter_expected": 2415,
+      "tag_counter_total": 2415,
+      "wrong_identity": [],
+      "wrong_identity_count": 0
+    },
+    "R4": {
+      "description": "counters bucket days by New York local date",
+      "misplaced": [],
+      "misplaced_count": 0,
+      "pass": true,
+      "positions_held": 1205
+    },
+    "R5": {
+      "crashed_mid_cutover": true,
+      "description": "the three routing keys are never observed disagreeing",
+      "final_routing": [
+        "v2",
+        "v2",
+        "v2"
+      ],
+      "observed_units": 2630,
+      "pass": true,
+      "routing_moved": true,
+      "torn_states": []
+    },
+    "R6": {
+      "description": "the old generation is not retired while the new one is missing a position",
+      "missing": [
+        1256,
+        1258
+      ],
+      "missing_count": 2,
+      "observed_at": "the statement that retires generation v1",
+      "pass": false,
+      "pre_cutover_head": 1260,
+      "present_count": 1203,
+      "required_count": 1205,
+      "spurious": [],
+      "spurious_count": 0
+    },
+    "R7": {
+      "absent_key_answers": [
+        0,
+        0
+      ],
+      "changed_answers": [],
+      "changed_count": 0,
+      "description": "nothing on the read path depends on the old generation once it is gone",
+      "fallback_leak": false,
+      "pass": true,
+      "poisoned_rows": 32
+    },
+    "R8": {
+      "checked": 15,
+      "description": "the read path serves the new generation, ordered and limited as specified",
+      "generations_reported": [
+        "v2"
+      ],
+      "pass": true,
+      "wrong": [],
+      "wrong_count": 0
+    },
+    "R9": {
+      "description": "the new generation stays level with the log once it is the one serving",
+      "missing": [],
+      "missing_count": 0,
+      "pass": true,
+      "present_count": 1205,
+      "required_count": 1205,
+      "spurious": [],
+      "spurious_count": 0
+    }
+  },
+  "steps": [
+    {
+      "ms": 1135,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 835,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 1145,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 758,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 600,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 600,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 679,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 754,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 777,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 1085,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 1147,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 528,
+      "phase": "SNAPSHOT",
+      "status": 200
+    },
+    {
+      "ms": 74,
+      "phase": "TAIL",
+      "status": 200
+    },
+    {
+      "ms": 154,
+      "phase": "PARITY",
+      "status": 200
+    },
+    {
+      "ms": 304,
+      "phase": "SWITCH",
+      "status": 200
+    },
+    {
+      "ms": 75,
+      "phase": "DRAIN",
+      "status": 200
+    },
+    {
+      "ms": 74,
+      "phase": "CLEANUP",
+      "status": 200
+    },
+    {
+      "ms": 62,
+      "phase": "COMPLETE",
+      "status": 200
+    },
+    {
+      "ms": 60,
+      "phase": "COMPLETE",
+      "status": 200
+    },
+    {
+      "ms": 61,
+      "phase": "COMPLETE",
+      "status": 200
+    }
+  ],
+  "timeline": [
+    {
+      "at": "2026-09-04T06:39:55.560Z",
+      "name": "first-step",
+      "value": {
+        "phase": "SNAPSHOT",
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-04T06:42:37.043Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1243
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:03.827Z",
+      "name": "gap-appended",
+      "value": {
+        "during": 0,
+        "gap": 1,
+        "head": 1243
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:13.270Z",
+      "name": "snapshot-observed",
+      "value": {
+        "phase": "TAIL",
+        "present": 1200
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:13.831Z",
+      "name": "parked-at-cutover",
+      "value": {
+        "arrivals": 4
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:14.009Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1259,
+          1260
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:23.180Z",
+      "name": "inflight-appended",
+      "value": {
+        "head": 1260,
+        "inflight": 2
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:23.223Z",
+      "name": "kill-armed",
+      "value": {
+        "armAt": 4,
+        "fault": "4",
+        "pid": 2235
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:23.373Z",
+      "name": "crash-check",
+      "value": {
+        "crashed": true,
+        "exited": true,
+        "fault_key": "[REDACTED_SENSITIVE_VALUE]",
+        "write_arrivals": 4
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:23.435Z",
+      "name": "crashed-at-cutover",
+      "value": [
+        "v1",
+        "v1",
+        "v1"
+      ]
+    },
+    {
+      "at": "2026-09-04T06:44:24.846Z",
+      "name": "readers-parked",
+      "value": {
+        "arrivals": 3,
+        "detail": "{\"command\":\"get\",\"keys\":[\"proj:tags:active\"],\"said\":\"v1\"}",
+        "org": "org-4 2025-11-03",
+        "tag": "tag-10 2025-03-06",
+        "user": "usr-016"
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:25.585Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1256,
+          1258
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T06:44:25.638Z",
+      "name": "backfilled",
+      "value": {
+        "head": 1260,
+        "n": 2,
+        "v2": 1203
+      }
+    },
+    {
+      "at": "2026-09-04T06:45:58.283Z",
+      "name": "post-switch-appended",
+      "value": {
+        "head": 1260,
+        "posted": 0
+      }
+    },
+    {
+      "at": "2026-09-04T06:46:00.468Z",
+      "name": "cache-emptied",
+      "value": {
+        "kept": 15,
+        "removed": [
+          "proj:counts:active",
+          "proj:feed:active",
+          "proj:tags:active",
+          "rebuild:boundary",
+          "rebuild:cursor",
+          "rebuild:parity_ok",
+          "rebuild:phase",
+          "rebuild:serving",
+          "rebuild:switch_seq"
+        ]
+      }
+    }
+  ]
+}

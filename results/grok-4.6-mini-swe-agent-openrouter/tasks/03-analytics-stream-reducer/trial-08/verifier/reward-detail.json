@@ -1,0 +1,62 @@
+{
+  "counters": {
+    "capability_absent": 0,
+    "rules_expected": 61,
+    "rules_passed": 54,
+    "rules_total": 61,
+    "seam_checks": 3,
+    "seam_failures": 0
+  },
+  "ruleFailures": [
+    {
+      "messages": [
+        "AssertionError: S16 step 5 [earnings] and neither does a replay at the revision on screen: expected { kind: 'data', \u2026(1) } to deeply equal { kind: 'data', \u2026(1) }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G14::S16",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S24 step 3 an empty frame does not move the resume point: expected revision 21 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614802&buckets=10&since=88: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G16::S24",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S53 step 4 a refusal is not a place to resume from: expected revision 21 in http://api.test.local/events/hosts/analytics-stream?eventId=9f1c0d2a-1111-4aaa-8000-[REDACTED_AWS_ACCOUNT_ID]&startTime=1735689600&endTime=1772614802&buckets=10&since=88: expected false to be true // Object.is equality\n    at runScenario (/grade/graded.spec.tsx:426:23)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G16::S53",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S28 step 3 [retention] the terminal frame arrives after a stop and settles nothing: expected { kind: 'empty', \u2026(1) } to deeply equal { kind: 'loading' }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G10::S28",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S33 step 5 [earnings] a different payload at the revision on screen is not newer either: expected { kind: 'data', \u2026(1) } to deeply equal { kind: 'data', \u2026(1) }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G14::S33",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S50 step 2 [engagement] an event with no analytics keeps the failure the stream reported: expected { kind: 'loading' } to deeply equal { kind: 'empty', \u2026(1) }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G27::S50",
+      "status": "failed"
+    },
+    {
+      "messages": [
+        "AssertionError: S61 step 2 [checkin] the whole event's read ended with one figure and the rest given up on: expected { kind: 'empty', \u2026(1) } to deeply equal { kind: 'loading' }\n    at runScenario (/grade/graded.spec.tsx:520:92)\n    at /grade/graded.spec.tsx:548:13\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)"
+      ],
+      "name": "rules rule::G30::S61",
+      "status": "failed"
+    }
+  ],
+  "summary": "7 of 61 graded rules failed"
+}

@@ -1,0 +1,60 @@
+{
+  "agent_info": {
+    "model_info": {
+      "name": "bedrock/us.anthropic.claude-opus-5",
+      "provider": "bedrock"
+    },
+    "name": "claude-code",
+    "version": "2.1.236"
+  },
+  "agent_result": {
+    "cost_usd": 0.6600094999999999,
+    "metadata": null,
+    "n_cache_tokens": 4894094,
+    "n_input_tokens": 5205608,
+    "n_output_tokens": 99904,
+    "rollout_details": null
+  },
+  "config": {
+    "agent": {
+      "model_name": "bedrock/us.anthropic.claude-opus-5",
+      "name": "claude-code"
+    },
+    "job_id": "[REDACTED_SOURCE_RUN_ID]",
+    "task": {
+      "path": "[REDACTED_LOCAL_PATH]"
+    },
+    "trial_name": "sample-analytics-stream-reducer__s45j4vJ"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-02T13:22:49.913322+00:00",
+  "id": "d799c0ca-0a09-4922-a14b-f29914869f6f",
+  "recovery": {
+    "driver": "local",
+    "source_task_arn": "[REDACTED_AWS_ARN]",
+    "verifier_exit_code": 0
+  },
+  "started_at": "2026-09-02T13:22:36.697338+00:00",
+  "task_checksum": "recovered-from-original-sandbox",
+  "task_id": {
+    "path": "[REDACTED_LOCAL_PATH]"
+  },
+  "task_name": "sample/analytics-stream-reducer",
+  "trial_name": "sample-analytics-stream-reducer__s45j4vJ",
+  "trial_uri": "file:///private[REDACTED_LOCAL_PATH]",
+  "verifier": {
+    "finished_at": "2026-09-02T13:22:49.913333+00:00",
+    "started_at": "2026-09-02T13:22:36.697338+00:00"
+  },
+  "verifier_result": {
+    "rewards": {
+      "capability_absent": 0,
+      "reward": 0,
+      "rules_expected": 61,
+      "rules_passed": 50,
+      "rules_total": 61,
+      "seam_checks": 3,
+      "seam_failures": 0
+    }
+  }
+}

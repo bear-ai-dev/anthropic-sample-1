@@ -1,0 +1,19 @@
+{
+  "agent": "kimi-code",
+  "agent_version": "0.39.1",
+  "attempt": 6,
+  "canonical_attempt_id": "01-linearizable-scan__trial-06",
+  "controller_call_id": "fc-01M1NEB99XQQH14Z3M2HBEZB7X",
+  "deadline_rescue": true,
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-04T05:30:33.256433+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "moonshotai/kimi-k3",
+  "phase": "kimi-k3-kimi-code",
+  "prior_attempts": [],
+  "route": "moonshotai/kimi-k3",
+  "status": "launched",
+  "task": "01-linearizable-scan",
+  "wave": "deadline-20260904T053033Z"
+}

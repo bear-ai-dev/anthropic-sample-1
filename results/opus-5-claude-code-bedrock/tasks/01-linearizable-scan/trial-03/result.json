@@ -1,0 +1,54 @@
+{
+  "agent_info": {
+    "model_info": {
+      "name": "bedrock/us.anthropic.claude-opus-5",
+      "provider": "bedrock"
+    },
+    "name": "claude-code",
+    "version": "2.1.236"
+  },
+  "agent_result": {
+    "cost_usd": 2.0343232500000004,
+    "metadata": null,
+    "n_cache_tokens": 15859453,
+    "n_input_tokens": 16272839,
+    "n_output_tokens": 114779,
+    "rollout_details": null
+  },
+  "config": {
+    "agent": {
+      "model_name": "bedrock/us.anthropic.claude-opus-5",
+      "name": "claude-code"
+    },
+    "job_id": "[REDACTED_SOURCE_RUN_ID]",
+    "task": {
+      "path": "[REDACTED_LOCAL_PATH]"
+    },
+    "trial_name": "sample-linearizable-scan__8mSfJMj"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-02T13:24:46.112597+00:00",
+  "id": "507c616f-ec02-4cf2-9e8c-e5e54d60af38",
+  "recovery": {
+    "driver": "local",
+    "source_task_arn": "[REDACTED_AWS_ARN]",
+    "verifier_exit_code": 0
+  },
+  "started_at": "2026-09-02T13:24:10.061749+00:00",
+  "task_checksum": "recovered-from-original-sandbox",
+  "task_id": {
+    "path": "[REDACTED_LOCAL_PATH]"
+  },
+  "task_name": "sample/linearizable-scan",
+  "trial_name": "sample-linearizable-scan__8mSfJMj",
+  "trial_uri": "file:///private[REDACTED_LOCAL_PATH]",
+  "verifier": {
+    "finished_at": "2026-09-02T13:24:46.112603+00:00",
+    "started_at": "2026-09-02T13:24:10.061749+00:00"
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  }
+}

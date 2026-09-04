@@ -1,0 +1,185 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-04T00:10:53.850503Z",
+    "started_at": "2026-09-03T23:49:46.302189Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "global.anthropic.claude-fable-5-1",
+      "provider": "amazon-bedrock"
+    },
+    "name": "mini-swe-agent",
+    "version": "2.4.5"
+  },
+  "agent_result": {
+    "cost_usd": 8.063049750000001,
+    "metadata": null,
+    "n_cache_tokens": 5096059,
+    "n_input_tokens": 5267745,
+    "n_output_tokens": 92865,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-03T23:49:46.301836Z",
+    "started_at": "2026-09-03T23:49:35.944756Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "env": {
+        "BEDROCK_PROVIDER_AWS_ACCESS_KEY_ID": "[REDACTED_SENSITIVE_VALUE]",
+        "BEDROCK_PROVIDER_AWS_REGION": "us-east-1",
+        "BEDROCK_PROVIDER_AWS_SECRET_ACCESS_KEY": "[REDACTED_SENSITIVE_VALUE]",
+        "BEDROCK_PROVIDER_AWS_SESSION_TOKEN": "[REDACTED_SENSITIVE_VALUE]"
+      },
+      "extra_allowed_hosts": [],
+      "import_path": "harness.modal_native_104_agents:ModalFable51MiniSwe",
+      "include_logs": [
+        "trajectory.json",
+        "mini-swe-agent.trajectory.json",
+        "mini-swe-agent.txt",
+        "request-audit.json",
+        "modal-task-init.log",
+        "sessions/*"
+      ],
+      "kwargs": {
+        "config_file": "/workspace/harness/mini-swe-bedrock-fable51.yaml",
+        "cost_limit": "0",
+        "max_tokens": 32768,
+        "reasoning_effort": "high",
+        "version": "2.4.5"
+      },
+      "load_trajectory": null,
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "bedrock/global.anthropic.claude-fable-5-1",
+      "n_concurrent": 1,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "resume_trajectory": false,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": null,
+      "kwargs": {
+        "app_name": "[REDACTED_INFRA_IDENTIFIER]",
+        "auto_labels": false,
+        "modal_sandbox_v2": true,
+        "sandbox_timeout_secs": 21600,
+        "secrets": [],
+        "volumes": {
+          "/logs": "[REDACTED_INFRA_IDENTIFIER]"
+        }
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": null,
+      "override_gpus": null,
+      "override_memory_mb": 6144,
+      "override_storage_mb": null,
+      "override_tpu": null,
+      "type": "modal"
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "install_only": false,
+    "job_id": "1b19732b-af2c-448d-8a0d-270e5dc34c50",
+    "source_trial": null,
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "/work/frozen-modal-tasks-native-104/08-envelope-intake",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "08-envelope-intake__XWBRYZT",
+    "trials_dir": "/work/trials-native-104/[REDACTED_INFRA_IDENTIFIER]",
+    "user_agent": null,
+    "verifier": {
+      "disable": false,
+      "include_logs": [
+        "reward.txt",
+        "reward.json",
+        "output.json",
+        "report.json",
+        "report.txt",
+        "*.log"
+      ],
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-03T23:49:30.018981Z",
+    "started_at": "2026-09-03T23:49:22.244869Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-04T00:11:26.445418Z",
+  "id": "5ab3970b-7b1b-4d5b-9236-4441a0537d2c",
+  "source": null,
+  "started_at": "2026-09-03T23:49:21.123191Z",
+  "step_results": null,
+  "task_checksum": "ba61a93884f184e5a3e2c89cad533e595e87af92cf274c5f544849dca3ba04ff",
+  "task_id": {
+    "path": "/work/frozen-modal-tasks-native-104/08-envelope-intake"
+  },
+  "task_name": "sample/envelope-intake-router",
+  "trial_name": "08-envelope-intake__XWBRYZT",
+  "trial_uri": "file:///__modal/volumes/vo-UHPyT4TYEu1VGPOySfkC7v/trials-native-104/[REDACTED_INFRA_IDENTIFIER]",
+  "verifier": {
+    "finished_at": "2026-09-04T00:11:25.036282Z",
+    "started_at": "2026-09-04T00:10:59.336652Z"
+  },
+  "verifier_environment_mode": "shared",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0,
+      "rule_R1": 1,
+      "rule_R10": 1,
+      "rule_R11": 0,
+      "rule_R12": 1,
+      "rule_R13": 1,
+      "rule_R14": 1,
+      "rule_R15": 1,
+      "rule_R16": 1,
+      "rule_R17": 1,
+      "rule_R18": 1,
+      "rule_R19": 1,
+      "rule_R2": 1,
+      "rule_R20": 1,
+      "rule_R21": 1,
+      "rule_R22": 1,
+      "rule_R23": 1,
+      "rule_R24": 1,
+      "rule_R25": 1,
+      "rule_R26": 1,
+      "rule_R27": 1,
+      "rule_R28": 1,
+      "rule_R3": 1,
+      "rule_R4": 1,
+      "rule_R5": 1,
+      "rule_R6": 1,
+      "rule_R7": 1,
+      "rule_R8": 1,
+      "rule_R9": 1,
+      "rules_passed": 27,
+      "rules_total": 28,
+      "score": 0.0
+    }
+  }
+}

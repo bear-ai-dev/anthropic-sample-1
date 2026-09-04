@@ -1,0 +1,167 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-02T17:07:17.169181Z",
+    "started_at": "2026-09-02T16:50:46.251088Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "us.anthropic.claude-fable-5-1",
+      "provider": "bedrock"
+    },
+    "name": "claude-code",
+    "version": "2.1.258"
+  },
+  "agent_result": {
+    "cost_usd": 6.304332000000001,
+    "metadata": null,
+    "n_cache_tokens": 1905388,
+    "n_input_tokens": 2053515,
+    "n_output_tokens": 79580,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-02T16:50:46.250977Z",
+    "started_at": "2026-09-02T16:50:16.390608Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "extra_allowed_hosts": [],
+      "import_path": "evaluation_agents.claude_code_harness:BedrockClaudeCodeAgent",
+      "kwargs": {
+        "max_output_tokens": "128000",
+        "model_id": "us.anthropic.claude-fable-5-1",
+        "provider": "bedrock",
+        "reasoning_effort": "high"
+      },
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "bedrock/us.anthropic.claude-fable-5-1",
+      "n_concurrent": 56,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": "evaluation_sandbox.fargate:FargateEnvironment",
+      "kwargs": {
+        "aws_region": "us-east-1",
+        "cluster": "evaluation-runner",
+        "cpu_units": 2048,
+        "execution_role_arn": "[REDACTED_AWS_ARN]",
+        "init_container_image_uri": "[REDACTED_AWS_ACCOUNT_ID].dkr.ecr.us-east-1.amazonaws.com/evaluation/runtime-init@sha256:dd046f65a2a2d6c42603bf4ad9e859f889a01fcd75b2a4d1d2bbad39c5675bce",
+        "security_groups": [
+          "[REDACTED_AWS_NETWORK_ID]"
+        ],
+        "storage_gib": 100,
+        "subnets": [
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]",
+          "[REDACTED_AWS_NETWORK_ID]"
+        ],
+        "task_role_arn": "[REDACTED_AWS_ARN]",
+        "use_spot": false
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": 2,
+      "override_gpus": null,
+      "override_memory_mb": 4096,
+      "override_storage_mb": 102400,
+      "override_tpu": null,
+      "type": null
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "install_only": false,
+    "job_id": "47f8c24d-30bc-4900-92f6-f4597e746800",
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "[REDACTED_LOCAL_PATH]",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "sample-envelope-intake-router__bhHsRbT",
+    "trials_dir": "[REDACTED_LOCAL_PATH]",
+    "verifier": {
+      "disable": false,
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-02T16:50:12.501770Z",
+    "started_at": "2026-09-02T16:47:48.392042Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-02T17:10:46.347414Z",
+  "id": "4cfd85a6-1d23-4ddb-a33b-ccba486227fd",
+  "source": null,
+  "started_at": "2026-09-02T16:47:41.571247Z",
+  "step_results": null,
+  "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+  "task_id": {
+    "path": "[REDACTED_LOCAL_PATH]"
+  },
+  "task_name": "sample/envelope-intake-router",
+  "trial_name": "sample-envelope-intake-router__bhHsRbT",
+  "trial_uri": "file://[REDACTED_LOCAL_PATH]",
+  "verifier": {
+    "finished_at": "2026-09-02T17:10:38.562991Z",
+    "started_at": "2026-09-02T17:09:58.174131Z"
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 1.0,
+      "rule_R1": 1,
+      "rule_R10": 1,
+      "rule_R11": 1,
+      "rule_R12": 1,
+      "rule_R13": 1,
+      "rule_R14": 1,
+      "rule_R15": 1,
+      "rule_R16": 1,
+      "rule_R17": 1,
+      "rule_R18": 1,
+      "rule_R19": 1,
+      "rule_R2": 1,
+      "rule_R20": 1,
+      "rule_R21": 1,
+      "rule_R22": 1,
+      "rule_R23": 1,
+      "rule_R24": 1,
+      "rule_R25": 1,
+      "rule_R26": 1,
+      "rule_R27": 1,
+      "rule_R28": 1,
+      "rule_R3": 1,
+      "rule_R4": 1,
+      "rule_R5": 1,
+      "rule_R6": 1,
+      "rule_R7": 1,
+      "rule_R8": 1,
+      "rule_R9": 1,
+      "rules_passed": 28,
+      "rules_total": 28,
+      "score": 1.0
+    }
+  }
+}

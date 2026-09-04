@@ -1,0 +1,69 @@
+=== Snapshot the deliverable ===
+[harness] api ready after 0s
+[harness] api pid(s) 3625 verified as this build (18:22616)
+[grader] pass R1-generate-shapes (0.9s)
+[grader] pass R2-selected-days (0.1s)
+[grader] pass R3-month-clamp (0.1s)
+[grader] pass R4-spring-forward (0.1s)
+[grader] pass R5-fall-back (0.1s)
+[grader] pass R6-occurrence-count (0.2s)
+[grader] pass R7-end-date (0.2s)
+[grader] FAIL R8-protect-published (0.6s)
+           R8-protect: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495237-45419fee-2d7f-42f8-b4cf-0ac9bf362841", "debugId": "211495237-45419fee-2d7f-42f8-b4cf-0ac9bf362841", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (3862a60a-a82d-11f1-bde0-4f3fcef53c09) is prohibited by link target policy", "requestData": {"startDate": "2026-04-06T09:00:00Z"}, "us
+[grader] FAIL R9-edited-survives (0.4s)
+           R9-edit: second regenerate returned HTTP 500 {"result": false, "error": {"id": "211495237-2acbfc30-75ea-4620-b9a4-f8119229bda2", "debugId": "211495237-2acbfc30-75ea-4620-b9a4-f8119229bda2", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (3862b0be-a82d-11f1-bde0-176f7b397d2b) is prohibited by link target policy", "requestData": {"startDate": "2026-03-24T09:00:00Z"}, "us
+[grader] FAIL R10-extend (0.2s)
+           R10-extend: occurrence instants differ
+    expected ['2026-03-31 19:00 -0400(=1774998000)', '2026-04-30 19:00 -0400(=1777590000)', '2026-05-31 19:00 -0400(=1780268400)']
+    stored   ['2026-03-31 00:00 -0400(=1774929600)', '2026-04-30 00:00 -0400(=1777521600)', '2026-05-31 00:00 -0400(=1780200000)']
+[grader] FAIL R11-concurrent-regenerate (0.2s)
+           R11-concurrent round 1: occurrence instants differ
+    expected ['2026-03-16 21:00 +0100(=1773691200)', '2026-03-17 21:00 +0100(=1773777600)', '2026-03-18 21:00 +0100(=1773864000)', '2026-03-19 21:00 +0100(=1773950400)', '2026-03-20 21:00 +0100(=1774036800)']
+    stored   ['2026-03-02 21:00 +0100(=1772481600)', '2026-03-03 21:00 +0100(=1772568000)', '2026-03-04 21:00 +0100(=1772654400)', '2026-03-05 21:00 +0100(=1772740800)', '2026-03-06 21:00 +0100(=1772827200)']
+           R11-concurrent: round 1: no regenerate succeeded: {0: 500, 2: 500, 3: 500, 1: 500}
+[grader] FAIL R12-publish-then-regenerate (0.2s)
+           R12-publish: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495236-7b20d1e7-1474-4dfa-9e1e-211781f2c030", "debugId": "211495236-7b20d1e7-1474-4dfa-9e1e-211781f2c030", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (3ae0dc94-a82d-11f1-bd7b-0bb65c3937d7) is prohibited by link target policy", "requestData": {"startDate": "2026-05-11T09:00:00Z"}, "us
+[grader] FAIL R13-delete-with-sales (0.1s)
+           R13-delete: deleting occurrence ho-guard-2, whose published event sold nothing (its receipt items are pending, refunded or abandoned), returned HTTP 500 rather than 200
+[grader] pass R14-scope-steps-over-paid (0.2s)
+[grader] pass R15-scope-over-month-end (0.2s)
+[grader] pass R16-scope-across-transition (0.1s)
+[grader] pass R17-scope-then-regenerate (0.2s)
+[grader] FAIL R18-extend-fills-gap (0.1s)
+           R18-extend-gap-added: occurrence instants differ
+    expected ['2026-05-08 20:00 -0400(=1778284800)', '2026-05-29 20:00 -0400(=1780099200)']
+    stored   ['2026-05-08 00:00 -0400(=1778212800)', '2026-05-29 00:00 -0400(=1780027200)']
+[grader] FAIL R19-extend-after-regenerate (0.1s)
+           R19-extend-regen: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495235-755d1c65-fca5-4963-aeff-5e00255e70b0", "debugId": "211495235-755d1c65-fca5-4963-aeff-5e00255e70b0", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (3b828cf6-a82d-11f1-a6b0-27f4cf36f953) is prohibited by link target policy", "requestData": {"startDate": "2026-05-13T20:00:00Z"}, "us
+[grader] pass R20-race-scope-vs-regenerate (2.3s)
+[grader] pass R21-zone-by-configuration (5.6s)
+[grader] FAIL R22-regenerate-cross (1.3s)
+           R22-regen-Europe-Lisbon-month: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495227-0695541f-4f04-4ef7-bc3b-a7dc10b8e5a0", "debugId": "211495227-0695541f-4f04-4ef7-bc3b-a7dc10b8e5a0", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (40515f5a-a82d-11f1-a6b0-d73801cd91c3) is prohibited by link target policy", "requestData": {"startDate": "2026-02-27T12:00:00Z"}, "us
+           R22-regen-America-New_York-month: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495227-fe2432e5-3f94-4ae6-85ab-fcf6cca7d5eb", "debugId": "211495227-fe2432e5-3f94-4ae6-85ab-fcf6cca7d5eb", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (406cf184-a82d-11f1-a6b0-dff9fe4f9ac3) is prohibited by link target policy", "requestData": {"startDate": "2026-03-30T12:00:00Z"}, "us
+           R22-regen-America-Los_Angeles-week: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495227-abfd806c-90b1-4703-92f3-3c7f280aac71", "debugId": "211495227-abfd806c-90b1-4703-92f3-3c7f280aac71", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (40876140-a82d-11f1-a6b0-df29acae92ce) is prohibited by link target policy", "requestData": {"startDate": "2026-03-04T12:00:00Z"}, "us
+           R22-regen-Australia-Lord_Howe-week: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495227-e50f4d73-a1a3-42e8-8acc-6f78b4a35430", "debugId": "211495227-e50f4d73-a1a3-42e8-8acc-6f78b4a35430", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (40a0a060-a82d-11f1-a6b0-871a9a448b18) is prohibited by link target policy", "requestData": {"startDate": "2026-03-31T12:00:00Z"}, "us
+           R22-regen-Pacific-Chatham-day: regenerate returned HTTP 500 {"result": false, "error": {"id": "211495227-93983b44-1f4b-4d8e-ac5d-6b71ce0e137f", "debugId": "211495227-93983b44-1f4b-4d8e-ac5d-6b71ce0e137f", "message": "failed to delete occurrence in gel: gel.ConstraintViolationError: deletion of default::EventSeriesOccurrence (40ba819c-a82d-11f1-a6b0-a76f4403fcb5) is prohibited by link target policy", "requestData": {"startDate": "2026-04-03T12:00:00Z"}, "us
+           R22-regen-America-Santiago-day setup: occurrence instants differ
+    expected ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-06 01:00 -0300(=1788667200)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']
+    stored   ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)']
+[grader] pass R23-scope-regenerate-extend (1.8s)
+[grader] pass R24-race-on-hard-dates (1.7s)
+[grader] FAIL R25-survivor-identity (0.5s)
+           R25-identity-Europe-Lisbon-month: occurrence d5e2e9a7-b43c-4f1e-a216-f44e479082fb survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence 7894a19b-4cef-4024-a4d2-6a76c07a9058 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence 071772ca-b4f3-459c-8a1f-f0a44f443db3 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence 3bc04f28-b114-4b64-8602-1e56ccceb5f1 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody
+           R25-identity-Australia-Lord_Howe-week: occurrence 9e8b70d2-4c74-493b-9285-95b5b7cd37b8 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+[grader] FAIL R26-money-across-operations (1.1s)
+           R26-delete: deleting the occurrence published onto evt-published-002 returned HTTP 500, expected 200 (it has taken none) {"result": false, "error": {"id": "211495222-2e6dc4f0-4a63-4f92-9fda-279743a08193", "debugId": "211495222-2e6dc4f0-4a63-4f92-9fda-279743a08193", "message": "failed to delete occurrence in gel: gel.Con
+           R26-delete: the occurrence published onto evt-published-002 survived a delete, and nothing has been paid for it
+           R26-delete: deleting the occurrence published onto evt-published-003 returned HTTP 500, expected 200 (it has taken none) {"result": false, "error": {"id": "211495222-c02d37c5-158e-4ea3-85f1-e84616f70102", "debugId": "211495222-c02d37c5-158e-4ea3-85f1-e84616f70102", "message": "failed to delete occurrence in gel: gel.Con
+           R26-delete: the occurrence published onto evt-published-003 survived a delete, and nothing has been paid for it
+           R26-regenerate: occurrence 30301529-78de-4c53-9623-1060e8d6da9a survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R26-regenerate: the rebuild wrote 4 new occurrences and the plan leaves room for 5; the difference is local dates claimed twice or claimed by nobody
+[grader] FAIL R27-interleavings (1.4s)
+           R27-delete-vs-rebuild: neither request succeeded: {'a': 500, 'b': 500}
+[grader] 15/27 rules passed; reward=0.0
+[grader] failed: R8-protect-published, R9-edited-survives, R10-extend, R11-concurrent-regenerate, R12-publish-then-regenerate, R13-delete-with-sales, R18-extend-fills-gap, R19-extend-after-regenerate, R22-regenerate-cross, R25-survivor-identity, R26-money-across-operations, R27-interleavings
+[test] reward: {"reward": 0.0, "harness_failure": 0, "rules_total": 27, "rules_passed": 15, "fixture_gate_failed": 0}

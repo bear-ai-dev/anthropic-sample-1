@@ -1,0 +1,490 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-04T06:12:48.873450Z",
+    "started_at": "2026-09-04T05:03:57.399778Z"
+  },
+  "agent_info": {
+    "model_info": null,
+    "name": "grok-build",
+    "version": "1.0.18"
+  },
+  "agent_result": {
+    "cost_usd": null,
+    "metadata": {
+      "acp": {
+        "agent_info": null,
+        "auth_methods": [
+          {
+            "description": "XAI_API_KEY or api_key/env_key in config.toml",
+            "id": "xai.api_key",
+            "name": "xai.api_key"
+          },
+          {
+            "description": "Sign in with Grok",
+            "id": "grok.com",
+            "name": "Grok"
+          }
+        ],
+        "auth_policy": "[REDACTED_SENSITIVE_VALUE]",
+        "authenticate_response": null,
+        "error": null,
+        "events_file": "acp-events.jsonl",
+        "initial_session_models": null,
+        "initialize": {
+          "_meta": {
+            "agentId": "55bb4384-681c-54ec-b096-f2a610f82ea0",
+            "agentInstanceId": "5de3b162-33f0-4c09-ae63-23cab829dd17",
+            "agentVersion": "1.0.18",
+            "availableCommands": [
+              {
+                "description": "Compress conversation history to save context window",
+                "input": {
+                  "hint": "optional context about what to preserve"
+                },
+                "name": "compact"
+              },
+              {
+                "description": "Toggle always-approve mode (skip all permission prompts)",
+                "input": {
+                  "hint": "on|off"
+                },
+                "name": "always-approve"
+              },
+              {
+                "description": "Show context window usage and session stats",
+                "input": null,
+                "name": "context"
+              },
+              {
+                "description": "Show session details (model, turns, context usage)",
+                "input": null,
+                "name": "session-info"
+              },
+              {
+                "description": "Research with bounded parallel agents, cross-check evidence, and write a cited report",
+                "input": {
+                  "hint": "<query>"
+                },
+                "name": "deep-research"
+              },
+              {
+                "description": "Launch a saved workflow, list runs, or manage a run (pause, resume, stop, save)",
+                "input": {
+                  "hint": "<name> [--agent-budget N] [--effort LEVEL] [args] | runs | pause|resume|stop|save [name]"
+                },
+                "name": "workflow"
+              },
+              {
+                "description": "Set, manage, or check an autonomous goal",
+                "input": {
+                  "hint": "<objective> [--budget <tokens>] | status | pause | resume | clear"
+                },
+                "name": "goal"
+              }
+            ],
+            "cancelRewind": true,
+            "currentWorkingDirectory": "/workspace",
+            "defaultAuthMethodId": "xai.api_key",
+            "feedbackTraceOffer": false,
+            "grokShell": true,
+            "hostname": "modal",
+            "mcpApps": false,
+            "mcpServers": [],
+            "metadata": null,
+            "modelState": {
+              "availableModels": [
+                {
+                  "_meta": {
+                    "agentType": "grok-build-plan",
+                    "reasoningEffort": "high",
+                    "reasoningEfforts": [
+                      {
+                        "default": false,
+                        "description": "Highest effort and reasoning level",
+                        "id": "xhigh",
+                        "label": "Extra High Effort",
+                        "value": "xhigh"
+                      },
+                      {
+                        "default": true,
+                        "description": "Higher implementation quality with extensive reasoning",
+                        "id": "high",
+                        "label": "High Effort",
+                        "value": "high"
+                      },
+                      {
+                        "default": false,
+                        "description": "Balanced effort with standard implementation and testing",
+                        "id": "medium",
+                        "label": "Medium Effort",
+                        "value": "medium"
+                      },
+                      {
+                        "default": false,
+                        "description": "Quick, fast implementations",
+                        "id": "low",
+                        "label": "Low Effort",
+                        "value": "low"
+                      }
+                    ],
+                    "supportsReasoningEffort": true,
+                    "totalContextTokens": 500000
+                  },
+                  "description": "SpaceXAI's latest frontier model",
+                  "modelId": "grok-4.6",
+                  "name": "Grok 4.6"
+                },
+                {
+                  "_meta": {
+                    "agentType": "grok-build-plan",
+                    "reasoningEffort": "high",
+                    "reasoningEfforts": [
+                      {
+                        "default": true,
+                        "description": "Highest implementation quality with extensive reasoning",
+                        "id": "high",
+                        "label": "High Effort",
+                        "value": "high"
+                      },
+                      {
+                        "default": false,
+                        "description": "Balanced effort with standard implementation and testing",
+                        "id": "medium",
+                        "label": "Medium Effort",
+                        "value": "medium"
+                      },
+                      {
+                        "default": false,
+                        "description": "Quick, fast implementations",
+                        "id": "low",
+                        "label": "Low Effort",
+                        "value": "low"
+                      }
+                    ],
+                    "supportsReasoningEffort": true,
+                    "totalContextTokens": 500000
+                  },
+                  "modelId": "grok-4.5",
+                  "name": "Grok 4.5"
+                },
+                {
+                  "_meta": {
+                    "agentType": "grok-build-plan",
+                    "totalContextTokens": 200000
+                  },
+                  "modelId": "openrouter-grok-4.6",
+                  "name": "openrouter-grok-4.6"
+                }
+              ],
+              "currentModelId": "openrouter-grok-4.6"
+            },
+            "sessionRecap": true,
+            "voiceMode": true,
+            "x.ai/mcp/sdk": true,
+            "x.ai/pluginDirs": true
+          },
+          "agentCapabilities": {
+            "_meta": {
+              "x.ai/capabilities": {
+                "toolOverrides": {
+                  "x_keyword_search": true,
+                  "x_semantic_search": true,
+                  "x_thread_fetch": false,
+                  "x_user_search": false
+                }
+              },
+              "x.ai/fs_notify": true,
+              "x.ai/hooks": {
+                "blockingEvents": [
+                  "pre_tool_use",
+                  "stop",
+                  "subagent_stop"
+                ],
+                "decisions": [
+                  "deny",
+                  "block"
+                ],
+                "stopSignals": [
+                  "continue",
+                  "stopReason",
+                  "additionalContext"
+                ]
+              }
+            },
+            "auth": {},
+            "loadSession": true,
+            "mcpCapabilities": {
+              "acp": false,
+              "http": true,
+              "sse": true
+            },
+            "promptCapabilities": {
+              "audio": false,
+              "embeddedContext": true,
+              "image": false
+            },
+            "sessionCapabilities": {
+              "close": {},
+              "list": {},
+              "resume": {}
+            }
+          },
+          "authMethods": [
+            {
+              "description": "XAI_API_KEY or api_key/env_key in config.toml",
+              "id": "xai.api_key",
+              "name": "xai.api_key"
+            },
+            {
+              "description": "Sign in with Grok",
+              "id": "grok.com",
+              "name": "Grok"
+            }
+          ],
+          "protocolVersion": 1
+        },
+        "latest_session_info_update": {
+          "sessionUpdate": "session_info_update",
+          "title": "Durable host event draft recovery and migration"
+        },
+        "latest_usage_update": null,
+        "prompt_response": {
+          "_meta": {
+            "cachedReadTokens": 142848,
+            "inputTokens": 142968,
+            "modelId": "x-ai/grok-4.6",
+            "outputTokens": 493,
+            "promptId": "ec6a9c64-8cc4-41f5-bc5b-a4c9855d7ffb",
+            "reasoningTokens": 118,
+            "requestId": "ec6a9c64-8cc4-41f5-bc5b-a4c9855d7ffb",
+            "sessionId": "01a06ad0-d3df-78c0-946c-1b01ab84ee27",
+            "totalTokens": 143461,
+            "usage": {
+              "apiDurationMs": 3996088,
+              "cacheCreationTokens": 0,
+              "cachedReadTokens": 6133504,
+              "inputTokens": 6811497,
+              "modelCalls": 82,
+              "modelUsage": {
+                "x-ai/grok-4.6": {
+                  "apiDurationMs": 3996088,
+                  "cacheCreationTokens": 0,
+                  "cachedReadTokens": 6133504,
+                  "inputTokens": 6811497,
+                  "modelCalls": 82,
+                  "outputTokens": 230200,
+                  "reasoningTokens": 197839,
+                  "totalTokens": 7041697
+                }
+              },
+              "numTurns": 62,
+              "outputTokens": 230200,
+              "reasoningTokens": 197839,
+              "totalTokens": 7041697,
+              "usageIsIncomplete": true
+            }
+          },
+          "stopReason": "end_turn"
+        },
+        "registry_entry_id": "grok-build",
+        "registry_entry_version": "1.0.18",
+        "requested_model": "openrouter-grok-4.6",
+        "resolved_session_model_id": "openrouter-grok-4.6",
+        "selected_authenticate_method_id": null,
+        "selected_distribution": "npx",
+        "set_model_attempts": [
+          {
+            "model_id": "openrouter-grok-4.6",
+            "response": {
+              "configOptions": [
+                {
+                  "category": "model",
+                  "currentValue": "openrouter-grok-4.6",
+                  "id": "model",
+                  "name": "Model",
+                  "options": [
+                    {
+                      "name": "Grok 4.6",
+                      "value": "grok-4.6"
+                    },
+                    {
+                      "name": "Grok 4.5",
+                      "value": "grok-4.5"
+                    },
+                    {
+                      "name": "openrouter-grok-4.6",
+                      "value": "openrouter-grok-4.6"
+                    }
+                  ],
+                  "type": "select"
+                }
+              ]
+            }
+          }
+        ],
+        "set_model_error": null,
+        "set_model_response": {
+          "configOptions": [
+            {
+              "category": "model",
+              "currentValue": "openrouter-grok-4.6",
+              "id": "model",
+              "name": "Model",
+              "options": [
+                {
+                  "name": "Grok 4.6",
+                  "value": "grok-4.6"
+                },
+                {
+                  "name": "Grok 4.5",
+                  "value": "grok-4.5"
+                },
+                {
+                  "name": "openrouter-grok-4.6",
+                  "value": "openrouter-grok-4.6"
+                }
+              ],
+              "type": "select"
+            }
+          ]
+        },
+        "source": null
+      }
+    },
+    "n_cache_tokens": null,
+    "n_input_tokens": null,
+    "n_output_tokens": null,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-04T05:03:57.399540Z",
+    "started_at": "2026-09-04T05:03:39.105886Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "env": {
+        "OPENROUTER_API_KEY": "[REDACTED_SENSITIVE_VALUE]"
+      },
+      "extra_allowed_hosts": [],
+      "import_path": "harness.modal_native_104_agents:ModalOpenRouterGrokAcp",
+      "include_logs": [
+        "trajectory.json",
+        "acp.txt",
+        "acp-events.jsonl",
+        "acp-summary.json",
+        "modal-task-init.log",
+        "openrouter-request-enforcement.jsonl",
+        "sessions/*"
+      ],
+      "kwargs": {
+        "auth_policy": "[REDACTED_SENSITIVE_VALUE]",
+        "distribution_preference": "npx",
+        "max_turns": 200,
+        "reasoning_effort": "high",
+        "registry_spec": "grok-build@1.0.18"
+      },
+      "load_trajectory": null,
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "openrouter-grok-4.6",
+      "n_concurrent": 1,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "resume_trajectory": false,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": null,
+      "kwargs": {
+        "app_name": "[REDACTED_INFRA_IDENTIFIER]",
+        "auto_labels": false,
+        "modal_sandbox_v2": true,
+        "sandbox_timeout_secs": 21600,
+        "secrets": [],
+        "volumes": {
+          "/logs": "[REDACTED_INFRA_IDENTIFIER]"
+        }
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": null,
+      "override_gpus": null,
+      "override_memory_mb": 6144,
+      "override_storage_mb": null,
+      "override_tpu": null,
+      "type": "modal"
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "install_only": false,
+    "job_id": "34bc61e8-4eb9-469d-aa34-51fd5c55732f",
+    "source_trial": null,
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "/work/frozen-modal-tasks-grok46-sample1-40/04-draft-recovery",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "04-draft-recovery__mjos93S",
+    "trials_dir": "/work/trials-grok46-sample1-40/[REDACTED_INFRA_IDENTIFIER]",
+    "user_agent": null,
+    "verifier": {
+      "disable": false,
+      "include_logs": [
+        "reward.txt",
+        "reward.json",
+        "output.json",
+        "report.json",
+        "report.txt",
+        "*.log"
+      ],
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-04T05:03:39.105822Z",
+    "started_at": "2026-09-04T05:03:30.148275Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-04T06:14:12.862805Z",
+  "id": "71d27896-8aa8-4314-a9c7-4365dfc029bd",
+  "source": null,
+  "started_at": "2026-09-04T05:03:29.200659Z",
+  "step_results": null,
+  "task_checksum": "757141d135adcf2be4b90a7c2a209857284c4906c6e83ef487c4f2da4d190ac9",
+  "task_id": {
+    "path": "/work/frozen-modal-tasks-grok46-sample1-40/04-draft-recovery"
+  },
+  "task_name": "sample/draft-recovery",
+  "trial_name": "04-draft-recovery__mjos93S",
+  "trial_uri": "file:///__modal/volumes/vo-92MpwaMmNv8oP9mISu9V8T/trials-grok46-sample1-40/[REDACTED_INFRA_IDENTIFIER]",
+  "verifier": {
+    "finished_at": "2026-09-04T06:14:11.290805Z",
+    "started_at": "2026-09-04T06:12:51.042102Z"
+  },
+  "verifier_environment_mode": "shared",
+  "verifier_result": {
+    "rewards": {
+      "harness_failure": 0,
+      "reward": 0.0
+    }
+  }
+}

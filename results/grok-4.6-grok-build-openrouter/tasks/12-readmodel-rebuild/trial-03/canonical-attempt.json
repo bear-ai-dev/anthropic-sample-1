@@ -1,0 +1,15 @@
+{
+  "agent": "grok-build-acp",
+  "agent_version": "1.0.18",
+  "attempt": 3,
+  "canonical_attempt_id": "12-readmodel-rebuild__trial-03",
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-04T05:03:03.698025+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "openrouter-grok-4.6",
+  "route": "x-ai/grok-4.6",
+  "status": "launched",
+  "task": "12-readmodel-rebuild",
+  "wave": "01-20260904T050302Z"
+}

@@ -1,0 +1,19 @@
+{
+  "arm": "gpt-5.6-sol-codex-bedrock",
+  "harness": "Codex CLI",
+  "harness_versions": [
+    "0.151.0"
+  ],
+  "model": "openai.gpt-5.6-sol",
+  "model_label": "GPT-5.6 Sol",
+  "passes": 5,
+  "provider": "Bedrock",
+  "scored_rollouts": 40,
+  "tasks": [
+    "02-recurring-events",
+    "04-draft-recovery",
+    "08-envelope-intake",
+    "11-store-cutover",
+    "12-readmodel-rebuild"
+  ]
+}

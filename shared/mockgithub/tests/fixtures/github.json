@@ -1,0 +1,1223 @@
+{
+  "version": 1,
+  "clock": "2026-03-04T10:00:00Z",
+  "github": {
+    "viewer": "rhea-menon",
+    "users": [
+      {
+        "login": "nadia-okafor",
+        "name": "Nadia Okafor",
+        "email": "nadia.okafor@ExampleCo.example"
+      },
+      {
+        "login": "tlindqvist",
+        "name": "Tomas Lindqvist",
+        "email": "tomas.lindqvist@ExampleCo.example"
+      },
+      {
+        "login": "rhea-menon",
+        "name": "Rhea Menon",
+        "email": "rhea.menon@ExampleCo.example"
+      },
+      {
+        "login": "dkowalczyk",
+        "name": "Dominik Kowalczyk",
+        "email": "dominik.kowalczyk@ExampleCo.example"
+      },
+      {
+        "login": "sofia-braga",
+        "name": "Sofia Braga",
+        "email": "sofia.braga@ExampleCo.example"
+      },
+      {
+        "login": "harun-yildiz",
+        "name": "Harun Yildiz",
+        "email": "harun.yildiz@ExampleCo.example"
+      },
+      {
+        "login": "jiwon-park",
+        "name": "Jiwon Park",
+        "email": "jiwon.park@ExampleCo.example"
+      },
+      {
+        "login": "mbeaulieu",
+        "name": "Marc Beaulieu",
+        "email": "marc.beaulieu@ExampleCo.example"
+      },
+      {
+        "login": "ines-duarte",
+        "name": "Ines Duarte",
+        "email": "ines.duarte@ExampleCo.example"
+      }
+    ],
+    "repos": [
+      {
+        "owner": "ExampleCo",
+        "name": "membership-ledger",
+        "default_branch": "main",
+        "description": "The membership ledger for one region: the record of what members are owed, and the orchestrator that moves it off its legacy store.",
+        "labels": [
+          {
+            "name": "area/migration",
+            "color": "1d76db",
+            "description": "The migration orchestrator and its phases"
+          },
+          {
+            "name": "area/api",
+            "color": "0e8a16",
+            "description": "The public /v1 endpoints"
+          },
+          {
+            "name": "area/store",
+            "color": "5319e7",
+            "description": "The storage service client"
+          },
+          {
+            "name": "ops",
+            "color": "b60205",
+            "description": "Operational work and incidents"
+          },
+          {
+            "name": "docs",
+            "color": "0075ca",
+            "description": "Documentation and archives"
+          },
+          {
+            "name": "ci",
+            "color": "fbca04",
+            "description": "Build pipeline"
+          },
+          {
+            "name": "flaky",
+            "color": "d4c5f9",
+            "description": "Fails intermittently and not because of the change"
+          },
+          {
+            "name": "ap-2",
+            "color": "c2e0c6",
+            "description": "Came out of the ap-2 region"
+          }
+        ],
+        "milestones": [
+          {
+            "number": 1,
+            "title": "orchestrator scaffolding",
+            "state": "closed",
+            "due_on": "2025-08-29T00:00:00Z"
+          },
+          {
+            "number": 2,
+            "title": "ap-2 archive",
+            "state": "closed",
+            "due_on": "2025-10-10T00:00:00Z"
+          },
+          {
+            "number": 3,
+            "title": "next region",
+            "state": "open",
+            "due_on": "2026-05-29T00:00:00Z"
+          }
+        ],
+        "commits": [
+          {
+            "key": "c1",
+            "message": "docs: a README for the ledger service\n\nWhat the service is, what is in each package and how to start it. Nothing here that is not already true of the tree.",
+            "author": "tlindqvist",
+            "date": "2025-06-09T09:12:00Z",
+            "parents": [],
+            "files": [
+              {
+                "path": "README.md",
+                "status": "added",
+                "content": "# membership-ledger\n\nThe membership ledger for one region. Finance treats it as the record of what\nmembers are owed: `members` holds one row per member, `ledger_entries` is\nappend-only, `seq` counts a member's own movements and `global_seq` orders the\nwhole ledger.\n\n## Layout\n\n- `cmd/membershipd` - the service binary\n- `internal/api` - the HTTP surface: `/v1/members/...` and `/admin/migration/...`\n- `internal/ledger` - what the public endpoints see of the ledger\n- `internal/legacy` - the SQLite store a region runs on today\n- `internal/store` - client for the storage service\n- `internal/migration` - the orchestrator that moves one region's ledger\n- `config/migration.yaml` - this deployment's settings\n\n## Running it\n\n```\ngo build -o membershipd ./cmd/membershipd && ./membershipd\n```\n\nSettings are read from `config/migration.yaml`, or from wherever `LEDGER_CONFIG`\npoints. Every key can be overridden from the environment.\n"
+              }
+            ]
+          },
+          {
+            "key": "c2",
+            "message": "ci: build, vet and gofmt on push and pull request\n\nOne job on the shared runner. Ten minute timeout, which is generous for a warm cache.",
+            "author": "mbeaulieu",
+            "date": "2025-06-18T11:47:00Z",
+            "parents": [
+              "c1"
+            ],
+            "files": [
+              {
+                "path": ".github/workflows/ci.yml",
+                "status": "added",
+                "content": "name: ci\n\non:\n  push:\n    branches: [main]\n  pull_request:\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    timeout-minutes: 10\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-go@v5\n        with:\n          go-version: '1.25.0'\n      - name: build\n        run: go build ./...\n      - name: vet\n        run: go vet ./...\n      - name: gofmt\n        run: test -z \"$(gofmt -l .)\"\n"
+              }
+            ]
+          },
+          {
+            "key": "c3",
+            "message": "ledger: put a view between the endpoints and the store\n\nThe handlers were calling internal/legacy directly. They now ask ledger.View, and LegacyView is the implementation behind it. Behaviour is unchanged.\n\nPR #39",
+            "author": "jiwon-park",
+            "date": "2025-06-30T14:02:00Z",
+            "parents": [
+              "c2"
+            ],
+            "files": [
+              {
+                "path": "internal/ledger/view.go",
+                "status": "added",
+                "content": "// Package ledger is what the public endpoints see of the membership ledger.\n//\n// A View answers reads and takes writes. Which store those go to is not the\n// endpoints' business: it depends on how far the migration has got, so the\n// endpoints ask the view and the view decides.\npackage ledger\n\nimport (\n\t\"context\"\n\t\"errors\"\n\n\t\"membershipledger/internal/legacy\"\n)\n\n// ErrWriteRefused is for an adjustment the ledger will not accept.\nvar ErrWriteRefused = errors.New(\"ledger writes are closed\")\n\ntype View interface {\n\tMember(ctx context.Context, memberID string) (legacy.Member, error)\n\tLedger(ctx context.Context, memberID string) ([]legacy.Entry, error)\n\tAdjust(ctx context.Context, memberID string, deltaCents int64, reason string) (legacy.Entry, legacy.Member, error)\n}\n"
+              },
+              {
+                "path": "internal/ledger/legacyview.go",
+                "status": "added",
+                "content": "package ledger\n\nimport (\n\t\"context\"\n\t\"crypto/rand\"\n\t\"encoding/hex\"\n\n\t\"membershipledger/internal/clock\"\n\t\"membershipledger/internal/legacy\"\n)\n\n// LegacyView answers from the legacy store and writes to it. This is how the\n// ledger has always behaved and it is what the service starts up doing.\ntype LegacyView struct {\n\tStore *legacy.Store\n\tClock *clock.Clock\n}\n\nfunc (v LegacyView) Member(ctx context.Context, memberID string) (legacy.Member, error) {\n\treturn v.Store.Member(ctx, memberID)\n}\n\nfunc (v LegacyView) Ledger(ctx context.Context, memberID string) ([]legacy.Entry, error) {\n\tif _, err := v.Store.Member(ctx, memberID); err != nil {\n\t\treturn nil, err\n\t}\n\treturn v.Store.Ledger(ctx, memberID)\n}\n\nfunc (v LegacyView) Adjust(ctx context.Context, memberID string, deltaCents int64, reason string) (legacy.Entry, legacy.Member, error) {\n\tentry, err := v.Store.Append(ctx, memberID, NewEntryID(), reason, v.Clock.Stamp(), deltaCents)\n\tif err != nil {\n\t\treturn legacy.Entry{}, legacy.Member{}, err\n\t}\n\tmember, err := v.Store.Member(ctx, memberID)\n\tif err != nil {\n\t\treturn entry, legacy.Member{}, err\n\t}\n\treturn entry, member, nil\n}\n\n// NewEntryID mints a ledger entry identifier.\nfunc NewEntryID() string {\n\traw := make([]byte, 16)\n\tif _, err := rand.Read(raw); err != nil {\n\t\treturn \"entry-fallback\"\n\t}\n\treturn hex.EncodeToString(raw)\n}\n"
+              }
+            ]
+          },
+          {
+            "key": "c4",
+            "message": "migration: phase order and the status shape\n\nmigration.Order is the sequence, migration.Status is what the admin surface reports, and Next/Index are the two helpers over the order. Advance still reports ErrNotImplemented; this is the names and the report only, so the tooling team can start against the JSON.\n\nPR #40",
+            "author": "nadia-okafor",
+            "date": "2025-07-08T10:25:00Z",
+            "parents": [
+              "c3"
+            ],
+            "files": [
+              {
+                "path": "internal/migration/phases.go",
+                "status": "added",
+                "content": "// Package migration moves the ledger from the legacy store to the destination\n// store while production traffic keeps running.\npackage migration\n\n// Phase names the stage the migration has reached. The order below is the only\n// order the migration runs in; CUTOVER is the step that cannot be undone.\ntype Phase string\n\nconst (\n\tPhaseInit          Phase = \"INIT\"\n\tPhaseShadowCopy    Phase = \"SHADOW_COPY\"\n\tPhaseDualRead      Phase = \"DUAL_READ\"\n\tPhaseCatchUp       Phase = \"CATCH_UP\"\n\tPhaseReconcile     Phase = \"RECONCILE\"\n\tPhaseCutover       Phase = \"CUTOVER\"\n\tPhaseLateReplay    Phase = \"LATE_REPLAY\"\n\tPhaseLegacyRetired Phase = \"LEGACY_RETIRED\"\n\tPhaseComplete      Phase = \"COMPLETE\"\n)\n\n// Order is the phase sequence.\nvar Order = []Phase{\n\tPhaseInit,\n\tPhaseShadowCopy,\n\tPhaseDualRead,\n\tPhaseCatchUp,\n\tPhaseReconcile,\n\tPhaseCutover,\n\tPhaseLateReplay,\n\tPhaseLegacyRetired,\n\tPhaseComplete,\n}\n\n// Authority names the store a ledger movement is recorded in.\nconst (\n\tAuthorityLegacy      = \"legacy\"\n\tAuthorityDestination = \"destination\"\n)\n\n// Next is the phase that follows this one, and whether there is one.\nfunc Next(phase Phase) (Phase, bool) {\n\tfor index, candidate := range Order {\n\t\tif candidate == phase && index+1 < len(Order) {\n\t\t\treturn Order[index+1], true\n\t\t}\n\t}\n\treturn phase, false\n}\n\n// Index is a phase's position in Order, or -1.\nfunc Index(phase Phase) int {\n\tfor index, candidate := range Order {\n\t\tif candidate == phase {\n\t\t\treturn index\n\t\t}\n\t}\n\treturn -1\n}\n"
+              }
+            ]
+          },
+          {
+            "key": "c5",
+            "message": "clock: read the deployment's clock from a file\n\nDeployments run with a controlled clock so the times the service records are reproducible. Empty path means real time.",
+            "author": "harun-yildiz",
+            "date": "2025-07-21T15:38:00Z",
+            "parents": [
+              "c4"
+            ],
+            "files": [
+              {
+                "path": "internal/clock/clock.go",
+                "status": "added",
+                "content": "// Package clock is the service's only source of the current time.\n//\n// Deployments run this service with a controlled clock so that lease expiry\n// and entry timestamps are reproducible: when a clock file is configured, the\n// unix second it contains is the time, and it changes when the operator changes\n// it. Nothing here touches any library's own timing \u2014 the database, the store\n// service and the HTTP server all keep using real time internally. Code that\n// reaches for time.Now() directly will disagree with the rest of the\n// deployment about what time it is.\npackage clock\n\nimport (\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n\t\"sync\"\n\t\"time\"\n)\n\ntype Clock struct {\n\tmu   sync.Mutex\n\tpath string\n}\n\nfunc New(path string) *Clock { return &Clock{path: path} }\n\n// Now is the current time according to the deployment.\nfunc (c *Clock) Now() time.Time {\n\tc.mu.Lock()\n\tpath := c.path\n\tc.mu.Unlock()\n\tif path == \"\" {\n\t\treturn time.Now().UTC()\n\t}\n\tblob, err := os.ReadFile(path)\n\tif err != nil {\n\t\treturn time.Now().UTC()\n\t}\n\tseconds, err := strconv.ParseInt(strings.TrimSpace(string(blob)), 10, 64)\n\tif err != nil {\n\t\treturn time.Now().UTC()\n\t}\n\treturn time.Unix(seconds, 0).UTC()\n}\n\n// Unix is the current time in whole seconds, which is the unit leases and\n// timestamps are expressed in.\nfunc (c *Clock) Unix() int64 { return c.Now().Unix() }\n\n// Stamp formats a time the way the ledger records it.\nfunc (c *Clock) Stamp() string { return c.Now().Format(\"2006-01-02T15:04:05Z\") }\n"
+              }
+            ]
+          },
+          {
+            "key": "c6",
+            "message": "config: the settings file membershipd reads\n\nconfig/migration.yaml with a comment on every key. The values are this deployment's; internal/config takes LEDGER_ plus the key in upper case from the environment for the keys a deployment overrides.\n\nPR #42",
+            "author": "nadia-okafor",
+            "date": "2025-08-05T09:05:00Z",
+            "parents": [
+              "c5"
+            ],
+            "files": [
+              {
+                "path": "config/migration.yaml",
+                "status": "added",
+                "content": "# Deployment settings for membershipd.\n#\n# Every value here differs between deployments and is overridable from the\n# environment, so read them rather than assuming them. The environment variable\n# for a key is LEDGER_ plus the key in upper case.\n\nlisten: 127.0.0.1:8080\n\n# The storage service's socket. It owns the destination database and the\n# coordination keyspace.\nstore_socket: /run/ledger/store.sock\n\n# The legacy store, which is where production traffic still goes.\nlegacy_path: /app/data/legacy.db\n\n# The clock file the deployment controls. Empty means real time.\nclock_file: /run/ledger/clock\n\n# Phase one of the migration copies the ledger as far as this legacy global\n# sequence number and no further. It is a property of the cutover plan, not of\n# the data, and it is different in every deployment.\nshadow_boundary: 500\n\n# How long a migration lease stays valid after it was last written, in seconds\n# of the deployment clock.\nlease_ttl_seconds: 8\n\n# This worker's identity. Two workers never share one.\nlease_holder: membershipd-a\n\n# The largest number of ledger rows to hand the destination store in one write.\napply_batch_max: 200\n"
+              }
+            ]
+          },
+          {
+            "key": "c7",
+            "message": "legacy: return every ledger row for a member\n\nStore.Ledger carried a LIMIT 100 from when the endpoint was first written and nothing above it said the answer was partial. EntriesAfter keeps its explicit limit: that scan is paged by its caller.\n\nFixes #43\nPR #44",
+            "author": "jiwon-park",
+            "date": "2025-08-26T13:19:00Z",
+            "parents": [
+              "c6"
+            ],
+            "files": [
+              {
+                "path": "internal/legacy/sqlite.go",
+                "status": "modified",
+                "content": "// Package legacy is the ledger's original store. It is the system of record\n// until the migration says otherwise: production traffic reads and writes here.\npackage legacy\n\nimport (\n\t\"context\"\n\t\"database/sql\"\n\t\"errors\"\n\t\"fmt\"\n\n\t_ \"modernc.org/sqlite\"\n)\n\nvar ErrNotFound = errors.New(\"legacy: member not found\")\n\ntype Member struct {\n\tMemberID     string `json:\"member_id\"`\n\tTier         string `json:\"tier\"`\n\tBalanceCents int64  `json:\"balance_cents\"`\n\tVersion      int64  `json:\"version\"`\n\tDeleted      bool   `json:\"deleted\"`\n\tUpdatedAt    string `json:\"updated_at\"`\n}\n\ntype Entry struct {\n\tEntryID    string `json:\"entry_id\"`\n\tMemberID   string `json:\"member_id\"`\n\tSeq        int64  `json:\"seq\"`\n\tGlobalSeq  int64  `json:\"global_seq\"`\n\tDeltaCents int64  `json:\"delta_cents\"`\n\tReason     string `json:\"reason\"`\n\tWrittenAt  string `json:\"written_at\"`\n}\n\ntype Store struct {\n\tdb *sql.DB\n}\n\nfunc Open(path string) (*Store, error) {\n\tdb, err := sql.Open(\"sqlite\", path+\"?_pragma=busy_timeout(10000)&_pragma=journal_mode(WAL)\")\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\t// One writer at a time: the ledger is small and correctness of the\n\t// per-member sequence matters more than write concurrency.\n\tdb.SetMaxOpenConns(1)\n\tif err := db.Ping(); err != nil {\n\t\treturn nil, err\n\t}\n\treturn &Store{db: db}, nil\n}\n\nfunc (s *Store) Close() error { return s.db.Close() }\n\nfunc (s *Store) Member(ctx context.Context, memberID string) (Member, error) {\n\trow := s.db.QueryRowContext(ctx, `\n\t\tSELECT member_id, tier, balance_cents, version, deleted, updated_at\n\t\tFROM members WHERE member_id = ?`, memberID)\n\treturn scanMember(row)\n}\n\nfunc (s *Store) Members(ctx context.Context) ([]Member, error) {\n\trows, err := s.db.QueryContext(ctx, `\n\t\tSELECT member_id, tier, balance_cents, version, deleted, updated_at\n\t\tFROM members ORDER BY member_id`)\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\tdefer rows.Close()\n\tvar out []Member\n\tfor rows.Next() {\n\t\tvar m Member\n\t\tvar deleted int\n\t\tif err := rows.Scan(&m.MemberID, &m.Tier, &m.BalanceCents, &m.Version, &deleted, &m.UpdatedAt); err != nil {\n\t\t\treturn nil, err\n\t\t}\n\t\tm.Deleted = deleted != 0\n\t\tout = append(out, m)\n\t}\n\treturn out, rows.Err()\n}\n\nfunc (s *Store) Ledger(ctx context.Context, memberID string) ([]Entry, error) {\n\trows, err := s.db.QueryContext(ctx, `\n\t\tSELECT entry_id, member_id, seq, global_seq, delta_cents, reason, written_at\n\t\tFROM ledger_entries WHERE member_id = ? ORDER BY seq`, memberID)\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\treturn scanEntries(rows)\n}\n\n// EntriesAfter reads the append log forward from a global sequence position.\n// This is the tail the ledger is replayed from.\nfunc (s *Store) EntriesAfter(ctx context.Context, afterGlobalSeq int64, limit int) ([]Entry, error) {\n\tif limit <= 0 {\n\t\tlimit = 500\n\t}\n\trows, err := s.db.QueryContext(ctx, `\n\t\tSELECT entry_id, member_id, seq, global_seq, delta_cents, reason, written_at\n\t\tFROM ledger_entries WHERE global_seq > ? ORDER BY global_seq LIMIT ?`,\n\t\tafterGlobalSeq, limit)\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\treturn scanEntries(rows)\n}\n\nfunc (s *Store) MaxGlobalSeq(ctx context.Context) (int64, error) {\n\tvar value sql.NullInt64\n\tif err := s.db.QueryRowContext(ctx, `SELECT MAX(global_seq) FROM ledger_entries`).Scan(&value); err != nil {\n\t\treturn 0, err\n\t}\n\treturn value.Int64, nil\n}\n\nfunc (s *Store) EntryCount(ctx context.Context) (int64, error) {\n\tvar count int64\n\terr := s.db.QueryRowContext(ctx, `SELECT COUNT(*) FROM ledger_entries`).Scan(&count)\n\treturn count, err\n}\n\n// Append records one ledger movement: it allocates the member's next sequence\n// number and the ledger's next global sequence number, writes the entry, and\n// folds it into the member's balance, all in one transaction.\nfunc (s *Store) Append(ctx context.Context, memberID, entryID, reason, writtenAt string, deltaCents int64) (Entry, error) {\n\ttx, err := s.db.BeginTx(ctx, nil)\n\tif err != nil {\n\t\treturn Entry{}, err\n\t}\n\tdefer func() { _ = tx.Rollback() }()\n\n\tvar exists int\n\tif err := tx.QueryRowContext(ctx, `SELECT COUNT(*) FROM members WHERE member_id = ?`, memberID).Scan(&exists); err != nil {\n\t\treturn Entry{}, err\n\t}\n\tif exists == 0 {\n\t\treturn Entry{}, ErrNotFound\n\t}\n\n\tvar nextSeq, nextGlobal int64\n\tif err := tx.QueryRowContext(ctx,\n\t\t`SELECT COALESCE(MAX(seq), 0) + 1 FROM ledger_entries WHERE member_id = ?`, memberID,\n\t).Scan(&nextSeq); err != nil {\n\t\treturn Entry{}, err\n\t}\n\tif err := tx.QueryRowContext(ctx,\n\t\t`SELECT COALESCE(MAX(global_seq), 0) + 1 FROM ledger_entries`,\n\t).Scan(&nextGlobal); err != nil {\n\t\treturn Entry{}, err\n\t}\n\n\tentry := Entry{\n\t\tEntryID:    entryID,\n\t\tMemberID:   memberID,\n\t\tSeq:        nextSeq,\n\t\tGlobalSeq:  nextGlobal,\n\t\tDeltaCents: deltaCents,\n\t\tReason:     reason,\n\t\tWrittenAt:  writtenAt,\n\t}\n\tif _, err := tx.ExecContext(ctx, `\n\t\tINSERT INTO ledger_entries\n\t\t\t(entry_id, member_id, seq, global_seq, delta_cents, reason, written_at)\n\t\tVALUES (?,?,?,?,?,?,?)`,\n\t\tentry.EntryID, entry.MemberID, entry.Seq, entry.GlobalSeq,\n\t\tentry.DeltaCents, entry.Reason, entry.WrittenAt); err != nil {\n\t\treturn Entry{}, err\n\t}\n\tif _, err := tx.ExecContext(ctx, `\n\t\tUPDATE members\n\t\tSET balance_cents = balance_cents + ?, version = version + 1, updated_at = ?\n\t\tWHERE member_id = ?`, entry.DeltaCents, entry.WrittenAt, entry.MemberID); err != nil {\n\t\treturn Entry{}, err\n\t}\n\tif err := tx.Commit(); err != nil {\n\t\treturn Entry{}, fmt.Errorf(\"legacy append commit: %w\", err)\n\t}\n\treturn entry, nil\n}\n\nfunc scanMember(row *sql.Row) (Member, error) {\n\tvar m Member\n\tvar deleted int\n\terr := row.Scan(&m.MemberID, &m.Tier, &m.BalanceCents, &m.Version, &deleted, &m.UpdatedAt)\n\tif errors.Is(err, sql.ErrNoRows) {\n\t\treturn m, ErrNotFound\n\t}\n\tif err != nil {\n\t\treturn m, err\n\t}\n\tm.Deleted = deleted != 0\n\treturn m, nil\n}\n\nfunc scanEntries(rows *sql.Rows) ([]Entry, error) {\n\tdefer rows.Close()\n\tvar out []Entry\n\tfor rows.Next() {\n\t\tvar e Entry\n\t\tif err := rows.Scan(&e.EntryID, &e.MemberID, &e.Seq, &e.GlobalSeq,\n\t\t\t&e.DeltaCents, &e.Reason, &e.WrittenAt); err != nil {\n\t\t\treturn nil, err\n\t\t}\n\t\tout = append(out, e)\n\t}\n\treturn out, rows.Err()\n}\n"
+              }
+            ]
+          },
+          {
+            "key": "c8",
+            "message": "ci: cache the build cache as well as the modules\n\nThe job was passing its ten minute timeout whenever the runner came up cold. modernc.org/sqlite is most of the build and the module cache alone does not help it. Cold runs are about two minutes now; timeout raised to twenty so a cache miss is a slow build and not a red.\n\nFixes #38",
+            "author": "mbeaulieu",
+            "date": "2025-09-03T08:41:00Z",
+            "parents": [
+              "c7"
+            ],
+            "files": [
+              {
+                "path": ".github/workflows/ci.yml",
+                "status": "modified",
+                "content": "name: ci\n\non:\n  push:\n    branches: [main]\n  pull_request:\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    timeout-minutes: 20\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-go@v5\n        with:\n          go-version: '1.25.0'\n      # modernc.org/sqlite is nearly the whole build. The module cache alone\n      # does not help it: what costs the ten minutes is compiling it, so the\n      # build cache is cached too.\n      - uses: actions/cache@v4\n        with:\n          path: |\n            ~/.cache/go-build\n            ~/go/pkg/mod\n          key: go-${{ runner.os }}-${{ hashFiles('go.sum') }}\n          restore-keys: |\n            go-${{ runner.os }}-\n      - name: build\n        run: go build ./...\n      - name: vet\n        run: go vet ./...\n      - name: gofmt\n        run: test -z \"$(gofmt -l .)\"\n"
+              }
+            ]
+          },
+          {
+            "key": "c9",
+            "message": "docs: archive what the ap-2 cutover left behind\n\nap-2's box is being decommissioned and everything on it goes with it. This keeps the run's own deployment settings, the legacy ledger and member book as exported at retirement, and the destination store dumped at three points. MANIFEST.md describes the files and their columns. Nobody wrote up what any of it means.\n\nPR #46",
+            "author": "nadia-okafor",
+            "date": "2025-09-30T16:04:00Z",
+            "parents": [
+              "c8"
+            ],
+            "files": [
+              {
+                "path": "docs/prior-cutover/MANIFEST.md",
+                "status": "added",
+                "content": "# ap-2 cutover, archive\n\nThe membership ledger in ap-2 was moved off its legacy SQLite store and onto a\ndestination store by the orchestrator this service is getting. These are the\nartefacts that run left behind. They were kept because the remaining regions\nhave the same move to make.\n\n`deployment.yaml` is ap-2's own `config/migration.yaml`. Its numbers are ap-2's\nand no other region's.\n\n## Files\n\n`ledger-export.jsonl`\n: ap-2's legacy ledger as exported at retirement, one line per movement.\n  `member_id`, `seq`, `global_seq`, `delta_cents`, `reason`, `written_at`.\n\n`member-book.json`\n: ap-2's legacy `members` table at retirement. `member_id`, `tier`,\n  `balance_cents`, `version`, `deleted`.\n\n`destination-after-shadow-copy.json`, `destination-at-authority-change.json`,\n`destination-final.json`\n: what the destination store held at three points: when phase one finished,\n  at the instant the authority moved, and at the end. `entries` are its ledger\n  rows, `members` its member rows, `record` its migration record, `status` the\n  service's own `GET /admin/migration/status` where one was taken.\n"
+              },
+              {
+                "path": "docs/prior-cutover/deployment.yaml",
+                "status": "added",
+                "content": "# Deployment settings for membershipd, ap-2, as they were for the cutover.\n#\n# Kept with the archive because the numbers below are what the recorded run was\n# driven with. They are ap-2's; every region sets its own.\n\nlisten: 127.0.0.1:8080\nstore_socket: /run/ledger/store.sock\nlegacy_path: /app/data/legacy.db\nclock_file: /run/ledger/clock\n\nshadow_boundary: 380\nlease_ttl_seconds: 15\nlease_holder: membershipd-a\napply_batch_max: 200\n"
+              },
+              {
+                "path": "docs/prior-cutover/ledger-export.jsonl",
+                "status": "added",
+                "content": "{\"delta_cents\": 15068, \"global_seq\": 1, \"member_id\": \"mbr-700022\", \"reason\": \"refund\", \"seq\": 1, \"written_at\": \"2025-01-27T17:46:47Z\"}\n{\"delta_cents\": 21135, \"global_seq\": 2, \"member_id\": \"mbr-700034\", \"reason\": \"chargeback\", \"seq\": 1, \"written_at\": \"2025-01-27T17:46:54Z\"}\n{\"delta_cents\": 10942, \"global_seq\": 3, \"member_id\": \"mbr-700075\", \"reason\": \"promo\", \"seq\": 1, \"written_at\": \"2025-01-27T17:47:01Z\"}\n{\"delta_cents\": -3714, \"global_seq\": 4, \"member_id\": \"mbr-700133\", \"reason\": \"promo\", \"seq\": 1, \"written_at\": \"2025-01-27T17:47:08Z\"}\n... truncated for this history corpus: 997 lines, 137907 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/member-book.json",
+                "status": "added",
+                "content": "{\n \"members\": [\n  {\n   \"balance_cents\": 93986,\n   \"deleted\": 0,\n   \"member_id\": \"mbr-700001\",\n   \"tier\": \"pro\",\n   \"version\": 6\n  },\n  {\n   \"balance_cents\": 99721,\n... truncated for this history corpus: 1551 lines, 26114 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/destination-after-shadow-copy.json",
+                "status": "added",
+                "content": "{\n \"entries\": [\n  {\n   \"delta_cents\": 15068,\n   \"global_seq\": 1,\n   \"member_id\": \"mbr-700022\",\n   \"seq\": 1\n  },\n  {\n   \"delta_cents\": 21135,\n... truncated for this history corpus: 3845 lines, 64018 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/destination-at-authority-change.json",
+                "status": "added",
+                "content": "{\n \"entries\": [\n  {\n   \"delta_cents\": 15068,\n   \"global_seq\": 1,\n   \"member_id\": \"mbr-700022\",\n   \"seq\": 1\n  },\n  {\n   \"delta_cents\": 21135,\n... truncated for this history corpus: 7464 lines, 123127 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/destination-final.json",
+                "status": "added",
+                "content": "{\n \"entries\": [\n  {\n   \"delta_cents\": 15068,\n   \"global_seq\": 1,\n   \"member_id\": \"mbr-700022\",\n   \"seq\": 1\n  },\n  {\n   \"delta_cents\": 21135,\n... truncated for this history corpus: 7554 lines, 124669 bytes in the repository\n"
+              }
+            ]
+          },
+          {
+            "key": "c10",
+            "message": "docs: the ap-2 record and coordination-key histories\n\nEvery version of the migration record the destination store accepted and every accepted write to the coordination keyspace, in the order the store took them, plus five stretches of the store's own write log. Pulled out of the storage service's log before the box goes. MANIFEST extended to cover them.\n\nPR #46",
+            "author": "harun-yildiz",
+            "date": "2025-10-02T11:22:00Z",
+            "parents": [
+              "c9"
+            ],
+            "files": [
+              {
+                "path": "docs/prior-cutover/MANIFEST.md",
+                "status": "modified",
+                "content": "# ap-2 cutover, archive\n\nThe membership ledger in ap-2 was moved off its legacy SQLite store and onto a\ndestination store by the orchestrator this service is getting. These are the\nartefacts that run left behind. They were kept because the remaining regions\nhave the same move to make.\n\n`deployment.yaml` is ap-2's own `config/migration.yaml`. Its numbers are ap-2's\nand no other region's.\n\n## Files\n\n`ledger-export.jsonl`\n: ap-2's legacy ledger as exported at retirement, one line per movement.\n  `member_id`, `seq`, `global_seq`, `delta_cents`, `reason`, `written_at`.\n\n`member-book.json`\n: ap-2's legacy `members` table at retirement. `member_id`, `tier`,\n  `balance_cents`, `version`, `deleted`.\n\n`destination-after-shadow-copy.json`, `destination-at-authority-change.json`,\n`destination-final.json`\n: what the destination store held at three points: when phase one finished,\n  at the instant the authority moved, and at the end. `entries` are its ledger\n  rows, `members` its member rows, `record` its migration record, `status` the\n  service's own `GET /admin/migration/status` where one was taken.\n\n`migration-record-history.jsonl`\n: every version of the migration record the destination store accepted, in the\n  order it accepted them. `n` is the position in the store's write log, `conn`\n  the connection that wrote it, `was` the record before the write and `became`\n  the record after it.\n\n`coordination-keys.jsonl`\n: every accepted write to the coordination keyspace, same ordering. `key`,\n  `value`, and for a compare-and-swap whether it `swapped`.\n\n`store-write-log-extracts.jsonl`\n: five short stretches of the destination store's own write log, grouped by\n  `window`. `committed` is whether the store applied the write; `acknowledged`\n  is whether it told the caller so. `movements` are the `member_id#seq` a write\n  carried. `rows` is how many rows it carried. Positions in the ledger are not\n  kept; they were particular to that run.\n"
+              },
+              {
+                "path": "docs/prior-cutover/migration-record-history.jsonl",
+                "status": "added",
+                "content": "{\"became\": {\"authority\": \"legacy\", \"cursor\": 0, \"divergence\": 0, \"fence\": 1, \"phase\": \"INIT\"}, \"conn\": 1, \"n\": 2, \"was\": {\"authority\": \"legacy\", \"cursor\": 0, \"divergence\": 0, \"fence\": 0, \"phase\": \"INIT\"}}\n{\"became\": {\"authority\": \"legacy\", \"cursor\": 380, \"divergence\": 0, \"fence\": 1, \"phase\": \"SHADOW_COPY\"}, \"conn\": 1, \"n\": 13, \"was\": {\"authority\": \"legacy\", \"cursor\": 0, \"divergence\": 0, \"fence\": 1, \"phase\": \"INIT\"}}\n{\"became\": {\"authority\": \"legacy\", \"cursor\": 380, \"divergence\": 0, \"fence\": 1, \"phase\": \"DUAL_READ\"}, \"conn\": 1, \"n\": 16, \"was\": {\"authority\": \"legacy\", \"cursor\": 380, \"divergence\": 0, \"fence\": 1, \"phase\": \"SHADOW_COPY\"}}\n... truncated for this history corpus: 10 lines, 2224 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/coordination-keys.jsonl",
+                "status": "added",
+                "content": "{\"conn\": 1, \"key\": \"migration:lease\", \"n\": 1, \"op\": \"kv_cas\", \"swapped\": true, \"value\": \"{\\\"holder\\\":\\\"membershipd-a\\\",\\\"fence\\\":1,\\\"expires_unix\\\":1738000015}\"}\n{\"conn\": 1, \"key\": \"migration:checkpoint\", \"n\": 7, \"op\": \"kv_set\", \"value\": \"{\\\"cursor\\\":200,\\\"holder\\\":\\\"membershipd-a\\\",\\\"fence\\\":1}\"}\n{\"conn\": 1, \"key\": \"migration:lease\", \"n\": 8, \"op\": \"kv_cas\", \"swapped\": true, \"value\": \"{\\\"holder\\\":\\\"membershipd-a\\\",\\\"fence\\\":1,\\\"expires_unix\\\":1738000015}\"}\n{\"conn\": 1, \"key\": \"migration:checkpoint\", \"n\": 11, \"op\": \"kv_set\", \"value\": \"{\\\"cursor\\\":380,\\\"holder\\\":\\\"membershipd-a\\\",\\\"fence\\\":1}\"}\n... truncated for this history corpus: 37 lines, 5134 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/store-write-log-extracts.jsonl",
+                "status": "added",
+                "content": "{\"acknowledged\": true, \"committed\": true, \"conn\": 1, \"movements\": [\"mbr-700001#1\", \"mbr-700002#1\", \"mbr-700003#1\", \"mbr-700003#2\", \"mbr-700004#1\", \"mbr-700005#1\", \"mbr-700005#2\", \"mbr-700006#1\", \"mbr-700012#1\", \"mbr-700012#2\", \"mbr-700013#1\", \"mbr-700017#1\", \"mbr-700017#2\", \"mbr-700019#1\", \"mbr-700022#1\", \"mbr-700022#2\", \"mbr-700022#3\", \"mbr-700024#1\", \"mbr-700026#1\", \"mbr-700027#1\", \"mbr-700027#2\", \"mbr-700028#1\", \"mbr-700028#2\", \"mbr-700030#1\", \"mbr-700030#2\", \"mbr-700032#1\", \"mbr-700032#2\", \"mbr-700034#1\", \"mbr-700034#2\", \"mbr-700034#3\", \"mbr-700034#4\", \"mbr-700035#1\", \"mbr-700036#1\", \"mbr-700036#2\", \"mbr-700036#3\", \"mbr-700036#4\", \"mbr-700038#1\", \"mbr-700041#1\", \"mbr-700044#1\", \"mbr-700044#2\", \"mbr-700044#3\", \"mbr-700044#4\", \"mbr-700046#1\", \"mbr-700049#1\", \"mbr-700051#1\", \"mbr-700051#2\", \"mbr-700053#1\", \"mbr-700053#2\", \"mbr-700053#3\", \"mbr-700053#4\", \"mbr-700054#1\", \"mbr-700055#1\", \"mbr-700057#1\", \"mbr-700059#1\", \"mbr-700062#1\", \"mbr-700063#1\", \"mbr-700065#1\", \"mbr-700067#1\", \"mbr-700070#1\", \"mbr-700071#1\", \"mbr-700071#2\", \"mbr-700073#1\", \"mbr-700075#1\", \"mbr-700075#2\", \"mbr-700077#1\", \"mbr-700077#2\", \"mbr-700077#3\", \"mbr-700079#1\", \"mbr-700080#1\", \"mbr-700082#1\", \"mbr-700083#1\", \"mbr-700083#2\", \"mbr-700084#1\", \"mbr-700090#1\", \"mbr-700092#1\", \"mbr-700095#1\", \"mbr-700095#2\", \"mbr-700097#1\", \"mbr-700099#1\", \"mbr-700100#1\", \"mbr-700101#1\", \"mbr-700103#1\", \"mbr-700103#2\", \"mbr-700104#1\", \"mbr-700104#2\", \"mbr-700104#3\", \"mbr-700105#1\", \"mbr-700105#2\", \"mbr-700105#3\", \"mbr-700109#1\", \"mbr-700109#2\", \"mbr-700110#1\", \"mbr-700110#2\", \"mbr-700110#3\", \"mbr-700110#4\", \"mbr-700119#1\", \"mbr-700119#2\", \"mbr-700119#3\", \"mbr-700119#4\", \"mbr-700119#5\", \"mbr-700123#1\", \"mbr-700123#2\", \"mbr-700123#3\", \"mbr-700125#1\", \"mbr-700128#1\", \"mbr-700128#2\", \"mbr-700128#3\", \"mbr-700128#4\", \"mbr-700129#1\", \"mbr-700130#1\", \"mbr-700133#1\", \"mbr-700136#1\", \"mbr-700137#1\", \"mbr-700137#2\", \"mbr-700138#1\", \"mbr-700139#1\", \"mbr-700139#2\", \"mbr-700140#1\", \"mbr-700141#1\", \"mbr-700142#1\", \"mbr-700142#2\", \"mbr-700144#1\", \"mbr-700145#1\", \"mbr-700145#2\", \"mbr-700146#1\", \"mbr-700146#2\", \"mbr-700148#1\", \"mbr-700149#1\", \"mbr-700149#2\", \"mbr-700150#1\", \"mbr-700151#1\", \"mbr-700152#1\", \"mbr-700153#1\", \"mbr-700153#2\", \"mbr-700154#1\", \"mbr-700157#1\", \"mbr-700158#1\", \"mbr-700158#2\", \"mbr-700159#1\", \"mbr-700160#1\", \"mbr-700160#2\", \"mbr-700160#3\", \"mbr-700160#4\", \"mbr-700161#1\", \"mbr-700163#1\", \"mbr-700163#2\", \"mbr-700163#3\", \"mbr-700166#1\", \"mbr-700168#1\", \"mbr-700168#2\", \"mbr-700168#3\", \"mbr-700169#1\", \"mbr-700169#2\", \"mbr-700170#1\", \"mbr-700170#2\", \"mbr-700171#1\", \"mbr-700171#2\", \"mbr-700171#3\", \"mbr-700171#4\", \"mbr-700171#5\", \"mbr-700171#6\", \"mbr-700172#1\", \"mbr-700172#2\", \"mbr-700175#1\", \"mbr-700176#1\", \"mbr-700179#1\", \"mbr-700180#1\", \"mbr-700180#2\", \"mbr-700181#1\", \"mbr-700181#2\", \"mbr-700183#1\", \"mbr-700183#2\", \"mbr-700184#1\", \"mbr-700185#1\", \"mbr-700189#1\", \"mbr-700190#1\", \"mbr-700190#2\", \"mbr-700194#1\", \"mbr-700194#2\", \"mbr-700196#1\", \"mbr-700196#2\", \"mbr-700199#1\", \"mbr-700199#2\", \"mbr-700202#1\", \"mbr-700204#1\", \"mbr-700204#2\", \"mbr-700207#1\", \"mbr-700208#1\", \"mbr-700208#2\", \"mbr-700210#1\", \"mbr-700210#2\", \"mbr-700211#1\", \"mbr-700212#1\", \"mbr-700212#2\", \"mbr-700213#1\", \"mbr-700214#1\", \"mbr-700215#1\", \"mbr-700217#1\", \"mbr-700217#2\", \"mbr-700218#1\"], \"n\": 5, \"op\": \"entry_add\", \"rows\": 200, \"window\": \"a-batch-and-the-position-recorded-for-it\"}\n... truncated for this history corpus: 18 lines, 16444 bytes in the repository\n"
+              }
+            ]
+          },
+          {
+            "key": "c11",
+            "message": "docs: the ap-2 probes and the rehearsal turns\n\nTwo public-API reads captured by hand during the run with the service's own status alongside them, and the turns from the second region-wide rehearsal with the lease record after each turn. MANIFEST now covers every file in the directory.\n\nPR #47",
+            "author": "rhea-menon",
+            "date": "2025-10-06T09:58:00Z",
+            "parents": [
+              "c10"
+            ],
+            "files": [
+              {
+                "path": "docs/prior-cutover/MANIFEST.md",
+                "status": "modified",
+                "content": "# ap-2 cutover, archive\n\nThe membership ledger in ap-2 was moved off its legacy SQLite store and onto a\ndestination store by the orchestrator this service is getting. These are the\nartefacts that run left behind. They were kept because the remaining regions\nhave the same move to make.\n\n`deployment.yaml` is ap-2's own `config/migration.yaml`. Its numbers are ap-2's\nand no other region's.\n\n## Files\n\n`ledger-export.jsonl`\n: ap-2's legacy ledger as exported at retirement, one line per movement.\n  `member_id`, `seq`, `global_seq`, `delta_cents`, `reason`, `written_at`.\n\n`member-book.json`\n: ap-2's legacy `members` table at retirement. `member_id`, `tier`,\n  `balance_cents`, `version`, `deleted`.\n\n`destination-after-shadow-copy.json`, `destination-at-authority-change.json`,\n`destination-final.json`\n: what the destination store held at three points: when phase one finished,\n  at the instant the authority moved, and at the end. `entries` are its ledger\n  rows, `members` its member rows, `record` its migration record, `status` the\n  service's own `GET /admin/migration/status` where one was taken.\n\n`migration-record-history.jsonl`\n: every version of the migration record the destination store accepted, in the\n  order it accepted them. `n` is the position in the store's write log, `conn`\n  the connection that wrote it, `was` the record before the write and `became`\n  the record after it.\n\n`coordination-keys.jsonl`\n: every accepted write to the coordination keyspace, same ordering. `key`,\n  `value`, and for a compare-and-swap whether it `swapped`.\n\n`store-write-log-extracts.jsonl`\n: five short stretches of the destination store's own write log, grouped by\n  `window`. `committed` is whether the store applied the write; `acknowledged`\n  is whether it told the caller so. `movements` are the `member_id#seq` a write\n  carried. `rows` is how many rows it carried. Positions in the ledger are not\n  kept; they were particular to that run.\n\n`dual-read-probe.json`\n: one member read through the public API while the destination was still\n  behind, with the ledger's own numbers for that member at that instant and\n  both stores' rows for them.\n\n`open-ledger-probe.json`\n: the public API read and written again later in the same run, with the\n  service's own `status` at that instant. `member_read` and `ledger_read` are\n  for the member in `member_id`; `write` is an adjustment for a different\n  member and the reply it got. `legacy_rows` and `destination_rows` are the\n  read member's rows in each store, the destination's taken at the instant the\n  authority moved; `write_member_legacy_rows` are the written member's.\n\n`handover-turns.json`\n: the same migration in a second region-wide rehearsal, carried by two workers\n  through a rolling deployment, and the lease record after each turn.\n"
+              },
+              {
+                "path": "docs/prior-cutover/dual-read-probe.json",
+                "status": "added",
+                "content": "{\n \"destination_rows\": [\n  {\n   \"global_seq\": 29,\n   \"member_id\": \"mbr-700046\",\n   \"seq\": 1\n  }\n ],\n \"ledger_read\": {\n  \"body\": {\n   \"entries\": [\n    {\n... truncated for this history corpus: 262 lines, 5880 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/open-ledger-probe.json",
+                "status": "added",
+                "content": "{\n \"destination_rows\": [\n  {\n   \"global_seq\": 14,\n   \"member_id\": \"mbr-700160\",\n   \"seq\": 1\n  },\n  {\n   \"global_seq\": 42,\n   \"member_id\": \"mbr-700160\",\n   \"seq\": 2\n  },\n... truncated for this history corpus: 516 lines, 10999 bytes in the repository\n"
+              },
+              {
+                "path": "docs/prior-cutover/handover-turns.json",
+                "status": "added",
+                "content": "{\n \"lease_record_writes\": [\n  {\n   \"conn\": 1,\n   \"key\": \"migration:lease\",\n   \"n\": 1,\n   \"op\": \"kv_cas\",\n   \"swapped\": true,\n   \"value\": \"{\\\"holder\\\":\\\"membershipd-a\\\",\\\"fence\\\":1,\\\"expires_unix\\\":1738000032}\"\n  },\n  {\n   \"conn\": 1,\n... truncated for this history corpus: 188 lines, 3991 bytes in the repository\n"
+              }
+            ]
+          },
+          {
+            "key": "c12",
+            "message": "scripts: a smoke run for a box\n\nBuilds, starts the service, drives the admin endpoints and says what it saw. It exists so that a broken build, a service that will not start and a migration that refuses to advance are all obvious without guessing.",
+            "author": "harun-yildiz",
+            "date": "2025-10-28T14:10:00Z",
+            "parents": [
+              "c11"
+            ],
+            "files": [
+              {
+                "path": "scripts/smoke.sh",
+                "status": "added",
+                "content": "#!/usr/bin/env bash\n# Smoke test: does the migration run at all, and does it survive each of the\n# three store mechanics once?\n#\n#   scripts/smoke.sh            with the smoke faults on\n#   scripts/smoke.sh --clean    with no faults, for when you want a baseline\n#\n# This is here so a broken build, a service that will not start and a migration\n# that refuses to advance are all obvious without having to guess. It is not the\n# scenario you are graded on: it runs one worker on this box's own data with the\n# three fixed smoke faults. Passing it is necessary, not sufficient.\nset -uo pipefail\n\ncd \"$(dirname \"$0\")/..\" || exit 1\n\nPORT=${PORT:-8080}\nBASE=http://127.0.0.1:$PORT\nBIN=/tmp/membershipd-smoke\nLOG=/tmp/membershipd-smoke.log\nFAULTS=data/smoke-faults\n\nsay()  { printf '\\nsmoke: %s\\n' \"$*\"; }\nfail() { printf '\\nsmoke: FAILED: %s\\n' \"$*\"; exit 1; }\n\n# ------------------------------------------------------------------- the build\n\nsay \"building\"\ngo build -o \"$BIN\" ./cmd/membershipd || fail \"the build does not compile\"\n\n# ------------------------------------------------------------------- the box\n\nif [ \"${1:-}\" = \"--clean\" ]; then\n    rm -f \"$FAULTS\"\n    say \"faults off\"\nelse\n    : > \"$FAULTS\"\n    say \"faults on (fixed: one withheld-committed, one withheld-lost, one kill)\"\nfi\n\nstop() { pkill -f \"$BIN\" >/dev/null 2>&1; sleep 1; }\nstop\n\nsay \"putting the stores back to a fresh trial\"\nrm -f data/reset-request.done\ntouch data/reset-request\nfor _ in $(seq 1 60); do\n    [ -f data/reset-request.done ] && break\n    sleep 1\ndone\noutcome=$(cat data/reset-request.done 2>/dev/null)\n[ \"$outcome\" = \"ok\" ] || fail \"the reset did not complete cleanly: ${outcome:-no answer}\"\n\nstart() {\n    setsid \"$BIN\" >> \"$LOG\" 2>&1 &\n    for _ in $(seq 1 60); do\n        curl -sf \"$BASE/admin/migration/status\" >/dev/null 2>&1 && return 0\n        sleep 1\n    done\n    return 1\n}\n\n: > \"$LOG\"\nsay \"starting the service\"\nstart || fail \"the service never answered on $BASE (see $LOG)\"\n\n# ------------------------------------------------------------------- the drive\n\nphase() { curl -sf \"$BASE/admin/migration/status\" 2>/dev/null | python3 -c \\\n    'import json,sys; print(json.load(sys.stdin).get(\"phase\",\"?\"))' 2>/dev/null; }\nfield() { curl -sf \"$BASE/admin/migration/status\" 2>/dev/null | python3 -c \\\n    \"import json,sys; print(json.load(sys.stdin).get('$1'))\" 2>/dev/null; }\n\nrestarts=0\nlast=$(phase)\nsay \"driving: starting from $last\"\n\nfor attempt in $(seq 1 60); do\n    code=$(curl -s -o /tmp/smoke-advance.json -w '%{http_code}' \\\n        -X POST \"$BASE/admin/migration/advance\" 2>/dev/null)\n\n    # One of the smoke faults takes the service down mid-write. That is the\n    # mechanic, not a bug in the box.\n    if [ -z \"$code\" ] || [ \"$code\" = \"000\" ]; then\n        if ! curl -sf \"$BASE/admin/migration/status\" >/dev/null 2>&1; then\n            restarts=$((restarts + 1))\n            say \"the service died during an advance; restarting (#$restarts)\"\n            start || fail \"it did not come back after being killed mid-write (see $LOG)\"\n            continue\n        fi\n    fi\n\n    if [ \"$code\" = \"501\" ]; then\n        fail \"advance is not implemented yet \u2014 this is the seam to build\"\n    fi\n\n    now=$(phase)\n    if [ \"$now\" != \"$last\" ]; then\n        printf '  %-16s -> %-16s (http %s)\\n' \"$last\" \"$now\" \"$code\"\n        last=$now\n    fi\n    [ \"$now\" = \"COMPLETE\" ] && break\n\n    # Refused and going nowhere: either a gate that cannot be met or an advance\n    # that is not idempotent. Either way, stop rather than spin.\n    if [ \"$code\" != \"200\" ] && [ \"$code\" != \"204\" ]; then\n        if [ \"$attempt\" -gt 12 ]; then\n            fail \"stuck in $now: advance keeps returning $code \u2014 $(cat /tmp/smoke-advance.json)\"\n        fi\n    fi\ndone\n\n# ------------------------------------------------------------------- the verdict\n\nfinal=$(phase)\ndivergence=$(field divergence_count)\nauthority=$(field authority)\n\nsay \"result\"\nprintf '  phase            %s\\n'  \"$final\"\nprintf '  authority        %s\\n'  \"$authority\"\nprintf '  divergence_count %s\\n'  \"$divergence\"\nprintf '  restarts         %s\\n'  \"$restarts\"\n\n[ \"$final\" = \"COMPLETE\" ] || fail \"the migration ended in $final, not COMPLETE\"\n[ \"$authority\" = \"destination\" ] || fail \"the authority is $authority, not destination\"\n[ \"$divergence\" = \"0\" ] || fail \"the migration reports $divergence divergence(s) left\"\n\nif [ \"${1:-}\" != \"--clean\" ] && [ \"$restarts\" = \"0\" ]; then\n    say \"note: nothing was killed mid-write, so one of the three mechanics did\n      not actually get exercised on this run.\"\nfi\n\nsay \"the seam is wired up and the migration completed on this box's data with\n      one worker. A graded run is not this.\"\nstop\n"
+              }
+            ]
+          },
+          {
+            "key": "c13",
+            "message": "docs: point the README at the ap-2 archive\n\nOne section, so that someone landing on the repo finds docs/prior-cutover/ without being told about it.",
+            "author": "tlindqvist",
+            "date": "2025-11-18T10:33:00Z",
+            "parents": [
+              "c12"
+            ],
+            "files": [
+              {
+                "path": "README.md",
+                "status": "modified",
+                "content": "# membership-ledger\n\nThe membership ledger for one region. Finance treats it as the record of what\nmembers are owed: `members` holds one row per member, `ledger_entries` is\nappend-only, `seq` counts a member's own movements and `global_seq` orders the\nwhole ledger.\n\n## Layout\n\n- `cmd/membershipd` - the service binary\n- `internal/api` - the HTTP surface: `/v1/members/...` and `/admin/migration/...`\n- `internal/ledger` - what the public endpoints see of the ledger\n- `internal/legacy` - the SQLite store a region runs on today\n- `internal/store` - client for the storage service\n- `internal/migration` - the orchestrator that moves one region's ledger\n- `config/migration.yaml` - this deployment's settings\n\n## Running it\n\n```\ngo build -o membershipd ./cmd/membershipd && ./membershipd\n```\n\nSettings are read from `config/migration.yaml`, or from wherever `LEDGER_CONFIG`\npoints. Every key can be overridden from the environment.\n\n## Regions\n\nap-2 has been moved off its legacy store. What that run left behind is in\n[`docs/prior-cutover/`](docs/prior-cutover/), with a manifest describing the\nfiles and their columns. The other regions have not moved yet.\n"
+              }
+            ]
+          },
+          {
+            "key": "c14",
+            "message": "docs: start a migration runbook\n\nThe two stores and the two admin endpoints, written down in the repo instead of in my notes. The rest of it - what the archive holds and what a box does - is still to come.",
+            "author": "ines-duarte",
+            "date": "2025-12-11T15:47:00Z",
+            "parents": [
+              "c13"
+            ],
+            "files": [
+              {
+                "path": "docs/migration-runbook.md",
+                "status": "added",
+                "content": "# Migration runbook: legacy ledger to destination store\n\nThe plan for moving the membership ledger off the legacy SQLite store and onto\nthe destination store. ap-2 has already been moved; this region has not.\n\nThe orchestrator that carries it out is `internal/migration`, and `Advance` is\nnot written yet. `config/migration.yaml` holds this deployment's numbers, and\nthey are this deployment's alone \u2014 ap-2 ran on its own, and so will the next\nregion.\n\n## The two stores\n\n**Legacy** (`internal/legacy`) is the system of record today and production\ntraffic still goes to it throughout. `members` holds one row per member;\n`ledger_entries` is append-only, with `seq` counting a member's own movements\nfrom 1 and `global_seq` ordering the whole ledger.\n\n**Destination** (`internal/store`) is reached through the storage service on a\nlocal socket. It holds members, ledger rows and one migration record. Read\nthat package's doc comment before you use it: its failure model is not the same\nas a database's, and `EntryAdd`, `EntryRemove`, `MetaPut` and `KVCAS` each say\nin their own comment what they will and will not do for you.\n\n## Driving it\n\n```\nGET  /admin/migration/status    where the migration is, read from the stores\nPOST /admin/migration/advance   one phase on, if the gate holds\n```\n\n`migration.Order` is the phase sequence and `migration.Status` is the report the\ntooling that drives a migration expects; both field sets are a contract, so keep\nthem. Each advance moves the migration on by one phase and only if that phase's\ngate holds; an advance that cannot run refuses and changes nothing. Advancing is\ndriven from outside, may be called again at any time including after a restart,\nand there may be more than one process willing to answer.\n"
+              }
+            ]
+          },
+          {
+            "key": "c15",
+            "message": "docs: runbook - the archive, the smoke faults, the reset\n\nThree sections that were still in my notes: what docs/prior-cutover/ holds, the smoke faults and how they are switched on and off on a box, and the reset that puts a box back. Descriptions of where things are.\n\nPR #51",
+            "author": "ines-duarte",
+            "date": "2026-02-10T11:15:00Z",
+            "parents": [
+              "c14"
+            ],
+            "files": [
+              {
+                "path": "docs/migration-runbook.md",
+                "status": "modified",
+                "content": "# Migration runbook: legacy ledger to destination store\n\nThe plan for moving the membership ledger off the legacy SQLite store and onto\nthe destination store. ap-2 has already been moved; this region has not.\n\nThe orchestrator that carries it out is `internal/migration`, and `Advance` is\nnot written yet. `config/migration.yaml` holds this deployment's numbers, and\nthey are this deployment's alone \u2014 ap-2 ran on its own, and so will the next\nregion.\n\n## The two stores\n\n**Legacy** (`internal/legacy`) is the system of record today and production\ntraffic still goes to it throughout. `members` holds one row per member;\n`ledger_entries` is append-only, with `seq` counting a member's own movements\nfrom 1 and `global_seq` ordering the whole ledger.\n\n**Destination** (`internal/store`) is reached through the storage service on a\nlocal socket. It holds members, ledger rows and one migration record. Read\nthat package's doc comment before you use it: its failure model is not the same\nas a database's, and `EntryAdd`, `EntryRemove`, `MetaPut` and `KVCAS` each say\nin their own comment what they will and will not do for you.\n\n## Driving it\n\n```\nGET  /admin/migration/status    where the migration is, read from the stores\nPOST /admin/migration/advance   one phase on, if the gate holds\n```\n\n`migration.Order` is the phase sequence and `migration.Status` is the report the\ntooling that drives a migration expects; both field sets are a contract, so keep\nthem. Each advance moves the migration on by one phase and only if that phase's\ngate holds; an advance that cannot run refuses and changes nothing. Advancing is\ndriven from outside, may be called again at any time including after a restart,\nand there may be more than one process willing to answer.\n\n## What ap-2 left behind\n\n`docs/prior-cutover/` is the archive from the ap-2 run: its ledger export and\nmember book, the destination store at three points, every version of the\nmigration record and every coordination key the store accepted, five stretches\nof the store's own write log, and a second rehearsal carried by two workers.\nIt is the only account of a completed migration anyone kept. It is evidence\nrather than instructions \u2014 nobody wrote up what it means, and ap-2's numbers\nare not this deployment's.\n\n## Running it on this box\n\nThe storage service will withhold the outcome of a write and will take a writer\ndown on a durable write. Both happen in production. On this box they are off\nuntil you ask for them:\n\n```\ntouch data/smoke-faults      # switch the smoke faults on\nrm data/smoke-faults         # and off again\n```\n\nThat installs a fixed set of three, one of each mechanic. The storage service\nlogs which are in force and which have fired. Only whether the file exists is\nread; there is nothing to configure in it.\n\n**These are not the faults a graded run uses, and the graded ones cannot be\narranged from here.** They arrive over a channel the workspace cannot reach, at\npositions and in combinations that are not these. Expect more of them, in worse\nplaces, and expect them to overlap with each other and with a second worker.\nThe smoke faults are here to tell you that your service is wired up and that it\nsurvives each mechanic once. Passing them is not the same as being right.\n\n## Starting over\n\nA migration is a one-way trip, so trying one twice needs the box put back\nfirst:\n\n```\ntouch data/reset-request\n```\n\nWithin a second or two the destination store is emptied, the coordination\nkeyspace is flushed, and `data/legacy.db` goes back to how it shipped;\n`data/reset-request.done` then says `ok` or what went wrong. The smoke faults go\nback on afterwards if they were on before. Stop the service first \u2014 a reset\nunderneath a running migration is not worth reasoning about.\n"
+              }
+            ]
+          }
+        ],
+        "branches": [
+          {
+            "name": "main",
+            "head": "c15"
+          },
+          {
+            "name": "ap2-cutover-archive",
+            "head": "c10"
+          }
+        ],
+        "tags": [
+          {
+            "name": "v0.8.0",
+            "commit": "c8"
+          }
+        ],
+        "releases": [
+          {
+            "tag": "v0.8.0",
+            "name": "0.8.0 - phases, deployment settings, ledger reads",
+            "body": "What is in this one:\n\n- `migration.Order` and `migration.Status`: the phase sequence and the shape `/admin/migration/status` answers with. Both field sets are what the tooling reads.\n- `config/migration.yaml`, with a comment on every key and `LEDGER_` overrides from the environment.\n- `GET /v1/members/{id}/ledger` returns every row for a member instead of the first hundred (#43).\n- The build job caches the Go build cache as well as the module cache, which is #38 closed.\n\n`migration.Orchestrator.Advance` still reports `ErrNotImplemented` in this tree.",
+            "created_at": "2025-09-03T16:20:00Z"
+          }
+        ],
+        "issues": [
+          {
+            "number": 38,
+            "title": "ci: the build job times out about one run in five",
+            "body": "The build job on the shared runner goes red about one run in five and always the same way: `go build ./...` passes the ten minute job timeout and the runner kills it. A rerun is green.\n\nmodernc.org/sqlite is nearly all of it. Warm module cache: 90 seconds. Cold: over eight minutes twice this week, and both reds were cold.\n\nThree reds since Monday. Nothing to do with the changes in them.",
+            "state": "closed",
+            "labels": [
+              "ci",
+              "flaky"
+            ],
+            "assignees": [
+              "mbeaulieu"
+            ],
+            "milestone": null,
+            "created_at": "2025-06-20T09:30:00Z",
+            "closed_at": "2025-09-03T09:02:00Z",
+            "comments": [
+              {
+                "key": "i38c1",
+                "user": "mbeaulieu",
+                "body": "Two more overnight, both on #39, both on a cold runner. Timings from the logs: 8m41s and 9m58s, killed at ten.",
+                "created_at": "2025-07-02T08:14:00Z"
+              },
+              {
+                "key": "i38c2",
+                "user": "rhea-menon",
+                "body": "Raising the timeout on its own would only hide it. The module cache is already cached and does not help - what costs the ten minutes is compiling sqlite, so the build cache is the thing to keep. Happy for someone to take it, otherwise I will after the config work lands.",
+                "created_at": "2025-08-28T16:40:00Z"
+              },
+              {
+                "key": "i38c3",
+                "user": "mbeaulieu",
+                "body": "Build cache cached on main. Eleven green runs in a row since, cold runs about two minutes. Closing.",
+                "created_at": "2025-09-03T09:02:00Z"
+              }
+            ],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 41,
+            "title": "docs: say where a deployment's numbers come from",
+            "body": "Third person this month has asked me which numbers in this service are the code's and which are the region's, and there is nowhere to point them.\n\nWhat I would like written down where a new starter will find it: which file holds them, that the environment can override them, and that one region's numbers are not another's.",
+            "state": "closed",
+            "labels": [
+              "docs"
+            ],
+            "assignees": [],
+            "milestone": null,
+            "created_at": "2025-07-16T13:05:00Z",
+            "closed_at": "2025-08-06T10:12:00Z",
+            "comments": [
+              {
+                "key": "i41c1",
+                "user": "nadia-okafor",
+                "body": "#42 puts `config/migration.yaml` in the tree with a comment on every key, including that the values differ between deployments and are read rather than assumed. That is the file to point people at.",
+                "created_at": "2025-08-05T09:20:00Z"
+              },
+              {
+                "key": "i41c2",
+                "user": "ines-duarte",
+                "body": "Good enough for now - the comments say it and the loader matches them. Closing. It wants folding into a runbook when there is one.",
+                "created_at": "2025-08-06T10:12:00Z"
+              }
+            ],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 43,
+            "title": "GET /v1/members/{id}/ledger returns at most 100 entries",
+            "body": "The reconciliation job reads this endpoint per member. For members with a long history the total it computes disagrees with `balance_cents` from the member read.\n\nOne member here has 240 movements. The endpoint answers with 100 of them: no count, no `next`, nothing that says it stopped early. So the two endpoints disagree with each other and the job believes the one that is short.\n\nWe found it because month end was light for exactly the members with the longest histories.",
+            "state": "closed",
+            "labels": [
+              "area/api",
+              "ops"
+            ],
+            "assignees": [
+              "jiwon-park"
+            ],
+            "milestone": null,
+            "created_at": "2025-08-18T11:44:00Z",
+            "closed_at": "2025-08-26T13:30:00Z",
+            "comments": [
+              {
+                "key": "i43c1",
+                "user": "jiwon-park",
+                "body": "It is a `LIMIT 100` in `Store.Ledger`, there since the endpoint was first written. The scan the migration uses is a different query and keeps its limit. PR shortly.",
+                "created_at": "2025-08-22T10:02:00Z"
+              },
+              {
+                "key": "i43c2",
+                "user": "sofia-braga",
+                "body": "Re-ran reconciliation against the fix on a copy: totals match the member reads for every member we were short on. Thank you.",
+                "created_at": "2025-08-26T13:28:00Z"
+              }
+            ],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 45,
+            "title": "ap-2: member reads slowed to seconds during the cutover run",
+            "body": "Writing down what on-call saw during the ap-2 run before it goes with the box.\nThis has been in a thread and a text file since; putting it on a ticket so the\narchive PR has something to point at.\n\nTimes are the deployment clock's, off the service log and the storage service's\nown log. This is a latency report, not a correctness one.\n\n- 18:31 - run started, phase INIT. `GET /v1/members/{id}` p99 was 40 ms.\n- 18:33 - SHADOW_COPY. p99 climbed to about 380 ms and stayed there for the copy.\n- 18:44 - CATCH_UP. Two support tickets in six minutes, both \"the page is\n  spinning\". The slowest read we have a trace for is 41 s. It completed.\n- 18:45 - the storage service log shows its socket accept queue full for roughly\n  a minute either side.\n- 18:52 - RECONCILE. p99 back under 100 ms.\n- 18:58 - the authority moved. No tickets after this point.\n- 19:10 - the run finished.\n\nap-2 was driven with `apply_batch_max: 200` and `lease_ttl_seconds: 15`; its\nsettings file is going into the archive as `deployment.yaml`. Those are ap-2's\nnumbers, not this region's.",
+            "state": "closed",
+            "labels": [
+              "ops",
+              "ap-2"
+            ],
+            "assignees": [
+              "rhea-menon"
+            ],
+            "milestone": 2,
+            "created_at": "2025-09-08T10:20:00Z",
+            "closed_at": "2025-10-07T09:15:00Z",
+            "comments": [
+              {
+                "key": "i45c1",
+                "user": "sofia-braga",
+                "body": "Finance re-ran the month-end reconciliation afterwards against the export and the totals match the legacy book. Recording that here so it is on the ticket rather than in my mail.",
+                "created_at": "2025-09-09T14:50:00Z"
+              },
+              {
+                "key": "i45c2",
+                "user": "dkowalczyk",
+                "body": "Do we have the storage service's log from that window, or only the service's? Asking because the accept-queue line above is the only thing we have from the store side.",
+                "created_at": "2025-09-15T08:33:00Z"
+              },
+              {
+                "key": "i45c3",
+                "user": "harun-yildiz",
+                "body": "We have the write log, which is 40 MB. #46 takes five stretches of it. The rest goes with the box.",
+                "created_at": "2025-09-16T11:07:00Z"
+              },
+              {
+                "key": "i45c4",
+                "user": "rhea-menon",
+                "body": "The artefacts from that run are archived now (#46, #47). The timeline above is what was seen and the files are where anyone can read them; nobody has written up what they mean. Closing this one - it is a latency report and the box it describes is gone.",
+                "created_at": "2025-10-07T09:15:00Z"
+              }
+            ],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 48,
+            "title": "docs/prior-cutover: the questions the files leave open",
+            "body": "Collecting what the archive does not say, so it is in one place for whoever\neventually sits down with it. Not asking anyone to answer these now.\n\n- `coordination-keys.jsonl`: every line carries an `op` and the MANIFEST does\n  not mention it. Same for `store-write-log-extracts.jsonl`.\n- `open-ledger-probe.json`: the MANIFEST talks about a top-level `member_id`\n  that the file does not have.\n- `handover-turns.json`: the paragraph describes the file but not the fields in\n  `turns`, and one of the eight turns has a field none of the others do.\n- `destination-at-authority-change.json`: no `status` block where the other two\n  dumps have one. The MANIFEST hedges this with \"where one was taken\", so it is\n  covered, but it is the kind of thing that reads as a missing file.\n\nNone of it is wrong exactly, it is undescribed. Sub-issue for the two that are\none-line edits.",
+            "state": "open",
+            "labels": [
+              "docs",
+              "ap-2"
+            ],
+            "assignees": [],
+            "milestone": 3,
+            "created_at": "2025-11-10T10:05:00Z",
+            "closed_at": null,
+            "comments": [
+              {
+                "key": "i48c1",
+                "user": "dkowalczyk",
+                "body": "The `status` one caught me out too - I went looking for the file that had been truncated before I read the MANIFEST properly.",
+                "created_at": "2025-11-12T09:41:00Z"
+              },
+              {
+                "key": "i48c2",
+                "user": "nadia-okafor",
+                "body": "That one I can answer: nobody took a status at that point in the run. That dump came off the store directly.",
+                "created_at": "2025-11-12T15:26:00Z"
+              }
+            ],
+            "sub_issues": [
+              49
+            ],
+            "parent": null
+          },
+          {
+            "number": 49,
+            "title": "MANIFEST: `op` is undescribed, and the probe's member_id is not where it says",
+            "body": "Two one-line edits to `docs/prior-cutover/MANIFEST.md`, both raised in review on\n#46 and #47 and both still open:\n\n- The `coordination-keys.jsonl` paragraph names `key`, `value` and `swapped`.\n  Every line also has an `op` and the paragraph does not mention it.\n  @nadia-okafor said on #46 that it is the store's own name for the write and\n  that she would rather not describe it from a guess, which is fair.\n- The `open-ledger-probe.json` paragraph says `member_read` and `ledger_read`\n  are for the member in `member_id`. There is no top-level `member_id` in that\n  file; it is `member_read.body.member_id`.\n\nI have not touched the file myself. It is an archive, and I would rather the\nedit came from whoever captured it.",
+            "state": "open",
+            "labels": [
+              "docs",
+              "ap-2"
+            ],
+            "assignees": [],
+            "milestone": 3,
+            "created_at": "2025-11-10T10:18:00Z",
+            "closed_at": null,
+            "comments": [],
+            "sub_issues": [],
+            "parent": 48
+          },
+          {
+            "number": 50,
+            "title": "a make target for the smoke run",
+            "body": "Four commands get typed around `scripts/smoke.sh` every time: build, check the storage service is up, run the script, tail its log. A `make smoke` doing the four would save the typing and stop three people keeping three variants of it in their shell history.\n\nLow priority, and I am not volunteering this month.",
+            "state": "open",
+            "labels": [
+              "ops"
+            ],
+            "assignees": [],
+            "milestone": null,
+            "created_at": "2025-11-24T16:02:00Z",
+            "closed_at": null,
+            "comments": [
+              {
+                "key": "i50c1",
+                "user": "mbeaulieu",
+                "body": "A Makefile would want the storage service path in it, which differs per box. Doable, just not free. Happy to take it if nobody else does.",
+                "created_at": "2025-11-25T08:50:00Z"
+              }
+            ],
+            "sub_issues": [],
+            "parent": null
+          }
+        ],
+        "pulls": [
+          {
+            "number": 39,
+            "title": "ledger: the view the public endpoints ask",
+            "body": "The handlers were reaching into `internal/legacy` directly. This puts `ledger.View` between them and the store, with `LegacyView` behind it.\n\nNo behaviour change: the endpoints just stop knowing which store answered them.",
+            "state": "closed",
+            "merged": true,
+            "head": {
+              "ref": "ledger-view",
+              "sha": "c3"
+            },
+            "base": {
+              "ref": "main"
+            },
+            "user": "jiwon-park",
+            "draft": false,
+            "labels": [
+              "area/api"
+            ],
+            "created_at": "2025-06-27T10:40:00Z",
+            "merged_at": "2025-06-30T14:02:00Z",
+            "reviews": [
+              {
+                "user": "nadia-okafor",
+                "state": "APPROVED",
+                "body": "Clean seam and the handlers read better for it. One naming note inline, not blocking.",
+                "submitted_at": "2025-06-30T09:12:00Z"
+              }
+            ],
+            "review_comments": [
+              {
+                "path": "internal/ledger/legacyview.go",
+                "line": 23,
+                "body": "`LegacyView.Ledger` reads the member first and throws the result away. That is deliberate - it is how the endpoint gets its 404 - but it reads like a stray call. A one-line comment would save the next reader.",
+                "user": "nadia-okafor",
+                "created_at": "2025-06-30T09:10:00Z"
+              }
+            ],
+            "comments": [
+              {
+                "key": "p39c1",
+                "user": "mbeaulieu",
+                "body": "`ci / build` was red on the first push and green on a rerun. That is #38, not this branch.",
+                "created_at": "2025-06-28T07:55:00Z"
+              }
+            ],
+            "check_runs": [
+              {
+                "name": "ci / build",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / vet",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / gofmt",
+                "status": "completed",
+                "conclusion": "success"
+              }
+            ],
+            "statuses": []
+          },
+          {
+            "number": 40,
+            "title": "migration: the phase order and the status shape",
+            "body": "`migration.Order`, `migration.Status`, and `Next`/`Index` over the order.\n\n`Advance` is a stub reporting `ErrNotImplemented`. This PR is the names and the report only: the tooling team wanted the JSON to build against and this is it. Both field sets are a contract with that tooling.",
+            "state": "closed",
+            "merged": true,
+            "head": {
+              "ref": "migration-phases",
+              "sha": "c4"
+            },
+            "base": {
+              "ref": "main"
+            },
+            "user": "nadia-okafor",
+            "draft": false,
+            "labels": [
+              "area/migration"
+            ],
+            "created_at": "2025-07-04T09:15:00Z",
+            "merged_at": "2025-07-08T10:25:00Z",
+            "reviews": [
+              {
+                "user": "tlindqvist",
+                "state": "COMMENTED",
+                "body": "Names look right to me and the doc comments say what each of them is. Not approving because I have not seen the tooling's side of it.",
+                "submitted_at": "2025-07-07T11:30:00Z"
+              },
+              {
+                "user": "dkowalczyk",
+                "state": "APPROVED",
+                "body": "Tooling side matches: we read `phase`, `authority`, `cursor` and the two legacy counts. Approving on the JSON.",
+                "submitted_at": "2025-07-08T08:44:00Z"
+              }
+            ],
+            "review_comments": [
+              {
+                "path": "internal/migration/phases.go",
+                "line": 22,
+                "body": "`Order` being a `var` and not a `const` slice is unavoidable in Go, but nothing stops a caller reordering it. Not worth a copy on every read; noting it so nobody is surprised.",
+                "user": "tlindqvist",
+                "created_at": "2025-07-07T11:28:00Z"
+              },
+              {
+                "path": "internal/migration/phases.go",
+                "line": 51,
+                "body": "`Index` returning -1 for an unknown phase is fine, please say so in the comment - it does, ignore me.",
+                "user": "dkowalczyk",
+                "created_at": "2025-07-08T08:40:00Z"
+              }
+            ],
+            "comments": [],
+            "check_runs": [
+              {
+                "name": "ci / build",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / vet",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / gofmt",
+                "status": "completed",
+                "conclusion": "success"
+              }
+            ],
+            "statuses": []
+          },
+          {
+            "number": 42,
+            "title": "config: the deployment settings membershipd reads",
+            "body": "`config/migration.yaml`, with a comment on every key saying what it is and that it differs between deployments. `internal/config` already reads it and takes `LEDGER_` plus the key in upper case from the environment.\n\nThe values in the file are this deployment's. Nothing outside `internal/config` reads the file.\n\nCloses #41.",
+            "state": "closed",
+            "merged": true,
+            "head": {
+              "ref": "deployment-config",
+              "sha": "c6"
+            },
+            "base": {
+              "ref": "main"
+            },
+            "user": "nadia-okafor",
+            "draft": false,
+            "labels": [
+              "area/migration",
+              "docs"
+            ],
+            "created_at": "2025-07-30T15:20:00Z",
+            "merged_at": "2025-08-05T09:05:00Z",
+            "reviews": [
+              {
+                "user": "tlindqvist",
+                "state": "APPROVED",
+                "body": "The comments are the useful part of this file. One question inline that does not block it.",
+                "submitted_at": "2025-08-04T13:02:00Z"
+              }
+            ],
+            "review_comments": [
+              {
+                "path": "config/migration.yaml",
+                "line": 32,
+                "body": "Every other key here has an `LEDGER_` override in the loader. `apply_batch_max` does not. Deliberate, or an oversight?",
+                "user": "tlindqvist",
+                "created_at": "2025-08-04T12:58:00Z"
+              },
+              {
+                "path": "config/migration.yaml",
+                "line": 11,
+                "body": "`store_socket` under `/run` means the directory has to exist before the service starts. Worth a line in the README rather than another comment here.",
+                "user": "mbeaulieu",
+                "created_at": "2025-08-04T14:11:00Z"
+              }
+            ],
+            "comments": [
+              {
+                "key": "p42c1",
+                "user": "nadia-okafor",
+                "body": "Leaving `apply_batch_max` as it is for now.",
+                "created_at": "2025-08-05T08:50:00Z"
+              }
+            ],
+            "check_runs": [
+              {
+                "name": "ci / build",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / vet",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / gofmt",
+                "status": "completed",
+                "conclusion": "success"
+              }
+            ],
+            "statuses": []
+          },
+          {
+            "number": 44,
+            "title": "legacy: return every ledger row for a member",
+            "body": "`Store.Ledger` had a `LIMIT 100` on it from when the endpoint was first written, and nothing above it said the answer was partial: a member with more than a hundred movements got the first hundred and no marker.\n\n`EntriesAfter` keeps its explicit limit - that scan is paged by its caller and wants one.\n\nResponse shape is untouched. Fixes #43.",
+            "state": "closed",
+            "merged": true,
+            "head": {
+              "ref": "ledger-read-cap",
+              "sha": "c7"
+            },
+            "base": {
+              "ref": "main"
+            },
+            "user": "jiwon-park",
+            "draft": false,
+            "labels": [
+              "area/api"
+            ],
+            "created_at": "2025-08-22T10:30:00Z",
+            "merged_at": "2025-08-26T13:19:00Z",
+            "reviews": [
+              {
+                "user": "sofia-braga",
+                "state": "APPROVED",
+                "body": "Checked a member with 240 movements against a copy of the ledger: all 240 come back, in `seq` order, and the reconciliation total matches the member read.",
+                "submitted_at": "2025-08-25T16:20:00Z"
+              }
+            ],
+            "review_comments": [
+              {
+                "path": "internal/legacy/sqlite.go",
+                "line": 86,
+                "body": "Ordering by `seq` here rather than `global_seq` is what the endpoint documents, so this is right. Say so in a comment and the next reader does not have to check.",
+                "user": "tlindqvist",
+                "created_at": "2025-08-25T09:47:00Z"
+              }
+            ],
+            "comments": [
+              {
+                "key": "p44c1",
+                "user": "jiwon-park",
+                "body": "Deliberately not adding `?limit=` and `?after=` here. The response shape is what the reconciliation job and two dashboards read, and I do not want to change it in a bug fix.",
+                "created_at": "2025-08-22T10:36:00Z"
+              }
+            ],
+            "check_runs": [
+              {
+                "name": "ci / build",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / vet",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / gofmt",
+                "status": "completed",
+                "conclusion": "success"
+              }
+            ],
+            "statuses": []
+          },
+          {
+            "number": 46,
+            "title": "docs: archive what the ap-2 cutover left behind",
+            "body": "ap-2 is off its legacy store. The box it ran on is being decommissioned at the\nend of the month and everything on it goes with it, so this puts the run's\nartefacts in the repo where the regions that have not moved can read them.\n\nWhat is here and how it was captured:\n\n- `deployment.yaml` - a copy of ap-2's own `config/migration.yaml`, taken off\n  the box as it stood for the run. Its numbers are ap-2's.\n- `ledger-export.jsonl` - the legacy ledger exported at retirement, one line per\n  movement, in `global_seq` order.\n- `member-book.json` - the legacy `members` table at the same moment.\n- `destination-after-shadow-copy.json`, `destination-at-authority-change.json`,\n  `destination-final.json` - the destination store dumped through the storage\n  service's admin dump at three points. Two of them also carry the service's own\n  `GET /admin/migration/status` as it answered at the time; the middle one does\n  not, because nobody took one.\n- `migration-record-history.jsonl`, `coordination-keys.jsonl` - read out of the\n  storage service's write log: every accepted write to the migration record and\n  to the coordination keyspace, in the order the store took them.\n- `store-write-log-extracts.jsonl` - five stretches of that same log, grouped by\n  window. The whole log is 40 MB and most of it is the copy, so only the\n  stretches somebody looked at during the run are kept.\n\n`MANIFEST.md` describes the files and their columns. It does not say what any of\nit means and neither does this PR: it is the run's evidence, kept because the\nother regions have the same move to make.\n\nAbout half a megabyte in total, the three destination dumps most of it.",
+            "state": "closed",
+            "merged": true,
+            "head": {
+              "ref": "ap2-cutover-archive",
+              "sha": "c10"
+            },
+            "base": {
+              "ref": "main"
+            },
+            "user": "nadia-okafor",
+            "draft": false,
+            "labels": [
+              "docs",
+              "ap-2"
+            ],
+            "created_at": "2025-09-24T14:05:00Z",
+            "merged_at": "2025-10-02T11:22:00Z",
+            "reviews": [
+              {
+                "user": "ines-duarte",
+                "state": "COMMENTED",
+                "body": "Read this as a document rather than as data - I have not opened the big three. The MANIFEST is clear about most of it. Two naming notes and one column I could not work out, inline. None of them block.",
+                "submitted_at": "2025-09-29T10:40:00Z"
+              },
+              {
+                "user": "tlindqvist",
+                "state": "APPROVED",
+                "body": "Fine to land. Evidence with a manifest beats evidence in a home directory on a box that is about to be wiped. The `op` question can be answered later by whoever knows; it is not worth holding the PR for.",
+                "submitted_at": "2025-10-01T09:05:00Z"
+              }
+            ],
+            "review_comments": [
+              {
+                "path": "docs/prior-cutover/MANIFEST.md",
+                "line": 35,
+                "body": "This paragraph names `key`, `value` and `swapped`. Every line in the file also carries an `op`, which is not described anywhere here - I can guess from the values but I would rather not have to.",
+                "user": "ines-duarte",
+                "created_at": "2025-09-29T10:31:00Z"
+              },
+              {
+                "path": "docs/prior-cutover/deployment.yaml",
+                "line": 1,
+                "body": "The file name says what it is not: on the box this is `config/migration.yaml`. The header comment covers it and renaming an archived file is worse, so leave it - I just read it twice.",
+                "user": "ines-duarte",
+                "created_at": "2025-09-29T10:35:00Z"
+              },
+              {
+                "path": "docs/prior-cutover/ledger-export.jsonl",
+                "line": 1,
+                "body": "This is in `global_seq` order but `written_at` does not climb with it - line 1 is 17:46:47 and there are lines much further down that are earlier than that. Worth a sentence in the MANIFEST so the next reader does not think the file is corrupt.",
+                "user": "harun-yildiz",
+                "created_at": "2025-09-30T08:22:00Z"
+              },
+              {
+                "path": "docs/prior-cutover/destination-at-authority-change.json",
+                "line": 1,
+                "body": "`after-shadow-copy` / `at-authority-change` / `final`: three naming shapes for three files of the same kind. Not worth a rename now the paths are in the MANIFEST and in the PR body.",
+                "user": "tlindqvist",
+                "created_at": "2025-10-01T09:02:00Z"
+              }
+            ],
+            "comments": [
+              {
+                "key": "p46c1",
+                "user": "nadia-okafor",
+                "body": "Answered what I could in the MANIFEST. `op` is the store's own name for the write and I have left it as the exporter emitted it; I did not write the exporter and I am not going to describe it from a guess.",
+                "created_at": "2025-09-30T15:40:00Z"
+              },
+              {
+                "key": "p46c2",
+                "user": "rhea-menon",
+                "body": "The service that carried ap-2 ran off a branch on that box and the branch went with the box. What is in this PR is what was recoverable.",
+                "created_at": "2025-10-01T10:18:00Z"
+              },
+              {
+                "key": "p46c3",
+                "user": "rhea-menon",
+                "body": "The two probes and the rehearsal turns are not in here - they were captured on a second box and I am still getting them off it. Follow-up PR rather than holding this one.",
+                "created_at": "2025-10-01T10:22:00Z"
+              },
+              {
+                "key": "p46c4",
+                "user": "sofia-braga",
+                "body": "Please keep `ledger-export.jsonl` exactly as exported. Finance reconciled against that file and I would like the bytes we reconciled against to be the bytes in the repo.",
+                "created_at": "2025-10-01T13:04:00Z"
+              }
+            ],
+            "check_runs": [
+              {
+                "name": "ci / build",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / vet",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / gofmt",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "docs / link-check",
+                "status": "completed",
+                "conclusion": "success"
+              }
+            ],
+            "statuses": []
+          },
+          {
+            "number": 47,
+            "title": "docs: the ap-2 probes and the rehearsal turns",
+            "body": "The rest of the ap-2 material, off the second box.\n\n- `dual-read-probe.json` - one member read through the public API while the\n  destination was still behind, with the ledger's own numbers for that member at\n  that instant and both stores' rows for them. Captured with curl against the\n  running service; `status` is what `/admin/migration/status` answered in the\n  same breath.\n- `open-ledger-probe.json` - the same member read again later in the run, with\n  an adjustment written for a different member and the reply it got.\n- `handover-turns.json` - the second region-wide rehearsal, carried by two\n  workers through a rolling deployment: every advance either worker attempted,\n  the phase it went from and to, and the lease record after each turn.\n\nMANIFEST extended to cover the three. I have described the fields and not what\nthey show - I was not on the call.",
+            "state": "closed",
+            "merged": true,
+            "head": {
+              "ref": "ap2-probes",
+              "sha": "c11"
+            },
+            "base": {
+              "ref": "main"
+            },
+            "user": "rhea-menon",
+            "draft": false,
+            "labels": [
+              "docs",
+              "ap-2"
+            ],
+            "created_at": "2025-10-03T08:30:00Z",
+            "merged_at": "2025-10-06T09:58:00Z",
+            "reviews": [
+              {
+                "user": "nadia-okafor",
+                "state": "APPROVED",
+                "body": "Thanks for chasing the second box. Descriptions match what is in the files as far as I checked.",
+                "submitted_at": "2025-10-06T09:20:00Z"
+              }
+            ],
+            "review_comments": [
+              {
+                "path": "docs/prior-cutover/MANIFEST.md",
+                "line": 53,
+                "body": "This paragraph says `member_read` and `ledger_read` are for the member in `member_id`. There is no top-level `member_id` in the file - it is inside `member_read.body`. Not asking you to fix it in this PR.",
+                "user": "ines-duarte",
+                "created_at": "2025-10-04T11:12:00Z"
+              },
+              {
+                "path": "docs/prior-cutover/handover-turns.json",
+                "line": 1,
+                "body": "Eight turns and one of them has no `to` and no `http_status`. Assuming that is what the file recorded and not something lost in transit?",
+                "user": "ines-duarte",
+                "created_at": "2025-10-04T11:20:00Z"
+              }
+            ],
+            "comments": [
+              {
+                "key": "p47c1",
+                "user": "rhea-menon",
+                "body": "It is what the file recorded - that entry has `died` on it instead. I have left it exactly as captured.",
+                "created_at": "2025-10-04T14:02:00Z"
+              },
+              {
+                "key": "p47c3",
+                "user": "rhea-menon",
+                "body": "`docs / link-check` is red on the three new `.jsonl` and `.json` paths - it only follows links to Markdown. Merging over it; #46 tripped the same check and it was green there only because the MANIFEST links were the last thing it looked at.",
+                "created_at": "2025-10-05T10:02:00Z"
+              },
+              {
+                "key": "p47c2",
+                "user": "ines-duarte",
+                "body": "Fine. I will open a docs ticket for the MANIFEST wording rather than have you edit an archive in a PR that is adding to it.",
+                "created_at": "2025-10-05T09:35:00Z"
+              }
+            ],
+            "check_runs": [
+              {
+                "name": "ci / build",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / vet",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / gofmt",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "docs / link-check",
+                "status": "completed",
+                "conclusion": "failure"
+              }
+            ],
+            "statuses": []
+          },
+          {
+            "number": 51,
+            "title": "docs: runbook - the archive, the smoke faults, the reset",
+            "body": "`docs/migration-runbook.md` has had the two stores and the two admin endpoints in it since December. This adds the three sections that were still in my notes:\n\n- what `docs/prior-cutover/` holds, and that it is the only account of a completed migration anyone kept;\n- the smoke faults on a box, and the file that switches them on and off;\n- the reset, and why the service wants stopping first.\n\nIt describes where things are. It does not write up the ap-2 run, because I cannot: nobody did.",
+            "state": "closed",
+            "merged": true,
+            "head": {
+              "ref": "runbook-sections",
+              "sha": "c15"
+            },
+            "base": {
+              "ref": "main"
+            },
+            "user": "ines-duarte",
+            "draft": false,
+            "labels": [
+              "docs"
+            ],
+            "created_at": "2026-02-04T10:50:00Z",
+            "merged_at": "2026-02-10T11:15:00Z",
+            "reviews": [
+              {
+                "user": "rhea-menon",
+                "state": "APPROVED",
+                "body": "Reads as what it is. Two notes inline, neither blocking.",
+                "submitted_at": "2026-02-09T15:30:00Z"
+              }
+            ],
+            "review_comments": [
+              {
+                "path": "docs/migration-runbook.md",
+                "line": 55,
+                "body": "The two shell blocks use paths relative to the workspace root and the surrounding prose does not say so. It is obvious from the next paragraph; mentioning it in case you want to be explicit.",
+                "user": "rhea-menon",
+                "created_at": "2026-02-09T15:24:00Z"
+              },
+              {
+                "path": "docs/migration-runbook.md",
+                "line": 63,
+                "body": "Bold line where the other sections use a heading. Fine by me, just inconsistent with the rest of the file.",
+                "user": "harun-yildiz",
+                "created_at": "2026-02-06T09:10:00Z"
+              }
+            ],
+            "comments": [
+              {
+                "key": "p51c1",
+                "user": "dkowalczyk",
+                "body": "Worth linking #48 from the archive section? Whoever reads the runbook is the person who will hit those gaps.",
+                "created_at": "2026-02-05T13:20:00Z"
+              },
+              {
+                "key": "p51c2",
+                "user": "ines-duarte",
+                "body": "Left it out. The runbook says where the files are; the ticket is a list of things I could not describe, and I do not want the doc to read as if the archive is half-broken. It is complete, it is just undescribed.",
+                "created_at": "2026-02-06T08:40:00Z"
+              }
+            ],
+            "check_runs": [
+              {
+                "name": "ci / build",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / vet",
+                "status": "completed",
+                "conclusion": "success"
+              },
+              {
+                "name": "ci / gofmt",
+                "status": "completed",
+                "conclusion": "success"
+              }
+            ],
+            "statuses": []
+          }
+        ]
+      }
+    ]
+  }
+}

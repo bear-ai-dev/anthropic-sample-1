@@ -1,0 +1,221 @@
+{
+  "failed_rules": [
+    "R3",
+    "R4"
+  ],
+  "log_tail": "file(s), root:root 700\nverify: installing the graded ledger\nverify: restarting the storage service\nverify: building the submission\nverify: driving the migration\ndriver: [cutover] the seeded ledger has 1720 movement(s)\ndriver: [cutover] the service is up and serving the ledger\ndriver: [cutover] shadow copy recorded\ndriver: [cutover] dual-read probed on mbr-400145\ndriver: [cutover] faults armed at global_seq 803, 987, 1170 of 1721\ndriver: [cutover] catch-up recorded; faults fired {'folded': 0, 'recycled': 0, 'withheld_committed': 0, 'withheld_lost': 0}\ndriver: [cutover] three movements landed in legacy, one row the ledger never had and one second copy of a movement landed in the destination\ndriver: [cutover] the member book moved on: mbr-400341 joined, mbr-400009 closed, mbr-400018 went basic to platinum\ndriver: [cutover] worker a frozen inside a ledger write: True\ndriver: [cutover] worker b started and the deployment clock moved past a's lease\ndriver: [cutover] the authority flip is open; the stores were compared at that instant\ndriver: [cutover] four movements reached legacy while the authority was moving\ndriver: [cutover] the authority moved\ndriver: [cutover] frozen worker's write landed: {'http_status': 409, 'body': {'error': 'migration advance refused'}}\ndriver: [cutover] eight more movements reached legacy after the authority moved\ndriver: [cutover] the ledger was read and written after the authority moved: read 200, write 200\ndriver: [cutover] the first boundary after the late writes was LATE_REPLAY\ndriver: [cutover] the migration finished in phase COMPLETE\ndriver: [cutover] retirement probed with a poisoned legacy row and a refused write\ndriver: [handover] the seeded ledger has 1720 movement(s)\ndriver: [handover] faults armed at global_seq 803, 986, 1170 of 1720\ndriver: [handover] handover-b is held inside recording RECONCILE\ndriver: [handover] the held record write landed: {'http_status': 200, 'body': {'phase': 'RECONCILE', 'authority': 'legacy', 'fence': 5, 'cursor': 1720, 'divergence_count': 0, 'shadow_boundary': 620, 'legacy_max_global_seq': 1720, 'legacy_entry_count': 1720, 'destination_entries': 1720, 'holder': 'membershipd-b'}}\ndriver: [handover] five movements reached legacy after the authority moved\ndriver: [handover] the migration took 7 turn(s) across two workers\ndriver: [handover] the migration finished in phase COMPLETE\ndriver: [handover] retirement probed after the handover run\nverify: judging what happened\n--- cutover\nR1 pass: shadow copy covers the book and the ledger prefix, once each\nR10 pass: the destination ends up holding the folded ledger\nR11 pass: no recorded position ever ran ahead of the store\nR13 pass: a read after the authority moved is not behind the ledger\nR14 pass: the destination ends up with the ledger's member book, as it is\nR15 pass: the ledger goes on taking movements until legacy is retired\nR2 pass: dual-read serves fresh data and merges the ledger without duplicates\nR3 FAIL: a kill between a durable write and its fold costs nothing\n    no writer was taken down mid-flight, so this was not exercised\nR4 FAIL: a write whose outcome was withheld is applied exactly once\n    no write had its outcome withheld, so the rule was not exercised\nR5 pass: a worker that lost its lease does not move the migration on\nR7 pass: one fenced authority change, and the fence never falls\nR8 pass: writes landing during and after the cutover are replayed exactly once\nR9 pass: legacy leaves the read path and legacy's write path is shut\n--- handover\nR10 pass: the destination ends up holding the folded ledger\nR11 pass: no recorded position ever ran ahead of the store\nR12 pass: whichever worker holds the lease carries the migration on\nR14 pass: the destination ends up with the ledger's member book, as it is\nR7 pass: one fenced authority change, and the fence never falls\nR8 pass: writes landing during and after the cutover are replayed exactly once\nR9 pass: legacy leaves the read path and legacy's write path is shut\n",
+  "note": "rules that did not hold: cutover/R3,cutover/R4",
+  "scenario_cutover": {
+    "advance_calls": 7,
+    "faults_fired": {
+      "folded": 0,
+      "recycled": 0,
+      "withheld_committed": 0,
+      "withheld_lost": 0
+    },
+    "injected": {
+      "divergence_injected": 3,
+      "duplicate_injected": 1,
+      "extra_injected": 1,
+      "late_injected": 8,
+      "window_injected": 4
+    },
+    "notes": [
+      "the seeded ledger has 1720 movement(s)",
+      "the service is up and serving the ledger",
+      "shadow copy recorded",
+      "dual-read probed on mbr-400145",
+      "faults armed at global_seq 803, 987, 1170 of 1721",
+      "catch-up recorded; faults fired {'folded': 0, 'recycled': 0, 'withheld_committed': 0, 'withheld_lost': 0}",
+      "three movements landed in legacy, one row the ledger never had and one second copy of a movement landed in the destination",
+      "the member book moved on: mbr-400341 joined, mbr-400009 closed, mbr-400018 went basic to platinum",
+      "worker a frozen inside a ledger write: True",
+      "worker b started and the deployment clock moved past a's lease",
+      "the authority flip is open; the stores were compared at that instant",
+      "four movements reached legacy while the authority was moving",
+      "the authority moved",
+      "frozen worker's write landed: {'http_status': 409, 'body': {'error': 'migration advance refused'}}",
+      "eight more movements reached legacy after the authority moved",
+      "the ledger was read and written after the authority moved: read 200, write 200",
+      "the first boundary after the late writes was LATE_REPLAY",
+      "the migration finished in phase COMPLETE",
+      "retirement probed with a poisoned legacy row and a refused write"
+    ],
+    "restarts": []
+  },
+  "scenario_handover": {
+    "advance_calls": 8,
+    "faults_fired": {
+      "recycled": 0
+    },
+    "injected": {
+      "divergence_injected": 0,
+      "duplicate_injected": 0,
+      "extra_injected": 0,
+      "late_injected": 5,
+      "window_injected": 0
+    },
+    "notes": [
+      "the seeded ledger has 1720 movement(s)",
+      "faults armed at global_seq 803, 986, 1170 of 1720",
+      "handover-b is held inside recording RECONCILE",
+      "the held record write landed: {'http_status': 200, 'body': {'phase': 'RECONCILE', 'authority': 'legacy', 'fence': 5, 'cursor': 1720, 'divergence_count': 0, 'shadow_boundary': 620, 'legacy_max_global_seq': 1720, 'legacy_entry_count': 1720, 'destination_entries': 1720, 'holder': 'membershipd-b'}}",
+      "five movements reached legacy after the authority moved",
+      "the migration took 7 turn(s) across two workers",
+      "the migration finished in phase COMPLETE",
+      "retirement probed after the handover run"
+    ],
+    "restarts": []
+  },
+  "seam": "present",
+  "verdict": {
+    "failed": [
+      "cutover/R3",
+      "cutover/R4"
+    ],
+    "passed_all": false,
+    "scenarios": {
+      "cutover": {
+        "diagnostics_that_did_not_hold": [],
+        "failed": [
+          "R3",
+          "R4"
+        ],
+        "movements_in_log": 1737,
+        "rules": {
+          "R1": {
+            "counted": true,
+            "description": "shadow copy covers the book and the ledger prefix, once each",
+            "passed": true,
+            "problems": []
+          },
+          "R10": {
+            "counted": true,
+            "description": "the destination ends up holding the folded ledger",
+            "passed": true,
+            "problems": []
+          },
+          "R11": {
+            "counted": true,
+            "description": "no recorded position ever ran ahead of the store",
+            "passed": true,
+            "problems": []
+          },
+          "R13": {
+            "counted": true,
+            "description": "a read after the authority moved is not behind the ledger",
+            "passed": true,
+            "problems": []
+          },
+          "R14": {
+            "counted": true,
+            "description": "the destination ends up with the ledger's member book, as it is",
+            "passed": true,
+            "problems": []
+          },
+          "R15": {
+            "counted": true,
+            "description": "the ledger goes on taking movements until legacy is retired",
+            "passed": true,
+            "problems": []
+          },
+          "R2": {
+            "counted": true,
+            "description": "dual-read serves fresh data and merges the ledger without duplicates",
+            "passed": true,
+            "problems": []
+          },
+          "R3": {
+            "counted": true,
+            "description": "a kill between a durable write and its fold costs nothing",
+            "passed": false,
+            "problems": [
+              "no writer was taken down mid-flight, so this was not exercised"
+            ]
+          },
+          "R4": {
+            "counted": true,
+            "description": "a write whose outcome was withheld is applied exactly once",
+            "passed": false,
+            "problems": [
+              "no write had its outcome withheld, so the rule was not exercised"
+            ]
+          },
+          "R5": {
+            "counted": true,
+            "description": "a worker that lost its lease does not move the migration on",
+            "passed": true,
+            "problems": []
+          },
+          "R7": {
+            "counted": true,
+            "description": "one fenced authority change, and the fence never falls",
+            "passed": true,
+            "problems": []
+          },
+          "R8": {
+            "counted": true,
+            "description": "writes landing during and after the cutover are replayed exactly once",
+            "passed": true,
+            "problems": []
+          },
+          "R9": {
+            "counted": true,
+            "description": "legacy leaves the read path and legacy's write path is shut",
+            "passed": true,
+            "problems": []
+          }
+        }
+      },
+      "handover": {
+        "diagnostics_that_did_not_hold": [],
+        "failed": [],
+        "movements_in_log": 1725,
+        "rules": {
+          "R10": {
+            "counted": true,
+            "description": "the destination ends up holding the folded ledger",
+            "passed": true,
+            "problems": []
+          },
+          "R11": {
+            "counted": true,
+            "description": "no recorded position ever ran ahead of the store",
+            "passed": true,
+            "problems": []
+          },
+          "R12": {
+            "counted": true,
+            "description": "whichever worker holds the lease carries the migration on",
+            "passed": true,
+            "problems": []
+          },
+          "R14": {
+            "counted": true,
+            "description": "the destination ends up with the ledger's member book, as it is",
+            "passed": true,
+            "problems": []
+          },
+          "R7": {
+            "counted": true,
+            "description": "one fenced authority change, and the fence never falls",
+            "passed": true,
+            "problems": []
+          },
+          "R8": {
+            "counted": true,
+            "description": "writes landing during and after the cutover are replayed exactly once",
+            "passed": true,
+            "problems": []
+          },
+          "R9": {
+            "counted": true,
+            "description": "legacy leaves the read path and legacy's write path is shut",
+            "passed": true,
+            "problems": []
+          }
+        }
+      }
+    }
+  }
+}

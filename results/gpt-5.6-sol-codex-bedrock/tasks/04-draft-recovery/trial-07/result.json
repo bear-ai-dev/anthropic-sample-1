@@ -1,0 +1,164 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-04T00:42:41.016667Z",
+    "started_at": "2026-09-04T00:34:47.736049Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "openai.gpt-5.6-sol",
+      "provider": "openai"
+    },
+    "name": "codex",
+    "version": "0.151.0"
+  },
+  "agent_result": {
+    "cost_usd": null,
+    "metadata": null,
+    "n_cache_tokens": 1889464,
+    "n_input_tokens": 1990680,
+    "n_output_tokens": 30764,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-04T00:34:47.735539Z",
+    "started_at": "2026-09-04T00:33:24.553836Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "env": {
+        "AWS_BEARER_TOKEN_BEDROCK": "[REDACTED_SENSITIVE_VALUE]",
+        "AWS_REGION": "us-east-1",
+        "OPENAI_API_KEY": "[REDACTED_SENSITIVE_VALUE]",
+        "REAL_SWE_BEDROCK_MODEL": "openai.gpt-5.6-sol",
+        "REAL_SWE_MAX_OUTPUT_TOKENS": "32768"
+      },
+      "extra_allowed_hosts": [],
+      "import_path": "harness.modal_native_104_agents:ModalBedrockCodex",
+      "include_logs": [
+        "trajectory.json",
+        "codex.txt",
+        "modal-task-init.log",
+        "bedrock-request-enforcement.jsonl",
+        "sessions/*"
+      ],
+      "kwargs": {
+        "config": {
+          "model_provider": "amazon-bedrock",
+          "model_providers": {
+            "amazon-bedrock": {
+              "base_url": "http://127.0.0.1:8765/openai/v1"
+            }
+          },
+          "model_reasoning_effort": "high",
+          "web_search": "disabled"
+        },
+        "max_turns": 200,
+        "reasoning_effort": "high",
+        "version": "0.151.0",
+        "web_search": "disabled"
+      },
+      "load_trajectory": null,
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "bedrock/openai.gpt-5.6-sol",
+      "n_concurrent": 1,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "resume_trajectory": false,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": null,
+      "kwargs": {
+        "app_name": "[REDACTED_INFRA_IDENTIFIER]",
+        "auto_labels": false,
+        "modal_sandbox_v2": true,
+        "sandbox_timeout_secs": 21600,
+        "secrets": [],
+        "volumes": {
+          "/logs": "<EVIDENCE_VOLUME>"
+        }
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": null,
+      "override_gpus": null,
+      "override_memory_mb": 6144,
+      "override_storage_mb": null,
+      "override_tpu": null,
+      "type": "modal"
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "install_only": false,
+    "job_id": "bb7cd222-535e-445b-8708-fd7c9d18ae8c",
+    "source_trial": null,
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "<RUN_WORK_PATH>",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "04-draft-recovery__qvZepMS",
+    "trials_dir": "<RUN_WORK_PATH>",
+    "user_agent": null,
+    "verifier": {
+      "disable": false,
+      "include_logs": [
+        "reward.txt",
+        "reward.json",
+        "output.json",
+        "report.json",
+        "report.txt",
+        "*.log"
+      ],
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-04T00:33:24.553746Z",
+    "started_at": "2026-09-04T00:33:17.315010Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-04T00:43:51.717003Z",
+  "id": "cc4b39a7-c363-4b8e-a75b-cfd8e472ce87",
+  "source": null,
+  "started_at": "2026-09-04T00:33:16.985730Z",
+  "step_results": null,
+  "task_checksum": "757141d135adcf2be4b90a7c2a209857284c4906c6e83ef487c4f2da4d190ac9",
+  "task_id": {
+    "path": "<RUN_WORK_PATH>"
+  },
+  "task_name": "sample/draft-recovery",
+  "trial_name": "04-draft-recovery__qvZepMS",
+  "trial_uri": "<RUNTIME_URI>",
+  "verifier": {
+    "finished_at": "2026-09-04T00:43:50.397153Z",
+    "started_at": "2026-09-04T00:42:52.842321Z"
+  },
+  "verifier_environment_mode": "shared",
+  "verifier_result": {
+    "rewards": {
+      "harness_failure": 0,
+      "reward": 1.0
+    }
+  }
+}

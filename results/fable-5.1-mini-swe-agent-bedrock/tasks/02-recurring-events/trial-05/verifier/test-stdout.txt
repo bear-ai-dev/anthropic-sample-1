@@ -1,0 +1,40 @@
+=== Snapshot the deliverable ===
+[harness] api ready after 0s
+[harness] api pid(s) 28947 verified as this build (18:73920)
+[grader] pass R1-generate-shapes (0.4s)
+[grader] pass R2-selected-days (0.1s)
+[grader] pass R3-month-clamp (0.1s)
+[grader] pass R4-spring-forward (0.2s)
+[grader] pass R5-fall-back (0.2s)
+[grader] pass R6-occurrence-count (0.1s)
+[grader] pass R7-end-date (0.2s)
+[grader] pass R8-protect-published (0.1s)
+[grader] pass R9-edited-survives (0.2s)
+[grader] pass R10-extend (0.2s)
+[grader] pass R11-concurrent-regenerate (2.7s)
+[grader] pass R12-publish-then-regenerate (0.2s)
+[grader] pass R13-delete-with-sales (0.1s)
+[grader] pass R14-scope-steps-over-paid (0.1s)
+[grader] pass R15-scope-over-month-end (0.2s)
+[grader] pass R16-scope-across-transition (0.2s)
+[grader] pass R17-scope-then-regenerate (0.2s)
+[grader] pass R18-extend-fills-gap (0.1s)
+[grader] pass R19-extend-after-regenerate (0.3s)
+[grader] pass R20-race-scope-vs-regenerate (4.3s)
+[grader] FAIL R21-zone-by-configuration (6.5s)
+           R21-America-Los_Angeles-week-6: occurrence instants differ
+    expected ['2026-02-13 01:00 -0800(=1770973200)', '2026-02-27 01:00 -0800(=1772182800)', '2026-03-13 01:00 -0700(=1773388800)', '2026-03-27 01:00 -0700(=1774598400)', '2026-04-10 01:00 -0700(=1775808000)']
+    stored   ['2026-02-06 01:00 -0800(=1770368400)', '2026-02-20 01:00 -0800(=1771578000)', '2026-03-06 01:00 -0800(=1772787600)', '2026-03-20 01:00 -0700(=1773993600)', '2026-04-03 01:00 -0700(=1775203200)']
+           R21-Europe-Berlin-week-6: occurrence instants differ
+    expected ['2026-02-13 00:00 +0100(=1770937200)', '2026-02-27 00:00 +0100(=1772146800)', '2026-03-13 00:00 +0100(=1773356400)', '2026-03-27 00:00 +0100(=1774566000)', '2026-04-10 00:00 +0200(=1775772000)']
+    stored   ['2026-02-06 00:00 +0100(=1770332400)', '2026-02-20 00:00 +0100(=1771542000)', '2026-03-06 00:00 +0100(=1772751600)', '2026-03-20 00:00 +0100(=1773961200)', '2026-04-03 00:00 +0200(=1775167200)']
+[grader] pass R22-regenerate-cross (1.9s)
+[grader] pass R23-scope-regenerate-extend (2.3s)
+[grader] pass R24-race-on-hard-dates (2.2s)
+[grader] FAIL R25-survivor-identity (1.7s)
+           R25-identity-Asia-Kathmandu-month: setup: editing e5ce1fae-def4-4379-9883-812bf03a30bb returned HTTP 409 {"result": false, "error": {"id": "", "debugId": "", "message": "invalid request", "requestData": null, "userId": null, "dateCreated": 0, "platform": "", "build": 0, "display": "This occurrence has an audience or paid tickets and can't be changed", "subDisplay": "Refund or cancel its event before moving or removing it"}}
+[grader] pass R26-money-across-operations (1.4s)
+[grader] pass R27-interleavings (2.4s)
+[grader] 25/27 rules passed; reward=0.0
+[grader] failed: R21-zone-by-configuration, R25-survivor-identity
+[test] reward: {"reward": 0.0, "harness_failure": 0, "rules_total": 27, "rules_passed": 25, "fixture_gate_failed": 0}

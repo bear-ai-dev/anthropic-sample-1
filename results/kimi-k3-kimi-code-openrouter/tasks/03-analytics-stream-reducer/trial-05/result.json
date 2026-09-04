@@ -1,0 +1,154 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-04T00:49:28.663176Z",
+    "started_at": "2026-09-03T23:48:30.166494Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "kimi-k3",
+      "provider": "moonshotai"
+    },
+    "name": "kimi-code",
+    "version": "0.39.1"
+  },
+  "agent_result": {
+    "cost_usd": null,
+    "metadata": null,
+    "n_cache_tokens": null,
+    "n_input_tokens": null,
+    "n_output_tokens": null,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-03T23:48:30.166195Z",
+    "started_at": "2026-09-03T23:48:10.573032Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "env": {
+        "OPENROUTER_API_KEY": "[REDACTED_SENSITIVE_VALUE]"
+      },
+      "extra_allowed_hosts": [],
+      "import_path": "harness.modal_native_104_agents:ModalOpenRouterKimiCode",
+      "include_logs": [
+        "trajectory.json",
+        "kimi-code.txt",
+        "modal-task-init.log",
+        "openrouter-request-enforcement.jsonl",
+        "sessions/*"
+      ],
+      "kwargs": {
+        "max_turns": 200,
+        "reasoning_effort": "high",
+        "version": "0.39.1"
+      },
+      "load_trajectory": null,
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "moonshotai/kimi-k3",
+      "n_concurrent": 1,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "resume_trajectory": false,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": null,
+      "kwargs": {
+        "app_name": "[REDACTED_INFRA_IDENTIFIER]",
+        "auto_labels": false,
+        "modal_sandbox_v2": true,
+        "sandbox_timeout_secs": 21600,
+        "secrets": [],
+        "volumes": {
+          "/logs": "[REDACTED_INFRA_IDENTIFIER]"
+        }
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": null,
+      "override_gpus": null,
+      "override_memory_mb": 6144,
+      "override_storage_mb": null,
+      "override_tpu": null,
+      "type": "modal"
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "install_only": false,
+    "job_id": "96d0dc29-ac02-44ce-bdbd-2ed5ca71307b",
+    "source_trial": null,
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "/work/frozen-modal-tasks-native-104/03-analytics-stream-reducer",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "03-analytics-stream-reducer__dPjSwDa",
+    "trials_dir": "/work/trials-native-104/[REDACTED_INFRA_IDENTIFIER]",
+    "user_agent": null,
+    "verifier": {
+      "disable": false,
+      "include_logs": [
+        "reward.txt",
+        "reward.json",
+        "output.json",
+        "report.json",
+        "report.txt",
+        "*.log"
+      ],
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-03T23:48:10.572944Z",
+    "started_at": "2026-09-03T23:48:00.405437Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-04T00:49:41.433977Z",
+  "id": "8db3f961-ebf6-432e-af4f-80516ef3818c",
+  "source": null,
+  "started_at": "2026-09-03T23:47:58.836076Z",
+  "step_results": null,
+  "task_checksum": "78365369cef360b1c4562b28a25a560644d75f6540b67fb0c9015bf8b5e496a1",
+  "task_id": {
+    "path": "/work/frozen-modal-tasks-native-104/03-analytics-stream-reducer"
+  },
+  "task_name": "sample/analytics-stream-reducer",
+  "trial_name": "03-analytics-stream-reducer__dPjSwDa",
+  "trial_uri": "file:///__modal/volumes/vo-UHPyT4TYEu1VGPOySfkC7v/trials-native-104/[REDACTED_INFRA_IDENTIFIER]",
+  "verifier": {
+    "finished_at": "2026-09-04T00:49:39.807339Z",
+    "started_at": "2026-09-04T00:49:32.403349Z"
+  },
+  "verifier_environment_mode": "shared",
+  "verifier_result": {
+    "rewards": {
+      "capability_absent": 0,
+      "reward": 0,
+      "rules_expected": 61,
+      "rules_passed": 40,
+      "rules_total": 61,
+      "seam_checks": 3,
+      "seam_failures": 0
+    }
+  }
+}

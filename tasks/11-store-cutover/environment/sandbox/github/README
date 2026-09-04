@@ -1,0 +1,17 @@
+GitHub workspace
+
+This box serves a copy of the team's GitHub data on 127.0.0.1:4570. It is
+context: nothing here is graded and nothing in it is a deliverable.
+
+Two ways in, same tools either way:
+
+  github tools                         list the tools and their arguments
+  github <tool> --name value ...       call one from a shell, e.g.
+  github list_pull_requests --owner ExampleCo --repo membership-ledger --state all
+
+and, where the harness supports MCP, an MCP server named `github` offering the
+same tools.
+
+public.json is the data being served. Restart with your own copy if you want:
+
+  PYTHONPATH=/opt/mockgithub python3 -m mockgithub --scenario my.json --host 127.0.0.1 --port 4570 --seed 7

@@ -1,0 +1,194 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-09-04T00:44:10.900066Z",
+    "started_at": "2026-09-04T00:33:58.528195Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "openai.gpt-5.6-sol",
+      "provider": "openai"
+    },
+    "name": "codex",
+    "version": "0.151.0"
+  },
+  "agent_result": {
+    "cost_usd": null,
+    "metadata": null,
+    "n_cache_tokens": 4490225,
+    "n_input_tokens": 4609325,
+    "n_output_tokens": 38268,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-09-04T00:33:58.527827Z",
+    "started_at": "2026-09-04T00:33:33.817248Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "env": {
+        "AWS_BEARER_TOKEN_BEDROCK": "[REDACTED_SENSITIVE_VALUE]",
+        "AWS_REGION": "us-east-1",
+        "OPENAI_API_KEY": "[REDACTED_SENSITIVE_VALUE]",
+        "REAL_SWE_BEDROCK_MODEL": "openai.gpt-5.6-sol",
+        "REAL_SWE_MAX_OUTPUT_TOKENS": "32768"
+      },
+      "extra_allowed_hosts": [],
+      "import_path": "harness.modal_native_104_agents:ModalBedrockCodex",
+      "include_logs": [
+        "trajectory.json",
+        "codex.txt",
+        "modal-task-init.log",
+        "bedrock-request-enforcement.jsonl",
+        "sessions/*"
+      ],
+      "kwargs": {
+        "config": {
+          "model_provider": "amazon-bedrock",
+          "model_providers": {
+            "amazon-bedrock": {
+              "base_url": "http://127.0.0.1:8765/openai/v1"
+            }
+          },
+          "model_reasoning_effort": "high",
+          "web_search": "disabled"
+        },
+        "max_turns": 200,
+        "reasoning_effort": "high",
+        "version": "0.151.0",
+        "web_search": "disabled"
+      },
+      "load_trajectory": null,
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "bedrock/openai.gpt-5.6-sol",
+      "n_concurrent": 1,
+      "name": null,
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "resume_trajectory": false,
+      "skills": []
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": null,
+      "kwargs": {
+        "app_name": "[REDACTED_INFRA_IDENTIFIER]",
+        "auto_labels": false,
+        "modal_sandbox_v2": true,
+        "sandbox_timeout_secs": 21600,
+        "secrets": [],
+        "volumes": {
+          "/logs": "[REDACTED_INFRA_IDENTIFIER]"
+        }
+      },
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": null,
+      "override_gpus": null,
+      "override_memory_mb": 6144,
+      "override_storage_mb": null,
+      "override_tpu": null,
+      "type": "modal"
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "install_only": false,
+    "job_id": "22cdf5c7-5786-4185-82a3-dbe720c6a679",
+    "source_trial": null,
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "/work/frozen-modal-tasks-gpt56-bedrock-40/08-envelope-intake",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "08-envelope-intake__WLNyL2z",
+    "trials_dir": "/work/trials-gpt56-bedrock-40/[REDACTED_INFRA_IDENTIFIER]",
+    "user_agent": null,
+    "verifier": {
+      "disable": false,
+      "include_logs": [
+        "reward.txt",
+        "reward.json",
+        "output.json",
+        "report.json",
+        "report.txt",
+        "*.log"
+      ],
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-09-04T00:33:27.374263Z",
+    "started_at": "2026-09-04T00:33:22.509373Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-04T00:44:55.116443Z",
+  "id": "e4119079-bd13-4e4c-97c0-f3a8d8c4e9ce",
+  "source": null,
+  "started_at": "2026-09-04T00:33:22.369896Z",
+  "step_results": null,
+  "task_checksum": "ba61a93884f184e5a3e2c89cad533e595e87af92cf274c5f544849dca3ba04ff",
+  "task_id": {
+    "path": "/work/frozen-modal-tasks-gpt56-bedrock-40/08-envelope-intake"
+  },
+  "task_name": "sample/envelope-intake-router",
+  "trial_name": "08-envelope-intake__WLNyL2z",
+  "trial_uri": "file:///__modal/volumes/vo-t3DpIsMc3AFPsJgVY5YpTM/trials-gpt56-bedrock-40/[REDACTED_INFRA_IDENTIFIER]",
+  "verifier": {
+    "finished_at": "2026-09-04T00:44:51.723050Z",
+    "started_at": "2026-09-04T00:44:23.718667Z"
+  },
+  "verifier_environment_mode": "shared",
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0,
+      "rule_R1": 1,
+      "rule_R10": 1,
+      "rule_R11": 0,
+      "rule_R12": 1,
+      "rule_R13": 1,
+      "rule_R14": 1,
+      "rule_R15": 1,
+      "rule_R16": 0,
+      "rule_R17": 1,
+      "rule_R18": 1,
+      "rule_R19": 0,
+      "rule_R2": 1,
+      "rule_R20": 1,
+      "rule_R21": 0,
+      "rule_R22": 0,
+      "rule_R23": 0,
+      "rule_R24": 1,
+      "rule_R25": 1,
+      "rule_R26": 1,
+      "rule_R27": 1,
+      "rule_R28": 1,
+      "rule_R3": 1,
+      "rule_R4": 1,
+      "rule_R5": 0,
+      "rule_R6": 1,
+      "rule_R7": 1,
+      "rule_R8": 1,
+      "rule_R9": 1,
+      "rules_passed": 21,
+      "rules_total": 28,
+      "score": 0.0
+    }
+  }
+}

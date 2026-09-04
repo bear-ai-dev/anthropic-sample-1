@@ -1,0 +1,1409 @@
+[
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 162276,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 194
+    },
+    "reward": 0.0,
+    "step_count": 192,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "2204ac71c1c69dedcdb477729583c412db4013467f20017f71e618b27b43be97",
+    "trajectory_source_sha256": "5a68ffee3d2b5d6ed9fe625ca1dbc39b1f401e50af2b773618dd0064feae53ef",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 3939.928
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 105548,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 200
+    },
+    "reward": 0.0,
+    "step_count": 138,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "16b34926ea6f23c43d468f559dd3b0cbe79029bebbc1a1d04f2810ebd927837e",
+    "trajectory_source_sha256": "560b8c01b80a4306bc7d93c25d66d94cbe03bf6bd55aea055367e6ef63e72bde",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 3139.061
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 114779,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 40
+    },
+    "reward": 0.0,
+    "step_count": 160,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "d80ef9bbc9908e6f5386e7e5583685a02c5ec99652b497a4e7ecb37436049ff5",
+    "trajectory_source_sha256": "19a13211c77726f0d5e357f01c3cc808c01c6c10e8d8aeae7b63d05a87196102",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 3097.112
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 131806,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 200
+    },
+    "reward": 1.0,
+    "step_count": 148,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "1f0df07cb382eb8ad4bc9124172f77169719277be409a957b8e8772a5518d74c",
+    "trajectory_source_sha256": "3ef7f3ba02deffa772afd5497c9b5ab7eff06df5243891658a51b1a2c5850837",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 3044.522
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 132513,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 220
+    },
+    "reward": 0.0,
+    "step_count": 164,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "364e6f697fd1eed839a893b4f76d4509e70b418e115972f4d15c963a77dc61bf",
+    "trajectory_source_sha256": "0af3cff52fb38f4dfd5a6ad2da4faacd79bb54af8654c03a0501f68301a5e790",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 3104.166
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 169459,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 40
+    },
+    "reward": 1.0,
+    "step_count": 211,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "c55afc204ee82993be000f973335d83b46ab85b3362e0b615222f39b008652f7",
+    "trajectory_source_sha256": "e37a88ee18a05b60eada0218a14c3c88bec6bea533479e95159c1adcfeb0c89b",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 3133.971
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 133450,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 200
+    },
+    "reward": 0.0,
+    "step_count": 157,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "448677d69c19bf565c5ce0246729b3bb8ea6fc6e9147154f270816f5c0e55fa0",
+    "trajectory_source_sha256": "ebea130ed345c3cbe54fb4ddc0053da97d26f28783ab9267661b7717ac587b97",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 3467.382
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "01-linearizable-scan__opus-5-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 121380,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 143,
+    "task": "01-linearizable-scan",
+    "trajectory": "trajectories/01-linearizable-scan/opus-5-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "fd8d5f996b8632655f842a7d020042185bf753dcad4147af5a1c1ad0d7ea31a3",
+    "trajectory_source_sha256": "d63cf8ff5281c433f67c24aa6d5fe507eb17d69294b779590557af664f9288ec",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/01-linearizable-scan/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 3523.361
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 153134,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1400,
+      "SENSITIVE_ASSIGNMENT": 12,
+      "SOURCE_CREDENTIAL": 13
+    },
+    "reward": 0.0,
+    "step_count": 169,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "e395f16abadd434aed2907b496a4040e43e86b5b49f37e4c63df59f73efed4e5",
+    "trajectory_source_sha256": "83d877afdb0a5a43f77ec5f090ca1c036bcdb1fe31f04e5e19d3cc646abe9b0c",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 3402.025
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 136147,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 240,
+      "SOURCE_CREDENTIAL": 4
+    },
+    "reward": 0.0,
+    "step_count": 177,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "542e8d1f8d3202c4a826c9f200297874748a0caf667e479ad775ee0f28a35d2b",
+    "trajectory_source_sha256": "acadad7e3ca8aab3c14355ad83b259e85b8e8cc276c389ca36b545b65f407cde",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 3693.018
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 126943,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 120
+    },
+    "reward": 0.0,
+    "step_count": 153,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "8c0fd5ff2141d648720919a89b88642be941803849ff44791c438a859e35831a",
+    "trajectory_source_sha256": "1c664470efe3342eeee99b3407f8995bfe9cb9f3c7a230fbbf90ef6b6b7e5a5b",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 3581.12
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 157524,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 160
+    },
+    "reward": 0.0,
+    "step_count": 261,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "2665cc33e8a636a8fb47a7a0d47efaf5a6ed6738def6a71986304c889cf3906c",
+    "trajectory_source_sha256": "38c4c0aef7d9a17572e273f5510b548d98900882787704b2e84dede7a2736ce5",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 3922.249
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 91676,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 100,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "5f37eda89616c3b5b8b3240ea70293bbbd09135bbbcc829d114eb91db85758d2",
+    "trajectory_source_sha256": "0f21248fa48b918197664e7f5acb2a3b264908666f69bca14c49d57c55272f83",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 3671.687
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 118407,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 400
+    },
+    "reward": 0.0,
+    "step_count": 169,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "c7e4259ee2e4b7cc65531fdeefe320815b8321c7ddf9bf354a13da0a58880cf4",
+    "trajectory_source_sha256": "fe93f22cf103ead1c3750795924a7f31c7733e243e9294e03f8e6c9341a84e75",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 3778.45
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 123464,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 280
+    },
+    "reward": 0.0,
+    "step_count": 174,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "186c53611897ee5441a517160237df764ae0a1eace23a62b7dd9fee01172faa6",
+    "trajectory_source_sha256": "b8a47326067f47c89a8a25cbefbd47a473e8a1340df6a5258dbdb6df57264950",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 3670.179
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "02-recurring-events__opus-5-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 145745,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 200
+    },
+    "reward": 0.0,
+    "step_count": 190,
+    "task": "02-recurring-events",
+    "trajectory": "trajectories/02-recurring-events/opus-5-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "4497fea8aa3d8bc3318094785dfeb825007b2b9706339bbc046f3ccf45a50732",
+    "trajectory_source_sha256": "44e80a6a8843f48e820d4235dca179c55adb64e0414f808f3b7b52532d89871e",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 3728.041
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 95289,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 99,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "127023dc432d40334612bafb64b03fcbe64bc60294ebf745da0e8fce6ebdb523",
+    "trajectory_source_sha256": "2a8ea932cb79bad0c2056e57927e0c03ee81c03d8fc9ad19cf8e4651de0b59fa",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 3013.446
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 103371,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 108,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "3699a551b83b963a68c6f3e6c50a9bf2d5734d7c408b84388ca2458672f55136",
+    "trajectory_source_sha256": "32045ea98388a25f3ba23697dbc273aedde200669776c339eeb8d3ec629f7659",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 3027.512
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 109135,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 88,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "93946e09b7ef69a1d344951a81de7af51d990933b14ad68262af89518693b678",
+    "trajectory_source_sha256": "74e8fc4f369f55923759490c06beadca3f77573a3897dafb5f655e8eea4f7e37",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 3025.431
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 112790,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 81,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "c0998b0310b96664bebab52aa41498083da57de50f281a88d5604cd45e44721d",
+    "trajectory_source_sha256": "5749fa4e153c31a02179dac64079c26ebed807b332ffd055cc855513db3535bb",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 3039.898
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 91098,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 66,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "f5c11fcc510a8ea8e434e4528f9762ae286299ab9f8784f53835ce08c9ca3a71",
+    "trajectory_source_sha256": "90a3340c20b34efffd430818a3796627034c56a2fec81e73ff77d918385c938c",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 3004.934
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 105835,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 93,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "2e3aaed9a0f1a5272e4e4d849b38c90c7f4fce515210bb03d2579ec03b922d62",
+    "trajectory_source_sha256": "327431c8c1d5d0bb90ac6f930019cbc708d0a937438aa8618024b804c90b9f4d",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 3061.176
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 99904,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 61,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "9f45d395a5ff15c77fc9724c0b467224ca9b7caf0b8a56431c73853e76a275d3",
+    "trajectory_source_sha256": "a3945dace88bac92b1fc578e64fea2ca9a04e6f328e9fad128f25934c002c5a9",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 3025.171
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "03-analytics-stream-reducer__opus-5-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 70380,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 45,
+    "task": "03-analytics-stream-reducer",
+    "trajectory": "trajectories/03-analytics-stream-reducer/opus-5-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "7a36563cb31a85eb6dc0652a0449d8434860a07e693a28793d19cee5bc33cec6",
+    "trajectory_source_sha256": "d8b8e6fa90b7b8e9bf04e0a9f8d660afd4025d2e60047b198404da467c3a9ddf",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/03-analytics-stream-reducer/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 1056.084
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 95055,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 68,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "d7a44c8cd5d21bfba0af333992f0f3997ddef484e5757ab886cc71f21600a9d1",
+    "trajectory_source_sha256": "3e5c8b8b8945d693e39fce858c3daf85996636c3cc2e37cab7b830f2b1474ddc",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 1409.342
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 77852,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 46,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "6b0d02b84229dd2a90f0e2d9878c36e34017cfa8fa11dc0e4c4f17b8c297f85f",
+    "trajectory_source_sha256": "e8ed65a30c850f735076416cac2c8d055bd665b12d56b99c3cdeafa51fd64806",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 1144.371
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 74823,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 49,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "2e33c748c9e440a09a9c65a14f4a82d823217985ea26c13762a610a7d4e46c04",
+    "trajectory_source_sha256": "9339fc8ac1aa5f8ce21077e1c80a260ea72053deb1e346723d6b157de3075d9d",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 1104.472
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 76519,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 54,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "9dbd253069303074c4bbac12550ebc33890b67a0003c2fa7819977fdcfbabced",
+    "trajectory_source_sha256": "65e1967108fef04c51c6055a3c901c1342f240df06d2703896b064ca955bc8b5",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 1132.219
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 102429,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 65,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "a931dfb262ce41362a690b0516a00882d3c244d65fa9cd977c9a67f25874fea1",
+    "trajectory_source_sha256": "7145e1e5ee4772590efba73f6da51d6ed9fe6698486cd30a9aeb3b17a4b3f4ad",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 1663.151
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 89748,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 73,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "6a6c5ee778bb421f8ce91c46282af3201c3a0a47cfd4283a74e219d32c3d22b5",
+    "trajectory_source_sha256": "b4f2c43b002fc0c9d94af8b0e33cb195b49eafba4ad34430cff6be320cc86f13",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 1306.134
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 87131,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 62,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "2fbb11399538ba450fa373fd0bcbd16f2c2c249530a52d54fdc1f71b33b92b92",
+    "trajectory_source_sha256": "d66982bf851257985f4c5ebd1abd6168c21837b9277954c08a892461737306c8",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 1341.126
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "04-draft-recovery__opus-5-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 79631,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 62,
+    "task": "04-draft-recovery",
+    "trajectory": "trajectories/04-draft-recovery/opus-5-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "7a2bb71dd5e31334dc79975cf283d58a55f410e8bdc63eaa766aa8703112ff52",
+    "trajectory_source_sha256": "523cc6c61b5c2a15e109aa848699ffe3078c56d4940c7b417ebda79d80a1a683",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 1504.155
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 126965,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 60
+    },
+    "reward": 1.0,
+    "step_count": 80,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "63c37198688dee362297c91f5b3f3ed854d1f8d2b30b92f3e5290f943e129188",
+    "trajectory_source_sha256": "93894672e42d5235cfeeb4d764106d9d733e4fa72f5fcba1780da45388c3f0b9",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 4693.811
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 123159,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 100,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "20918469570b99f5f31576042b628355f69ee54f16fede6c06ded598e3093483",
+    "trajectory_source_sha256": "ba16402a99c10b5d418f286a02d7583954d9ca1d636f309475378d3792ac162d",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 3018.679
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 129189,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 115,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "dd0356c41f81e0ab3bdc4f539835b10081430f580b4d597b1c2ad734138a7b30",
+    "trajectory_source_sha256": "aedc488d9a3b3445f4eee4a9c2db842980ef85b6f5ebc6be1b3a4ec174d0749a",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 3173.717
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 142489,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 123,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "bbfb37a66e4593185abeb24a5e4fde7ad4be84ad081e30365364eefcb613a2f0",
+    "trajectory_source_sha256": "26c78fe3233a45cfbd0ca342bac132ff3bc42c5d44b035c28ef0ebbebb8e4e56",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 3507.723
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 8021,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 22,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "98c4ad722c387002dede8f1a8670d252e65d3b57b8503e9b50798fe47aff33d2",
+    "trajectory_source_sha256": "06565834a29ddb42a5e5f97ca650d6bb2fbe70cabfbd54771b614d581cbdb6cd",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 124.747
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 109112,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 101,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "ac795ae5657252a3430501bdb1379d8fc95e1e7e96236dbde241503b8adbdfd7",
+    "trajectory_source_sha256": "514a5ebb4b8974b263a6056c93450936b815492ce134c14365a324a77a20c593",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 5415.2
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 114209,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 60
+    },
+    "reward": 1.0,
+    "step_count": 87,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "bf642dbe50f5d5b84b6a9d8a4c33a121bd4b2f03b6389495501030d4dc231d2a",
+    "trajectory_source_sha256": "3d52784d70828c8c7537a3225ef078ef5b57c49603be648f2bad23580d981c51",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 4557.136
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "08-envelope-intake__opus-5-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.258",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 133471,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 98,
+    "task": "08-envelope-intake",
+    "trajectory": "trajectories/08-envelope-intake/opus-5-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "033ee00ffbb1d001e274c6261a2d6592547afec3bf91d237d166c261fc8fc986",
+    "trajectory_source_sha256": "0bd1403b6cb165273da16d74ae5bdb241a0321cffe2bbb177039fd878b10dc21",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 1887.707
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 269594,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 204,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "045c0390791674ce4950906ec8035cff86f4eac1d31bbde93711aca956082d0e",
+    "trajectory_source_sha256": "559f5382bb5fc2703b1f81697a7b55e869d771926560a4dece1975858ffe7969",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 5065.801
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 273515,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 1042
+    },
+    "reward": 0.0,
+    "step_count": 217,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "3b8609b5f13fb8072b1161ee7d2fa90f0a219fada6b5fadce0a187fdfbc3b68d",
+    "trajectory_source_sha256": "0601a4e3c939bf712d8e43879d8e0097c048d5ef888151d8090b2552d3d59df5",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 5181.485
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 339304,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 0.0,
+    "step_count": 325,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "ef5106e06772085295230f9b6e2022f93b21bb505b878749a19c191af23e5568",
+    "trajectory_source_sha256": "e203109dec7368b0a934609f11ca76b7d8c5e5486fd22b3158bba66b651d9094",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 5210.492
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 48144,
+    "passed": true,
+    "provider": "Bedrock",
+    "redaction_counts": {},
+    "reward": 1.0,
+    "step_count": 20,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "ed573f7f4d81b99e3173ec9857a2ce55042b124eadc37b9178aaf944f696a140",
+    "trajectory_source_sha256": "d4e77e8064e76a95eb873ec590383ad88e1010f27a1df23360b8c634edbbc048",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 2588.144
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 100274,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 160
+    },
+    "reward": 0.0,
+    "step_count": 49,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "55ae7ceac7318a6cc7eccaadd9701dc5c81531bc8317aa9a295a5b604d3778a7",
+    "trajectory_source_sha256": "b09933a795746f1113d5302dc2541067388f693342d0f44f5d6423cc5c5fad8b",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 2575.37
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 180001,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 90
+    },
+    "reward": 0.0,
+    "step_count": 97,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "baf2eb05145a97b1a776364b0c1f1dfa539719f812d64ec5619dec972a430730",
+    "trajectory_source_sha256": "b1bd77d745bf5dd6a7ed11a3d6ca79a39586c0fb47c038ae655f00efd805b581",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 4022.549
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 207406,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 60
+    },
+    "reward": 0.0,
+    "step_count": 110,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "9b16e85e1418f9bf454fa82390b44df519cb97b6f4445d06888927f05edff1dc",
+    "trajectory_source_sha256": "07a162192c7a6c05c891a04c48ca8cbf3d676f3d07ad07d64cdc30dc91781d7c",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 6234.116
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "11-store-cutover__opus-5-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 366272,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 20
+    },
+    "reward": 0.0,
+    "step_count": 265,
+    "task": "11-store-cutover",
+    "trajectory": "trajectories/11-store-cutover/opus-5-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "cf539781f62d92fbc8ca631057424bc9b0bbe36731c82767314306f1ff2c8942",
+    "trajectory_source_sha256": "bae987124819c3ef4b8d2ec88c032db210d1c38613fd4d800d21b6b489709d47",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 5962.612
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-01",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 216393,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 255,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-01.json",
+    "trajectory_sha256": "48187b76cc49a484eac69e9a4b94d66a1f86964fc562725faeb25fba3706cbec",
+    "trajectory_source_sha256": "3764a39e16671ada4ec54aca995377b376c4a6382726a4d90c43984f3caa59a0",
+    "trial_number": 1,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/result.json"
+    ],
+    "wall_clock_seconds": 6445.097
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-02",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 128979,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 124,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-02.json",
+    "trajectory_sha256": "f0ed394117e048a9a5c483819a1231b81b4bc963ed9e8686f3f3b725367037cb",
+    "trajectory_source_sha256": "eae494ddd78bef513c422350095530fccda61bddc679526fef7c669e14c16df8",
+    "trial_number": 2,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/result.json"
+    ],
+    "wall_clock_seconds": 3192.799
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-03",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 146259,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 120
+    },
+    "reward": 0.0,
+    "step_count": 160,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-03.json",
+    "trajectory_sha256": "ae3da095ce0ab6e369f5ca4afba609ebe7c38fd88e05334f8c486e7860d4afc4",
+    "trajectory_source_sha256": "9660b9fae2a437c6ae8d0375a74a5ed98763a3f54b0de427461a81c2c0ef881e",
+    "trial_number": 3,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/result.json"
+    ],
+    "wall_clock_seconds": 3461.316
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-04",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 269354,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 160
+    },
+    "reward": 0.0,
+    "step_count": 357,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-04.json",
+    "trajectory_sha256": "95ca71bb8d10c09e8eabe2f2a40141b0f735693a7d9edb787cf1e942a3c9b84a",
+    "trajectory_source_sha256": "56a7a295ce73d0f747393738887d64f25fd108eb4311fcf3b3a3fecf6a36b6d4",
+    "trial_number": 4,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/result.json"
+    ],
+    "wall_clock_seconds": 4572.613
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-05",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 9844,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 40
+    },
+    "reward": 0.0,
+    "step_count": 23,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-05.json",
+    "trajectory_sha256": "13c8c6f383989cf7c03874c29dd5625589bb8e87306797409ba51786506ea7df",
+    "trajectory_source_sha256": "caf1dbe6d6b882602f2af70b0b792c2c524a4df743ba64d737549d9ed0b450b5",
+    "trial_number": 5,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/result.json"
+    ],
+    "wall_clock_seconds": 434.689
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-06",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 216728,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 160
+    },
+    "reward": 0.0,
+    "step_count": 264,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-06.json",
+    "trajectory_sha256": "0a14e95a1cfc8de8ab0d52cd6bb8662ddc8667f9800681d2381add1254d5f255",
+    "trajectory_source_sha256": "33c6752a71edb4c91edce79e6078ef07e8f0fae9355b11975d826a5af56c73e1",
+    "trial_number": 6,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/result.json"
+    ],
+    "wall_clock_seconds": 4730.017
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-07",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 9922,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 80
+    },
+    "reward": 0.0,
+    "step_count": 30,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-07.json",
+    "trajectory_sha256": "ba962707659521bd8cec7294dac3822992b6ed77302c74ed8c586b905751ad25",
+    "trajectory_source_sha256": "99be07c0531ee94725eb2080f8ed2b8032909b509201b5be7f4d23c9f8c8bbde",
+    "trial_number": 7,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/result.json"
+    ],
+    "wall_clock_seconds": 155.526
+  },
+  {
+    "arm": "opus-5-claude-code-bedrock",
+    "canonical_id": "12-readmodel-rebuild__opus-5-claude-code-bedrock__trial-08",
+    "canonical_valid": true,
+    "harness": "Claude Code",
+    "harness_version": "2.1.236",
+    "model": "us.anthropic.claude-opus-5",
+    "model_label": "Opus 5",
+    "output_tokens": 173935,
+    "passed": false,
+    "provider": "Bedrock",
+    "redaction_counts": {
+      "ENV_ASSIGNMENT": 160
+    },
+    "reward": 0.0,
+    "step_count": 153,
+    "task": "12-readmodel-rebuild",
+    "trajectory": "trajectories/12-readmodel-rebuild/opus-5-claude-code-bedrock/trajectory-trial-08.json",
+    "trajectory_sha256": "51ff6dcd4015a954ac95a3e3c25e6c76760138171e6c44e3abd0d716b31ec233",
+    "trajectory_source_sha256": "0840eae62b837bed060c9e56c8fb8ebf392610ac3483fe788b5d9a9005c4891d",
+    "trial_number": 8,
+    "verifier_evidence": [
+      "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/result.json"
+    ],
+    "wall_clock_seconds": 3275.836
+  }
+]

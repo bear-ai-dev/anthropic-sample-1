@@ -1,0 +1,41 @@
+=== Snapshot the deliverable ===
+[harness] api ready after 1s
+[harness] api pid(s) 20725 verified as this build (18:62867)
+[grader] pass R1-generate-shapes (0.5s)
+[grader] pass R2-selected-days (0.0s)
+[grader] pass R3-month-clamp (0.1s)
+[grader] pass R4-spring-forward (0.1s)
+[grader] pass R5-fall-back (0.1s)
+[grader] pass R6-occurrence-count (0.1s)
+[grader] pass R7-end-date (0.2s)
+[grader] pass R8-protect-published (0.1s)
+[grader] pass R9-edited-survives (0.2s)
+[grader] pass R10-extend (0.1s)
+[grader] pass R11-concurrent-regenerate (2.2s)
+[grader] pass R12-publish-then-regenerate (0.1s)
+[grader] pass R13-delete-with-sales (0.1s)
+[grader] pass R14-scope-steps-over-paid (0.1s)
+[grader] pass R15-scope-over-month-end (0.2s)
+[grader] pass R16-scope-across-transition (0.1s)
+[grader] pass R17-scope-then-regenerate (0.2s)
+[grader] pass R18-extend-fills-gap (0.1s)
+[grader] pass R19-extend-after-regenerate (0.2s)
+[grader] pass R20-race-scope-vs-regenerate (4.1s)
+[grader] pass R21-zone-by-configuration (4.9s)
+[grader] pass R22-regenerate-cross (1.5s)
+[grader] pass R23-scope-regenerate-extend (1.8s)
+[grader] pass R24-race-on-hard-dates (1.9s)
+[grader] FAIL R25-survivor-identity (0.5s)
+           R25-identity-Europe-Lisbon-month: occurrence 2090fdc4-5f7e-4f90-8b70-2aacd414f7c0 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence 7562a2d3-5da3-4a54-ba4d-278031dad5d7 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence d65bbc2e-6429-43f0-99cb-8b249fb177c9 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence 20e6cfc6-83ce-4ea5-ae38-bb232af7211d survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody
+           R25-identity-Australia-Lord_Howe-week: occurrence dcfa8aae-0afb-4418-9f02-5ee7e571953d survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+[grader] FAIL R26-money-across-operations (1.0s)
+           R26-regenerate: occurrence c16fbe7b-ca7e-43f9-95a7-ba5040c849fb survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R26-regenerate: the rebuild wrote 4 new occurrences and the plan leaves room for 5; the difference is local dates claimed twice or claimed by nobody
+[grader] pass R27-interleavings (2.2s)
+[grader] 25/27 rules passed; reward=0.0
+[grader] failed: R25-survivor-identity, R26-money-across-operations
+[test] reward: {"reward": 0.0, "harness_failure": 0, "rules_total": 27, "rules_passed": 25, "fixture_gate_failed": 0}

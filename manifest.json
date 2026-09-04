@@ -1,0 +1,34 @@
+{
+  "arms": [
+    "fable-5.1-claude-code-bedrock",
+    "fable-5.1-mini-swe-agent-bedrock",
+    "glm-5.3-claude-code-openrouter",
+    "glm-5.3-mini-swe-agent-openrouter",
+    "gpt-5.6-sol-codex-bedrock",
+    "gpt-5.6-sol-codex-openrouter",
+    "grok-4.6-grok-build-openrouter",
+    "grok-4.6-mini-swe-agent-openrouter",
+    "kimi-k3-kimi-code-openrouter",
+    "opus-5-claude-code-bedrock"
+  ],
+  "artifact_index": "indexes/artifacts.json",
+  "artifacts": 3892,
+  "complete": true,
+  "controls": "control-results.json",
+  "passes": 53,
+  "pending": [],
+  "scored_rollouts": 408,
+  "task_publication": "task-publication.json",
+  "tasks": [
+    "01-linearizable-scan",
+    "02-recurring-events",
+    "03-analytics-stream-reducer",
+    "04-draft-recovery",
+    "08-envelope-intake",
+    "11-store-cutover",
+    "12-readmodel-rebuild"
+  ],
+  "title": "Anthropic Sample 1",
+  "trajectories": 408,
+  "verifier_evidence_files": 2448
+}

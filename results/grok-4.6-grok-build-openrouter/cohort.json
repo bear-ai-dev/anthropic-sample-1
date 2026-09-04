@@ -1,0 +1,21 @@
+{
+  "arm": "grok-4.6-grok-build-openrouter",
+  "harness": "Grok Build",
+  "harness_versions": [
+    "1.0.18"
+  ],
+  "model": "x-ai/grok-4.6",
+  "model_label": "Grok 4.6",
+  "passes": 4,
+  "provider": "OpenRouter",
+  "scored_rollouts": 56,
+  "tasks": [
+    "01-linearizable-scan",
+    "02-recurring-events",
+    "03-analytics-stream-reducer",
+    "04-draft-recovery",
+    "08-envelope-intake",
+    "11-store-cutover",
+    "12-readmodel-rebuild"
+  ]
+}

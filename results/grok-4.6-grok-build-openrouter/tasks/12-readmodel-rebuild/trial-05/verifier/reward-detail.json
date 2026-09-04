@@ -1,0 +1,27 @@
+{
+  "harness_failure": "the service never answered /healthz",
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows"
+  ],
+  "reward": null,
+  "rule_results": {
+    "R1": null,
+    "R10": null,
+    "R11": null,
+    "R12": null,
+    "R13": null,
+    "R14": null,
+    "R15": null,
+    "R2": null,
+    "R3": null,
+    "R4": null,
+    "R5": null,
+    "R6": null,
+    "R7": null,
+    "R8": null,
+    "R9": null
+  },
+  "rules": {},
+  "steps": [],
+  "timeline": []
+}

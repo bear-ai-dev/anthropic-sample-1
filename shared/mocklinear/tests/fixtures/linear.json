@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "clock": "2026-03-04T10:00:00Z",
+  "faults": {"enabled": true, "rules": []},
+  "linear": {
+    "organization": {"name": "ExampleCo", "urlKey": "ExampleCo"},
+    "viewer": "u-dana",
+    "users": [
+      {"key": "u-dana", "name": "Dana Whitfield", "displayName": "dana", "email": "dana@ExampleCo.example", "active": true},
+      {"key": "u-milo", "name": "Milo Ferrante", "displayName": "milo", "email": "milo@ExampleCo.example", "active": true},
+      {"key": "u-sasha", "name": "Sasha Bright", "displayName": "sasha", "email": "sasha@ExampleCo.example", "active": true},
+      {"key": "u-irene", "name": "Irene Kwon", "displayName": "irene", "email": "irene@ExampleCo.example", "active": false}
+    ],
+    "teams": [
+      {
+        "key": "WEB",
+        "name": "Web",
+        "description": "Web checkout and door tooling",
+        "members": ["u-dana", "u-milo", "u-sasha"],
+        "states": [
+          {"key": "web-backlog", "name": "Backlog", "type": "backlog", "position": 0, "color": "#bec2c8"},
+          {"key": "web-todo", "name": "Todo", "type": "unstarted", "position": 1, "color": "#e2e2e2"},
+          {"key": "web-progress", "name": "In Progress", "type": "started", "position": 2, "color": "#f2c94c"},
+          {"key": "web-review", "name": "In Review", "type": "started", "position": 3, "color": "#0f7488"},
+          {"key": "web-done", "name": "Done", "type": "completed", "position": 4, "color": "#5e6ad2"},
+          {"key": "web-canceled", "name": "Canceled", "type": "canceled", "position": 5, "color": "#95a2b3"}
+        ],
+        "labels": [
+          {"key": "web-regression", "name": "Regression", "color": "#f2994a"}
+        ],
+        "cycles": [
+          {"number": 41, "name": "Cycle 41", "startsAt": "2026-02-02T00:00:00Z", "endsAt": "2026-02-16T00:00:00Z"},
+          {"number": 42, "name": "Cycle 42", "startsAt": "2026-02-16T00:00:00Z", "endsAt": "2026-03-02T00:00:00Z"},
+          {"number": 43, "name": "Cycle 43", "startsAt": "2026-03-02T00:00:00Z", "endsAt": "2026-03-16T00:00:00Z"},
+          {"number": 44, "name": "Cycle 44", "startsAt": "2026-03-16T00:00:00Z", "endsAt": "2026-03-30T00:00:00Z"}
+        ]
+      },
+      {
+        "key": "IOS",
+        "name": "iOS",
+        "description": "The guest and door apps",
+        "members": ["u-sasha", "u-irene"],
+        "states": [
+          {"key": "ios-backlog", "name": "Backlog", "type": "backlog", "position": 0, "color": "#bec2c8"},
+          {"key": "ios-todo", "name": "Todo", "type": "unstarted", "position": 1, "color": "#e2e2e2"},
+          {"key": "ios-progress", "name": "In Progress", "type": "started", "position": 2, "color": "#f2c94c"},
+          {"key": "ios-done", "name": "Done", "type": "completed", "position": 3, "color": "#5e6ad2"}
+        ],
+        "labels": [],
+        "cycles": [
+          {"number": 12, "name": "Sprint 12", "startsAt": "2026-02-16T00:00:00Z", "endsAt": "2026-03-02T00:00:00Z"}
+        ]
+      }
+    ],
+    "labels": [
+      {"key": "bug", "name": "Bug", "color": "#eb5757"},
+      {"key": "escalation", "name": "Escalation", "color": "#d73a4a"},
+      {"key": "feature", "name": "Feature", "color": "#bb87fc"},
+      {"key": "chore", "name": "Chore", "color": "#95a2b3"}
+    ],
+    "projects": [
+      {
+        "key": "door-ops",
+        "name": "Door operations",
+        "description": "Everything the door staff touches on event night.",
+        "state": "started",
+        "lead": "u-dana",
+        "teams": ["WEB"],
+        "startDate": "2026-02-02",
+        "targetDate": "2026-03-27",
+        "createdAt": "2026-01-28T09:00:00Z",
+        "updatedAt": "2026-03-03T17:10:00Z",
+        "labels": ["bug", "escalation"],
+        "milestones": [
+          {"key": "m-scan", "name": "Scanner reliability", "targetDate": "2026-03-20"},
+          {"key": "m-reporting", "name": "Reporting cleanup", "targetDate": "2026-04-10"}
+        ]
+      },
+      {
+        "key": "mobile-scan",
+        "name": "Mobile scanning",
+        "description": "Scanning from the door app instead of the rented hardware.",
+        "state": "planned",
+        "lead": "u-sasha",
+        "teams": ["IOS", "WEB"],
+        "startDate": "2026-03-09",
+        "targetDate": "2026-05-01",
+        "createdAt": "2026-02-11T11:30:00Z",
+        "updatedAt": "2026-02-28T08:45:00Z",
+        "labels": ["feature"],
+        "milestones": [
+          {"key": "m-ios19", "name": "iOS 19 readiness", "targetDate": "2026-04-04"}
+        ]
+      },
+      {
+        "key": "billing-cleanup",
+        "name": "Billing cleanup",
+        "description": "Retire the old receipt renderer.",
+        "state": "completed",
+        "lead": "u-milo",
+        "teams": ["WEB"],
+        "startDate": "2026-01-05",
+        "targetDate": "2026-02-14",
+        "createdAt": "2025-12-20T15:00:00Z",
+        "updatedAt": "2026-02-14T10:05:00Z",
+        "labels": ["chore"],
+        "milestones": []
+      }
+    ],
+    "documents": [
+      {
+        "key": "door-runbook",
+        "title": "Door night runbook",
+        "content": "# Door night runbook\n\nOpen the scanner app, sign in as the venue, and keep the tablet on mains power.",
+        "project": "door-ops",
+        "creator": "u-dana",
+        "createdAt": "2026-02-03T12:00:00Z",
+        "updatedAt": "2026-02-25T09:20:00Z"
+      },
+      {
+        "key": "scan-incident",
+        "title": "Re-entry incident review",
+        "content": "# Re-entry incident review\n\nTwo doors reported the same pass admitting twice on 2026-02-17.",
+        "project": "door-ops",
+        "issue": "WEB-611",
+        "creator": "u-milo",
+        "createdAt": "2026-02-19T14:40:00Z",
+        "updatedAt": "2026-02-19T14:40:00Z"
+      },
+      {
+        "key": "wallet-notes",
+        "title": "Wallet pass notes",
+        "content": "# Wallet pass notes\n\nApple Wallet caches the pass until its relevance date passes.",
+        "project": "mobile-scan",
+        "creator": "u-sasha",
+        "createdAt": "2026-02-24T16:15:00Z",
+        "updatedAt": "2026-03-01T10:00:00Z"
+      }
+    ],
+    "issues": [
+      {
+        "identifier": "WEB-611",
+        "title": "Ticket scanner rejects re-entry passes",
+        "description": "Hosts report the scanner refuses a pass the second time a guest comes through the door.\n\nReported by ada.reyes@example.com",
+        "team": "WEB",
+        "state": "In Progress",
+        "assignee": "u-dana",
+        "creator": "u-milo",
+        "priority": 1,
+        "estimate": 3,
+        "labels": ["bug", "escalation", "web-regression"],
+        "project": "door-ops",
+        "milestone": "m-scan",
+        "cycle": 43,
+        "createdAt": "2026-02-18T09:12:00Z",
+        "updatedAt": "2026-03-03T16:40:00Z",
+        "startedAt": "2026-02-20T11:00:00Z",
+        "dueDate": "2026-03-10",
+        "branchName": "dana/web-611-reentry-scan",
+        "attachments": [
+          {"key": "att-door-scan", "title": "door-scan.mov", "subtitle": "Uploaded by the host at Warehouse 9", "url": "https://files.ExampleCo.example/door-scan.mov"}
+        ],
+        "comments": [
+          {"key": "c-611-1", "body": "Second scan says ALREADY_ADMITTED even though the guest was checked out.", "user": "u-milo", "createdAt": "2026-02-18T10:02:00Z"},
+          {"key": "c-611-2", "body": "Reproduced at Warehouse 9 with two doors open at once.", "user": "u-dana", "createdAt": "2026-02-20T11:05:00Z"},
+          {"key": "c-611-3", "body": "The second door never sees the check-out row.", "user": "u-milo", "createdAt": "2026-02-20T11:40:00Z", "parent": "c-611-2"}
+        ]
+      },
+      {
+        "identifier": "WEB-612",
+        "title": "Door list export drops guests added after check-in",
+        "description": "The CSV export is missing walk-ups added once the door opened.",
+        "team": "WEB",
+        "state": "Backlog",
+        "assignee": "u-dana",
+        "creator": "u-sasha",
+        "priority": 2,
+        "estimate": 2,
+        "labels": ["bug"],
+        "project": "door-ops",
+        "cycle": 43,
+        "createdAt": "2026-02-21T13:05:00Z",
+        "updatedAt": "2026-02-27T09:30:00Z",
+        "comments": [
+          {"key": "c-612-1", "body": "Export runs off the pre-door snapshot.", "user": "u-sasha", "createdAt": "2026-02-21T13:20:00Z"}
+        ]
+      },
+      {
+        "identifier": "WEB-613",
+        "title": "Refund receipts show the wrong currency",
+        "description": "Receipts for refunded orders render USD for a GBP event.",
+        "team": "WEB",
+        "state": "Done",
+        "assignee": "u-milo",
+        "creator": "u-dana",
+        "priority": 3,
+        "estimate": 1,
+        "labels": ["bug"],
+        "project": "billing-cleanup",
+        "cycle": 41,
+        "createdAt": "2026-01-14T08:40:00Z",
+        "updatedAt": "2026-02-02T15:12:00Z",
+        "startedAt": "2026-01-20T09:00:00Z",
+        "completedAt": "2026-02-02T15:12:00Z",
+        "attachments": [],
+        "comments": []
+      },
+      {
+        "identifier": "WEB-614",
+        "title": "Scanner offline mode",
+        "description": "Umbrella issue for keeping the door moving when the venue wifi drops.",
+        "team": "WEB",
+        "state": "In Progress",
+        "assignee": "u-milo",
+        "creator": "u-dana",
+        "priority": 2,
+        "estimate": 8,
+        "labels": ["feature"],
+        "project": "door-ops",
+        "milestone": "m-scan",
+        "cycle": 43,
+        "createdAt": "2026-02-09T10:00:00Z",
+        "updatedAt": "2026-03-02T12:00:00Z",
+        "startedAt": "2026-02-23T09:15:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-615",
+        "title": "Cache scans while the door is offline",
+        "description": "Queue scans locally and replay them when the tablet is back on the network.",
+        "team": "WEB",
+        "state": "Todo",
+        "assignee": "u-dana",
+        "creator": "u-milo",
+        "priority": 2,
+        "estimate": 5,
+        "labels": ["feature"],
+        "project": "door-ops",
+        "milestone": "m-scan",
+        "cycle": 43,
+        "parent": "WEB-614",
+        "createdAt": "2026-02-10T11:20:00Z",
+        "updatedAt": "2026-03-01T18:05:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-616",
+        "title": "Guest list search is slow above five thousand rows",
+        "description": "Searching a large guest list takes several seconds on the door tablet.",
+        "team": "WEB",
+        "state": "In Review",
+        "assignee": "u-sasha",
+        "creator": "u-sasha",
+        "priority": 3,
+        "labels": ["web-regression"],
+        "cycle": 43,
+        "createdAt": "2026-02-25T15:45:00Z",
+        "updatedAt": "2026-03-02T08:10:00Z",
+        "startedAt": "2026-02-26T10:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-617",
+        "title": "Remove the legacy checkout banner",
+        "description": "The old promo banner still renders for events created before the redesign.",
+        "team": "WEB",
+        "state": "Canceled",
+        "creator": "u-dana",
+        "priority": 4,
+        "labels": ["chore"],
+        "createdAt": "2026-01-30T09:00:00Z",
+        "updatedAt": "2026-02-06T11:00:00Z",
+        "canceledAt": "2026-02-06T11:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-618",
+        "title": "Add per-door capacity warnings",
+        "description": "Warn the door when a room is within fifty guests of capacity.",
+        "team": "WEB",
+        "state": "Backlog",
+        "creator": "u-sasha",
+        "priority": 0,
+        "labels": ["feature"],
+        "createdAt": "2026-02-14T16:00:00Z",
+        "updatedAt": "2026-02-14T16:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-619",
+        "title": "Update door staff onboarding doc",
+        "description": "The runbook still names the rented scanners.",
+        "team": "WEB",
+        "state": "Todo",
+        "assignee": "u-dana",
+        "creator": "u-dana",
+        "priority": 4,
+        "labels": ["chore"],
+        "createdAt": "2026-03-03T09:00:00Z",
+        "updatedAt": "2026-03-04T08:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "IOS-1471",
+        "title": "Camera permission prompt loops on iOS 19",
+        "description": "The door app asks for camera access on every scan after upgrading to iOS 19.",
+        "team": "IOS",
+        "state": "In Progress",
+        "assignee": "u-sasha",
+        "creator": "u-irene",
+        "priority": 1,
+        "estimate": 3,
+        "labels": ["bug", "escalation"],
+        "project": "mobile-scan",
+        "milestone": "m-ios19",
+        "cycle": 12,
+        "createdAt": "2026-02-17T07:30:00Z",
+        "updatedAt": "2026-03-01T19:25:00Z",
+        "startedAt": "2026-02-18T08:00:00Z",
+        "dueDate": "2026-03-13",
+        "attachments": [
+          {"key": "att-permission-log", "title": "permission-loop.txt", "subtitle": "Console log from the door iPad", "url": "https://files.ExampleCo.example/permission-loop.txt"}
+        ],
+        "comments": [
+          {"key": "c-1471-1", "body": "Only the door app is affected, the guest app is fine.", "user": "u-sasha", "createdAt": "2026-02-18T08:10:00Z"}
+        ]
+      },
+      {
+        "identifier": "IOS-1472",
+        "title": "Ticket wallet pass expires a day early",
+        "description": "Wallet passes disappear the morning of the event.",
+        "team": "IOS",
+        "state": "Todo",
+        "assignee": "u-irene",
+        "creator": "u-sasha",
+        "priority": 2,
+        "labels": ["bug"],
+        "project": "mobile-scan",
+        "cycle": 12,
+        "createdAt": "2026-02-20T12:00:00Z",
+        "updatedAt": "2026-02-26T09:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "IOS-1473",
+        "title": "Crash when scanning without network",
+        "description": "The door app crashes if the first scan of the night happens offline.",
+        "team": "IOS",
+        "state": "Done",
+        "assignee": "u-sasha",
+        "creator": "u-sasha",
+        "priority": 1,
+        "estimate": 2,
+        "labels": ["bug"],
+        "project": "mobile-scan",
+        "createdAt": "2026-01-22T10:15:00Z",
+        "updatedAt": "2026-02-05T14:00:00Z",
+        "startedAt": "2026-01-23T09:00:00Z",
+        "completedAt": "2026-02-05T14:00:00Z",
+        "comments": []
+      }
+    ]
+  }
+}

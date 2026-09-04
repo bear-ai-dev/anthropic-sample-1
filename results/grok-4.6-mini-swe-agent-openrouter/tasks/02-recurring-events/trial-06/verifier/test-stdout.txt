@@ -1,0 +1,64 @@
+=== Snapshot the deliverable ===
+[harness] api ready after 1s
+[harness] api pid(s) 21462 verified as this build (18:59125)
+[grader] pass R1-generate-shapes (0.8s)
+[grader] pass R2-selected-days (0.1s)
+[grader] pass R3-month-clamp (0.1s)
+[grader] FAIL R4-spring-forward (0.2s)
+           R4-spring-la: occurrence instants differ
+    expected ['2026-03-06 02:30 -0800(=1772793000)', '2026-03-07 02:30 -0800(=1772879400)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-10 02:30 -0700(=1773135000)']
+    stored   ['2026-03-06 02:30 -0800(=1772793000)', '2026-03-07 02:30 -0800(=1772879400)', '2026-03-08 00:00 -0800(=1772956800)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-10 02:30 -0700(=1773135000)']
+           R4-spring-la: 02:30:00 on 2026-03-08 is gap in America/Los_Angeles, so the occurrence takes the first instant that exists
+    expected 2026-03-08 03:00 -0700(=1772964000)
+    stored   2026-03-08 00:00 -0800(=1772956800)
+[grader] pass R5-fall-back (0.2s)
+[grader] pass R6-occurrence-count (0.2s)
+[grader] pass R7-end-date (0.3s)
+[grader] pass R8-protect-published (0.1s)
+[grader] pass R9-edited-survives (0.3s)
+[grader] pass R10-extend (0.2s)
+[grader] pass R11-concurrent-regenerate (1.6s)
+[grader] pass R12-publish-then-regenerate (0.2s)
+[grader] pass R13-delete-with-sales (0.2s)
+[grader] pass R14-scope-steps-over-paid (0.2s)
+[grader] pass R15-scope-over-month-end (0.3s)
+[grader] FAIL R16-scope-across-transition (0.2s)
+           R16-scope-dst: occurrence 537ddc4b-37b0-427d-b28a-b7810f748bba (moved) should sit at 2026-03-08 03:00 -0700(=1772964000) and sits at 2026-03-08 00:00 -0800(=1772956800)
+[grader] pass R17-scope-then-regenerate (0.2s)
+[grader] pass R18-extend-fills-gap (0.1s)
+[grader] pass R19-extend-after-regenerate (0.3s)
+[grader] pass R20-race-scope-vs-regenerate (5.1s)
+[grader] pass R21-zone-by-configuration (8.7s)
+[grader] FAIL R22-regenerate-cross (1.9s)
+           R22-regen-America-Los_Angeles-week setup: occurrence instants differ
+    expected ['2026-03-01 02:30 -0800(=1772361000)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-25 02:30 -0700(=1774431000)']
+    stored   ['2026-03-01 02:30 -0800(=1772361000)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-08 00:00 -0800(=1772956800)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-25 02:30 -0700(=1774431000)']
+           R22-regen-America-Santiago-day setup: occurrence instants differ
+    expected ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-06 01:00 -0300(=1788667200)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']
+    stored   ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)']
+           R22-regen-America-Santiago-day setup: 2 occurrences share local date 2026-09-05: ['1e3123c7-7e32-40d1-9fd9-ce72a9c19c1b', '463db3d9-ba47-4b38-8f67-d0ac3c6060c3']
+[grader] FAIL R23-scope-regenerate-extend (2.7s)
+           R23-chain-America-Los_Angeles-day-scope: occurrence 9c488cbd-16fe-495e-9b93-e6bcafa88056 (moved) should sit at 2026-03-08 03:00 -0700(=1772964000) and sits at 2026-03-08 00:00 -0800(=1772956800)
+[grader] FAIL R24-race-on-hard-dates (1.2s)
+           R24-race round 2 (America/Los_Angeles week): the store holds a state no order produces (HTTP {'regenerate': 200, 'edit': 200})
+    stored ['2026-03-02 02:30 -0800(=1772447400)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-08 00:00 -0800(=1772956800)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-13 02:30 -0700(=1773394200)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-16 02:30 -0700(=1773653400)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-20 02:30 -0700(=1773999000)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-23 02:30 -0700(=1774258200)', '2026-03-25 02:30 -0700(=1774431000)', '2026-03-27 02:30 -0700(=1774603800)', '2026-03-29 02:30 -0700(=1774776600)', '2026-03-30 02:30 -0700(=1774863000)', '2026-04-01 02:30 -0700(=1775035800)', '2026-04-03 02:30 -0700(=1775208600)', '2026-04-05 02:30 -0700(=1775381400)', '2026-04-06 02:30 -0700(=1775467800)']
+    regenerate then edit: ['2026-03-02 02:30 -0800(=1772447400)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-13 02:30 -0700(=1773394200)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-16 02:30 -0700(=1773653400)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-20 02:30 -0700(=1773999000)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-23 02:30 -0700(=1774258200)', '2026-03-25 02:30 -0700(=1774431000)', '2026-03-27 02:30 -0700(=1774603800)', '2026-03-29 02:30 -0700(=1774776600)', '2026-03-30 02:30 -0700(=1774863000)', '2026-04-01 02:30 -0700(=1775035800)', '2026-04-03 02:30 -0700(=1775208600)', '2026-04-05 02:30 -0700(=1775381400)', '2026-04-06 02:30 -0700(=1775467800)']
+    edit then regenerate: ['2026-03-02 02:30 -0800(=1772447400)', '2026-03-04 02:30 -0800(=1772620200)', '2026-03-06 12:00 -0800(=1772827200)', '2026-03-08 03:00 -0700(=1772964000)', '2026-03-09 02:30 -0700(=1773048600)', '2026-03-11 02:30 -0700(=1773221400)', '2026-03-13 02:30 -0700(=1773394200)', '2026-03-15 02:30 -0700(=1773567000)', '2026-03-16 02:30 -0700(=1773653400)', '2026-03-18 02:30 -0700(=1773826200)', '2026-03-20 02:30 -0700(=1773999000)', '2026-03-22 02:30 -0700(=1774171800)', '2026-03-23 02:30 -0700(=1774258200)', '2026-03-25 02:30 -0700(=1774431000)', '2026-03-27 02:30 -0700(=1774603800)', '2026-03-29 02:30 -0700(=1774776600)', '2026-03-30 02:30 -0700(=1774863000)', '2026-04-01 02:30 -0700(=1775035800)', '2026-04-03 02:30 -0700(=1775208600)', '2026-04-05 12:00 -0700(=1775415600)', '2026-04-06 12:00 -0700(=1775502000)']
+[grader] FAIL R25-survivor-identity (0.8s)
+           R25-identity-Europe-Lisbon-month: occurrence e46ff15d-ed1d-475f-a630-8212935ee521 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence d1b8a688-9b1c-4f44-a3b7-d76da1c4dc34 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence 4b5e42fa-d2a5-4b65-8dee-d8b7926d1822 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: occurrence 01934ae5-3379-4596-ac05-0b3364abda1d survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R25-identity-Europe-Lisbon-month: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody
+           R25-identity-Australia-Lord_Howe-week: occurrence 308e8765-610a-4b0e-bd40-6d54321cfbd0 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+[grader] FAIL R26-money-across-operations (1.7s)
+           R26-regenerate: occurrence 707f242d-1a51-4569-9d29-d2f6e03808b5 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces
+           R26-regenerate: the rebuild wrote 4 new occurrences and the plan leaves room for 5; the difference is local dates claimed twice or claimed by nobody
+[grader] FAIL R27-interleavings (2.4s)
+           R27-scope-vs-scope setup: occurrence instants differ
+    expected ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-06 01:00 -0300(=1788667200)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)', '2026-09-11 00:00 -0300(=1789095600)', '2026-09-12 00:00 -0300(=1789182000)', '2026-09-13 00:00 -0300(=1789268400)', '2026-09-14 00:00 -0300(=1789354800)', '2026-09-15 00:00 -0300(=1789441200)', '2026-09-16 00:00 -0300(=1789527600)', '2026-09-17 00:00 -0300(=1789614000)', '2026-09-18 00:00 -0300(=1789700400)', '2026-09-19 00:00 -0300(=1789786800)', '2026-09-20 00:00 -0300(=1789873200)', '2026-09-21 00:00 -0300(=1789959600)', '2026-09-22 00:00 -0300(=1790046000)']
+    stored   ['2026-09-03 00:00 -0400(=1788408000)', '2026-09-04 00:00 -0400(=1788494400)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-05 00:00 -0400(=1788580800)', '2026-09-07 00:00 -0300(=1788750000)', '2026-09-08 00:00 -0300(=1788836400)', '2026-09-09 00:00 -0300(=1788922800)', '2026-09-10 00:00 -0300(=1789009200)', '2026-09-11 00:00 -0300(=1789095600)', '2026-09-12 00:00 -0300(=1789182000)', '2026-09-13 00:00 -0300(=1789268400)', '2026-09-14 00:00 -0300(=1789354800)', '2026-09-15 00:00 -0300(=1789441200)', '2026-09-16 00:00 -0300(=1789527600)', '2026-09-17 00:00 -0300(=1789614000)', '2026-09-18 00:00 -0300(=1789700400)', '2026-09-19 00:00 -0300(=1789786800)', '2026-09-20 00:00 -0300(=1789873200)', '2026-09-21 00:00 -0300(=1789959600)', '2026-09-22 00:00 -0300(=1790046000)']
+           R27-scope-vs-scope setup: 2 occurrences share local date 2026-09-05: ['2a5f1f35-dc47-46b1-8445-f2dec9410633', '37fce571-ea4e-40ad-9423-4951de14dad3']
+[grader] 19/27 rules passed; reward=0.0
+[grader] failed: R4-spring-forward, R16-scope-across-transition, R22-regenerate-cross, R23-scope-regenerate-extend, R24-race-on-hard-dates, R25-survivor-identity, R26-money-across-operations, R27-interleavings
+[test] reward: {"reward": 0.0, "harness_failure": 0, "rules_total": 27, "rules_passed": 19, "fixture_gate_failed": 0}

@@ -1,0 +1,85 @@
+{
+  "agent_info": {
+    "model_info": {
+      "name": "bedrock/us.anthropic.claude-opus-5",
+      "provider": "bedrock"
+    },
+    "name": "claude-code",
+    "version": "2.1.236"
+  },
+  "agent_result": {
+    "cost_usd": 7.124705000000003,
+    "metadata": null,
+    "n_cache_tokens": 7873044,
+    "n_input_tokens": 8083860,
+    "n_output_tokens": 109112,
+    "rollout_details": null
+  },
+  "config": {
+    "agent": {
+      "model_name": "bedrock/us.anthropic.claude-opus-5",
+      "name": "claude-code"
+    },
+    "job_id": "[REDACTED_SOURCE_RUN_ID]",
+    "task": {
+      "path": "[REDACTED_LOCAL_PATH]"
+    },
+    "trial_name": "sample-envelope-intake-router__p2G26g4"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-02T14:02:47.731954+00:00",
+  "id": "2671ee33-41ad-4a17-885d-2e36d77b52d7",
+  "recovery": {
+    "driver": "local",
+    "source_task_arn": "[REDACTED_AWS_ARN]",
+    "verifier_exit_code": 0
+  },
+  "started_at": "2026-09-02T13:23:10.105824+00:00",
+  "task_checksum": "recovered-from-original-sandbox",
+  "task_id": {
+    "path": "[REDACTED_LOCAL_PATH]"
+  },
+  "task_name": "sample/envelope-intake-router",
+  "trial_name": "sample-envelope-intake-router__p2G26g4",
+  "trial_uri": "file:///private[REDACTED_LOCAL_PATH]",
+  "verifier": {
+    "finished_at": "2026-09-02T14:02:47.731982+00:00",
+    "started_at": "2026-09-02T13:23:10.105824+00:00"
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0,
+      "rule_R1": 1,
+      "rule_R10": 1,
+      "rule_R11": 0,
+      "rule_R12": 1,
+      "rule_R13": 1,
+      "rule_R14": 1,
+      "rule_R15": 1,
+      "rule_R16": 1,
+      "rule_R17": 1,
+      "rule_R18": 1,
+      "rule_R19": 1,
+      "rule_R2": 1,
+      "rule_R20": 1,
+      "rule_R21": 1,
+      "rule_R22": 1,
+      "rule_R23": 1,
+      "rule_R24": 1,
+      "rule_R25": 1,
+      "rule_R26": 1,
+      "rule_R27": 1,
+      "rule_R28": 1,
+      "rule_R3": 1,
+      "rule_R4": 1,
+      "rule_R5": 1,
+      "rule_R6": 1,
+      "rule_R7": 1,
+      "rule_R8": 1,
+      "rule_R9": 1,
+      "rules_passed": 27,
+      "rules_total": 28,
+      "score": 0.0
+    }
+  }
+}

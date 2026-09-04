@@ -1,0 +1,58 @@
+{
+  "agent_info": {
+    "model_info": {
+      "name": "bedrock/us.anthropic.claude-opus-5",
+      "provider": "bedrock"
+    },
+    "name": "claude-code",
+    "version": "2.1.236"
+  },
+  "agent_result": {
+    "cost_usd": 0.8973362500000001,
+    "metadata": null,
+    "n_cache_tokens": 7872314,
+    "n_input_tokens": 8152840,
+    "n_output_tokens": 91676,
+    "rollout_details": null
+  },
+  "config": {
+    "agent": {
+      "model_name": "bedrock/us.anthropic.claude-opus-5",
+      "name": "claude-code"
+    },
+    "job_id": "[REDACTED_SOURCE_RUN_ID]",
+    "task": {
+      "path": "[REDACTED_LOCAL_PATH]"
+    },
+    "trial_name": "sample-recurring-events__bNv6rHD"
+  },
+  "exception_info": null,
+  "finished_at": "2026-09-02T13:32:41.106117+00:00",
+  "id": "5d774ca7-2420-4390-bb06-9984b4b5a6dd",
+  "recovery": {
+    "driver": "local",
+    "source_task_arn": "[REDACTED_AWS_ARN]",
+    "verifier_exit_code": 0
+  },
+  "started_at": "2026-09-02T13:31:33.363350+00:00",
+  "task_checksum": "recovered-from-original-sandbox",
+  "task_id": {
+    "path": "[REDACTED_LOCAL_PATH]"
+  },
+  "task_name": "sample/recurring-events",
+  "trial_name": "sample-recurring-events__bNv6rHD",
+  "trial_uri": "file:///private[REDACTED_LOCAL_PATH]",
+  "verifier": {
+    "finished_at": "2026-09-02T13:32:41.106134+00:00",
+    "started_at": "2026-09-02T13:31:33.363350+00:00"
+  },
+  "verifier_result": {
+    "rewards": {
+      "fixture_gate_failed": 0,
+      "harness_failure": 0,
+      "reward": 0.0,
+      "rules_passed": 25,
+      "rules_total": 27
+    }
+  }
+}

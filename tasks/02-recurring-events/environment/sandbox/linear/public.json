@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "clock": "2026-03-04T10:00:00Z",
+  "faults": {"enabled": true, "rules": []},
+  "linear": {
+    "organization": {"name": "ExampleCo", "urlKey": "ExampleCo"},
+    "viewer": "sam",
+    "users": [
+      {"key": "sam", "name": "Samara Ruiz", "displayName": "sam", "email": "sam@ExampleCo.example", "active": true},
+      {"key": "jae", "name": "Jae Kwon", "displayName": "jae", "email": "jae@ExampleCo.example", "active": true},
+      {"key": "priya", "name": "Priya Nandakumar", "displayName": "priya", "email": "priya@ExampleCo.example", "active": true},
+      {"key": "marcus", "name": "Marcus Feld", "displayName": "marcus", "email": "marcus@ExampleCo.example", "active": true},
+      {"key": "noor", "name": "Noor Haddad", "displayName": "noor", "email": "noor@ExampleCo.example", "active": true},
+      {"key": "tomas", "name": "Tomas Beltran", "displayName": "tomas", "email": "tomas@ExampleCo.example", "active": true}
+    ],
+    "teams": [
+      {
+        "key": "WEB",
+        "name": "Web",
+        "description": "Host web and the event API",
+        "members": ["sam", "jae", "marcus", "noor"],
+        "states": [
+          {"key": "web-backlog", "name": "Backlog", "type": "backlog", "position": 0, "color": "#bec2c8"},
+          {"key": "web-todo", "name": "Todo", "type": "unstarted", "position": 1, "color": "#e2e2e2"},
+          {"key": "web-progress", "name": "In Progress", "type": "started", "position": 2, "color": "#f2c94c"},
+          {"key": "web-review", "name": "In Review", "type": "started", "position": 3, "color": "#0f7488"},
+          {"key": "web-done", "name": "Done", "type": "completed", "position": 4, "color": "#5e6ad2"},
+          {"key": "web-canceled", "name": "Canceled", "type": "canceled", "position": 5, "color": "#95a2b3"}
+        ],
+        "labels": [
+          {"key": "web-series", "name": "Event series", "color": "#0f7488"},
+          {"key": "web-bug", "name": "Bug", "color": "#eb5757"}
+        ],
+        "cycles": [
+          {"number": 31, "name": "Cycle 31", "startsAt": "2026-02-02T00:00:00Z", "endsAt": "2026-02-16T00:00:00Z"},
+          {"number": 32, "name": "Cycle 32", "startsAt": "2026-02-16T00:00:00Z", "endsAt": "2026-03-02T00:00:00Z"}
+        ]
+      },
+      {
+        "key": "IOS",
+        "name": "iOS",
+        "description": "Guest and host mobile applications",
+        "members": ["priya", "tomas", "sam"],
+        "states": [
+          {"key": "ios-backlog", "name": "Backlog", "type": "backlog", "position": 0, "color": "#bec2c8"},
+          {"key": "ios-todo", "name": "Todo", "type": "unstarted", "position": 1, "color": "#e2e2e2"},
+          {"key": "ios-progress", "name": "In Progress", "type": "started", "position": 2, "color": "#f2c94c"},
+          {"key": "ios-done", "name": "Done", "type": "completed", "position": 3, "color": "#5e6ad2"},
+          {"key": "ios-canceled", "name": "Canceled", "type": "canceled", "position": 4, "color": "#95a2b3"}
+        ],
+        "labels": [{"key": "ios-host", "name": "Host tools", "color": "#4ea7fc"}],
+        "cycles": [{"number": 18, "name": "Sprint 18", "startsAt": "2026-02-16T00:00:00Z", "endsAt": "2026-03-02T00:00:00Z"}]
+      },
+      {
+        "key": "PRD",
+        "name": "Product",
+        "description": "Product discovery and planning",
+        "members": ["marcus", "sam"],
+        "states": [
+          {"key": "prd-backlog", "name": "Backlog", "type": "backlog", "position": 0, "color": "#bec2c8"},
+          {"key": "prd-planned", "name": "Planned", "type": "unstarted", "position": 1, "color": "#e2e2e2"},
+          {"key": "prd-progress", "name": "In Progress", "type": "started", "position": 2, "color": "#f2c94c"},
+          {"key": "prd-done", "name": "Done", "type": "completed", "position": 3, "color": "#5e6ad2"},
+          {"key": "prd-canceled", "name": "Canceled", "type": "canceled", "position": 4, "color": "#95a2b3"}
+        ],
+        "labels": [],
+        "cycles": []
+      }
+    ],
+    "labels": [
+      {"key": "feature", "name": "Feature", "color": "#bb87fc"},
+      {"key": "customer", "name": "Customer reported", "color": "#f2994a"},
+      {"key": "regression", "name": "Regression", "color": "#eb5757"},
+      {"key": "chore", "name": "Chore", "color": "#95a2b3"}
+    ],
+    "projects": [
+      {
+        "key": "event-series",
+        "name": "Recurring events",
+        "description": "Create a repeating event once and keep its occurrences aligned with host edits.",
+        "state": "started",
+        "lead": "marcus",
+        "teams": ["WEB", "IOS", "PRD"],
+        "startDate": "2025-11-03",
+        "targetDate": "2026-03-27",
+        "createdAt": "2025-10-20T09:00:00Z",
+        "updatedAt": "2026-03-03T16:00:00Z",
+        "labels": ["feature"],
+        "milestones": [
+          {"key": "series-api", "name": "Series API", "targetDate": "2026-03-13"},
+          {"key": "series-host", "name": "Host launch", "targetDate": "2026-03-27"}
+        ]
+      },
+      {
+        "key": "host-polish",
+        "name": "Host dashboard polish",
+        "description": "Small fixes to the screens hosts use before publishing.",
+        "state": "started",
+        "lead": "noor",
+        "teams": ["WEB"],
+        "startDate": "2026-01-12",
+        "targetDate": "2026-04-03",
+        "createdAt": "2026-01-05T10:00:00Z",
+        "updatedAt": "2026-03-02T08:00:00Z",
+        "labels": ["chore"],
+        "milestones": []
+      }
+    ],
+    "documents": [
+      {
+        "key": "series-discovery",
+        "title": "Recurring events discovery notes",
+        "content": "# Recurring events\n\nHosts describe three different actions with the word edit: change one date, change this date and later dates, or change the repeat pattern. Support must ask which one they mean.",
+        "project": "event-series",
+        "creator": "marcus",
+        "createdAt": "2025-10-23T14:00:00Z",
+        "updatedAt": "2026-02-27T09:30:00Z"
+      }
+    ],
+    "issues": [
+      {
+        "identifier": "IOS-2912",
+        "title": "Recurring events moved to urgent after competitor launch",
+        "description": "Three design partners asked again this week for a way to schedule a weekly series once. The request was deferred last year; a competitor now has it in production and two hosts named it on renewal calls.",
+        "team": "IOS",
+        "state": "ios-progress",
+        "assignee": "priya",
+        "creator": "marcus",
+        "priority": 1,
+        "estimate": 8,
+        "labels": ["ios-host", "customer"],
+        "project": "event-series",
+        "milestone": "series-host",
+        "cycle": 18,
+        "createdAt": "2026-01-08T09:10:00Z",
+        "updatedAt": "2026-03-03T16:00:00Z",
+        "startedAt": "2026-02-17T10:00:00Z",
+        "comments": [
+          {"key": "c-2912-1", "body": "The host flow needs single-night and this-and-following choices. They use both during a semester.", "user": "sam", "createdAt": "2026-01-09T11:20:00Z"},
+          {"key": "c-2912-2", "body": "Backend work is tracked in WEB-915. Keeping this ticket for the host-facing launch.", "user": "priya", "createdAt": "2026-02-17T10:08:00Z"}
+        ]
+      },
+      {
+        "identifier": "PRD-145",
+        "title": "Repeating event series",
+        "description": "Original discovery for recurring events. Paused when the first host prototype made exceptions harder to understand than creating separate events.",
+        "team": "PRD",
+        "state": "prd-canceled",
+        "assignee": "marcus",
+        "creator": "marcus",
+        "priority": 3,
+        "estimate": null,
+        "labels": ["feature"],
+        "project": "event-series",
+        "createdAt": "2024-11-04T13:00:00Z",
+        "updatedAt": "2025-02-12T10:30:00Z",
+        "canceledAt": "2025-02-12T10:30:00Z",
+        "comments": [
+          {"key": "c-145-1", "body": "Closing discovery, not saying never. The data model needs an occurrence to keep its own identity after a host moves it.", "user": "marcus", "createdAt": "2025-02-12T10:30:00Z"}
+        ]
+      },
+      {
+        "identifier": "WEB-915",
+        "title": "Restore occurrence generation and series mutation paths",
+        "description": "The event-series endpoints are wired but the engine was removed during the backend split. `GenerateOccurrences` and `ExtendOccurrences` in `internal/v2/models/event-series.go` return empty results. Regenerate, extend, scoped edit and delete under `internal/v2/services/gel/geleventseries/` were reduced with them.",
+        "team": "WEB",
+        "state": "web-progress",
+        "assignee": "jae",
+        "creator": "priya",
+        "priority": 1,
+        "estimate": 8,
+        "labels": ["web-series", "web-bug"],
+        "project": "event-series",
+        "milestone": "series-api",
+        "cycle": 32,
+        "createdAt": "2026-02-11T15:20:00Z",
+        "updatedAt": "2026-03-04T08:40:00Z",
+        "startedAt": "2026-02-18T09:00:00Z",
+        "branchName": "jae/web-915-event-series-engine",
+        "comments": [
+          {"key": "c-915-1", "body": "The surrounding seams still exist: `CreateOccurrencesBatch`, `clearUnpublishedOccurrences` and `UpdateOccurrence` show how records are written and which mutations already have callers.", "user": "jae", "createdAt": "2026-02-18T09:15:00Z"},
+          {"key": "c-915-2", "body": "Please exercise this against Gel rather than replacing the service shape. The routes and stored series are already in use.", "user": "noor", "createdAt": "2026-02-20T14:12:00Z"}
+        ]
+      },
+      {
+        "identifier": "WEB-902",
+        "title": "Event timezone missing from CSV export",
+        "description": "The host export prints local dates without naming the event timezone.",
+        "team": "WEB",
+        "state": "web-todo",
+        "assignee": "noor",
+        "creator": "sam",
+        "priority": 3,
+        "labels": ["web-bug"],
+        "project": "host-polish",
+        "cycle": 32,
+        "createdAt": "2026-02-02T11:00:00Z",
+        "updatedAt": "2026-02-26T09:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-906",
+        "title": "Search index keeps canceled events for a day",
+        "description": "Typesense still returns an event after the host cancels it.",
+        "team": "WEB",
+        "state": "web-backlog",
+        "creator": "noor",
+        "priority": 3,
+        "labels": ["web-bug"],
+        "createdAt": "2026-02-06T10:10:00Z",
+        "updatedAt": "2026-02-06T10:10:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "IOS-2877",
+        "title": "Date picker opens one month behind",
+        "description": "Editing a December event opens the host picker in November.",
+        "team": "IOS",
+        "state": "ios-done",
+        "assignee": "tomas",
+        "creator": "sam",
+        "priority": 3,
+        "labels": ["ios-host"],
+        "createdAt": "2025-12-02T09:00:00Z",
+        "updatedAt": "2026-01-14T16:00:00Z",
+        "completedAt": "2026-01-14T16:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-921",
+        "title": "Campus backfill skips archived organizations",
+        "description": "The location backfill leaves archived campus records untouched.",
+        "team": "WEB",
+        "state": "web-backlog",
+        "creator": "jae",
+        "priority": 4,
+        "labels": ["chore"],
+        "createdAt": "2026-02-19T13:40:00Z",
+        "updatedAt": "2026-02-19T13:40:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "IOS-2920",
+        "title": "Push reminder uses the previous event title",
+        "description": "Duplicating an event leaves the old title in the reminder payload.",
+        "team": "IOS",
+        "state": "ios-todo",
+        "assignee": "priya",
+        "creator": "marcus",
+        "priority": 2,
+        "labels": ["ios-host", "regression"],
+        "createdAt": "2026-02-21T17:10:00Z",
+        "updatedAt": "2026-03-01T08:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-927",
+        "title": "Receipt fee extraction script rounds half cents",
+        "description": "Finance found a one-cent discrepancy in the transaction fee export.",
+        "team": "WEB",
+        "state": "web-review",
+        "assignee": "noor",
+        "creator": "sam",
+        "priority": 2,
+        "labels": ["web-bug"],
+        "cycle": 32,
+        "createdAt": "2026-02-23T12:00:00Z",
+        "updatedAt": "2026-03-03T10:00:00Z",
+        "startedAt": "2026-02-25T09:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "PRD-161",
+        "title": "Guest waitlist discovery",
+        "description": "Explore promoting guests when capacity becomes available.",
+        "team": "PRD",
+        "state": "prd-backlog",
+        "creator": "marcus",
+        "priority": 0,
+        "labels": ["feature"],
+        "createdAt": "2026-02-24T10:00:00Z",
+        "updatedAt": "2026-02-24T10:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-931",
+        "title": "Host dashboard flashes stale attendee total",
+        "description": "The cached count appears briefly before the current query resolves.",
+        "team": "WEB",
+        "state": "web-todo",
+        "assignee": "noor",
+        "creator": "sam",
+        "priority": 3,
+        "labels": ["web-bug"],
+        "project": "host-polish",
+        "cycle": 32,
+        "createdAt": "2026-02-27T09:10:00Z",
+        "updatedAt": "2026-03-03T13:20:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "IOS-2931",
+        "title": "Host app loses draft ticket color",
+        "description": "Returning to ticket setup resets the selected color.",
+        "team": "IOS",
+        "state": "ios-backlog",
+        "creator": "priya",
+        "priority": 4,
+        "labels": ["ios-host"],
+        "createdAt": "2026-03-01T14:20:00Z",
+        "updatedAt": "2026-03-01T14:20:00Z",
+        "comments": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "agent": "mini-swe-agent",
+  "agent_version": "2.4.5",
+  "attempt": 8,
+  "canonical_attempt_id": "11-store-cutover__trial-08",
+  "controller_call_id": "fc-01M1PH7H1R2W5R3QS9H0662TP5",
+  "deadline_rescue": true,
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-04T15:40:14.110978+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "bedrock/global.anthropic.claude-fable-5-1",
+  "phase": "fable51-mini-swe",
+  "prior_attempts": [
+    {
+      "agent": "mini-swe-agent",
+      "agent_version": "2.4.5",
+      "attempt": 8,
+      "canonical_attempt_id": "11-store-cutover__trial-08",
+      "controller_call_id": "fc-01M1N18EVRH0DW4SGEGBYSN16Z",
+      "launched_at": "2026-09-04T01:41:54.068148+00:00",
+      "max_tokens": 32768,
+      "max_turns": 200,
+      "model": "bedrock/global.anthropic.claude-fable-5-1",
+      "phase": "fable51-mini-swe",
+      "route": "bedrock/global.anthropic.claude-fable-5-1",
+      "status": "launched",
+      "task": "11-store-cutover",
+      "wave": "deadline-20260904T014153Z"
+    }
+  ],
+  "route": "bedrock/global.anthropic.claude-fable-5-1",
+  "status": "launched",
+  "task": "11-store-cutover",
+  "wave": "deadline-20260904T154013Z"
+}

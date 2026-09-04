@@ -1,0 +1,13 @@
+=== Snapshot the deliverable ===
+=== Gmail workspace: keep the consultation journal, stop the daemon ===
+gmail journal: 23 calls recorded
+=== Apply the schema to the graded store ===
+npm run migrate failed (exit 1); trying the module directly
+=== Provision the desks ===
+=== Migrate again, over the history ===
+second migrate exit: 1
+=== Start the submitted service on port 8421 ===
+=== Drive the graded run ===
+driver diagnostic exit: 0
+=== Score (root, env -i, no submitted code loaded) ===
+FAIL: no route accepted a delivery and answered with an outcome

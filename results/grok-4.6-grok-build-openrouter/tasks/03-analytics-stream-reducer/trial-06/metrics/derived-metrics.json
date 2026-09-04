@@ -1,0 +1,11 @@
+{
+  "acp_summary_published_sha256": "68e71ef358a007b3a2cd9f5fd813c097364a2e7a7009e8ba8b0338e2e9966b7b",
+  "omitted_native_logs": "Raw event/session logs used only for metric derivation are intentionally omitted.",
+  "output_tokens": 336180,
+  "source": "Grok Build ACP native evidence",
+  "turn_completed_elapsed_seconds": [
+    110.291,
+    5511.891
+  ],
+  "wall_clock_seconds": 5511.891
+}

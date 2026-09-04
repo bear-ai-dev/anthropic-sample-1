@@ -1,0 +1,11 @@
+verify: snapshotting the deliverable
+verify: deliverable: 33 file(s), root:root 700
+=== GitHub workspace: keep the consultation journal, stop the daemon ===
+github journal: 77 calls recorded
+verify: installing the graded ledger
+verify: restarting the storage service
+verify: building the submission
+verify: driving the migration
+verify: judging what happened
+verify: rules that did not hold: cutover/R1
+verify: reward: 0.0

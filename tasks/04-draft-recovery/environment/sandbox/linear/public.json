@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "clock": "2026-03-04T10:00:00Z",
+  "faults": {"enabled": true, "rules": []},
+  "linear": {
+    "organization": {"name": "ExampleCo", "urlKey": "ExampleCo"},
+    "viewer": "marcus",
+    "users": [
+      {"key": "marcus", "name": "Marcus Feld", "displayName": "marcus", "email": "marcus@ExampleCo.example", "active": true},
+      {"key": "delia", "name": "Delia Okonkwo", "displayName": "delia", "email": "delia@ExampleCo.example", "active": true},
+      {"key": "sam", "name": "Samara Ruiz", "displayName": "sam", "email": "sam@ExampleCo.example", "active": true},
+      {"key": "priya", "name": "Priya Nandakumar", "displayName": "priya", "email": "priya@ExampleCo.example", "active": true},
+      {"key": "tomas", "name": "Tomas Beltran", "displayName": "tomas", "email": "tomas@ExampleCo.example", "active": true},
+      {"key": "noor", "name": "Noor Haddad", "displayName": "noor", "email": "noor@ExampleCo.example", "active": true}
+    ],
+    "teams": [
+      {
+        "key": "WEB",
+        "name": "Web",
+        "description": "Host web and event authoring",
+        "members": ["marcus", "delia", "sam", "noor"],
+        "states": [
+          {"key": "web-backlog", "name": "Backlog", "type": "backlog", "position": 0, "color": "#bec2c8"},
+          {"key": "web-todo", "name": "Todo", "type": "unstarted", "position": 1, "color": "#e2e2e2"},
+          {"key": "web-progress", "name": "In Progress", "type": "started", "position": 2, "color": "#f2c94c"},
+          {"key": "web-review", "name": "In Review", "type": "started", "position": 3, "color": "#0f7488"},
+          {"key": "web-done", "name": "Done", "type": "completed", "position": 4, "color": "#5e6ad2"},
+          {"key": "web-canceled", "name": "Canceled", "type": "canceled", "position": 5, "color": "#95a2b3"}
+        ],
+        "labels": [
+          {"key": "web-create", "name": "Create event", "color": "#4ea7fc"},
+          {"key": "web-storage", "name": "Browser storage", "color": "#0f7488"},
+          {"key": "web-bug", "name": "Bug", "color": "#eb5757"}
+        ],
+        "cycles": [
+          {"number": 39, "name": "Cycle 39", "startsAt": "2026-02-02T00:00:00Z", "endsAt": "2026-02-16T00:00:00Z"},
+          {"number": 40, "name": "Cycle 40", "startsAt": "2026-02-16T00:00:00Z", "endsAt": "2026-03-02T00:00:00Z"}
+        ]
+      },
+      {
+        "key": "IOS",
+        "name": "iOS",
+        "description": "Guest and host mobile applications",
+        "members": ["priya", "tomas", "sam", "marcus"],
+        "states": [
+          {"key": "ios-backlog", "name": "Backlog", "type": "backlog", "position": 0, "color": "#bec2c8"},
+          {"key": "ios-todo", "name": "Todo", "type": "unstarted", "position": 1, "color": "#e2e2e2"},
+          {"key": "ios-progress", "name": "In Progress", "type": "started", "position": 2, "color": "#f2c94c"},
+          {"key": "ios-done", "name": "Done", "type": "completed", "position": 3, "color": "#5e6ad2"}
+        ],
+        "labels": [{"key": "ios-host", "name": "Host tools", "color": "#4ea7fc"}],
+        "cycles": [{"number": 28, "name": "Sprint 28", "startsAt": "2026-02-16T00:00:00Z", "endsAt": "2026-03-02T00:00:00Z"}]
+      }
+    ],
+    "labels": [
+      {"key": "customer", "name": "Customer reported", "color": "#f2994a"},
+      {"key": "regression", "name": "Regression", "color": "#eb5757"},
+      {"key": "privacy", "name": "Privacy", "color": "#b60205"},
+      {"key": "feature", "name": "Feature", "color": "#bb87fc"},
+      {"key": "chore", "name": "Chore", "color": "#95a2b3"}
+    ],
+    "projects": [
+      {
+        "key": "create-revamp",
+        "name": "Create Event Revamp",
+        "description": "One authoring flow across create, edit and duplicate, with hosts able to return to unfinished work.",
+        "state": "started",
+        "lead": "marcus",
+        "teams": ["WEB", "IOS"],
+        "startDate": "2025-06-16",
+        "targetDate": "2026-03-20",
+        "createdAt": "2025-06-11T11:05:00Z",
+        "updatedAt": "2026-03-04T08:15:00Z",
+        "labels": ["web-create", "feature"],
+        "milestones": [
+          {"key": "form-v2", "name": "Form v2", "targetDate": "2025-10-31"},
+          {"key": "drafts", "name": "Draft recovery", "targetDate": "2026-03-13"}
+        ]
+      },
+      {
+        "key": "host-polish",
+        "name": "Host dashboard polish",
+        "description": "Small improvements outside the authoring flow.",
+        "state": "started",
+        "lead": "noor",
+        "teams": ["WEB"],
+        "startDate": "2026-01-12",
+        "targetDate": "2026-04-10",
+        "createdAt": "2026-01-05T09:00:00Z",
+        "updatedAt": "2026-03-01T10:00:00Z",
+        "labels": ["chore"],
+        "milestones": []
+      }
+    ],
+    "documents": [
+      {
+        "key": "draft-support",
+        "title": "Unfinished event support notes",
+        "content": "# Unfinished events\n\nAsk whether the host was creating, editing or duplicating, which account they were using, and whether the missing work returned after reopening the same event. Never ask them to send a local file again just to reproduce a browser-storage problem.",
+        "project": "create-revamp",
+        "creator": "sam",
+        "createdAt": "2025-09-18T12:00:00Z",
+        "updatedAt": "2026-02-26T09:00:00Z"
+      }
+    ],
+    "issues": [
+      {
+        "identifier": "IOS-590",
+        "title": "Save unfinished events",
+        "description": "Hosts keep asking to leave event creation and return without losing what they entered. The request has been deferred into each version of the create-event redesign.",
+        "team": "IOS",
+        "state": "ios-backlog",
+        "assignee": "priya",
+        "creator": "sam",
+        "priority": 2,
+        "estimate": 5,
+        "labels": ["ios-host", "customer", "feature"],
+        "project": "create-revamp",
+        "createdAt": "2024-10-08T15:20:00Z",
+        "updatedAt": "2025-12-02T10:40:00Z",
+        "comments": [
+          {"key": "c-590-1", "body": "This is the first request I can find, not the first time support heard it.", "user": "sam", "createdAt": "2025-12-02T10:40:00Z"}
+        ]
+      },
+      {
+        "identifier": "IOS-1298",
+        "title": "Host lost an event after following a link away",
+        "description": "A host spent about twenty minutes on an event, followed the payout setup link, and returned to an empty form. They did not publish and there was no server record to recover.",
+        "team": "IOS",
+        "state": "ios-todo",
+        "assignee": "priya",
+        "creator": "sam",
+        "priority": 2,
+        "estimate": 3,
+        "labels": ["ios-host", "customer"],
+        "project": "create-revamp",
+        "milestone": "drafts",
+        "cycle": 28,
+        "createdAt": "2025-05-19T08:30:00Z",
+        "updatedAt": "2026-02-20T14:00:00Z",
+        "comments": [
+          {"key": "c-1298-1", "body": "Same complaint after a tab crash and after a laptop slept overnight. These are one recovery problem, not three navigation bugs.", "user": "marcus", "createdAt": "2026-01-12T11:10:00Z"}
+        ]
+      },
+      {
+        "identifier": "IOS-1396",
+        "title": "Create-event work disappeared while dropping a map pin",
+        "description": "A host left the form to correct the venue location, came back, and every field was reset. This is another unfinished-work report attached to the revamp.",
+        "team": "IOS",
+        "state": "ios-progress",
+        "assignee": "tomas",
+        "creator": "sam",
+        "priority": 1,
+        "estimate": 3,
+        "labels": ["ios-host", "customer"],
+        "project": "create-revamp",
+        "milestone": "drafts",
+        "cycle": 28,
+        "createdAt": "2025-08-04T17:40:00Z",
+        "updatedAt": "2026-03-01T12:10:00Z",
+        "startedAt": "2026-02-19T09:00:00Z",
+        "comments": [
+          {"key": "c-1396-1", "body": "The map crash was fixed separately. Keeping this open because the form still has no durable recovery.", "user": "tomas", "createdAt": "2026-02-19T09:15:00Z"}
+        ]
+      },
+      {
+        "identifier": "WEB-565",
+        "title": "Replace the old event-draft layer for form v2",
+        "description": "`useEventDraft` still assumes one draft per person and writes records from the form generation before the current create flow. It also predates gallery and document fields. Create, edit and duplicate all reach the same hook, while `src/data/storage/draftStorage.ts` is the asynchronous durable-storage port.",
+        "team": "WEB",
+        "state": "web-progress",
+        "assignee": "delia",
+        "creator": "marcus",
+        "priority": 1,
+        "estimate": 8,
+        "labels": ["web-create", "web-storage", "web-bug"],
+        "project": "create-revamp",
+        "milestone": "drafts",
+        "cycle": 40,
+        "createdAt": "2026-02-09T10:00:00Z",
+        "updatedAt": "2026-03-04T08:15:00Z",
+        "startedAt": "2026-02-17T09:20:00Z",
+        "branchName": "delia/web-565-draft-recovery",
+        "comments": [
+          {"key": "c-565-1", "body": "There is a browser storage export under `sandbox/` from the release transition. It contains both old and current records; treat it as evidence, not a schema to copy blindly.", "user": "delia", "createdAt": "2026-02-17T09:35:00Z"},
+          {"key": "c-565-2", "body": "Do not bypass `draftStorage.ts`. Shared, delayed and failed operations are normal for the adapters behind it.", "user": "noor", "createdAt": "2026-02-20T13:00:00Z"}
+        ]
+      },
+      {
+        "identifier": "WEB-523",
+        "title": "Form v2 basic event fields",
+        "description": "Move title, dates, location and visibility into the shared create-event form.",
+        "team": "WEB",
+        "state": "web-done",
+        "assignee": "delia",
+        "creator": "marcus",
+        "priority": 2,
+        "labels": ["web-create", "feature"],
+        "project": "create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-06-18T10:00:00Z",
+        "updatedAt": "2025-08-12T15:00:00Z",
+        "completedAt": "2025-08-12T15:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-524",
+        "title": "Form v2 ticket editor",
+        "description": "Bring ticket types and restrictions into the shared authoring flow.",
+        "team": "WEB",
+        "state": "web-done",
+        "assignee": "delia",
+        "creator": "marcus",
+        "priority": 2,
+        "labels": ["web-create", "feature"],
+        "project": "create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-06-25T09:00:00Z",
+        "updatedAt": "2025-08-20T12:00:00Z",
+        "completedAt": "2025-08-20T12:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-530",
+        "title": "Add flyer and gallery fields to form v2",
+        "description": "The new form supports hosted flyer URLs and gallery entries.",
+        "team": "WEB",
+        "state": "web-done",
+        "assignee": "delia",
+        "creator": "marcus",
+        "priority": 2,
+        "labels": ["web-create", "feature"],
+        "project": "create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-07-11T10:00:00Z",
+        "updatedAt": "2025-09-03T14:00:00Z",
+        "completedAt": "2025-09-03T14:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-532",
+        "title": "Waiver document upload",
+        "description": "Allow a host to attach a waiver while creating an event.",
+        "team": "WEB",
+        "state": "web-done",
+        "assignee": "noor",
+        "creator": "marcus",
+        "priority": 2,
+        "labels": ["web-create", "feature"],
+        "project": "create-revamp",
+        "milestone": "form-v2",
+        "createdAt": "2025-07-24T11:00:00Z",
+        "updatedAt": "2025-09-10T16:00:00Z",
+        "completedAt": "2025-09-10T16:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-598",
+        "title": "Checkout button says payement",
+        "description": "The typo has been visible since the summer redesign.",
+        "team": "WEB",
+        "state": "web-done",
+        "assignee": "noor",
+        "creator": "sam",
+        "priority": 4,
+        "labels": ["web-bug"],
+        "createdAt": "2025-09-11T12:00:00Z",
+        "updatedAt": "2025-11-25T09:00:00Z",
+        "completedAt": "2025-11-25T09:00:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "IOS-1455",
+        "title": "Crash dropping a pin outside the US",
+        "description": "A missing postal code crashes the location editor.",
+        "team": "IOS",
+        "state": "ios-done",
+        "assignee": "tomas",
+        "creator": "priya",
+        "priority": 1,
+        "labels": ["ios-host"],
+        "project": "create-revamp",
+        "createdAt": "2025-09-24T13:15:00Z",
+        "updatedAt": "2025-10-08T15:20:00Z",
+        "completedAt": "2025-10-08T15:20:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-607",
+        "title": "Date picker jumps to today on edit",
+        "description": "Opening a scheduled event and changing another field resets its date.",
+        "team": "WEB",
+        "state": "web-todo",
+        "assignee": "delia",
+        "creator": "sam",
+        "priority": 1,
+        "labels": ["web-create", "regression"],
+        "project": "create-revamp",
+        "cycle": 40,
+        "createdAt": "2025-09-30T19:30:00Z",
+        "updatedAt": "2026-01-30T08:10:00Z",
+        "comments": []
+      },
+      {
+        "identifier": "WEB-633",
+        "title": "Organization invite opens the wrong workspace",
+        "description": "Two new officers landed in a previous organization after accepting an invite.",
+        "team": "WEB",
+        "state": "web-done",
+        "assignee": "noor",
+        "creator": "marcus",
+        "priority": 1,
+        "labels": ["regression"],
+        "project": "host-polish",
+        "createdAt": "2026-01-06T09:15:00Z",
+        "updatedAt": "2026-01-16T17:30:00Z",
+        "completedAt": "2026-01-16T17:30:00Z",
+        "comments": []
+      }
+    ]
+  }
+}

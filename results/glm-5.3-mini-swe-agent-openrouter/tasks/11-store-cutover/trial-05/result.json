@@ -1,0 +1,39 @@
+{
+  "finished_at": "2026-09-03T01:03:31.151108",
+  "id": "56d88443-3414-46a6-83e9-e53b37c0fba5",
+  "n_total_trials": 1,
+  "started_at": "2026-09-02T23:17:47.412362",
+  "stats": {
+    "cost_usd": 0.0,
+    "evals": {
+      "mini-swe-agent__z-ai/glm-5.3__adhoc": {
+        "exception_stats": {},
+        "metrics": [
+          {
+            "mean": 0.0
+          }
+        ],
+        "n_errors": 0,
+        "n_trials": 1,
+        "pass_at_k": {},
+        "reward_stats": {
+          "reward": {
+            "0.0": [
+              "11-store-cutover__4b4Ddev"
+            ]
+          }
+        }
+      }
+    },
+    "n_cache_tokens": 35419488,
+    "n_cancelled_trials": 0,
+    "n_completed_trials": 1,
+    "n_errored_trials": 0,
+    "n_input_tokens": 37349787,
+    "n_output_tokens": 250454,
+    "n_pending_trials": 0,
+    "n_retries": 0,
+    "n_running_trials": 0
+  },
+  "updated_at": "2026-09-03T01:03:31.151108"
+}

@@ -1,0 +1,17 @@
+Linear workspace
+
+This box serves a copy of the team's Linear data on 127.0.0.1:4570. It is
+context: nothing here is graded and nothing in it is a deliverable.
+
+Two ways in, same tools either way:
+
+  linear tools                         list the tools and their arguments
+  linear <tool> --name value ...       call one from a shell, e.g.
+  linear list_issues --assignee me --limit 10
+
+and, where the harness supports MCP, an MCP server named `linear` offering the
+same tools.
+
+public.json is the data being served. Restart with your own copy if you want:
+
+  PYTHONPATH=/opt/mocklinear python3 -m mocklinear --scenario my.json --host 127.0.0.1 --port 4570 --seed 7

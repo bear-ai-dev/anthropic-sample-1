@@ -1,0 +1,7 @@
+=== Linear workspace: keep the consultation journal, stop the daemon ===
+linear journal: 30 calls recorded
+=== Snapshot the deliverable ===
+[test] deliverable: 1583 files
+[harness] api ready after 0s
+[harness] api pid(s) 2681 verified as this build (18:21529)
+[test] reward: {"reward": 0.0}

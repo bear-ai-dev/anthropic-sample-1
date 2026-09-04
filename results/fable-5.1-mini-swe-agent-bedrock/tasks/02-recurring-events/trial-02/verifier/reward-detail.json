@@ -1,0 +1,149 @@
+{
+  "failed_rules": [
+    "R19-extend-after-regenerate",
+    "R25-survivor-identity"
+  ],
+  "fixture_gate": [],
+  "passed_rules": [
+    "R1-generate-shapes",
+    "R2-selected-days",
+    "R3-month-clamp",
+    "R4-spring-forward",
+    "R5-fall-back",
+    "R6-occurrence-count",
+    "R7-end-date",
+    "R8-protect-published",
+    "R9-edited-survives",
+    "R10-extend",
+    "R11-concurrent-regenerate",
+    "R12-publish-then-regenerate",
+    "R13-delete-with-sales",
+    "R14-scope-steps-over-paid",
+    "R15-scope-over-month-end",
+    "R16-scope-across-transition",
+    "R17-scope-then-regenerate",
+    "R18-extend-fills-gap",
+    "R20-race-scope-vs-regenerate",
+    "R21-zone-by-configuration",
+    "R22-regenerate-cross",
+    "R23-scope-regenerate-extend",
+    "R24-race-on-hard-dates",
+    "R26-money-across-operations",
+    "R27-interleavings"
+  ],
+  "reward": 0.0,
+  "rules": {
+    "R1-generate-shapes": {
+      "complaints": [],
+      "seconds": 0.4
+    },
+    "R10-extend": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R11-concurrent-regenerate": {
+      "complaints": [],
+      "seconds": 2.7
+    },
+    "R12-publish-then-regenerate": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R13-delete-with-sales": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R14-scope-steps-over-paid": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R15-scope-over-month-end": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R16-scope-across-transition": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R17-scope-then-regenerate": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R18-extend-fills-gap": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R19-extend-after-regenerate": {
+      "complaints": [
+        "R19-extend-regen-added: occurrence instants differ\n    expected ['2026-05-20 19:00 -0700(=1779328800)', '2026-06-03 19:00 -0700(=1780538400)']\n    stored   ['2026-07-08 19:00 -0700(=1783562400)', '2026-07-22 19:00 -0700(=1784772000)']"
+      ],
+      "seconds": 0.3
+    },
+    "R2-selected-days": {
+      "complaints": [],
+      "seconds": 0.0
+    },
+    "R20-race-scope-vs-regenerate": {
+      "complaints": [],
+      "seconds": 4.4
+    },
+    "R21-zone-by-configuration": {
+      "complaints": [],
+      "seconds": 6.0
+    },
+    "R22-regenerate-cross": {
+      "complaints": [],
+      "seconds": 1.9
+    },
+    "R23-scope-regenerate-extend": {
+      "complaints": [],
+      "seconds": 2.1
+    },
+    "R24-race-on-hard-dates": {
+      "complaints": [],
+      "seconds": 2.2
+    },
+    "R25-survivor-identity": {
+      "complaints": [
+        "R25-identity-Asia-Kathmandu-month: setup: editing 9d6422a3-45ef-4f07-b224-acfbb77106bc returned HTTP 409 {\"result\": false, \"error\": {\"id\": \"\", \"debugId\": \"\", \"message\": \"occurrence protected\", \"requestData\": null, \"userId\": null, \"dateCreated\": 0, \"platform\": \"\", \"build\": 0, \"display\": \"This night already has guests or paid tickets and can't be changed\", \"subDisplay\": \"Refund or cancel its tickets first if you need to move or remove it\"}}"
+      ],
+      "seconds": 1.6
+    },
+    "R26-money-across-operations": {
+      "complaints": [],
+      "seconds": 1.3
+    },
+    "R27-interleavings": {
+      "complaints": [],
+      "seconds": 2.9
+    },
+    "R3-month-clamp": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R4-spring-forward": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R5-fall-back": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R6-occurrence-count": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R7-end-date": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R8-protect-published": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R9-edited-survives": {
+      "complaints": [],
+      "seconds": 0.2
+    }
+  }
+}

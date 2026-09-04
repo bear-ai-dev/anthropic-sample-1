@@ -1,0 +1,39 @@
+{
+  "finished_at": "2026-09-03T07:01:29.910832",
+  "id": "51845022-874d-4c23-bbe2-f75e745a4b51",
+  "n_total_trials": 1,
+  "started_at": "2026-09-03T05:48:44.676986",
+  "stats": {
+    "cost_usd": 0.0,
+    "evals": {
+      "mini-swe-agent__x-ai/grok-4.6__adhoc": {
+        "exception_stats": {},
+        "metrics": [
+          {
+            "mean": 0.0
+          }
+        ],
+        "n_errors": 0,
+        "n_trials": 1,
+        "pass_at_k": {},
+        "reward_stats": {
+          "reward": {
+            "0": [
+              "12-readmodel-rebuild__W8mbyCG"
+            ]
+          }
+        }
+      }
+    },
+    "n_cache_tokens": 5114624,
+    "n_cancelled_trials": 0,
+    "n_completed_trials": 1,
+    "n_errored_trials": 0,
+    "n_input_tokens": 5745521,
+    "n_output_tokens": 227591,
+    "n_pending_trials": 0,
+    "n_retries": 0,
+    "n_running_trials": 0
+  },
+  "updated_at": "2026-09-03T07:01:29.910832"
+}

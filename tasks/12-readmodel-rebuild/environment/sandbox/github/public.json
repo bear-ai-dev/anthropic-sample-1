@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "clock": "2026-03-04T10:00:00Z",
+  "faults": {"enabled": true, "rules": []},
+  "github": {
+    "viewer": "rhea-menon",
+    "users": [
+      {"login": "rhea-menon", "name": "Rhea Menon", "email": "rhea.menon@ExampleCo.example"},
+      {"login": "nadia-okafor", "name": "Nadia Okafor", "email": "nadia.okafor@ExampleCo.example"},
+      {"login": "jiwon-park", "name": "Jiwon Park", "email": "jiwon.park@ExampleCo.example"},
+      {"login": "sofia-braga", "name": "Sofia Braga", "email": "sofia.braga@ExampleCo.example"},
+      {"login": "harun-yildiz", "name": "Harun Yildiz", "email": "harun.yildiz@ExampleCo.example"},
+      {"login": "ines-duarte", "name": "Ines Duarte", "email": "ines.duarte@ExampleCo.example"}
+    ],
+    "repos": [
+      {
+        "owner": "ExampleCo",
+        "name": "event-feed",
+        "default_branch": "main",
+        "description": "Append-only deliveries and the projection generations that serve reporting reads.",
+        "labels": [
+          {"name": "area/projections", "color": "1d76db", "description": "Projection folds and generation storage"},
+          {"name": "area/rebuild", "color": "5319e7", "description": "Online projection rebuild and cutover"},
+          {"name": "area/api", "color": "0e8a16", "description": "Public query and event routes"},
+          {"name": "ops", "color": "b60205", "description": "Operational work and incidents"},
+          {"name": "docs", "color": "0075ca", "description": "Documentation and captured runs"},
+          {"name": "ci", "color": "fbca04", "description": "Build and test infrastructure"},
+          {"name": "reporting", "color": "c2e0c6", "description": "Reporting requirements"}
+        ],
+        "milestones": [
+          {"number": 1, "title": "generation v1", "state": "closed", "due_on": "2025-06-20T00:00:00Z"},
+          {"number": 2, "title": "generation v2 schema", "state": "closed", "due_on": "2026-02-20T00:00:00Z"},
+          {"number": 3, "title": "v2 online cutover", "state": "open", "due_on": "2026-04-03T00:00:00Z"}
+        ],
+        "commits": [
+          {
+            "key": "c1",
+            "message": "feed: append deliveries and serve generation v1",
+            "author": "jiwon-park",
+            "date": "2025-05-19T09:00:00Z",
+            "parents": [],
+            "files": [
+              {
+                "path": "README.md",
+                "status": "added",
+                "content": "# event-feed\n\nThe service keeps an append-only delivery log in Gel and serves reads from a named projection generation. Redis holds the active generation alias.\n"
+              },
+              {
+                "path": "src/projections/v1/projector.ts",
+                "status": "added",
+                "content": "export const utcDayBucket = (occurredAt: string): string => occurredAt.slice(0, 10);\n"
+              }
+            ]
+          },
+          {
+            "key": "c2",
+            "message": "ops: keep the v0 to v1 cutover record\n\nPR #576",
+            "author": "rhea-menon",
+            "date": "2025-06-16T11:20:00Z",
+            "parents": ["c1"],
+            "files": [
+              {
+                "path": "ops/2025-06-14/README.md",
+                "status": "added",
+                "content": "# 2025-06-14 projection cutover\n\nThe directory contains the operator journal, two parity runs, routing observations, reads in flight during the switch, drain progress and the retirement record. It is captured evidence, not a runbook.\n"
+              }
+            ]
+          },
+          {
+            "key": "c3",
+            "message": "projections: declare generation v2 for reporting\n\nPR #578",
+            "author": "nadia-okafor",
+            "date": "2026-01-27T14:10:00Z",
+            "parents": ["c2"],
+            "files": [
+              {
+                "path": "gel/dbschema/default.gel",
+                "status": "modified",
+                "content": "module default { type RebuildMeta; type FeedByUserV1; type DailyCountV1; type FeedByUserV2; type DailyCountV2; type OrgDailyV2; type TagDailyV2; }\n"
+              },
+              {
+                "path": "config/parity-queries.json",
+                "status": "added",
+                "content": "{\"queries\":[\"feed-by-user\",\"daily-count\",\"org-daily\",\"tag-daily\"]}\n"
+              }
+            ]
+          },
+          {
+            "key": "c4",
+            "message": "projections: add the v2 delivery fold\n\nPR #581",
+            "author": "jiwon-park",
+            "date": "2026-02-03T10:45:00Z",
+            "parents": ["c3"],
+            "files": [
+              {
+                "path": "src/projections/v2/projector.ts",
+                "status": "added",
+                "content": "export const newYorkDayBucket = (occurredAt: string): string => new Intl.DateTimeFormat(\"en-CA\", { timeZone: \"America/New_York\" }).format(new Date(occurredAt));\n"
+              }
+            ]
+          },
+          {
+            "key": "c5",
+            "message": "rebuild: add the operator step route as a stub",
+            "author": "harun-yildiz",
+            "date": "2026-02-11T09:30:00Z",
+            "parents": ["c4"],
+            "files": [
+              {
+                "path": "src/rebuild/orchestrator.ts",
+                "status": "added",
+                "content": "export const stepRebuild = async (): Promise<never> => { throw new Error(\"not implemented\"); };\n"
+              },
+              {
+                "path": "src/routes/admin.ts",
+                "status": "modified",
+                "content": "router.post(\"/admin/projections/rebuild/step\", async (_request, response) => response.status(501).json({ error: \"not implemented\" }));\n"
+              }
+            ]
+          },
+          {
+            "key": "c6",
+            "message": "ci: cache npm downloads on the shared runner",
+            "author": "ines-duarte",
+            "date": "2026-02-14T12:00:00Z",
+            "parents": ["c5"],
+            "files": [
+              {
+                "path": ".github/workflows/ci.yml",
+                "status": "modified",
+                "content": "name: ci\non: [push, pull_request]\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - run: npm ci\n      - run: npm test\n"
+              }
+            ]
+          },
+          {
+            "key": "c7",
+            "message": "api: reject malformed delivery identifiers",
+            "author": "sofia-braga",
+            "date": "2026-02-20T15:20:00Z",
+            "parents": ["c6"],
+            "files": [
+              {
+                "path": "src/routes/events.ts",
+                "status": "modified",
+                "content": "export const isDeliveryId = (value: string): boolean => /^del_[a-z0-9]+$/.test(value);\n"
+              }
+            ]
+          },
+          {
+            "key": "c8",
+            "message": "docs: point operators at the previous cutover",
+            "author": "rhea-menon",
+            "date": "2026-02-26T10:10:00Z",
+            "parents": ["c7"],
+            "files": [
+              {
+                "path": "README.md",
+                "status": "modified",
+                "content": "# event-feed\n\nThe service keeps an append-only delivery log in Gel and serves reads from a named projection generation. Redis holds the active generation alias.\n\nThe last projection cutover is preserved under `ops/2025-06-14/`.\n"
+              }
+            ]
+          }
+        ],
+        "branches": [
+          {"name": "main", "head": "c8"},
+          {"name": "v2-schema", "head": "c3"},
+          {"name": "v2-projector", "head": "c4"}
+        ],
+        "tags": [{"name": "v1.4.0", "commit": "c2"}],
+        "releases": [
+          {
+            "tag": "v1.4.0",
+            "name": "Generation v1",
+            "body": "Append-only intake, v1 projections, Redis routing and the captured v0 to v1 cutover.",
+            "created_at": "2025-06-20T16:00:00Z"
+          }
+        ],
+        "issues": [
+          {
+            "number": 574,
+            "title": "Reporting days disagree with New York finance exports",
+            "body": "Generation v1 groups deliveries by UTC date. Reporting closes a day in America/New_York, so late-evening deliveries appear on the following day in the service.",
+            "state": "open",
+            "labels": ["reporting", "area/projections"],
+            "assignees": ["nadia-okafor"],
+            "milestone": 3,
+            "created_at": "2026-01-12T09:00:00Z",
+            "closed_at": null,
+            "comments": [
+              {"key": "i574c1", "user": "sofia-braga", "body": "This is a projection-generation change, not a display conversion. Historical rows need rebuilding too.", "created_at": "2026-01-12T11:30:00Z"}
+            ],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 575,
+            "title": "Generation v2 needs actor, organization and tag reporting",
+            "body": "The reporting export needs fields v1 never stored. The desired columns are being declared in the Gel schema so readers and the rebuild agree on one contract.",
+            "state": "closed",
+            "labels": ["reporting", "area/projections"],
+            "assignees": ["nadia-okafor"],
+            "milestone": 2,
+            "created_at": "2026-01-16T13:00:00Z",
+            "closed_at": "2026-01-27T14:10:00Z",
+            "comments": [
+              {"key": "i575c1", "user": "nadia-okafor", "body": "Schema landed in #578. The declaration is the field contract; the issue is only the request.", "created_at": "2026-01-27T14:20:00Z"}
+            ],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 580,
+            "title": "Online rebuild route returns not implemented",
+            "body": "`POST /admin/projections/rebuild/step` is wired, but `src/rebuild/orchestrator.ts` stops immediately. `src/projections/fanout.ts` and the modules under `src/rebuild/` are the intended seams. Operators need one observable move per call because they stop between moves.",
+            "state": "open",
+            "labels": ["area/rebuild", "ops"],
+            "assignees": ["harun-yildiz"],
+            "milestone": 3,
+            "created_at": "2026-02-12T08:45:00Z",
+            "closed_at": null,
+            "comments": [
+              {"key": "i580c1", "user": "rhea-menon", "body": "The v2 schema and delivery fold are already present. The missing work is orchestration, parity, fanout, switch, drain and cleanup.", "created_at": "2026-02-12T09:10:00Z"},
+              {"key": "i580c2", "user": "harun-yildiz", "body": "Use `ops/2025-06-14/` as the record of what the previous cutover encountered. It is evidence rather than instructions.", "created_at": "2026-02-13T14:00:00Z"}
+            ],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 582,
+            "title": "Redis restart lost the active projection alias during rehearsal",
+            "body": "The routing keyspace was empty after Redis restarted. The generation metadata in Gel still described the rebuild, but the service did not restore the alias.",
+            "state": "open",
+            "labels": ["area/rebuild", "ops"],
+            "assignees": ["rhea-menon"],
+            "milestone": 3,
+            "created_at": "2026-02-18T10:20:00Z",
+            "closed_at": null,
+            "comments": [],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 560,
+            "title": "Feed query returns duplicate delivery after retry",
+            "body": "A gateway retry created the same feed row twice in generation v1.",
+            "state": "closed",
+            "labels": ["area/api"],
+            "assignees": ["jiwon-park"],
+            "milestone": 1,
+            "created_at": "2025-05-22T10:00:00Z",
+            "closed_at": "2025-05-29T12:00:00Z",
+            "comments": [],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 566,
+            "title": "CI runner times out installing Gel tools",
+            "body": "The shared runner downloads the same CLI on every job.",
+            "state": "closed",
+            "labels": ["ci"],
+            "assignees": ["ines-duarte"],
+            "milestone": null,
+            "created_at": "2025-08-04T09:00:00Z",
+            "closed_at": "2025-08-08T15:00:00Z",
+            "comments": [],
+            "sub_issues": [],
+            "parent": null
+          },
+          {
+            "number": 585,
+            "title": "Add CSV output to tag report",
+            "body": "Finance wants to download the tag totals currently shown as JSON.",
+            "state": "open",
+            "labels": ["reporting", "area/api"],
+            "assignees": [],
+            "milestone": null,
+            "created_at": "2026-02-24T16:00:00Z",
+            "closed_at": null,
+            "comments": [],
+            "sub_issues": [],
+            "parent": null
+          }
+        ],
+        "pulls": [
+          {
+            "number": 576,
+            "title": "ops: preserve the v0 to v1 projection cutover",
+            "body": "Adds `ops/2025-06-14/`: the operator journal, parity captures, routing observations, reads around the switch, drain progress and retirement record. These are the bytes left by that run, not a reconstructed runbook.",
+            "state": "closed",
+            "merged": true,
+            "head": {"ref": "ops-v1-cutover", "sha": "c2"},
+            "base": {"ref": "main"},
+            "user": "rhea-menon",
+            "draft": false,
+            "labels": ["docs", "ops"],
+            "created_at": "2025-06-15T09:20:00Z",
+            "merged_at": "2025-06-16T11:20:00Z",
+            "reviews": [
+              {"user": "harun-yildiz", "state": "APPROVED", "body": "The journal includes the refused snapshot, both parity runs, the interrupted drain and the Redis restart. Keep it as captured.", "submitted_at": "2025-06-16T09:00:00Z"}
+            ],
+            "review_comments": [],
+            "comments": [],
+            "check_runs": [{"name": "docs / links", "status": "completed", "conclusion": "success"}],
+            "statuses": []
+          },
+          {
+            "number": 578,
+            "title": "projections: declare generation v2",
+            "body": "Declares every v2 projection column reporting signed off and adds the parity query list. This PR does not perform a rebuild or switch readers.",
+            "state": "closed",
+            "merged": true,
+            "head": {"ref": "v2-schema", "sha": "c3"},
+            "base": {"ref": "main"},
+            "user": "nadia-okafor",
+            "draft": false,
+            "labels": ["area/projections", "reporting"],
+            "created_at": "2026-01-22T14:00:00Z",
+            "merged_at": "2026-01-27T14:10:00Z",
+            "reviews": [
+              {"user": "sofia-braga", "state": "APPROVED", "body": "The schema matches the export fields. New York day bucketing is required for historical and live rows.", "submitted_at": "2026-01-27T10:00:00Z"}
+            ],
+            "review_comments": [
+              {"path": "config/parity-queries.json", "line": 1, "body": "Keep this list in the repository. Operators need the same battery after a restart.", "user": "rhea-menon", "created_at": "2026-01-26T13:00:00Z"}
+            ],
+            "comments": [],
+            "check_runs": [
+              {"name": "ci / test", "status": "completed", "conclusion": "success"},
+              {"name": "ci / schema", "status": "completed", "conclusion": "success"}
+            ],
+            "statuses": []
+          },
+          {
+            "number": 581,
+            "title": "projections: fold deliveries into generation v2",
+            "body": "Adds the feed fold for v2 and writes the generation supplied by the caller. Rebuild orchestration and reader cutover are deliberately out of scope.",
+            "state": "closed",
+            "merged": true,
+            "head": {"ref": "v2-projector", "sha": "c4"},
+            "base": {"ref": "main"},
+            "user": "jiwon-park",
+            "draft": false,
+            "labels": ["area/projections"],
+            "created_at": "2026-01-30T09:30:00Z",
+            "merged_at": "2026-02-03T10:45:00Z",
+            "reviews": [
+              {"user": "nadia-okafor", "state": "APPROVED", "body": "The fold is ready for both backfill and live fanout. The caller owns which generation receives a delivery.", "submitted_at": "2026-02-03T09:00:00Z"}
+            ],
+            "review_comments": [],
+            "comments": [],
+            "check_runs": [{"name": "ci / test", "status": "completed", "conclusion": "success"}],
+            "statuses": []
+          },
+          {
+            "number": 584,
+            "title": "ci: cache npm downloads",
+            "body": "Keeps the npm cache on the shared runner.",
+            "state": "closed",
+            "merged": true,
+            "head": {"ref": "ci-cache", "sha": "c6"},
+            "base": {"ref": "main"},
+            "user": "ines-duarte",
+            "draft": false,
+            "labels": ["ci"],
+            "created_at": "2026-02-13T09:00:00Z",
+            "merged_at": "2026-02-14T12:00:00Z",
+            "reviews": [],
+            "review_comments": [],
+            "comments": [],
+            "check_runs": [{"name": "ci / test", "status": "completed", "conclusion": "success"}],
+            "statuses": []
+          },
+          {
+            "number": 586,
+            "title": "api: validate delivery identifiers",
+            "body": "Reject malformed delivery IDs before touching the append log.",
+            "state": "closed",
+            "merged": true,
+            "head": {"ref": "delivery-id-validation", "sha": "c7"},
+            "base": {"ref": "main"},
+            "user": "sofia-braga",
+            "draft": false,
+            "labels": ["area/api"],
+            "created_at": "2026-02-18T10:00:00Z",
+            "merged_at": "2026-02-20T15:20:00Z",
+            "reviews": [],
+            "review_comments": [],
+            "comments": [],
+            "check_runs": [{"name": "ci / test", "status": "completed", "conclusion": "success"}],
+            "statuses": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "arm": "opus-5-claude-code-bedrock",
+  "harness": "Claude Code",
+  "harness_versions": [
+    "2.1.236",
+    "2.1.258"
+  ],
+  "model": "us.anthropic.claude-opus-5",
+  "model_label": "Opus 5",
+  "passes": 8,
+  "provider": "Bedrock",
+  "scored_rollouts": 56,
+  "tasks": [
+    "01-linearizable-scan",
+    "02-recurring-events",
+    "03-analytics-stream-reducer",
+    "04-draft-recovery",
+    "08-envelope-intake",
+    "11-store-cutover",
+    "12-readmodel-rebuild"
+  ]
+}

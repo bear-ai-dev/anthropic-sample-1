@@ -1,0 +1,225 @@
+{
+  "finished_at": "2026-09-03T07:11:04.270640",
+  "id": "f65bf06e-28fd-4e1e-bcc7-d930e65d90b3",
+  "n_total_trials": 1,
+  "started_at": "2026-09-03T05:49:07.344452",
+  "stats": {
+    "cost_usd": 0.0,
+    "evals": {
+      "mini-swe-agent__x-ai/grok-4.6__adhoc": {
+        "exception_stats": {},
+        "metrics": [
+          {
+            "reward": 0.0,
+            "rule_R1": 1.0,
+            "rule_R10": 1.0,
+            "rule_R11": 0.0,
+            "rule_R12": 1.0,
+            "rule_R13": 1.0,
+            "rule_R14": 1.0,
+            "rule_R15": 1.0,
+            "rule_R16": 1.0,
+            "rule_R17": 1.0,
+            "rule_R18": 1.0,
+            "rule_R19": 1.0,
+            "rule_R2": 1.0,
+            "rule_R20": 1.0,
+            "rule_R21": 1.0,
+            "rule_R22": 1.0,
+            "rule_R23": 1.0,
+            "rule_R24": 1.0,
+            "rule_R25": 1.0,
+            "rule_R26": 1.0,
+            "rule_R27": 1.0,
+            "rule_R28": 1.0,
+            "rule_R3": 1.0,
+            "rule_R4": 1.0,
+            "rule_R5": 1.0,
+            "rule_R6": 1.0,
+            "rule_R7": 1.0,
+            "rule_R8": 1.0,
+            "rule_R9": 1.0,
+            "rules_passed": 27.0,
+            "rules_total": 28.0,
+            "score": 0.0
+          }
+        ],
+        "n_errors": 0,
+        "n_trials": 1,
+        "pass_at_k": {},
+        "reward_stats": {
+          "reward": {
+            "0.0": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R1": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R10": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R11": {
+            "0": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R12": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R13": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R14": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R15": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R16": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R17": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R18": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R19": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R2": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R20": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R21": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R22": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R23": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R24": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R25": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R26": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R27": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R28": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R3": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R4": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R5": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R6": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R7": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R8": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rule_R9": {
+            "1": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rules_passed": {
+            "27": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "rules_total": {
+            "28": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          },
+          "score": {
+            "0.0": [
+              "08-envelope-intake__V28Ajxn"
+            ]
+          }
+        }
+      }
+    },
+    "n_cache_tokens": 4080128,
+    "n_cancelled_trials": 0,
+    "n_completed_trials": 1,
+    "n_errored_trials": 0,
+    "n_input_tokens": 4473215,
+    "n_output_tokens": 259401,
+    "n_pending_trials": 0,
+    "n_retries": 0,
+    "n_running_trials": 0
+  },
+  "updated_at": "2026-09-03T07:11:04.270640"
+}

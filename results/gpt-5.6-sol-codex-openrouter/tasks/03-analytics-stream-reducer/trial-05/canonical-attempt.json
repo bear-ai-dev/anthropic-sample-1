@@ -1,0 +1,15 @@
+{
+  "agent": "codex",
+  "agent_version": "0.151.0",
+  "attempt": 5,
+  "canonical_attempt_id": "03-analytics-stream-reducer__trial-05",
+  "harbor_returncode": 0,
+  "launched_at": "2026-09-03T23:46:34.249520+00:00",
+  "max_tokens": 32768,
+  "max_turns": 200,
+  "model": "openai/gpt-5.6-sol",
+  "route": "openai/gpt-5.6-sol",
+  "status": "launched",
+  "task": "03-analytics-stream-reducer",
+  "wave": "01-20260903T234628Z"
+}

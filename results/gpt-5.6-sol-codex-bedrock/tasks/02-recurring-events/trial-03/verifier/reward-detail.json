@@ -1,0 +1,172 @@
+{
+  "failed_rules": [
+    "R8-protect-published",
+    "R9-edited-survives",
+    "R10-extend",
+    "R11-concurrent-regenerate",
+    "R18-extend-fills-gap",
+    "R25-survivor-identity",
+    "R26-money-across-operations"
+  ],
+  "fixture_gate": [],
+  "passed_rules": [
+    "R1-generate-shapes",
+    "R2-selected-days",
+    "R3-month-clamp",
+    "R4-spring-forward",
+    "R5-fall-back",
+    "R6-occurrence-count",
+    "R7-end-date",
+    "R12-publish-then-regenerate",
+    "R13-delete-with-sales",
+    "R14-scope-steps-over-paid",
+    "R15-scope-over-month-end",
+    "R16-scope-across-transition",
+    "R17-scope-then-regenerate",
+    "R19-extend-after-regenerate",
+    "R20-race-scope-vs-regenerate",
+    "R21-zone-by-configuration",
+    "R22-regenerate-cross",
+    "R23-scope-regenerate-extend",
+    "R24-race-on-hard-dates",
+    "R27-interleavings"
+  ],
+  "reward": 0.0,
+  "rules": {
+    "R1-generate-shapes": {
+      "complaints": [],
+      "seconds": 0.4
+    },
+    "R10-extend": {
+      "complaints": [
+        "R10-extend: occurrence instants differ\n    expected ['2026-03-31 19:00 -0400(=1774998000)', '2026-04-30 19:00 -0400(=1777590000)', '2026-05-31 19:00 -0400(=1780268400)']\n    stored   ['2026-03-31 00:00 -0400(=1774929600)', '2026-04-30 00:00 -0400(=1777521600)', '2026-05-31 00:00 -0400(=1780200000)']"
+      ],
+      "seconds": 0.1
+    },
+    "R11-concurrent-regenerate": {
+      "complaints": [
+        "R11-concurrent round 1: occurrence instants differ\n    expected ['2026-03-16 21:00 +0100(=1773691200)', '2026-03-17 21:00 +0100(=1773777600)', '2026-03-18 21:00 +0100(=1773864000)', '2026-03-19 21:00 +0100(=1773950400)', '2026-03-20 21:00 +0100(=1774036800)']\n    stored   ['2026-03-16 00:00 +0100(=1773615600)', '2026-03-17 00:00 +0100(=1773702000)', '2026-03-18 00:00 +0100(=1773788400)', '2026-03-19 00:00 +0100(=1773874800)', '2026-03-20 00:00 +0100(=1773961200)']"
+      ],
+      "seconds": 0.5
+    },
+    "R12-publish-then-regenerate": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R13-delete-with-sales": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R14-scope-steps-over-paid": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R15-scope-over-month-end": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R16-scope-across-transition": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R17-scope-then-regenerate": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R18-extend-fills-gap": {
+      "complaints": [
+        "R18-extend-gap-added: occurrence instants differ\n    expected ['2026-05-08 20:00 -0400(=1778284800)', '2026-05-29 20:00 -0400(=1780099200)']\n    stored   ['2026-05-08 00:00 -0400(=1778212800)', '2026-05-29 00:00 -0400(=1780027200)']"
+      ],
+      "seconds": 0.1
+    },
+    "R19-extend-after-regenerate": {
+      "complaints": [],
+      "seconds": 0.3
+    },
+    "R2-selected-days": {
+      "complaints": [],
+      "seconds": 0.0
+    },
+    "R20-race-scope-vs-regenerate": {
+      "complaints": [],
+      "seconds": 6.0
+    },
+    "R21-zone-by-configuration": {
+      "complaints": [],
+      "seconds": 7.0
+    },
+    "R22-regenerate-cross": {
+      "complaints": [],
+      "seconds": 2.0
+    },
+    "R23-scope-regenerate-extend": {
+      "complaints": [],
+      "seconds": 2.3
+    },
+    "R24-race-on-hard-dates": {
+      "complaints": [],
+      "seconds": 2.8
+    },
+    "R25-survivor-identity": {
+      "complaints": [
+        "R25-identity-Europe-Lisbon-month: occurrence 9f2ed2a1-b690-4c3e-8df0-430f7385f2a8 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence b92e66eb-b74d-423e-b7d5-ce37c778a651 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence 4ed3503a-554a-4210-b5b6-86e9c50f5c9a survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence 56b89016-2c8e-4472-a26d-fe3da5dd9a42 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 46527b5d-a27c-46c3-afeb-ae953e9d7691 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 63d60678-4d0a-4758-a016-aedfeed89ea7 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 3314356e-5a0b-4509-bfbe-bed9386f7476 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence ebe5600d-72a0-42b3-8af8-8d63b0e2ae85 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody",
+        "R25-identity-America-St_Johns-month: occurrence 36921537-4298-49bb-948b-02b657a881b8 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-America-St_Johns-month: occurrence 634856b4-b68a-4c0b-ab65-7bc497df4fbc survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-America-St_Johns-month: the rebuild wrote 4 new occurrences and the plan leaves room for 6; the difference is local dates claimed twice or claimed by nobody"
+      ],
+      "seconds": 0.6
+    },
+    "R26-money-across-operations": {
+      "complaints": [
+        "R26-regenerate: occurrence 7363bec9-8522-492b-9bd0-2cebea82ee31 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R26-regenerate: the rebuild wrote 4 new occurrences and the plan leaves room for 5; the difference is local dates claimed twice or claimed by nobody"
+      ],
+      "seconds": 1.4
+    },
+    "R27-interleavings": {
+      "complaints": [],
+      "seconds": 3.1
+    },
+    "R3-month-clamp": {
+      "complaints": [],
+      "seconds": 0.1
+    },
+    "R4-spring-forward": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R5-fall-back": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R6-occurrence-count": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R7-end-date": {
+      "complaints": [],
+      "seconds": 0.2
+    },
+    "R8-protect-published": {
+      "complaints": [
+        "R8-protect: occurrence instants differ\n    expected ['2026-03-02 20:00 -0600(=1772503200)', '2026-03-09 20:00 -0500(=1773104400)', '2026-04-06 20:00 -0500(=1775523600)', '2026-04-13 20:00 -0500(=1776128400)', '2026-04-20 20:00 -0500(=1776733200)', '2026-04-27 20:00 -0500(=1777338000)']\n    stored   ['2026-03-02 20:00 -0600(=1772503200)', '2026-03-09 20:00 -0500(=1773104400)', '2026-04-06 00:00 -0500(=1775451600)', '2026-04-13 00:00 -0500(=1776056400)', '2026-04-20 00:00 -0500(=1776661200)', '2026-04-27 00:00 -0500(=1777266000)']"
+      ],
+      "seconds": 0.1
+    },
+    "R9-edited-survives": {
+      "complaints": [
+        "R9-edit-moved: occurrence instants differ\n    expected ['2026-03-24 18:00 -0600(=1774396800)', '2026-03-31 18:00 -0600(=1775001600)', '2026-04-07 18:00 -0600(=1775606400)', '2026-04-14 18:00 -0600(=1776211200)']\n    stored   ['2026-03-24 18:00 -0600(=1774396800)', '2026-03-31 00:00 -0600(=1774936800)', '2026-04-07 00:00 -0600(=1775541600)', '2026-04-14 00:00 -0600(=1776146400)']"
+      ],
+      "seconds": 0.2
+    }
+  }
+}
