@@ -1,0 +1,11 @@
+verify: snapshotting the deliverable
+verify: deliverable: 28 file(s), root:root 700
+=== GitHub workspace: keep the consultation journal, stop the daemon ===
+/tests/test.sh: line 235: /logs/verifier/github-calls.jsonl: No such file or directory
+github journal: 0 calls recorded
+verify: installing the graded ledger
+verify: restarting the storage service
+verify: building the submission
+verify: driving the migration
+verify: the migration is not implemented: advancing it is still refused
+verify: reward: 0.0

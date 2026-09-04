@@ -1,0 +1,448 @@
+{
+  "rules": {
+    "R1": {
+      "description": "the snapshot materialises the whole boundary before the rebuild moves on",
+      "pass": true,
+      "missing": [],
+      "missing_count": 0,
+      "spurious": [],
+      "spurious_count": 0,
+      "present_count": 1249,
+      "required_count": 1200
+    },
+    "R2": {
+      "description": "routing does not move while the new generation is behind the log",
+      "pass": false,
+      "missing": [
+        1254
+      ],
+      "missing_count": 1,
+      "spurious": [],
+      "spurious_count": 0,
+      "present_count": 1253,
+      "required_count": 1254
+    },
+    "R11": {
+      "description": "a read in flight when the cutover lands is still answered out of a whole generation",
+      "pass": true,
+      "reason": "routing already said v2,v2,v2; no read could straddle the cutover"
+    },
+    "R6": {
+      "description": "the old generation is not retired while the new one is missing a position",
+      "pass": false,
+      "reason": "generation v1 was never retired",
+      "v1_rows_remaining": 2453,
+      "last_phase_reached": "CLEANUP",
+      "the_rebuild_last_refused_because": "the drain window is not closed"
+    },
+    "R3": {
+      "description": "a position is folded exactly once, first delivery authoritative",
+      "pass": true,
+      "positions_held": 1278,
+      "duplicated_positions": [],
+      "wrong_identity": [],
+      "wrong_identity_count": 0,
+      "org_counter_total": 1278,
+      "org_counter_expected": 1278,
+      "tag_counter_total": 2563,
+      "tag_counter_expected": 2563
+    },
+    "R4": {
+      "description": "counters bucket days by New York local date",
+      "pass": true,
+      "positions_held": 1278,
+      "misplaced_count": 0,
+      "misplaced": []
+    },
+    "R12": {
+      "description": "the org projection counts people as well as deliveries, and knows they are different",
+      "pass": true,
+      "days_bucketed_by": "New York",
+      "buckets_compared": 681,
+      "buckets_where_the_two_numbers_differ": 24,
+      "wrong_count": 0,
+      "wrong": [],
+      "more_actors_than_deliveries": []
+    },
+    "R13": {
+      "description": "the tag projection points at the newest delivery in its bucket, by event time",
+      "pass": true,
+      "days_bucketed_by": "New York",
+      "buckets_compared": 1168,
+      "wrong_count": 0,
+      "wrong": []
+    },
+    "R9": {
+      "description": "the new generation stays level with the log once it is the one serving",
+      "pass": false,
+      "missing": [
+        1256,
+        1258
+      ],
+      "missing_count": 2,
+      "spurious": [],
+      "spurious_count": 0,
+      "present_count": 1278,
+      "required_count": 1280
+    },
+    "R10": {
+      "description": "the append path keeps taking deliveries for the whole of a rebuild",
+      "pass": true,
+      "refused": 0
+    },
+    "R8": {
+      "description": "the read path serves the new generation, ordered and limited as specified",
+      "pass": true,
+      "checked": 15,
+      "wrong_count": 0,
+      "wrong": [],
+      "generations_reported": [
+        "v2"
+      ]
+    },
+    "R14": {
+      "description": "the read path hands back everything the serving generation holds",
+      "pass": true,
+      "fields_checked": 249,
+      "wrong_count": 0,
+      "wrong": []
+    },
+    "R7": {
+      "description": "nothing on the read path depends on the old generation once it is gone",
+      "pass": true,
+      "reason": "generation v1 was never retired; there is nothing to be independent of"
+    },
+    "R5": {
+      "description": "the three routing keys are never observed disagreeing",
+      "pass": true,
+      "observed_units": 1308,
+      "routing_moved": true,
+      "torn_states": [],
+      "crashed_mid_cutover": true,
+      "final_routing": [
+        "v2",
+        "v2",
+        "v2"
+      ]
+    },
+    "R15": {
+      "description": "losing the cache does not lose which generation is serving, or the rebuild",
+      "pass": true,
+      "reason": "the cutover did not complete; there is no serving generation to lose the note of"
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-09-02T17:18:41.706Z",
+      "name": "first-step",
+      "value": {
+        "status": 200,
+        "phase": "SNAPSHOT"
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:43.758Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1243
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:44.441Z",
+      "name": "gap-appended",
+      "value": {
+        "during": 35,
+        "gap": 20,
+        "head": 1250
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:46.740Z",
+      "name": "snapshot-observed",
+      "value": {
+        "phase": "TAIL",
+        "present": 1249
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:47.438Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1254
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:47.631Z",
+      "name": "after-gate-appended",
+      "value": {
+        "n": 5,
+        "head": 1254
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:47.727Z",
+      "name": "parked-at-cutover",
+      "value": {
+        "arrivals": 1
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:48.099Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1259,
+          1260
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:48.241Z",
+      "name": "inflight-appended",
+      "value": {
+        "inflight": 4,
+        "head": 1260
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:48.257Z",
+      "name": "kill-armed",
+      "value": {
+        "armAt": 1,
+        "pid": 8198,
+        "fault": "1"
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:48.374Z",
+      "name": "crash-check",
+      "value": {
+        "crashed": true,
+        "exited": true,
+        "write_arrivals": 1,
+        "fault_key": "1"
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:48.393Z",
+      "name": "crashed-at-cutover",
+      "value": [
+        "v1",
+        "v1",
+        "v1"
+      ]
+    },
+    {
+      "at": "2026-09-02T17:18:49.788Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1256,
+          1258
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:49.941Z",
+      "name": "backfilled",
+      "value": {
+        "n": 2,
+        "head": 1260,
+        "v2": 1258
+      }
+    },
+    {
+      "at": "2026-09-02T17:18:54.682Z",
+      "name": "post-switch-appended",
+      "value": {
+        "posted": 20,
+        "head": 1280
+      }
+    }
+  ],
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows",
+    "baseline feed answers from generation v1",
+    "appended 55 live deliveries after the snapshot boundary was fixed",
+    "appended 5 deliveries after the parity gate passed",
+    "appended 4 deliveries while the cutover was parked",
+    "routing after the crash: v1,v1,v1",
+    "the service restarted after the crash",
+    "the log stood at 1260 when the cutover committed",
+    "backfilled 2 position(s) below the cutover point",
+    "appended 20 deliveries after the cutover"
+  ],
+  "steps": [
+    {
+      "status": 200,
+      "phase": "SNAPSHOT",
+      "ms": 345
+    },
+    {
+      "status": 200,
+      "phase": "SNAPSHOT",
+      "ms": 480
+    },
+    {
+      "status": 200,
+      "phase": "SNAPSHOT",
+      "ms": 561
+    },
+    {
+      "status": 200,
+      "phase": "SNAPSHOT",
+      "ms": 547
+    },
+    {
+      "status": 200,
+      "phase": "TAIL",
+      "ms": 478
+    },
+    {
+      "status": 200,
+      "phase": "PARITY",
+      "ms": 68
+    },
+    {
+      "status": 200,
+      "phase": "SWITCH",
+      "ms": 412
+    },
+    {
+      "status": 200,
+      "phase": "CLEANUP",
+      "ms": 204
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 67,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 68,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 70,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 69,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 69,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 68,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 69,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 69,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 60,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 409,
+      "phase": "CLEANUP",
+      "ms": 61,
+      "refused": "the drain window is not closed"
+    }
+  ],
+  "rule_results": {
+    "R1": 1,
+    "R2": 0,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 0,
+    "R7": 1,
+    "R8": 1,
+    "R9": 0,
+    "R10": 1,
+    "R11": 1,
+    "R12": 1,
+    "R13": 1,
+    "R14": 1,
+    "R15": 1
+  },
+  "harness_failure": null,
+  "reward": 0
+}

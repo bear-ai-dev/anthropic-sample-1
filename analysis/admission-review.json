@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-04",
+  "policy": "Do not equate a nested harness flag with either automatic exclusion or model fault. Preserve original evidence and record an explicit causal decision.",
+  "reviews": [
+    {
+      "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-07",
+      "status": "valid_model_failure",
+      "explanation": "Independent R13 shared-storage assertions fail even though the grader also emits a missing-control flag. The submitted loading-only layout explains the absent UI; the final answer explicitly acknowledges two-tab overwrite.",
+      "trace": "trajectories/04-draft-recovery/fable-5.1-claude-code-bedrock/trajectory-trial-07.json",
+      "trace_step_ids": [
+        14
+      ],
+      "evidence": [
+        "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/test-stdout.txt",
+        "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-report.json"
+      ],
+      "requirement": "tasks/04-draft-recovery/instruction.md",
+      "original_harness_flag_preserved": true
+    },
+    {
+      "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-05",
+      "status": "valid_model_failure",
+      "explanation": "The submitted cutover holds the SQLite write lock while waiting for the authority call. The verifier parks that call and attempts a concurrent legacy write before releasing it. The resulting database-is-locked failure is caused by the submission under the no-paused-writes contract, not provider or sandbox loss. A local two-connection SQLite regression reproduces the lock mechanism; this is not a full candidate replay.",
+      "trace": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-05.json",
+      "trace_step_ids": [
+        28
+      ],
+      "evidence": [
+        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/test-stdout.txt"
+      ],
+      "requirement": "tasks/11-store-cutover/instruction.md",
+      "original_harness_flag_preserved": true
+    },
+    {
+      "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-06",
+      "status": "valid_after_grader_replay",
+      "explanation": "The original retirement-trigger error reproduces. With only the verifier fault-injection correction, grading completes at reward 0 with no harness flag. R1 fails because the shadow copy omits 86 members. The candidate copies member rows only for IDs touched by ledger batches, rather than the complete member book.",
+      "trace": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-06.json",
+      "trace_step_ids": [
+        35
+      ],
+      "evidence": [
+        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/test-stdout.txt",
+        "analysis/cutover-replay/effective-result.json",
+        "analysis/cutover-replay/manifest.json",
+        "analysis/cutover-replay/submission-excerpt.json"
+      ],
+      "requirement": "tasks/11-store-cutover/instruction.md",
+      "original_harness_flag_preserved": true
+    },
+    {
+      "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-08",
+      "status": "valid_model_failure",
+      "explanation": "The submitted cutover holds the SQLite write lock while waiting for the authority call. The verifier parks that call and attempts a concurrent legacy write before releasing it. The resulting database-is-locked failure is caused by the submission under the no-paused-writes contract, not provider or sandbox loss. A local two-connection SQLite regression reproduces the lock mechanism; this is not a full candidate replay.",
+      "trace": "trajectories/11-store-cutover/fable-5.1-claude-code-bedrock/trajectory-trial-08.json",
+      "trace_step_ids": [
+        29
+      ],
+      "evidence": [
+        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/test-stdout.txt"
+      ],
+      "requirement": "tasks/11-store-cutover/instruction.md",
+      "original_harness_flag_preserved": true
+    },
+    {
+      "canonical_id": "11-store-cutover__fable-5.1-mini-swe-agent-bedrock__trial-02",
+      "status": "valid_model_failure",
+      "explanation": "The submitted cutover holds the SQLite write lock while waiting for the authority call. The verifier parks that call and attempts a concurrent legacy write before releasing it. The resulting database-is-locked failure is caused by the submission under the no-paused-writes contract, not provider or sandbox loss. A local two-connection SQLite regression reproduces the lock mechanism; this is not a full candidate replay.",
+      "trace": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-02.json",
+      "trace_step_ids": [
+        39,
+        44,
+        110
+      ],
+      "evidence": [
+        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-02/verifier/reward-detail.json",
+        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-02/verifier/test-stdout.txt"
+      ],
+      "requirement": "tasks/11-store-cutover/instruction.md",
+      "original_harness_flag_preserved": true
+    },
+    {
+      "canonical_id": "11-store-cutover__fable-5.1-mini-swe-agent-bedrock__trial-03",
+      "status": "valid_model_failure",
+      "explanation": "The submitted cutover holds the SQLite write lock while waiting for the authority call. The verifier parks that call and attempts a concurrent legacy write before releasing it. The resulting database-is-locked failure is caused by the submission under the no-paused-writes contract, not provider or sandbox loss. A local two-connection SQLite regression reproduces the lock mechanism; this is not a full candidate replay.",
+      "trace": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent-bedrock/trajectory-trial-03.json",
+      "trace_step_ids": [
+        53,
+        89
+      ],
+      "evidence": [
+        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-03/verifier/reward-detail.json",
+        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-03/verifier/test-stdout.txt"
+      ],
+      "requirement": "tasks/11-store-cutover/instruction.md",
+      "original_harness_flag_preserved": true
+    },
+    {
+      "canonical_id": "12-readmodel-rebuild__grok-4.6-grok-build-openrouter__trial-05",
+      "status": "valid_model_failure",
+      "explanation": "The submitted startup query selects RebuildMeta.value and then filters .key on the resulting primitive string. app.log records InvalidReferenceError in submitted src/rebuild/meta.ts:35 and alias-switch.ts:40. The service cannot reach healthz because its own query fails, not because the sandbox is unavailable.",
+      "trace": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build-openrouter/trajectory-trial-05.json",
+      "trace_step_ids": [],
+      "evidence": [
+        "results/grok-4.6-grok-build-openrouter/tasks/12-readmodel-rebuild/trial-05/verifier/app.log",
+        "results/grok-4.6-grok-build-openrouter/tasks/12-readmodel-rebuild/trial-05/verifier/reward-detail.json"
+      ],
+      "requirement": "tasks/12-readmodel-rebuild/instruction.md",
+      "original_harness_flag_preserved": true
+    }
+  ]
+}

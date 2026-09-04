@@ -1,0 +1,175 @@
+{
+  "date": "2026-09-04",
+  "model_calls": 0,
+  "scored_trial": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-06",
+  "runtime": "Isolated Modal sandbox, same pinned Gel base digest; process reaping and agent cache ownership adapted for Modal. Original prompt and candidate code unchanged.",
+  "scope": "One saved submission, paired original/corrected verifier; original cohort denominator is unchanged.",
+  "excluded_setup_attempts": "Earlier runner attempts with duplicate database startup, unreaped service processes or root-owned cache entries were setup failures, not scored model trials.",
+  "controls_and_replays": {
+    "oracle": {
+      "kind": "oracle",
+      "corrected": true,
+      "reward": {
+        "reward": 1.0
+      },
+      "elapsed_seconds": 53.09,
+      "original_driver_sha256": "355ab13c2e05475bfa944004dcc1b4f986f4e9dba6c19325021c8d31ad2a29b1",
+      "effective_driver_sha256": "502b39e5233d5e32acd8d354859b8f3860428c3885114255108fa3692a64d286",
+      "model_calls": 0,
+      "files": [
+        {
+          "path": "analysis/cutover-replay/oracle/reward.json",
+          "source_sha256": "a95aa6fcff5c739e655920fc89913445a4d168b4a907cd4f860757bb7c900344",
+          "sha256": "34e636bdde02ca7e3fa38214565a1ce6774f656e0773eaa2a4776e6cfe9c0137"
+        },
+        {
+          "path": "analysis/cutover-replay/oracle/reward-detail.json",
+          "source_sha256": "b27d499d0a5b82efa2f0355e0a18de122a9df0de529914e142e2156bf2e99541",
+          "sha256": "f00480773ed592b7a4c977645ac5b5f3dc77f163735bfd147945301bcea5a5a7"
+        },
+        {
+          "path": "analysis/cutover-replay/oracle/verdict.json",
+          "source_sha256": "85d62d2fa642ea89e39f375c273104f7270a6ca58a77a50d17bffd0e403b25dd",
+          "sha256": "13c71048362ed6841c3af17333fb47729f899c7942f42a1fd923040f958cce54"
+        },
+        {
+          "path": "analysis/cutover-replay/oracle/observations.json",
+          "source_sha256": "7bf0ffdc32a2bad87c921a36736f8d3c33e6c23419f0f0e30e7dec06fa359456",
+          "sha256": "54a24c7f991c70f782a1f2854d69d01c82c725448ea20d080708964085736373"
+        },
+        {
+          "path": "analysis/cutover-replay/oracle/build.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "analysis/cutover-replay/oracle/verify.log",
+          "source_sha256": "9190599991a4d0443903a127e0aefc3797849b0a30b350308807f8db1d1364b9",
+          "sha256": "9190599991a4d0443903a127e0aefc3797849b0a30b350308807f8db1d1364b9"
+        }
+      ]
+    },
+    "nop": {
+      "kind": "nop",
+      "corrected": true,
+      "reward": {
+        "reward": 0.0
+      },
+      "elapsed_seconds": 47.54,
+      "original_driver_sha256": "355ab13c2e05475bfa944004dcc1b4f986f4e9dba6c19325021c8d31ad2a29b1",
+      "effective_driver_sha256": "502b39e5233d5e32acd8d354859b8f3860428c3885114255108fa3692a64d286",
+      "model_calls": 0,
+      "files": [
+        {
+          "path": "analysis/cutover-replay/nop/reward.json",
+          "source_sha256": "1d8511dcb533d7d0ea095ab1fed80023c526956199da238a47b3bcde6e6df655",
+          "sha256": "5c73d718100b1b99b632b6c9956dae409fe1fe6b58474aca8d2ea5823bf0c6e4"
+        },
+        {
+          "path": "analysis/cutover-replay/nop/reward-detail.json",
+          "source_sha256": "f2b59829f3f06758c95913cf702d4a5d56244bc645e79caea5392ed17d95005c",
+          "sha256": "8cfdc18661059bf3a89659cf10d7f12bf08857d96604a13114d6395ea82a7660"
+        },
+        {
+          "path": "analysis/cutover-replay/nop/observations.json",
+          "source_sha256": "5fb5bae846ae4fae7bb4cd3ce006d9aba748f319846b3741d7d8ef0e9ca74699",
+          "sha256": "d9b29ec3fe58ec6e11c4501868c597067cbfdcad28d1e564e61d24fb01552d08"
+        },
+        {
+          "path": "analysis/cutover-replay/nop/build.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "analysis/cutover-replay/nop/verify.log",
+          "source_sha256": "e424f0bf588a804eebc9697ba593befa422dcb7b9dc844934d0f0886e0b5748b",
+          "sha256": "e424f0bf588a804eebc9697ba593befa422dcb7b9dc844934d0f0886e0b5748b"
+        }
+      ]
+    },
+    "original": {
+      "kind": "sample-store-cutover__sQmGdDt",
+      "corrected": false,
+      "reward": {
+        "reward": 0.0,
+        "harness_failure": 1
+      },
+      "elapsed_seconds": 50.15,
+      "original_driver_sha256": "355ab13c2e05475bfa944004dcc1b4f986f4e9dba6c19325021c8d31ad2a29b1",
+      "effective_driver_sha256": "355ab13c2e05475bfa944004dcc1b4f986f4e9dba6c19325021c8d31ad2a29b1",
+      "model_calls": 0,
+      "files": [
+        {
+          "path": "analysis/cutover-replay/original/reward.json",
+          "source_sha256": "b5a91af85278f5d2403f82187f140b9a8927b5a05faacea237ffa9dc91069c09",
+          "sha256": "a67b66fa265beac6736e10bfb63fc4124af3244338d5e9542cc783884fdb35f8"
+        },
+        {
+          "path": "analysis/cutover-replay/original/reward-detail.json",
+          "source_sha256": "8c7c0b6461485bae92c9ee3401e2083e5ded239fe2bb12083605a510984ad77d",
+          "sha256": "b09c3ee2c16b614f56c8214fc607a07e75f314fdacf566e72291c4c39d1b418b"
+        },
+        {
+          "path": "analysis/cutover-replay/original/observations.json",
+          "source_sha256": "e2bb81e3dcf5b6c2e8aedec0be953e84d5e89f63166427fc1c52076682596070",
+          "sha256": "8d562d66bf24414ec8ca6dded12c0f4203c935dc73d66f996c5f6857e204de7b"
+        },
+        {
+          "path": "analysis/cutover-replay/original/build.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "analysis/cutover-replay/original/verify.log",
+          "source_sha256": "dbef9e1be69c931644b6037f4438325c7936eed1fbbd38c29e40407e2367c894",
+          "sha256": "dbef9e1be69c931644b6037f4438325c7936eed1fbbd38c29e40407e2367c894"
+        }
+      ],
+      "submission_content_sha256": "84bf41de9830ca6a83864d7125da4a1e3f84bc09299d101c76a516a2dd5a435c"
+    },
+    "corrected": {
+      "kind": "sample-store-cutover__sQmGdDt",
+      "corrected": true,
+      "reward": {
+        "reward": 0.0
+      },
+      "elapsed_seconds": 57.33,
+      "original_driver_sha256": "355ab13c2e05475bfa944004dcc1b4f986f4e9dba6c19325021c8d31ad2a29b1",
+      "effective_driver_sha256": "502b39e5233d5e32acd8d354859b8f3860428c3885114255108fa3692a64d286",
+      "model_calls": 0,
+      "files": [
+        {
+          "path": "analysis/cutover-replay/corrected/reward.json",
+          "source_sha256": "1d8511dcb533d7d0ea095ab1fed80023c526956199da238a47b3bcde6e6df655",
+          "sha256": "5c73d718100b1b99b632b6c9956dae409fe1fe6b58474aca8d2ea5823bf0c6e4"
+        },
+        {
+          "path": "analysis/cutover-replay/corrected/reward-detail.json",
+          "source_sha256": "64dfaf9931bbcbdd04d3c98fa2799fae1288c944c9826425d2b735d8f107ba11",
+          "sha256": "082043d08c86c57e68092acb964d8b470b3b7d7f8f705a1be299fd2292e1625f"
+        },
+        {
+          "path": "analysis/cutover-replay/corrected/verdict.json",
+          "source_sha256": "7b7b55894f1faabf50e8406088a1ad97f31905986f435f2c67e0231e90416aa5",
+          "sha256": "fda91e10a12f2ec1c2bb38577c93002721298c3f6c9c3575765a69285262c66b"
+        },
+        {
+          "path": "analysis/cutover-replay/corrected/observations.json",
+          "source_sha256": "7b89b2815846eb52f9f1707ce77aa73a5c6fcdb7fe0b12d904de538990e7cf52",
+          "sha256": "bc50e09023fe7e56058c106cced6c593d637e39e60812af8346af0ada7a6d9d4"
+        },
+        {
+          "path": "analysis/cutover-replay/corrected/build.log",
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "analysis/cutover-replay/corrected/verify.log",
+          "source_sha256": "7b2d9ac94d0a980d0b3dbd9b275920e927f09de5b9dc4e2adb80d6e14007e6b8",
+          "sha256": "7b2d9ac94d0a980d0b3dbd9b275920e927f09de5b9dc4e2adb80d6e14007e6b8"
+        }
+      ],
+      "submission_content_sha256": "84bf41de9830ca6a83864d7125da4a1e3f84bc09299d101c76a516a2dd5a435c"
+    }
+  }
+}

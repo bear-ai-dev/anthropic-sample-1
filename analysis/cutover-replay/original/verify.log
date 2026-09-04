@@ -1,0 +1,31 @@
+verify: snapshotting the deliverable
+verify: deliverable: 32 file(s), root:root 700
+verify: installing the graded ledger
+verify: restarting the storage service
+verify: building the submission
+verify: driving the migration
+driver: [cutover] the seeded ledger has 1720 movement(s)
+driver: [cutover] the service is up and serving the ledger
+driver: [cutover] shadow copy recorded
+driver: [cutover] dual-read probed on mbr-400145
+driver: [cutover] faults armed at global_seq 803, 987, 1170 of 1721
+driver: [cutover] cutover-a died during an advance (RemoteDisconnected)
+driver: [cutover] cutover-a is gone; starting it again
+driver: [cutover] cutover-a died during an advance (RemoteDisconnected)
+driver: [cutover] cutover-a is gone; starting it again
+driver: [cutover] catch-up recorded; faults fired {'folded': 1, 'recycled': 1, 'withheld_committed': 1, 'withheld_lost': 1}
+driver: [cutover] three movements landed in legacy, one row the ledger never had and one second copy of a movement landed in the destination
+driver: [cutover] the member book moved on: mbr-400341 joined, mbr-400009 closed, mbr-400018 went basic to platinum
+driver: [cutover] worker a frozen inside a ledger write: True
+driver: [cutover] worker b started and the deployment clock moved past a's lease
+driver: [cutover] the authority flip is open; the stores were compared at that instant
+driver: [cutover] four movements reached legacy while the authority was moving
+driver: [cutover] the authority moved
+driver: [cutover] frozen worker's write landed: {'http_status': 409, 'body': {'error': 'migration advance refused: lease lost by membershipd-a (fence 1)'}}
+driver: [cutover] eight more movements reached legacy after the authority moved
+driver: [cutover] the ledger was read and written after the authority moved: read 200, write 200
+driver: [cutover] the first boundary after the late writes was LATE_REPLAY
+driver: [cutover] the migration finished in phase COMPLETE
+driver: harness failure in cutover: IntegrityError: legacy ledger retired: writes are closed
+verify: the drive could not be completed: cutover: IntegrityError: legacy ledger retired: writes are closed
+verify: reward: harness_failure

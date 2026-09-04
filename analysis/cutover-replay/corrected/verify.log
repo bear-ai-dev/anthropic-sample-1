@@ -1,0 +1,72 @@
+verify: snapshotting the deliverable
+verify: deliverable: 32 file(s), root:root 700
+verify: installing the graded ledger
+verify: restarting the storage service
+verify: building the submission
+verify: driving the migration
+driver: [cutover] the seeded ledger has 1720 movement(s)
+driver: [cutover] the service is up and serving the ledger
+driver: [cutover] shadow copy recorded
+driver: [cutover] dual-read probed on mbr-400145
+driver: [cutover] faults armed at global_seq 803, 987, 1170 of 1721
+driver: [cutover] cutover-a died during an advance (RemoteDisconnected)
+driver: [cutover] cutover-a is gone; starting it again
+driver: [cutover] cutover-a died during an advance (RemoteDisconnected)
+driver: [cutover] cutover-a is gone; starting it again
+driver: [cutover] catch-up recorded; faults fired {'folded': 1, 'recycled': 1, 'withheld_committed': 1, 'withheld_lost': 1}
+driver: [cutover] three movements landed in legacy, one row the ledger never had and one second copy of a movement landed in the destination
+driver: [cutover] the member book moved on: mbr-400341 joined, mbr-400009 closed, mbr-400018 went basic to platinum
+driver: [cutover] worker a frozen inside a ledger write: True
+driver: [cutover] worker b started and the deployment clock moved past a's lease
+driver: [cutover] the authority flip is open; the stores were compared at that instant
+driver: [cutover] four movements reached legacy while the authority was moving
+driver: [cutover] the authority moved
+driver: [cutover] frozen worker's write landed: {'http_status': 409, 'body': {'error': 'migration advance refused: lease lost by membershipd-a (fence 1)'}}
+driver: [cutover] eight more movements reached legacy after the authority moved
+driver: [cutover] the ledger was read and written after the authority moved: read 200, write 200
+driver: [cutover] the first boundary after the late writes was LATE_REPLAY
+driver: [cutover] the migration finished in phase COMPLETE
+driver: [cutover] retirement probed with a poisoned legacy row and a refused write
+driver: [handover] the seeded ledger has 1720 movement(s)
+driver: [handover] faults armed at global_seq 803, 986, 1170 of 1720
+driver: [handover] handover-a is held inside recording RECONCILE
+driver: [handover] the held record write landed: {'http_status': 409, 'body': {'error': 'migration advance refused: migration record changed underneath (now RECONCILE, fence 6)'}}
+driver: [handover] five movements reached legacy after the authority moved
+driver: [handover] the migration took 8 turn(s) across two workers
+driver: [handover] the migration finished in phase COMPLETE
+driver: [handover] retirement probed after the handover run
+verify: judging what happened
+--- cutover
+R1 FAIL: shadow copy covers the book and the ledger prefix, once each
+    member mbr-400002 is in the member book but not the destination
+    member mbr-400009 is in the member book but not the destination
+    member mbr-400017 is in the member book but not the destination
+    member mbr-400021 is in the member book but not the destination
+    member mbr-400027 is in the member book but not the destination
+    member mbr-400036 is in the member book but not the destination
+    member mbr-400038 is in the member book but not the destination
+    member mbr-400040 is in the member book but not the destination
+    member mbr-400041 is in the member book but not the destination
+    86 member(s) never copied, including ['mbr-400002', 'mbr-400009', 'mbr-400017']
+R10 pass: the destination ends up holding the folded ledger
+R11 pass: no recorded position ever ran ahead of the store
+R13 pass: a read after the authority moved is not behind the ledger
+R14 pass: the destination ends up with the ledger's member book, as it is
+R15 pass: the ledger goes on taking movements until legacy is retired
+R2 pass: dual-read serves fresh data and merges the ledger without duplicates
+R3 pass: a kill between a durable write and its fold costs nothing
+R4 pass: a write whose outcome was withheld is applied exactly once
+R5 pass: a worker that lost its lease does not move the migration on
+R7 pass: one fenced authority change, and the fence never falls
+R8 pass: writes landing during and after the cutover are replayed exactly once
+R9 pass: legacy leaves the read path and legacy's write path is shut
+--- handover
+R10 pass: the destination ends up holding the folded ledger
+R11 pass: no recorded position ever ran ahead of the store
+R12 pass: whichever worker holds the lease carries the migration on
+R14 pass: the destination ends up with the ledger's member book, as it is
+R7 pass: one fenced authority change, and the fence never falls
+R8 pass: writes landing during and after the cutover are replayed exactly once
+R9 pass: legacy leaves the read path and legacy's write path is shut
+verify: rules that did not hold: cutover/R1
+verify: reward: 0.0

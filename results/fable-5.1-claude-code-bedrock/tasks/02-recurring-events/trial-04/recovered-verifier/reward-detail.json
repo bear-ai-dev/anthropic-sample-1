@@ -1,0 +1,151 @@
+{
+  "reward": 0.0,
+  "passed_rules": [
+    "R1-generate-shapes",
+    "R2-selected-days",
+    "R3-month-clamp",
+    "R4-spring-forward",
+    "R5-fall-back",
+    "R6-occurrence-count",
+    "R7-end-date",
+    "R8-protect-published",
+    "R9-edited-survives",
+    "R10-extend",
+    "R11-concurrent-regenerate",
+    "R12-publish-then-regenerate",
+    "R13-delete-with-sales",
+    "R14-scope-steps-over-paid",
+    "R15-scope-over-month-end",
+    "R16-scope-across-transition",
+    "R17-scope-then-regenerate",
+    "R18-extend-fills-gap",
+    "R20-race-scope-vs-regenerate",
+    "R21-zone-by-configuration",
+    "R22-regenerate-cross",
+    "R23-scope-regenerate-extend",
+    "R24-race-on-hard-dates",
+    "R27-interleavings"
+  ],
+  "failed_rules": [
+    "R19-extend-after-regenerate",
+    "R25-survivor-identity",
+    "R26-money-across-operations"
+  ],
+  "fixture_gate": [],
+  "rules": {
+    "R1-generate-shapes": {
+      "seconds": 0.5,
+      "complaints": []
+    },
+    "R2-selected-days": {
+      "seconds": 0.1,
+      "complaints": []
+    },
+    "R3-month-clamp": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R4-spring-forward": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R5-fall-back": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R6-occurrence-count": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R7-end-date": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R8-protect-published": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R9-edited-survives": {
+      "seconds": 0.3,
+      "complaints": []
+    },
+    "R10-extend": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R11-concurrent-regenerate": {
+      "seconds": 2.2,
+      "complaints": []
+    },
+    "R12-publish-then-regenerate": {
+      "seconds": 0.3,
+      "complaints": []
+    },
+    "R13-delete-with-sales": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R14-scope-steps-over-paid": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R15-scope-over-month-end": {
+      "seconds": 0.3,
+      "complaints": []
+    },
+    "R16-scope-across-transition": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R17-scope-then-regenerate": {
+      "seconds": 0.3,
+      "complaints": []
+    },
+    "R18-extend-fills-gap": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R19-extend-after-regenerate": {
+      "seconds": 0.4,
+      "complaints": [
+        "R19-extend-regen-added: occurrence instants differ\n    expected ['2026-05-20 19:00 -0700(=1779328800)', '2026-06-03 19:00 -0700(=1780538400)']\n    stored   ['2026-07-08 19:00 -0700(=1783562400)', '2026-07-22 19:00 -0700(=1784772000)']"
+      ]
+    },
+    "R20-race-scope-vs-regenerate": {
+      "seconds": 12.3,
+      "complaints": []
+    },
+    "R21-zone-by-configuration": {
+      "seconds": 9.8,
+      "complaints": []
+    },
+    "R22-regenerate-cross": {
+      "seconds": 2.6,
+      "complaints": []
+    },
+    "R23-scope-regenerate-extend": {
+      "seconds": 3.5,
+      "complaints": []
+    },
+    "R24-race-on-hard-dates": {
+      "seconds": 2.7,
+      "complaints": []
+    },
+    "R25-survivor-identity": {
+      "seconds": 2.3,
+      "complaints": [
+        "R25-identity-Asia-Kathmandu-month: setup: editing ccd934b5-c37e-4556-bed2-926c620be042 returned HTTP 409 {\"result\": false, \"error\": {\"id\": \"\", \"debugId\": \"\", \"message\": \"occurrence protected\", \"requestData\": null, \"userId\": null, \"dateCreated\": 0, \"platform\": \"\", \"build\": 0, \"display\": \"This night already has guests or paid tickets\", \"subDisplay\": \"It can't be moved, changed or removed while people are holding tickets to it\"}}"
+      ]
+    },
+    "R26-money-across-operations": {
+      "seconds": 2.1,
+      "complaints": [
+        "R26-extend-added: occurrence instants differ\n    expected ['2026-10-04 02:45 +1345(=1791032400)', '2026-10-14 02:45 +1345(=1791896400)', '2026-10-18 02:45 +1345(=1792242000)']\n    stored   ['2026-10-14 02:45 +1345(=1791896400)', '2026-10-18 02:45 +1345(=1792242000)', '2026-10-21 02:45 +1345(=1792501200)']"
+      ]
+    },
+    "R27-interleavings": {
+      "seconds": 3.2,
+      "complaints": []
+    }
+  }
+}

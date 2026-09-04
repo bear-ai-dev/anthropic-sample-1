@@ -1,0 +1,16 @@
+{
+  "file": "internal/migration/orchestrator.go",
+  "source_sha256": "7e90d81adc227f196c5c64c15729f931db904c47b0923820f69715494ffd808f",
+  "excerpts": [
+    {
+      "start": 368,
+      "end": 388,
+      "code": "// shadowCopy: INIT -> SHADOW_COPY. Copy the ledger as far as the deployment's\n// shadow boundary, and the members as they stood there.\nfunc (r *run) shadowCopy(meta store.Meta) error {\n\tlegacyMax, err := r.legacy().MaxGlobalSeq(r.ctx)\n\tif err != nil {\n\t\treturn err\n\t}\n\tto := r.cfg().ShadowBoundary\n\tif legacyMax < to {\n\t\tto = legacyMax\n\t}\n\tfrom := r.resumeCursor(meta.Cursor, to)\n\tif _, err := r.replayRange(from, to); err != nil {\n\t\treturn err\n\t}\n\twant := meta\n\twant.Phase = string(PhaseShadowCopy)\n\twant.Cursor = to\n\twant.Divergence = 0\n\treturn r.finishPhase(meta, want)\n}"
+    },
+    {
+      "start": 909,
+      "end": 930,
+      "code": "// putMembersAsOf writes the member rows touched by a batch as they stood at\n// its last position, so the destination's members and movements agree with\n// each other at every checkpoint.\nfunc (r *run) putMembersAsOf(batch []legacy.Entry, hi int64) error {\n\tseen := map[string]bool{}\n\tids := make([]string, 0, len(batch))\n\tfor _, e := range batch {\n\t\tif !seen[e.MemberID] {\n\t\t\tseen[e.MemberID] = true\n\t\t\tids = append(ids, e.MemberID)\n\t\t}\n\t}\n\tmembers, err := r.legacy().MembersAsOf(r.ctx, ids, hi)\n\tif err != nil {\n\t\treturn err\n\t}\n\trows := make([]store.Member, 0, len(members))\n\tfor _, m := range members {\n\t\trows = append(rows, store.Member{MemberID: m.MemberID, Tier: m.Tier, BalanceCents: m.BalanceCents,\n\t\t\tVersion: m.Version, Deleted: m.Deleted, UpdatedAt: m.UpdatedAt})\n\t}\n\treturn r.putMembers(rows)"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "driver_harness_failure": "cutover: OperationalError: database is locked",
+  "log_tail": "verify: snapshotting the deliverable\nverify: deliverable: 31 file(s), root:root 700\nverify: installing the graded ledger\nverify: restarting the storage service\nverify: building the submission\nverify: driving the migration\ndriver: [cutover] the seeded ledger has 1720 movement(s)\ndriver: [cutover] the service is up and serving the ledger\ndriver: [cutover] shadow copy recorded\ndriver: [cutover] dual-read probed on mbr-400145\ndriver: [cutover] faults armed at global_seq 803, 987, 1170 of 1721\ndriver: [cutover] cutover-a died during an advance (RemoteDisconnected)\ndriver: [cutover] cutover-a is gone; starting it again\ndriver: [cutover] cutover-a died during an advance (RemoteDisconnected)\ndriver: [cutover] cutover-a is gone; starting it again\ndriver: [cutover] catch-up recorded; faults fired {'folded': 1, 'recycled': 1, 'withheld_committed': 1, 'withheld_lost': 1}\ndriver: [cutover] three movements landed in legacy, one row the ledger never had and one second copy of a movement landed in the destination\ndriver: [cutover] the member book moved on: mbr-400341 joined, mbr-400009 closed, mbr-400018 went basic to platinum\ndriver: [cutover] worker a frozen inside a ledger write: True\ndriver: [cutover] worker b started and the deployment clock moved past a's lease\ndriver: [cutover] the authority flip is open; the stores were compared at that instant\ndriver: [cutover] cutover-b died during an advance (RemoteDisconnected)\ndriver: [cutover] cutover-b is gone; starting it again\ndriver: harness failure in cutover: OperationalError: database is locked\n",
+  "note": "the drive could not be completed: cutover: OperationalError: database is locked",
+  "scenario_cutover": {
+    "advance_calls": 3,
+    "faults_fired": {
+      "folded": 1,
+      "recycled": 1,
+      "withheld_committed": 1,
+      "withheld_lost": 1
+    },
+    "injected": {
+      "divergence_injected": 3,
+      "duplicate_injected": 1,
+      "extra_injected": 1,
+      "late_injected": 0,
+      "window_injected": 0
+    },
+    "notes": [
+      "the seeded ledger has 1720 movement(s)",
+      "the service is up and serving the ledger",
+      "shadow copy recorded",
+      "dual-read probed on mbr-400145",
+      "faults armed at global_seq 803, 987, 1170 of 1721",
+      "cutover-a died during an advance (RemoteDisconnected)",
+      "cutover-a is gone; starting it again",
+      "cutover-a died during an advance (RemoteDisconnected)",
+      "cutover-a is gone; starting it again",
+      "catch-up recorded; faults fired {'folded': 1, 'recycled': 1, 'withheld_committed': 1, 'withheld_lost': 1}",
+      "three movements landed in legacy, one row the ledger never had and one second copy of a movement landed in the destination",
+      "the member book moved on: mbr-400341 joined, mbr-400009 closed, mbr-400018 went basic to platinum",
+      "worker a frozen inside a ledger write: True",
+      "worker b started and the deployment clock moved past a's lease",
+      "the authority flip is open; the stores were compared at that instant",
+      "cutover-b died during an advance (RemoteDisconnected)",
+      "cutover-b is gone; starting it again"
+    ],
+    "restarts": [
+      {
+        "at": "CATCH_UP",
+        "instance": "cutover-a"
+      },
+      {
+        "at": "CATCH_UP",
+        "instance": "cutover-a"
+      },
+      {
+        "at": "CUTOVER",
+        "instance": "cutover-b"
+      }
+    ]
+  },
+  "seam": "present"
+}

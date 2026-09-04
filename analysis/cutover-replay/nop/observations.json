@@ -1,0 +1,28 @@
+{
+  "scenarios": {
+    "cutover": {
+      "advance_calls": 0,
+      "book_changed": {},
+      "checks": {},
+      "config": {
+        "lease_ttl_seconds": 23,
+        "shadow_boundary": 620
+      },
+      "divergence_injected": 0,
+      "duplicate_injected": 0,
+      "extra_injected": 0,
+      "faults_fired": {},
+      "late_injected": 0,
+      "notes": [
+        "the seeded ledger has 1720 movement(s)",
+        "the service is up and serving the ledger",
+        "advance is not implemented; nothing to drive"
+      ],
+      "oplog": [],
+      "restarts": [],
+      "seam": "absent",
+      "window_injected": 0
+    }
+  },
+  "seam": "absent"
+}

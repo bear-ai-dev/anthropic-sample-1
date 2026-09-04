@@ -1,0 +1,852 @@
+{
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft keeps the questions one tab wrote when the other tab saves a title",
+          "status": "failed",
+          "title": "keeps the questions one tab wrote when the other tab saves a title",
+          "duration": 843.4904230000002,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-concurrency.spec.tsx:58:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft keeps the title one tab wrote when the other tab saves questions",
+          "status": "failed",
+          "title": "keeps the title one tab wrote when the other tab saves questions",
+          "duration": 768.3832469999998,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-concurrency.spec.tsx:76:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft keeps a picture one tab removed when the other tab saves a title",
+          "status": "failed",
+          "title": "keeps a picture one tab removed when the other tab saves a title",
+          "duration": 619.8386199999995,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-concurrency.spec.tsx:94:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft keeps a document one tab took off when the other tab saves a title",
+          "status": "failed",
+          "title": "keeps a document one tab took off when the other tab saves a title",
+          "duration": 675.7274019999995,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-concurrency.spec.tsx:112:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft keeps both tabs' work when each saves twice, in turn",
+          "status": "failed",
+          "title": "keeps both tabs' work when each saves twice, in turn",
+          "duration": 723.1707420000002,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-concurrency.spec.tsx:135:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft does not let the tab that never touched the title put the old one back",
+          "status": "failed",
+          "title": "does not let the tab that never touched the title put the old one back",
+          "duration": 955.0064229999998,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-concurrency.spec.tsx:161:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft takes a picture out of the record when one tab replaces it from disk",
+          "status": "passed",
+          "title": "takes a picture out of the record when one tab replaces it from disk",
+          "duration": 530.5315249999994,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft hands a third tab everything the first two put in",
+          "status": "failed",
+          "title": "hands a third tab everything the first two put in",
+          "duration": 711.9064950000002,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-concurrency.spec.tsx:208:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft lets a tab opened after a save write the whole draft as it found it",
+          "status": "passed",
+          "title": "lets a tab opened after a save write the whole draft as it found it",
+          "duration": 599.1088459999992,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft does not let one tab's discard bring back what the other tab wrote after it",
+          "status": "passed",
+          "title": "does not let one tab's discard bring back what the other tab wrote after it",
+          "duration": 757.0205600000008,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R13 two pages editing one draft"
+          ],
+          "fullName": "R13 two pages editing one draft keeps two tabs of the create flow apart from an edit draft of the same account",
+          "status": "passed",
+          "title": "keeps two tabs of the create flow apart from an edit draft of the same account",
+          "duration": 513.0406250000015,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1788368895017,
+      "endTime": 1788368902715.0405,
+      "status": "failed",
+      "message": "",
+      "name": "/tests/verifier-data/spec/rules-concurrency.spec.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen remembers that the document was taken off",
+          "status": "passed",
+          "title": "remembers that the document was taken off",
+          "duration": 541.3979239999999,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen brings the event's own document back rather than the one from disk",
+          "status": "passed",
+          "title": "brings the event's own document back rather than the one from disk",
+          "duration": 406.83953299999985,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen holds no document at all in a flow that never had one",
+          "status": "passed",
+          "title": "holds no document at all in a flow that never had one",
+          "duration": 251.70224400000006,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen keeps the removal when a document from disk was chosen first",
+          "status": "passed",
+          "title": "keeps the removal when a document from disk was chosen first",
+          "duration": 477.30771700000014,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen keeps a document taken off and a question written beside it",
+          "status": "passed",
+          "title": "keeps a document taken off and a question written beside it",
+          "duration": 488.72618999999986,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen does not lose a document taken off a moment before the page went away",
+          "status": "passed",
+          "title": "does not lose a document taken off a moment before the page went away",
+          "duration": 364.845781,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen does not take one event's document off another event's form",
+          "status": "passed",
+          "title": "does not take one event's document off another event's form",
+          "duration": 564.3298629999999,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R12 a document taken off, and one only just chosen"
+          ],
+          "fullName": "R12 a document taken off, and one only just chosen gives the event's document back when the draft is discarded",
+          "status": "passed",
+          "title": "gives the event's document back when the draft is discarded",
+          "duration": 451.1528840000001,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1788368933625,
+      "endTime": 1788368937172.1528,
+      "status": "passed",
+      "message": "",
+      "name": "/tests/verifier-data/spec/rules-documents.spec.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "R5 records written by the previous release"
+          ],
+          "fullName": "R5 records written by the previous release opens a draft left by the old format",
+          "status": "passed",
+          "title": "opens a draft left by the old format",
+          "duration": 131.11196699999982,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R5 records written by the previous release"
+          ],
+          "fullName": "R5 records written by the previous release keeps the old draft after two reloads, in the current format",
+          "status": "passed",
+          "title": "keeps the old draft after two reloads, in the current format",
+          "duration": 376.9469759999997,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R5 records written by the previous release"
+          ],
+          "fullName": "R5 records written by the previous release does not apply an old record to an event it cannot name",
+          "status": "passed",
+          "title": "does not apply an old record to an event it cannot name",
+          "duration": 208.433497,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R5 records written by the previous release"
+          ],
+          "fullName": "R5 records written by the previous release applies an old record in the duplicate flow, which names no event either",
+          "status": "passed",
+          "title": "applies an old record in the duplicate flow, which names no event either",
+          "duration": 339.2123190000002,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R5 records written by the previous release"
+          ],
+          "fullName": "R5 records written by the previous release prefers a draft in the current format over an old one beside it",
+          "status": "passed",
+          "title": "prefers a draft in the current format over an old one beside it",
+          "duration": 207.60013299999991,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R5 records written by the previous release"
+          ],
+          "fullName": "R5 records written by the previous release does not let an old record roll back typing done while it was being read",
+          "status": "failed",
+          "title": "does not let an old record roll back typing done while it was being read",
+          "duration": 57.975484999999935,
+          "failureMessages": [
+            "SeamError: the event title input is not on the page\n    at requireTitleInput (/tests/verifier-data/harness/drive.ts:66:23)\n    at Module.typeTitle (/tests/verifier-data/harness/drive.ts:75:19)\n    at Module.perform (/tests/verifier-data/harness/script.ts:239:23)\n    at Module.check (/tests/verifier-data/model/check.ts:40:22)\n    at /tests/verifier-data/spec/rules-lifecycle.spec.tsx:83:30\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R9 when a draft stops being one"
+          ],
+          "fullName": "R9 when a draft stops being one leaves nothing to come back after the event is submitted",
+          "status": "passed",
+          "title": "leaves nothing to come back after the event is submitted",
+          "duration": 366.3763490000006,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R9 when a draft stops being one"
+          ],
+          "fullName": "R9 when a draft stops being one puts the form back where it started when the draft is discarded",
+          "status": "passed",
+          "title": "puts the form back where it started when the draft is discarded",
+          "duration": 125.62306999999964,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R9 when a draft stops being one"
+          ],
+          "fullName": "R9 when a draft stops being one leaves nothing to come back after a discard, media and all",
+          "status": "passed",
+          "title": "leaves nothing to come back after a discard, media and all",
+          "duration": 431.38770300000033,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R9 when a draft stops being one"
+          ],
+          "fullName": "R9 when a draft stops being one does not resurrect a discarded draft from the old format",
+          "status": "passed",
+          "title": "does not resurrect a discarded draft from the old format",
+          "duration": 245.6144430000004,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R9 when a draft stops being one"
+          ],
+          "fullName": "R9 when a draft stops being one throws away one account's draft without touching another's",
+          "status": "passed",
+          "title": "throws away one account's draft without touching another's",
+          "duration": 431.62497299999995,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1788368923056,
+      "endTime": 1788368925978.625,
+      "status": "failed",
+      "message": "",
+      "name": "/tests/verifier-data/spec/rules-lifecycle.spec.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "R1 what survives a page that went away"
+          ],
+          "fullName": "R1 what survives a page that went away brings back work that was left in the form",
+          "status": "passed",
+          "title": "brings back work that was left in the form",
+          "duration": 270.12713399999984,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R1 what survives a page that went away"
+          ],
+          "fullName": "R1 what survives a page that went away brings back the last of several changes across three reloads",
+          "status": "passed",
+          "title": "brings back the last of several changes across three reloads",
+          "duration": 478.39392,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R1 what survives a page that went away"
+          ],
+          "fullName": "R1 what survives a page that went away brings back work left in a duplicate of an event",
+          "status": "passed",
+          "title": "brings back work left in a duplicate of an event",
+          "duration": 399.37001499999997,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R1 what survives a page that went away"
+          ],
+          "fullName": "R1 what survives a page that went away brings back work in an edit flow whose store also holds something unreadable",
+          "status": "passed",
+          "title": "brings back work in an edit flow whose store also holds something unreadable",
+          "duration": 285.06391299999996,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R2 pictures that cannot be written down"
+          ],
+          "fullName": "R2 pictures that cannot be written down does not bring back a picture chosen from disk",
+          "status": "passed",
+          "title": "does not bring back a picture chosen from disk",
+          "duration": 361.4352270000004,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R2 pictures that cannot be written down"
+          ],
+          "fullName": "R2 pictures that cannot be written down brings back a picture that has an address of its own",
+          "status": "passed",
+          "title": "brings back a picture that has an address of its own",
+          "duration": 259.1861550000003,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R2 pictures that cannot be written down"
+          ],
+          "fullName": "R2 pictures that cannot be written down stops speaking for a picture once the one on the form came from disk",
+          "status": "failed",
+          "title": "stops speaking for a picture once the one on the form came from disk",
+          "duration": 550.5802130000002,
+          "failureMessages": [
+            "AssertionError: expected [ Array(1) ] to deeply equal []\n    at /tests/verifier-data/spec/rules-media.spec.tsx:98:26\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///deps/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///deps/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R2 pictures that cannot be written down"
+          ],
+          "fullName": "R2 pictures that cannot be written down keeps a library picture in a duplicate, and the typing beside it",
+          "status": "passed",
+          "title": "keeps a library picture in a duplicate, and the typing beside it",
+          "duration": 271.97854000000007,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R2 pictures that cannot be written down"
+          ],
+          "fullName": "R2 pictures that cannot be written down loses nothing when the page goes away with a picture from disk on the form",
+          "status": "passed",
+          "title": "loses nothing when the page goes away with a picture from disk on the form",
+          "duration": 335.37572199999977,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1788368928308,
+      "endTime": 1788368931520.3757,
+      "status": "failed",
+      "message": "",
+      "name": "/tests/verifier-data/spec/rules-media.spec.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "R4 whose draft it is"
+          ],
+          "fullName": "R4 whose draft it is does not show one account's draft to another",
+          "status": "passed",
+          "title": "does not show one account's draft to another",
+          "duration": 261.2320490000002,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R4 whose draft it is"
+          ],
+          "fullName": "R4 whose draft it is does not carry a draft from one flow into another",
+          "status": "passed",
+          "title": "does not carry a draft from one flow into another",
+          "duration": 384.340588,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R4 whose draft it is"
+          ],
+          "fullName": "R4 whose draft it is does not carry a draft from one event into another",
+          "status": "passed",
+          "title": "does not carry a draft from one event into another",
+          "duration": 321.525126,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R4 whose draft it is"
+          ],
+          "fullName": "R4 whose draft it is does not show one account the draft another left on the same event",
+          "status": "passed",
+          "title": "does not show one account the draft another left on the same event",
+          "duration": 287.8095149999999,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R4 whose draft it is"
+          ],
+          "fullName": "R4 whose draft it is keeps a duplicate apart from the event it was copied from",
+          "status": "passed",
+          "title": "keeps a duplicate apart from the event it was copied from",
+          "duration": 259.5804049999997,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R4 whose draft it is"
+          ],
+          "fullName": "R4 whose draft it is keeps a duplicate apart from the create flow it shares a route with",
+          "status": "passed",
+          "title": "keeps a duplicate apart from the create flow it shares a route with",
+          "duration": 504.6805920000006,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R4 whose draft it is"
+          ],
+          "fullName": "R4 whose draft it is keeps each account's draft for itself",
+          "status": "passed",
+          "title": "keeps each account's draft for itself",
+          "duration": 299.649128,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R6 records that cannot be read"
+          ],
+          "fullName": "R6 records that cannot be read opens the flow when the store holds something that is not a draft",
+          "status": "passed",
+          "title": "opens the flow when the store holds something that is not a draft",
+          "duration": 108.29228899999998,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R6 records that cannot be read"
+          ],
+          "fullName": "R6 records that cannot be read opens the flow when the record is from a release this one does not know",
+          "status": "passed",
+          "title": "opens the flow when the record is from a release this one does not know",
+          "duration": 95.32891199999995,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R6 records that cannot be read"
+          ],
+          "fullName": "R6 records that cannot be read still saves after finding something unreadable, and keeps saving",
+          "status": "passed",
+          "title": "still saves after finding something unreadable, and keeps saving",
+          "duration": 296.8953840000004,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1788368917717,
+      "endTime": 1788368920536.8953,
+      "status": "passed",
+      "message": "",
+      "name": "/tests/verifier-data/spec/rules-scope.spec.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "R3 the gallery is a list, not a picture"
+          ],
+          "fullName": "R3 the gallery is a list, not a picture keeps the pictures that have addresses and drops the ones that do not",
+          "status": "passed",
+          "title": "keeps the pictures that have addresses and drops the ones that do not",
+          "duration": 490.91559199999983,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R3 the gallery is a list, not a picture"
+          ],
+          "fullName": "R3 the gallery is a list, not a picture remembers a gallery someone emptied, across two pages",
+          "status": "passed",
+          "title": "remembers a gallery someone emptied, across two pages",
+          "duration": 666.8481299999999,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R3 the gallery is a list, not a picture"
+          ],
+          "fullName": "R3 the gallery is a list, not a picture carries the gallery of a duplicate without the picture from disk",
+          "status": "passed",
+          "title": "carries the gallery of a duplicate without the picture from disk",
+          "duration": 341.55153500000006,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form brings back a question written in the questions section",
+          "status": "passed",
+          "title": "brings back a question written in the questions section",
+          "duration": 345.1518080000001,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form adds to the questions the event already had rather than replacing them",
+          "status": "passed",
+          "title": "adds to the questions the event already had rather than replacing them",
+          "duration": 429.32444399999986,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form keeps which questions there are and the order they were in",
+          "status": "passed",
+          "title": "keeps which questions there are and the order they were in",
+          "duration": 744.4208939999999,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form does not lose a question written a moment before the page went away",
+          "status": "passed",
+          "title": "does not lose a question written a moment before the page went away",
+          "duration": 412.0777359999993,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form carries three sections' work out of one page that went away",
+          "status": "passed",
+          "title": "carries three sections' work out of one page that went away",
+          "duration": 491.3722459999999,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form keeps a question written while the store was still answering",
+          "status": "failed",
+          "title": "keeps a question written while the store was still answering",
+          "duration": 212.68683500000043,
+          "failureMessages": [
+            "SeamError: nothing on the page reads \"Advanced Settings (optional)\"\n    at clickRow (/tests/verifier-data/harness/drive.ts:174:22)\n    at expandAdvanced (/tests/verifier-data/harness/drive.ts:181:11)\n    at Module.addQuestion (/tests/verifier-data/harness/drive.ts:316:11)\n    at Module.perform (/tests/verifier-data/harness/script.ts:267:23)\n    at Module.check (/tests/verifier-data/model/check.ts:40:22)\n    at /tests/verifier-data/spec/rules-sections.spec.tsx:142:30\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form keeps a question, a picture from disk and an emptied gallery in one draft",
+          "status": "passed",
+          "title": "keeps a question, a picture from disk and an emptied gallery in one draft",
+          "duration": 510.5649519999997,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R11 work that a section of its own put into the form"
+          ],
+          "fullName": "R11 work that a section of its own put into the form leaves no questions behind after the draft is discarded",
+          "status": "passed",
+          "title": "leaves no questions behind after the draft is discarded",
+          "duration": 571.3682079999999,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1788368905287,
+      "endTime": 1788368910503.3682,
+      "status": "failed",
+      "message": "",
+      "name": "/tests/verifier-data/spec/rules-sections.spec.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "R7 saves that overtake one another"
+          ],
+          "fullName": "R7 saves that overtake one another does not let a slow earlier save undo a later one",
+          "status": "passed",
+          "title": "does not let a slow earlier save undo a later one",
+          "duration": 348.16618000000017,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R7 saves that overtake one another"
+          ],
+          "fullName": "R7 saves that overtake one another does not let a slow earlier save undo a section's work either",
+          "status": "passed",
+          "title": "does not let a slow earlier save undo a section's work either",
+          "duration": 571.176845,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R7 saves that overtake one another"
+          ],
+          "fullName": "R7 saves that overtake one another keeps saving after the store refuses a write",
+          "status": "passed",
+          "title": "keeps saving after the store refuses a write",
+          "duration": 269.15916100000004,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R8 a draft that arrives late"
+          ],
+          "fullName": "R8 a draft that arrives late does not roll back what was typed while the store was slow",
+          "status": "failed",
+          "title": "does not roll back what was typed while the store was slow",
+          "duration": 190.96115899999995,
+          "failureMessages": [
+            "SeamError: the event title input is not on the page\n    at requireTitleInput (/tests/verifier-data/harness/drive.ts:66:23)\n    at Module.typeTitle (/tests/verifier-data/harness/drive.ts:75:19)\n    at Module.perform (/tests/verifier-data/harness/script.ts:239:23)\n    at Module.check (/tests/verifier-data/model/check.ts:40:22)\n    at /tests/verifier-data/spec/rules-timing.spec.tsx:68:30\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R8 a draft that arrives late"
+          ],
+          "fullName": "R8 a draft that arrives late saves what was typed while the store was slow",
+          "status": "failed",
+          "title": "saves what was typed while the store was slow",
+          "duration": 207.74963200000002,
+          "failureMessages": [
+            "SeamError: the event title input is not on the page\n    at requireTitleInput (/tests/verifier-data/harness/drive.ts:66:23)\n    at Module.typeTitle (/tests/verifier-data/harness/drive.ts:75:19)\n    at Module.perform (/tests/verifier-data/harness/script.ts:239:23)\n    at Module.check (/tests/verifier-data/model/check.ts:40:22)\n    at /tests/verifier-data/spec/rules-timing.spec.tsx:79:30\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R8 a draft that arrives late"
+          ],
+          "fullName": "R8 a draft that arrives late does not roll back a picture chosen while the store was slow",
+          "status": "failed",
+          "title": "does not roll back a picture chosen while the store was slow",
+          "duration": 370.504097,
+          "failureMessages": [
+            "SeamError: the flyer preview is not on the page\n    at openFlyerModal (/tests/verifier-data/harness/drive.ts:203:36)\n    at Module.uploadFlyer (/tests/verifier-data/harness/drive.ts:223:11)\n    at Module.perform (/tests/verifier-data/harness/script.ts:258:23)\n    at Module.check (/tests/verifier-data/model/check.ts:40:22)\n    at /tests/verifier-data/spec/rules-timing.spec.tsx:95:40\n    at file:///deps/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///deps/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runSuite (file:///deps/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///deps/node_modules/@vitest/runner/dist/index.js:1262:5)"
+          ],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R10 writing for the work rather than for the keystroke"
+          ],
+          "fullName": "R10 writing for the work rather than for the keystroke does not spend a write on every keystroke",
+          "status": "passed",
+          "title": "does not spend a write on every keystroke",
+          "duration": 276.6160990000003,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R10 writing for the work rather than for the keystroke"
+          ],
+          "fullName": "R10 writing for the work rather than for the keystroke does not lose what was typed a moment before the page went away",
+          "status": "passed",
+          "title": "does not lose what was typed a moment before the page went away",
+          "duration": 224.1808900000001,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "R10 writing for the work rather than for the keystroke"
+          ],
+          "fullName": "R10 writing for the work rather than for the keystroke does not bring back work that was discarded before it was ever written",
+          "status": "passed",
+          "title": "does not bring back work that was discarded before it was ever written",
+          "duration": 214.73181600000044,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1788368912218,
+      "endTime": 1788368914891.732,
+      "status": "failed",
+      "message": "",
+      "name": "/tests/verifier-data/spec/rules-timing.spec.tsx"
+    }
+  ]
+}

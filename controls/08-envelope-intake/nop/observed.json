@@ -1,0 +1,34 @@
+{
+  "healthy": true,
+  "intake_probe": {
+    "resolved": null,
+    "attempts": [
+      {
+        "path": "/v1/intake/envelope",
+        "status": 501,
+        "body": "{\"error\":\"intake dispatch is not implemented\"}"
+      },
+      {
+        "path": "/v1/intake/envelopes",
+        "status": 404,
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /v1/intake/envelopes</pre>\n</body>\n</html>\n"
+      },
+      {
+        "path": "/intake/envelope",
+        "status": 404,
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /intake/envelope</pre>\n</body>\n</html>\n"
+      },
+      {
+        "path": "/v1/envelopes",
+        "status": 404,
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /v1/envelopes</pre>\n</body>\n</html>\n"
+      },
+      {
+        "path": "/v1/intake",
+        "status": 404,
+        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /v1/intake</pre>\n</body>\n</html>\n"
+      }
+    ]
+  },
+  "note": "no route accepted a delivery"
+}

@@ -1,0 +1,256 @@
+{
+  "source": "Original isolated control runs, recovered from authenticated artifact volumes",
+  "recovered_at": "2026-09-04",
+  "controls": {
+    "02-recurring-events/nop": {
+      "checked_at": "2026-09-04T19:17:33.504014+00:00",
+      "reward": 0.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/02-recurring-events/nop/test-stdout.txt",
+          "source_sha256": "e5db1b1c04b8da134b5a71707cf93ac4205d06aac73138ae1294a4f0bafd4b7c",
+          "sha256": "e5db1b1c04b8da134b5a71707cf93ac4205d06aac73138ae1294a4f0bafd4b7c"
+        },
+        {
+          "path": "controls/02-recurring-events/nop/reward.json",
+          "source_sha256": "243076d364ef58a81bea0bfa38f8a1f9f48a72d8d6f427436830d78d13ae66c4",
+          "sha256": "0760958cf4da035a476175217aca209738c2b8b1c2c9cd24c266011e0b467621"
+        },
+        {
+          "path": "controls/02-recurring-events/nop/reward-detail.json",
+          "source_sha256": "f1a173a219ce1d72397b75b1f6b67e02d83319efe055e89a882163b29e1d0afc",
+          "sha256": "f1a173a219ce1d72397b75b1f6b67e02d83319efe055e89a882163b29e1d0afc"
+        }
+      ]
+    },
+    "02-recurring-events/oracle": {
+      "checked_at": "2026-09-04T19:18:15.163560+00:00",
+      "reward": 1.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/02-recurring-events/oracle/test-stdout.txt",
+          "source_sha256": "a59e0e8694eca9b739ecdb37c9d4598a4d440de35e16b81efb80546f57e66b0e",
+          "sha256": "a59e0e8694eca9b739ecdb37c9d4598a4d440de35e16b81efb80546f57e66b0e"
+        },
+        {
+          "path": "controls/02-recurring-events/oracle/reward.json",
+          "source_sha256": "c407bfec330dd8e0c594717179bac81d96eaa21e442f4e3e4ba27e9883d5c1eb",
+          "sha256": "c10ee38c3905ab705441020eafac69c27ff72a4b2a9c82e05a4f13497e00739b"
+        },
+        {
+          "path": "controls/02-recurring-events/oracle/reward-detail.json",
+          "source_sha256": "956536d581753ab5cfac513496477f9775709d0cc8da8b4e310358cbab6b9b95",
+          "sha256": "956536d581753ab5cfac513496477f9775709d0cc8da8b4e310358cbab6b9b95"
+        }
+      ]
+    },
+    "04-draft-recovery/nop": {
+      "checked_at": "2026-09-03T23:39:38.246864+00:00",
+      "reward": 0.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/04-draft-recovery/nop/verifier-report.json",
+          "source_sha256": "7bd49dfc43f4e65f7ac7f5bb0a9a84f704ac4168da67c65aedf4350eda42b1ea",
+          "sha256": "3a99714dffbf1e74b03662783518db55a5ab04bb7dd949c05ea016549cd5aeed"
+        },
+        {
+          "path": "controls/04-draft-recovery/nop/verifier-output.txt",
+          "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
+          "sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29"
+        },
+        {
+          "path": "controls/04-draft-recovery/nop/test-stdout.txt",
+          "source_sha256": "4c511a632670cccebfbd3d4a1aec77e4999db868dd8bedc5d89297f12f3c22cd",
+          "sha256": "4c511a632670cccebfbd3d4a1aec77e4999db868dd8bedc5d89297f12f3c22cd"
+        },
+        {
+          "path": "controls/04-draft-recovery/nop/reward.json",
+          "source_sha256": "30670bd79307da19efa3fcb1cdfef8ee35cb117ee623af92a50578ca3d586e06",
+          "sha256": "d7666afd1851bd3feb05243a53728a4879c750354d57123a9e20a5bdae45402a"
+        },
+        {
+          "path": "controls/04-draft-recovery/nop/reward-detail.json",
+          "source_sha256": "9cc8c54a4bda63e7cb443a3178991265b959f248561a8135fcb6c102b2d6c296",
+          "sha256": "b6327e01b06c05846debde7fe09610dd503bdbaac42d628c50aa5ba149b59b68"
+        }
+      ]
+    },
+    "04-draft-recovery/oracle": {
+      "checked_at": "2026-09-03T23:39:44.947977+00:00",
+      "reward": 1.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/04-draft-recovery/oracle/verifier-report.json",
+          "source_sha256": "62cfa7b8ea173666bd8aa8d4a0728a28b38179f2ce05f612eda8c38df637d34f",
+          "sha256": "b7037d963ecddc79356657e3562e28f24dd0a102aa12f1e280553f7e31fc9fe4"
+        },
+        {
+          "path": "controls/04-draft-recovery/oracle/verifier-output.txt",
+          "source_sha256": "39d740351e1a7d5bb8a759579703fc2ac93022640e5f5168c623c355d544f2db",
+          "sha256": "39d740351e1a7d5bb8a759579703fc2ac93022640e5f5168c623c355d544f2db"
+        },
+        {
+          "path": "controls/04-draft-recovery/oracle/test-stdout.txt",
+          "source_sha256": "388f112e3e0c03fa07bba8da7b31d5fcff95d73c5ec9b6a3972f6db10adc1344",
+          "sha256": "388f112e3e0c03fa07bba8da7b31d5fcff95d73c5ec9b6a3972f6db10adc1344"
+        },
+        {
+          "path": "controls/04-draft-recovery/oracle/reward.json",
+          "source_sha256": "9348653763a203ec46b05059232174432345a8634d8874ef7c7832f817d6289e",
+          "sha256": "2933352476a32b953fdd8ac6b771c5583e7159c66eafbe283a93e989576f3c02"
+        },
+        {
+          "path": "controls/04-draft-recovery/oracle/reward-detail.json",
+          "source_sha256": "bfba31771264346f4307e6bac22e9d748a022cc724ee5d394d0468f50ead1581",
+          "sha256": "b8d7998443f4298a459afbfd03f91121af332535b7cf2b2444445f9717947146"
+        }
+      ]
+    },
+    "08-envelope-intake/nop": {
+      "checked_at": "2026-09-03T23:38:45.505200+00:00",
+      "reward": 0.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/08-envelope-intake/nop/test-stdout.txt",
+          "source_sha256": "06a6212de6735beffd77f2a4d84acc08067c9e959e9b2a390cad4f2217d5a562",
+          "sha256": "06a6212de6735beffd77f2a4d84acc08067c9e959e9b2a390cad4f2217d5a562"
+        },
+        {
+          "path": "controls/08-envelope-intake/nop/reward.json",
+          "source_sha256": "3cc7c85354d48e58389806dd160d251fb096338ddaa168a7148b95297feb2250",
+          "sha256": "ffd4e43dba743c1df122172892b609ddee8b2cd07ea564682c5edb75e0f67b90"
+        },
+        {
+          "path": "controls/08-envelope-intake/nop/reward-detail.json",
+          "source_sha256": "237aa46f100650cff260ef908e63e7f176bc6d04844374df6a93988e7ca6f2f5",
+          "sha256": "237aa46f100650cff260ef908e63e7f176bc6d04844374df6a93988e7ca6f2f5"
+        },
+        {
+          "path": "controls/08-envelope-intake/nop/observed.json",
+          "source_sha256": "5b47c33ea661815fbb5803a8413e29a6289578f46c59c4956bed200581d754a4",
+          "sha256": "a6b2615251bba1aafeb112ff4ce4ee524d2342909a505026cc9cc46e2c766296"
+        }
+      ]
+    },
+    "08-envelope-intake/oracle": {
+      "checked_at": "2026-09-03T23:39:02.814196+00:00",
+      "reward": 1.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/08-envelope-intake/oracle/test-stdout.txt",
+          "source_sha256": "cd98e06498c47eaa99dfe980d534bf092f0e8d86fef87888e39a042c1c207eec",
+          "sha256": "cd98e06498c47eaa99dfe980d534bf092f0e8d86fef87888e39a042c1c207eec"
+        },
+        {
+          "path": "controls/08-envelope-intake/oracle/reward.json",
+          "source_sha256": "e48e03b6f1a2eba2c18cd23f0e3ce1fb75c6dc77ba18f6d3a5e699402f8ad62f",
+          "sha256": "65478482576fc69254ad66e2fb7cd70a98087c9cc037ef42b928da291661b2c8"
+        },
+        {
+          "path": "controls/08-envelope-intake/oracle/reward-detail.json",
+          "source_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
+          "sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd"
+        },
+        {
+          "path": "controls/08-envelope-intake/oracle/observed.json",
+          "source_sha256": "97a66b061bd02c92a5461127093abf11d7ab006dd70126e47bb9f7ae5b75a99e",
+          "sha256": "8be5fda95b773b28ec00f584399751f753dc4c048173e271c3796e8296cd1834"
+        }
+      ]
+    },
+    "11-store-cutover/nop": {
+      "checked_at": "2026-09-03T23:39:19.611382+00:00",
+      "reward": 0.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/11-store-cutover/nop/test-stdout.txt",
+          "source_sha256": "994b7071b8c06253e675f02bc5a99abda0ea37edc6528b263a2607f17a5c60a0",
+          "sha256": "994b7071b8c06253e675f02bc5a99abda0ea37edc6528b263a2607f17a5c60a0"
+        },
+        {
+          "path": "controls/11-store-cutover/nop/reward.json",
+          "source_sha256": "1d8511dcb533d7d0ea095ab1fed80023c526956199da238a47b3bcde6e6df655",
+          "sha256": "5c73d718100b1b99b632b6c9956dae409fe1fe6b58474aca8d2ea5823bf0c6e4"
+        },
+        {
+          "path": "controls/11-store-cutover/nop/reward-detail.json",
+          "source_sha256": "f2b59829f3f06758c95913cf702d4a5d56244bc645e79caea5392ed17d95005c",
+          "sha256": "8cfdc18661059bf3a89659cf10d7f12bf08857d96604a13114d6395ea82a7660"
+        }
+      ]
+    },
+    "11-store-cutover/oracle": {
+      "checked_at": "2026-09-03T23:39:37.306333+00:00",
+      "reward": 1.0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/11-store-cutover/oracle/test-stdout.txt",
+          "source_sha256": "9bc3c9c6a9aed40c948519362f73cb2b71ce024947237fe13520bace35eb02cb",
+          "sha256": "9bc3c9c6a9aed40c948519362f73cb2b71ce024947237fe13520bace35eb02cb"
+        },
+        {
+          "path": "controls/11-store-cutover/oracle/reward.json",
+          "source_sha256": "a95aa6fcff5c739e655920fc89913445a4d168b4a907cd4f860757bb7c900344",
+          "sha256": "34e636bdde02ca7e3fa38214565a1ce6774f656e0773eaa2a4776e6cfe9c0137"
+        },
+        {
+          "path": "controls/11-store-cutover/oracle/reward-detail.json",
+          "source_sha256": "b27d499d0a5b82efa2f0355e0a18de122a9df0de529914e142e2156bf2e99541",
+          "sha256": "f00480773ed592b7a4c977645ac5b5f3dc77f163735bfd147945301bcea5a5a7"
+        }
+      ]
+    },
+    "12-readmodel-rebuild/nop": {
+      "checked_at": "2026-09-03T23:39:34.597628+00:00",
+      "reward": 0,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/12-readmodel-rebuild/nop/reward.json",
+          "source_sha256": "6b27cf7435d501182f43ce4c1f518f8ee2c0bf3d94a510b22a34ffee753806d3",
+          "sha256": "a3a4b511aa52a19190b005a0ad549a13084db7a0c344c7d864f4798dd79301af"
+        },
+        {
+          "path": "controls/12-readmodel-rebuild/nop/reward-detail.json",
+          "source_sha256": "bfc7cf8684e8afa1d52315c7ee405c97debadb1ee002029e114eb4b08ca4721d",
+          "sha256": "69402f41483409115e2a1fbd57e4c96b4d58a5134be67900c6ad67dd7e0dc024"
+        },
+        {
+          "path": "controls/12-readmodel-rebuild/nop/grader.log",
+          "source_sha256": "429e35b8ef7146ee0a9eae1de44725f06db8dde67bc34425c654c8afe1fc9fd4",
+          "sha256": "429e35b8ef7146ee0a9eae1de44725f06db8dde67bc34425c654c8afe1fc9fd4"
+        }
+      ]
+    },
+    "12-readmodel-rebuild/oracle": {
+      "checked_at": "2026-09-03T23:39:42.550164+00:00",
+      "reward": 1,
+      "scored": false,
+      "files": [
+        {
+          "path": "controls/12-readmodel-rebuild/oracle/reward.json",
+          "source_sha256": "1b1f59265254fcd025e74ea45831a7c6e2fafbc4a8b0be7de176f7b7a6772db8",
+          "sha256": "a33f20040c7c353be7fc896bd9842d46744854ab569e13fe8234a02a374d134b"
+        },
+        {
+          "path": "controls/12-readmodel-rebuild/oracle/reward-detail.json",
+          "source_sha256": "14ecfdc5f2be52813bd6ec78ffac0b14cb3a507a87e10c656bd580ecce3cdfe1",
+          "sha256": "443b7683fee917f888ce5cecb2e622a15123e66320c3cd3a587fb98aaeae631c"
+        },
+        {
+          "path": "controls/12-readmodel-rebuild/oracle/grader.log",
+          "source_sha256": "bcac1493bf79a68086861ed0260ce3ab33a8ee9a326205abf9a6ed1b21b87113",
+          "sha256": "bcac1493bf79a68086861ed0260ce3ab33a8ee9a326205abf9a6ed1b21b87113"
+        }
+      ]
+    }
+  }
+}

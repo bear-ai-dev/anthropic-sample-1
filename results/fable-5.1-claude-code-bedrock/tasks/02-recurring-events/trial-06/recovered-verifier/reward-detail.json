@@ -1,0 +1,162 @@
+{
+  "reward": 0.0,
+  "passed_rules": [
+    "R1-generate-shapes",
+    "R2-selected-days",
+    "R3-month-clamp",
+    "R4-spring-forward",
+    "R5-fall-back",
+    "R6-occurrence-count",
+    "R7-end-date",
+    "R8-protect-published",
+    "R9-edited-survives",
+    "R10-extend",
+    "R11-concurrent-regenerate",
+    "R12-publish-then-regenerate",
+    "R13-delete-with-sales",
+    "R14-scope-steps-over-paid",
+    "R15-scope-over-month-end",
+    "R16-scope-across-transition",
+    "R17-scope-then-regenerate",
+    "R18-extend-fills-gap",
+    "R19-extend-after-regenerate",
+    "R20-race-scope-vs-regenerate",
+    "R21-zone-by-configuration",
+    "R22-regenerate-cross",
+    "R23-scope-regenerate-extend",
+    "R24-race-on-hard-dates",
+    "R27-interleavings"
+  ],
+  "failed_rules": [
+    "R25-survivor-identity",
+    "R26-money-across-operations"
+  ],
+  "fixture_gate": [],
+  "rules": {
+    "R1-generate-shapes": {
+      "seconds": 0.6,
+      "complaints": []
+    },
+    "R2-selected-days": {
+      "seconds": 0.1,
+      "complaints": []
+    },
+    "R3-month-clamp": {
+      "seconds": 0.1,
+      "complaints": []
+    },
+    "R4-spring-forward": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R5-fall-back": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R6-occurrence-count": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R7-end-date": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R8-protect-published": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R9-edited-survives": {
+      "seconds": 0.4,
+      "complaints": []
+    },
+    "R10-extend": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R11-concurrent-regenerate": {
+      "seconds": 1.5,
+      "complaints": []
+    },
+    "R12-publish-then-regenerate": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R13-delete-with-sales": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R14-scope-steps-over-paid": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R15-scope-over-month-end": {
+      "seconds": 0.3,
+      "complaints": []
+    },
+    "R16-scope-across-transition": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R17-scope-then-regenerate": {
+      "seconds": 0.3,
+      "complaints": []
+    },
+    "R18-extend-fills-gap": {
+      "seconds": 0.2,
+      "complaints": []
+    },
+    "R19-extend-after-regenerate": {
+      "seconds": 0.4,
+      "complaints": []
+    },
+    "R20-race-scope-vs-regenerate": {
+      "seconds": 5.0,
+      "complaints": []
+    },
+    "R21-zone-by-configuration": {
+      "seconds": 9.1,
+      "complaints": []
+    },
+    "R22-regenerate-cross": {
+      "seconds": 2.3,
+      "complaints": []
+    },
+    "R23-scope-regenerate-extend": {
+      "seconds": 3.1,
+      "complaints": []
+    },
+    "R24-race-on-hard-dates": {
+      "seconds": 2.4,
+      "complaints": []
+    },
+    "R25-survivor-identity": {
+      "seconds": 0.8,
+      "complaints": [
+        "R25-identity-Europe-Lisbon-month: occurrence c1e23384-9dfc-48c3-8a66-6a3f1989dd32 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence e1576c5c-3f78-4073-a4c3-5c495857f313 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence ca4742fd-18ce-4781-bf96-196456972281 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: occurrence 74b72105-89b8-4f68-b0e3-a0c7e2d32847 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Europe-Lisbon-month: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody",
+        "R25-identity-Australia-Lord_Howe-week: occurrence ed4ade26-71ad-4e54-ac30-9d801ca4b3d4 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 41c49877-055f-47f9-8e61-a357726ed934 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 7f0343a8-42c6-4d50-93ab-dc6aad57fdd2 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: occurrence 19f47a52-c306-4a04-be7a-926a6a0b2f4c survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-Australia-Lord_Howe-week: the rebuild wrote 0 new occurrences and the plan leaves room for 4; the difference is local dates claimed twice or claimed by nobody",
+        "R25-identity-America-St_Johns-month: occurrence 1185c333-53ec-44ee-83ad-292092908b5f survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-America-St_Johns-month: occurrence 4c7b46f8-6c9f-48a2-ae04-3648c1cf8d45 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R25-identity-America-St_Johns-month: the rebuild wrote 4 new occurrences and the plan leaves room for 6; the difference is local dates claimed twice or claimed by nobody"
+      ]
+    },
+    "R26-money-across-operations": {
+      "seconds": 1.8,
+      "complaints": [
+        "R26-regenerate: occurrence 13f211c6-4356-4452-a31f-8490f8dbf746 survived the rebuild; it is neither published nor a hand edit whose date the pattern still wants, so it is one of the rows a rebuild replaces",
+        "R26-regenerate: the rebuild wrote 4 new occurrences and the plan leaves room for 5; the difference is local dates claimed twice or claimed by nobody"
+      ]
+    },
+    "R27-interleavings": {
+      "seconds": 3.1,
+      "complaints": []
+    }
+  }
+}

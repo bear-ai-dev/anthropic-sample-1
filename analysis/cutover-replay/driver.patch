@@ -1,0 +1,25 @@
+--- a/environment/verifier-data/driver.py
++++ b/environment/verifier-data/driver.py
+@@ -292,9 +292,22 @@
+         """Change the legacy row behind the service's back. After retirement
+         nobody should be able to see this."""
+         def body(db):
++            # This is verifier-owned corruption of a retired backing file,
++            # not a production write. Accept database-enforced retirement.
++            # Suspend triggers only inside this atomic fault-injection
++            # transaction and restore their exact definitions before commit.
++            db.execute("BEGIN IMMEDIATE")
++            triggers = list(db.execute(
++                "SELECT name, sql FROM sqlite_master WHERE type='trigger'"
++                " AND tbl_name='members' AND sql IS NOT NULL"))
++            for trigger in triggers:
++                name = trigger[0].replace('"', '""')
++                db.execute('DROP TRIGGER "' + name + '"')
+             db.execute(
+                 "UPDATE members SET balance_cents = ?, version = version + 1000"
+                 " WHERE member_id = ?", (balance_cents, member_id))
++            for trigger in triggers:
++                db.execute(trigger[1])
+             db.commit()
+         self.with_db(body)
+         return self.member(member_id)

@@ -1,0 +1,408 @@
+{
+  "rules": {
+    "R1": {
+      "description": "the snapshot materialises the whole boundary before the rebuild moves on",
+      "pass": true,
+      "missing": [],
+      "missing_count": 0,
+      "spurious": [],
+      "spurious_count": 0,
+      "present_count": 1249,
+      "required_count": 1200
+    },
+    "R2": {
+      "description": "routing does not move while the new generation is behind the log",
+      "pass": true,
+      "missing": [],
+      "missing_count": 0,
+      "spurious": [],
+      "spurious_count": 0,
+      "present_count": 1254,
+      "required_count": 1254
+    },
+    "R6": {
+      "description": "the old generation is not retired while the new one is missing a position",
+      "pass": true,
+      "missing": [],
+      "missing_count": 0,
+      "spurious": [],
+      "spurious_count": 0,
+      "present_count": 1260,
+      "required_count": 1260,
+      "observed_at": "the statement that retires generation v1",
+      "pre_cutover_head": 1260
+    },
+    "R11": {
+      "description": "a read in flight when the cutover lands is still answered out of a whole generation",
+      "pass": true,
+      "reason": "routing already said v2,v2,v2; no read could straddle the cutover"
+    },
+    "R3": {
+      "description": "a position is folded exactly once, first delivery authoritative",
+      "pass": true,
+      "positions_held": 1280,
+      "duplicated_positions": [],
+      "wrong_identity": [],
+      "wrong_identity_count": 0,
+      "org_counter_total": 1280,
+      "org_counter_expected": 1280,
+      "tag_counter_total": 2567,
+      "tag_counter_expected": 2567
+    },
+    "R4": {
+      "description": "counters bucket days by New York local date",
+      "pass": true,
+      "positions_held": 1280,
+      "misplaced_count": 0,
+      "misplaced": []
+    },
+    "R12": {
+      "description": "the org projection counts people as well as deliveries, and knows they are different",
+      "pass": true,
+      "days_bucketed_by": "New York",
+      "buckets_compared": 682,
+      "buckets_where_the_two_numbers_differ": 24,
+      "wrong_count": 0,
+      "wrong": [],
+      "more_actors_than_deliveries": []
+    },
+    "R13": {
+      "description": "the tag projection points at the newest delivery in its bucket, by event time",
+      "pass": true,
+      "days_bucketed_by": "New York",
+      "buckets_compared": 1168,
+      "wrong_count": 0,
+      "wrong": []
+    },
+    "R9": {
+      "description": "the new generation stays level with the log once it is the one serving",
+      "pass": true,
+      "missing": [],
+      "missing_count": 0,
+      "spurious": [],
+      "spurious_count": 0,
+      "present_count": 1280,
+      "required_count": 1280
+    },
+    "R10": {
+      "description": "the append path keeps taking deliveries for the whole of a rebuild",
+      "pass": true,
+      "refused": 0
+    },
+    "R8": {
+      "description": "the read path serves the new generation, ordered and limited as specified",
+      "pass": true,
+      "checked": 15,
+      "wrong_count": 0,
+      "wrong": [],
+      "generations_reported": [
+        "v2"
+      ]
+    },
+    "R14": {
+      "description": "the read path hands back everything the serving generation holds",
+      "pass": true,
+      "fields_checked": 250,
+      "wrong_count": 0,
+      "wrong": []
+    },
+    "R7": {
+      "description": "nothing on the read path depends on the old generation once it is gone",
+      "pass": true,
+      "poisoned_rows": 32,
+      "changed_answers": [],
+      "changed_count": 0,
+      "fallback_leak": false,
+      "absent_key_answers": [
+        0,
+        0
+      ]
+    },
+    "R5": {
+      "description": "the three routing keys are never observed disagreeing",
+      "pass": true,
+      "observed_units": 1489,
+      "routing_moved": true,
+      "torn_states": [],
+      "crashed_mid_cutover": true,
+      "final_routing": [
+        "v2",
+        "v2",
+        "v2"
+      ]
+    },
+    "R15": {
+      "description": "losing the cache does not lose which generation is serving, or the rebuild",
+      "pass": true,
+      "keys_removed": 7,
+      "answers_compared": 42,
+      "answers_that_changed": 0,
+      "changed": [],
+      "deliveries_after_the_cache_went": 12,
+      "deliveries_accepted": 12,
+      "deliveries_that_never_reached_the_serving_generation": [],
+      "deliveries_were_landing_before_the_cache_went": true,
+      "deliveries_already_missing_before": [],
+      "routing_after": [
+        "v2",
+        "v2",
+        "v2"
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "at": "2026-09-02T17:32:04.358Z",
+      "name": "first-step",
+      "value": {
+        "status": 200,
+        "phase": "SNAPSHOT"
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:06.543Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1243
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:07.280Z",
+      "name": "gap-appended",
+      "value": {
+        "during": 35,
+        "gap": 20,
+        "head": 1250
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:08.410Z",
+      "name": "snapshot-observed",
+      "value": {
+        "phase": "TAIL",
+        "present": 1249
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:08.822Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1254
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:09.020Z",
+      "name": "after-gate-appended",
+      "value": {
+        "n": 5,
+        "head": 1254
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:09.458Z",
+      "name": "parked-at-cutover",
+      "value": {
+        "arrivals": 1
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:09.802Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1259,
+          1260
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:09.941Z",
+      "name": "inflight-appended",
+      "value": {
+        "inflight": 4,
+        "head": 1260
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:09.954Z",
+      "name": "kill-armed",
+      "value": {
+        "armAt": 1,
+        "pid": 6833,
+        "fault": "1"
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:10.068Z",
+      "name": "crash-check",
+      "value": {
+        "crashed": true,
+        "exited": true,
+        "write_arrivals": 1,
+        "fault_key": "1"
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:10.086Z",
+      "name": "crashed-at-cutover",
+      "value": [
+        "v1",
+        "v1",
+        "v1"
+      ]
+    },
+    {
+      "at": "2026-09-02T17:32:11.192Z",
+      "name": "written-to-log",
+      "value": {
+        "seqs": [
+          1256,
+          1258
+        ]
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:11.330Z",
+      "name": "backfilled",
+      "value": {
+        "n": 2,
+        "head": 1260,
+        "v2": 1258
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:13.780Z",
+      "name": "post-switch-appended",
+      "value": {
+        "posted": 20,
+        "head": 1280
+      }
+    },
+    {
+      "at": "2026-09-02T17:32:16.489Z",
+      "name": "cache-emptied",
+      "value": {
+        "removed": [
+          "proj:counts:active",
+          "proj:feed:active",
+          "proj:tags:active",
+          "rebuild:boundary",
+          "rebuild:cursor",
+          "rebuild:phase",
+          "rebuild:switch_seq"
+        ],
+        "kept": 15
+      }
+    }
+  ],
+  "notes": [
+    "seeded 1200 positions, 448 org rows, 742 tag rows",
+    "baseline feed answers from generation v1",
+    "appended 55 live deliveries after the snapshot boundary was fixed",
+    "appended 5 deliveries after the parity gate passed",
+    "appended 4 deliveries while the cutover was parked",
+    "routing after the crash: v1,v1,v1",
+    "the service restarted after the crash",
+    "the log stood at 1260 when the cutover committed",
+    "backfilled 2 position(s) below the cutover point",
+    "appended 20 deliveries after the cutover",
+    "emptied the cache: 7 keys the service had put there are gone"
+  ],
+  "steps": [
+    {
+      "status": 200,
+      "phase": "SNAPSHOT",
+      "ms": 468
+    },
+    {
+      "status": 200,
+      "phase": "SNAPSHOT",
+      "ms": 596
+    },
+    {
+      "status": 200,
+      "phase": "TAIL",
+      "ms": 337
+    },
+    {
+      "status": 200,
+      "phase": "PARITY",
+      "ms": 66
+    },
+    {
+      "status": 200,
+      "phase": "SWITCH",
+      "ms": 134
+    },
+    {
+      "status": 409,
+      "phase": "TAIL",
+      "ms": 66,
+      "refused": "generation v2 has fallen behind the log since the gate"
+    },
+    {
+      "status": 200,
+      "phase": "PARITY",
+      "ms": 67
+    },
+    {
+      "status": 200,
+      "phase": "SWITCH",
+      "ms": 137
+    },
+    {
+      "status": 200,
+      "phase": "CLEANUP",
+      "ms": 131
+    },
+    {
+      "status": 409,
+      "phase": "DRAIN",
+      "ms": 67,
+      "refused": "the drain window is not closed"
+    },
+    {
+      "status": 200,
+      "phase": "CLEANUP",
+      "ms": 133
+    },
+    {
+      "status": 200,
+      "phase": "COMPLETE",
+      "ms": 61
+    },
+    {
+      "status": 200,
+      "phase": "COMPLETE",
+      "ms": 60
+    },
+    {
+      "status": 200,
+      "phase": "COMPLETE",
+      "ms": 61
+    }
+  ],
+  "rule_results": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "R7": 1,
+    "R8": 1,
+    "R9": 1,
+    "R10": 1,
+    "R11": 1,
+    "R12": 1,
+    "R13": 1,
+    "R14": 1,
+    "R15": 1
+  },
+  "harness_failure": null,
+  "reward": 1
+}

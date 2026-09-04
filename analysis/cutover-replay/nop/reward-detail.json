@@ -1,0 +1,22 @@
+{
+  "log_tail": "verify: snapshotting the deliverable\nverify: deliverable: 28 file(s), root:root 700\nverify: installing the graded ledger\nverify: restarting the storage service\nverify: building the submission\nverify: driving the migration\ndriver: [cutover] the seeded ledger has 1720 movement(s)\ndriver: [cutover] the service is up and serving the ledger\ndriver: [cutover] advance is not implemented; nothing to drive\n",
+  "note": "the migration is not implemented: advancing it is still refused",
+  "scenario_cutover": {
+    "advance_calls": 0,
+    "faults_fired": {},
+    "injected": {
+      "divergence_injected": 0,
+      "duplicate_injected": 0,
+      "extra_injected": 0,
+      "late_injected": 0,
+      "window_injected": 0
+    },
+    "notes": [
+      "the seeded ledger has 1720 movement(s)",
+      "the service is up and serving the ledger",
+      "advance is not implemented; nothing to drive"
+    ],
+    "restarts": []
+  },
+  "seam": "absent"
+}

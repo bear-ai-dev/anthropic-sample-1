@@ -1,0 +1,11 @@
+{
+  "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-06",
+  "original_reward": 0.0,
+  "reward": 0.0,
+  "reward_file": "analysis/cutover-replay/corrected/reward.json",
+  "detail": "analysis/cutover-replay/corrected/reward-detail.json",
+  "manifest": "analysis/cutover-replay/manifest.json",
+  "patch": "analysis/cutover-replay/driver.patch",
+  "model_calls": 0,
+  "explanation": "The original retirement-trigger error reproduces. With only the verifier fault-injection correction, grading completes at reward 0 with no harness flag. R1 fails because the shadow copy omits 86 members. The candidate copies member rows only for IDs touched by ledger batches, rather than the complete member book."
+}
