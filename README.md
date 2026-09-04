@@ -17,6 +17,7 @@ Anthropic Sample 1 contains private, real-world company tasks from company datas
 | Fable 5.1 | Claude Code | 9 | 40 | 22.5% |
 | Opus 5 | Claude Code | 6 | 40 | 15.0% |
 | GPT-5.6 Sol | Codex CLI | 5 | 40 | 12.5% |
+| Grok 4.6 | Grok Build | 3 | 40 | 7.5% |
 | GLM 5.3 | mini-SWE-agent | 1 | 40 | 2.5% |
 
 The table presents the selected model-and-harness comparison across all five tasks.
@@ -28,6 +29,7 @@ The table presents the selected model-and-harness comparison across all five tas
 | Fable 5.1 | Claude Code | 28m | 112,797.7 | 28.1 |
 | Opus 5 | Claude Code | 54m | 139,469.2 | 131.3 |
 | GPT-5.6 Sol | Codex CLI | 11m | 39,702.7 | 60.2 |
+| Grok 4.6 | Grok Build | 1h 21m | 282,232.1 | 60.1 |
 | GLM 5.3 | mini-SWE-agent | 50m | 159,200.1 | 158.3 |
 
 Wall clock is the recorded elapsed time for a complete scored rollout and is rounded to the nearest minute. Output tokens are the total completion/output tokens recorded by the native harness. Steps are normalized trajectory events. Means use only recorded values, and missing values are not treated as zero.

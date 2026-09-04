@@ -4,27 +4,27 @@
     "02-recurring-events": {
       "execution_task_sha256": "5809c53f6c930201b05749fcc8d5a22286b06673bc09f477fd5c69540e95cc1d",
       "licensed_application_workspace": "omitted",
-      "published_task_package_sha256": "357bbc8faf7b7acd94d94c2f6ee07360a37716bf6df3fa9480e5872bf8d076e4"
+      "published_task_package_sha256": "151a0635581d234af2641b92171f0af328e2485cf1ac2a94add8927e57ae873d"
     },
     "04-draft-recovery": {
       "execution_task_sha256": "83fc0a30f075f3b15879263d2e899fc81ea1f961142a1cb8a5c8eb47d0ef4c23",
       "licensed_application_workspace": "omitted",
-      "published_task_package_sha256": "223e157125483eb8d26a19ce5f142392c56c11332116efd689678dffcf6a9c0f"
+      "published_task_package_sha256": "faaafa8015ea4e9e67c00d86523e4fa6d5400a4e910e19dadd373b940fdee8a1"
     },
     "08-envelope-intake": {
       "execution_task_sha256": "9ebf2b4721d98dcc6fd4129b5a5376887877a0235fdb23ee601bf1ea35b8f9f6",
       "licensed_application_workspace": "omitted",
-      "published_task_package_sha256": "0e7f2387ee687107533d94a750f2b7429e709150814c39aca0c45abf0a37816c"
+      "published_task_package_sha256": "a6cb240a21f29d9fd31213d1cc0054c703054b9e7ab87578742bfb66373c89e1"
     },
     "11-store-cutover": {
       "execution_task_sha256": "69afb4babfc2c75fc6075cef5a2915100f4ece653a76b12df30774ba65a874ed",
       "licensed_application_workspace": "omitted",
-      "published_task_package_sha256": "ed96b609652b6cc76391558b26b3a2f29b9cc3b0bc288a299c1e835d81e586fb"
+      "published_task_package_sha256": "d582ad9872b3027f71af2e3579179d319493d93951702c5e82b4ec27d06a1e29"
     },
     "12-readmodel-rebuild": {
       "execution_task_sha256": "656b5c085544b3b57bdbcb5294059d8fdc29cfa5b52f238245c3874635f36dd4",
       "licensed_application_workspace": "omitted",
-      "published_task_package_sha256": "f25c7319fbef6c329aaee395ed3b9c5684a51e5f11822163ec5cd34567c5879f"
+      "published_task_package_sha256": "e16c17aca2503dc409d382413b0a3594cf261c420413e5c821126b87f3491e5c"
     }
   }
 }

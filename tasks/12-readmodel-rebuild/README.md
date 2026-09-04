@@ -5,6 +5,7 @@ The agent has access to the full source code for a private event-feed service, o
 | Fable 5.1 | Claude Code | 3 | 8 | 37.5% |
 | Opus 5 | Claude Code | 0 | 8 | 0.0% |
 | GPT-5.6 Sol | Codex CLI | 1 | 8 | 12.5% |
+| Grok 4.6 | Grok Build | 0 | 8 | 0.0% |
 | GLM 5.3 | mini-SWE-agent | 1 | 8 | 12.5% |
 
 | Model | Harness | Mean wall clock | Mean output tokens | Mean steps |
@@ -12,4 +13,5 @@ The agent has access to the full source code for a private event-feed service, o
 | Fable 5.1 | Claude Code | 44m | 154,748.5 | 36.8 |
 | Opus 5 | Claude Code | 55m | 146,426.8 | 170.8 |
 | GPT-5.6 Sol | Codex CLI | 12m | 39,581.6 | 75.9 |
+| Grok 4.6 | Grok Build | 1h 25m | 288,360.9 | 47.0 |
 | GLM 5.3 | mini-SWE-agent | 1h | 192,306.6 | 183.6 |

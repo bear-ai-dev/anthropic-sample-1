@@ -10060,9 +10060,9 @@
     "sha256": "25c8da6df4b52b398bb367f6b49ad0b47759289e2eec7af9b9ebc7d4cfc51334"
   },
   {
-    "bytes": 968,
+    "bytes": 1063,
     "path": "tasks/02-recurring-events/README.md",
-    "sha256": "8c3f84a93b860aeb91e9c39e144a730fb73280ff9dc6fd7f707a3db5b354e7de"
+    "sha256": "01d24f41db7e9fe0f7b5bf7acda6f51bfece5cd122c5970f64bd6097d0f117f5"
   },
   {
     "bytes": 600,
@@ -10540,9 +10540,9 @@
     "sha256": "de89e21d72e01965ced743dade288cd156c3d3273114b1e29d1ba175be7a4477"
   },
   {
-    "bytes": 1007,
+    "bytes": 1102,
     "path": "tasks/04-draft-recovery/README.md",
-    "sha256": "bf91cc622040cb560ec7e9612fd9e16b22f89a247f8045323625c81d4f95cb33"
+    "sha256": "959ba1e8f42aa7b2ab331c5273247d11eab67bca9ec879c9cd5e4c75a4b95dc5"
   },
   {
     "bytes": 30,
@@ -11090,9 +11090,9 @@
     "sha256": "ccdb01819729a46cf4511b5977c0388984adfe43cbe7127baa043cc1cd0460bd"
   },
   {
-    "bytes": 992,
+    "bytes": 1087,
     "path": "tasks/08-envelope-intake/README.md",
-    "sha256": "10ca780c3e0a90e6a755d2d4f902d4271f1ce7b302d7696d2167fe2fc206157b"
+    "sha256": "5ac8a09b3e31166f728644c3b430f7027a582abd52cddb16637bbcf445e85e78"
   },
   {
     "bytes": 5700,
@@ -11545,9 +11545,9 @@
     "sha256": "a0f3cc98af161363ca3a87fb347ea8d585c7092f898d297e44dba37186abea86"
   },
   {
-    "bytes": 970,
+    "bytes": 1066,
     "path": "tasks/11-store-cutover/README.md",
-    "sha256": "3b5953a51ccbe67be964a0a00c9e8fdd1bdcb464cf3ba87c731f05f6ea70fc9a"
+    "sha256": "588d1b8022a39738eb8dd1fda9f7ddbd6f32802060f5b5a6755c0b2b97300c04"
   },
   {
     "bytes": 7777,
@@ -12045,9 +12045,9 @@
     "sha256": "2435a9355cc34729f204bdbcc805d9edae849d94a8a03a5e8705b5e9758d5af1"
   },
   {
-    "bytes": 1007,
+    "bytes": 1102,
     "path": "tasks/12-readmodel-rebuild/README.md",
-    "sha256": "32aeb765a418538cdd20905ac582dc367787bea41dcd5479d4b17f5923466bf8"
+    "sha256": "1bfb77d55d976117c75180b5913025eb7fa3e0deabb50a304d75f0f18957c00e"
   },
   {
     "bytes": 9599,
