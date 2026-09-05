@@ -11,9 +11,9 @@
         14
       ],
       "evidence": [
-        "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
-        "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/test-stdout.txt",
-        "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-report.json"
+        "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/test-stdout.txt",
+        "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-report.json"
       ],
       "requirement": "tasks/04-draft-recovery/instruction.md",
       "original_harness_flag_preserved": true
@@ -27,8 +27,8 @@
         28
       ],
       "evidence": [
-        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
-        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/test-stdout.txt"
+        "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/recovered-verifier/test-stdout.txt"
       ],
       "requirement": "tasks/11-store-cutover/instruction.md",
       "original_harness_flag_preserved": true
@@ -42,8 +42,8 @@
         35
       ],
       "evidence": [
-        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/reward-detail.json",
-        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/test-stdout.txt",
+        "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-06/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-06/recovered-verifier/test-stdout.txt",
         "analysis/cutover-replay/effective-result.json",
         "analysis/cutover-replay/manifest.json",
         "analysis/cutover-replay/submission-excerpt.json"
@@ -60,8 +60,8 @@
         29
       ],
       "evidence": [
-        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
-        "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/test-stdout.txt"
+        "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
+        "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/recovered-verifier/test-stdout.txt"
       ],
       "requirement": "tasks/11-store-cutover/instruction.md",
       "original_harness_flag_preserved": true
@@ -73,8 +73,8 @@
       "trace": "trajectories/12-readmodel-rebuild/grok-4.6-grok-build/trajectory-trial-05.json",
       "trace_step_ids": [],
       "evidence": [
-        "results/grok-4.6-grok-build-openrouter/tasks/12-readmodel-rebuild/trial-05/verifier/app.log",
-        "results/grok-4.6-grok-build-openrouter/tasks/12-readmodel-rebuild/trial-05/verifier/reward-detail.json"
+        "results/grok-4.6-grok-build/tasks/12-readmodel-rebuild/trial-05/verifier/app.log",
+        "results/grok-4.6-grok-build/tasks/12-readmodel-rebuild/trial-05/verifier/reward-detail.json"
       ],
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
       "original_harness_flag_preserved": true

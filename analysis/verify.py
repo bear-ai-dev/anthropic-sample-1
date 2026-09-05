@@ -11,6 +11,10 @@ ROOT=Path(__file__).resolve().parents[1]
 def read(path):return json.loads((ROOT/path).read_text())
 def sha(path):return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
 rows=read('indexes/trials.json')
+for folder in ('results', 'verification', 'trajectories', 'controls', 'analysis', 'indexes', 'docs', 'tasks', 'shared'):
+    for path in (ROOT/folder).rglob('*'):
+        if path.is_dir():
+            assert not re.search(r'bedrock|open.?router', path.name, re.I), path
 review=read('analysis/fable-failure-modes.json')
 source={r['canonical_id']:r for r in rows}
 assert len(rows)==200 and len(source)==200

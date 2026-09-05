@@ -13,23 +13,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-01",
       "trial_name": "sample-recurring-events__76rgu49",
       "original_result_sha256": "82cb6ad98750120f2a74b0ddffadc6d49e54b097a58f53873481c9983b2c98ad",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-01/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-01/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-01/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-01/recovered-verifier/reward-detail.json",
           "source_sha256": "b320ddac66103e7f8cf7a092949ab158399d91f87fa2530d0f8cf48aac0d4aba",
           "published_sha256": "b320ddac66103e7f8cf7a092949ab158399d91f87fa2530d0f8cf48aac0d4aba",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-01/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-01/recovered-verifier/reward.json",
           "source_sha256": "4a6dd52e66802627b225f818c5af7be5495ebeddf3b4335a6245c57f1f175411",
           "published_sha256": "145337b1e137d166e15317a71ec00a01d071191c59afc96eb933de4b8f49773f",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-01/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-01/recovered-verifier/test-stdout.txt",
           "source_sha256": "65c80e8922d7688ae7ee197d660b2301b8bc15d5cec2a67cdcddcf64f91c6d2a",
           "published_sha256": "65c80e8922d7688ae7ee197d660b2301b8bc15d5cec2a67cdcddcf64f91c6d2a",
           "redacted": false
@@ -40,23 +40,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-02",
       "trial_name": "sample-recurring-events__HHWmHAR",
       "original_result_sha256": "6d36b1d07aac83a6b0154f9d4262e6969e4a9a8430f7a00bb3661c15dd6c143d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-02/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-02/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-02/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-02/recovered-verifier/reward-detail.json",
           "source_sha256": "c24479a368c6b6d765d6bd0027b03567107e1eebf912c91a981aa32bf31616ed",
           "published_sha256": "c24479a368c6b6d765d6bd0027b03567107e1eebf912c91a981aa32bf31616ed",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-02/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-02/recovered-verifier/reward.json",
           "source_sha256": "4a6dd52e66802627b225f818c5af7be5495ebeddf3b4335a6245c57f1f175411",
           "published_sha256": "145337b1e137d166e15317a71ec00a01d071191c59afc96eb933de4b8f49773f",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-02/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-02/recovered-verifier/test-stdout.txt",
           "source_sha256": "f1430edd80edcbfb11a480a9b82b0aa70c42caf846e7e3e0630fcdda97a7e78d",
           "published_sha256": "f1430edd80edcbfb11a480a9b82b0aa70c42caf846e7e3e0630fcdda97a7e78d",
           "redacted": false
@@ -67,23 +67,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-03",
       "trial_name": "sample-recurring-events__LQdWMsb",
       "original_result_sha256": "78c7f361e1a99a17146e80714dcea9376b40e5c39f727255cc8512cd50f4b3de",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-03/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-03/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-03/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-03/recovered-verifier/reward-detail.json",
           "source_sha256": "a9510dcc56f0030c5544fefc6606e371aa31462991b69f017d905398e4961b4e",
           "published_sha256": "a9510dcc56f0030c5544fefc6606e371aa31462991b69f017d905398e4961b4e",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-03/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-03/recovered-verifier/reward.json",
           "source_sha256": "4a6dd52e66802627b225f818c5af7be5495ebeddf3b4335a6245c57f1f175411",
           "published_sha256": "145337b1e137d166e15317a71ec00a01d071191c59afc96eb933de4b8f49773f",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-03/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-03/recovered-verifier/test-stdout.txt",
           "source_sha256": "723eebd0ffd6a649f3e0aeef24ab35e01110f448a882af336f45a84e39406fb6",
           "published_sha256": "723eebd0ffd6a649f3e0aeef24ab35e01110f448a882af336f45a84e39406fb6",
           "redacted": false
@@ -94,23 +94,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-04",
       "trial_name": "sample-recurring-events__cbWXLtr",
       "original_result_sha256": "2ccb74cdc9e4bfa3d824c30f096d6e7d00f4fae9919b57d768b3424a0930809e",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-04/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-04/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-04/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-04/recovered-verifier/reward-detail.json",
           "source_sha256": "a922e7a565fb5ce8c5e198ba88d685634a78b393ad20097704261879ea3f9adb",
           "published_sha256": "a922e7a565fb5ce8c5e198ba88d685634a78b393ad20097704261879ea3f9adb",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-04/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-04/recovered-verifier/reward.json",
           "source_sha256": "c584d782a823d2eca4c6e1b1e349247ee75f43ee14fcfbf51c82ed0f4eeb0536",
           "published_sha256": "1e703bbde373981b68d0996c4ebb7d3b4f1e29bdedc2f3f3f478027315476966",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-04/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-04/recovered-verifier/test-stdout.txt",
           "source_sha256": "61312062415587d0cac5600a7facca1935f18fdd97605afccca97fa1bca5d159",
           "published_sha256": "61312062415587d0cac5600a7facca1935f18fdd97605afccca97fa1bca5d159",
           "redacted": false
@@ -121,23 +121,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-05",
       "trial_name": "sample-recurring-events__fenUChz",
       "original_result_sha256": "95af7009dce90729db1c91aa6327d34c0a70a8546cec40bcfd2c0b8fbd185f10",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-05/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-05/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-05/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-05/recovered-verifier/reward-detail.json",
           "source_sha256": "3228a83559c56128d373fadf2f8f4b3443ca9ef3860248dc07472098f02d2b69",
           "published_sha256": "3228a83559c56128d373fadf2f8f4b3443ca9ef3860248dc07472098f02d2b69",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-05/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-05/recovered-verifier/reward.json",
           "source_sha256": "4a6dd52e66802627b225f818c5af7be5495ebeddf3b4335a6245c57f1f175411",
           "published_sha256": "145337b1e137d166e15317a71ec00a01d071191c59afc96eb933de4b8f49773f",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-05/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-05/recovered-verifier/test-stdout.txt",
           "source_sha256": "4705ce32a45dfbd9ef8a92927589d1f1d11ec44dc6e7b4b8dfbc312e114bba26",
           "published_sha256": "4705ce32a45dfbd9ef8a92927589d1f1d11ec44dc6e7b4b8dfbc312e114bba26",
           "redacted": false
@@ -148,23 +148,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-06",
       "trial_name": "sample-recurring-events__sBQsgUv",
       "original_result_sha256": "cfddec56ea51eeac922d3f5207553b7c3a5aff195927c9dde35d92480cde50af",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-06/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-06/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-06/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-06/recovered-verifier/reward-detail.json",
           "source_sha256": "9e08882e41b659e4f47c6cf5aaf87aa239d04ead76d7c496ea76ae81cd04b58b",
           "published_sha256": "9e08882e41b659e4f47c6cf5aaf87aa239d04ead76d7c496ea76ae81cd04b58b",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-06/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-06/recovered-verifier/reward.json",
           "source_sha256": "4a6dd52e66802627b225f818c5af7be5495ebeddf3b4335a6245c57f1f175411",
           "published_sha256": "145337b1e137d166e15317a71ec00a01d071191c59afc96eb933de4b8f49773f",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-06/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-06/recovered-verifier/test-stdout.txt",
           "source_sha256": "13dd3dde828d6a8f91ccd2c1591e77ba9a3d750eaef52b420cf7be63c2e59783",
           "published_sha256": "13dd3dde828d6a8f91ccd2c1591e77ba9a3d750eaef52b420cf7be63c2e59783",
           "redacted": false
@@ -175,23 +175,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-07",
       "trial_name": "sample-recurring-events__wTADZ2p",
       "original_result_sha256": "2819acebcef134254b876f922851a2c17826dc20aee0e23af3746fb70e1321f7",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-07/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-07/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-07/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-07/recovered-verifier/reward-detail.json",
           "source_sha256": "7b4e2cd90c02447d19b60b101943c237c0420fee614ab8f0f1745aeb9d2b7212",
           "published_sha256": "7b4e2cd90c02447d19b60b101943c237c0420fee614ab8f0f1745aeb9d2b7212",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-07/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-07/recovered-verifier/reward.json",
           "source_sha256": "e278537b178c773251d69dc821d0fec6734e9a3957a8c27e2f131af3a2fc1b30",
           "published_sha256": "103c0b71c28cc9d5ba4b3c035bfaf2339b64f7df5cc68ae066e3a14da31bdb04",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-07/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-07/recovered-verifier/test-stdout.txt",
           "source_sha256": "55ce4a094636713b23c696fdcb2a2b8dda3982c2642a2b4f23dc37801f804258",
           "published_sha256": "55ce4a094636713b23c696fdcb2a2b8dda3982c2642a2b4f23dc37801f804258",
           "redacted": false
@@ -202,23 +202,23 @@
       "canonical_id": "02-recurring-events__fable-5.1-claude-code-bedrock__trial-08",
       "trial_name": "sample-recurring-events__xZcyYhf",
       "original_result_sha256": "881ba88f01cd6b76a1f88916c8bf63bbfb26cb0c0d85c1e3b4f39f65f4e45c8e",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-08/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-08/result.json",
       "task_checksum_recorded": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-08/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-08/recovered-verifier/reward-detail.json",
           "source_sha256": "403c267832592d8140ac073bf96f77b39ee600ec5a48d29f2c2c5cd5ea60cebe",
           "published_sha256": "403c267832592d8140ac073bf96f77b39ee600ec5a48d29f2c2c5cd5ea60cebe",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-08/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-08/recovered-verifier/reward.json",
           "source_sha256": "4a6dd52e66802627b225f818c5af7be5495ebeddf3b4335a6245c57f1f175411",
           "published_sha256": "145337b1e137d166e15317a71ec00a01d071191c59afc96eb933de4b8f49773f",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-08/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-08/recovered-verifier/test-stdout.txt",
           "source_sha256": "5e3244c895b0e78b25f405146e53ed148637d9f5609670f10a4915c4a3e4c8f8",
           "published_sha256": "5e3244c895b0e78b25f405146e53ed148637d9f5609670f10a4915c4a3e4c8f8",
           "redacted": false
@@ -229,35 +229,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-01",
       "trial_name": "sample-draft-recovery__AM7HpLJ",
       "original_result_sha256": "ba514834d81c01c43fefb5b3c6ab787c19127daae19acd8231460858c6b2d83d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/reward-detail.json",
           "source_sha256": "516285ae44c9c35ee7f8dcb95f20766ac3c660910666b3e509d4c89e23c469bc",
           "published_sha256": "f8fe77660d065adf946b0d6d9acb966887691f310e6596af7c7a68bb2ecc2250",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/reward.json",
           "source_sha256": "30670bd79307da19efa3fcb1cdfef8ee35cb117ee623af92a50578ca3d586e06",
           "published_sha256": "d7666afd1851bd3feb05243a53728a4879c750354d57123a9e20a5bdae45402a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/test-stdout.txt",
           "source_sha256": "b7b94b4cd31dd02adff95e9311de265f743e3322d959b5e603e06dee3ab402fb",
           "published_sha256": "b7b94b4cd31dd02adff95e9311de265f743e3322d959b5e603e06dee3ab402fb",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/verifier-output.txt",
           "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "published_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/verifier-report.json",
           "source_sha256": "a9e5170e823abafaa08eb0e96d60503ca14460b8a73e47857cb057309d7a56bd",
           "published_sha256": "0c0d21acb8f7c08c3e1ac770bdb3e1aa82b20b2b5dfa5b0f28ee42a931dc2ebe",
           "redacted": true
@@ -268,35 +268,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-02",
       "trial_name": "sample-draft-recovery__BTgL4rM",
       "original_result_sha256": "d92a05b29c6bbb93892ef1dbc848c558dad3b049c7228f9c7af1ef5fb1d060e2",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/reward-detail.json",
           "source_sha256": "81beda8861de472850448cbfc3b2e811a1b5ecb90f7c34d3096f191365769727",
           "published_sha256": "3b854d4e6a68155b84a54be6bde1e6fe727ed0e8a1af178f46c789a06e5e1633",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/reward.json",
           "source_sha256": "30670bd79307da19efa3fcb1cdfef8ee35cb117ee623af92a50578ca3d586e06",
           "published_sha256": "d7666afd1851bd3feb05243a53728a4879c750354d57123a9e20a5bdae45402a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/test-stdout.txt",
           "source_sha256": "97d187597830881641aafef087bbcaf78929c9d99d11f7d10f303c9e15dc19fa",
           "published_sha256": "97d187597830881641aafef087bbcaf78929c9d99d11f7d10f303c9e15dc19fa",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/verifier-output.txt",
           "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "published_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/verifier-report.json",
           "source_sha256": "8927d3289695de3bb0078669b639358e6c518039ee03eee9020dc2044dc5d44c",
           "published_sha256": "546f526bdf70f4e914c75eef596b30c89811c0ac6bc7e8b4e5cfc73f18ee1853",
           "redacted": true
@@ -307,35 +307,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-03",
       "trial_name": "sample-draft-recovery__Bnnf9ui",
       "original_result_sha256": "9e6a9f770a4b3671d5e3a4b0f8d689226e4b548984e539f3761c825dd45a36ec",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/reward-detail.json",
           "source_sha256": "5d9ee98c1f7e564b797c48682bd7f3cab4a03230ac7b7228ba4029512466f504",
           "published_sha256": "c3193a8840a3657353ac1b2833e427466810a1c94f31def3054d355ce67c9a8c",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/reward.json",
           "source_sha256": "30670bd79307da19efa3fcb1cdfef8ee35cb117ee623af92a50578ca3d586e06",
           "published_sha256": "d7666afd1851bd3feb05243a53728a4879c750354d57123a9e20a5bdae45402a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/test-stdout.txt",
           "source_sha256": "0f530827978d3ac3ab4c07ab35af86c5eb4c80e0c31d49686c4bf7020d7cc20a",
           "published_sha256": "0f530827978d3ac3ab4c07ab35af86c5eb4c80e0c31d49686c4bf7020d7cc20a",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/verifier-output.txt",
           "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "published_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/verifier-report.json",
           "source_sha256": "d165b0fc6bb5001a50fc7cac2b061c4fea42fb03d2ae9bdcc0712cf90e3fd242",
           "published_sha256": "688e911b8843df675b43799678380368632bbf2f0956585f6227e0adce4e37f1",
           "redacted": true
@@ -346,35 +346,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-04",
       "trial_name": "sample-draft-recovery__CBf32za",
       "original_result_sha256": "904a99ec368a3a495d3983bac203405180ec8db7f99c80a0900083a4399f6226",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/reward-detail.json",
           "source_sha256": "46503b31bc410071ab7843add46fd7c375a5fefb22dba7efe2a449658e96cbbe",
           "published_sha256": "524caaf6d81c66ee80c97fb239981dc8d1ee3e29948817249a055141fd80ba02",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/reward.json",
           "source_sha256": "30670bd79307da19efa3fcb1cdfef8ee35cb117ee623af92a50578ca3d586e06",
           "published_sha256": "d7666afd1851bd3feb05243a53728a4879c750354d57123a9e20a5bdae45402a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/test-stdout.txt",
           "source_sha256": "b9d67a8533cd837b194ed324f88a45a99740a92ac3dffedc94d767b5bfcf5633",
           "published_sha256": "b9d67a8533cd837b194ed324f88a45a99740a92ac3dffedc94d767b5bfcf5633",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/verifier-output.txt",
           "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "published_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/verifier-report.json",
           "source_sha256": "f1bd5aff41e09597dd5574dc8234bb7fc2550b2cc3995e916a6e669ad4f123aa",
           "published_sha256": "d76f3400689a00e4624005f8d7844dcc3e561a616e7fe6dc056f18bbc0e8b939",
           "redacted": true
@@ -385,35 +385,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-05",
       "trial_name": "sample-draft-recovery__kdHS8EX",
       "original_result_sha256": "ca8b15e58276850b796164eeb7a6a9abea7f5eb897021c3a079292ec94fb06a9",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/reward-detail.json",
           "source_sha256": "a145253dbfb77fa698caaaf97d1219a5370de4bf4504a9c983b57662a324b47c",
           "published_sha256": "e1786f37c9ce7ecb58c9a6f79f78210941ffda365fb28eb1f05b7f1176a68756",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/reward.json",
           "source_sha256": "30670bd79307da19efa3fcb1cdfef8ee35cb117ee623af92a50578ca3d586e06",
           "published_sha256": "d7666afd1851bd3feb05243a53728a4879c750354d57123a9e20a5bdae45402a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/test-stdout.txt",
           "source_sha256": "c9d40f3e1e5b5ef63bbf2fd68c4f64200cb6a42db64d5af5058a3507eedfde9a",
           "published_sha256": "c9d40f3e1e5b5ef63bbf2fd68c4f64200cb6a42db64d5af5058a3507eedfde9a",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/verifier-output.txt",
           "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "published_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/verifier-report.json",
           "source_sha256": "ef3ff7a9dedb19b05cff71820779ea158478ae012e98f962d32f85011895fa7d",
           "published_sha256": "822335c1832a2c7930408f9509dadd90bd1f1c971f51059d3f3fa0dcaa238a32",
           "redacted": true
@@ -424,35 +424,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-06",
       "trial_name": "sample-draft-recovery__oMUPQp7",
       "original_result_sha256": "41af80bc9336cfb24e5f6fdb70bbe1587bfc8e4792319a8b222177305e8a3d47",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/reward-detail.json",
           "source_sha256": "bfba31771264346f4307e6bac22e9d748a022cc724ee5d394d0468f50ead1581",
           "published_sha256": "b8d7998443f4298a459afbfd03f91121af332535b7cf2b2444445f9717947146",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/reward.json",
           "source_sha256": "9348653763a203ec46b05059232174432345a8634d8874ef7c7832f817d6289e",
           "published_sha256": "2933352476a32b953fdd8ac6b771c5583e7159c66eafbe283a93e989576f3c02",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/test-stdout.txt",
           "source_sha256": "388f112e3e0c03fa07bba8da7b31d5fcff95d73c5ec9b6a3972f6db10adc1344",
           "published_sha256": "388f112e3e0c03fa07bba8da7b31d5fcff95d73c5ec9b6a3972f6db10adc1344",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/verifier-output.txt",
           "source_sha256": "39d740351e1a7d5bb8a759579703fc2ac93022640e5f5168c623c355d544f2db",
           "published_sha256": "39d740351e1a7d5bb8a759579703fc2ac93022640e5f5168c623c355d544f2db",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/verifier-report.json",
           "source_sha256": "9c3f537ed6feceb4266f1632f5e7a8b6f30f49e6e056891eb77ce2ae203a31c6",
           "published_sha256": "2cca28432dcf56b3adca71cb6fae1b547b196c37833e4b703d83d80c07c9163d",
           "redacted": true
@@ -463,35 +463,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-07",
       "trial_name": "sample-draft-recovery__uZcS2Pe",
       "original_result_sha256": "937d631119da4e4d8ae082252f21cb6f0306260db5cd4d5b18faa976d262bde1",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
           "source_sha256": "c197ac6028feae402a03324735be482b5454e37bd7ee67e20c160607fea19135",
           "published_sha256": "d7f50e891e3a9a6fa252a9763986b1e325f0e1b3459629b9632162a1c74dd4ae",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/reward.json",
           "source_sha256": "967af54963c4516237f698f74e0864d7f2c36a2caee5e66da0f0c198fc92ea95",
           "published_sha256": "a67b66fa265beac6736e10bfb63fc4124af3244338d5e9542cc783884fdb35f8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/test-stdout.txt",
           "source_sha256": "bb345da61c191f6bae0c20dd0aefa313df415f14c7de3742490a8b5b37b1ce19",
           "published_sha256": "bb345da61c191f6bae0c20dd0aefa313df415f14c7de3742490a8b5b37b1ce19",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-output.txt",
           "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "published_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-report.json",
           "source_sha256": "185fcc5142510246786fcb07cc575b0da71c9c7644202ae082e41ab984ff7fdb",
           "published_sha256": "d1b6135c01ae2d6ca464cad33381cc3255458f37fe2d306ac4ae9c928385b2d1",
           "redacted": true
@@ -502,35 +502,35 @@
       "canonical_id": "04-draft-recovery__fable-5.1-claude-code-bedrock__trial-08",
       "trial_name": "sample-draft-recovery__wDV6deo",
       "original_result_sha256": "1ce6508aec8b262d10dcc4197f7d12d9482879d99cac5fab60d73e324bce040d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/result.json",
       "task_checksum_recorded": "00290040b567a14eec5261931e34eed589b7acd8710ee2a09bee6b96a4a72b2e",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/reward-detail.json",
           "source_sha256": "46503b31bc410071ab7843add46fd7c375a5fefb22dba7efe2a449658e96cbbe",
           "published_sha256": "524caaf6d81c66ee80c97fb239981dc8d1ee3e29948817249a055141fd80ba02",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/reward.json",
           "source_sha256": "30670bd79307da19efa3fcb1cdfef8ee35cb117ee623af92a50578ca3d586e06",
           "published_sha256": "d7666afd1851bd3feb05243a53728a4879c750354d57123a9e20a5bdae45402a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/test-stdout.txt",
           "source_sha256": "b9d67a8533cd837b194ed324f88a45a99740a92ac3dffedc94d767b5bfcf5633",
           "published_sha256": "b9d67a8533cd837b194ed324f88a45a99740a92ac3dffedc94d767b5bfcf5633",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/verifier-output.txt",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/verifier-output.txt",
           "source_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "published_sha256": "79b7560613470ae6432a69b9d6a694402c2f23fe5d43b47c0ec108d1d8321e29",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/verifier-report.json",
+          "path": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/verifier-report.json",
           "source_sha256": "ef3ba7744134143ac1852a59ed70c365f7eedb0cb24a3858ceb1e7e34cd4e7fe",
           "published_sha256": "6bfd9ef05a74c2d166d5bfc3fbc7d20579d9587e652818350bf850ec4710188d",
           "redacted": true
@@ -541,29 +541,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-01",
       "trial_name": "sample-envelope-intake-router__LvpjXd4",
       "original_result_sha256": "3c3e3a89e782a116cbfa4f2e6ac4a7df76574ce024321348b1dbcaaa4183781f",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-01/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-01/recovered-verifier/observed.json",
           "source_sha256": "907efe2cdce2d0ed8276b9d9625e65d9c77c3cbeb504f88ac6e4cd7e12faa327",
           "published_sha256": "9e09805659e8820d75bb94e679765baf29660320e6d1b57c31ae9020adeb4abb",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-01/recovered-verifier/reward-detail.json",
           "source_sha256": "1b7cadd6fd02d89d07da934612a7f3e07e22472931234df2c87987b21c42b69c",
           "published_sha256": "1b7cadd6fd02d89d07da934612a7f3e07e22472931234df2c87987b21c42b69c",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-01/recovered-verifier/reward.json",
           "source_sha256": "4cc7f3277c7ed57b90fdeaf5480660f23776cf6cd35d554a94aa88be484ede11",
           "published_sha256": "41b916fcb267870d29d449cedec87a844937dd72a91e1194f9c8e59e06ea931a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-01/recovered-verifier/test-stdout.txt",
           "source_sha256": "b7aa592b4acfb487824a34b914eea8890d6c1557834af54a1eb5fcb1067670ab",
           "published_sha256": "b7aa592b4acfb487824a34b914eea8890d6c1557834af54a1eb5fcb1067670ab",
           "redacted": false
@@ -574,29 +574,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-02",
       "trial_name": "sample-envelope-intake-router__MB475yU",
       "original_result_sha256": "9ef1c55c02f330360627e95617e473b9aef6516c5024388b042f58a9a4b48c8b",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-02/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-02/recovered-verifier/observed.json",
           "source_sha256": "16469daae5a254eff9f59af770113ab005f33e657753733fdb165c2af7478fdb",
           "published_sha256": "999868497a4071f3dcb17fba55bfe123396a13862e02d153f67c35e543568143",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-02/recovered-verifier/reward-detail.json",
           "source_sha256": "1b7cadd6fd02d89d07da934612a7f3e07e22472931234df2c87987b21c42b69c",
           "published_sha256": "1b7cadd6fd02d89d07da934612a7f3e07e22472931234df2c87987b21c42b69c",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-02/recovered-verifier/reward.json",
           "source_sha256": "4cc7f3277c7ed57b90fdeaf5480660f23776cf6cd35d554a94aa88be484ede11",
           "published_sha256": "41b916fcb267870d29d449cedec87a844937dd72a91e1194f9c8e59e06ea931a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-02/recovered-verifier/test-stdout.txt",
           "source_sha256": "8045347df01497e431baa2611dbaaa67be9715110f052491560bc9c8d851156f",
           "published_sha256": "8045347df01497e431baa2611dbaaa67be9715110f052491560bc9c8d851156f",
           "redacted": false
@@ -607,29 +607,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-03",
       "trial_name": "sample-envelope-intake-router__RYxy75R",
       "original_result_sha256": "427cb980067dc31a9181a8e60cd1a357e473dc29e559603173823a17ea75fc8c",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-03/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-03/recovered-verifier/observed.json",
           "source_sha256": "733e33c6003a0e40bb95cc61d2ab866f80a877c68f06714a6ca8c54f58c5a483",
           "published_sha256": "370fdc7de57f4829f85e625ee7b2cddbedef6526bff7afac39464a33d10a9bd6",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-03/recovered-verifier/reward-detail.json",
           "source_sha256": "1b7cadd6fd02d89d07da934612a7f3e07e22472931234df2c87987b21c42b69c",
           "published_sha256": "1b7cadd6fd02d89d07da934612a7f3e07e22472931234df2c87987b21c42b69c",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-03/recovered-verifier/reward.json",
           "source_sha256": "4cc7f3277c7ed57b90fdeaf5480660f23776cf6cd35d554a94aa88be484ede11",
           "published_sha256": "41b916fcb267870d29d449cedec87a844937dd72a91e1194f9c8e59e06ea931a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-03/recovered-verifier/test-stdout.txt",
           "source_sha256": "916b08ceda8d4a8bda5ebc6bc128cf176ea767b7fa79da131ebb21844c373d27",
           "published_sha256": "916b08ceda8d4a8bda5ebc6bc128cf176ea767b7fa79da131ebb21844c373d27",
           "redacted": false
@@ -640,29 +640,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-04",
       "trial_name": "sample-envelope-intake-router__WghmXZA",
       "original_result_sha256": "c43950ca5d31f7321417142a208f57225d6ef1e05ae439c5ded7422e6a0101f3",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-04/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-04/recovered-verifier/observed.json",
           "source_sha256": "aa9262ec22753ff720f82121339258f000f26b7448022e84ec6a75d23cca142b",
           "published_sha256": "3a6b77385fa700abb8fbc46d1c114b6de9bef0da96c14c9cf28291e34b159be1",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-04/recovered-verifier/reward-detail.json",
           "source_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "published_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-04/recovered-verifier/reward.json",
           "source_sha256": "e48e03b6f1a2eba2c18cd23f0e3ce1fb75c6dc77ba18f6d3a5e699402f8ad62f",
           "published_sha256": "65478482576fc69254ad66e2fb7cd70a98087c9cc037ef42b928da291661b2c8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-04/recovered-verifier/test-stdout.txt",
           "source_sha256": "9ec34abee6cdbe1c91976fb017c38ec7949f4911430157628fb0792085016858",
           "published_sha256": "9ec34abee6cdbe1c91976fb017c38ec7949f4911430157628fb0792085016858",
           "redacted": false
@@ -673,29 +673,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-05",
       "trial_name": "sample-envelope-intake-router__Y5FdjwF",
       "original_result_sha256": "6387c59caf1902a046c009e3ab2e309c2b3ece6f3491c50d209f9ec22d653366",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-05/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-05/recovered-verifier/observed.json",
           "source_sha256": "ed5ac90460e7b7065d288dc6238c6a3078390842a3abfdcba072e02765ec3bb9",
           "published_sha256": "8fdb58d0d84b955d84af4231d31d4c586d59078e56ee87b78f34355906739c0e",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-05/recovered-verifier/reward-detail.json",
           "source_sha256": "6e4e12d9dd634d3f5a478815492cedeb699fae52c7479843d5f7ffa77e4dc620",
           "published_sha256": "6e4e12d9dd634d3f5a478815492cedeb699fae52c7479843d5f7ffa77e4dc620",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-05/recovered-verifier/reward.json",
           "source_sha256": "8aa58c0205783227541fc11fcc4d85f034a4797555ac99a41aac3ee8020bab36",
           "published_sha256": "1acff6d79cf66b98b36e19f041521481d2d9d5969143fd39757b02d93d724a27",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-05/recovered-verifier/test-stdout.txt",
           "source_sha256": "15630d05da2d8b7ba828dec2287095d561b4176324a527ba310713bdff8e0163",
           "published_sha256": "15630d05da2d8b7ba828dec2287095d561b4176324a527ba310713bdff8e0163",
           "redacted": false
@@ -706,29 +706,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-06",
       "trial_name": "sample-envelope-intake-router__bhHsRbT",
       "original_result_sha256": "c67aecddf8cbb021f7a0f51032c0d04a2a5b8701938fbc1ae7e5844fc4a38cdd",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-06/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-06/recovered-verifier/observed.json",
           "source_sha256": "278d4d494c357687c594ec25499df149b498dd9b1d6c3e63f3036896a986da24",
           "published_sha256": "af4096641aa8176fcd446e4e964ebe1844656d845b334ab712f539f615ea56ed",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-06/recovered-verifier/reward-detail.json",
           "source_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "published_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-06/recovered-verifier/reward.json",
           "source_sha256": "e48e03b6f1a2eba2c18cd23f0e3ce1fb75c6dc77ba18f6d3a5e699402f8ad62f",
           "published_sha256": "65478482576fc69254ad66e2fb7cd70a98087c9cc037ef42b928da291661b2c8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-06/recovered-verifier/test-stdout.txt",
           "source_sha256": "912a3b77724d533a32cc1f8b2045832a1070e9ec7e5e3792241f264a40f8e8d1",
           "published_sha256": "912a3b77724d533a32cc1f8b2045832a1070e9ec7e5e3792241f264a40f8e8d1",
           "redacted": false
@@ -739,29 +739,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-07",
       "trial_name": "sample-envelope-intake-router__vsRCiY5",
       "original_result_sha256": "99f7eb735aa395c6981a40b5f94921f7c46efd33e7388084664280fcb6ffabac",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-07/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-07/recovered-verifier/observed.json",
           "source_sha256": "44f9d575e620476d94f4d7026f52a064642844ed5b2f484f2047dee25c331c3e",
           "published_sha256": "205d9bb075a2800c1a23abc5200872d75affc8a29fff10d2e76bbc665c8a57f0",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-07/recovered-verifier/reward-detail.json",
           "source_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "published_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-07/recovered-verifier/reward.json",
           "source_sha256": "e48e03b6f1a2eba2c18cd23f0e3ce1fb75c6dc77ba18f6d3a5e699402f8ad62f",
           "published_sha256": "65478482576fc69254ad66e2fb7cd70a98087c9cc037ef42b928da291661b2c8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-07/recovered-verifier/test-stdout.txt",
           "source_sha256": "695e990372519bd530f1879818bb5fdbdc169b843ab2faf485cfad91a48aa09b",
           "published_sha256": "695e990372519bd530f1879818bb5fdbdc169b843ab2faf485cfad91a48aa09b",
           "redacted": false
@@ -772,29 +772,29 @@
       "canonical_id": "08-envelope-intake__fable-5.1-claude-code-bedrock__trial-08",
       "trial_name": "sample-envelope-intake-router__wCR4M6T",
       "original_result_sha256": "a409bf3f118c01b4201cb9bb7507f27b18cc32d0a58e07db729b259e9354668d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-08/result.json",
       "task_checksum_recorded": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/recovered-verifier/observed.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-08/recovered-verifier/observed.json",
           "source_sha256": "a0f63294fe1ee7c46a6010b65b1a567d797b6730522cea06e7dd62acee54617d",
           "published_sha256": "a691b599c794e9d5679138d9c2152f066d01c2d867fe749351b276c0d2cbc6ad",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-08/recovered-verifier/reward-detail.json",
           "source_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "published_sha256": "94a52744a0c89bb9de0591c4be8ad0e13436cabb93a62cc40ae370c91a39c4dd",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-08/recovered-verifier/reward.json",
           "source_sha256": "e48e03b6f1a2eba2c18cd23f0e3ce1fb75c6dc77ba18f6d3a5e699402f8ad62f",
           "published_sha256": "65478482576fc69254ad66e2fb7cd70a98087c9cc037ef42b928da291661b2c8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-08/recovered-verifier/test-stdout.txt",
           "source_sha256": "724f1e22c95e048cd03cf64ffca146e45582d891df50b9645f1bab33f3e0054d",
           "published_sha256": "724f1e22c95e048cd03cf64ffca146e45582d891df50b9645f1bab33f3e0054d",
           "redacted": false
@@ -805,23 +805,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-01",
       "trial_name": "sample-store-cutover__7NTU2uT",
       "original_result_sha256": "c08939f6e6ea2d13ed68acb64b459aebd57e20e2c6c252d9b4dbf75993b1500d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-01/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-01/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-01/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-01/recovered-verifier/reward-detail.json",
           "source_sha256": "108630abe67a40a8dbef6d10535065c547b8879a9937a0784255d8dfecdc3a6e",
           "published_sha256": "e54a7add02ba7aff770da84ef64aabebcf82dd1ac5ab556da5f6f58dfff2a337",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-01/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-01/recovered-verifier/reward.json",
           "source_sha256": "a95aa6fcff5c739e655920fc89913445a4d168b4a907cd4f860757bb7c900344",
           "published_sha256": "34e636bdde02ca7e3fa38214565a1ce6774f656e0773eaa2a4776e6cfe9c0137",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-01/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-01/recovered-verifier/test-stdout.txt",
           "source_sha256": "ffa905d1d8978cc553a2c288db5892137e1faebeff8094576e79d6adf1875c71",
           "published_sha256": "ffa905d1d8978cc553a2c288db5892137e1faebeff8094576e79d6adf1875c71",
           "redacted": false
@@ -832,23 +832,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-02",
       "trial_name": "sample-store-cutover__en7gGKD",
       "original_result_sha256": "aba1bf899440d353a41250fc0af562842f9ec0784b259a4746935b83f85d0e7b",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-02/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-02/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-02/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-02/recovered-verifier/reward-detail.json",
           "source_sha256": "62b3829ccaebecb0b6d24cb4030b9245f86fc7092879cfc0175c08374dcf6cf3",
           "published_sha256": "30cce41f929596a6cb9ba415a850e741f398659c8f5476ec1d3dbd67fec9173a",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-02/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-02/recovered-verifier/reward.json",
           "source_sha256": "1d8511dcb533d7d0ea095ab1fed80023c526956199da238a47b3bcde6e6df655",
           "published_sha256": "5c73d718100b1b99b632b6c9956dae409fe1fe6b58474aca8d2ea5823bf0c6e4",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-02/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-02/recovered-verifier/test-stdout.txt",
           "source_sha256": "a71376ce662cf4027718c00921cbf37d889dff2511d4e50157a8b83fc040e680",
           "published_sha256": "a71376ce662cf4027718c00921cbf37d889dff2511d4e50157a8b83fc040e680",
           "redacted": false
@@ -859,23 +859,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-03",
       "trial_name": "sample-store-cutover__fHAMW4c",
       "original_result_sha256": "38803e6be697b89fa2004bcf6ce863cb83e6e1540e5a71a98eca761c5c4263ab",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-03/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-03/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-03/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-03/recovered-verifier/reward-detail.json",
           "source_sha256": "82b3a6147ccf72233adf463d5e137be48a42a3d5a6a8b456534282f8d53d262c",
           "published_sha256": "4f932780d109e503d1ebc2734c8a3b7507f4a0d62d6541d6b0644662c3c4cea4",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-03/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-03/recovered-verifier/reward.json",
           "source_sha256": "1d8511dcb533d7d0ea095ab1fed80023c526956199da238a47b3bcde6e6df655",
           "published_sha256": "5c73d718100b1b99b632b6c9956dae409fe1fe6b58474aca8d2ea5823bf0c6e4",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-03/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-03/recovered-verifier/test-stdout.txt",
           "source_sha256": "23a57c42ee91a25c355b95232b9bc0668c532f2f2dd5738fb03aa9d2d8ba80cd",
           "published_sha256": "23a57c42ee91a25c355b95232b9bc0668c532f2f2dd5738fb03aa9d2d8ba80cd",
           "redacted": false
@@ -886,23 +886,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-04",
       "trial_name": "sample-store-cutover__i6BAxdN",
       "original_result_sha256": "b132b1edf9cca23f853ddc2dfb928fa0e054fc673b5317f1bd5626b08b8b6bfa",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-04/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-04/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-04/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-04/recovered-verifier/reward-detail.json",
           "source_sha256": "794b222c4e0e6f81942199e33dec809d9407600c3a541a40c28f67c9ca0d7e5f",
           "published_sha256": "35b4804a87e1eea4a2cebbade71928fbc0ec1d5695114349f4aa49ebcfd426fe",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-04/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-04/recovered-verifier/reward.json",
           "source_sha256": "1d8511dcb533d7d0ea095ab1fed80023c526956199da238a47b3bcde6e6df655",
           "published_sha256": "5c73d718100b1b99b632b6c9956dae409fe1fe6b58474aca8d2ea5823bf0c6e4",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-04/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-04/recovered-verifier/test-stdout.txt",
           "source_sha256": "235dbdb91e614e68749aa0d33ef6a680891ea43b5b4dc7c54dca595c116a39a7",
           "published_sha256": "235dbdb91e614e68749aa0d33ef6a680891ea43b5b4dc7c54dca595c116a39a7",
           "redacted": false
@@ -913,23 +913,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-05",
       "trial_name": "sample-store-cutover__nPLdA9f",
       "original_result_sha256": "4491920870c2ea4de0b3535deb3e11bce9cb14381e6439056bf975bdbd294761",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
           "source_sha256": "d72ff61ba345e425fa9284ffb7ee07f9de5a72b204eff9c8ae38ab91181a1270",
           "published_sha256": "88558f1c01201b9b1925e11dd34b2a9abbc659249394f5ae5fceeb2fc71e359d",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/recovered-verifier/reward.json",
           "source_sha256": "b5a91af85278f5d2403f82187f140b9a8927b5a05faacea237ffa9dc91069c09",
           "published_sha256": "a67b66fa265beac6736e10bfb63fc4124af3244338d5e9542cc783884fdb35f8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/recovered-verifier/test-stdout.txt",
           "source_sha256": "c7f99bbc72745aba7701d179eee2b226bee7cf8073250bd2fa797750772d1880",
           "published_sha256": "c7f99bbc72745aba7701d179eee2b226bee7cf8073250bd2fa797750772d1880",
           "redacted": false
@@ -940,23 +940,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-06",
       "trial_name": "sample-store-cutover__sQmGdDt",
       "original_result_sha256": "6289c7dbf069ce385e08d7e7ed1268699bae31fbef599a36c50757365e6e847d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-06/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-06/recovered-verifier/reward-detail.json",
           "source_sha256": "8c7c0b6461485bae92c9ee3401e2083e5ded239fe2bb12083605a510984ad77d",
           "published_sha256": "b09c3ee2c16b614f56c8214fc607a07e75f314fdacf566e72291c4c39d1b418b",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-06/recovered-verifier/reward.json",
           "source_sha256": "b5a91af85278f5d2403f82187f140b9a8927b5a05faacea237ffa9dc91069c09",
           "published_sha256": "a67b66fa265beac6736e10bfb63fc4124af3244338d5e9542cc783884fdb35f8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-06/recovered-verifier/test-stdout.txt",
           "source_sha256": "bd8aaaf6f06604762964879c8f003119c57e37a0445d600a2638fd38df6a6a59",
           "published_sha256": "bd8aaaf6f06604762964879c8f003119c57e37a0445d600a2638fd38df6a6a59",
           "redacted": false
@@ -967,23 +967,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-07",
       "trial_name": "sample-store-cutover__umZjCZi",
       "original_result_sha256": "1037736d3906710b40ed2d1d434710e2fdb05a5b9a637ee9e8fbc82cb9914f19",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-07/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-07/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-07/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-07/recovered-verifier/reward-detail.json",
           "source_sha256": "24ba43a00f87fa15d9e8bbd84c80f572cff0c88cef9138ec846eac81c7292d45",
           "published_sha256": "1d502d50a311fe1a548fc57e0c228104e6b0aabdc21dc3526a65f92b0da9e673",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-07/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-07/recovered-verifier/reward.json",
           "source_sha256": "1d8511dcb533d7d0ea095ab1fed80023c526956199da238a47b3bcde6e6df655",
           "published_sha256": "5c73d718100b1b99b632b6c9956dae409fe1fe6b58474aca8d2ea5823bf0c6e4",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-07/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-07/recovered-verifier/test-stdout.txt",
           "source_sha256": "dac530005ade65615fa24a620eb80540d65e168430d3c2d212b19a1ff7b7c278",
           "published_sha256": "dac530005ade65615fa24a620eb80540d65e168430d3c2d212b19a1ff7b7c278",
           "redacted": false
@@ -994,23 +994,23 @@
       "canonical_id": "11-store-cutover__fable-5.1-claude-code-bedrock__trial-08",
       "trial_name": "sample-store-cutover__zST9dJY",
       "original_result_sha256": "7a6b1c5439d93afa5b7256db35df3572c9d636f2064cf75ffcd8ab468badd72e",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/result.json",
       "task_checksum_recorded": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
           "source_sha256": "381b1596ecb826d29bb782d223d6b136e5148876812f2c9ecd75e03592e639ca",
           "published_sha256": "1689967b73f14dd88d569907a1325172627e99c88509f669a5d5f22d9405b914",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/recovered-verifier/reward.json",
           "source_sha256": "b5a91af85278f5d2403f82187f140b9a8927b5a05faacea237ffa9dc91069c09",
           "published_sha256": "a67b66fa265beac6736e10bfb63fc4124af3244338d5e9542cc783884fdb35f8",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/test-stdout.txt",
+          "path": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/recovered-verifier/test-stdout.txt",
           "source_sha256": "3d06c1b747693d1ea2bea1b24a4b41f0fecc84ffe3bb2238d666506dbb82e6cc",
           "published_sha256": "3d06c1b747693d1ea2bea1b24a4b41f0fecc84ffe3bb2238d666506dbb82e6cc",
           "redacted": false
@@ -1021,23 +1021,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-01",
       "trial_name": "sample-readmodel-rebuild__BTUYZgx",
       "original_result_sha256": "57e5774c8382225d6dce8c8fcc38a4b25e05bd44dccd9dcaeb55fe7bf3f46c6d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-01/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/grader.log",
           "source_sha256": "c2e5d124485474cf5eb038626e44ebc0376651729105c9eb8820ed56cc4a6176",
           "published_sha256": "c2e5d124485474cf5eb038626e44ebc0376651729105c9eb8820ed56cc4a6176",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward-detail.json",
           "source_sha256": "7f4abd12a4e61f1550416feaa57ce6e00ccbab1b0294137e95d1d406eaef8264",
           "published_sha256": "45995708fc3d39fed74b5c732f58d3d2a6af91f30767b2819cde5621778f89e4",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward.json",
           "source_sha256": "6b27cf7435d501182f43ce4c1f518f8ee2c0bf3d94a510b22a34ffee753806d3",
           "published_sha256": "a3a4b511aa52a19190b005a0ad549a13084db7a0c344c7d864f4798dd79301af",
           "redacted": true
@@ -1048,23 +1048,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-02",
       "trial_name": "sample-readmodel-rebuild__HbzCHEt",
       "original_result_sha256": "317ddbcde92e21dc2938eaacd0ad7c628de093ac832d3cce28abcac6b9650258",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-02/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/grader.log",
           "source_sha256": "6131c6bcc5425b89bf9671d45d4132dfeedd21ebe31b4d8ba509415696961c32",
           "published_sha256": "6131c6bcc5425b89bf9671d45d4132dfeedd21ebe31b4d8ba509415696961c32",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward-detail.json",
           "source_sha256": "ec66c904dd3ea3381b680013ef54f37233c963ab41064509cea6bf27390ce82e",
           "published_sha256": "e0f26a37f8b4c96e1e2326e06df48b80d7a0fa7598ca7049a1f099da62031f33",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward.json",
           "source_sha256": "6b27cf7435d501182f43ce4c1f518f8ee2c0bf3d94a510b22a34ffee753806d3",
           "published_sha256": "a3a4b511aa52a19190b005a0ad549a13084db7a0c344c7d864f4798dd79301af",
           "redacted": true
@@ -1075,23 +1075,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-03",
       "trial_name": "sample-readmodel-rebuild__JtN7BD4",
       "original_result_sha256": "37ff57bca1ab6d8fc5f30dea7f33d6ecb6965c9795a7ca658b2cdcc94f777260",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-03/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/grader.log",
           "source_sha256": "15bff06c3f1c4e6ff766b972181322f3c506e8d874b34d441a770976c5ce69dc",
           "published_sha256": "15bff06c3f1c4e6ff766b972181322f3c506e8d874b34d441a770976c5ce69dc",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward-detail.json",
           "source_sha256": "536b463614c310ca63cf1e864c0eaec3c02ee10c03183806a4f7676bac9dd4eb",
           "published_sha256": "a12633f428f7db0d4c9375a7eaeb198e65c335636209137c09b4af5e2b60a6e1",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward.json",
           "source_sha256": "6b27cf7435d501182f43ce4c1f518f8ee2c0bf3d94a510b22a34ffee753806d3",
           "published_sha256": "a3a4b511aa52a19190b005a0ad549a13084db7a0c344c7d864f4798dd79301af",
           "redacted": true
@@ -1102,23 +1102,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-04",
       "trial_name": "sample-readmodel-rebuild__L6abAWu",
       "original_result_sha256": "3c04fab40f0811c73c8aa8f15929d774b7c703f2279f03a94534b9d7c7f9e7ff",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-04/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/grader.log",
           "source_sha256": "aa22f1f6f9eb8912ccd4cdc26df66384daba8ec2ead875a1bb7e1a70c7947322",
           "published_sha256": "aa22f1f6f9eb8912ccd4cdc26df66384daba8ec2ead875a1bb7e1a70c7947322",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward-detail.json",
           "source_sha256": "16b12620f3cf475d88194af44285a2828a74a84355fd4db153d7808e9ac024f6",
           "published_sha256": "bed7a5cc63f48b879b02ebdb3ffe110020acb0e3cf4a0fb2692bf21eb002f38e",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward.json",
           "source_sha256": "1b1f59265254fcd025e74ea45831a7c6e2fafbc4a8b0be7de176f7b7a6772db8",
           "published_sha256": "a33f20040c7c353be7fc896bd9842d46744854ab569e13fe8234a02a374d134b",
           "redacted": true
@@ -1129,23 +1129,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-05",
       "trial_name": "sample-readmodel-rebuild__P2Z4UeV",
       "original_result_sha256": "69c8ede0fcc8303c537f162a0f092e96bd2ef8caf75d818eee1f5ce183cff18d",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-05/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/grader.log",
           "source_sha256": "574aef184d209d88f8796fc45e10e0940b95b6809175c78342641877d05dcc8a",
           "published_sha256": "574aef184d209d88f8796fc45e10e0940b95b6809175c78342641877d05dcc8a",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward-detail.json",
           "source_sha256": "9f513e7ea96dc149ccb2b7512135d7d091a131353b955f39fde81c61e8fce45c",
           "published_sha256": "dfe0ae236d68787cb0869e516772905885126702e4d55f1b2807a071b9119ed6",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward.json",
           "source_sha256": "1b1f59265254fcd025e74ea45831a7c6e2fafbc4a8b0be7de176f7b7a6772db8",
           "published_sha256": "a33f20040c7c353be7fc896bd9842d46744854ab569e13fe8234a02a374d134b",
           "redacted": true
@@ -1156,23 +1156,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-06",
       "trial_name": "sample-readmodel-rebuild__TbWVZnr",
       "original_result_sha256": "da98dcd3ee193e3ffb1eb7f558e32d4ab2ff433caa32a39ef4a449b3005c77cf",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-06/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/grader.log",
           "source_sha256": "c4ac2fd272e7aa4f7d8fc4abe48d93fe2202115e6b730c08703ee1e95e002ff2",
           "published_sha256": "c4ac2fd272e7aa4f7d8fc4abe48d93fe2202115e6b730c08703ee1e95e002ff2",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward-detail.json",
           "source_sha256": "0e561a5c9fc21fdf1843761f0d664f463082948cb10ebffa84d8b94af14b2632",
           "published_sha256": "809be2541d967fb7bfcef02ba6ac61c1fa0fdff3fdf51cea8ae94ef85dd2e679",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward.json",
           "source_sha256": "6b27cf7435d501182f43ce4c1f518f8ee2c0bf3d94a510b22a34ffee753806d3",
           "published_sha256": "a3a4b511aa52a19190b005a0ad549a13084db7a0c344c7d864f4798dd79301af",
           "redacted": true
@@ -1183,23 +1183,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-07",
       "trial_name": "sample-readmodel-rebuild__mVJcd7r",
       "original_result_sha256": "997394c6968d87130721cec86588f67db58af0de20117a5ba6a8a02955d168cd",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-07/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/grader.log",
           "source_sha256": "d6bc778db9ffdd324d0f1c7167543128203cfa5b98104223b8f026b9a8fd7ec9",
           "published_sha256": "d6bc778db9ffdd324d0f1c7167543128203cfa5b98104223b8f026b9a8fd7ec9",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward-detail.json",
           "source_sha256": "2956a25da944f9bf2306e2faae3028c9a33fa46aca3ec150aeb3e0c4d8c78e11",
           "published_sha256": "e23da8b6139305318cf5a16b69ac72a42da848784ac6615447b8fe16c3b8247f",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward.json",
           "source_sha256": "1b1f59265254fcd025e74ea45831a7c6e2fafbc4a8b0be7de176f7b7a6772db8",
           "published_sha256": "a33f20040c7c353be7fc896bd9842d46744854ab569e13fe8234a02a374d134b",
           "redacted": true
@@ -1210,23 +1210,23 @@
       "canonical_id": "12-readmodel-rebuild__fable-5.1-claude-code-bedrock__trial-08",
       "trial_name": "sample-readmodel-rebuild__p23TLze",
       "original_result_sha256": "f15d00d7fe1e709963563638dafe378f65d18ed10bfc19b332e35855c1cefdf9",
-      "published_result": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/result.json",
+      "published_result": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-08/result.json",
       "task_checksum_recorded": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
       "files": [
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/grader.log",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/grader.log",
           "source_sha256": "6131c6bcc5425b89bf9671d45d4132dfeedd21ebe31b4d8ba509415696961c32",
           "published_sha256": "6131c6bcc5425b89bf9671d45d4132dfeedd21ebe31b4d8ba509415696961c32",
           "redacted": false
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward-detail.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward-detail.json",
           "source_sha256": "0dafdf87351f88d84ac57abad5e0989ac59cd51cda59a0b21f4fcb1868d91c80",
           "published_sha256": "0233fe3ce58784daf0fc342faf9cc4ce624f006bafc5fc9f3f9bd4d6fded303c",
           "redacted": true
         },
         {
-          "path": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward.json",
+          "path": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward.json",
           "source_sha256": "6b27cf7435d501182f43ce4c1f518f8ee2c0bf3d94a510b22a34ffee753806d3",
           "published_sha256": "a3a4b511aa52a19190b005a0ad549a13084db7a0c344c7d864f4798dd79301af",
           "redacted": true
