@@ -1617,7 +1617,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-01/result.json"
     ],
-    "wall_clock_seconds": 3402.025
+    "wall_clock_seconds": 3402.025,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -1644,7 +1647,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-02/result.json"
     ],
-    "wall_clock_seconds": 3693.018
+    "wall_clock_seconds": 3693.018,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -1670,7 +1676,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-03/result.json"
     ],
-    "wall_clock_seconds": 3581.12
+    "wall_clock_seconds": 3581.12,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -1696,7 +1705,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-04/result.json"
     ],
-    "wall_clock_seconds": 3922.249
+    "wall_clock_seconds": 3922.249,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -1720,7 +1732,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-05/result.json"
     ],
-    "wall_clock_seconds": 3671.687
+    "wall_clock_seconds": 3671.687,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -1746,7 +1761,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-06/result.json"
     ],
-    "wall_clock_seconds": 3778.45
+    "wall_clock_seconds": 3778.45,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -1772,7 +1790,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-07/result.json"
     ],
-    "wall_clock_seconds": 3670.179
+    "wall_clock_seconds": 3670.179,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -1798,7 +1819,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-08/result.json"
     ],
-    "wall_clock_seconds": 3728.041
+    "wall_clock_seconds": 3728.041,
+    "task_checksum": "b8a0b779db5f3f38022313945c9571db807f2a4478df8ed0827b793643910637",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "fable-5.1-claude-code-bedrock",
@@ -3369,7 +3393,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-01/result.json"
     ],
-    "wall_clock_seconds": 1409.342
+    "wall_clock_seconds": 1409.342,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -3393,7 +3420,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-02/result.json"
     ],
-    "wall_clock_seconds": 1144.371
+    "wall_clock_seconds": 1144.371,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -3417,7 +3447,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-03/result.json"
     ],
-    "wall_clock_seconds": 1104.472
+    "wall_clock_seconds": 1104.472,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -3441,7 +3474,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-04/result.json"
     ],
-    "wall_clock_seconds": 1132.219
+    "wall_clock_seconds": 1132.219,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -3465,7 +3501,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-05/result.json"
     ],
-    "wall_clock_seconds": 1663.151
+    "wall_clock_seconds": 1663.151,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -3489,7 +3528,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-06/result.json"
     ],
-    "wall_clock_seconds": 1306.134
+    "wall_clock_seconds": 1306.134,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -3513,7 +3555,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-07/result.json"
     ],
-    "wall_clock_seconds": 1341.126
+    "wall_clock_seconds": 1341.126,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -3537,7 +3582,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-08/result.json"
     ],
-    "wall_clock_seconds": 1504.155
+    "wall_clock_seconds": 1504.155,
+    "task_checksum": "47da34938f5a0c05e3ab211e85c446c1fbee0e3df265479ca10b574e1350a2ea",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "fable-5.1-claude-code-bedrock",
@@ -5196,7 +5244,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-01/result.json"
     ],
-    "wall_clock_seconds": 4693.811
+    "wall_clock_seconds": 4693.811,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -5220,7 +5271,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-02/result.json"
     ],
-    "wall_clock_seconds": 3018.679
+    "wall_clock_seconds": 3018.679,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -5244,7 +5298,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-03/result.json"
     ],
-    "wall_clock_seconds": 3173.717
+    "wall_clock_seconds": 3173.717,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -5268,7 +5325,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-04/result.json"
     ],
-    "wall_clock_seconds": 3507.723
+    "wall_clock_seconds": 3507.723,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -5292,7 +5352,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-05/result.json"
     ],
-    "wall_clock_seconds": 124.747
+    "wall_clock_seconds": 124.747,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -5316,7 +5379,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-06/result.json"
     ],
-    "wall_clock_seconds": 5415.2
+    "wall_clock_seconds": 5415.2,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -5342,7 +5408,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-07/result.json"
     ],
-    "wall_clock_seconds": 4557.136
+    "wall_clock_seconds": 4557.136,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -5366,7 +5435,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-08/result.json"
     ],
-    "wall_clock_seconds": 1887.707
+    "wall_clock_seconds": 1887.707,
+    "task_checksum": "28455893d37ec3c9de58023ae876fdff2967f4559becd6711adc55eae76974c0",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "fable-5.1-claude-code-bedrock",
@@ -6921,7 +6993,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-01/result.json"
     ],
-    "wall_clock_seconds": 5065.801
+    "wall_clock_seconds": 5065.801,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -6947,7 +7022,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-02/result.json"
     ],
-    "wall_clock_seconds": 5181.485
+    "wall_clock_seconds": 5181.485,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -6971,7 +7049,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-03/result.json"
     ],
-    "wall_clock_seconds": 5210.492
+    "wall_clock_seconds": 5210.492,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -6995,7 +7076,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-04/result.json"
     ],
-    "wall_clock_seconds": 2588.144
+    "wall_clock_seconds": 2588.144,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -7021,7 +7105,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-05/result.json"
     ],
-    "wall_clock_seconds": 2575.37
+    "wall_clock_seconds": 2575.37,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -7047,7 +7134,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-06/result.json"
     ],
-    "wall_clock_seconds": 4022.549
+    "wall_clock_seconds": 4022.549,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -7073,7 +7163,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-07/result.json"
     ],
-    "wall_clock_seconds": 6234.116
+    "wall_clock_seconds": 6234.116,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -7099,7 +7192,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-08/result.json"
     ],
-    "wall_clock_seconds": 5962.612
+    "wall_clock_seconds": 5962.612,
+    "task_checksum": "cf2b2bef86f97db751c33bcaaa10e051a690a4c532ec9cc86325e1a6ea6f9373",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "fable-5.1-claude-code-bedrock",
@@ -8658,7 +8754,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/result.json"
     ],
-    "wall_clock_seconds": 6445.097
+    "wall_clock_seconds": 6445.097,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "native",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -8684,7 +8783,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/result.json"
     ],
-    "wall_clock_seconds": 3192.799
+    "wall_clock_seconds": 3192.799,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -8710,7 +8812,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/result.json"
     ],
-    "wall_clock_seconds": 3461.316
+    "wall_clock_seconds": 3461.316,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -8736,7 +8841,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/result.json"
     ],
-    "wall_clock_seconds": 4572.613
+    "wall_clock_seconds": 4572.613,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -8762,7 +8870,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/result.json"
     ],
-    "wall_clock_seconds": 434.689
+    "wall_clock_seconds": 434.689,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -8788,7 +8899,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/result.json"
     ],
-    "wall_clock_seconds": 4730.017
+    "wall_clock_seconds": 4730.017,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -8814,7 +8928,10 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/result.json"
     ],
-    "wall_clock_seconds": 155.526
+    "wall_clock_seconds": 155.526,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   },
   {
     "arm": "opus-5-claude-code-bedrock",
@@ -8840,6 +8957,9 @@
     "verifier_evidence": [
       "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/result.json"
     ],
-    "wall_clock_seconds": 3275.836
+    "wall_clock_seconds": 3275.836,
+    "task_checksum": "17a9df02b9ec0a861bacc56217aeb8ec8724dc3a19aed40c6005fdf927810143",
+    "task_checksum_source": "reconstructed",
+    "task_provenance": "analysis/opus-task-provenance.json"
   }
 ]
