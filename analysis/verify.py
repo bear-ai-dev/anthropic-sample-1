@@ -11,6 +11,21 @@ ROOT=Path(__file__).resolve().parents[1]
 def read(path):return json.loads((ROOT/path).read_text())
 def sha(path):return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
 rows=read('indexes/trials.json')
+publication=read('indexes/task-publication.json')['tasks']
+assert sorted(int(t.split('-')[0]) for t in publication)==[1,2,3,4,5]
+assert set(publication)=={p.name for p in (ROOT/'tasks').iterdir() if p.is_dir()}
+assert set(publication)=={p.name for p in (ROOT/'trajectories').iterdir() if p.is_dir()}
+assert set(publication)=={p.name for p in (ROOT/'controls').iterdir() if p.is_dir()}
+for group in (ROOT/'results').iterdir():
+    if group.is_dir():
+        assert set(publication)=={p.name for p in (group/'tasks').iterdir() if p.is_dir()}
+for row in rows:
+    assert Path(row['trajectory']).parts[1]==row['task']
+    assert row['source_task']==publication[row['task']]['source_task']
+    assert row['canonical_id'].startswith(row['source_task']+'__')
+for task,meta in publication.items():
+    assert meta['display_task']==int(task.split('-')[0])
+    assert meta['published_path']=='tasks/'+task
 for folder in ('results', 'verification', 'trajectories', 'controls', 'analysis', 'indexes', 'docs', 'tasks', 'shared'):
     for path in (ROOT/folder).rglob('*'):
         if path.is_dir():
