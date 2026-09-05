@@ -14,8 +14,8 @@
       "confidence": "medium",
       "assessment": "Rebuild keeps ordinary in-pattern occurrence identities instead of replacing them; the survivor and money-across-operations checks fail.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-01/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-01/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-01/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-01/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -62,8 +62,8 @@
       "confidence": "medium",
       "assessment": "Rebuild explicitly keeps all in-pattern unpublished occurrences, not only manually moved survivors; ordinary rows retain their old identities.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-02/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-02/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-02/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-02/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -110,8 +110,8 @@
       "confidence": "medium",
       "assessment": "The implementation refreshes untouched rows in place under their existing identities; the verifier requires these rows to be replaced.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-03/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-03/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-03/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-03/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -158,8 +158,8 @@
       "confidence": "medium",
       "assessment": "Extend chooses the wrong future dates after rebuilding, and the protection predicate refuses an allowed edit.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-04/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-04/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-04/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-04/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -205,8 +205,8 @@
       "confidence": "medium",
       "assessment": "Extend infers the pattern phase from held dates and selects incorrect dates after rebuilding; an allowed edit is also refused.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-05/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-05/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-05/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-05/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -245,8 +245,8 @@
       "confidence": "medium",
       "assessment": "Rebuild refreshes untouched rows in place, preserving identities that the rebuild is expected to replace.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-06/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-06/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-06/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-06/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -293,8 +293,8 @@
       "confidence": "medium",
       "assessment": "Composed operations lose the template time of day and retain ordinary in-pattern identities; basic standalone recurrence tests are not sufficient.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-07/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-07/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-07/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-07/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -376,8 +376,8 @@
       "confidence": "medium",
       "assessment": "Rebuild explicitly refreshes unedited rows under their existing IDs; the survivor-identity and money-across-operations checks reject this behavior.",
       "requirement": "tasks/02-recurring-events/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-08/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/02-recurring-events/trial-08/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-08/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/02-recurring-events/trial-08/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -424,9 +424,9 @@
       "confidence": "medium",
       "assessment": "The field-level merge is implemented, but concurrent media replacement leaves an obsolete hosted picture in the recovered draft.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-01/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-01/recovered-verifier/verifier-report.json",
       "failed_checks": [
         {
           "rule": "R13 two pages editing one draft takes a picture out of the record when one tab replaces it from disk",
@@ -464,9 +464,9 @@
       "confidence": "high",
       "assessment": "The submission deliberately changes duplicate:new to per-source-event keys and refuses supplied usable duplicate records; several flush and field-persistence checks also fail.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-02/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-02/recovered-verifier/verifier-report.json",
       "failed_checks": [
         {
           "rule": "R12 a document taken off, and one only just chosen holds no document at all in a flow that never had one",
@@ -558,9 +558,9 @@
       "confidence": "high",
       "assessment": "The submission refuses the supplied duplicate:new and earlier duplicate records based on a newly imposed source-event requirement; question persistence also fails.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-03/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-03/recovered-verifier/verifier-report.json",
       "failed_checks": [
         {
           "rule": "R5 records written by the previous release applies an old record in the duplicate flow, which names no event either",
@@ -598,9 +598,9 @@
       "confidence": "medium",
       "assessment": "A per-session/channel implementation exists, but one tab saving a field overwrites work held by the other tab.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-04/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-04/recovered-verifier/verifier-report.json",
       "failed_checks": [
         {
           "rule": "R13 two pages editing one draft keeps the questions one tab wrote when the other tab saves a title",
@@ -668,9 +668,9 @@
       "confidence": "medium",
       "assessment": "Session queues exist, but question persistence and two-tab field preservation fail under the shared-storage checks.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-05/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-05/recovered-verifier/verifier-report.json",
       "failed_checks": [
         {
           "rule": "R13 two pages editing one draft keeps the questions one tab wrote when the other tab saves a title",
@@ -744,9 +744,9 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-06/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-06/recovered-verifier/verifier-report.json",
       "failed_checks": [],
       "trace": "trajectories/04-draft-recovery/fable-5.1-claude-code/trajectory-trial-06.json",
       "trace_anchors": [
@@ -771,9 +771,9 @@
       "confidence": "high",
       "assessment": "The final answer explicitly leaves two-tab overwrite unresolved. Seven concurrency assertions fail independently of the missing-control flag. The loading-only layout also hides controls while storage is slow.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-07/recovered-verifier/verifier-report.json",
       "failed_checks": [
         {
           "rule": "R13 two pages editing one draft keeps the questions one tab wrote when the other tab saves a title",
@@ -877,9 +877,9 @@
       "confidence": "medium",
       "assessment": "Read-before-write merging is implemented, but three shared-draft concurrency assertions still lose another page's changes.",
       "requirement": "tasks/04-draft-recovery/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/reward-detail.json",
-      "verifier_report": "results/fable-5.1-claude-code-bedrock/tasks/04-draft-recovery/trial-08/recovered-verifier/verifier-report.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/reward-detail.json",
+      "verifier_report": "results/fable-5.1-claude-code/tasks/04-draft-recovery/trial-08/recovered-verifier/verifier-report.json",
       "failed_checks": [
         {
           "rule": "R13 two pages editing one draft keeps the title one tab wrote when the other tab saves questions",
@@ -923,8 +923,8 @@
       "confidence": "medium",
       "assessment": "Conversation merging is implemented, but merged-history and closure/window behavior fail R11; a successful replay of the small recorded desk is not a counterexample to these larger scenarios.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-01/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-01/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-01/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -962,8 +962,8 @@
       "confidence": "medium",
       "assessment": "The submission explicitly leaves two closed tickets unmerged. The graded merged-history scenarios reject that policy; the final answer itself notes that the small recording does not disambiguate every policy choice.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-02/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-02/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-02/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1001,8 +1001,8 @@
       "confidence": "medium",
       "assessment": "The implemented merge chooses an incorrect survivor/history state in the composed closed/open conversation scenario.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-03/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-03/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-03/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1040,8 +1040,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-04/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-04/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-04/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-04.json",
@@ -1070,8 +1070,8 @@
       "confidence": "medium",
       "assessment": "Conversation merging and desk participation are implemented but produce incorrect merged history and closure/window behavior.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-05/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-05/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-05/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1125,8 +1125,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-06/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-06/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-06/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-06.json",
@@ -1155,8 +1155,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-07/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-07/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-07/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-07.json",
@@ -1185,8 +1185,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/08-envelope-intake/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/08-envelope-intake/trial-08/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-08/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/08-envelope-intake/trial-08/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/08-envelope-intake/fable-5.1-claude-code/trajectory-trial-08.json",
@@ -1215,8 +1215,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/11-store-cutover/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-01/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-01/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-01/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-01/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-01.json",
@@ -1242,8 +1242,8 @@
       "confidence": "medium",
       "assessment": "Final destination reconciliation retains foreign movements and a post-authority read is behind the authoritative ledger.",
       "requirement": "tasks/11-store-cutover/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-02/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-02/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-02/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-02/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1290,8 +1290,8 @@
       "confidence": "medium",
       "assessment": "The composed cutover loses late movements and allows a superseded worker to affect state; final reconciliation and fresh-read checks fail.",
       "requirement": "tasks/11-store-cutover/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-03/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-03/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-03/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-03/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1387,8 +1387,8 @@
       "confidence": "medium",
       "assessment": "The composed cutover loses late movements and does not fully fence a stale worker; end-state reconciliation and freshness checks fail.",
       "requirement": "tasks/11-store-cutover/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-04/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-04/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-04/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-04/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1484,8 +1484,8 @@
       "confidence": "medium",
       "assessment": "The candidate holds the legacy SQLite write transaction across the parked authority-write call. The verifier's concurrent legacy writer consequently hits database is locked; this is a submission-induced liveness failure, not a provider failure.",
       "requirement": "tasks/11-store-cutover/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-05/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-05.json",
@@ -1512,7 +1512,7 @@
       "assessment": "The original verifier tries to corrupt retired legacy rows through a legitimate database write-blocking trigger. The original zero is task-side and is not a model failure; use a controlled saved-submission replay for the effective outcome. The original retirement-trigger error reproduces. With only the verifier fault-injection correction, grading completes at reward 0 with no harness flag. R1 fails because the shadow copy omits 86 members. The candidate copies member rows only for IDs touched by ledger batches, rather than the complete member book.",
       "requirement": "tasks/11-store-cutover/instruction.md",
       "verifier_detail": "analysis/cutover-replay/corrected/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-06/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-06/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1553,8 +1553,8 @@
       "confidence": "medium",
       "assessment": "Shadow member balances do not match the ledger prefix, late movements are not replayed, and legacy traffic is closed too early.",
       "requirement": "tasks/11-store-cutover/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-07/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-07/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-07/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-07/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1616,8 +1616,8 @@
       "confidence": "medium",
       "assessment": "BEGIN IMMEDIATE is held across the parked authority write. Another legacy writer cannot proceed until that call returns, causing a cutover deadlock under the supplied storage fault.",
       "requirement": "tasks/11-store-cutover/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/11-store-cutover/trial-08/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/11-store-cutover/fable-5.1-claude-code/trajectory-trial-08.json",
@@ -1643,8 +1643,8 @@
       "confidence": "medium",
       "assessment": "Late log positions are missing from v2; the gate remains at SWITCH and v1 is never retired.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-01/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1694,8 +1694,8 @@
       "confidence": "medium",
       "assessment": "The implemented parity gate never advances under the graded run; v1 remains at PARITY rather than completing and retiring.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-02/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1731,8 +1731,8 @@
       "confidence": "medium",
       "assessment": "The grader observes mixed generations across the three routing keys during the switch, despite the final answer's whole-generation guarantee.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-03/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1768,8 +1768,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-04/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-04.json",
@@ -1797,8 +1797,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-05/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-05.json",
@@ -1826,8 +1826,8 @@
       "confidence": "medium",
       "assessment": "Late positions are missing and the drain/cleanup never completes; the final v2 projection is behind the log.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-06/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {
@@ -1877,8 +1877,8 @@
       "confidence": "high",
       "assessment": "All counted verifier rules pass in the retained evidence.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-07/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [],
       "trace": "trajectories/12-readmodel-rebuild/fable-5.1-claude-code/trajectory-trial-07.json",
@@ -1906,8 +1906,8 @@
       "confidence": "medium",
       "assessment": "The parity path never advances under the graded run and leaves v1 intact. The final-answer smoke claim does not establish completion under these conditions.",
       "requirement": "tasks/12-readmodel-rebuild/instruction.md",
-      "verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward-detail.json",
-      "original_verifier_detail": "results/fable-5.1-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward-detail.json",
+      "verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward-detail.json",
+      "original_verifier_detail": "results/fable-5.1-claude-code/tasks/12-readmodel-rebuild/trial-08/recovered-verifier/reward-detail.json",
       "verifier_report": null,
       "failed_checks": [
         {

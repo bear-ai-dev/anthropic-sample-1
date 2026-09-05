@@ -109,7 +109,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-01/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-01/result.json",
           "original_result_sha256": "77c59efa7d01291704af6e1c5e41e706e89bd5300d6bb974c6cabb0d12dfd96f"
         },
         {
@@ -129,7 +129,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-02/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-02/result.json",
           "original_result_sha256": "a5f6f6971a5f8f57a4ae833c65da6b4b160487eb9cce6ded409dc2a6460a1f35"
         },
         {
@@ -149,7 +149,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-03/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-03/result.json",
           "original_result_sha256": "4b40af4d25fde4c5202b608a77645940435621a4ba5e62ddbbc6ef76b33b0d7c"
         },
         {
@@ -169,7 +169,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-04/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-04/result.json",
           "original_result_sha256": "5ed21d9d32f90b2f16fa398eea8b132e25d800307181f8991b744a1db1e83487"
         },
         {
@@ -189,7 +189,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-05/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-05/result.json",
           "original_result_sha256": "e8907869ecf134b6bc28d5bce6182f3bd9e0bd71d46640133bfa41e8cd919771"
         },
         {
@@ -209,7 +209,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-06/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-06/result.json",
           "original_result_sha256": "c20816753d32d50ca71c34b6c2477a31796284cbf6ee9de01c26f33ce865019e"
         },
         {
@@ -229,7 +229,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-07/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-07/result.json",
           "original_result_sha256": "dc2ce0f679b1c0670932e6a680f81c939cb42c3bc762ae8580c824ccd5a7159a"
         },
         {
@@ -249,7 +249,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/04-draft-recovery/trial-08/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/04-draft-recovery/trial-08/result.json",
           "original_result_sha256": "3b2ea7fd8644cdfa94b81250268978a0e8afffcdf2b034c29749d42201389ed6"
         }
       ]
@@ -321,7 +321,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-01/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-01/result.json",
           "original_result_sha256": "03834394bd94e601b67b0362734b56a7c9c1f1460f065af2210bebdfc02fec56"
         }
       ]
@@ -393,7 +393,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "native",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-08/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-08/result.json",
           "original_result_sha256": "d220f8b1a2f24e841cce170a244bba09c2ae78861bbce5ce6209f17c9ed9cb5a"
         }
       ]
@@ -465,7 +465,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-01/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-01/result.json",
           "original_result_sha256": "8a8686a8b6d127094e939a127e6677cd169cfd13b8fa3f5eb2b48d6e8c466e08"
         },
         {
@@ -485,7 +485,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-02/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-02/result.json",
           "original_result_sha256": "7e67f57da5c7c5af5297b2b80814b534acac802010f87f36a086c95f0af4fd96"
         },
         {
@@ -505,7 +505,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-03/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-03/result.json",
           "original_result_sha256": "82d016418af3dc838caf2bfb48ca9beab275214ce03daa7ab959131bee1b687f"
         },
         {
@@ -525,7 +525,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-04/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-04/result.json",
           "original_result_sha256": "55f515517302a3affa927a64e646cfa09ba47b217a1c2b444cce3430fe1ebd43"
         },
         {
@@ -545,7 +545,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-05/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-05/result.json",
           "original_result_sha256": "dde6d1c2ff85eff29c394e130d46e7dfb07b2f60ff9b568c53fc60df853d4450"
         },
         {
@@ -565,7 +565,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-06/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-06/result.json",
           "original_result_sha256": "0d654bf6b5577d924453ae2d57bcbf988c9db248447c5504f7a59f23b0429162"
         },
         {
@@ -585,7 +585,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-07/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-07/result.json",
           "original_result_sha256": "e1528483b6a316e841a72b665b836785788b4242359e32033367ab32e410d94b"
         },
         {
@@ -605,7 +605,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/02-recurring-events/trial-08/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/02-recurring-events/trial-08/result.json",
           "original_result_sha256": "a148c8e8bde4ee99d8c38ef4048a8874a18f90bb46bbf88f670fd5983170ce1d"
         }
       ]
@@ -677,7 +677,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-01/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-01/result.json",
           "original_result_sha256": "08ef01e1732f3634fd0123bac5892ed7cf6c97a3005ac8195d94a8c918adce06"
         },
         {
@@ -697,7 +697,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-02/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-02/result.json",
           "original_result_sha256": "17e03ce422490bf12774d54bd2a987724a057194a6470a595b3d4f1f9fa394f2"
         },
         {
@@ -717,7 +717,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-03/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-03/result.json",
           "original_result_sha256": "f5d895701d669dd8823f0605aa181e7390aa1a6213eee361d673e38737d66024"
         },
         {
@@ -737,7 +737,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-04/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-04/result.json",
           "original_result_sha256": "6713a8809b1b2d0bd01dc13ba6dc5c6bb4b8e527d70a98b98437a645c2124935"
         },
         {
@@ -757,7 +757,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-05/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-05/result.json",
           "original_result_sha256": "45b75f3544a81b7429ecb7e3104ae05748eafed48b113c6761b287dd637c9273"
         },
         {
@@ -777,7 +777,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-06/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-06/result.json",
           "original_result_sha256": "bd4e6aba9b6951351763cee33e30f1928a5fba0dbd5af46cfa4a289e3aeffff9"
         },
         {
@@ -797,7 +797,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/08-envelope-intake/trial-07/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/08-envelope-intake/trial-07/result.json",
           "original_result_sha256": "1941e67745d5b45a7c8cf42f476a54810533d55d5c0e0d698775a6ca5f1392d0"
         }
       ]
@@ -869,7 +869,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-01/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-01/result.json",
           "original_result_sha256": "771861f66a08d9bb4b44a9ed0d15ffea320cf4344add5d9f55441f56073bb518"
         },
         {
@@ -889,7 +889,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-02/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-02/result.json",
           "original_result_sha256": "6bad2ac555cd160228d2d7bffb82993414d5a983644ea5e5424131d811208cf6"
         },
         {
@@ -909,7 +909,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-03/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-03/result.json",
           "original_result_sha256": "643304bf538d2188fa07c85204f3729dd18f944c4587c97f7f870cf7702e586f"
         },
         {
@@ -929,7 +929,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-04/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-04/result.json",
           "original_result_sha256": "542e960472452f99261dc4cb76d02131146cb3ec1263c1b3cd2ebf7e26debe52"
         },
         {
@@ -949,7 +949,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-05/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-05/result.json",
           "original_result_sha256": "c1d18837f94da08d7b9a25d20fb092b39fab149ecb6e0d4402e2c5c87bcdf0d1"
         },
         {
@@ -969,7 +969,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-06/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-06/result.json",
           "original_result_sha256": "067cc145ba34c2f9290d9b2b39fc6789559ee25ae5838cdff175deda80e32743"
         },
         {
@@ -989,7 +989,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-07/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-07/result.json",
           "original_result_sha256": "dfeab4dbc5662590636be784c877dcea148a99fac00d9cec2c49848337606bf7"
         },
         {
@@ -1009,7 +1009,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/11-store-cutover/trial-08/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/11-store-cutover/trial-08/result.json",
           "original_result_sha256": "30096789206d4a4ba1cb0118f3c06d158d089587dad5e4e9df8ef16724c90eb3"
         }
       ]
@@ -1081,7 +1081,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-02/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-02/result.json",
           "original_result_sha256": "2b0f70936160ab43a1406131306c7a500c258e1e8453715ef0e934f0f2430c2c"
         },
         {
@@ -1101,7 +1101,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-03/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-03/result.json",
           "original_result_sha256": "b6f0fe04a7fc5ab67d6e40d00e4db2a192610e2a16bb07b8db09c6d579be417d"
         },
         {
@@ -1121,7 +1121,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-04/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-04/result.json",
           "original_result_sha256": "26638b3ea30c2508e5a43008d13f958374af44c979b802495ed6bcb962b15e6f"
         },
         {
@@ -1141,7 +1141,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-05/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-05/result.json",
           "original_result_sha256": "52e4f0505a5dd7de17f607e64fd6138e60954ce424e48b53b19a67d297a665a3"
         },
         {
@@ -1161,7 +1161,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-06/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-06/result.json",
           "original_result_sha256": "edcad3ad099cc460d8af300ed8feb0f1d24dc69d4796c2ff83fc9f33501f0fc9"
         },
         {
@@ -1181,7 +1181,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-07/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-07/result.json",
           "original_result_sha256": "ddc5d6b00c89c8cb27b706362a0551b19a9ac3755b32a1b4be72403e0170ef2b"
         },
         {
@@ -1201,7 +1201,7 @@
           "aws_result_fields_verified": true,
           "trajectory_step_identity_verified": true,
           "checksum_source": "reconstructed",
-          "original_result": "results/opus-5-claude-code-bedrock/tasks/12-readmodel-rebuild/trial-08/result.json",
+          "original_result": "results/opus-5-claude-code/tasks/12-readmodel-rebuild/trial-08/result.json",
           "original_result_sha256": "17ac750b784852bdb11418cd71f2fda23d4578b522af0721e26d5f0ad3db8091"
         }
       ]
