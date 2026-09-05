@@ -46,19 +46,19 @@ The benchmark contains five Real SWE tasks:
 
 ## Evidence and validity
 
-A rollout is scored only when it has no Harbor/provider exception, a numeric verifier reward, a complete non-empty trajectory, verifier evidence, the task identity, and the declared model route and harness. Nested task-grader `harness_failure` flags require explicit adjudication; they can also describe a submission that cannot build or start. The [seven flagged rows](analysis/admission-review.json) are now adjudicated: six are submission-induced failures, and one has a paired original/corrected saved-submission replay. The corrected replay still fails a product requirement, so every pass rate and denominator is unchanged. Infrastructure and provider failures remain excluded.
+A rollout is scored only when it has no Harbor/provider exception, a numeric verifier reward, a complete non-empty trajectory, verifier evidence, the task identity, and the declared model route and harness. Nested task-grader `harness_failure` flags require explicit adjudication; they can also describe a submission that cannot build or start. The [five flagged rows](analysis/admission-review.json) in the reported configurations are now adjudicated: four are submission-induced failures, and one has a paired original/corrected saved-submission replay. The corrected replay still fails a product requirement, so every pass rate and denominator is unchanged. Infrastructure and provider failures remain excluded.
 
 - [`indexes/trials.json`](indexes/trials.json) is the scored index.
-- [`manifest.json`](manifest.json) records task identities, totals, content hashes, and completion state.
+- [`indexes/manifest.json`](indexes/manifest.json) records task identities, totals, content hashes, and completion state.
 - [`trajectories/`](trajectories/) contains every normalized scored trajectory.
 - [`results/`](results/) contains available verifier and result evidence for each trial.
 - [`indexes/artifacts.json`](indexes/artifacts.json) records retained artifact hashes.
-- [`control-results.json`](control-results.json) records task oracle and no-op validity checks.
+- [`controls/control-results.json`](controls/control-results.json) records task oracle and no-op validity checks.
 - [`analysis/README.md`](analysis/README.md) provides the evidence-linked review of all 40 Fable Claude Code trials, replacing inherited failure labels.
 - [`analysis/cutover-replay/README.md`](analysis/cutover-replay/README.md) documents the verifier-only correction, green controls, and unchanged effective zero.
-- [`HANDOFF.md`](HANDOFF.md) distinguishes this audit package from a separately authorized runnable delivery.
+- [`docs/HANDOFF.md`](docs/HANDOFF.md) distinguishes this audit package from a separately authorized runnable delivery.
 - [`analysis/opus-task-provenance.md`](analysis/opus-task-provenance.md) documents all 40 Opus task identities: ten native hashes cross-checked and 30 reconstructed from the original run inputs, with original results preserved and the 6/40 score unchanged.
-- [`task-publication.json`](task-publication.json) maps the execution task identities to the privacy-safe published task packages.
+- [`indexes/task-publication.json`](indexes/task-publication.json) maps the execution task identities to the privacy-safe published task packages.
 
 The licensed application workspaces used for execution are intentionally omitted. Their task contracts, verifiers, reference materials, source hashes, trajectories, and verifier evidence are retained after credential, restricted-name, and infrastructure redaction.
 
@@ -72,7 +72,9 @@ results/<model-harness-route>/tasks/<task>/trial-<01-08>/
 trajectories/<task>/<model-harness>/trajectory-trial-<01-08>.json
 indexes/trials.json
 indexes/artifacts.json
-control-results.json
-task-publication.json
-manifest.json
+controls/control-results.json
+indexes/task-publication.json
+indexes/manifest.json
+docs/HANDOFF.md
+docs/task-provenance.md
 ```

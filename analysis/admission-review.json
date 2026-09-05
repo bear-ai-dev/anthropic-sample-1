@@ -67,39 +67,6 @@
       "original_harness_flag_preserved": true
     },
     {
-      "canonical_id": "11-store-cutover__fable-5.1-mini-swe-agent-bedrock__trial-02",
-      "status": "valid_model_failure",
-      "explanation": "The submitted cutover holds the SQLite write lock while waiting for the authority call. The verifier parks that call and attempts a concurrent legacy write before releasing it. The resulting database-is-locked failure is caused by the submission under the no-paused-writes contract, not provider or sandbox loss. A local two-connection SQLite regression reproduces the lock mechanism; this is not a full candidate replay.",
-      "trace": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-02.json",
-      "trace_step_ids": [
-        39,
-        44,
-        110
-      ],
-      "evidence": [
-        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-02/verifier/reward-detail.json",
-        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-02/verifier/test-stdout.txt"
-      ],
-      "requirement": "tasks/11-store-cutover/instruction.md",
-      "original_harness_flag_preserved": true
-    },
-    {
-      "canonical_id": "11-store-cutover__fable-5.1-mini-swe-agent-bedrock__trial-03",
-      "status": "valid_model_failure",
-      "explanation": "The submitted cutover holds the SQLite write lock while waiting for the authority call. The verifier parks that call and attempts a concurrent legacy write before releasing it. The resulting database-is-locked failure is caused by the submission under the no-paused-writes contract, not provider or sandbox loss. A local two-connection SQLite regression reproduces the lock mechanism; this is not a full candidate replay.",
-      "trace": "trajectories/11-store-cutover/fable-5.1-mini-swe-agent/trajectory-trial-03.json",
-      "trace_step_ids": [
-        53,
-        89
-      ],
-      "evidence": [
-        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-03/verifier/reward-detail.json",
-        "results/fable-5.1-mini-swe-agent-bedrock/tasks/11-store-cutover/trial-03/verifier/test-stdout.txt"
-      ],
-      "requirement": "tasks/11-store-cutover/instruction.md",
-      "original_harness_flag_preserved": true
-    },
-    {
       "canonical_id": "12-readmodel-rebuild__grok-4.6-grok-build-openrouter__trial-05",
       "status": "valid_model_failure",
       "explanation": "The submitted startup query selects RebuildMeta.value and then filters .key on the resulting primitive string. app.log records InvalidReferenceError in submitted src/rebuild/meta.ts:35 and alias-switch.ts:40. The service cannot reach healthz because its own query fails, not because the sandbox is unavailable.",

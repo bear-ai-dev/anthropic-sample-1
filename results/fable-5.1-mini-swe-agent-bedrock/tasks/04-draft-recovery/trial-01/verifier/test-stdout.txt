@@ -1,3 +1,0 @@
-== grader did not finish (reward=0.0 harness_failure=0 rules=0/0)
-=== Snapshot the deliverable ===
-== graded rules that did not hold: R6,R13 (reward=0.0 harness_failure=0 rules=11/13)

@@ -13,7 +13,9 @@ def sha(path):return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
 rows=read('indexes/trials.json')
 review=read('analysis/fable-failure-modes.json')
 source={r['canonical_id']:r for r in rows}
-assert len(rows)==280 and len(source)==280
+assert len(rows)==200 and len(source)==200
+assert {r['harness'] for r in rows if r['model_label']=='Fable 5.1'}=={'Claude Code'}
+assert {r['harness'] for r in rows if r['model_label']=='Grok 4.6'}=={'Grok Build'}
 assert len(review['trials'])==40
 assert collections.Counter(r['category'] for r in review['trials'])==review['counts']
 for r in review['trials']:
@@ -26,12 +28,12 @@ recovered=read('analysis/recovered-evidence.json')
 assert len(recovered['trials'])==40
 for r in recovered['trials']:
     for f in r['files']:assert sha(f['path'])==f['published_sha256']
-for task,controls in read('control-results.json')['controls'].items():
+for task,controls in read('controls/control-results.json')['controls'].items():
     for name,want in [('oracle',1.0),('nop',0.0)]:
         assert controls[name]['reward']==want
         assert all((ROOT/p).is_file() for p in controls[name]['evidence'])
 admission=read('analysis/admission-review.json')['reviews']
-assert len(admission)==7
+assert len(admission)==5
 assert all(r['status']!='task_side_pending_replay' for r in admission)
 for r in admission:
     assert source[r['canonical_id']]['admission_status']==r['status']
@@ -76,4 +78,4 @@ for version in opus['task_versions']:
             reconstructed+=1;assert trial['recorded_checksum']=='recovered-from-original-sandbox' and not trial['native_checksum_match']
 assert (native,reconstructed)==(10,30) and seen=={r['canonical_id'] for r in opus_rows}
 for f in read('indexes/artifacts.json'):assert sha(f['path'])==f['sha256']
-print('PASS: 280 indexed trials; 40 Fable labels; 40 Opus identities (10 native/30 reconstructed); 7 admission decisions; 10 controls; paired zero-model-call replay; artifact hashes')
+print('PASS: 200 indexed trials for the five reported configurations; 40 Fable labels; 40 Opus identities (10 native/30 reconstructed); 5 admission decisions; 10 controls; paired zero-model-call replay; artifact hashes')
