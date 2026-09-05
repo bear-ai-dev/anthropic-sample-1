@@ -38,11 +38,11 @@ Wall clock is the recorded elapsed time for a complete scored rollout and is rou
 
 The benchmark contains five Real SWE tasks:
 
-1. [Task 1: Recurring event series](tasks/02-recurring-events/instruction.md) — Let organizers extend, rebuild, delete, or reschedule recurring events without disturbing occurrences protected by an audience or paid tickets.
-2. [Task 2: Durable draft recovery](tasks/04-draft-recovery/instruction.md) — Recover event-form drafts across create, edit, and duplicate flows while isolating users, migrating older records, and handling local files safely.
-3. [Task 3: Support-envelope intake](tasks/08-envelope-intake/instruction.md) — Group retried, concurrent, and out-of-order email envelopes into the right support tickets and send each agent reply exactly once.
-4. [Task 4: Membership-ledger cutover](tasks/11-store-cutover/instruction.md) — Move a live financial ledger from one store to another without pausing traffic, losing movements, or returning superseded balances.
-5. [Task 5: Online read-model rebuild](tasks/12-readmodel-rebuild/instruction.md) — Rebuild and switch an event-feed projection while new events continue to arrive, without exposing partial generations to readers.
+1. [Task 1: Recurring event series](tasks/01-recurring-events/instruction.md) — Let organizers extend, rebuild, delete, or reschedule recurring events without disturbing occurrences protected by an audience or paid tickets.
+2. [Task 2: Durable draft recovery](tasks/02-draft-recovery/instruction.md) — Recover event-form drafts across create, edit, and duplicate flows while isolating users, migrating older records, and handling local files safely.
+3. [Task 3: Support-envelope intake](tasks/03-envelope-intake/instruction.md) — Group retried, concurrent, and out-of-order email envelopes into the right support tickets and send each agent reply exactly once.
+4. [Task 4: Membership-ledger cutover](tasks/04-store-cutover/instruction.md) — Move a live financial ledger from one store to another without pausing traffic, losing movements, or returning superseded balances.
+5. [Task 5: Online read-model rebuild](tasks/05-readmodel-rebuild/instruction.md) — Rebuild and switch an event-feed projection while new events continue to arrive, without exposing partial generations to readers.
 
 ## Evidence and validity
 

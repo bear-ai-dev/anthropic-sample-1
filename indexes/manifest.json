@@ -15,11 +15,11 @@
   "scored_rollouts": 200,
   "task_publication": "indexes/task-publication.json",
   "tasks": [
-    "02-recurring-events",
-    "04-draft-recovery",
-    "08-envelope-intake",
-    "11-store-cutover",
-    "12-readmodel-rebuild"
+    "01-recurring-events",
+    "02-draft-recovery",
+    "03-envelope-intake",
+    "04-store-cutover",
+    "05-readmodel-rebuild"
   ],
   "title": "Anthropic Sample 1",
   "trajectories": 200,

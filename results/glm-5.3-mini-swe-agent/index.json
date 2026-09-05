@@ -16,19 +16,20 @@
     },
     "reward": 0.0,
     "step_count": 136,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
     "trajectory_sha256": "98e140e1a71484fef5ab3c45637e25acabda76fdd7693b64b9736d2f85a75fe9",
     "trajectory_source_sha256": "36e0e126e424d51a9cf215165bfe3d1e77da501270798a5a1edf5de2fb714511",
     "trial_number": 1,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-01/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-01/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-01/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-01/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-01/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-01/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-01/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-01/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-01/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-01/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1706.302692
+    "wall_clock_seconds": 1706.302692,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -48,19 +49,20 @@
     },
     "reward": 0.0,
     "step_count": 229,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
     "trajectory_sha256": "eea494003a6ed0668c9d858e6b22610a85dd6d236a30c0adae8c9e85d59b240d",
     "trajectory_source_sha256": "0582c5f991b1094aec7a1926c999bcbc40f97b1a3238239b3634511930cf6842",
     "trial_number": 2,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-02/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-02/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-02/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-02/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-02/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-02/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-02/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-02/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-02/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-02/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 3345.081394
+    "wall_clock_seconds": 3345.081394,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -81,19 +83,20 @@
     },
     "reward": 0.0,
     "step_count": 192,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
     "trajectory_sha256": "9617f2cb22477cb36835ce21ad7d77b05389964a0b2e76f25dba43afa247138f",
     "trajectory_source_sha256": "91e63849f7f8fb1dad83a6aa51fe2aa878f8c17e8515a8b88208bb725f4e8fcb",
     "trial_number": 3,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-03/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-03/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-03/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-03/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-03/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-03/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-03/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-03/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-03/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-03/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2109.69931
+    "wall_clock_seconds": 2109.69931,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -113,19 +116,20 @@
     },
     "reward": 0.0,
     "step_count": 197,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
     "trajectory_sha256": "808916d5045f147618d2c33c5d406316df25717d3a197f9e26398649b2715ab7",
     "trajectory_source_sha256": "73025aa78cee69ab698f72b6b9022864093a2ec71d066498dcbeea599bdea247",
     "trial_number": 4,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-04/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-04/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-04/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-04/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-04/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-04/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-04/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-04/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-04/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-04/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2713.304211
+    "wall_clock_seconds": 2713.304211,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -146,19 +150,20 @@
     },
     "reward": 0.0,
     "step_count": 204,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
     "trajectory_sha256": "f0d40711cb99b3257482026d44441f39dc555aaad7700fb4d19bb2439cd3006c",
     "trajectory_source_sha256": "e85376c027267477fab3571a2e7b7af8d9074c5d2822d4df97b66af6400694c6",
     "trial_number": 5,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-05/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-05/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-05/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-05/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-05/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-05/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-05/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-05/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-05/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-05/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2011.946688
+    "wall_clock_seconds": 2011.946688,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -179,19 +184,20 @@
     },
     "reward": 0.0,
     "step_count": 168,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
     "trajectory_sha256": "5877554c3819a50db2b18af484d6ec02f0a588e7db39b93a53c34280f14740ac",
     "trajectory_source_sha256": "4fd058fb4c75decf6f8b76d57b1f2c1287a450a8b461f3e4a5bd775a952f5132",
     "trial_number": 6,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-06/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-06/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-06/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-06/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-06/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-06/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-06/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-06/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-06/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-06/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1871.493201
+    "wall_clock_seconds": 1871.493201,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -212,19 +218,20 @@
     },
     "reward": 0.0,
     "step_count": 218,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
     "trajectory_sha256": "5d46deade9e66975e7ab866591f5ad24a3e888948753b6b09306c6754e2708f1",
     "trajectory_source_sha256": "45c9c9b4dd4fa92bf20fad6d39881d447054ab11a0bd269503439a13c43a1f30",
     "trial_number": 7,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-07/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-07/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-07/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-07/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-07/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-07/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-07/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-07/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-07/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-07/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2343.79225
+    "wall_clock_seconds": 2343.79225,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -244,19 +251,20 @@
     },
     "reward": 0.0,
     "step_count": 260,
-    "task": "02-recurring-events",
-    "trajectory": "trajectories/02-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "task": "01-recurring-events",
+    "trajectory": "trajectories/01-recurring-events/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
     "trajectory_sha256": "008c622f3bf432cec105156de4b21c7d2af40b1ad2f5d67f32c0a945c9e7c7ad",
     "trajectory_source_sha256": "e08d9910f6b1b4595a2dd187b260237c8251f3a17d810605a72c5d784bfaf919",
     "trial_number": 8,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-08/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-08/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-08/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-08/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/02-recurring-events/trial-08/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-08/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-08/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-08/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-08/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/01-recurring-events/trial-08/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2644.543731
+    "wall_clock_seconds": 2644.543731,
+    "source_task": "02-recurring-events"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -274,19 +282,20 @@
     },
     "reward": 0.0,
     "step_count": 124,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
     "trajectory_sha256": "52b770f5ab5d6e2ef4eb339011245a6624e019d8dacd17cc13d0ddbe73835073",
     "trajectory_source_sha256": "00932e8836264a06538b343d10302074303c40216d5e297a3584d1a6d0070034",
     "trial_number": 1,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-01/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-01/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-01/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-01/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-01/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-01/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-01/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-01/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-01/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-01/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1946.204306
+    "wall_clock_seconds": 1946.204306,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -304,19 +313,20 @@
     },
     "reward": 0.0,
     "step_count": 98,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
     "trajectory_sha256": "e8bd6497c4794390209d6310e6394ec991f10a8d13e7da9668ca3ae5364c8a80",
     "trajectory_source_sha256": "467293ed7ce7eb3fdd53333784e137cab453691325a5d99a4201b4fef2245206",
     "trial_number": 2,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-02/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-02/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-02/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-02/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-02/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-02/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-02/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-02/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-02/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-02/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1058.96243
+    "wall_clock_seconds": 1058.96243,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -334,19 +344,20 @@
     },
     "reward": 0.0,
     "step_count": 75,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
     "trajectory_sha256": "2ada7056e9ce2ddfcd1ec40327517743646007e631ede5ac0491f67349c33777",
     "trajectory_source_sha256": "a1e894e1877304ec099d622e57efda184e603fcdf2ea8a4ff65bf1e752964f27",
     "trial_number": 3,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-03/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-03/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-03/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-03/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-03/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-03/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-03/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-03/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-03/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-03/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 952.322743
+    "wall_clock_seconds": 952.322743,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -364,19 +375,20 @@
     },
     "reward": 0.0,
     "step_count": 93,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
     "trajectory_sha256": "0a0b72d2c904ccba08ce4b7ac2ffbad8e805f8f63a90fe1a99044caab5993d4a",
     "trajectory_source_sha256": "fa9f5a53856117ca88d937c111777359865db567e672a6d1076d4d3b612327e6",
     "trial_number": 4,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-04/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-04/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-04/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-04/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-04/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-04/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-04/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-04/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-04/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-04/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 896.492092
+    "wall_clock_seconds": 896.492092,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -394,19 +406,20 @@
     },
     "reward": 0.0,
     "step_count": 95,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
     "trajectory_sha256": "20fed3a809258b7cefbbb75df7b52982628724e596b71ad43fa582f15adf8456",
     "trajectory_source_sha256": "d437922b708faad3cc2d34bd270cd5e3d51b6fd6713a28c3a82b7144dcaf9b40",
     "trial_number": 5,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-05/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-05/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-05/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-05/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-05/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-05/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-05/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-05/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-05/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-05/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1589.193518
+    "wall_clock_seconds": 1589.193518,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -424,19 +437,20 @@
     },
     "reward": 0.0,
     "step_count": 59,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
     "trajectory_sha256": "ed051c553dbb5db1dfd9d167e6480bb0fd2d97aab94c28ad5ff3b2b83551ffc1",
     "trajectory_source_sha256": "bcb963575a5ad27012eda9685c132f678838c1f5d65b2d70fd4c983fd0d5dc07",
     "trial_number": 6,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-06/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-06/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-06/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-06/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-06/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-06/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-06/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-06/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-06/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-06/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 758.878775
+    "wall_clock_seconds": 758.878775,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -454,19 +468,20 @@
     },
     "reward": 0.0,
     "step_count": 81,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
     "trajectory_sha256": "03c31c89ced2d2bed913ac643169d71f0899964319a712a77d42d249de812e54",
     "trajectory_source_sha256": "2da7acd6d917231ba4d2ee82d65d0bb985c239ad9b1e643c0080e190bd4d1e98",
     "trial_number": 7,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-07/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-07/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-07/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-07/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-07/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-07/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-07/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-07/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-07/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-07/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1369.380662
+    "wall_clock_seconds": 1369.380662,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -484,19 +499,20 @@
     },
     "reward": 0.0,
     "step_count": 93,
-    "task": "04-draft-recovery",
-    "trajectory": "trajectories/04-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "task": "02-draft-recovery",
+    "trajectory": "trajectories/02-draft-recovery/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
     "trajectory_sha256": "dc91defeeeb938195aa6813285301b628762df6e1973c93aeaa13491a949e040",
     "trajectory_source_sha256": "c98ac7ad731a10fa6100b9ab448a2f4e4aad66b2f092d492d65549f447fd1a62",
     "trial_number": 8,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-08/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-08/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-08/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-08/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/04-draft-recovery/trial-08/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-08/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-08/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-08/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-08/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/02-draft-recovery/trial-08/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1811.137861
+    "wall_clock_seconds": 1811.137861,
+    "source_task": "04-draft-recovery"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -514,19 +530,20 @@
     },
     "reward": 0.0,
     "step_count": 98,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
     "trajectory_sha256": "52d78965013ef2f5a5d23c8f10883f679381e6a0d8c7bd90a315dbf7e3a475d8",
     "trajectory_source_sha256": "cb6a66dcdbab4234c95c22cb88a3d72d92cc54d2dd66c5d5633486302bd34295",
     "trial_number": 1,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-01/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-01/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-01/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-01/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-01/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-01/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-01/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-01/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-01/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-01/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1227.759855
+    "wall_clock_seconds": 1227.759855,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -544,19 +561,20 @@
     },
     "reward": 0.0,
     "step_count": 137,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
     "trajectory_sha256": "b6087bae29ae10c441ad3de5ad46e1e9c98e3f9d311793140c89177939bd6277",
     "trajectory_source_sha256": "09782db49bb4ccf57ed08f4d62ce092a1de83e4c6b6f9af67fbe8ca3e6947b67",
     "trial_number": 2,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-02/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-02/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-02/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-02/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-02/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-02/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-02/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-02/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-02/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-02/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 4400.736083
+    "wall_clock_seconds": 4400.736083,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -574,19 +592,20 @@
     },
     "reward": 0.0,
     "step_count": 108,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
     "trajectory_sha256": "c9b09e4dd1f24987c4805d172c01d0b0f885a749a18e8c1a0872909e4af561e1",
     "trajectory_source_sha256": "4f16c211d10e7f32dd63a7a373e3a25a1070b5ac98763c86d106dfccb9e1ed99",
     "trial_number": 3,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-03/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-03/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-03/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-03/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-03/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-03/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-03/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-03/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-03/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-03/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2805.67303
+    "wall_clock_seconds": 2805.67303,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -604,19 +623,20 @@
     },
     "reward": 0.0,
     "step_count": 110,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
     "trajectory_sha256": "eba3851daef6ac673126a9317b233a3649df1715c4e7b148896cf95438cb3e83",
     "trajectory_source_sha256": "4b39bf5ab2426178b02bce744a54945e4963fbcf771f2ab2f667fa96d9bc7d9e",
     "trial_number": 4,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-04/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-04/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-04/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-04/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-04/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-04/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-04/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-04/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-04/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-04/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 5926.872243
+    "wall_clock_seconds": 5926.872243,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -634,19 +654,20 @@
     },
     "reward": 0.0,
     "step_count": 106,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
     "trajectory_sha256": "d39f833825190550def3a28d87b6f66e929773d485c7f599e04798b157507e4d",
     "trajectory_source_sha256": "a1dd1b460b2f66cdaf6ae439614eafe3e6771624c09be66f50004bb1d9d5f914",
     "trial_number": 5,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-05/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-05/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-05/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-05/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-05/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-05/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-05/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-05/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-05/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-05/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2123.891467
+    "wall_clock_seconds": 2123.891467,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -664,19 +685,20 @@
     },
     "reward": 0.0,
     "step_count": 119,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
     "trajectory_sha256": "6fb7448421bb442d17a60ac71c5b07e898fb9ef31cdf96d12d08a8438a2a5701",
     "trajectory_source_sha256": "90fb12d8a14d955313cb4253a0715e9e87907a98ff6ef285b26396724e9bad25",
     "trial_number": 6,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-06/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-06/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-06/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-06/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-06/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-06/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-06/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-06/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-06/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-06/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 3491.807661
+    "wall_clock_seconds": 3491.807661,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -694,19 +716,20 @@
     },
     "reward": 0.0,
     "step_count": 121,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
     "trajectory_sha256": "c20a16290a0fa5ec3a9012654ddbf009a18ab54c829e0f0d6607ac229cf7d11f",
     "trajectory_source_sha256": "48f6fc78be908df9c052b53f95cc5cb7089c4b920a926a8c6253e59cde4c18bd",
     "trial_number": 7,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-07/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-07/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-07/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-07/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-07/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-07/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-07/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-07/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-07/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-07/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1863.163496
+    "wall_clock_seconds": 1863.163496,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -725,19 +748,20 @@
     },
     "reward": 0.0,
     "step_count": 121,
-    "task": "08-envelope-intake",
-    "trajectory": "trajectories/08-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "task": "03-envelope-intake",
+    "trajectory": "trajectories/03-envelope-intake/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
     "trajectory_sha256": "b22644bc7d21a62ed38ded75f937a6d3c0573a2b4d3a09ddd78b1ff65a7d7671",
     "trajectory_source_sha256": "7562529ff02e9f6602dac55b3de942f990b7d15cd9498449eb2536582f9ce294",
     "trial_number": 8,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-08/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-08/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-08/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-08/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/08-envelope-intake/trial-08/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-08/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-08/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-08/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-08/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/03-envelope-intake/trial-08/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 3795.321473
+    "wall_clock_seconds": 3795.321473,
+    "source_task": "08-envelope-intake"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -756,19 +780,20 @@
     },
     "reward": 0.0,
     "step_count": 192,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
     "trajectory_sha256": "e57928b6baa8e4f67404beddaacf1d1f837ef972eba99ba03764dfa684add2d6",
     "trajectory_source_sha256": "70c98ae16f63cd6e175446012be5fb56984ac59ea064d336f88a1c11f3512039",
     "trial_number": 1,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-01/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-01/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-01/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-01/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-01/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-01/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-01/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-01/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-01/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-01/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 4441.693285
+    "wall_clock_seconds": 4441.693285,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -787,19 +812,20 @@
     },
     "reward": 0.0,
     "step_count": 271,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
     "trajectory_sha256": "fb7b64660dc8edcd4f71d5536d8dea88d06b1869ced9800fae7e399cb00cc681",
     "trajectory_source_sha256": "40826f8dd401c05ad007675a06b2de9a7a8d6e6a21a284f581ad0a652b5990b2",
     "trial_number": 2,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-02/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-02/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-02/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-02/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-02/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-02/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-02/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-02/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-02/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-02/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 4345.881784
+    "wall_clock_seconds": 4345.881784,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -818,19 +844,20 @@
     },
     "reward": 0.0,
     "step_count": 211,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
     "trajectory_sha256": "11bf2b7532e61b1ae8a6994c7ec19be2661613daab60b24cddf0965397a75a04",
     "trajectory_source_sha256": "64f386698f7b3201389a646b4dc21362b8cc794661e1c3bedbe6f8553ffb9142",
     "trial_number": 3,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-03/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-03/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-03/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-03/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-03/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-03/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-03/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-03/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-03/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-03/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 6084.153993
+    "wall_clock_seconds": 6084.153993,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -849,19 +876,20 @@
     },
     "reward": 0.0,
     "step_count": 306,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
     "trajectory_sha256": "28bb866dd68c5f28826d37f19931b98afdbbe2cfc16813bb3e6a86e4cbadb979",
     "trajectory_source_sha256": "d804ebdf6ffd51abcbecf2bd3ac477c6bd888866baa32c373597929699e9ea01",
     "trial_number": 4,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-04/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-04/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-04/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-04/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-04/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-04/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-04/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-04/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-04/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-04/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 6916.803931
+    "wall_clock_seconds": 6916.803931,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -880,19 +908,20 @@
     },
     "reward": 0.0,
     "step_count": 173,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
     "trajectory_sha256": "da68c506cb0ec18c78333131f64c17630da90475b3c9703212254eb222137539",
     "trajectory_source_sha256": "4d4d0a48e7d9ed89d4d9c67431d41d993ee99ca9f54e2366cadddbd5cea357f7",
     "trial_number": 5,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-05/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-05/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-05/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-05/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-05/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-05/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-05/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-05/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-05/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-05/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 6219.917621
+    "wall_clock_seconds": 6219.917621,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -911,19 +940,20 @@
     },
     "reward": 0.0,
     "step_count": 172,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
     "trajectory_sha256": "abee0784c81cfb1576db99ff3b17a66dde7c5966f70fa43c4649bc5107df1d09",
     "trajectory_source_sha256": "8d25ebef2e0d09c48076ef7845ea5b504bccf53faeec4cabb3a8f1df427d633a",
     "trial_number": 6,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-06/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-06/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-06/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-06/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-06/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-06/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-06/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-06/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-06/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-06/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 4217.642731
+    "wall_clock_seconds": 4217.642731,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -941,19 +971,20 @@
     },
     "reward": 0.0,
     "step_count": 144,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
     "trajectory_sha256": "0dcf743de48ed75c9873fb559e9c6b66302112fa4bb4d61e8aae3a5b26fdbc13",
     "trajectory_source_sha256": "10dd1824fb955e9a80a1a1e2951c5153a273fa83f90b41c7e8c577215e5a5738",
     "trial_number": 7,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-07/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-07/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-07/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-07/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-07/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-07/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-07/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-07/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-07/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-07/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 2548.801215
+    "wall_clock_seconds": 2548.801215,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -971,19 +1002,20 @@
     },
     "reward": 0.0,
     "step_count": 151,
-    "task": "11-store-cutover",
-    "trajectory": "trajectories/11-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "task": "04-store-cutover",
+    "trajectory": "trajectories/04-store-cutover/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
     "trajectory_sha256": "f2500b8a349d5653d37c704221006d54239ad4b8ec348b721cc0df4a15a7b43e",
     "trajectory_source_sha256": "68ee0d7be4ede012781518bf692b2dff47487d77c565e25193e72ccd6b4489aa",
     "trial_number": 8,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-08/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-08/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-08/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-08/verifier/reward.json",
-      "results/glm-5.3-mini-swe-agent/tasks/11-store-cutover/trial-08/verifier/test-stdout.txt"
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-08/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-08/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-08/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-08/verifier/reward.json",
+      "results/glm-5.3-mini-swe-agent/tasks/04-store-cutover/trial-08/verifier/test-stdout.txt"
     ],
-    "wall_clock_seconds": 1859.9974
+    "wall_clock_seconds": 1859.9974,
+    "source_task": "11-store-cutover"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1001,18 +1033,19 @@
     },
     "reward": 0.0,
     "step_count": 152,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-01.json",
     "trajectory_sha256": "d2ffe1ac61e378d2c573be60d721cfa2a066f6fbf02e5619e7e088e7a90e16d7",
     "trajectory_source_sha256": "55d8d91d1ed5c2122b248995c171209615269be91061ff6ade03b0bb1681e8e9",
     "trial_number": 1,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-01/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-01/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-01/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-01/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-01/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-01/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-01/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-01/verifier/reward.json"
     ],
-    "wall_clock_seconds": 3944.521325
+    "wall_clock_seconds": 3944.521325,
+    "source_task": "12-readmodel-rebuild"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1030,18 +1063,19 @@
     },
     "reward": 0.0,
     "step_count": 159,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-02.json",
     "trajectory_sha256": "4c7cbd963e1e3323fc62d39ba293ffde7c3734be69dc94ab164a7de10ba87775",
     "trajectory_source_sha256": "f6c664a0a59929473798ccc362a86087883d7b97f5917cd6f988d740c0bc1348",
     "trial_number": 2,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-02/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-02/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-02/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-02/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-02/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-02/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-02/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-02/verifier/reward.json"
     ],
-    "wall_clock_seconds": 2420.077347
+    "wall_clock_seconds": 2420.077347,
+    "source_task": "12-readmodel-rebuild"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1059,18 +1093,19 @@
     },
     "reward": 0.0,
     "step_count": 172,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-03.json",
     "trajectory_sha256": "35b546e4a212166f0e9ada071342a1292b3834c78692dacf09c80b1aff703088",
     "trajectory_source_sha256": "b42caf7bcd81933e00897abdc2f00b904d55df84a1483c22e451d80223a3ef8c",
     "trial_number": 3,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-03/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-03/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-03/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-03/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-03/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-03/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-03/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-03/verifier/reward.json"
     ],
-    "wall_clock_seconds": 3854.690831
+    "wall_clock_seconds": 3854.690831,
+    "source_task": "12-readmodel-rebuild"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1088,18 +1123,19 @@
     },
     "reward": 0.0,
     "step_count": 145,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-04.json",
     "trajectory_sha256": "6ff7d237218b6a99519d7fde758e3830270fe7702f54ec1c508a061340e805ab",
     "trajectory_source_sha256": "4ba63eba44a8f8d2fc62688798ccae5d717e9179dc149dfb4f6342e14ac001fc",
     "trial_number": 4,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-04/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-04/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-04/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-04/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-04/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-04/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-04/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-04/verifier/reward.json"
     ],
-    "wall_clock_seconds": 2400.535001
+    "wall_clock_seconds": 2400.535001,
+    "source_task": "12-readmodel-rebuild"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1117,18 +1153,19 @@
     },
     "reward": 0.0,
     "step_count": 207,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-05.json",
     "trajectory_sha256": "27353ba3b707c42256cb0a36d89248117b3534c2868d695b3877a161a70db7e9",
     "trajectory_source_sha256": "0112aaf8fada996587017ce218c0eb7b88a3fe2adfc714e8dda9e1bd0d856170",
     "trial_number": 5,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-05/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-05/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-05/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-05/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-05/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-05/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-05/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-05/verifier/reward.json"
     ],
-    "wall_clock_seconds": 3738.442912
+    "wall_clock_seconds": 3738.442912,
+    "source_task": "12-readmodel-rebuild"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1146,18 +1183,19 @@
     },
     "reward": 0.0,
     "step_count": 226,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-06.json",
     "trajectory_sha256": "ca272371e5d0e38f6a3083467ed409fc37d31f20f06bbb8c87faa2ad65e7b785",
     "trajectory_source_sha256": "2f2114f707cf66e10c265295c64efd02cdc7cc39df12e833848a4e0454b89e0c",
     "trial_number": 6,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-06/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-06/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-06/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-06/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-06/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-06/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-06/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-06/verifier/reward.json"
     ],
-    "wall_clock_seconds": 4209.100216
+    "wall_clock_seconds": 4209.100216,
+    "source_task": "12-readmodel-rebuild"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1175,18 +1213,19 @@
     },
     "reward": 0.0,
     "step_count": 209,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-07.json",
     "trajectory_sha256": "dbc4bed525b2a2eeb0da854f77cd0a20be60d3b59c3afdde44283318422fcc63",
     "trajectory_source_sha256": "7944a6e1bd519d81e2383635a979097c54c4a75dcd3705241233529caa4678e5",
     "trial_number": 7,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-07/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-07/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-07/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-07/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-07/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-07/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-07/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-07/verifier/reward.json"
     ],
-    "wall_clock_seconds": 3805.342885
+    "wall_clock_seconds": 3805.342885,
+    "source_task": "12-readmodel-rebuild"
   },
   {
     "arm": "glm-5.3-mini-swe-agent-openrouter",
@@ -1204,17 +1243,18 @@
     },
     "reward": 1.0,
     "step_count": 199,
-    "task": "12-readmodel-rebuild",
-    "trajectory": "trajectories/12-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
+    "task": "05-readmodel-rebuild",
+    "trajectory": "trajectories/05-readmodel-rebuild/glm-5.3-mini-swe-agent/trajectory-trial-08.json",
     "trajectory_sha256": "8d0874b0a52839934bd5c4de688444f67d309a4acf91fbad782c23ce19eb748f",
     "trajectory_source_sha256": "f6bb93ed9337bc2f540a9e9718a5a6815d95a2aeead06c9bf7814919528f6802",
     "trial_number": 8,
     "verifier_evidence": [
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-08/canonical-attempt.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-08/result.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-08/verifier/reward-detail.json",
-      "results/glm-5.3-mini-swe-agent/tasks/12-readmodel-rebuild/trial-08/verifier/reward.json"
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-08/canonical-attempt.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-08/result.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-08/verifier/reward-detail.json",
+      "results/glm-5.3-mini-swe-agent/tasks/05-readmodel-rebuild/trial-08/verifier/reward.json"
     ],
-    "wall_clock_seconds": 4473.790663
+    "wall_clock_seconds": 4473.790663,
+    "source_task": "12-readmodel-rebuild"
   }
 ]

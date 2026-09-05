@@ -1,6 +1,6 @@
 {
   "controls": {
-    "02-recurring-events": {
+    "01-recurring-events": {
       "execution_task_sha256": "5809c53f6c930201b05749fcc8d5a22286b06673bc09f477fd5c69540e95cc1d",
       "nop": {
         "checked_at": "2026-09-04T19:17:33.504014+00:00",
@@ -9,9 +9,9 @@
         "reward": 0.0,
         "scope": "frozen execution package after credential-only task redaction",
         "evidence": [
-          "controls/02-recurring-events/nop/test-stdout.txt",
-          "controls/02-recurring-events/nop/reward.json",
-          "controls/02-recurring-events/nop/reward-detail.json"
+          "controls/01-recurring-events/nop/test-stdout.txt",
+          "controls/01-recurring-events/nop/reward.json",
+          "controls/01-recurring-events/nop/reward-detail.json"
         ]
       },
       "oracle": {
@@ -21,13 +21,13 @@
         "reward": 1.0,
         "scope": "frozen execution package after credential-only task redaction",
         "evidence": [
-          "controls/02-recurring-events/oracle/test-stdout.txt",
-          "controls/02-recurring-events/oracle/reward.json",
-          "controls/02-recurring-events/oracle/reward-detail.json"
+          "controls/01-recurring-events/oracle/test-stdout.txt",
+          "controls/01-recurring-events/oracle/reward.json",
+          "controls/01-recurring-events/oracle/reward-detail.json"
         ]
       }
     },
-    "04-draft-recovery": {
+    "02-draft-recovery": {
       "execution_task_sha256": "83fc0a30f075f3b15879263d2e899fc81ea1f961142a1cb8a5c8eb47d0ef4c23",
       "nop": {
         "checked_at": "2026-09-03T23:39:38.246864+00:00",
@@ -36,11 +36,11 @@
         "reward": 0.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/04-draft-recovery/nop/verifier-report.json",
-          "controls/04-draft-recovery/nop/verifier-output.txt",
-          "controls/04-draft-recovery/nop/test-stdout.txt",
-          "controls/04-draft-recovery/nop/reward.json",
-          "controls/04-draft-recovery/nop/reward-detail.json"
+          "controls/02-draft-recovery/nop/verifier-report.json",
+          "controls/02-draft-recovery/nop/verifier-output.txt",
+          "controls/02-draft-recovery/nop/test-stdout.txt",
+          "controls/02-draft-recovery/nop/reward.json",
+          "controls/02-draft-recovery/nop/reward-detail.json"
         ]
       },
       "oracle": {
@@ -50,15 +50,15 @@
         "reward": 1.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/04-draft-recovery/oracle/verifier-report.json",
-          "controls/04-draft-recovery/oracle/verifier-output.txt",
-          "controls/04-draft-recovery/oracle/test-stdout.txt",
-          "controls/04-draft-recovery/oracle/reward.json",
-          "controls/04-draft-recovery/oracle/reward-detail.json"
+          "controls/02-draft-recovery/oracle/verifier-report.json",
+          "controls/02-draft-recovery/oracle/verifier-output.txt",
+          "controls/02-draft-recovery/oracle/test-stdout.txt",
+          "controls/02-draft-recovery/oracle/reward.json",
+          "controls/02-draft-recovery/oracle/reward-detail.json"
         ]
       }
     },
-    "08-envelope-intake": {
+    "03-envelope-intake": {
       "execution_task_sha256": "9ebf2b4721d98dcc6fd4129b5a5376887877a0235fdb23ee601bf1ea35b8f9f6",
       "nop": {
         "checked_at": "2026-09-03T23:38:45.505200+00:00",
@@ -67,10 +67,10 @@
         "reward": 0.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/08-envelope-intake/nop/test-stdout.txt",
-          "controls/08-envelope-intake/nop/reward.json",
-          "controls/08-envelope-intake/nop/reward-detail.json",
-          "controls/08-envelope-intake/nop/observed.json"
+          "controls/03-envelope-intake/nop/test-stdout.txt",
+          "controls/03-envelope-intake/nop/reward.json",
+          "controls/03-envelope-intake/nop/reward-detail.json",
+          "controls/03-envelope-intake/nop/observed.json"
         ]
       },
       "oracle": {
@@ -80,14 +80,14 @@
         "reward": 1.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/08-envelope-intake/oracle/test-stdout.txt",
-          "controls/08-envelope-intake/oracle/reward.json",
-          "controls/08-envelope-intake/oracle/reward-detail.json",
-          "controls/08-envelope-intake/oracle/observed.json"
+          "controls/03-envelope-intake/oracle/test-stdout.txt",
+          "controls/03-envelope-intake/oracle/reward.json",
+          "controls/03-envelope-intake/oracle/reward-detail.json",
+          "controls/03-envelope-intake/oracle/observed.json"
         ]
       }
     },
-    "11-store-cutover": {
+    "04-store-cutover": {
       "execution_task_sha256": "69afb4babfc2c75fc6075cef5a2915100f4ece653a76b12df30774ba65a874ed",
       "nop": {
         "checked_at": "2026-09-03T23:39:19.611382+00:00",
@@ -96,9 +96,9 @@
         "reward": 0.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/11-store-cutover/nop/test-stdout.txt",
-          "controls/11-store-cutover/nop/reward.json",
-          "controls/11-store-cutover/nop/reward-detail.json"
+          "controls/04-store-cutover/nop/test-stdout.txt",
+          "controls/04-store-cutover/nop/reward.json",
+          "controls/04-store-cutover/nop/reward-detail.json"
         ]
       },
       "oracle": {
@@ -108,13 +108,13 @@
         "reward": 1.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/11-store-cutover/oracle/test-stdout.txt",
-          "controls/11-store-cutover/oracle/reward.json",
-          "controls/11-store-cutover/oracle/reward-detail.json"
+          "controls/04-store-cutover/oracle/test-stdout.txt",
+          "controls/04-store-cutover/oracle/reward.json",
+          "controls/04-store-cutover/oracle/reward-detail.json"
         ]
       }
     },
-    "12-readmodel-rebuild": {
+    "05-readmodel-rebuild": {
       "execution_task_sha256": "656b5c085544b3b57bdbcb5294059d8fdc29cfa5b52f238245c3874635f36dd4",
       "nop": {
         "checked_at": "2026-09-03T23:39:34.597628+00:00",
@@ -123,9 +123,9 @@
         "reward": 0.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/12-readmodel-rebuild/nop/reward.json",
-          "controls/12-readmodel-rebuild/nop/reward-detail.json",
-          "controls/12-readmodel-rebuild/nop/grader.log"
+          "controls/05-readmodel-rebuild/nop/reward.json",
+          "controls/05-readmodel-rebuild/nop/reward-detail.json",
+          "controls/05-readmodel-rebuild/nop/grader.log"
         ]
       },
       "oracle": {
@@ -135,9 +135,9 @@
         "reward": 1.0,
         "scope": "original frozen execution package",
         "evidence": [
-          "controls/12-readmodel-rebuild/oracle/reward.json",
-          "controls/12-readmodel-rebuild/oracle/reward-detail.json",
-          "controls/12-readmodel-rebuild/oracle/grader.log"
+          "controls/05-readmodel-rebuild/oracle/reward.json",
+          "controls/05-readmodel-rebuild/oracle/reward-detail.json",
+          "controls/05-readmodel-rebuild/oracle/grader.log"
         ]
       }
     }
