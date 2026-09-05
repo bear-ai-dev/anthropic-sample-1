@@ -57,6 +57,7 @@ A rollout is scored only when it has no Harbor/provider exception, a numeric ver
 - [`analysis/README.md`](analysis/README.md) provides the evidence-linked review of all 40 Fable Claude Code trials, replacing inherited failure labels.
 - [`analysis/cutover-replay/README.md`](analysis/cutover-replay/README.md) documents the verifier-only correction, green controls, and unchanged effective zero.
 - [`HANDOFF.md`](HANDOFF.md) distinguishes this audit package from a separately authorized runnable delivery.
+- [`analysis/opus-task-provenance.md`](analysis/opus-task-provenance.md) documents all 40 Opus task identities: ten native hashes cross-checked and 30 reconstructed from the original run inputs, with original results preserved and the 6/40 score unchanged.
 - [`task-publication.json`](task-publication.json) maps the execution task identities to the privacy-safe published task packages.
 
 The licensed application workspaces used for execution are intentionally omitted. Their task contracts, verifiers, reference materials, source hashes, trajectories, and verifier evidence are retained after credential, restricted-name, and infrastructure redaction.

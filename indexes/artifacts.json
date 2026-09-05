@@ -12581,8 +12581,8 @@
   },
   {
     "path": "HANDOFF.md",
-    "bytes": 2220,
-    "sha256": "1c654d5da36b1b3fa103c120870d22fa3fece04b63ade68b7ecedd7867caa59c"
+    "bytes": 2480,
+    "sha256": "7566e289469a04fc1681421b4eec7f6e7b0f82b7e3ae6bd5d1dd08011d735505"
   },
   {
     "path": "analysis/README.md",
@@ -12746,8 +12746,8 @@
   },
   {
     "path": "analysis/verify.py",
-    "bytes": 2596,
-    "sha256": "34d539c955d4d3a479a764445aee5a5dcd295926cb1c6c845ca9fec019246d31"
+    "bytes": 4864,
+    "sha256": "9071ef31858ec54cbb96ecc03b7fed99a18202f510a3877ada5ba8c608c4e194"
   },
   {
     "path": "control-results.json",
@@ -15058,5 +15058,15 @@
     "path": "trajectories/12-readmodel-rebuild/opus-5-claude-code/trajectory-trial-08.json",
     "bytes": 2701051,
     "sha256": "51ff6dcd4015a954ac95a3e3c25e6c76760138171e6c44e3abd0d716b31ec233"
+  },
+  {
+    "path": "analysis/opus-task-provenance.json",
+    "bytes": 68575,
+    "sha256": "e1c1ad38042b68d0aae96e0904fb4259f1dc5e0d18aa7a67a20dba5767fda5b4"
+  },
+  {
+    "path": "analysis/opus-task-provenance.md",
+    "bytes": 2987,
+    "sha256": "6d1d61d21438df9e7b0c865fae5f0642ae6d214b8553ada405eef2048cb1cd24"
   }
 ]

@@ -14,6 +14,6 @@ This is an audit package, not a self-contained runnable licensed-environment del
 
 Behavioral failure labels are an analyst's interpretation, not proof of the model's private reasoning or a unique root cause. Reference-solution success demonstrates solvability of that implementation, not an exhaustive fairness proof for every alternative implementation. Original and corrected verifier versions must remain distinguishable.
 
-The original Opus results remain unchanged. No new Opus work is included in this follow-up. Some recovered original records carry a non-hexadecimal task-checksum marker; this release does not silently replace that marker with a stronger provenance claim.
+The [Opus provenance repair](analysis/opus-task-provenance.md) links all 40 Opus trials to their original archived execution inputs: ten native hashes cross-check exactly, and 30 missing identities are reconstructed. The original result files retain their recovery markers; the trial index exposes the effective checksum with an explicit native/reconstructed source. Opus remains 6/40 (15.0%). This recovers archived-input provenance, not a newly created launch-time attestation or a verifier-fairness certificate.
 
 GitHub reported admin access for `siddhantpaliwal2` on both sample repositories on September 4, 2026. This confirms that account's access only, not the identity or access of a separate Anthropic recipient. No invitations were sent and neither repository was made public.
